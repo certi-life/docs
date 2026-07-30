@@ -25,7 +25,6 @@ const config: Config = {
         docs: {
           routeBasePath: 'guide',
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/certi-life/docs/edit/develop/',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },
@@ -39,7 +38,7 @@ const config: Config = {
     metadata: [
       {name: 'keywords', content: '서티라이프, CertiLife, 인증서, AI 상담, CRM, 병원 고객관리'},
     ],
-    colorMode: {defaultMode: 'light', disableSwitch: false, respectPrefersColorScheme: true},
+    colorMode: {defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false},
     navbar: {
       title: 'Docs',
       logo: {alt: 'CertiLife', src: 'img/certilife-logo.png', width: 86, height: 30},

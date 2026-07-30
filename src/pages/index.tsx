@@ -13,8 +13,8 @@ const products = [
 
 const journeys = [
   {number: '01', title: '서티라이프 둘러보기', description: '제품 구성과 역할별 시작점을 먼저 확인합니다.', to: '/guide/getting-started/quick-tour'},
-  {number: '02', title: 'Hospital 시작하기', description: '병원 사용자를 위한 기본 가이드를 확인합니다.', to: '/guide/hospital/overview'},
-  {number: '03', title: 'Studio 시작하기', description: 'Studio 가이드와 공개 예정 범위를 확인합니다.', to: '/guide/studio/overview'},
+  {number: '02', title: 'Hospital 안내', description: '병원용 서비스의 접속 방법과 기본 안내를 확인합니다.', to: '/guide/hospital/overview'},
+  {number: '03', title: 'Studio 안내', description: 'Studio 공개 안내와 지원 경로를 확인합니다.', to: '/guide/studio/overview'},
 ];
 
 export default function Home(): ReactNode {
@@ -29,7 +29,7 @@ export default function Home(): ReactNode {
               <Heading as="h1">더 신뢰받는 병원 경험,<br /><strong>서티라이프로 시작하세요.</strong></Heading>
               <p>인증서부터 AI 상담, CRM 마케팅까지.<br className={styles.desktopBreak} /> 필요한 기능을 이해하고 바로 시작할 수 있도록 안내합니다.</p>
               <div className={styles.heroActions}>
-                <Link className={styles.primaryButton} to="/guide/intro">가이드 시작하기 <span>→</span></Link>
+                <Link className={styles.primaryButton} to="/guide/intro">서비스 둘러보기 <span>→</span></Link>
                 <Link className={styles.secondaryButton} href="https://certi.life/contact">도입 문의하기</Link>
               </div>
             </div>

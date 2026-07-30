@@ -63,3 +63,8 @@ body {color: var(--certi-text); letter-spacing: -0.015em;}
 @media (max-width: 996px) {
   .navbar-cta {display: none;}
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {scroll-behavior: auto;}
+  *, *::before, *::after {transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;}
+}
