@@ -1,7 +1,7 @@
 .hero {position:relative; overflow:hidden; min-height:670px; color:#fff; background:linear-gradient(125deg,#1555d8 0%,#2468ef 58%,#7ea9ff 100%); display:flex; align-items:center;}
 .heroGlow {position:absolute; width:600px; height:600px; right:-140px; top:-220px; border-radius:50%; background:rgba(255,255,255,.16); filter:blur(4px);}
 .hero :global(.container) {display:grid; grid-template-columns:1.02fr .98fr; gap:70px; align-items:center; position:relative; z-index:1; width:100%;}
-.heroContent h1 {font-size:clamp(2.8rem,5vw,5.25rem); line-height:1.08; letter-spacing:-.06em; margin:22px 0 26px; color:#fff; font-weight:540;}
+.heroContent h1 {font-size:clamp(2.8rem,3.8vw,3.2rem); line-height:1.08; letter-spacing:-.06em; margin:22px 0 26px; color:#fff; font-weight:540;}
 .heroContent h1 strong {font-weight:850;}
 .heroContent p {font-size:clamp(1.08rem,1.5vw,1.35rem); line-height:1.7; color:#fff;}
 .badge {display:inline-flex; padding:8px 13px; border:1px solid rgba(255,255,255,.36); border-radius:999px; font-size:.75rem; font-weight:800; letter-spacing:.12em;}

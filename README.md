@@ -9,11 +9,12 @@ npm install
 npm start
 ```
 
-기본 주소는 `http://localhost:3000/docs/`입니다.
+기본 주소는 `http://localhost:3000/`입니다. 배포 기준 주소는 `https://docs.certi.life/`입니다.
 
 ## 검증
 
 ```bash
+npm run docs:check
 npm run typecheck
 npm run build
 npm run serve

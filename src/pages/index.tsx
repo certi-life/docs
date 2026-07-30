@@ -5,16 +5,16 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 const products = [
-  {eyebrow: 'CERTIFICATE', title: '인증서', description: '시술과 제품 정보를 고객에게 안전하고 간편하게 전달하세요.', to: '/guide/products/certificate', tone: 'blue'},
-  {eyebrow: 'AI SOLUTION', title: 'AI 상담', description: '반복되는 채팅 상담은 AI에게 맡기고 중요한 고객 경험에 집중하세요.', to: '/guide/products/ai-chatbot', tone: 'dark'},
+  {eyebrow: 'CERTIFICATE', title: '인증서', description: '시술과 제품 정보를 고객이 확인하기 쉬운 인증서로 전달하세요.', to: '/guide/products/certificate', tone: 'blue'},
+  {eyebrow: 'AI SOLUTION', title: 'AI 상담', description: '반복되는 일반 문의 대응을 돕고 중요한 상담에 집중하세요.', to: '/guide/products/ai-chatbot', tone: 'dark'},
   {eyebrow: 'CRM MARKETING', title: 'CRM 메시징', description: '고객에게 필요한 메시지를 적절한 시점에 전달해 재방문을 이어가세요.', to: '/guide/products/crm-messaging', tone: 'yellow'},
   {eyebrow: 'BRAND EXPERIENCE', title: '이벤트 마케팅', description: '고객별 경험을 연결하고 브랜드와 병원의 접점을 확장하세요.', to: '/guide/products/event-marketing', tone: 'coral'},
 ];
 
 const journeys = [
-  {number: '01', title: '서티라이프 둘러보기', description: '제품 구성과 역할별 시작점을 먼저 확인합니다.', to: '/guide/getting-started/quick-tour'},
-  {number: '02', title: 'Hospital 안내', description: '병원용 서비스의 접속 방법과 기본 안내를 확인합니다.', to: '/guide/hospital/overview'},
-  {number: '03', title: 'Studio 안내', description: 'Studio 공개 안내와 지원 경로를 확인합니다.', to: '/guide/studio/overview'},
+  {number: '01', title: '내 가이드 찾기', description: '역할과 해결하려는 업무에 맞는 문서를 바로 찾습니다.', to: '/guide/getting-started/choose-guide'},
+  {number: '02', title: 'Hospital 시작', description: '계정 접속부터 인증서 전달 전 점검까지 확인합니다.', to: '/guide/hospital/account-access'},
+  {number: '03', title: 'Studio 운영 준비', description: '상담 지식, 답변 범위와 사람 연결 기준을 준비합니다.', to: '/guide/studio/knowledge-management'},
 ];
 
 export default function Home(): ReactNode {
@@ -46,7 +46,7 @@ export default function Home(): ReactNode {
                   </div>
                 </div>
               </div>
-              <div className={styles.phone}><span /><b>정품 인증서</b><small>안전하게 전달되었어요</small><i>확인하기</i></div>
+              <div className={styles.phone}><span /><b>정품 인증서</b><small>전달을 완료했어요</small><i>확인하기</i></div>
             </div>
           </div>
         </section>
@@ -66,7 +66,7 @@ export default function Home(): ReactNode {
         </section>
 
         <section className={styles.helpSection}>
-          <div className="container"><div><span>NEED HELP?</span><Heading as="h2">궁금한 점을 빠르게 해결하세요.</Heading><p>자주 묻는 질문에서 답을 찾거나, 도입 상담을 요청할 수 있습니다.</p></div><div className={styles.helpActions}><Link to="/guide/help/faq">자주 묻는 질문</Link><Link href="https://certi.life/contact">도입 문의 →</Link></div></div>
+          <div className="container"><div><span>NEED HELP?</span><Heading as="h2">궁금한 점을 빠르게 해결하세요.</Heading><p>문제 해결 순서를 확인하거나, 자주 묻는 질문에서 답을 찾아보세요.</p></div><div className={styles.helpActions}><Link to="/guide/help/troubleshooting">문제 해결</Link><Link to="/guide/help/faq">자주 묻는 질문</Link><Link href="https://certi.life/contact">도입 문의 →</Link></div></div>
         </section>
       </main>
     </Layout>

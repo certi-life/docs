@@ -9,6 +9,7 @@
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
+    "docs:check": "node scripts/check-docs.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

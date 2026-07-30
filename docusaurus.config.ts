@@ -7,8 +7,8 @@ const config: Config = {
   tagline: '인증서부터 AI 상담, CRM 마케팅까지',
   favicon: 'img/certilife-symbol.svg',
   future: {v4: true},
-  url: 'https://certi-life.github.io',
-  baseUrl: '/docs/',
+  url: 'https://docs.certi.life',
+  baseUrl: '/',
   organizationName: 'certi-life',
   projectName: 'docs',
   trailingSlash: false,
@@ -55,7 +55,9 @@ const config: Config = {
       links: [
         {title: '시작하기', items: [
           {label: 'CertiLife 소개', to: '/guide/intro'},
-          {label: '빠른 둘러보기', to: '/guide/getting-started/quick-tour'},
+          {label: '내 가이드 찾기', to: '/guide/getting-started/choose-guide'},
+          {label: '다운로드', to: '/guide/getting-started/downloads'},
+          {label: '로그인 바로가기', to: '/guide/getting-started/sign-in-directory'},
         ]},
         {title: '제품', items: [
           {label: '인증서', to: '/guide/products/certificate'},
@@ -64,6 +66,7 @@ const config: Config = {
           {label: '이벤트 마케팅', to: '/guide/products/event-marketing'},
         ]},
         {title: '지원', items: [
+          {label: '문제 해결', to: '/guide/help/troubleshooting'},
           {label: '자주 묻는 질문', to: '/guide/help/faq'},
           {label: '개인정보 및 보안', to: '/guide/help/privacy-security'},
           {label: '도입 문의', href: 'https://certi.life/contact'},
