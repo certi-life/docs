@@ -34,11 +34,6 @@ const sidebars: SidebarsConfig = {
       label: '도움말',
       items: ['help/faq', 'help/privacy-security'],
     },
-    {
-      type: 'category',
-      label: '업데이트',
-      items: ['releases/index'],
-    },
   ],
 };
 
