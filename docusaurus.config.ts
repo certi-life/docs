@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CertiLife Docs',
   tagline: '인증서부터 AI 상담, CRM 마케팅까지',
-  favicon: 'img/certilife-mark.svg',
+  favicon: 'img/certilife-symbol.svg',
   future: {v4: true},
   url: 'https://certi-life.github.io',
   baseUrl: '/docs/',
@@ -41,8 +41,8 @@ const config: Config = {
     ],
     colorMode: {defaultMode: 'light', disableSwitch: false, respectPrefersColorScheme: true},
     navbar: {
-      title: 'CertiLife Docs',
-      logo: {alt: 'CertiLife', src: 'img/certilife-mark.svg'},
+      title: 'Docs',
+      logo: {alt: 'CertiLife', src: 'img/certilife-logo.png', width: 86, height: 30},
       items: [
         {type: 'docSidebar', sidebarId: 'guideSidebar', position: 'left', label: '사용 가이드'},
         {to: '/guide/products/certificate', label: '서비스 소개', position: 'left'},
