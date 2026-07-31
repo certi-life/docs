@@ -34,6 +34,28 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: 'guide',
+        language: 'ko',
+        hashed: 'filename',
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        searchResultLimits: 10,
+        searchResultContextMaxLength: 90,
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+        searchBarShortcutKeymap: 'mod+k',
+        searchBarPosition: 'right',
+        fuzzyMatchingDistance: 1,
+      },
+    ],
+  ],
   themeConfig: {
     metadata: [
       {name: 'keywords', content: '서티라이프, CertiLife, 인증서, AI 상담, CRM, 병원 고객관리, 제조사'},

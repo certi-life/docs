@@ -19,6 +19,7 @@ npm start
 npm run docs:check
 npm run typecheck
 npm run build
+npm run search:check
 npm run serve
 ```
 
@@ -28,3 +29,7 @@ npm run serve
 - 실제 고객·환자·직원 정보와 내부 URL, 계정, 키를 포함하지 않습니다.
 - Hospital·Studio 절차는 실제 화면에서 검증한 뒤 게시합니다.
 - 예시는 완전한 가상 데이터만 사용합니다.
+- 외부 URL은 목적이 드러나는 하이퍼링크나 CTA로 제공하며 복사·붙여넣기를 요구하지 않습니다.
+- 문서 제목·설명·본문·제목 계층은 전역 검색 대상이므로 사용자가 실제로 찾을 문제·기능 용어를 씁니다.
+
+자세한 작성 규칙은 [기여 가이드](./CONTRIBUTING.md)를 확인하세요.

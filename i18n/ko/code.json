@@ -1,0 +1,42 @@
+{
+  "theme.SearchBar.label": {
+    "message": "문서 검색",
+    "description": "검색 입력창의 안내 문구"
+  },
+  "theme.SearchBar.seeAll": {
+    "message": "전체 검색 결과 보기",
+    "description": "검색 자동완성 아래 전체 결과 링크"
+  },
+  "theme.SearchBar.noResultsText": {
+    "message": "검색 결과가 없습니다",
+    "description": "검색 자동완성 결과 없음 안내"
+  },
+  "theme.SearchBar.searchInContext": {
+    "message": "{context}에서 전체 결과 보기",
+    "description": "현재 검색 범위의 전체 결과 링크"
+  },
+  "theme.SearchBar.seeAllOutsideContext": {
+    "message": "{context} 밖의 결과도 보기",
+    "description": "현재 검색 범위 밖의 결과 링크"
+  },
+  "theme.SearchPage.existingResultsTitle": {
+    "message": "‘{query}’ 검색 결과",
+    "description": "검색어가 있는 검색 결과 페이지 제목"
+  },
+  "theme.SearchPage.emptyResultsTitle": {
+    "message": "문서 전체 검색",
+    "description": "검색어가 없는 검색 페이지 제목"
+  },
+  "theme.SearchPage.searchContext.everywhere": {
+    "message": "전체 문서",
+    "description": "전체 검색 범위 선택지"
+  },
+  "theme.SearchPage.documentsFound.plurals": {
+    "message": "{count}개 결과를 찾았습니다",
+    "description": "검색된 문서·섹션 결과 수"
+  },
+  "theme.SearchPage.noResultsText": {
+    "message": "일치하는 문서를 찾지 못했습니다. 다른 제품명·문제·행동 키워드로 검색해 보세요.",
+    "description": "검색 결과가 없을 때 안내"
+  }
+}
