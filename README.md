@@ -9,7 +9,9 @@ npm install
 npm start
 ```
 
-기본 주소는 `http://localhost:3000/`입니다. 배포 기준 주소는 `https://docs.certi.life/`입니다.
+기본 주소는 `http://localhost:3000/docs/`입니다. 현재 배포 기준 주소는 `https://certi-life.github.io/docs/`입니다.
+
+`docs.certi.life` 커스텀 도메인은 아직 연결하지 않았습니다. 도메인 연결이 승인되면 Docusaurus의 `url`과 `baseUrl`, `static/CNAME`을 함께 전환합니다.
 
 ## 검증
 
