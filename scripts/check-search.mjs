@@ -87,11 +87,11 @@ const indexedTerms = new Set(
 );
 
 const requiredRoutes = [
-  '/docs/guide/intro',
-  '/docs/guide/help/troubleshooting',
-  '/docs/guide/hospital/account-access',
-  '/docs/guide/manufacturer/account-access',
-  '/docs/guide/studio/scenario-and-handoff',
+  '/guide/intro',
+  '/guide/help/troubleshooting',
+  '/guide/hospital/account-access',
+  '/guide/manufacturer/account-access',
+  '/guide/studio/scenario-and-handoff',
 ];
 for (const route of requiredRoutes) {
   if (![...indexedRoutes].some((indexed) => indexed === route || indexed.startsWith(`${route}#`))) {
@@ -111,7 +111,7 @@ const builtRoutes = new Set(
   existsSync(builtGuideRoot)
     ? walk(builtGuideRoot)
         .filter((path) => path.endsWith('.html'))
-        .map((path) => `/docs/guide/${relative(builtGuideRoot, path).replace(/\.html$/, '')}`)
+        .map((path) => `/guide/${relative(builtGuideRoot, path).replace(/\.html$/, '')}`)
     : [],
 );
 for (const route of builtRoutes) {
@@ -130,7 +130,7 @@ for (const term of requiredTerms) {
 }
 
 for (const route of indexedRoutes) {
-  if (!route.startsWith('/docs/guide/')) failures.push(`unexpected public search route: ${route}`);
+  if (!route.startsWith('/guide/')) failures.push(`unexpected public search route: ${route}`);
 }
 
 if (failures.length) {
