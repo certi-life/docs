@@ -40,7 +40,20 @@
 
 * {box-sizing: border-box;}
 html {scroll-behavior: smooth;}
-body {color: var(--certi-text); letter-spacing: -0.015em;}
+body {
+  color: var(--certi-text);
+  letter-spacing: -0.015em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+h1, h2, h3 {text-wrap: balance;}
+p, li {text-wrap: pretty;}
+a {overflow-wrap: anywhere;}
+code, pre, kbd, samp {
+  word-break: normal;
+  overflow-wrap: normal;
+}
+.markdown table {word-break: keep-all;}
 [data-theme='dark'] body {color: #f4f7fb;}
 .navbar {box-shadow: 0 1px 0 rgba(20, 28, 38, 0.08);}
 .navbar__brand {font-weight: 800;}
