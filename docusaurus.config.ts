@@ -36,7 +36,7 @@ const config: Config = {
   ],
   themeConfig: {
     metadata: [
-      {name: 'keywords', content: '서티라이프, CertiLife, 인증서, AI 상담, CRM, 병원 고객관리'},
+      {name: 'keywords', content: '서티라이프, CertiLife, 인증서, AI 상담, CRM, 병원 고객관리, 제조사'},
     ],
     colorMode: {defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false},
     navbar: {
@@ -47,6 +47,7 @@ const config: Config = {
         {to: '/guide/products/certificate', label: '서비스 소개', position: 'left'},
         {to: '/guide/help/faq', label: '도움말', position: 'left'},
         {href: 'https://hospital.certi.life/signin', label: '병원용 로그인', position: 'right'},
+        {href: 'https://manufacturer.certi.life/signin', label: '제조사용 로그인', position: 'right'},
         {href: 'https://certi.life/contact', label: '도입 문의', position: 'right', className: 'navbar-cta'},
       ],
     },
@@ -64,6 +65,11 @@ const config: Config = {
           {label: 'AI 상담', to: '/guide/products/ai-chatbot'},
           {label: 'CRM 메시징', to: '/guide/products/crm-messaging'},
           {label: '이벤트 마케팅', to: '/guide/products/event-marketing'},
+        ]},
+        {title: '사용자별', items: [
+          {label: 'Hospital', to: '/guide/hospital/overview'},
+          {label: 'Manufacturer', to: '/guide/manufacturer/overview'},
+          {label: 'Studio', to: '/guide/studio/overview'},
         ]},
         {title: '지원', items: [
           {label: '문제 해결', to: '/guide/help/troubleshooting'},

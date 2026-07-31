@@ -63,6 +63,15 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Manufacturer',
+      items: [
+        'manufacturer/overview',
+        'manufacturer/account-access',
+        'manufacturer/safe-operation',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Studio',
       items: [
         'studio/overview',

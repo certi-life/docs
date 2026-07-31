@@ -14,7 +14,8 @@ const products = [
 const journeys = [
   {number: '01', title: '내 가이드 찾기', description: '역할과 해결하려는 업무에 맞는 문서를 바로 찾습니다.', to: '/guide/getting-started/choose-guide'},
   {number: '02', title: 'Hospital 시작', description: '계정 접속부터 인증서 전달 전 점검까지 확인합니다.', to: '/guide/hospital/account-access'},
-  {number: '03', title: 'Studio 운영 준비', description: '상담 지식, 답변 범위와 사람 연결 기준을 준비합니다.', to: '/guide/studio/knowledge-management'},
+  {number: '03', title: 'Manufacturer 시작', description: '공식 로그인과 안전한 계정 이용 방법을 확인합니다.', to: '/guide/manufacturer/account-access'},
+  {number: '04', title: 'Studio 운영 준비', description: '상담 지식, 답변 범위와 사람 연결 기준을 준비합니다.', to: '/guide/studio/knowledge-management'},
 ];
 
 export default function Home(): ReactNode {
