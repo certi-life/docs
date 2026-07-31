@@ -89,6 +89,19 @@ code, pre, kbd, samp {
   .navbar-cta {display: none;}
 }
 
+@media (max-width: 576px) {
+  .navbar__search:focus-within .navbar__search-input {
+    width: min(45vw, 11rem) !important;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 384px) {
+  .navbar__title {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {scroll-behavior: auto;}
   *, *::before, *::after {transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important;}

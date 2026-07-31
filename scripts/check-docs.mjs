@@ -95,10 +95,49 @@ const banned = [
   /develop\s*(브랜치|branch)/i,
   /내부\s*(로드맵|문서화 계획|운영 지표)/i,
 ];
+
+function stripFrontmatterAndFencedCode(content) {
+  return content
+    .replace(/^---[\s\S]*?---/m, '')
+    .replace(/```[\s\S]*?```/g, '');
+}
+
+function stripValidMarkdownLinks(content) {
+  return content
+    .replace(/!?\[([^\]]*)\]\(https?:\/\/[^)\s]+(?:\s+["'][^"']*["'])?\)/g, '$1')
+    .replace(/<https?:\/\/[^>]+>/g, '');
+}
+
 for (const file of walk(docsRoot).filter((path) => path.endsWith('.mdx'))) {
   const content = readFileSync(file, 'utf8');
   for (const pattern of banned) {
     if (pattern.test(content)) failures.push(`public-content violation ${pattern}: ${relative(root, file)}`);
+  }
+
+  const linkProse = stripFrontmatterAndFencedCode(content);
+  const autolink = linkProse.match(/<https?:\/\/[^>]+>/);
+  if (autolink) {
+    failures.push(`external URL autolink must use descriptive link text (${autolink[0]}): ${relative(root, file)}`);
+  }
+  const urlAsLabel = linkProse.match(/\[\s*https?:\/\/[^\]]+\]\(https?:\/\/[^)\s]+\)/);
+  if (urlAsLabel) {
+    failures.push(`external link text must describe its destination: ${relative(root, file)}`);
+  }
+  const vagueLink = linkProse.match(/\[\s*(?:여기|링크|클릭)\s*\]\(https?:\/\/[^)\s]+\)/);
+  if (vagueLink) {
+    failures.push(`external link text is too vague (${vagueLink[0]}): ${relative(root, file)}`);
+  }
+
+  const prose = stripValidMarkdownLinks(linkProse);
+  const rawUrl = prose.match(/https?:\/\/[^\s)`>]+/);
+  if (rawUrl) {
+    failures.push(`plain-text external URL must be a descriptive link (${rawUrl[0]}): ${relative(root, file)}`);
+  }
+  const copyNavigation = prose.match(
+    /(?:브라우저\s*)?(?:주소창|주소 표시줄)(?:에|으로)[^\n]{0,100}(?:직접\s*)?(?:입력(?:하거나)?|복사|붙여넣기)/,
+  );
+  if (copyNavigation) {
+    failures.push(`replace copy/paste navigation with a direct link: ${relative(root, file)}`);
   }
 }
 
