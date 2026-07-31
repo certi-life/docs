@@ -68,17 +68,17 @@ for (const path of requiredDocs) {
 }
 
 const config = readFileSync(join(root, 'docusaurus.config.ts'), 'utf8');
-if (!config.includes("url: 'https://certi-life.github.io'")) {
-  failures.push('site URL must be https://certi-life.github.io for GitHub Pages');
+if (!config.includes("url: 'https://docs.certi.life'")) {
+  failures.push('site URL must be https://docs.certi.life for the custom-domain deployment');
 }
-if (!config.includes("baseUrl: '/docs/'")) {
-  failures.push("baseUrl must be '/docs/' for the GitHub project page");
+if (!config.includes("baseUrl: '/'")) {
+  failures.push("baseUrl must be '/' when the custom domain serves the site root");
 }
-if (config.includes('docs.certi.life') || config.includes("baseUrl: '/'")) {
-  failures.push('unconfigured custom-domain deployment remains in config');
+if (config.includes('https://certi-life.github.io') || config.includes("baseUrl: '/docs/'")) {
+  failures.push('legacy GitHub project-page deployment remains in config');
 }
 const cnamePath = join(root, 'static', 'CNAME');
-if (existsSync(cnamePath)) failures.push('static/CNAME must be absent until the custom domain is configured');
+if (existsSync(cnamePath)) failures.push('static/CNAME is unnecessary for the GitHub Actions Pages deployment');
 
 function walk(dir) {
   return readdirSync(dir).flatMap((entry) => {
