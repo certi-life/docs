@@ -1,4 +1,8 @@
 {
+  "theme.common.editThisPage": {
+    "message": "이 페이지 개선하기",
+    "description": "현재 문서의 GitHub 편집 화면으로 이동하는 링크"
+  },
   "theme.SearchBar.label": {
     "message": "문서 검색",
     "description": "검색 입력창의 안내 문구"
