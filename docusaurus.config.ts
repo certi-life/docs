@@ -25,6 +25,7 @@ const config: Config = {
         docs: {
           routeBasePath: 'guide',
           sidebarPath: './sidebars.ts',
+          editUrl: 'https://github.com/certi-life/docs/edit/develop/',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },
