@@ -91,6 +91,13 @@ if (readme.includes('커스텀 도메인은 아직 연결하지 않았습니다'
   failures.push('README still says the active custom domain is not connected');
 }
 
+const downloadsGuide = readFileSync(join(docsRoot, 'getting-started', 'downloads.mdx'), 'utf8');
+const requiredDownloadsGuidance =
+  '공식 다운로드 페이지에서 다운로드를 시작했는지 확인합니다. 공식 버튼은 데스크톱 설치 파일용 클라우드 저장소나 Google Play·App Store로 연결될 수 있습니다.';
+if (!downloadsGuide.includes(requiredDownloadsGuidance)) {
+  failures.push('downloads guide must preserve the approved official-source and external-destination guidance');
+}
+
 function walk(dir) {
   return readdirSync(dir).flatMap((entry) => {
     const path = join(dir, entry);
