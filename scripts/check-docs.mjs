@@ -80,6 +80,17 @@ if (config.includes('https://certi-life.github.io') || config.includes("baseUrl:
 const cnamePath = join(root, 'static', 'CNAME');
 if (existsSync(cnamePath)) failures.push('static/CNAME is unnecessary for the GitHub Actions Pages deployment');
 
+const readme = readFileSync(join(root, 'README.md'), 'utf8');
+if (!readme.includes('https://docs.certi.life')) {
+  failures.push('README must name the current https://docs.certi.life deployment');
+}
+if (readme.includes('https://certi-life.github.io/docs/') || readme.includes('http://localhost:3000/docs/')) {
+  failures.push('README still describes the legacy /docs/ deployment path');
+}
+if (readme.includes('커스텀 도메인은 아직 연결하지 않았습니다')) {
+  failures.push('README still says the active custom domain is not connected');
+}
+
 function walk(dir) {
   return readdirSync(dir).flatMap((entry) => {
     const path = join(dir, entry);
