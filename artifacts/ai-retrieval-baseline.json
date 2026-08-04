@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "07ebc93428db88ccff210e8e8c8bf8788077f15d9b34fd2f3556d527b81ed377",
+  "corpusSha256": "250a468151094957c56ad8b1687252bc6ebf1d652f0c485defadda23bae7669c",
   "fixtureSha256": "7104ec2b70a4ae023b94d67f33d754a233501b923d91a33617c4342742009c2e",
   "metrics": {
     "caseCount": 30,
@@ -127,11 +127,11 @@
       "ranked": [
         {
           "id": "getting-started/plans-and-contact",
-          "score": 86.247773
+          "score": 86.487823
         },
         {
           "id": "help/faq",
-          "score": 28.902001
+          "score": 28.942009
         },
         {
           "id": "getting-started/sign-in-directory",
@@ -160,15 +160,15 @@
       "ranked": [
         {
           "id": "getting-started/downloads",
-          "score": 73.972971
+          "score": 73.974584
         },
         {
           "id": "manufacturer/overview",
-          "score": 19.056193
+          "score": 19.128856
         },
         {
           "id": "hospital/overview",
-          "score": 17.21495
+          "score": 17.223024
         }
       ],
       "top1Passed": true,
@@ -259,15 +259,15 @@
       "ranked": [
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 28.203536
+          "score": 28.743648
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 20.466959
+          "score": 20.506967
         },
         {
-          "id": "hospital/overview",
-          "score": 17.658712
+          "id": "products/crm-messaging/message-checklist",
+          "score": 18.017759
         }
       ],
       "top1Passed": true,
@@ -325,15 +325,15 @@
       "ranked": [
         {
           "id": "products/ai-chatbot/handoff-policy",
-          "score": 119.668501
+          "score": 121.506096
         },
         {
           "id": "products/ai-chatbot",
-          "score": 34.186723
+          "score": 34.328719
         },
         {
           "id": "getting-started/plans-and-contact",
-          "score": 29.551387
+          "score": 31.530978
         }
       ],
       "top1Passed": true,
@@ -391,15 +391,15 @@
       "ranked": [
         {
           "id": "products/crm-messaging/message-checklist",
-          "score": 213.258076
+          "score": 213.798188
         },
         {
           "id": "products/certificate/channels",
-          "score": 34.622161
+          "score": 34.662169
         },
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 32.036904
+          "score": 32.577016
         }
       ],
       "top1Passed": true,
@@ -490,11 +490,11 @@
       "ranked": [
         {
           "id": "hospital/overview",
-          "score": 51.739933
+          "score": 51.462037
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 27.696634
+          "score": 29.590183
         },
         {
           "id": "products/certificate",
@@ -523,11 +523,11 @@
       "ranked": [
         {
           "id": "hospital/account-access",
-          "score": 86.940995
+          "score": 87.149724
         },
         {
           "id": "manufacturer/account-access",
-          "score": 31.339415
+          "score": 31.548144
         },
         {
           "id": "hospital/overview",
@@ -589,15 +589,15 @@
       "ranked": [
         {
           "id": "hospital/safe-operation",
-          "score": 88.809943
+          "score": 88.844731
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 44.653825
+          "score": 44.862553
         },
         {
           "id": "hospital/account-access",
-          "score": 35.713796
+          "score": 35.922525
         }
       ],
       "top1Passed": true,
@@ -622,15 +622,15 @@
       "ranked": [
         {
           "id": "manufacturer/overview",
-          "score": 79.06237
+          "score": 79.904786
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 25.893945
+          "score": 25.927563
         },
         {
           "id": "manufacturer/account-access",
-          "score": 25.656917
+          "score": 25.703439
         }
       ],
       "top1Passed": true,
@@ -721,15 +721,15 @@
       "ranked": [
         {
           "id": "studio/overview",
-          "score": 112.589497
+          "score": 112.547427
         },
         {
           "id": "studio/scenario-and-handoff",
-          "score": 103.274688
+          "score": 103.270519
         },
         {
           "id": "studio/launch-checklist",
-          "score": 74.246592
+          "score": 74.242043
         }
       ],
       "top1Passed": true,
@@ -853,7 +853,7 @@
       "ranked": [
         {
           "id": "studio/launch-checklist",
-          "score": 125.756724
+          "score": 123.237561
         },
         {
           "id": "products/ai-chatbot/handoff-policy",
@@ -993,7 +993,7 @@
         },
         {
           "id": "products/ai-chatbot/knowledge-preparation",
-          "score": 19.277074
+          "score": 20.500556
         }
       ],
       "top1Passed": true,

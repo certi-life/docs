@@ -17,9 +17,14 @@
     "markdown:eval:check": "node scripts/evaluate-clean-markdown.mjs --check",
     "ai-eval:generate": "node scripts/ai-retrieval-eval.mjs --write",
     "ai-eval:check": "node scripts/ai-retrieval-eval.mjs --check",
+    "content:audit:generate": "node scripts/content-contract.mjs --write",
+    "content:audit:check": "node scripts/content-contract.mjs --check",
     "test:ai": "node --test scripts/*.test.mjs",
     "docs:check": "node scripts/check-docs.mjs",
     "search:check": "node scripts/check-search.mjs",
+    "structured-data:check": "node scripts/structured-data-check.mjs",
+    "production:fixture-check": "node scripts/verify-production-build.mjs",
+    "production:verify": "node scripts/verify-production.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -31,6 +36,7 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "github-slugger": "2.0.0",
+    "parse5": "7.3.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
