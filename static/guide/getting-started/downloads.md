@@ -1,0 +1,47 @@
+# CertiLife 다운로드
+
+> 기업용 데스크톱 서비스와 환자용 모바일 앱 중 목적과 운영체제에 맞는 다운로드를 선택하는 방법입니다.
+
+[사람이 읽는 원문](https://docs.certi.life/guide/getting-started/downloads)
+
+[공식 다운로드 페이지](https://certi.life/download)에서는 병원·기업 사용자를 위한 데스크톱 서비스와 고객·환자를 위한 모바일 앱을 구분해 제공합니다. 설치 파일은 메신저나 비공식 공유 링크가 아니라 공식 페이지에서 받으세요.
+
+## 어떤 앱이 필요한가요?
+
+| 사용자       | 용도                     | 공개된 다운로드 선택지                                  |
+| --------- | ---------------------- | --------------------------------------------- |
+| 병원·기업 담당자 | AI 상담, CRM 마케팅, 이벤트 관리 | Windows x64, macOS Intel, macOS Apple Silicon |
+| 고객·환자     | 병원 예약, 인증서 확인          | Android Google Play, iOS App Store            |
+
+Hospital 웹 서비스에 접속하려는 경우에는 별도 설치 없이 [병원 관리자 로그인](https://hospital.certi.life/signin)을 이용할 수 있습니다. 제조사 사용자는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio 사용자는 [Studio 로그인](https://studio.certi.life)으로 이동하세요.
+
+## 기업용 서비스 설치 준비
+
+1. 사용 중인 운영체제를 확인합니다.
+2. macOS라면 Apple 메뉴의 시스템 정보에서 **Intel CPU**인지 **Apple Silicon**인지 확인합니다.
+3. [공식 다운로드 페이지](https://certi.life/download)에서 운영체제에 맞는 항목을 선택합니다.
+4. 공식 다운로드 페이지에서 다운로드를 시작했는지 확인합니다. 공식 버튼은 데스크톱 설치 파일용 클라우드 저장소나 Google Play·App Store로 연결될 수 있습니다.
+5. 조직에서 앱 설치 승인이 필요하다면 담당자에게 먼저 확인합니다.
+
+> **계정과 설치 파일을 공유하지 마세요**
+>
+> 설치 파일을 비공식 저장소에 다시 올리거나 계정 비밀번호를 다른 사람에게 전달하지 마세요. 여러 사람이 사용해야 한다면 조직의 계정 운영 기준을 확인하세요.
+
+## 환자용 앱 안내
+
+고객이나 환자에게 앱 설치를 안내할 때는 사용 중인 휴대전화에 맞춰 Google Play 또는 App Store의 공식 링크를 전달하세요. 인증서는 카카오톡 등 전달받은 채널에서 별도 앱 설치 없이 확인할 수 있는 경우도 있으므로, 먼저 전달된 안내를 확인하도록 설명하면 불필요한 설치를 줄일 수 있습니다.
+
+## 설치가 되지 않을 때
+
+- 운영체제와 설치 파일 종류가 일치하는지 확인합니다.
+- 저장 공간과 네트워크 연결을 확인합니다.
+- 회사·병원의 보안 정책이 설치를 차단하는지 담당자에게 문의합니다.
+- 출처를 알 수 없는 설치 파일 대신 공식 페이지에서 다시 내려받습니다.
+- 문제가 계속되면 [문제 해결](https://docs.certi.life/guide/help/troubleshooting)의 확인 항목을 정리해 문의합니다.
+
+## 다음 문서
+
+- [Hospital 계정과 로그인](https://docs.certi.life/guide/hospital/account-access)
+- [Studio 계정과 로그인](https://docs.certi.life/guide/studio/account-access)
+- [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact)
+- [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security)

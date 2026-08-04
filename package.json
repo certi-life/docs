@@ -10,6 +10,14 @@
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
     "ai-discovery:generate": "node scripts/generate-ai-discovery.mjs",
+    "markdown:generate": "node scripts/generate-clean-markdown.mjs --write",
+    "markdown:check": "node scripts/generate-clean-markdown.mjs --check",
+    "markdown:build-check": "node scripts/generate-clean-markdown.mjs --build",
+    "markdown:eval:generate": "node scripts/evaluate-clean-markdown.mjs --write",
+    "markdown:eval:check": "node scripts/evaluate-clean-markdown.mjs --check",
+    "ai-eval:generate": "node scripts/ai-retrieval-eval.mjs --write",
+    "ai-eval:check": "node scripts/ai-retrieval-eval.mjs --check",
+    "test:ai": "node --test scripts/*.test.mjs",
     "docs:check": "node scripts/check-docs.mjs",
     "search:check": "node scripts/check-search.mjs",
     "typecheck": "tsc --noEmit"
@@ -22,10 +30,17 @@
     "@easyops-cn/docusaurus-search-local": "0.55.3",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "github-slugger": "2.0.0",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sax": "1.6.1"
+    "remark-directive": "4.0.0",
+    "remark-gfm": "4.0.1",
+    "remark-mdx": "3.1.1",
+    "remark-parse": "11.0.0",
+    "remark-stringify": "11.0.0",
+    "sax": "1.6.1",
+    "unified": "11.0.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",

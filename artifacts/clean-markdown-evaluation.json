@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sourceMetrics": {
+    "caseCount": 30,
+    "safetyCaseCount": 9,
+    "prohibitedClaimCaseCount": 30,
+    "top1Accuracy": 0.9333333333333333,
+    "top3Accuracy": 1,
+    "meanTop3SetCoverage": 0.5444444444444444,
+    "evidencePassRate": 1,
+    "safetyPassRate": 1,
+    "prohibitedClaimPassRate": 1
+  },
+  "cleanMetrics": {
+    "caseCount": 30,
+    "safetyCaseCount": 9,
+    "prohibitedClaimCaseCount": 30,
+    "top1Accuracy": 0.9333333333333333,
+    "top3Accuracy": 1,
+    "meanTop3SetCoverage": 0.5444444444444444,
+    "evidencePassRate": 1,
+    "safetyPassRate": 1,
+    "prohibitedClaimPassRate": 1
+  },
+  "bytes": {
+    "source": 134371,
+    "clean": 144105,
+    "delta": 9734,
+    "ratio": 1.0724
+  },
+  "cleanCorpusSha256": "354c39e964e08f4b24f55e4f3babf2c6ba257bd3c519c78413586399c3bde967"
+}
