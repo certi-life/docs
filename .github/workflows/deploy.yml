@@ -25,10 +25,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run test:ai
+      - run: npm run markdown:check
+      - run: npm run markdown:eval:check
       - run: npm run docs:check
       - run: npm run ai-eval:check
       - run: npm run typecheck
       - run: npm run build
+      - run: npm run markdown:build-check
       - run: npm run search:check
       - name: Upload GitHub Pages artifact
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'

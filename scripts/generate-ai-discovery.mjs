@@ -66,6 +66,16 @@ export function publicDocUrls() {
   return docsSections.flatMap((section) => section.docs.map(publicDocUrl));
 }
 
+export function cleanMarkdownUrl(id) {
+  const canonical = publicDocUrl(id);
+  if (canonical.endsWith('/')) throw new Error(`clean Markdown endpoint requires a non-directory canonical route: ${id}`);
+  return `${canonical}.md`;
+}
+
+export function cleanMarkdownUrls() {
+  return docsSections.flatMap((section) => section.docs.map(cleanMarkdownUrl));
+}
+
 export function renderRobotsTxt() {
   return [
     '# CertiLife public documentation',
@@ -94,7 +104,7 @@ export function renderLlmsTxt() {
     lines.push('', `## ${section.label}`, '', section.description, '');
     for (const id of section.docs) {
       const {title, description} = parseFrontmatter(id);
-      lines.push(`- [${title}](${publicDocUrl(id)}): ${description}`);
+      lines.push(`- [${title}](${cleanMarkdownUrl(id)}): ${description}`);
     }
   }
 

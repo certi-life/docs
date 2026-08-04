@@ -1,7 +1,9 @@
 import {readFileSync, existsSync, readdirSync, statSync} from 'node:fs';
 import {join, relative} from 'node:path';
 import {requiredDocIds, requiredDocs} from './docs-manifest.mjs';
-import {expectedAiDiscoveryFiles, publicDocUrls} from './generate-ai-discovery.mjs';
+import {cleanMarkdownUrls, expectedAiDiscoveryFiles} from './generate-ai-discovery.mjs';
+import {verifyCleanMarkdownArtifacts} from './clean-markdown.mjs';
+import {projectCleanMarkdownArtifacts} from './generate-clean-markdown.mjs';
 import {readDocusaurusPublicConfig} from './read-docusaurus-config.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -11,6 +13,12 @@ const actionableDocs = requiredDocs.filter((path) =>
   path.includes('/') && !path.endsWith('overview.mdx') && !path.endsWith('quick-tour.mdx'),
 );
 const failures = [];
+
+try {
+  verifyCleanMarkdownArtifacts(root, projectCleanMarkdownArtifacts(root));
+} catch (error) {
+  failures.push(error instanceof Error ? error.message : String(error));
+}
 
 for (const path of requiredDocs) {
   const absolute = join(docsRoot, path);
@@ -100,7 +108,7 @@ if (existsSync(llmsPath)) {
   const listedDocUrls = [...llms.matchAll(/^- \[[^\]]+\]\((https:\/\/docs\.certi\.life\/[^)]+)\):/gm)]
     .map((match) => match[1])
     .filter((url) => url !== 'https://docs.certi.life/' && !url.endsWith('/sitemap.xml'));
-  const expectedUrls = publicDocUrls();
+  const expectedUrls = cleanMarkdownUrls();
   const expectedUrlSet = new Set(expectedUrls);
   const actualUrlSet = new Set(listedDocUrls);
   if (listedDocUrls.length !== expectedUrls.length || actualUrlSet.size !== expectedUrls.length) {
