@@ -1,0 +1,7 @@
+# CertiLife public documentation
+# LLM-readable documentation index: https://docs.certi.life/llms.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.certi.life/sitemap.xml
