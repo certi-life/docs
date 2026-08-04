@@ -10,6 +10,9 @@
     "clear": "docusaurus clear",
     "deploy": "docusaurus deploy",
     "ai-discovery:generate": "node scripts/generate-ai-discovery.mjs",
+    "ai-eval:generate": "node scripts/ai-retrieval-eval.mjs --write",
+    "ai-eval:check": "node scripts/ai-retrieval-eval.mjs --check",
+    "test:ai": "node --test scripts/*.test.mjs",
     "docs:check": "node scripts/check-docs.mjs",
     "search:check": "node scripts/check-search.mjs",
     "typecheck": "tsc --noEmit"

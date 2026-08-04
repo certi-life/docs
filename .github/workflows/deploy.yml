@@ -4,7 +4,7 @@ on:
   push:
     branches: [main, develop]
   pull_request:
-    branches: [main]
+    branches: [main, develop]
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,9 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run test:ai
       - run: npm run docs:check
+      - run: npm run ai-eval:check
       - run: npm run typecheck
       - run: npm run build
       - run: npm run search:check
