@@ -1,0 +1,87 @@
+# 용어집
+
+> CertiLife 공개 문서에서 사용하는 서비스와 개인정보·운영 관련 용어를 설명합니다.
+
+[사람이 읽는 원문](https://docs.certi.life/guide/help/glossary)
+
+이 용어집은 CertiLife 공개 가이드를 읽을 때 필요한 표현을 이해하기 위한 안내입니다. 실제 이용 범위와 세부 설정은 조직마다 다를 수 있습니다. 공개 문서에서 확인되지 않은 제품 화면, 권한 구조 또는 처리 절차를 용어 정의만으로 추측하지 마세요.
+
+## 서비스 용어
+
+### CertiLife
+
+메디컬 인증서를 기반으로 병원과 고객의 관계를 이어 주는 고객관리 플랫폼입니다. 공개 서비스는 인증서, AI 상담, CRM 메시징, 이벤트 마케팅입니다. 전체 흐름은 [5분 둘러보기](https://docs.certi.life/guide/getting-started/quick-tour)를 참고하세요.
+
+### 인증서
+
+시술 또는 제품 관련 정보를 고객이 확인하기 쉬운 형태로 전달하는 CertiLife 서비스입니다. 의료기관의 진단서나 법적 증명서와 같은 다른 문서를 뜻한다고 임의로 해석하지 말고, 이 문서 사이트에서는 CertiLife의 [인증서 서비스](https://docs.certi.life/guide/products/certificate)를 가리키는 표현으로 이해합니다.
+
+### AI 상담
+
+반복되는 일반적인 채팅 문의 대응을 지원하는 서비스입니다. 의료진의 진단, 의학적 판단 또는 치료 결정을 대신하지 않습니다. 자세한 범위는 [AI 상담 소개](https://docs.certi.life/guide/products/ai-chatbot)를 확인하세요.
+
+### CRM
+
+Customer Relationship Management의 약자로, 고객과의 관계를 관리하는 활동이나 체계를 뜻합니다. CertiLife 공개 문서에서는 고객에게 필요한 안내와 메시지를 전달하는 [CRM 메시징](https://docs.certi.life/guide/products/crm-messaging)의 맥락에서 주로 사용합니다.
+
+### CRM 메시징
+
+고객에게 필요한 안내와 메시지를 전달해 관계 유지를 돕는 서비스입니다. 수신 대상, 메시지 내용, 개인정보 사용이 적절한지 확인해야 합니다.
+
+### 이벤트 마케팅
+
+이벤트를 통해 고객 경험과 병원 브랜드의 접점을 넓히는 서비스입니다. 서비스 개요는 [이벤트 마케팅 소개](https://docs.certi.life/guide/products/event-marketing)에서 확인할 수 있습니다.
+
+### Hospital
+
+병원 사용자를 위한 CertiLife 서비스 진입점입니다. 공개 안내는 [Hospital 안내](https://docs.certi.life/guide/hospital/overview), 공식 접속 주소는 [Hospital 로그인](https://hospital.certi.life/signin)입니다. Hospital에서 보이는 기능은 조직의 이용 범위와 계정에 따라 다를 수 있습니다.
+
+### Manufacturer
+
+제조사 사용자를 위한 CertiLife 서비스 진입점입니다. 공개 안내는 [Manufacturer 안내](https://docs.certi.life/guide/manufacturer/overview), 공식 접속 주소는 [Manufacturer 로그인](https://manufacturer.certi.life/signin)입니다. 로그인 이후 공개되지 않은 메뉴나 권한별 기능은 이 용어 정의만으로 추측하지 않습니다.
+
+### Studio
+
+Studio 사용자를 위한 CertiLife 서비스 진입점입니다. 공개 안내는 [Studio 안내](https://docs.certi.life/guide/studio/overview), 공식 접속 주소는 [Studio 로그인](https://studio.certi.life)입니다. 공개 문서에 없는 화면별 절차는 추측하지 않습니다.
+
+## 이용과 지원 용어
+
+### 계정
+
+서비스에서 사용자를 식별하기 위한 로그인 수단입니다. 본인에게 발급된 계정만 사용하고 다른 사람과 로그인 정보를 공유하지 않아야 합니다. 공개 도움말은 계정 생성이나 권한 변경을 처리하지 않습니다.
+
+### 권한
+
+계정이 서비스에서 볼 수 있거나 수행할 수 있는 범위를 뜻합니다. 조직과 계정에 따라 범위가 다를 수 있으며, 공개 문서만으로 본인의 권한을 단정할 수 없습니다.
+
+### 공식 주소
+
+CertiLife가 공개한 접속 주소를 뜻합니다. 이 가이드에서 안내하는 주요 주소는 [Hospital 로그인](https://hospital.certi.life/signin), [Manufacturer 로그인](https://manufacturer.certi.life/signin), [Studio 로그인](https://studio.certi.life), [다운로드](https://certi.life/download), [가격 안내](https://certi.life/pricing), [도입 문의](https://certi.life/contact)입니다.
+
+### 도입 문의
+
+서비스 적용 범위나 이용을 상담하기 위한 공개 문의 경로입니다. [CertiLife 도입 문의](https://certi.life/contact)를 이용하며, 비밀번호·인증 코드·고객·환자 개인정보를 문의 내용에 포함하지 않습니다.
+
+## 개인정보와 안전 용어
+
+### 개인정보
+
+이름, 연락처, 이메일처럼 특정 개인을 알아볼 수 있거나 다른 정보와 결합해 알아볼 수 있는 정보를 말합니다. 병원 업무에서는 진료·시술 관련 정보나 이미지 등 특히 주의해야 할 정보가 포함될 수 있습니다. 실제 처리 기준은 최신 공식 정책과 조직의 안내를 확인하세요.
+
+### 가상 데이터
+
+실제 고객·환자·직원의 정보를 바꾸어 만든 것이 아니라, 처음부터 특정 개인과 관련 없이 만든 예시 정보입니다. 공개 가이드와 테스트에는 실제 개인정보를 일부 수정한 자료 대신 완전한 가상 데이터를 사용해야 합니다.
+
+### 개인정보 제거
+
+공유할 문서나 이미지에서 불필요한 식별 정보를 삭제하고 최종 파일에 남아 있지 않은지 확인하는 과정입니다. 단순한 흐림이나 반투명 가리기는 복원 또는 식별 가능성이 있으므로 [개인정보 제거 체크리스트](https://docs.certi.life/guide/help/privacy-security)를 따르세요.
+
+### 인증 코드
+
+로그인 또는 본인 확인 과정에서 일시적으로 사용하는 값을 뜻합니다. 다른 사람에게 전달하거나 지원 문의에 첨부하면 안 됩니다. 확인되지 않은 사람이 인증 코드를 요구하면 제공하지 마세요.
+
+### 의료적 판단
+
+건강 상태, 진단, 치료 등 의료진의 전문적 판단이 필요한 결정을 뜻합니다. CertiLife의 AI 상담은 이를 대신하지 않습니다. 관련 질문은 적절한 의료진 확인으로 이어져야 합니다.
+
+용어를 확인한 뒤 읽을 문서가 아직 불분명하다면 [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요.

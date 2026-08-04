@@ -1,0 +1,49 @@
+# 자주 묻는 질문
+
+> CertiLife 서비스, 접속, 다운로드, 개인정보 보호에 관한 자주 묻는 질문입니다.
+
+[사람이 읽는 원문](https://docs.certi.life/guide/help/faq)
+
+## CertiLife는 어떤 서비스인가요?
+
+CertiLife는 메디컬 인증서를 기반으로 인증서, AI 상담, CRM 메시징, 이벤트 마케팅을 제공하는 고객관리 플랫폼입니다. 네 서비스의 개요는 [5분 둘러보기](https://docs.certi.life/guide/getting-started/quick-tour)에서 확인할 수 있습니다. 조직마다 실제 이용 서비스와 설정은 다를 수 있으므로 공개 소개만으로 계약 범위나 사용 권한을 단정하지 마세요.
+
+## 어떤 문서부터 읽어야 하나요?
+
+처음 방문했다면 [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원 사용자는 [Hospital 안내](https://docs.certi.life/guide/hospital/overview), 제조사 사용자는 [Manufacturer 안내](https://docs.certi.life/guide/manufacturer/overview), Studio 사용자는 [Studio 안내](https://docs.certi.life/guide/studio/overview), 도입 검토 담당자는 [가격 안내](https://certi.life/pricing)와 [도입 문의](https://certi.life/contact)에서 시작하는 것이 좋습니다.
+
+## Hospital, Manufacturer와 Studio는 어디에서 접속하나요?
+
+병원용 서비스는 [Hospital 로그인](https://hospital.certi.life/signin), 제조사용 서비스는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio는 [Studio 로그인](https://studio.certi.life)을 이용하세요. 주소 표시줄의 도메인이 정확한지 확인한 후 로그인 정보를 입력해야 합니다. 로그인 페이지가 열리지 않거나 인증이 반복되면 [문제 해결](https://docs.certi.life/guide/help/troubleshooting)의 공개 로그인 점검 순서를 확인하세요.
+
+## 로그인 정보나 권한을 이 문서에서 받을 수 있나요?
+
+아닙니다. 공개 도움말은 계정 생성, 비밀번호 확인, 권한 부여를 처리하지 않습니다. 본인 계정만 사용하고 로그인 정보를 다른 사람과 공유하지 마세요. 계정 또는 이용 범위가 확인되지 않으면 조직의 CertiLife 담당자나 [도입 문의](https://certi.life/contact)를 이용하세요. 비밀번호, 인증 코드, 고객·환자 개인정보는 문의 내용이나 첨부 이미지에 포함하지 않습니다.
+
+## 공식 다운로드는 어디에서 하나요?
+
+[CertiLife 다운로드](https://certi.life/download)를 이용하세요. 메신저, 이메일 또는 검색 결과에서 받은 설치 파일은 공식 페이지에서 제공되는 항목인지 먼저 확인해야 합니다. 이 문서는 특정 운영체제의 설치 화면이나 버튼 위치를 추측해 안내하지 않습니다.
+
+## 가격과 도입 범위는 어디에서 확인하나요?
+
+공개 가격 정보는 [가격 안내](https://certi.life/pricing)에서 확인할 수 있습니다. 조직에 적용되는 구체적인 서비스 범위나 조건은 [도입 문의](https://certi.life/contact)를 통해 확인하세요.
+
+## AI 상담이 의료진을 대신하나요?
+
+아닙니다. AI 상담은 일반적인 안내와 반복 문의 대응을 돕는 용도이며 의료진의 진단, 의학적 판단 또는 치료 결정을 대신하지 않습니다. 의학적 판단이 필요한 질문은 적절한 의료진 확인으로 이어져야 합니다. AI 답변만으로 건강 관련 결정을 내리도록 안내해서는 안 됩니다.
+
+## 실제 고객 정보를 예시나 테스트에 사용해도 되나요?
+
+안 됩니다. 공개 가이드, 교육 자료, 테스트 데이터에는 실제 고객·환자의 이름, 연락처, 이메일, 생년월일, 진료·시술 관련 정보, 이미지 등 식별 가능한 정보를 넣지 마세요. 완전한 가상 데이터를 사용하고, 지원 요청 전에 [개인정보 제거 체크리스트](https://docs.certi.life/guide/help/privacy-security)를 확인하세요.
+
+## 화면 캡처를 첨부해 도움을 요청해도 되나요?
+
+문제 설명에 꼭 필요한 경우에만 사용하고, 먼저 고객·환자·직원 식별 정보와 로그인 정보, 인증 코드, 내부 주소가 보이지 않도록 자르거나 가리세요. 가린 정보가 파일명, 브라우저 탭, 알림, 이미지 배경에 남아 있지 않은지도 확인해야 합니다. 가능하면 개인정보가 없는 오류 문구와 발생 시각, 사용한 공식 접속 주소를 텍스트로 설명하세요.
+
+## 공개 문서와 실제 화면이 다르면 어떻게 하나요?
+
+확인되지 않은 메뉴나 버튼을 추측해 조작하지 마세요. 먼저 공식 주소인지 확인하고 페이지를 새로 연 뒤에도 차이가 계속되면 조직의 담당자 또는 [도입 문의](https://certi.life/contact)에 문의하세요. 문의 시 실제 개인정보를 제거하고, 문제가 발생한 서비스(Hospital, Manufacturer 또는 Studio), 대략적인 발생 시각, 브라우저 종류, 표시된 오류 문구를 전달하면 상황 파악에 도움이 됩니다.
+
+## 더 알아두어야 할 보안 원칙은 무엇인가요?
+
+로그인 정보는 공유하지 않고, 업무에 필요하지 않은 개인정보는 입력·다운로드하지 않으며, 화면 공유와 문의 첨부 전에는 식별 정보를 제거합니다. 자세한 내용은 [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security)을 확인하세요.

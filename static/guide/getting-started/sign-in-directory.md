@@ -1,0 +1,62 @@
+# 로그인·서비스 바로가기
+
+> Hospital, 제조사 관리자, Studio와 공식 다운로드 페이지 중 내 역할에 맞는 접속 경로를 찾습니다.
+
+[사람이 읽는 원문](https://docs.certi.life/guide/getting-started/sign-in-directory)
+
+CertiLife는 사용자 역할과 서비스에 따라 접속 화면이 다릅니다. 검색 결과나 전달받은 비공식 링크 대신 아래 공식 주소를 사용하세요.
+
+## 역할별 접속 경로
+
+| 사용자            | 공식 경로                                              | 공개 화면에서 확인할 수 있는 항목                   |
+| -------------- | -------------------------------------------------- | ------------------------------------- |
+| 병원 관리자         | [Hospital 로그인](https://hospital.certi.life/signin) | 관리자 아이디, 비밀번호, 회원가입, 아이디 찾기, 비밀번호 재설정 |
+| 제조사 관리자        | [제조사 로그인](https://manufacturer.certi.life/signin)  | ID, 비밀번호, 가입·제휴 문의                    |
+| AI 상담 운영자      | [Studio 로그인](https://studio.certi.life)            | Username, Password, 로그인               |
+| 데스크톱·모바일 앱 사용자 | [공식 다운로드](https://certi.life/download)             | Windows, macOS, Android, iOS 선택지      |
+| 도입 전 사용자       | [도입 문의](https://certi.life/contact)                | 서비스 도입 상담 신청                          |
+
+## Hospital에 접속할 때
+
+1. 주소가 `hospital.certi.life/signin`인지 확인합니다.
+2. 병원 관리자 아이디와 비밀번호를 입력합니다.
+3. 계정이 없다면 로그인 화면의 **회원가입**을 선택합니다.
+4. 아이디를 잊었다면 **아이디 찾기**, 비밀번호를 잊었다면 **비밀번호 재설정**을 선택합니다.
+5. 계정 생성이나 제휴 관련 문의는 화면의 **제휴 문의**를 이용합니다.
+
+자세한 내용은 [Hospital 계정과 로그인](https://docs.certi.life/guide/hospital/account-access)을 확인하세요.
+
+## 제조사 관리자 화면에 접속할 때
+
+1. 주소가 `manufacturer.certi.life/signin`인지 확인합니다.
+2. 제조사 관리자 ID와 비밀번호를 입력합니다.
+3. 계정 또는 제휴 안내가 필요하면 화면의 **가입·제휴 문의**를 이용합니다.
+
+제조사 계정을 병원 계정이나 Studio 계정과 혼동하지 마세요. 동일한 담당자라도 역할에 따라 별도 계정이 필요할 수 있으므로, 확인되지 않은 계정 정보를 반복 입력하기보다 조직 담당자에게 먼저 문의하세요. 자세한 내용은 [Manufacturer 계정 접속](https://docs.certi.life/guide/manufacturer/account-access)을 확인하세요.
+
+## Studio에 접속할 때
+
+1. 주소가 `studio.certi.life`인지 확인합니다.
+2. 발급받은 Username과 Password를 입력합니다.
+3. 로그인 정보가 없거나 작동하지 않으면 비밀번호를 공유받지 말고 조직의 CertiLife 담당자에게 계정 상태를 확인합니다.
+
+자세한 운영 준비는 [Studio 계정과 로그인](https://docs.certi.life/guide/studio/account-access)과 [지식 관리](https://docs.certi.life/guide/studio/knowledge-management)를 확인하세요.
+
+> **계정 정보를 보호하세요**
+>
+> 비밀번호, 일회용 인증 정보, 고객·환자 정보가 포함된 화면을 메신저나 공개 문서에 올리지 마세요. 도움을 요청할 때는 서비스 이름, 발생 시각, 오류 문구처럼 재현에 필요한 최소 정보만 전달하세요.
+
+## 접속이 되지 않을 때
+
+- 주소의 도메인 철자를 확인합니다.
+- Caps Lock과 키보드 입력 언어를 확인합니다.
+- 계정 종류가 접속하려는 서비스와 일치하는지 확인합니다.
+- 비밀번호를 여러 차례 추측해 입력하지 말고 공개된 복구 기능이나 조직 담당자를 이용합니다.
+- 브라우저를 새로 열거나 네트워크 연결을 확인합니다.
+- 해결되지 않으면 [문제 해결](https://docs.certi.life/guide/help/troubleshooting)의 점검 항목을 따라 정보를 정리합니다.
+
+## 다음 문서
+
+- [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide)
+- [CertiLife 다운로드](https://docs.certi.life/guide/getting-started/downloads)
+- [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security)
