@@ -1,5 +1,7 @@
 import {existsSync, readFileSync, readdirSync} from 'node:fs';
 import {join, relative} from 'node:path';
+import sax from 'sax';
+import {publicDocUrls} from './generate-ai-discovery.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const buildRoot = join(root, 'build');
@@ -60,6 +62,87 @@ if (!existsSync(searchPageWrapperPath)) {
 
 if (!existsSync(buildRoot)) {
   failures.push('production build is missing; run npm run build first');
+} else {
+  for (const name of ['robots.txt', 'llms.txt']) {
+    const builtPath = join(buildRoot, name);
+    const staticPath = join(root, 'static', name);
+    if (
+      !existsSync(staticPath) ||
+      !existsSync(builtPath) ||
+      !readFileSync(builtPath).equals(readFileSync(staticPath))
+    ) {
+      failures.push(`production build must contain the exact static/${name}`);
+    }
+  }
+
+  const sitemapPath = join(buildRoot, 'sitemap.xml');
+  if (!existsSync(sitemapPath)) {
+    failures.push('production sitemap.xml is missing');
+  } else {
+    const sitemap = readFileSync(sitemapPath, 'utf8');
+    let sitemapUrls = [];
+    try {
+      const parser = sax.parser(true, {trim: false, normalize: false});
+      parser.onerror = (error) => {
+        throw error;
+      };
+      const stack = [];
+      let currentLoc;
+      let urlLocCount;
+      parser.onopentag = ({name}) => {
+        const parent = stack.at(-1);
+        stack.push(name);
+        if (stack.length === 1 && name !== 'urlset') throw new Error('root element must be urlset');
+        if (name === 'url') {
+          if (parent !== 'urlset') throw new Error('url must be a direct child of urlset');
+          urlLocCount = 0;
+        }
+        if (name === 'loc') {
+          if (parent !== 'url') throw new Error('loc must be a direct child of url');
+          urlLocCount += 1;
+          currentLoc = '';
+        }
+      };
+      parser.ontext = (text) => {
+        if (stack.at(-1) === 'loc') currentLoc += text;
+      };
+      parser.oncdata = parser.ontext;
+      parser.onclosetag = (name) => {
+        if (name === 'loc') {
+          const url = currentLoc.trim();
+          if (!url) throw new Error('loc must not be empty');
+          sitemapUrls.push(url);
+          currentLoc = undefined;
+        }
+        if (name === 'url' && urlLocCount !== 1) {
+          throw new Error(`each url must contain exactly one loc (found ${urlLocCount})`);
+        }
+        stack.pop();
+      };
+      parser.write(sitemap).close();
+      if (sitemapUrls.length === 0) throw new Error('urlset contains no url entries');
+    } catch (error) {
+      failures.push(`production sitemap.xml is invalid XML: ${error.message}`);
+      sitemapUrls = [];
+    }
+    const sitemapCounts = new Map();
+    for (const url of sitemapUrls) sitemapCounts.set(url, (sitemapCounts.get(url) ?? 0) + 1);
+    for (const [url, count] of sitemapCounts) {
+      if (count !== 1) failures.push(`sitemap URL must appear exactly once (${count}): ${url}`);
+    }
+    const expectedUrls = publicDocUrls();
+    const expectedUrlSet = new Set(expectedUrls);
+    for (const url of expectedUrls) {
+      const count = sitemapCounts.get(url) ?? 0;
+      if (count !== 1) failures.push(`sitemap must contain AI discovery URL exactly once (${count}): ${url}`);
+    }
+    const docsUrlPrefix = new URL('.', expectedUrls[0]).href;
+    for (const url of sitemapUrls) {
+      if (url.startsWith(docsUrlPrefix) && !expectedUrlSet.has(url)) {
+        failures.push(`sitemap contains an unmanifested guide URL: ${url}`);
+      }
+    }
+  }
 }
 
 const indexFiles = existsSync(buildRoot)

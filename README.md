@@ -23,6 +23,18 @@ npm run search:check
 npm run serve
 ```
 
+## AI·검색엔진 탐색 파일
+
+공개 문서 목록과 각 문서의 front matter를 기준으로 `static/robots.txt`와 `static/llms.txt`를 생성합니다.
+문서 구조나 설명을 바꾼 뒤에는 다음 명령을 실행하고 생성 결과를 함께 커밋합니다.
+
+```bash
+npm run ai-discovery:generate
+npm run docs:check
+```
+
+`docs:check`는 두 파일의 최신 상태, 34개 공개 가이드의 정확한 1회 수록, 운영 도메인과 sitemap, 내부 식별자 노출 여부를 검사합니다.
+
 ## 콘텐츠 원칙
 
 - 공개 홈페이지 또는 승인된 자료만 근거로 사용합니다.

@@ -1,45 +1,11 @@
 import {readFileSync, existsSync, readdirSync, statSync} from 'node:fs';
 import {join, relative} from 'node:path';
-import ts from 'typescript';
+import {requiredDocIds, requiredDocs} from './docs-manifest.mjs';
+import {expectedAiDiscoveryFiles, publicDocUrls} from './generate-ai-discovery.mjs';
+import {readDocusaurusPublicConfig} from './read-docusaurus-config.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
 const docsRoot = join(root, 'docs');
-const requiredDocs = [
-  'intro.mdx',
-  'getting-started/quick-tour.mdx',
-  'getting-started/choose-guide.mdx',
-  'getting-started/plans-and-contact.mdx',
-  'getting-started/downloads.mdx',
-  'getting-started/sign-in-directory.mdx',
-  'products/certificate.mdx',
-  'products/certificate/channels.mdx',
-  'products/certificate/delivery-checklist.mdx',
-  'products/ai-chatbot.mdx',
-  'products/ai-chatbot/knowledge-preparation.mdx',
-  'products/ai-chatbot/handoff-policy.mdx',
-  'products/crm-messaging.mdx',
-  'products/crm-messaging/segment-planning.mdx',
-  'products/crm-messaging/message-checklist.mdx',
-  'products/event-marketing.mdx',
-  'products/event-marketing/campaign-planning.mdx',
-  'products/event-marketing/performance-review.mdx',
-  'hospital/overview.mdx',
-  'hospital/account-access.mdx',
-  'hospital/certificate-workflow.mdx',
-  'hospital/safe-operation.mdx',
-  'manufacturer/overview.mdx',
-  'manufacturer/account-access.mdx',
-  'manufacturer/safe-operation.mdx',
-  'studio/overview.mdx',
-  'studio/account-access.mdx',
-  'studio/knowledge-management.mdx',
-  'studio/scenario-and-handoff.mdx',
-  'studio/launch-checklist.mdx',
-  'help/faq.mdx',
-  'help/privacy-security.mdx',
-  'help/troubleshooting.mdx',
-  'help/glossary.mdx',
-];
 
 const actionableDocs = requiredDocs.filter((path) =>
   path.includes('/') && !path.endsWith('overview.mdx') && !path.endsWith('quick-tour.mdx'),
@@ -63,96 +29,33 @@ for (const path of requiredDocs) {
 }
 
 const sidebar = readFileSync(join(root, 'sidebars.ts'), 'utf8');
-for (const path of requiredDocs) {
-  const id = path.replace(/\.mdx$/, '');
+for (const id of requiredDocIds) {
   if (!sidebar.includes(`'${id}'`)) failures.push(`sidebar missing: ${id}`);
 }
 
-const config = readFileSync(join(root, 'docusaurus.config.ts'), 'utf8');
-const configSource = ts.createSourceFile('docusaurus.config.ts', config, ts.ScriptTarget.Latest, true, ts.ScriptKind.TS);
-
-function unwrapExpression(expression) {
-  while (
-    ts.isParenthesizedExpression(expression) ||
-    ts.isAsExpression(expression) ||
-    ts.isSatisfiesExpression(expression) ||
-    ts.isTypeAssertionExpression(expression)
-  ) {
-    expression = expression.expression;
-  }
-  return expression;
-}
-
-function findUniqueProperty(object, name) {
-  let match;
-  for (const property of object.properties) {
-    if (ts.isSpreadAssignment(property) || ts.isComputedPropertyName(property.name)) return undefined;
-    if (
-      (ts.isIdentifier(property.name) || ts.isStringLiteral(property.name)) &&
-      property.name.text === name
-    ) {
-      if (match || !ts.isPropertyAssignment(property)) return undefined;
-      match = property;
-    }
-  }
-  return match;
-}
-
-function findExportedConfigObject(sourceFile) {
-  const exportDefault = sourceFile.statements.find(
-    (statement) => ts.isExportAssignment(statement) && !statement.isExportEquals,
-  );
-  if (!exportDefault) return undefined;
-
-  let expression = unwrapExpression(exportDefault.expression);
-  if (ts.isIdentifier(expression)) {
-    const declaration = sourceFile.statements
-      .filter(ts.isVariableStatement)
-      .flatMap((statement) => statement.declarationList.declarations)
-      .find((candidate) => ts.isIdentifier(candidate.name) && candidate.name.text === expression.text);
-    if (!declaration?.initializer) return undefined;
-    expression = unwrapExpression(declaration.initializer);
-  }
-  return ts.isObjectLiteralExpression(expression) ? expression : undefined;
-}
-
-function getClassicDocsEditUrl(sourceFile) {
-  const configObject = findExportedConfigObject(sourceFile);
-  const presetsProperty = configObject && findUniqueProperty(configObject, 'presets');
-  const presets = presetsProperty && unwrapExpression(presetsProperty.initializer);
-  if (!presets || !ts.isArrayLiteralExpression(presets)) return undefined;
-
-  const classicPresets = presets.elements.filter((element) => {
-    if (ts.isSpreadElement(element)) return false;
-    const preset = unwrapExpression(element);
-    if (!ts.isArrayLiteralExpression(preset) || preset.elements.length === 0) return false;
-    const presetName = unwrapExpression(preset.elements[0]);
-    return ts.isStringLiteral(presetName) && presetName.text === 'classic';
-  });
-  if (presets.elements.some(ts.isSpreadElement) || classicPresets.length !== 1) return undefined;
-
-  const preset = unwrapExpression(classicPresets[0]);
-  if (preset.elements.length < 2) return undefined;
-  const options = unwrapExpression(preset.elements[1]);
-  if (!ts.isObjectLiteralExpression(options)) return undefined;
-  const docsProperty = findUniqueProperty(options, 'docs');
-  const docs = docsProperty && unwrapExpression(docsProperty.initializer);
-  if (!docs || !ts.isObjectLiteralExpression(docs)) return undefined;
-  const editUrlProperty = findUniqueProperty(docs, 'editUrl');
-  const editUrl = editUrlProperty && unwrapExpression(editUrlProperty.initializer);
-  return editUrl && ts.isStringLiteral(editUrl) ? editUrl.text : undefined;
-}
-
-if (!config.includes("url: 'https://docs.certi.life'")) {
+const publicConfig = readDocusaurusPublicConfig(root);
+if (publicConfig.url !== 'https://docs.certi.life') {
   failures.push('site URL must be https://docs.certi.life for the custom-domain deployment');
 }
-if (!config.includes("baseUrl: '/'")) {
+if (publicConfig.baseUrl !== '/') {
   failures.push("baseUrl must be '/' when the custom domain serves the site root");
 }
-if (config.includes('https://certi-life.github.io') || config.includes("baseUrl: '/docs/'")) {
+if (publicConfig.trailingSlash !== false) {
+  failures.push('trailingSlash must remain false so generated canonical URLs match Docusaurus');
+}
+if (publicConfig.docsRouteBasePath !== 'guide') {
+  failures.push("classic docs routeBasePath must be 'guide'");
+}
+if (!publicConfig.sitemapEnabled) {
+  failures.push('classic preset sitemap configuration must remain enabled');
+}
+if (
+  publicConfig.source.includes('https://certi-life.github.io') ||
+  publicConfig.source.includes("baseUrl: '/docs/'")
+) {
   failures.push('legacy GitHub project-page deployment remains in config');
 }
-if (getClassicDocsEditUrl(configSource) !== 'https://github.com/certi-life/docs/edit/develop/') {
+if (publicConfig.editUrl !== 'https://github.com/certi-life/docs/edit/develop/') {
   failures.push('docs must expose per-page GitHub edit links against the develop branch');
 }
 const koreanTranslations = JSON.parse(readFileSync(join(root, 'i18n', 'ko', 'code.json'), 'utf8'));
@@ -161,6 +64,55 @@ if (koreanTranslations['theme.common.editThisPage']?.message !== '이 페이지 
 }
 const cnamePath = join(root, 'static', 'CNAME');
 if (existsSync(cnamePath)) failures.push('static/CNAME is unnecessary for the GitHub Actions Pages deployment');
+
+for (const [name, expected] of expectedAiDiscoveryFiles()) {
+  const path = join(root, 'static', name);
+  if (!existsSync(path)) {
+    failures.push(`missing AI discovery file: static/${name}`);
+    continue;
+  }
+  const actual = readFileSync(path, 'utf8');
+  if (actual !== expected) {
+    failures.push(`stale AI discovery file: static/${name}; run npm run ai-discovery:generate`);
+  }
+  if (/WORK-\d+|plane\.certi|127\.0\.0\.1|localhost|api[_-]?key|secret[_-]?key/i.test(actual)) {
+    failures.push(`internal or secret-like content in static/${name}`);
+  }
+}
+
+const robotsPath = join(root, 'static', 'robots.txt');
+if (existsSync(robotsPath)) {
+  const robots = readFileSync(robotsPath, 'utf8');
+  if (!/^User-agent: \*$/m.test(robots) || !/^Allow: \/$/m.test(robots)) {
+    failures.push('robots.txt must explicitly allow public documentation crawling');
+  }
+  if (!/^Sitemap: https:\/\/docs\.certi\.life\/sitemap\.xml$/m.test(robots)) {
+    failures.push('robots.txt must name the production sitemap');
+  }
+}
+
+const llmsPath = join(root, 'static', 'llms.txt');
+if (existsSync(llmsPath)) {
+  const llms = readFileSync(llmsPath, 'utf8');
+  if (!/^# CertiLife Docs$/m.test(llms) || !/^> .+$/m.test(llms)) {
+    failures.push('llms.txt must include the standard H1 and blockquote summary');
+  }
+  const listedDocUrls = [...llms.matchAll(/^- \[[^\]]+\]\((https:\/\/docs\.certi\.life\/[^)]+)\):/gm)]
+    .map((match) => match[1])
+    .filter((url) => url !== 'https://docs.certi.life/' && !url.endsWith('/sitemap.xml'));
+  const expectedUrls = publicDocUrls();
+  const expectedUrlSet = new Set(expectedUrls);
+  const actualUrlSet = new Set(listedDocUrls);
+  if (listedDocUrls.length !== expectedUrls.length || actualUrlSet.size !== expectedUrls.length) {
+    failures.push(`llms.txt guide coverage must contain ${expectedUrls.length} unique links (found ${listedDocUrls.length}/${actualUrlSet.size})`);
+  }
+  for (const url of expectedUrls) {
+    if (!actualUrlSet.has(url)) failures.push(`llms.txt missing guide URL: ${url}`);
+  }
+  for (const url of actualUrlSet) {
+    if (!expectedUrlSet.has(url)) failures.push(`llms.txt contains unknown guide URL: ${url}`);
+  }
+}
 
 const readme = readFileSync(join(root, 'README.md'), 'utf8');
 if (!readme.includes('https://docs.certi.life')) {
@@ -185,6 +137,17 @@ function walk(dir) {
     const path = join(dir, entry);
     return statSync(path).isDirectory() ? walk(path) : [path];
   });
+}
+
+const discoveredDocs = walk(docsRoot)
+  .filter((path) => path.endsWith('.mdx'))
+  .map((path) => relative(docsRoot, path));
+const requiredDocSet = new Set(requiredDocs);
+for (const path of discoveredDocs) {
+  if (!requiredDocSet.has(path)) failures.push(`AI discovery manifest missing public document: ${path}`);
+}
+if (discoveredDocs.length !== requiredDocs.length) {
+  failures.push(`AI discovery manifest coverage mismatch: ${requiredDocs.length} listed, ${discoveredDocs.length} discovered`);
 }
 
 const banned = [

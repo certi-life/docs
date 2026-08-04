@@ -1,0 +1,97 @@
+# CertiLife Docs
+
+> 디지털 인증서부터 등록 자료 기반 AI 상담, CRM 메시징, 이벤트 마케팅까지 안내하는 CertiLife 공식 공개 사용 가이드입니다.
+
+CertiLife Docs는 Hospital·Manufacturer·Studio 사용자와 도입 검토자가 공개적으로 확인할 수 있는 서비스 설명, 시작 경로, 운영 체크리스트, 문제 해결 정보를 제공합니다. 로그인 이후 메뉴·권한·업무 흐름은 공개적으로 검증된 범위만 다루며, AI 상담 안내는 의료진의 판단이나 진단을 대체하지 않습니다.
+
+핵심 용어: CertiLife, 서티라이프, 디지털 인증서, AI 상담, 상담원 연결, CRM 메시징, 고객 세그먼트, 이벤트 마케팅, Hospital, Manufacturer, Studio
+
+## 개요
+
+CertiLife의 공개 서비스 범위와 문서 사용법을 먼저 확인합니다.
+
+- [CertiLife 소개](https://docs.certi.life/guide/intro): 인증서부터 AI 상담과 CRM 마케팅까지, CertiLife의 주요 서비스를 살펴보세요.
+
+## 시작하기
+
+역할·목적별 가이드, 요금과 도입 문의, 다운로드, 로그인 경로를 찾습니다.
+
+- [5분 둘러보기](https://docs.certi.life/guide/getting-started/quick-tour): CertiLife의 네 가지 서비스를 업무 흐름으로 이해하고 알맞은 다음 문서를 선택하세요.
+- [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide): 역할과 목적에 따라 지금 읽을 CertiLife 문서와 공식 서비스 링크를 선택하세요.
+- [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact): CertiLife 공개 가격 페이지를 바탕으로 필요한 서비스 조합을 고르고 도입 상담을 준비하는 방법입니다.
+- [CertiLife 다운로드](https://docs.certi.life/guide/getting-started/downloads): 기업용 데스크톱 서비스와 환자용 모바일 앱 중 목적과 운영체제에 맞는 다운로드를 선택하는 방법입니다.
+- [로그인·서비스 바로가기](https://docs.certi.life/guide/getting-started/sign-in-directory): Hospital, 제조사 관리자, Studio와 공식 다운로드 페이지 중 내 역할에 맞는 접속 경로를 찾습니다.
+
+## 인증서
+
+디지털 인증서의 유형, 발송 채널, 전달 전 점검 사항을 안내합니다.
+
+- [인증서](https://docs.certi.life/guide/products/certificate): 디지털 인증서의 전달 방식, 보관 경험, 유형 선택 기준을 한눈에 살펴봅니다.
+- [인증서 발송 채널](https://docs.certi.life/guide/products/certificate/channels): 카카오톡, 문자, 위챗, 이메일의 특성을 비교해 인증서 전달 채널을 계획합니다.
+- [인증서 전달 전 체크리스트](https://docs.certi.life/guide/products/certificate/delivery-checklist): 인증서 내용, 대상, 발송 채널과 고객 안내를 전달 전에 빠짐없이 점검합니다.
+
+## AI 상담
+
+등록 자료 기반 답변을 위한 지식 준비와 상담원 연결 정책을 안내합니다.
+
+- [AI 상담](https://docs.certi.life/guide/products/ai-chatbot): 등록 자료를 바탕으로 답변하고 상담원 연결까지 이어지는 AI 상담 운영 원칙을 소개합니다.
+- [AI 상담 지식 준비](https://docs.certi.life/guide/products/ai-chatbot/knowledge-preparation): 등록 자료 기반 답변을 위해 공개 가능하고 최신인 상담 지식을 정리하는 방법을 안내합니다.
+- [상담원 연결 정책](https://docs.certi.life/guide/products/ai-chatbot/handoff-policy): 업무시간과 문의 유형에 따라 AI 상담을 상담원 또는 담당자에게 전달하는 기준을 세웁니다.
+
+## CRM 메시징
+
+고객군 계획, 메시지 발송 전 점검, 성과 확인 방법을 안내합니다.
+
+- [CRM 메시징](https://docs.certi.life/guide/products/crm-messaging): 고객 세그먼트에 맞춘 메시지를 계획하고 클릭률과 응답률로 성과를 살펴보는 방법을 소개합니다.
+- [CRM 세그먼트 계획](https://docs.certi.life/guide/products/crm-messaging/segment-planning): 연령, 성별, 시술 이력, 방문일을 활용해 메시지 목적에 맞는 고객군을 계획합니다.
+- [CRM 메시지 발송 전 체크리스트](https://docs.certi.life/guide/products/crm-messaging/message-checklist): 알림톡·브랜드 메시지의 템플릿 코드와 대상, 문구, 링크, 수신 기준을 발송 전에 점검합니다.
+
+## 이벤트 마케팅
+
+이벤트 캠페인 기획과 참여·전환 성과 검토 방법을 안내합니다.
+
+- [이벤트 마케팅](https://docs.certi.life/guide/products/event-marketing): 퀴즈, 후기, 공유, 정품인증 이벤트를 기획하고 참여와 전환 성과를 검토하는 방법을 소개합니다.
+- [이벤트 캠페인 계획](https://docs.certi.life/guide/products/event-marketing/campaign-planning): 퀴즈, 후기, 공유, 정품인증 이벤트의 목표와 참여 조건, 리워드를 단계별로 계획합니다.
+- [이벤트 성과 검토](https://docs.certi.life/guide/products/event-marketing/performance-review): 참여율, 공유 수, 전환율, 신규 고객 수를 함께 살펴보고 다음 캠페인을 개선합니다.
+
+## Hospital
+
+병원 관리자의 계정 접근, 인증서 전달, 안전한 운영을 안내합니다.
+
+- [Hospital 운영 가이드](https://docs.certi.life/guide/hospital/overview): 병원 관리자가 계정 접근부터 인증서 전달과 안전한 운영까지 준비하는 공개 가이드입니다.
+- [Hospital 계정 접속](https://docs.certi.life/guide/hospital/account-access): Hospital 공식 로그인 화면에서 로그인하고 아이디·비밀번호 문제를 해결하는 절차를 안내합니다.
+- [인증서 발행·전달 가이드](https://docs.certi.life/guide/hospital/certificate-workflow): 인증서를 준비해 카카오톡·문자·위챗·이메일로 안전하게 전달하고 사후 확인하는 운영 절차입니다.
+- [Hospital 안전한 운영 가이드](https://docs.certi.life/guide/hospital/safe-operation): 고객 정보를 최소한으로 다루고 화면 공유·오발송·담당자 변경에 안전하게 대응하는 운영 원칙입니다.
+
+## Manufacturer
+
+제조사 사용자의 공식 로그인과 안전한 계정 이용 범위를 안내합니다.
+
+- [Manufacturer 안내](https://docs.certi.life/guide/manufacturer/overview): 제조사 사용자가 CertiLife의 공식 로그인과 공개된 계정·문의 경로를 안전하게 이용하기 위한 안내입니다.
+- [Manufacturer 계정 접속](https://docs.certi.life/guide/manufacturer/account-access): 제조사 관리자 공식 로그인 화면에서 안전하게 접속하고 비밀번호·가입 문의를 해결하는 방법입니다.
+- [Manufacturer 안전한 이용](https://docs.certi.life/guide/manufacturer/safe-operation): 제조사 계정과 로그인 정보를 보호하고 화면 공유·지원 요청·담당자 변경에 안전하게 대응하는 원칙입니다.
+
+## Studio
+
+AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공개 운영 가이드입니다.
+
+- [Studio 운영 가이드](https://docs.certi.life/guide/studio/overview): AI 상담 지식, 시나리오, 상담원 연결과 출시 점검을 준비하는 Studio 공개 운영 가이드입니다.
+- [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access): Studio 공식 로그인 화면에서 Username과 Password로 안전하게 접속하고 문제에 대응하는 절차입니다.
+- [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management): AI 챗봇이 참고할 공개 자료를 선별하고 최신성·정확성·개인정보 기준을 유지하는 운영 가이드입니다.
+- [상담 시나리오와 사람 연결](https://docs.certi.life/guide/studio/scenario-and-handoff): AI 상담 흐름을 설계하고 업무시간별 상담원 연결·의료 문의·예외 상황을 안전하게 처리하는 방법입니다.
+- [Studio 출시 체크리스트](https://docs.certi.life/guide/studio/launch-checklist): AI 챗봇·상담원 연결·AI 음성봇을 고객에게 공개하기 전과 공개 직후 확인할 운영 체크리스트입니다.
+
+## 도움말
+
+자주 묻는 질문, 문제 해결, 용어, 개인정보와 보안 원칙을 확인합니다.
+
+- [자주 묻는 질문](https://docs.certi.life/guide/help/faq): CertiLife 서비스, 접속, 다운로드, 개인정보 보호에 관한 자주 묻는 질문입니다.
+- [문제 해결](https://docs.certi.life/guide/help/troubleshooting): CertiLife 공식 서비스 접속과 공개 로그인 문제를 안전하게 점검하는 방법입니다.
+- [용어집](https://docs.certi.life/guide/help/glossary): CertiLife 공개 문서에서 사용하는 서비스와 개인정보·운영 관련 용어를 설명합니다.
+- [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security): CertiLife를 안전하게 이용하고 공유 자료에서 개인정보를 제거하기 위한 공개 원칙과 체크리스트입니다.
+
+## 추가 공개 경로
+
+- [CertiLife Docs 홈](https://docs.certi.life/): 제품과 역할별 공개 문서의 시작점입니다.
+- [문서 Sitemap](https://docs.certi.life/sitemap.xml): 검색엔진용 공개 URL 목록입니다.
+- [CertiLife 홈페이지](https://certi.life/): 서비스 소개와 공식 도입 문의 경로입니다.
