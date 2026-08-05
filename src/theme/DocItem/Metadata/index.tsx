@@ -3,7 +3,7 @@ import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {PageMetadata} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
-import {buildTechArticle} from '../../../utils/docStructuredData.mjs';
+import {buildFaqPage, buildTechArticle} from '../../../utils/docStructuredData.mjs';
 
 export default function DocItemMetadata(): ReactNode {
   const {metadata, frontMatter, assets, contentTitle} = useDoc();
@@ -15,6 +15,13 @@ export default function DocItemMetadata(): ReactNode {
     lastUpdatedAt: metadata.lastUpdatedAt,
     siteUrl: siteConfig.url,
   });
+  const customFrontMatter = frontMatter as typeof frontMatter & {
+    structured_data?: string;
+    faq_items?: Array<{question: string; answer: string}>;
+  };
+  const faqPage = customFrontMatter.structured_data === 'faq'
+    ? buildFaqPage(customFrontMatter.faq_items)
+    : null;
   return (
     <>
       <PageMetadata
@@ -25,6 +32,7 @@ export default function DocItemMetadata(): ReactNode {
       />
       <Head>
         <script type="application/ld+json">{JSON.stringify(techArticle)}</script>
+        {faqPage ? <script type="application/ld+json">{JSON.stringify(faqPage)}</script> : null}
       </Head>
     </>
   );

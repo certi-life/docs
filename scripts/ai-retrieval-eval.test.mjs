@@ -40,6 +40,26 @@ test('rankDocuments는 긴 FAQ의 반복 용어보다 구체적인 제목·설�
   assert.equal(rankDocuments('인증서 카카오톡 발송 채널', docs, 2)[0].id, 'channels');
 });
 
+test('rankDocuments는 여러 구매 질문을 모은 FAQ보다 대상·내용·링크 점검 문서를 우선한다', () => {
+  const docs = [
+    {
+      id: 'buyer-faq',
+      title: '병원 도입 구매 FAQ',
+      description: '병원 가격 AI 상담 채널 인증서 FAQ',
+      headings: ['인증서는 무엇을 전달하나요?', '기존 채널에서 사용할 수 있나요?', '도입 전에 무엇을 준비하나요?'],
+      body: '인증서 정보를 환자에게 전달하고 채널을 확인합니다.',
+    },
+    {
+      id: 'delivery-checklist',
+      title: '인증서 전달 전 체크리스트',
+      description: '인증서 내용, 대상, 발송 채널과 고객 안내를 전달 전에 빠짐없이 점검합니다.',
+      headings: ['내용 체크리스트', '대상·채널 체크리스트'],
+      body: '가상 수신 정보로 문구와 링크를 검수합니다.',
+    },
+  ];
+  assert.equal(rankDocuments('인증서를 보내기 전에 대상, 내용, 링크를 무엇까지 확인해야 하나요?', docs, 2)[0].id, 'delivery-checklist');
+});
+
 test('evaluateCases는 Top1·Top3와 근거 문구를 기계적으로 판정한다', () => {
   const docs = [
     {id: 'login', title: '로그인 문제', description: '비밀번호 재설정', headings: [], body: '비밀번호를 잊었다면 재설정합니다.'},

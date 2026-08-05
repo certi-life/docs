@@ -1,6 +1,7 @@
 import {readFileSync} from 'node:fs';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {requiredDocIds} from './docs-manifest.mjs';
 import {verifyProduction} from './verify-production.mjs';
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -33,4 +34,4 @@ function buildFixtureFetch(url) {
 }
 
 await verifyProduction({projectRoot, fetchImpl: buildFixtureFetch, retries: 1, delayMs: 0});
-console.log('Production verifier build fixture passed: 34 HTML + 34 Markdown routes');
+console.log(`Production verifier build fixture passed: ${requiredDocIds.length} HTML + ${requiredDocIds.length} Markdown routes`);

@@ -2,11 +2,12 @@ import {fileURLToPath} from 'node:url';
 import {dirname, join} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {readFileSync} from 'node:fs';
+import matter from '@11ty/gray-matter';
 import sax from 'sax';
 import {requiredDocIds} from './docs-manifest.mjs';
 import {publicDocUrl} from './generate-ai-discovery.mjs';
 import {loadDocArticleExpected, loadDocNavigationTitle, loadDocTitle} from './verify-production.mjs';
-import {jsonLdHasType, normalizeJsonLd, validateBreadcrumbList, validateTechArticle} from './structured-data-validation.mjs';
+import {jsonLdHasType, normalizeJsonLd, validateBreadcrumbList, validateFaqPage, validateTechArticle} from './structured-data-validation.mjs';
 
 export function validateFreshnessRecords(records, expected, now = new Date()) {
   if (records.length !== expected.size) throw new Error(`freshness record count expected=${expected.size} actual=${records.length}`);
@@ -83,10 +84,16 @@ export function verifyBuiltStructuredData(projectRoot) {
     const values = normalizeJsonLd(parseJsonLd(html, id));
     const articles = values.filter((value) => jsonLdHasType(value, 'TechArticle'));
     const breadcrumbs = values.filter((value) => jsonLdHasType(value, 'BreadcrumbList'));
+    const faqs = values.filter((value) => jsonLdHasType(value, 'FAQPage'));
     if (articles.length !== 1) throw new Error(`TechArticle count URL=${canonical} expected=1 actual=${articles.length}`);
     if (breadcrumbs.length !== 1) throw new Error(`BreadcrumbList count URL=${canonical} expected=1 actual=${breadcrumbs.length}`);
     validateBreadcrumbList(breadcrumbs[0], {url: canonical, navigationTitle: loadDocNavigationTitle(projectRoot, id)});
-    if (values.some((value) => jsonLdHasType(value, 'FAQPage'))) throw new Error(`FAQPage is not approved URL=${canonical}`);
+    const frontMatter = matter(readFileSync(join(projectRoot, 'docs', `${id}.mdx`), 'utf8')).data;
+    const expectsFaq = frontMatter.structured_data === 'faq';
+    if (faqs.length !== (expectsFaq ? 1 : 0)) {
+      throw new Error(`FAQPage count URL=${canonical} expected=${expectsFaq ? 1 : 0} actual=${faqs.length}`);
+    }
+    if (expectsFaq) validateFaqPage(faqs[0], frontMatter.faq_items);
     const article = articles[0];
     validateTechArticle(article, {title: loadDocTitle(projectRoot, id), url: canonical, ...loadDocArticleExpected(projectRoot, id)});
   }

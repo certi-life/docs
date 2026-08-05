@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {join} from 'node:path';
-import {fetchWithRetry, loadDocNavigationTitle, loadDocTitle, validateHtmlBody, verifyResponse} from './verify-production.mjs';
+import {buildFaqPage} from '../src/utils/docStructuredData.mjs';
+import {fetchWithRetry, loadDocFaqExpected, loadDocNavigationTitle, loadDocTitle, validateHtmlBody, verifyResponse} from './verify-production.mjs';
 
 const projectRoot = join(import.meta.dirname, '..');
 
@@ -114,8 +115,23 @@ test('HTML 검증은 실제 canonical·H1·TechArticle·BreadcrumbList의 연결
   assert.throws(() => validateHtmlBody(url, '문제 해결', nestedFaq, '문제 해결', articleExpected), /FAQPage/);
 });
 
+test('HTML 검증은 FAQ 문서에서만 화면 문답과 동일한 FAQPage를 허용한다', () => {
+  const url = 'https://docs.certi.life/guide/getting-started/buyer-faq';
+  const title = '병원 도입 구매 FAQ';
+  const articleExpected = {description: '병원 도입 FAQ입니다.', dateModified: '2026-08-05T07:00:00.000Z'};
+  const article = {'@context': 'https://schema.org', '@type': 'TechArticle', headline: title, url, mainEntityOfPage: url, inLanguage: 'ko-KR', ...articleExpected};
+  const breadcrumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{'@type': 'ListItem', position: 1, name: title, item: url}]};
+  const entries = [{question: '가격은 얼마인가요?', answer: '공개 가격표에서 확인할 수 있습니다.'}];
+  const faq = buildFaqPage(entries);
+  const html = `<html><head><link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script><script type="application/ld+json">${JSON.stringify(faq)}</script></head><body><h1>${title}</h1></body></html>`;
+  assert.doesNotThrow(() => validateHtmlBody(url, title, html, title, articleExpected, entries));
+  assert.throws(() => validateHtmlBody(url, title, html, title, articleExpected, [{question: '다른 질문?', answer: '다른 답변'}]), /FAQPage/);
+});
+
 test('production verifier는 artifact에 없는 제목을 MDX frontmatter에서 읽는다', () => {
   assert.equal(loadDocTitle(projectRoot, 'intro'), '더 신뢰받는 병원 경험을 만듭니다');
   assert.equal(loadDocNavigationTitle(projectRoot, 'intro'), 'CertiLife 소개');
   assert.equal(loadDocTitle(projectRoot, 'help/troubleshooting'), '문제 해결');
+  assert.equal(loadDocFaqExpected(projectRoot, 'help/troubleshooting').length, 0);
+  assert.equal(loadDocFaqExpected(projectRoot, 'getting-started/buyer-faq').length, 14);
 });

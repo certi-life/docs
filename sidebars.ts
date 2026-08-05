@@ -11,6 +11,7 @@ const sidebars: SidebarsConfig = {
         'getting-started/quick-tour',
         'getting-started/choose-guide',
         'getting-started/plans-and-contact',
+        'getting-started/buyer-faq',
         'getting-started/downloads',
         'getting-started/sign-in-directory',
       ],

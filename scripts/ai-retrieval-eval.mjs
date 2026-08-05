@@ -47,7 +47,7 @@ export function rankDocuments(query, docs, limit = 3) {
       for (const token of queryTokens) {
         const df = documentFrequency.get(token) ?? 0;
         const idf = Math.log(1 + (docs.length - df + 0.5) / (df + 0.5));
-        const weights = fullWords.has(token) ? [18, 10, 4, 0.8] : [2, 1, 0.4, 0.05];
+        const weights = fullWords.has(token) ? [18, 10, 4, 0.8] : [3, 1, 0.2, 0.03];
         fields.forEach((field, index) => {
           if (field.includes(token)) score += weights[index] * idf;
         });
