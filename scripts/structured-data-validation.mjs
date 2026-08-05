@@ -84,6 +84,31 @@ export function validateTechArticle(value, expected) {
   return value;
 }
 
+export function validateFaqPage(value, expectedEntries) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) {
+    structuredDataError('FAQPage', 'object', value === null ? 'null' : typeof value);
+  }
+  if (value['@context'] !== 'https://schema.org' || value['@type'] !== 'FAQPage') {
+    structuredDataError('FAQPage', '@context=https://schema.org and @type=FAQPage', JSON.stringify(value));
+  }
+  if (!Array.isArray(expectedEntries) || expectedEntries.length === 0) {
+    structuredDataError('FAQPage', 'nonempty expected entries', JSON.stringify(expectedEntries));
+  }
+  if (!Array.isArray(value.mainEntity) || value.mainEntity.length !== expectedEntries.length) {
+    structuredDataError('FAQPage', `mainEntity.length=${expectedEntries.length}`, `mainEntity.length=${value.mainEntity?.length ?? '<missing>'}`);
+  }
+  value.mainEntity.forEach((entity, index) => {
+    const expected = expectedEntries[index];
+    if (entity?.['@type'] !== 'Question' || entity.name !== expected.question) {
+      structuredDataError('FAQPage', `Question[${index}].name=${JSON.stringify(expected.question)}`, JSON.stringify(entity));
+    }
+    if (entity.acceptedAnswer?.['@type'] !== 'Answer' || entity.acceptedAnswer.text !== expected.answer) {
+      structuredDataError('FAQPage', `Answer[${index}].text=${JSON.stringify(expected.answer)}`, JSON.stringify(entity?.acceptedAnswer));
+    }
+  });
+  return value;
+}
+
 export function validateBreadcrumbList(value, {url, navigationTitle}) {
   if (!value || typeof value !== 'object' || Array.isArray(value)) {
     structuredDataError('BreadcrumbList', 'object', value === null ? 'null' : typeof value);

@@ -203,8 +203,9 @@ for (const route of builtRoutes) {
 for (const route of indexedRoutes) {
   if (!builtRoutes.has(route)) failures.push(`search index route has no built document: ${route}`);
 }
-if (builtRoutes.size !== 34) {
-  failures.push(`expected 34 built guide routes, found ${builtRoutes.size}`);
+const expectedRouteCount = publicDocUrls().length;
+if (builtRoutes.size !== expectedRouteCount) {
+  failures.push(`expected ${expectedRouteCount} built guide routes, found ${builtRoutes.size}`);
 }
 
 const requiredTerms = ['로그인', '비밀번호', '인증서', '제조사', '상담원'];

@@ -7,7 +7,7 @@ import matter from '@11ty/gray-matter';
 import {requiredDocIds} from './docs-manifest.mjs';
 import {cleanMarkdownUrl, publicDocUrl} from './generate-ai-discovery.mjs';
 import {projectCleanMarkdownArtifacts} from './generate-clean-markdown.mjs';
-import {gitLastModifiedIso, jsonLdHasType, normalizeJsonLd, validateBreadcrumbList, validateTechArticle} from './structured-data-validation.mjs';
+import {gitLastModifiedIso, jsonLdHasType, normalizeJsonLd, validateBreadcrumbList, validateFaqPage, validateTechArticle} from './structured-data-validation.mjs';
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
@@ -76,7 +76,7 @@ function textContent(node) {
   return (node.childNodes ?? []).map(textContent).join('');
 }
 
-export function validateHtmlBody(url, title, body, navigationTitle = title, articleExpected) {
+export function validateHtmlBody(url, title, body, navigationTitle = title, articleExpected, faqExpected = []) {
   const nodes = descendants(parse(body));
   const canonicals = nodes.filter((node) => node.nodeName === 'link' && (attr(node, 'rel') ?? '').split(/\s+/).includes('canonical'));
   if (canonicals.length !== 1 || attr(canonicals[0], 'href') !== url) {
@@ -95,8 +95,16 @@ export function validateHtmlBody(url, title, body, navigationTitle = title, arti
     }
   }
   const jsonLd = normalizeJsonLd(jsonLdRoots);
-  if (jsonLd.some((entry) => jsonLdHasType(entry, 'FAQPage'))) {
-    throw new Error(diagnostic(url, 'no FAQPage JSON-LD', 'FAQPage found'));
+  const faqs = jsonLd.filter((entry) => jsonLdHasType(entry, 'FAQPage'));
+  if (faqExpected.length > 0) {
+    if (faqs.length !== 1) throw new Error(diagnostic(url, 'one FAQPage', `count=${faqs.length}`));
+    try {
+      validateFaqPage(faqs[0], faqExpected);
+    } catch (error) {
+      throw new Error(diagnostic(url, `valid FAQPage entries=${faqExpected.length}`, error instanceof Error ? error.message : String(error)));
+    }
+  } else if (faqs.length > 0) {
+    throw new Error(diagnostic(url, 'no FAQPage JSON-LD', `count=${faqs.length}`));
   }
   const articles = jsonLd.filter((entry) => jsonLdHasType(entry, 'TechArticle'));
   if (articles.length !== 1) {
@@ -121,8 +129,8 @@ export function validateHtmlBody(url, title, body, navigationTitle = title, arti
   }
 }
 
-function htmlCheck(url, title, navigationTitle, articleExpected) {
-  return (body) => validateHtmlBody(url, title, body, navigationTitle, articleExpected);
+function htmlCheck(url, title, navigationTitle, articleExpected, faqExpected) {
+  return (body) => validateHtmlBody(url, title, body, navigationTitle, articleExpected, faqExpected);
 }
 
 export function loadDocTitle(projectRoot, id) {
@@ -148,6 +156,16 @@ export function loadDocArticleExpected(projectRoot, id) {
   const description = matter(readFileSync(sourcePath, 'utf8')).data.description;
   if (typeof description !== 'string' || !description.trim()) throw new Error(`missing frontmatter description: ${sourcePath}`);
   return {description: description.trim(), dateModified: gitLastModifiedIso(projectRoot, id)};
+}
+
+export function loadDocFaqExpected(projectRoot, id) {
+  const sourcePath = join(projectRoot, 'docs', `${id}.mdx`);
+  const data = matter(readFileSync(sourcePath, 'utf8')).data;
+  if (data.structured_data !== 'faq') return [];
+  if (!Array.isArray(data.faq_items) || data.faq_items.length === 0) {
+    throw new Error(`missing faq_items for structured FAQ document: ${sourcePath}`);
+  }
+  return data.faq_items;
 }
 
 async function runInBatches(tasks, size = 8) {
@@ -183,9 +201,10 @@ export async function verifyProduction({
     const title = loadDocTitle(projectRoot, id);
     const navigationTitle = loadDocNavigationTitle(projectRoot, id);
     const articleExpected = loadDocArticleExpected(projectRoot, id);
+    const faqExpected = loadDocFaqExpected(projectRoot, id);
     tasks.push(async () => {
       const response = await fetchWithRetry(canonical, {fetchImpl, retries, delayMs});
-      await verifyResponse(canonical, response, {status: 200, contentType: 'text/html', check: htmlCheck(canonical, title, navigationTitle, articleExpected)});
+      await verifyResponse(canonical, response, {status: 200, contentType: 'text/html', check: htmlCheck(canonical, title, navigationTitle, articleExpected, faqExpected)});
     });
     tasks.push(async () => {
       const response = await fetchWithRetry(markdown, {fetchImpl, retries, delayMs});

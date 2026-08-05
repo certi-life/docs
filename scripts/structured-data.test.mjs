@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import {buildTechArticle} from '../src/utils/docStructuredData.mjs';
+import {buildFaqPage, buildTechArticle} from '../src/utils/docStructuredData.mjs';
 import {validateFreshnessRecords} from './structured-data-check.mjs';
-import {jsonLdHasType, normalizeJsonLd, validateBreadcrumbList, validateTechArticle} from './structured-data-validation.mjs';
+import {jsonLdHasType, normalizeJsonLd, validateBreadcrumbList, validateFaqPage, validateTechArticle} from './structured-data-validation.mjs';
 
 test('TechArticle은 화면 메타데이터와 git lastUpdatedAt만 사용해 결정론적으로 생성된다', () => {
   const input = {
@@ -29,6 +29,26 @@ test('TechArticle은 git 변경 시각이 없거나 URL이 사이트 밖이면 f
   assert.throws(() => buildTechArticle({...base, lastUpdatedAt: undefined}), /lastUpdatedAt/);
   assert.throws(() => buildTechArticle({...base, lastUpdatedAt: Number.NaN}), /lastUpdatedAt/);
   assert.throws(() => buildTechArticle({...base, lastUpdatedAt: 1, permalink: 'https://evil.example/a'}), /permalink/);
+});
+
+test('FAQPage는 화면에 공개된 질문과 답변만 schema.org mainEntity로 직렬화한다', () => {
+  const entries = [
+    {question: 'AI 상담은 어떤 채널에서 사용할 수 있나요?', answer: '카카오톡, 네이버 톡톡과 웹챗봇에서 활용할 수 있습니다.'},
+    {question: 'AI 상담이 의료진을 대신하나요?', answer: '아닙니다. 일반 안내와 반복 문의 대응을 돕습니다.'},
+  ];
+  const faq = buildFaqPage(entries);
+  assert.equal(faq['@context'], 'https://schema.org');
+  assert.equal(faq['@type'], 'FAQPage');
+  assert.deepEqual(faq.mainEntity, entries.map(({question, answer}) => ({
+    '@type': 'Question',
+    name: question,
+    acceptedAnswer: {'@type': 'Answer', text: answer},
+  })));
+  assert.doesNotThrow(() => validateFaqPage(faq, entries));
+  assert.throws(() => validateFaqPage({...faq, mainEntity: faq.mainEntity.slice(1)}, entries), /FAQPage/);
+  assert.throws(() => validateFaqPage({...faq, mainEntity: [{...faq.mainEntity[0], name: '다른 질문'}, faq.mainEntity[1]]}, entries), /FAQPage/);
+  assert.throws(() => buildFaqPage([]), /FAQPage/);
+  assert.throws(() => buildFaqPage([{question: '질문', answer: '   '}]), /answer/);
 });
 
 test('freshness gate는 빌드 현재시각·미래 날짜·모든 문서 동일 날짜를 거부한다', () => {

@@ -21,3 +21,22 @@ export function buildTechArticle({title, description, permalink, lastUpdatedAt, 
     dateModified: new Date(lastUpdatedAt).toISOString(),
   };
 }
+
+export function buildFaqPage(entries) {
+  if (!Array.isArray(entries) || entries.length === 0) throw new Error('FAQPage entries are required');
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: entries.map((entry, index) => {
+      const question = entry?.question;
+      const answer = entry?.answer;
+      if (typeof question !== 'string' || !question.trim()) throw new Error(`FAQPage question is required at index ${index}`);
+      if (typeof answer !== 'string' || !answer.trim()) throw new Error(`FAQPage answer is required at index ${index}`);
+      return {
+        '@type': 'Question',
+        name: question.trim(),
+        acceptedAnswer: {'@type': 'Answer', text: answer.trim()},
+      };
+    }),
+  };
+}

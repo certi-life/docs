@@ -19,6 +19,7 @@ CertiLife의 공개 서비스 범위와 문서 사용법을 먼저 확인합니�
 - [5분 둘러보기](https://docs.certi.life/guide/getting-started/quick-tour.md): CertiLife의 네 가지 서비스를 업무 흐름으로 이해하고 알맞은 다음 문서를 선택하세요.
 - [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide.md): 역할과 목적에 따라 지금 읽을 CertiLife 문서와 공식 서비스 링크를 선택하세요.
 - [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact.md): CertiLife 공개 가격 페이지를 바탕으로 필요한 서비스 조합을 고르고 도입 상담을 준비하는 방법입니다.
+- [병원 도입 구매 FAQ](https://docs.certi.life/guide/getting-started/buyer-faq.md): 병원·치과 원장과 상담실장이 CertiLife의 가격, AI 상담 채널, 사람 연결, 도입 준비와 메디컬 인증서를 검토할 때 자주 묻는 질문입니다.
 - [CertiLife 다운로드](https://docs.certi.life/guide/getting-started/downloads.md): 기업용 데스크톱 서비스와 환자용 모바일 앱 중 목적과 운영체제에 맞는 다운로드를 선택하는 방법입니다.
 - [로그인·서비스 바로가기](https://docs.certi.life/guide/getting-started/sign-in-directory.md): Hospital, 제조사 관리자, Studio와 공식 다운로드 페이지 중 내 역할에 맞는 접속 경로를 찾습니다.
 

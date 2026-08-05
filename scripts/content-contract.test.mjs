@@ -6,6 +6,7 @@ import {
   classifyOpening,
   renderAuditReport,
 } from './content-contract.mjs';
+import {requiredDocIds} from './docs-manifest.mjs';
 
 test('classifyOpening은 핵심 답변으로 시작하는 문단을 pass로 분류한다', () => {
   const result = classifyOpening('CertiLife 인증서는 고객이 시술·제품 정보를 모바일에서 다시 확인하도록 돕는 서비스입니다.');
@@ -33,15 +34,15 @@ test('classifyOpening은 비어 있거나 지나치게 짧은 첫 문단을 fail
   assert.equal(classifyOpening(Array(16).fill('사용자는 안내를 확인하고 내용을 검토합니다.').join(' ')).classification, 'fail');
 });
 
-test('34개 공개 문서 감사는 결정론적이며 감사 시각이나 임의 점수를 넣지 않는다', () => {
+test('공개 문서 감사는 전체 manifest를 결정론적으로 검사하고 감사 시각이나 임의 점수를 넣지 않는다', () => {
   const root = join(import.meta.dirname, '..');
   const first = auditPublicDocuments(root);
   const second = auditPublicDocuments(root);
-  assert.equal(first.length, 34);
+  assert.equal(first.length, requiredDocIds.length);
   assert.deepEqual(first, second);
   assert.ok(first.every((entry) => ['pass', 'review', 'fail'].includes(entry.classification)));
   const report = renderAuditReport(first);
   assert.equal(report, renderAuditReport(second));
   assert.doesNotMatch(report, /generatedAt|점수|score/i);
-  assert.match(report, /34개/);
+  assert.match(report, new RegExp(`${requiredDocIds.length}개`));
 });

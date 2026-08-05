@@ -1,6 +1,7 @@
 import {readFileSync, existsSync, readdirSync, statSync} from 'node:fs';
 import {dirname, join, relative} from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {requiredDocIds} from './docs-manifest.mjs';
 import {parse} from 'parse5';
 import {verifyProduction} from './verify-production.mjs';
 
@@ -168,4 +169,4 @@ for (const sourceMapPath of sourceMapPaths) {
 if (sourceMapPaths.length !== referencedSourceMaps.size) {
   throw new Error(`Production source-map coverage mismatch: ${sourceMapPaths.length} maps for ${referencedSourceMaps.size} references`);
 }
-console.log('Production verifier build fixture passed: 34 HTML + 34 Markdown routes');
+console.log(`Production verifier build fixture passed: ${requiredDocIds.length} HTML + ${requiredDocIds.length} Markdown routes`);
