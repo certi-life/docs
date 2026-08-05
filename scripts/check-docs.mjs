@@ -1,5 +1,6 @@
 import {readFileSync, existsSync, readdirSync, statSync} from 'node:fs';
 import {join, relative} from 'node:path';
+import {inflateSync} from 'node:zlib';
 import {requiredDocIds, requiredDocs} from './docs-manifest.mjs';
 import {cleanMarkdownUrls, expectedAiDiscoveryFiles} from './generate-ai-discovery.mjs';
 import {verifyCleanMarkdownArtifacts} from './clean-markdown.mjs';
@@ -73,6 +74,133 @@ if (koreanTranslations['theme.common.editThisPage']?.message !== '이 페이지 
 const cnamePath = join(root, 'static', 'CNAME');
 if (existsSync(cnamePath)) failures.push('static/CNAME is unnecessary for the GitHub Actions Pages deployment');
 
+function crc32(buffer) {
+  let crc = 0xffffffff;
+  for (const byte of buffer) {
+    crc ^= byte;
+    for (let bit = 0; bit < 8; bit += 1) crc = (crc >>> 1) ^ (0xedb88320 & -(crc & 1));
+  }
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function readPngDimensions(buffer) {
+  if (!buffer.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))) return null;
+  let offset = 8;
+  let dimensions = null;
+  let bitDepth = null;
+  let colorType = null;
+  let interlaceMethod = null;
+  let paletteEntries = 0;
+  let hasTransparency = false;
+  const imageData = [];
+  let imageDataEnded = false;
+  let ended = false;
+  while (offset + 12 <= buffer.length) {
+    const length = buffer.readUInt32BE(offset);
+    const end = offset + 12 + length;
+    if (end > buffer.length) return null;
+    const typeAndData = buffer.subarray(offset + 4, offset + 8 + length);
+    if (crc32(typeAndData) !== buffer.readUInt32BE(offset + 8 + length)) return null;
+    const type = buffer.subarray(offset + 4, offset + 8).toString('ascii');
+    if (!/^[A-Za-z]{4}$/.test(type) || !/[A-Z]/.test(type[2])) return null;
+    if (imageData.length > 0 && type !== 'IDAT' && type !== 'IEND') imageDataEnded = true;
+    if (/^[A-Z]/.test(type) && !['IHDR', 'PLTE', 'IDAT', 'IEND'].includes(type)) return null;
+    if (type === 'IHDR') {
+      if (offset !== 8 || length !== 13 || dimensions) return null;
+      dimensions = {width: buffer.readUInt32BE(offset + 8), height: buffer.readUInt32BE(offset + 12)};
+      if (dimensions.width === 0 || dimensions.height === 0) return null;
+      bitDepth = buffer[offset + 16];
+      colorType = buffer[offset + 17];
+      if (buffer[offset + 18] !== 0 || buffer[offset + 19] !== 0) return null;
+      interlaceMethod = buffer[offset + 20];
+    }
+    if (type === 'PLTE') {
+      if (!dimensions || paletteEntries || imageData.length || [0, 4].includes(colorType) || length === 0 || length % 3 !== 0 || length > 768) return null;
+      paletteEntries = length / 3;
+    }
+    if (type === 'tRNS') {
+      if (!dimensions || hasTransparency || imageData.length || [4, 6].includes(colorType)) return null;
+      if ((colorType === 0 && length !== 2) || (colorType === 2 && length !== 6)) return null;
+      if (colorType === 3 && (paletteEntries === 0 || length === 0 || length > paletteEntries)) return null;
+      hasTransparency = true;
+    }
+    if (type === 'IDAT') {
+      if (!dimensions || imageDataEnded) return null;
+      imageData.push(buffer.subarray(offset + 8, offset + 8 + length));
+    }
+    if (type === 'IEND') {
+      ended = length === 0 && end === buffer.length;
+      break;
+    }
+    offset = end;
+  }
+  if (!ended || !dimensions || imageData.length === 0 || interlaceMethod !== 0) return null;
+  const validBitDepths = new Map([[0, [1, 2, 4, 8, 16]], [2, [8, 16]], [3, [1, 2, 4, 8]], [4, [8, 16]], [6, [8, 16]]]);
+  if (!validBitDepths.get(colorType)?.includes(bitDepth)) return null;
+  if (colorType === 3 && (paletteEntries === 0 || paletteEntries > 2 ** bitDepth)) return null;
+  const channels = new Map([[0, 1], [2, 3], [3, 1], [4, 2], [6, 4]]).get(colorType);
+  if (!channels) return null;
+  try {
+    const decoded = inflateSync(Buffer.concat(imageData), {maxOutputLength: 100_000});
+    const rowBytes = Math.ceil((dimensions.width * channels * bitDepth) / 8);
+    if (decoded.length !== dimensions.height * (rowBytes + 1)) return null;
+    const bytesPerPixel = Math.max(1, Math.ceil((channels * bitDepth) / 8));
+    const pixels = Buffer.alloc(rowBytes * dimensions.height);
+    const paeth = (left, up, upLeft) => {
+      const estimate = left + up - upLeft;
+      const leftDistance = Math.abs(estimate - left);
+      const upDistance = Math.abs(estimate - up);
+      const upLeftDistance = Math.abs(estimate - upLeft);
+      if (leftDistance <= upDistance && leftDistance <= upLeftDistance) return left;
+      return upDistance <= upLeftDistance ? up : upLeft;
+    };
+    for (let row = 0; row < dimensions.height; row += 1) {
+      const encodedOffset = row * (rowBytes + 1);
+      const filterType = decoded[encodedOffset];
+      if (filterType > 4) return null;
+      const rowOffset = row * rowBytes;
+      for (let column = 0; column < rowBytes; column += 1) {
+        const raw = decoded[encodedOffset + 1 + column];
+        const left = column >= bytesPerPixel ? pixels[rowOffset + column - bytesPerPixel] : 0;
+        const up = row > 0 ? pixels[rowOffset - rowBytes + column] : 0;
+        const upLeft = row > 0 && column >= bytesPerPixel
+          ? pixels[rowOffset - rowBytes + column - bytesPerPixel]
+          : 0;
+        const predictor = [0, left, up, Math.floor((left + up) / 2), paeth(left, up, upLeft)][filterType];
+        pixels[rowOffset + column] = (raw + predictor) & 0xff;
+      }
+    }
+    if (colorType === 3) {
+      const mask = (1 << bitDepth) - 1;
+      for (let row = 0; row < dimensions.height; row += 1) {
+        const rowOffset = row * rowBytes;
+        for (let column = 0; column < dimensions.width; column += 1) {
+          const bitOffset = column * bitDepth;
+          const byte = pixels[rowOffset + Math.floor(bitOffset / 8)];
+          const shift = 8 - bitDepth - (bitOffset % 8);
+          if (((byte >>> shift) & mask) >= paletteEntries) return null;
+        }
+      }
+    }
+  } catch {
+    return null;
+  }
+  return dimensions;
+}
+
+const navbarLogoPath = join(root, 'static', 'img', 'certilife-logo-172.png');
+if (!existsSync(navbarLogoPath)) {
+  failures.push('missing optimized navbar logo: static/img/certilife-logo-172.png');
+} else {
+  const navbarLogo = readFileSync(navbarLogoPath);
+  const dimensions = readPngDimensions(navbarLogo);
+  if (dimensions?.width !== 172 || dimensions?.height !== 60) {
+    failures.push(`optimized navbar logo must remain a valid 172x60 PNG (found ${dimensions?.width ?? 0}x${dimensions?.height ?? 0})`);
+  }
+  if (navbarLogo.length > 2500) {
+    failures.push(`optimized navbar logo must remain <=2500 bytes (found ${navbarLogo.length})`);
+  }
+}
 for (const [name, expected] of expectedAiDiscoveryFiles()) {
   const path = join(root, 'static', name);
   if (!existsSync(path)) {
