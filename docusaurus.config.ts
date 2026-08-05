@@ -35,6 +35,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  plugins: ['./plugins/production-source-maps.mjs'],
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
@@ -64,7 +65,7 @@ const config: Config = {
     colorMode: {defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false},
     navbar: {
       title: 'Docs',
-      logo: {alt: 'CertiLife', src: 'img/certilife-logo.png', width: 86, height: 30},
+      logo: {alt: 'CertiLife', src: 'img/certilife-logo-172.png', width: 86, height: 30},
       items: [
         {type: 'docSidebar', sidebarId: 'guideSidebar', position: 'left', label: '사용 가이드'},
         {to: '/guide/products/certificate', label: '서비스 소개', position: 'left'},
