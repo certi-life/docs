@@ -76,6 +76,26 @@ function textContent(node) {
   return (node.childNodes ?? []).map(textContent).join('');
 }
 
+function normalizeVisibleText(value) {
+  return value.replace(/[\u200B-\u200D\uFEFF]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function visibleFaqEntries(nodes) {
+  const article = nodes.find((node) => node.nodeName === 'article');
+  if (!article) return [];
+  return descendants(article, [])
+    .filter((node) => node.nodeName === 'h2')
+    .map((heading) => {
+      const siblings = heading.parentNode?.childNodes ?? [];
+      const position = siblings.indexOf(heading);
+      const answer = siblings.slice(position + 1).find((node) => node.nodeName === 'p');
+      return {
+        question: normalizeVisibleText(textContent(heading)),
+        answer: normalizeVisibleText(answer ? textContent(answer) : ''),
+      };
+    });
+}
+
 export function validateHtmlBody(url, title, body, navigationTitle = title, articleExpected, faqExpected = []) {
   const nodes = descendants(parse(body));
   const canonicals = nodes.filter((node) => node.nodeName === 'link' && (attr(node, 'rel') ?? '').split(/\s+/).includes('canonical'));
@@ -98,6 +118,14 @@ export function validateHtmlBody(url, title, body, navigationTitle = title, arti
   const faqs = jsonLd.filter((entry) => jsonLdHasType(entry, 'FAQPage'));
   if (faqExpected.length > 0) {
     if (faqs.length !== 1) throw new Error(diagnostic(url, 'one FAQPage', `count=${faqs.length}`));
+    const visibleFaq = visibleFaqEntries(nodes);
+    const normalizedExpected = faqExpected.map(({question, answer}) => ({
+      question: normalizeVisibleText(question),
+      answer: normalizeVisibleText(answer),
+    }));
+    if (JSON.stringify(visibleFaq) !== JSON.stringify(normalizedExpected)) {
+      throw new Error(diagnostic(url, `visible FAQ entries=${JSON.stringify(normalizedExpected)}`, JSON.stringify(visibleFaq)));
+    }
     try {
       validateFaqPage(faqs[0], faqExpected);
     } catch (error) {
