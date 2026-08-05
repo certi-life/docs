@@ -1,6 +1,6 @@
 # 자주 묻는 질문
 
-> CertiLife 서비스, 접속, 다운로드, 개인정보 보호에 관한 자주 묻는 질문입니다.
+> CertiLife 서비스, 병원 AI 상담 도입, 지원 채널, 상담원 연결, 가격, 접속과 개인정보 보호에 관한 자주 묻는 질문입니다.
 
 [사람이 읽는 원문](https://docs.certi.life/guide/help/faq)
 
@@ -26,7 +26,23 @@ CertiLife는 메디컬 인증서를 기반으로 인증서, AI 상담, CRM 메�
 
 ## 가격과 도입 범위는 어디에서 확인하나요?
 
-공개 가격 정보는 [가격 안내](https://certi.life/pricing)에서 확인할 수 있습니다. 조직에 적용되는 구체적인 서비스 범위나 조건은 [도입 문의](https://certi.life/contact)를 통해 확인하세요.
+공개 가격 정보는 [가격 안내](https://certi.life/pricing)에서 확인할 수 있습니다. 조직에 적용되는 구체적인 서비스 범위나 조건은 [도입 문의](https://certi.life/contact)를 통해 확인하세요. 채팅과 전화 중 어떤 문의를 줄이려는지 먼저 정했다면 [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact)의 서비스 선택표를 함께 확인하세요.
+
+## AI 상담은 어떤 채널에서 사용할 수 있나요?
+
+CertiLife AI 상담은 카카오톡, 네이버 톡톡과 웹챗봇에서 활용할 수 있습니다. 조직마다 실제 이용 채널과 계약 범위는 다를 수 있으므로, 공개 소개에서 확인한 후보 채널을 정리한 뒤 [AI 상담 안내](https://docs.certi.life/guide/products/ai-chatbot)와 [도입 문의](https://certi.life/contact)에서 적용 범위를 확인하세요.
+
+## AI 상담 도입 전에 무엇을 준비해야 하나요?
+
+운영할 채널, 고객에게 공개할 수 있는 최신 안내 자료, AI가 답할 범위, 사람이 확인할 문의와 자료 갱신 책임자를 먼저 정해야 합니다. 실제 고객·환자 대화는 그대로 사용하지 말고 개인정보를 제거해 질문과 답변 단위로 정리하세요. 준비 순서는 [AI 상담 지식 준비](https://docs.certi.life/guide/products/ai-chatbot/knowledge-preparation)와 [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact)에서 확인할 수 있습니다.
+
+## AI가 답하지 못하는 문의는 어떻게 처리하나요?
+
+등록 자료로 확인할 수 없거나 의료진의 판단, 개별 고객 확인, 담당자 승인이 필요한 문의는 AI가 임의로 답하지 않고 상담원 또는 담당자 확인으로 이어지게 해야 합니다. 업무시간과 문의 유형별 전달 기준, 고객에게 알릴 다음 응답 시점은 [상담원 연결 정책](https://docs.certi.life/guide/products/ai-chatbot/handoff-policy)에서 정리할 수 있습니다.
+
+## AI 채팅봇과 AI 음성봇은 어떻게 다른가요?
+
+AI 채팅봇은 카카오톡·네이버 톡톡·웹챗봇의 반복 채팅 문의를 지원하고, AI 음성봇은 점심시간·휴일·업무시간 외 전화 문의 대응을 위한 선택지입니다. 두 서비스를 함께 사용할 수도 있지만 실제 구성과 비용은 조직별 이용 범위에 따라 달라질 수 있으므로 [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact)와 [공식 가격 안내](https://certi.life/pricing)를 확인하세요.
 
 ## AI 상담이 의료진을 대신하나요?
 

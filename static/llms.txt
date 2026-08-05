@@ -85,7 +85,7 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 
 자주 묻는 질문, 문제 해결, 용어, 개인정보와 보안 원칙을 확인합니다.
 
-- [자주 묻는 질문](https://docs.certi.life/guide/help/faq.md): CertiLife 서비스, 접속, 다운로드, 개인정보 보호에 관한 자주 묻는 질문입니다.
+- [자주 묻는 질문](https://docs.certi.life/guide/help/faq.md): CertiLife 서비스, 병원 AI 상담 도입, 지원 채널, 상담원 연결, 가격, 접속과 개인정보 보호에 관한 자주 묻는 질문입니다.
 - [문제 해결](https://docs.certi.life/guide/help/troubleshooting.md): CertiLife 공식 서비스 접속과 공개 로그인 문제를 안전하게 점검하는 방법입니다.
 - [용어집](https://docs.certi.life/guide/help/glossary.md): CertiLife 공개 문서에서 사용하는 서비스와 개인정보·운영 관련 용어를 설명합니다.
 - [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security.md): CertiLife를 안전하게 이용하고 공유 자료에서 개인정보를 제거하기 위한 공개 원칙과 체크리스트입니다.
