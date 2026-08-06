@@ -289,6 +289,8 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     'password: REPLACE_ME.',
     'token: REDACTED.',
     '"token": "REDACTED".',
+    'token: "PLACEHOLDER"를 사용합니다.',
+    '`token: "<YOUR_TOKEN>"`을 입력합니다.',
     '`token: <YOUR_TOKEN>!`',
     '`db_password=<YOUR_PASSWORD>`',
     'Authorization: Bearer ***',
