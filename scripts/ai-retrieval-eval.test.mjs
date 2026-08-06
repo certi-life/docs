@@ -199,6 +199,8 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '설정 예시는 api_key=REPLACE_ME, 값을 바꿉니다',
     '설정 예시는 authorization: ***을 입력합니다',
     '설정 예시는 secret: REDACTED. 입니다',
+    '설정 예시는 secret=REDACTED를 사용',
+    '설정 예시는 token: ***)',
     '설정 예시는 token: PLACEHOLDER입니다',
     'Use token: PLACEHOLDER for local testing.',
     'Use token: "<YOUR_TOKEN>" when testing.',
@@ -211,6 +213,8 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
   }
   for (const question of [
     '설정에서 token: live-value를 확인하세요',
+    '설정에서 token: R\\EDACTED를 확인하세요',
+    '설정에서 token: <YOUR\\_TOKEN>을 확인하세요',
     '설정에서 access_token: live-value를 확인하세요',
     '설정에서 github_token = live-secret을 확인하세요',
     '설정에서 github_token/**/=live-secret을 확인하세요',
