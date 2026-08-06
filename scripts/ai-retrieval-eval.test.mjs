@@ -190,12 +190,18 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     'Use token: "<YOUR_TOKEN>" when testing.',
     'CSS design_token: primary-blue 입니다',
     'CSS design_token /* palette */: primary-blue 입니다',
+    'CSS custom_token: primary-blue 입니다',
+    '공개 SHA-256 checksum: abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcd 입니다',
   ]) {
     assert.doesNotThrow(() => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}));
   }
   for (const question of [
     '설정에서 token: live-value를 확인하세요',
     '설정에서 access_token: live-value를 확인하세요',
+    '설정에서 github_token = live-secret을 확인하세요',
+    '설정에서 github_token/**/=live-secret을 확인하세요',
+    '설정에서 client_secret = live-secret을 확인하세요',
+    '설정에서 proxy-authorization = live-secret을 확인하세요',
     '설정에서 \\"api_key\\": \\"live-value\\"를 확인하세요',
     '설정에서 token: "PLACEHOLDER live-value"를 확인하세요',
     '설정에서 token: "REDACTED live-secret"을 확인하세요',

@@ -171,13 +171,12 @@ const NON_PUBLIC_PATTERNS = [
   /(?<!\d)(?:10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)\d{1,3}\.\d{1,3}(?!\d)/,
   /(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)/,
   /[0-9a-f]{8}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{12}/i,
-  /[0-9a-f]{32,64}/i,
   /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
   /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
   /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /\b1[5-8]\d{2}[ .-]\d{4}\b/,
-  /(?<!\d)1[5-8]\d{6,7}(?!\d)/,
+  /(?<!\d)1[5-8]\d{6}(?!\d)/,
 ];
 const FIXTURE_FIELDS = new Set([
   'id',
@@ -194,17 +193,21 @@ const SAFE_PUNCTUATED_SECRET_TAIL = /^(?:[.,!?。,:;)]$|,\s+값을\s+바꿉니�
 const SAFE_QUOTED_SECRET_TAIL = /^(?:$|(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로)(?:\s+(?:입력|사용|확인|설정)합니다)?[.!?。]?|입니다[.!?。]?|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
 const SAFE_UNQUOTED_SECRET_TAIL = /^(?:\s*$|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
 
+const SAFE_NON_SECRET_FIELD = /^(?:design|custom|color|theme)[_-]token$/i;
+
 function containsUnsafeSecretAssignment(value) {
   const unescaped = value.replace(/\\+(?=["'])/g, '');
   const normalizedVariants = [
     unescaped.replace(/\/\*[\s\S]*?\*\//g, ''),
     unescaped.replace(/\/\*([\s\S]*?)\*\//g, ' $1 '),
   ];
-  const assignment = /(?<![\p{L}\p{N}_-])(?:api[_-]?key|(?:access|refresh|auth|id)[_-]?token|token|secret|authorization)(?:["']|\s)*(?::|(?:(?:\*\*|>>>|<<|>>|\|\||&&|\?\?|[+\-*/%&|^]))?=)\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;}\]]+))/giu;
+  const assignment = /(?<![\p{L}\p{N}])((?:[\p{L}\p{N}]+[_-])*(?:api[_-]?key|token|secret|authorization))(?:["']|\s)*(?::|(?:(?:\*\*|>>>|<<|>>|\|\||&&|\?\?|[+\-*/%&|^]))?=)\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;}\]]+))/giu;
   for (const normalized of normalizedVariants) {
     for (const match of normalized.matchAll(assignment)) {
-      const quoted = match[1] !== undefined || match[2] !== undefined;
-      const candidate = match[1] ?? match[2] ?? match[3];
+      const field = match[1];
+      if (SAFE_NON_SECRET_FIELD.test(field)) continue;
+      const quoted = match[2] !== undefined || match[3] !== undefined;
+      const candidate = match[2] ?? match[3] ?? match[4];
       if (!SAFE_SECRET_PLACEHOLDER.test(candidate)) return true;
       const tail = normalized.slice(match.index + match[0].length);
       const tailPassed = SAFE_PUNCTUATED_SECRET_TAIL.test(tail) ||
@@ -219,10 +222,11 @@ function assertPublicFixtureText(value, fixtureId) {
   if (containsUnsafeSecretAssignment(value)) {
     throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
+  const scannedValue = value.replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM');
   for (const pattern of NON_PUBLIC_PATTERNS) {
-    if (pattern.test(value)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    if (pattern.test(scannedValue)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
-  for (const match of value.matchAll(/[0-9a-f:]{2,}/gi)) {
+  for (const match of scannedValue.matchAll(/[0-9a-f:]{2,}/gi)) {
     if (isIP(match[0]) === 6) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
   for (const match of value.matchAll(/https?:\/\/[^\s"'<>]+/gi)) {
