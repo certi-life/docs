@@ -141,6 +141,7 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([base, {...base}], new Set(base.expectedTop3), {expectedCount: 2}), /duplicate fixture id/);
   assert.throws(() => validateFixtures([{...base, question: 'WORK-95를 봐 주세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 http:\/\/10.0.0.7 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '내부 주소 id_10.0.0.7_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 fd00::1 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '식별자 018f9f58-5c6e-7c35-8d2f-12a4d77d9f20 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '식별자 123e4567e89b12d3a456426614174000 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
@@ -148,6 +149,8 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([{...base, question: 'id_123e4567e89b12d3a456426614174000_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: 'f123e4567-e89b-12d3-a456-426614174000f 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: 'f123e4567e89b12d3a456426614174000f 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'id_a123e4567e89b12d3a456426614174000b_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'id_123e4567_e89b_12d3_a456_426614174000_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 02-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 10-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 (02) 1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
@@ -185,11 +188,14 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '설정 예시는 token: PLACEHOLDER입니다',
     'Use token: PLACEHOLDER for local testing.',
     'Use token: "<YOUR_TOKEN>" when testing.',
+    'CSS design_token: primary-blue 입니다',
+    'CSS design_token /* palette */: primary-blue 입니다',
   ]) {
     assert.doesNotThrow(() => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}));
   }
   for (const question of [
     '설정에서 token: live-value를 확인하세요',
+    '설정에서 access_token: live-value를 확인하세요',
     '설정에서 \\"api_key\\": \\"live-value\\"를 확인하세요',
     '설정에서 token: "PLACEHOLDER live-value"를 확인하세요',
     '설정에서 token: "REDACTED live-secret"을 확인하세요',
@@ -213,6 +219,19 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '설정에서 token: PLACEHOLDER; live-value를 확인하세요',
     '설정에서 token: ***]live-value를 확인하세요',
     '설정에서 token: PLACEHOLDER for local testing live-secret-value',
+    '설정에서 token += "live-secret"을 확인하세요',
+    '설정에서 secret ||= live-secret을 확인하세요',
+    '설정에서 authorization ??= live-secret을 확인하세요',
+    '설정에서 token **= live-secret을 확인하세요',
+    '설정에서 token <<= live-secret을 확인하세요',
+    '설정에서 token >>= live-secret을 확인하세요',
+    '설정에서 token >>>= live-secret을 확인하세요',
+    '설정에서 token/**/=live-secret을 확인하세요',
+    '설정에서 token /* 주석 */ **= live-secret을 확인하세요',
+    '설정에서 token = "PLACE/*live-secret*/HOLDER"을 입력합니다',
+    '설정 예시는 token: "/*live-secret*/PLACEHOLDER"입니다',
+    '설정 예시는 token: "PLACEHOLDER"/*live-secret*/입니다',
+    'Use token: "/*live-secret*/<YOUR_TOKEN>" when testing.',
     "설정에서 authorization = '*** live-secret'을 확인하세요",
     '설정에서 token: PLACEHOLDER 실제비밀을 확인하세요',
     '설정에서 token: *를 확인하세요',
