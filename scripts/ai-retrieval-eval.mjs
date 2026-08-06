@@ -170,13 +170,13 @@ const NON_PUBLIC_PATTERNS = [
   /\blocalhost\b|\b127\.0\.0\.1\b/i,
   /\b(?:10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)\d{1,3}\.\d{1,3}\b/,
   /\b(?:\d{1,3}\.){3}\d{1,3}\b/,
-  /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/i,
-  /["']?(?:api[_-]?key|token|secret|authorization)["']?\s*[:=]\s*["']?\S+/i,
+  /(?<![0-9a-f])[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}(?![0-9a-f])/i,
+  /(?<![0-9a-f])[0-9a-f]{32}(?![0-9a-f])/i,
   /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
   /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
-  /(?:\(?0(?:10|70|2|[3-6][1-5])\)?[ -]?\d{3,4}[ -]?\d{4})/,
-  /(?:\+82[ -]?(?:\(0\)[ -]?)?(?:10|70|2|[3-6][1-5])[ -]?\d{3,4}[ -]?\d{4})/,
-  /\b1[5-8]\d{2}[ -]\d{4}\b/,
+  /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
+  /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
+  /\b1[5-8]\d{2}[ .-]\d{4}\b/,
 ];
 const FIXTURE_FIELDS = new Set([
   'id',
@@ -188,7 +188,32 @@ const FIXTURE_FIELDS = new Set([
   'forbiddenClaims',
 ]);
 
+const SAFE_SECRET_PLACEHOLDER = /^(?:<YOUR_[A-Z0-9_]+>|REPLACE_ME|REDACTED|PLACEHOLDER|\*{3})(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?[.!?。]?$/;
+const SAFE_PUNCTUATED_SECRET_TAIL = /^(?:[.,!?。,:;)]$|,\s+값을\s+바꿉니다[.!?。]?$|\.\s+입니다[.!?。]?$)/;
+const SAFE_QUOTED_SECRET_TAIL = /^(?:$|(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로)(?:\s+(?:입력|사용|확인|설정)합니다)?[.!?。]?|입니다[.!?。]?|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
+const SAFE_UNQUOTED_SECRET_TAIL = /^(?:\s*$|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
+
+function containsUnsafeSecretAssignment(value) {
+  const normalized = value.replace(/\\+(?=["'])/g, '');
+  const assignment = /(?:api[_-]?key|token|secret|authorization)(?:["']|\s)*[:=]\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;}\]]+))/gi;
+  for (const match of normalized.matchAll(assignment)) {
+    const quoted = match[1] !== undefined || match[2] !== undefined;
+    const candidate = match[1] ?? match[2] ?? match[3];
+    if (!SAFE_SECRET_PLACEHOLDER.test(candidate)) return true;
+    const tail = normalized.slice(match.index + match[0].length);
+    const tailPassed = SAFE_PUNCTUATED_SECRET_TAIL.test(tail) ||
+      (quoted ? SAFE_QUOTED_SECRET_TAIL.test(tail) : SAFE_UNQUOTED_SECRET_TAIL.test(tail));
+    if (!tailPassed) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function assertPublicFixtureText(value, fixtureId) {
+  if (containsUnsafeSecretAssignment(value)) {
+    throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+  }
   for (const pattern of NON_PUBLIC_PATTERNS) {
     if (pattern.test(value)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
