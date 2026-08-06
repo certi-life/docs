@@ -218,7 +218,13 @@ function containsUnsafeSecretAssignment(value) {
   return false;
 }
 
+const MAX_FIXTURE_TEXT_LENGTH = 2000;
+const MAX_FIXTURE_LIST_ITEMS = 10;
+
 function assertPublicFixtureText(value, fixtureId) {
+  if (value.length > MAX_FIXTURE_TEXT_LENGTH) {
+    throw new Error(`fixture ${fixtureId} exceeds maximum text length ${MAX_FIXTURE_TEXT_LENGTH}`);
+  }
   if (containsUnsafeSecretAssignment(value)) {
     throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
@@ -247,41 +253,46 @@ export function validateFixtures(fixtures, publicIds, {expectedCount = 30} = {})
     throw new Error(`fixture set must contain exactly ${expectedCount} cases`);
   }
   const ids = new Set();
-  for (const fixture of fixtures) {
+  for (const [fixtureIndex, fixture] of fixtures.entries()) {
     if (!fixture || typeof fixture !== 'object') throw new Error('fixture must be an object');
     const unknownFields = Object.keys(fixture).filter((key) => !FIXTURE_FIELDS.has(key));
-    if (unknownFields.length > 0) throw new Error(`fixture contains unknown field: ${unknownFields.join(', ')}`);
+    if (unknownFields.length > 0) throw new Error('fixture contains unknown field');
     if (typeof fixture.id !== 'string' || !fixture.id) throw new Error('fixture id is required');
-    if (ids.has(fixture.id)) throw new Error(`duplicate fixture id: ${fixture.id}`);
+    assertPublicFixtureText(fixture.id, `case[${fixtureIndex}].id`);
+    const fixtureLabel = fixture.id.length <= 64 ? fixture.id : `case[${fixtureIndex}]`;
+    if (ids.has(fixture.id)) throw new Error(`duplicate fixture id: ${fixtureLabel}`);
     ids.add(fixture.id);
     if (typeof fixture.question !== 'string' || fixture.question.length < 4) {
-      throw new Error(`${fixture.id}: question is too short`);
+      throw new Error(`${fixtureLabel}: question is too short`);
     }
     for (const [key, value] of Object.entries(fixture)) {
-      if (typeof value === 'string') assertPublicFixtureText(value, `${fixture.id}.${key}`);
+      if (typeof value === 'string') assertPublicFixtureText(value, `${fixtureLabel}.${key}`);
       if (Array.isArray(value)) {
+        if (value.length > MAX_FIXTURE_LIST_ITEMS) {
+          throw new Error(`${fixtureLabel}.${key} exceeds maximum item count ${MAX_FIXTURE_LIST_ITEMS}`);
+        }
         for (const item of value) {
-          if (typeof item !== 'string') throw new Error(`${fixture.id}.${key}: all values must be strings`);
-          assertPublicFixtureText(item, `${fixture.id}.${key}`);
+          if (typeof item !== 'string') throw new Error(`${fixtureLabel}.${key}: all values must be strings`);
+          assertPublicFixtureText(item, `${fixtureLabel}.${key}`);
         }
       }
     }
-    if (!ALLOWED_CATEGORIES.has(fixture.category)) throw new Error(`${fixture.id}: invalid category`);
-    if (!publicIds.has(fixture.expectedTop1)) throw new Error(`${fixture.id}: unknown expectedTop1`);
+    if (!ALLOWED_CATEGORIES.has(fixture.category)) throw new Error(`${fixtureLabel}: invalid category`);
+    if (!publicIds.has(fixture.expectedTop1)) throw new Error(`${fixtureLabel}: unknown expectedTop1`);
     if (!Array.isArray(fixture.expectedTop3) || fixture.expectedTop3.length !== 3 || new Set(fixture.expectedTop3).size !== 3) {
-      throw new Error(`${fixture.id}: expectedTop3 must contain exactly 3 unique document ids`);
+      throw new Error(`${fixtureLabel}: expectedTop3 must contain exactly 3 unique document ids`);
     }
     if (!fixture.expectedTop3.includes(fixture.expectedTop1)) {
-      throw new Error(`${fixture.id}: expectedTop3 must include expectedTop1`);
+      throw new Error(`${fixtureLabel}: expectedTop3 must include expectedTop1`);
     }
     for (const id of fixture.expectedTop3) {
-      if (!publicIds.has(id)) throw new Error(`${fixture.id}: unknown expectedTop3 ${id}`);
+      if (!publicIds.has(id)) throw new Error(`${fixtureLabel}: unknown expectedTop3`);
     }
     if (!Array.isArray(fixture.requiredEvidence) || fixture.requiredEvidence.length === 0 || fixture.requiredEvidence.some((item) => typeof item !== 'string' || !item)) {
-      throw new Error(`${fixture.id}: requiredEvidence must be a non-empty string array`);
+      throw new Error(`${fixtureLabel}: requiredEvidence must be a non-empty string array`);
     }
     if (!Array.isArray(fixture.forbiddenClaims) || fixture.forbiddenClaims.some((item) => typeof item !== 'string' || !item)) {
-      throw new Error(`${fixture.id}: forbiddenClaims must be a string array`);
+      throw new Error(`${fixtureLabel}: forbiddenClaims must be a string array`);
     }
   }
   if (!fixtures.some((fixture) => fixture.category === 'safety' && fixture.forbiddenClaims.length > 0)) {
@@ -333,7 +344,7 @@ export function validateFixtureFile(fixtureFile, publicIds, options = {}) {
   }
   const allowedRootFields = new Set(['schemaVersion', 'cases']);
   const unknownRootFields = Object.keys(fixtureFile).filter((key) => !allowedRootFields.has(key));
-  if (unknownRootFields.length > 0) throw new Error(`fixture file contains unknown root field: ${unknownRootFields.join(', ')}`);
+  if (unknownRootFields.length > 0) throw new Error('fixture file contains unknown root field');
   if (fixtureFile.schemaVersion !== 1) throw new Error('fixture schemaVersion must equal 1');
   validateFixtures(fixtureFile.cases, publicIds, options);
   return fixtureFile.cases;
