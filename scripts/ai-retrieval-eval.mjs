@@ -4,7 +4,7 @@ import {isIP} from 'node:net';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from '@11ty/gray-matter';
-import {hasUnclosedBlockComment} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, hasUnclosedBlockComment} from './credential-safety.mjs';
 
 const WORD_PATTERN = /[\p{L}\p{N}]+/gu;
 
@@ -269,6 +269,15 @@ function assertPublicFixtureText(value, fixtureId) {
       throw new Error(`fixture ${fixtureId} contains a malformed URL`);
     }
     if (parsed.username || parsed.password || !ALLOWED_PUBLIC_HOSTS.has(parsed.hostname.toLocaleLowerCase('en-US'))) {
+      throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
+    let decodedUrlSurface;
+    try {
+      decodedUrlSurface = decodeUrlComponentLayers(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+    } catch {
+      throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
+    if (containsUnsafeSecretAssignment(decodedUrlSurface)) {
       throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
     }
   }

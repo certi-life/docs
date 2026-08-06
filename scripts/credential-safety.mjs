@@ -9,3 +9,18 @@ export function hasUnclosedBlockComment(value) {
   }
   return false;
 }
+
+export function decodeUrlComponentLayers(value) {
+  let current = value;
+  for (let depth = 0; depth <= value.length; depth += 1) {
+    let decoded;
+    try {
+      decoded = decodeURIComponent(current);
+    } catch {
+      throw new Error('malformed URL encoding');
+    }
+    if (decoded === current) return current;
+    current = decoded;
+  }
+  throw new Error('URL encoding depth exceeds input length');
+}

@@ -277,6 +277,10 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     `api_key: ${'sk_live_'}${'example_1234567890abcdef'}`,
     `Authorization: Bearer ${'eyJhbGciOiJIUzI1NiJ9'}${'.synthetic.signature'}`,
     `${'-----BEGIN PRIVATE KEY-----'}\nZmFrZS1wcml2YXRlLWtleS1tYXRlcmlhbA==\n${'-----END PRIVATE KEY-----'}`,
+    '[encoded query](https://docs.certi.life/guide/help?token%3Dlive-secret-value)',
+    '[encoded path](https://docs.certi.life/guide/token%3Dlive-secret-value)',
+    '[double encoded fragment](https://docs.certi.life/guide/help#token%253Dlive-secret-value)',
+    '[malformed encoded query](https://docs.certi.life/guide/help?token%3Dlive-secret-value%ZZ)',
   ];
   for (const body of leaked) {
     assert.throws(() => createCleanMarkdownArtifacts(document(body)), /private or credential-like content detected/, body);
@@ -292,6 +296,7 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     'token: REDACTED.',
     '"token": "REDACTED".',
     'token: "PLACEHOLDER"를 사용합니다.',
+    'token: PLACEHOLDER。',
     '`token: "<YOUR_TOKEN>"`을 입력합니다.',
     '`token: <YOUR_TOKEN>!`',
     '`db_password=<YOUR_PASSWORD>`',
