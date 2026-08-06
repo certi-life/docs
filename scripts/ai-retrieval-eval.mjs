@@ -191,7 +191,7 @@ const FIXTURE_FIELDS = new Set([
 const SAFE_SECRET_PLACEHOLDER = /^(?:<YOUR_[A-Z0-9_]+>|REPLACE_ME|REDACTED|PLACEHOLDER|\*{3})(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?[.!?。]?$/;
 const SAFE_PUNCTUATED_SECRET_TAIL = /^(?:[.,!?。,:;)]$|,\s+값을\s+바꿉니다[.!?。]?$|\.\s+입니다[.!?。]?$)/;
 const SAFE_QUOTED_SECRET_TAIL = /^(?:$|(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로)(?:\s+(?:입력|사용|확인|설정)합니다)?[.!?。]?|입니다[.!?。]?|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
-const SAFE_UNQUOTED_SECRET_TAIL = /^(?:\s*$|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
+const SAFE_UNQUOTED_SECRET_TAIL = /^(?:\s*$|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)(?:합니다)?|입니다)[.!?。]?)$/i;
 
 const SAFE_NON_SECRET_FIELD = /^(?:design|custom|color|theme)[_-]token$/i;
 
@@ -201,7 +201,7 @@ function containsUnsafeSecretAssignment(value) {
     unescaped.replace(/\/\*[\s\S]*?\*\//g, ''),
     unescaped.replace(/\/\*([\s\S]*?)\*\//g, ' $1 '),
   ];
-  const assignment = /(?<![\p{L}\p{N}])((?:[\p{L}\p{N}]+[_-])*(?:api[_-]?key|token|secret|authorization))(?:["']|\s)*(?::|(?:(?:\*\*|>>>|<<|>>|\|\||&&|\?\?|[+\-*/%&|^]))?=)\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;}\]]+))/giu;
+  const assignment = /(?<![\p{L}\p{N}])((?:[\p{L}\p{N}]+[_-])*(?:api[_-]?key|token|secret|authorization))(?:["']|\s)*(?::|(?:(?:\*\*|>>>|<<|>>|\|\||&&|\?\?|[+\-*/%&|^]))?=)\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;)}\]]+))/giu;
   for (const normalized of normalizedVariants) {
     for (const match of normalized.matchAll(assignment)) {
       const field = match[1];
