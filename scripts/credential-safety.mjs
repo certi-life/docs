@@ -1,3 +1,28 @@
+const IDENTIFIER_DASHES = /[‐‑‒–—―⁃−﹘﹣－⁄∕／]/gu;
+const IDENTIFIER_DOTS = /[․‧·•∙⋅。．｡]/gu;
+const IDENTIFIER_COLONS = /[꞉ː∶︰：]/gu;
+
+export function normalizeInvisibleCharacters(value) {
+  return String(value)
+    .normalize('NFKD')
+    .replace(/\p{Default_Ignorable_Code_Point}/gu, '')
+    .replace(/\p{M}/gu, '')
+    .normalize('NFKC');
+}
+
+export function normalizeIpSurface(value) {
+  return normalizeInvisibleCharacters(value)
+    .replace(IDENTIFIER_DOTS, '.')
+    .replace(IDENTIFIER_COLONS, ':');
+}
+
+export function normalizeIdentifierSurface(value) {
+  return normalizeIpSurface(value)
+    .replace(IDENTIFIER_DASHES, '-')
+    .replace(/(?<=[0-9])[\p{P}\p{S}\p{Z}]+(?=[0-9])/gu, '-')
+    .replace(/(?<=[0-9a-f])\p{Pd}+(?=[0-9a-f])/giu, '-');
+}
+
 export function hasUnclosedBlockComment(value) {
   let index = 0;
   while (index < value.length) {

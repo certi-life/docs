@@ -10,7 +10,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
-import {decodeUrlComponentLayers, extractHttpUrls, hasUnclosedBlockComment, replaceHttpUrls} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasUnclosedBlockComment, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
 
 const parser = unified().use(remarkParse).use(remarkMdx).use(remarkDirective).use(remarkGfm);
 const stringifier = unified().use(remarkParse).use(remarkGfm).use(remarkStringify, {
@@ -218,8 +218,8 @@ const LEAK_PATTERNS = [
   /[\u200B-\u200D\u2060\uFEFF]/,
 ];
 const IDENTIFIER_PATTERNS = [
-  /(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)/,
-  /[0-9a-f]{8}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{12}/i,
+  /(?<!\d)(?:\d{1,3}[.-]){3}\d{1,3}(?!\d)/,
+  /[0-9a-f]{8}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{12}/i,
   /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
   /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
@@ -236,8 +236,7 @@ function normalizeCredentialMarkdown(value) {
   const strong = new RegExp(`(?:\\*\\*|__)(${CREDENTIAL_FIELD_SOURCE})(?:\\*\\*|__)`, 'giu');
   const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
   const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
-  return value
-    .replace(/[\u200B-\u200D\u2060\uFEFF]/g, '')
+  return normalizeInvisibleCharacters(value)
     .replace(/[`\\]+/g, '')
     .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
     .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
@@ -301,14 +300,23 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
   const publicUrls = extractHttpUrls(value);
   const decodedUrlSurfaces = [];
   for (const match of publicUrls) {
+    const normalizedUrl = match.url.replace(/\\([\[\]()?])/g, '$1');
+    if (normalizedUrl.includes('\\') || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
+      throw new Error(`${label}: private or credential-like content detected`);
+    }
     let parsed;
     try {
-      parsed = new URL(match.url);
+      parsed = new URL(normalizedUrl);
     } catch {
       throw new Error(`${label}: private or credential-like content detected`);
     }
     const host = parsed.hostname.replace(/^\[|\]$/g, '').toLocaleLowerCase('en-US');
-    if (isIP(host) === 6 && (host === '::' || host === '::1' || /^(?:f[cd]|fe[89ab])/i.test(host))) {
+    if (isIP(host) === 6 && (
+      host === '::' ||
+      host === '::1' ||
+      host.startsWith('::ffff:') ||
+      /^(?:f[cd]|fe[89a-f]|ff|2001:db8:)/i.test(host)
+    )) {
       throw new Error(`${label}: private or credential-like content detected`);
     }
     try {
@@ -317,15 +325,22 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
       throw new Error(`${label}: private or credential-like content detected`);
     }
   }
-  const proseWithoutUrls = replaceHttpUrls(value);
-  for (const pattern of IDENTIFIER_PATTERNS) {
-    if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
-  }
-  for (const match of proseWithoutUrls.matchAll(/[0-9a-f:]{2,}/gi)) {
-    if (isIP(match[0]) === 6) throw new Error(`${label}: private or credential-like content detected`);
+  const rawProseWithoutUrls = replaceHttpUrls(value);
+  for (const proseWithoutUrls of new Set([
+    rawProseWithoutUrls,
+    normalizeIpSurface(rawProseWithoutUrls),
+    normalizeIdentifierSurface(rawProseWithoutUrls),
+  ])) {
+    for (const pattern of IDENTIFIER_PATTERNS) {
+      if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
+    }
+    for (const match of proseWithoutUrls.matchAll(/[0-9a-f:]{2,}/gi)) {
+      if (isIP(match[0]) === 6) throw new Error(`${label}: private or credential-like content detected`);
+    }
   }
   const unescaped = [value, ...decodedUrlSurfaces].join('\n').replace(/\\+(?=["'])/g, '');
-  const variants = credentialCommentVariants(unescaped)
+  const variants = [...new Set([unescaped, normalizeInvisibleCharacters(unescaped)])]
+    .flatMap(credentialCommentVariants)
     .map(normalizeCredentialMarkdown)
     .map((candidate) => candidate.replace(/([*?<>|&])(?:[ \t]+\1){1,2}(?=[ \t]*=)/g, (operator) => operator.replace(/[ \t]/g, '')))
     .map((candidate) => candidate.replace(/\bCSS\s+--[\w-]*token[\w-]*\s*:/gi, 'CSS variable:'));
