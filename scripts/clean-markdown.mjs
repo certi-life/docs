@@ -1,6 +1,7 @@
 import matter from '@11ty/gray-matter';
 import {createHash} from 'node:crypto';
 import {existsSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, renameSync, rmSync, statSync, writeFileSync} from 'node:fs';
+import {isIP} from 'node:net';
 import {join, posix, relative, resolve} from 'node:path';
 import GithubSlugger from 'github-slugger';
 import {unified} from 'unified';
@@ -213,30 +214,136 @@ const LEAK_PATTERNS = [
   /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----[\s\S]{16,}?-----END (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,
   /\bBearer\s+[A-Za-z0-9._~+/=-]{16,}\b/i,
   /https?:\/\/[^\s/@]+:[^\s/@]+@/i,
+  /[\u200B-\u200D\u2060\uFEFF]/,
 ];
-const CREDENTIAL_ASSIGNMENT = /\b(?:password|passwd|pwd|client[ _-]?secret|api[ _-]?key|access[ _-]?token|secret[ _-]?key|(?:github[ _-]?)?token)\b\s*[:=]\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|`([^`\r\n]*)`|([^\s,;]+))/gi;
-
-function isSafeCredentialPlaceholder(value) {
-  const candidate = value.trim().replace(/^`+|`+$/g, '').replace(/\\_/g, '_');
-  return /^(?:<[^>]+>|\$\{[^}]+\}|\{\{[^}]+\}\}|%[A-Z_][A-Z0-9_]*%|\$[A-Z_][A-Z0-9_]*|(?:YOUR|REPLACE|CHANGE|INSERT)[_-].+|REDACTED|MASKED|NONE|NULL|UNSET|CHANGEME|X{3,}|\*+|(?:EXAMPLE|SAMPLE|DUMMY|FAKE)(?:[_-](?:VALUE|SECRET|TOKEN|KEY|PASSWORD))?)$/i.test(candidate);
-}
+const IDENTIFIER_PATTERNS = [
+  /(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)/,
+  /[0-9a-f]{8}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{12}/i,
+  /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
+  /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
+  /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
+  /\b1[5-8]\d{2}[ .-]?\d{4}\b/,
+];
+const CREDENTIAL_FIELD_SOURCE = '(?:(?:[\\p{L}\\p{N}]+[ _-])*(?:api[ _-]?key|token|secret|authorization|password|passwd|pwd))';
+const CREDENTIAL_ASSIGNMENT = new RegExp(`(?<![\\p{L}\\p{N}])(${CREDENTIAL_FIELD_SOURCE})(?:["']|\\s)*(?::|(?:(?:\\*\\*|>>>|<<|>>|\\|\\||&&|\\?\\?|[+\\-*/%&|^]))?\\s*=)\\s*(?:"([^"\\r\\n]*)"|'([^'\\r\\n]*)'|\\x60([^\\x60\\r\\n]*)\\x60|([^\\s,;)\\]\\x60.!?]+))`, 'giu');
+const SAFE_NON_SECRET_FIELD = /^(?:CSS[ _-]+)?(?:design|custom|color|theme)[ _-]token$/i;
+const SAFE_CREDENTIAL_PLACEHOLDER = /^(?:<YOUR_[A-Z0-9_]+>|\$\{[A-Z_][A-Z0-9_]*\}|\{\{[A-Z_][A-Z0-9_]*\}\}|%[A-Z_][A-Z0-9_]*%|\$[A-Z_][A-Z0-9_]*|(?:YOUR|REPLACE|CHANGE|INSERT)_[A-Z0-9_]+|REDACTED|MASKED|PLACEHOLDER|NONE|NULL|UNSET|CHANGEME|X{3,}|\*{3}|(?:EXAMPLE|SAMPLE|DUMMY|FAKE)(?:_(?:VALUE|SECRET|TOKEN|KEY|PASSWORD))?)(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?$/;
+const SAFE_CREDENTIAL_FINAL_TAIL = /^(?:[ \t]*[`.,!?。,:;)]*[ \t]*|[ \t]+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)(?:합니다)?|입니다)[.!?。]?)$/i;
+const EXPLICIT_BEARER_PLACEHOLDER_SOURCE = '(?:<YOUR_[A-Z0-9_]+>|REPLACE_ME|REDACTED|MASKED|\\*{3}|\\$\\{[A-Z_][A-Z0-9_]*\\})';
 
 function normalizeCredentialMarkdown(value) {
+  const strong = new RegExp(`(?:\\*\\*|__)(${CREDENTIAL_FIELD_SOURCE})(?:\\*\\*|__)`, 'giu');
+  const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
+  const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
   return value
-    .replace(/(?:\*\*|__)([A-Za-z][A-Za-z0-9 _-]*)(?:\*\*|__)/g, '$1')
-    .replace(/`([A-Za-z][A-Za-z0-9 _-]*)`/g, '$1')
-    .replace(/\[([A-Za-z][A-Za-z0-9 _-]*)\]\([^)]+\)/g, '$1');
+    .replace(/[`\\]+/g, '')
+    .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
+    .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
+    .replace(strong, '$1')
+    .replace(code, '$1')
+    .replace(link, '$1')
+    .replace(/`([^`\r\n]+)`/g, '$1');
 }
 
-function assertNoLeaks(value, label) {
+function credentialCommentVariants(value) {
+  let stripped = '';
+  let preserved = '';
+  let quote = null;
+  for (let index = 0; index < value.length;) {
+    const char = value[index];
+    if (quote) {
+      stripped += char;
+      preserved += char;
+      if (char === '\\' && index + 1 < value.length) {
+        stripped += value[index + 1];
+        preserved += value[index + 1];
+        index += 2;
+        continue;
+      }
+      if (char === quote) quote = null;
+      index += 1;
+      continue;
+    }
+    if (char === '"' || char === "'" || char === '`') {
+      quote = char;
+      stripped += char;
+      preserved += char;
+      index += 1;
+      continue;
+    }
+    if (char === '/' && value[index + 1] === '*') {
+      const end = value.indexOf('*/', index + 2);
+      if (end === -1) {
+        stripped += value.slice(index);
+        preserved += value.slice(index);
+        break;
+      }
+      preserved += ` ${value.slice(index + 2, end)} `;
+      index = end + 2;
+      continue;
+    }
+    stripped += char;
+    preserved += char;
+    index += 1;
+  }
+  return [...new Set([stripped, preserved])];
+}
+
+function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {}) {
   for (const pattern of LEAK_PATTERNS) {
     if (pattern.test(value)) throw new Error(`${label}: private or credential-like content detected`);
   }
-  CREDENTIAL_ASSIGNMENT.lastIndex = 0;
-  for (const match of normalizeCredentialMarkdown(value).matchAll(CREDENTIAL_ASSIGNMENT)) {
-    const assignedValue = match.slice(1).find((candidate) => candidate !== undefined) ?? '';
-    if (assignedValue && !isSafeCredentialPlaceholder(assignedValue)) {
+  const publicUrls = [...value.matchAll(/https?:\/\/[^\s)<>"']+/gi)];
+  for (const match of publicUrls) {
+    let host;
+    try {
+      host = new URL(match[0]).hostname.replace(/^\[|\]$/g, '').toLocaleLowerCase('en-US');
+    } catch {
       throw new Error(`${label}: private or credential-like content detected`);
+    }
+    if (isIP(host) === 6 && (host === '::' || host === '::1' || /^(?:f[cd]|fe[89ab])/i.test(host))) {
+      throw new Error(`${label}: private or credential-like content detected`);
+    }
+  }
+  const proseWithoutUrls = value.replace(/https?:\/\/[^\s)<>"']+/gi, 'PUBLIC_URL');
+  for (const pattern of IDENTIFIER_PATTERNS) {
+    if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
+  }
+  for (const match of proseWithoutUrls.matchAll(/[0-9a-f:]{2,}/gi)) {
+    if (isIP(match[0]) === 6) throw new Error(`${label}: private or credential-like content detected`);
+  }
+  const unescaped = value.replace(/\\+(?=["'])/g, '');
+  const variants = credentialCommentVariants(unescaped)
+    .map(normalizeCredentialMarkdown)
+    .map((candidate) => candidate.replace(/([*?<>|&])(?:[ \t]+\1){1,2}(?=[ \t]*=)/g, (operator) => operator.replace(/[ \t]/g, '')))
+    .map((candidate) => candidate.replace(/\bCSS\s+--[\w-]*token[\w-]*\s*:/gi, 'CSS variable:'));
+  for (const variant of variants) {
+    const scanValue = allowGeneratedMarkdownEscapes ? variant.replace(/\\([_*])/g, '$1') : variant;
+    CREDENTIAL_ASSIGNMENT.lastIndex = 0;
+    const matches = [...scanValue.matchAll(CREDENTIAL_ASSIGNMENT)];
+    for (const [index, match] of matches.entries()) {
+      const field = match[1];
+      if (SAFE_NON_SECRET_FIELD.test(field)) continue;
+      const quoted = match[2] !== undefined || match[3] !== undefined || match[4] !== undefined;
+      const candidate = match[2] ?? match[3] ?? match[4] ?? match[5] ?? '';
+      const checkedCandidate = allowGeneratedMarkdownEscapes ? candidate.replace(/\\_/g, '_') : candidate;
+      let matchEnd = match.index + match[0].length;
+      if (!quoted && /authorization$/i.test(field) && /^Bearer$/i.test(checkedCandidate)) {
+        const bearer = scanValue.slice(matchEnd).match(new RegExp(`^[ \\t]+(${EXPLICIT_BEARER_PLACEHOLDER_SOURCE})`));
+        const bearerCandidate = allowGeneratedMarkdownEscapes ? bearer?.[1].replace(/\\_/g, '_') : bearer?.[1];
+        if (!bearer || !SAFE_CREDENTIAL_PLACEHOLDER.test(bearerCandidate)) throw new Error(`${label}: private or credential-like content detected`);
+        matchEnd += bearer[0].length;
+      } else if (!SAFE_CREDENTIAL_PLACEHOLDER.test(checkedCandidate)) {
+        throw new Error(`${label}: private or credential-like content detected`);
+      }
+      const nextMatch = matches[index + 1];
+      if (nextMatch) {
+        const separator = scanValue.slice(matchEnd, nextMatch.index);
+        if (!/^[ \t]*(?:[,;][ \t]*|\r?\n[ \t]*)$/.test(separator)) throw new Error(`${label}: private or credential-like content detected`);
+        continue;
+      }
+      const tail = scanValue.slice(matchEnd).split(/\r?\n/, 1)[0];
+      if (!SAFE_CREDENTIAL_FINAL_TAIL.test(tail)) throw new Error(`${label}: private or credential-like content detected`);
     }
   }
 }
@@ -270,6 +377,7 @@ export function createCleanMarkdownArtifacts(documents) {
   for (const document of documents) {
     if (ids.has(document.id)) throw new Error(`duplicate public document id: ${document.id}`);
     ids.add(document.id);
+    assertNoLeaks(document.source, document.id);
     const path = endpointPath(document.canonicalUrl);
     if (paths.has(path)) throw new Error(`duplicate clean Markdown endpoint: ${path}`);
     paths.add(path);
@@ -277,14 +385,13 @@ export function createCleanMarkdownArtifacts(documents) {
   }
   const seenSemanticHashes = new Map();
   const artifacts = documents.map((document) => {
-    assertNoLeaks(document.source, document.id);
     const path = endpointPath(document.canonicalUrl);
     const content = renderCleanMarkdown(document.source, {
       id: document.id,
       canonicalUrl: document.canonicalUrl,
       routeMap,
     });
-    assertNoLeaks(content, path);
+    assertNoLeaks(content, path, {allowGeneratedMarkdownEscapes: true});
     const semantic = content.replace(document.canonicalUrl, 'https://docs.certi.life/guide/__CANONICAL__');
     const hash = createHash('sha256').update(semantic).digest('hex');
     const previous = seenSemanticHashes.get(hash);

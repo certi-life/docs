@@ -177,6 +177,7 @@ const NON_PUBLIC_PATTERNS = [
   /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /\b1[5-8]\d{2}[ .-]\d{4}\b/,
   /(?<!\d)1[5-8]\d{6}(?!\d)/,
+  /[\u200B-\u200D\u2060\uFEFF]/,
 ];
 const FIXTURE_FIELDS = new Set([
   'id',
@@ -194,22 +195,52 @@ const SAFE_QUOTED_SECRET_TAIL = /^(?:$|(?:은|는|이|가|을|를|과|와|의|�
 const SAFE_UNQUOTED_SECRET_TAIL = /^(?:\s*$|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)(?:합니다)?|입니다)[.!?。]?)$/i;
 
 const SAFE_NON_SECRET_FIELD = /^(?:design|custom|color|theme)[_-]token$/i;
+const CREDENTIAL_FIELD_SOURCE = '(?:(?:[\\p{L}\\p{N}]+[_-])*(?:api(?:[ _-])?key|token|secret|authorization|password|passwd|pwd))';
+const EXPLICIT_PLACEHOLDER_SOURCE = '(?:<YOUR_[A-Z0-9_]+>|REPLACE_ME|REDACTED|PLACEHOLDER|\\*{3})';
+
+function normalizeFixtureCredentialMarkdown(value) {
+  const strong = new RegExp(`(?:\\*\\*|__)(${CREDENTIAL_FIELD_SOURCE})(?:\\*\\*|__)`, 'giu');
+  const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
+  const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
+  return value
+    .replace(/[`\\]+/g, '')
+    .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
+    .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
+    .replace(strong, '$1')
+    .replace(code, '$1')
+    .replace(link, '$1');
+}
 
 function containsUnsafeSecretAssignment(value) {
   const unescaped = value.replace(/\\+(?=["'])/g, '');
   const normalizedVariants = [
     unescaped.replace(/\/\*[\s\S]*?\*\//g, ''),
     unescaped.replace(/\/\*([\s\S]*?)\*\//g, ' $1 '),
-  ];
-  const assignment = /(?<![\p{L}\p{N}])((?:[\p{L}\p{N}]+[_-])*(?:api[_-]?key|token|secret|authorization))(?:["']|\s)*(?::|(?:(?:\*\*|>>>|<<|>>|\|\||&&|\?\?|[+\-*/%&|^]))?=)\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;)}\]]+))/giu;
+  ].map(normalizeFixtureCredentialMarkdown)
+    .map((candidate) => candidate.replace(/([*?<>|&])(?:[ \t]+\1){1,2}(?=[ \t]*=)/g, (operator) => operator.replace(/[ \t]/g, '')));
+  const assignment = new RegExp(`(?<![\\p{L}\\p{N}])(${CREDENTIAL_FIELD_SOURCE})(?:["']|\\s)*(?::|(?:(?:\\*\\*|>>>|<<|>>|\\|\\||&&|\\?\\?|[+\\-*/%&|^])[ \\t]*)?=)\\s*(?:"([^"\\r\\n]*)"|'([^'\\r\\n]*)'|([^\\s,;)}\\]]+))`, 'giu');
   for (const normalized of normalizedVariants) {
-    for (const match of normalized.matchAll(assignment)) {
+    const matches = [...normalized.matchAll(assignment)];
+    for (const [index, match] of matches.entries()) {
       const field = match[1];
       if (SAFE_NON_SECRET_FIELD.test(field)) continue;
       const quoted = match[2] !== undefined || match[3] !== undefined;
       const candidate = match[2] ?? match[3] ?? match[4];
-      if (!SAFE_SECRET_PLACEHOLDER.test(candidate)) return true;
-      const tail = normalized.slice(match.index + match[0].length);
+      let matchEnd = match.index + match[0].length;
+      if (!quoted && /authorization$/i.test(field) && /^Bearer$/i.test(candidate)) {
+        const bearerPlaceholder = normalized.slice(matchEnd).match(new RegExp(`^[ \\t]+(${EXPLICIT_PLACEHOLDER_SOURCE})`));
+        if (!bearerPlaceholder || !SAFE_SECRET_PLACEHOLDER.test(bearerPlaceholder[1])) return true;
+        matchEnd += bearerPlaceholder[0].length;
+      } else if (!SAFE_SECRET_PLACEHOLDER.test(candidate)) {
+        return true;
+      }
+      const nextMatch = matches[index + 1];
+      if (nextMatch) {
+        const separator = normalized.slice(matchEnd, nextMatch.index);
+        if (!/^[ \t]*(?:[,;][ \t]*|\r?\n[ \t]*)$/.test(separator)) return true;
+        continue;
+      }
+      const tail = normalized.slice(matchEnd);
       const tailPassed = SAFE_PUNCTUATED_SECRET_TAIL.test(tail) ||
         (quoted ? SAFE_QUOTED_SECRET_TAIL.test(tail) : SAFE_UNQUOTED_SECRET_TAIL.test(tail));
       if (!tailPassed) return true;
@@ -228,23 +259,26 @@ function assertPublicFixtureText(value, fixtureId) {
   if (containsUnsafeSecretAssignment(value)) {
     throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
-  const scannedValue = value.replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM');
+  const urls = [...value.matchAll(/https?:\/\/[^\s"'<>]+/gi)];
+  for (const match of urls) {
+    let parsed;
+    try {
+      parsed = new URL(match[0]);
+    } catch {
+      throw new Error(`fixture ${fixtureId} contains a malformed URL`);
+    }
+    if (parsed.username || parsed.password || !ALLOWED_PUBLIC_HOSTS.has(parsed.hostname.toLocaleLowerCase('en-US'))) {
+      throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
+  }
+  const scannedValue = value
+    .replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM')
+    .replace(/https?:\/\/[^\s"'<>]+/gi, 'PUBLIC_URL');
   for (const pattern of NON_PUBLIC_PATTERNS) {
     if (pattern.test(scannedValue)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
   for (const match of scannedValue.matchAll(/[0-9a-f:]{2,}/gi)) {
     if (isIP(match[0]) === 6) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
-  }
-  for (const match of value.matchAll(/https?:\/\/[^\s"'<>]+/gi)) {
-    let host;
-    try {
-      host = new URL(match[0]).hostname.toLocaleLowerCase('en-US');
-    } catch {
-      throw new Error(`fixture ${fixtureId} contains a malformed URL`);
-    }
-    if (!ALLOWED_PUBLIC_HOSTS.has(host)) {
-      throw new Error(`fixture ${fixtureId} contains a non-public URL host`);
-    }
   }
 }
 
