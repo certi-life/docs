@@ -4,7 +4,7 @@ import {isIP} from 'node:net';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from '@11ty/gray-matter';
-import {hasUnclosedBlockComment} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasConfusableAssignmentField, hasUnclosedBlockComment, maskExplicitPublicVersions, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
 
 const WORD_PATTERN = /[\p{L}\p{N}]+/gu;
 
@@ -171,11 +171,12 @@ const NON_PUBLIC_PATTERNS = [
   /\blocalhost\b|\b127\.0\.0\.1\b/i,
   /(?<!\d)(?:10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)\d{1,3}\.\d{1,3}(?!\d)/,
   /(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)/,
-  /[0-9a-f]{8}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{12}/i,
+  /(?<!\d)(?:10[.\-:/_]\d{1,3}|192[.\-:/_]168|172[.\-:/_](?:1[6-9]|2\d|3[01]))[.\-:/_]\d{1,3}[.\-:/_]\d{1,3}(?!\d)/,
+  /[0-9a-f]{8}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{12}/i,
   /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
   /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
-  /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
-  /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
+  /(?:\(?0\d{1,3}\)?[ .:/_-]?\d{3,4}[ .:/_-]?\d{4})/,
+  /(?:\+82[ .:/_-]?(?:\(0\)[ .:/_-]?)?\(?\d{1,3}\)?[ .:/_-]?\d{3,4}[ .:/_-]?\d{4})/,
   /\b1[5-8]\d{2}[ .-]\d{4}\b/,
   /(?<!\d)1[5-8]\d{6}(?!\d)/,
   /[\u200B-\u200D\u2060\uFEFF]/,
@@ -203,7 +204,7 @@ function normalizeFixtureCredentialMarkdown(value) {
   const strong = new RegExp(`(?:\\*\\*|__)(${CREDENTIAL_FIELD_SOURCE})(?:\\*\\*|__)`, 'giu');
   const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
   const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
-  return value
+  return normalizeInvisibleCharacters(value)
     .replace(/[`\\]+/g, '')
     .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
     .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
@@ -213,11 +214,14 @@ function normalizeFixtureCredentialMarkdown(value) {
 }
 
 function containsUnsafeSecretAssignment(value) {
+  if (hasConfusableAssignmentField(value)) return true;
   const unescaped = value.replace(/\\+(?=["'])/g, '');
-  const normalizedVariants = [
-    unescaped.replace(/\/\*[\s\S]*?\*\//g, ''),
-    unescaped.replace(/\/\*([\s\S]*?)\*\//g, ' $1 '),
-  ].map(normalizeFixtureCredentialMarkdown)
+  const normalizedVariants = [...new Set([unescaped, normalizeInvisibleCharacters(unescaped)])]
+    .flatMap((candidate) => [
+      candidate.replace(/\/\*[\s\S]*?\*\//g, ''),
+      candidate.replace(/\/\*([\s\S]*?)\*\//g, ' $1 '),
+    ])
+    .map(normalizeFixtureCredentialMarkdown)
     .map((candidate) => candidate.replace(/([*?<>|&])(?:[ \t]+\1){1,2}(?=[ \t]*=)/g, (operator) => operator.replace(/[ \t]/g, '')));
   const assignment = new RegExp(`(?<![\\p{L}\\p{N}])(${CREDENTIAL_FIELD_SOURCE})(?:["']|\\s)*(?::|(?:(?:\\*\\*|>>>|<<|>>|\\|\\||&&|\\?\\?|[+\\-*/%&|^])[ \\t]*)?=)\\s*(?:"([^"\\r\\n]*)"|'([^'\\r\\n]*)'|([^\\s,;)}\\]]+))`, 'giu');
   for (const normalized of normalizedVariants) {
@@ -260,26 +264,46 @@ function assertPublicFixtureText(value, fixtureId) {
   if (hasUnclosedBlockComment(value) || containsUnsafeSecretAssignment(value)) {
     throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
-  const urls = [...value.matchAll(/https?:\/\/[^\s"'<>]+/gi)];
+  const urls = extractHttpUrls(value);
   for (const match of urls) {
+    const normalizedUrl = match.url.replace(/\\([()?])/g, '$1');
+    if (normalizedUrl.includes('\\') || normalizedUrl.includes("'") || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
+      throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
     let parsed;
     try {
-      parsed = new URL(match[0]);
+      parsed = new URL(normalizedUrl);
     } catch {
       throw new Error(`fixture ${fixtureId} contains a malformed URL`);
     }
     if (parsed.username || parsed.password || !ALLOWED_PUBLIC_HOSTS.has(parsed.hostname.toLocaleLowerCase('en-US'))) {
       throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
     }
+    let decodedUrlSurface;
+    try {
+      decodedUrlSurface = decodeUrlComponentLayers(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+      if (/[\[\]{}]/u.test(decodedUrlSurface)) throw new Error('URL component contains unsafe delimiters');
+    } catch {
+      throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
+    if (containsUnsafeSecretAssignment(decodedUrlSurface)) {
+      throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
   }
-  const scannedValue = value
-    .replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM')
-    .replace(/https?:\/\/[^\s"'<>]+/gi, 'PUBLIC_URL');
-  for (const pattern of NON_PUBLIC_PATTERNS) {
-    if (pattern.test(scannedValue)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
-  }
-  for (const match of scannedValue.matchAll(/[0-9a-f:]{2,}/gi)) {
-    if (isIP(match[0]) === 6) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+  const rawScannedValue = replaceHttpUrls(
+    maskExplicitPublicVersions(value).replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM'),
+  );
+  for (const scannedValue of new Set([
+    rawScannedValue,
+    normalizeIpSurface(rawScannedValue),
+    normalizeIdentifierSurface(rawScannedValue),
+  ])) {
+    for (const pattern of NON_PUBLIC_PATTERNS) {
+      if (pattern.test(scannedValue)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
+    for (const match of scannedValue.matchAll(/[0-9a-f:]{2,}/gi)) {
+      if (isIP(match[0]) === 6) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
+    }
   }
 }
 

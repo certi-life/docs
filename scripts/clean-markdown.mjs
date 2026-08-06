@@ -10,7 +10,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
-import {hasUnclosedBlockComment} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasConfusableAssignmentField, hasUnclosedBlockComment, maskExplicitPublicVersions, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
 
 const parser = unified().use(remarkParse).use(remarkMdx).use(remarkDirective).use(remarkGfm);
 const stringifier = unified().use(remarkParse).use(remarkGfm).use(remarkStringify, {
@@ -219,16 +219,17 @@ const LEAK_PATTERNS = [
 ];
 const IDENTIFIER_PATTERNS = [
   /(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)/,
-  /[0-9a-f]{8}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{12}/i,
+  /(?<!\d)(?:10[.\-:/_]\d{1,3}|192[.\-:/_]168|172[.\-:/_](?:1[6-9]|2\d|3[01]))[.\-:/_]\d{1,3}[.\-:/_]\d{1,3}(?!\d)/,
+  /[0-9a-f]{8}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{4}[-_.:]?[0-9a-f]{12}/i,
   /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
-  /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
-  /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
+  /(?:\(?0\d{1,3}\)?[ .:/_-]?\d{3,4}[ .:/_-]?\d{4})/,
+  /(?:\+82[ .:/_-]?(?:\(0\)[ .:/_-]?)?\(?\d{1,3}\)?[ .:/_-]?\d{3,4}[ .:/_-]?\d{4})/,
   /\b1[5-8]\d{2}[ .-]?\d{4}\b/,
 ];
 const CREDENTIAL_FIELD_SOURCE = '(?:(?:[\\p{L}\\p{N}]+[ _-])*(?:api[ _-]?key|token|secret|authorization|password|passwd|pwd))';
 const CREDENTIAL_ASSIGNMENT = new RegExp(`(?<![\\p{L}\\p{N}])(${CREDENTIAL_FIELD_SOURCE})(?:["']|\\s)*(?::|(?:(?:\\*\\*|>>>|<<|>>|\\|\\||&&|\\?\\?|[+\\-*/%&|^]))?\\s*=)\\s*(?:"([^"\\r\\n]*)"|'([^'\\r\\n]*)'|\\x60([^\\x60\\r\\n]*)\\x60|([^\\s,;)\\]\\x60.!?]+))`, 'giu');
 const SAFE_NON_SECRET_FIELD = /^(?:CSS[ _-]+)?(?:design|custom|color|theme)[ _-]token$/i;
-const SAFE_CREDENTIAL_PLACEHOLDER = /^(?:<YOUR_[A-Z0-9_]+>|\$\{[A-Z_][A-Z0-9_]*\}|\{\{[A-Z_][A-Z0-9_]*\}\}|%[A-Z_][A-Z0-9_]*%|\$[A-Z_][A-Z0-9_]*|(?:YOUR|REPLACE|CHANGE|INSERT)_[A-Z0-9_]+|REDACTED|MASKED|PLACEHOLDER|NONE|NULL|UNSET|CHANGEME|X{3,}|\*{3}|(?:EXAMPLE|SAMPLE|DUMMY|FAKE)(?:_(?:VALUE|SECRET|TOKEN|KEY|PASSWORD))?)(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?$/;
+const SAFE_CREDENTIAL_PLACEHOLDER = /^(?:<YOUR_[A-Z0-9_]+>|\$\{[A-Z_][A-Z0-9_]*\}|\{\{[A-Z_][A-Z0-9_]*\}\}|%[A-Z_][A-Z0-9_]*%|\$[A-Z_][A-Z0-9_]*|(?:YOUR|REPLACE|CHANGE|INSERT)_[A-Z0-9_]+|REDACTED|MASKED|PLACEHOLDER|NONE|NULL|UNSET|CHANGEME|X{3,}|\*{3}|(?:EXAMPLE|SAMPLE|DUMMY|FAKE)(?:_(?:VALUE|SECRET|TOKEN|KEY|PASSWORD))?)(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?[.!?。]?$/;
 const SAFE_CREDENTIAL_FINAL_TAIL = /^(?:[ \t]*[`.,!?。,:;)]*[ \t]*|(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로)(?:[ \t]+(?:입력|사용|확인|설정)합니다)?[.!?。]?|입니다[.!?。]?|[ \t]+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)(?:합니다)?|입니다)[.!?。]?)$/i;
 const EXPLICIT_BEARER_PLACEHOLDER_SOURCE = '(?:<YOUR_[A-Z0-9_]+>|REPLACE_ME|REDACTED|MASKED|\\*{3}|\\$\\{[A-Z_][A-Z0-9_]*\\})';
 
@@ -236,7 +237,7 @@ function normalizeCredentialMarkdown(value) {
   const strong = new RegExp(`(?:\\*\\*|__)(${CREDENTIAL_FIELD_SOURCE})(?:\\*\\*|__)`, 'giu');
   const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
   const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
-  return value
+  return normalizeInvisibleCharacters(value)
     .replace(/[`\\]+/g, '')
     .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
     .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
@@ -297,27 +298,52 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
   for (const pattern of LEAK_PATTERNS) {
     if (pattern.test(value)) throw new Error(`${label}: private or credential-like content detected`);
   }
-  const publicUrls = [...value.matchAll(/https?:\/\/[^\s)<>"']+/gi)];
+  const publicUrls = extractHttpUrls(value);
+  const decodedUrlSurfaces = [];
   for (const match of publicUrls) {
-    let host;
+    const normalizedUrl = match.url.replace(/\\([\[\]()?])/g, '$1');
+    if (normalizedUrl.includes('\\') || normalizedUrl.includes("'") || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
+      throw new Error(`${label}: private or credential-like content detected`);
+    }
+    let parsed;
     try {
-      host = new URL(match[0]).hostname.replace(/^\[|\]$/g, '').toLocaleLowerCase('en-US');
+      parsed = new URL(normalizedUrl);
     } catch {
       throw new Error(`${label}: private or credential-like content detected`);
     }
-    if (isIP(host) === 6 && (host === '::' || host === '::1' || /^(?:f[cd]|fe[89ab])/i.test(host))) {
+    const host = parsed.hostname.replace(/^\[|\]$/g, '').toLocaleLowerCase('en-US');
+    if (isIP(host) !== 0) {
+      throw new Error(`${label}: private or credential-like content detected`);
+    }
+    try {
+      const decodedUrlSurface = decodeUrlComponentLayers(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+      if (/[\[\]{}]/u.test(decodedUrlSurface)) {
+        throw new Error('URL component contains unsafe delimiters');
+      }
+      decodedUrlSurfaces.push(decodedUrlSurface);
+    } catch {
       throw new Error(`${label}: private or credential-like content detected`);
     }
   }
-  const proseWithoutUrls = value.replace(/https?:\/\/[^\s)<>"']+/gi, 'PUBLIC_URL');
-  for (const pattern of IDENTIFIER_PATTERNS) {
-    if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
+  const rawProseWithoutUrls = replaceHttpUrls(maskExplicitPublicVersions(value));
+  for (const proseWithoutUrls of new Set([
+    rawProseWithoutUrls,
+    normalizeIpSurface(rawProseWithoutUrls),
+    normalizeIdentifierSurface(rawProseWithoutUrls),
+  ])) {
+    for (const pattern of IDENTIFIER_PATTERNS) {
+      if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
+    }
+    for (const match of proseWithoutUrls.matchAll(/[0-9a-f:]{2,}/gi)) {
+      if (isIP(match[0]) === 6) throw new Error(`${label}: private or credential-like content detected`);
+    }
   }
-  for (const match of proseWithoutUrls.matchAll(/[0-9a-f:]{2,}/gi)) {
-    if (isIP(match[0]) === 6) throw new Error(`${label}: private or credential-like content detected`);
+  const unescaped = [value, ...decodedUrlSurfaces].join('\n').replace(/\\+(?=["'])/g, '');
+  if (hasConfusableAssignmentField(unescaped)) {
+    throw new Error(`${label}: private or credential-like content detected`);
   }
-  const unescaped = value.replace(/\\+(?=["'])/g, '');
-  const variants = credentialCommentVariants(unescaped)
+  const variants = [...new Set([unescaped, normalizeInvisibleCharacters(unescaped)])]
+    .flatMap(credentialCommentVariants)
     .map(normalizeCredentialMarkdown)
     .map((candidate) => candidate.replace(/([*?<>|&])(?:[ \t]+\1){1,2}(?=[ \t]*=)/g, (operator) => operator.replace(/[ \t]/g, '')))
     .map((candidate) => candidate.replace(/\bCSS\s+--[\w-]*token[\w-]*\s*:/gi, 'CSS variable:'));

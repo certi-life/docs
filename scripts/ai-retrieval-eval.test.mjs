@@ -14,6 +14,19 @@ import {
   validateFixtures,
   verifyBaselineThresholds,
 } from './ai-retrieval-eval.mjs';
+import {normalizeInvisibleCharacters} from './credential-safety.mjs';
+
+test('normalizeInvisibleCharacters는 모든 Unicode default-ignorable code point를 제거한다', () => {
+  const defaultIgnorables = [];
+  const pattern = /\p{Default_Ignorable_Code_Point}/u;
+  for (let codePoint = 0; codePoint <= 0x10ffff; codePoint += 1) {
+    const character = String.fromCodePoint(codePoint);
+    if (pattern.test(character)) defaultIgnorables.push(character);
+  }
+  assert.ok(defaultIgnorables.includes('\u2061'));
+  assert.ok(defaultIgnorables.includes('\u00ad'));
+  assert.equal(normalizeInvisibleCharacters(`to${defaultIgnorables.join('')}ken`), 'token');
+});
 
 test('tokenize는 한국어 질의의 단어와 검색용 문자 n-gram을 결정론적으로 만든다', () => {
   assert.deepEqual(tokenize('비밀번호 재설정'), tokenize('비밀번호 재설정'));
@@ -141,6 +154,10 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([base, {...base}], new Set(base.expectedTop3), {expectedCount: 2}), /duplicate fixture id/);
   assert.throws(() => validateFixtures([{...base, question: 'WORK-95를 봐 주세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 http:\/\/10.0.0.7 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '공개 버전 v1.2.3.4.5 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: "URL https://docs.certi.life/a'010-1234-5678 확인"}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'URL https://docs.certi.life/a]010-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'URL https://[2606:4700:4700::1111]/ 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 id_10.0.0.7_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 fd00::1 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '식별자 018f9f58-5c6e-7c35-8d2f-12a4d77d9f20 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
@@ -165,6 +182,35 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([{...base, question: '연락처 0505-123-4567 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 (10) 1234 5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 (70) 1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  for (const identifier of [
+    '010–1234–5678', '010⁃1234⁃5678', '02⁄1234⁄5678', '02∕1234∕5678',
+    '+82–10–1234–5678', '+82⁃10⁃1234⁃5678', '10‧0‧0‧1', '10·0·0·1',
+    `010${String.fromCodePoint(0xfe0f)}-1234-5678`, `10${String.fromCodePoint(0xfe0f)}.0.0.1`,
+    `010${String.fromCodePoint(0x2061)}-1234-5678`, `10${String.fromCodePoint(0xad)}.0.0.1`,
+    `02/${String.fromCodePoint(0x338)}1234/${String.fromCodePoint(0x338)}5678`,
+    'fd00∶∶1', '010֊1234֊5678', '010᠆1234᠆5678', '02╱1234╱5678', '02⧵1234⧵5678',
+    '010:1234:5678', '10:0:0:1', '192/168/0/1', '172_16_0_1',
+    '12345678/1234/1234/1234/123456789012',
+    '12345678.1234.1234.1234.123456789012',
+    '12345678:1234:1234:1234:123456789012',
+    'abcdefab:cdef:abcd:abcd:abcdefabcdef',
+    'abcdefab/cdef/abcd/abcd/abcdefabcdef',
+    `a${String.fromCodePoint(0x203f)}v10.0.0.1`,
+    `a${String.fromCodePoint(0x301)}v10.0.0.1`,
+  ]) {
+    assert.throws(() => validateFixtures([{...base, question: `식별자 ${identifier} 확인`}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/, identifier);
+  }
+  for (const question of [
+    '설정에서 to\ufe0fken = live-secret-value 확인',
+    '설정에서 to\u0301ken = live-secret-value 확인',
+    '설정에서 to\u034fken = live-secret-value 확인',
+    '설정에서 to\u2061ken = live-secret-value 확인',
+    '설정에서 to\u00adken = live-secret-value 확인',
+    `설정에서 t${String.fromCodePoint(0x43e)}ken = live-secret-value 확인`,
+    String.raw`공개 문서 https://docs.certi.life/a\<010-1234-5678 확인`,
+  ]) {
+    assert.throws(() => validateFixtures([{...base, question}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/, question);
+  }
   assert.throws(() => validateFixtures([{...base, question: '설정에서 "token": "super-secret-value"를 확인하세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '설정에서 \\"token\\": \\"super-secret-value\\"를 확인하세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, requiredEvidence: ['token=super-secret-value']}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
@@ -218,6 +264,12 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '**password**: REPLACE_ME',
     '비밀번호는 공개 문서에 입력하지 마세요.',
     '공개 SHA-256 checksum: abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcd 입니다',
+    '공개 버전 v1.2.3.4를 사용합니다.',
+    '공개 버전 (v1.2.3.4)을 사용합니다.',
+    '공개 릴리스 단계 1-2-3-4를 설명합니다.',
+    '공개 범위 1/2/3/4를 설명합니다.',
+    '공개 비율 1:2:3:4를 설명합니다.',
+    '공개 단계 1_2_3_4를 설명합니다.',
   ]) {
     assert.doesNotThrow(
       () => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}),
