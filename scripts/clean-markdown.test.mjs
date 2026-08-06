@@ -223,6 +223,8 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     'password: "S3cure-example-credential!"',
     'passwd = another-secret-value-123',
     'password/**/: comment-smuggled-secret-value-123',
+    'token/*=comment-smuggled-secret-value-123',
+    'password/*=comment-smuggled-secret-value-123',
     'db_password = database-secret-value-123',
     'user-passwd = account-secret-value-123',
     'password: REPLACE_ME live-secret-value-123',

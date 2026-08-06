@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
+import {hasUnclosedBlockComment} from './credential-safety.mjs';
 
 const parser = unified().use(remarkParse).use(remarkMdx).use(remarkDirective).use(remarkGfm);
 const stringifier = unified().use(remarkParse).use(remarkGfm).use(remarkStringify, {
@@ -290,6 +291,9 @@ function credentialCommentVariants(value) {
 }
 
 function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {}) {
+  if (hasUnclosedBlockComment(value)) {
+    throw new Error(`${label}: private or credential-like content detected`);
+  }
   for (const pattern of LEAK_PATTERNS) {
     if (pattern.test(value)) throw new Error(`${label}: private or credential-like content detected`);
   }
