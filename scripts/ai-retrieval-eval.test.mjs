@@ -327,6 +327,8 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '공개 문서 https://docs.certi.life/guide/a\\)token%3Dlive-secret-value 를 확인합니다',
     String.raw`공개 문서 https://docs.certi.life/guide/a\"token%3Dlive-secret-value 를 확인합니다`,
     String.raw`공개 문서 https://docs.certi.life/guide/a\>token%3Dlive-secret-value 를 확인합니다`,
+    String.raw`공개 문서 https://docs.certi.life/guide/safe\ 010-1234-5678 를 확인합니다`,
+    `공개 문서 https://docs.certi.life/guide/safe\\${String.fromCodePoint(0x85)}010-1234-5678 를 확인합니다`,
     '공개 문서 https://docs.certi.life/guide/a\\`token%3Dlive-secret-value 를 확인합니다',
     '공개 문서 https://docs.certi.life/guide/help?to%E2%80%8Bken%3Dlive-secret-value%ZZ%E0%A4%A 를 확인합니다',
     `공개 문서 https://docs.certi.life/guide/help?q=${deeplyEncodedAssignment} 를 확인합니다`,
@@ -336,7 +338,7 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '설정에서 token: <your_token>을 확인하세요',
     '설정에서 token: replace_me를 확인하세요',
   ]) {
-    assert.throws(() => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}), /non-public identifier/);
+    assert.throws(() => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}), /non-public identifier/, question);
   }
 });
 

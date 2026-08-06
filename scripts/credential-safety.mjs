@@ -12,6 +12,7 @@ export function hasUnclosedBlockComment(value) {
 
 const MAX_URL_COMPONENT_LENGTH = 4096;
 const MAX_URL_DECODE_DEPTH = 64;
+const URL_WHITESPACE = /\p{White_Space}/u;
 
 export function extractHttpUrls(value) {
   const source = String(value);
@@ -23,8 +24,10 @@ export function extractHttpUrls(value) {
     let parentheses = 0;
     while (end < source.length) {
       const char = source[end];
-      if (/\s/.test(char) || char === '<' || char === '>' || char === '`' || char === '"') break;
+      if (URL_WHITESPACE.test(char) || char === '<' || char === '>' || char === '`' || char === '"') break;
       if (char === '\\' && end + 1 < source.length) {
+        const escaped = source[end + 1];
+        if (URL_WHITESPACE.test(escaped)) break;
         end += 2;
         continue;
       }

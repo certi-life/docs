@@ -296,6 +296,8 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     '[escaped closing parenthesis credential](https://docs.certi.life/guide/a\\)token%3Dlive-secret-value)',
     String.raw`[escaped quote credential](https://docs.certi.life/guide/a\"token%3Dlive-secret-value)`,
     String.raw`[escaped angle credential](https://docs.certi.life/guide/a\>token%3Dlive-secret-value)`,
+    String.raw`URL https://docs.certi.life/guide/safe\ 010-1234-5678 end`,
+    `URL https://docs.certi.life/guide/safe\\${String.fromCodePoint(0x85)}010-1234-5678 end`,
     '[escaped backtick credential](https://docs.certi.life/guide/a\\`token%3Dlive-secret-value)',
     '[mixed malformed zero width](https://docs.certi.life/guide/help?to%E2%80%8Bken%3Dlive-secret-value%ZZ%E0%A4%A)',
     `[excessive encoding](https://docs.certi.life/guide/help?q=${deeplyEncodedAssignment})`,
