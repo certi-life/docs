@@ -170,6 +170,20 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([{...base, requiredEvidence: ['token=super-secret-value']}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, api_key: 'super-secret-value'}], new Set(base.expectedTop3), {expectedCount: 1}), /unknown field/);
   assert.throws(() => validateFixtures([{...base, forbiddenClaims: ['id 123e4567-e89b-12d3-a456-426614174000']}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '가'.repeat(2001)}], new Set(base.expectedTop3), {expectedCount: 1}), /exceeds maximum text length/);
+  assert.doesNotThrow(() => validateFixtures([{...base, question: '가'.repeat(2000)}], new Set(base.expectedTop3), {expectedCount: 1}));
+  assert.throws(() => validateFixtures([{...base, requiredEvidence: Array(11).fill('근거')}], new Set(base.expectedTop3), {expectedCount: 1}), /exceeds maximum item count/);
+  assert.doesNotThrow(() => validateFixtures([{...base, requiredEvidence: Array(10).fill('근거')}], new Set(base.expectedTop3), {expectedCount: 1}));
+  const oversizedId = 'x'.repeat(2001);
+  assert.throws(
+    () => validateFixtures([{...base, id: oversizedId}], new Set(base.expectedTop3), {expectedCount: 1}),
+    (error) => /exceeds maximum text length/.test(error.message) && error.message.length < 200,
+  );
+  const oversizedUnknownField = `unknown_${'x'.repeat(2001)}`;
+  assert.throws(
+    () => validateFixtures([{...base, [oversizedUnknownField]: 'value'}], new Set(base.expectedTop3), {expectedCount: 1}),
+    (error) => /unknown field/.test(error.message) && error.message.length < 200,
+  );
   assert.throws(() => validateFixtures([{...base, expectedTop3: ['help/faq']}], new Set(base.expectedTop3), {expectedCount: 1}), /exactly 3/);
 });
 
@@ -253,6 +267,11 @@ test('validateFixtureFile은 루트 스키마와 필드를 exact allowlist로 �
   };
   assert.doesNotThrow(() => validateFixtureFile({schemaVersion: 1, cases: [fixture]}, publicIds, {expectedCount: 1}));
   assert.throws(() => validateFixtureFile({schemaVersion: 1, cases: [fixture], metadata: {token: 'secret'}}, publicIds, {expectedCount: 1}), /unknown root field/);
+  const oversizedRootField = `metadata_${'x'.repeat(2001)}`;
+  assert.throws(
+    () => validateFixtureFile({schemaVersion: 1, cases: [fixture], [oversizedRootField]: 'value'}, publicIds, {expectedCount: 1}),
+    (error) => /unknown root field/.test(error.message) && error.message.length < 200,
+  );
   assert.throws(() => validateFixtureFile({schemaVersion: 2, cases: [fixture]}, publicIds, {expectedCount: 1}), /schemaVersion/);
 });
 
