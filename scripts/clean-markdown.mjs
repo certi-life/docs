@@ -228,7 +228,7 @@ const CREDENTIAL_FIELD_SOURCE = '(?:(?:[\\p{L}\\p{N}]+[ _-])*(?:api[ _-]?key|tok
 const CREDENTIAL_ASSIGNMENT = new RegExp(`(?<![\\p{L}\\p{N}])(${CREDENTIAL_FIELD_SOURCE})(?:["']|\\s)*(?::|(?:(?:\\*\\*|>>>|<<|>>|\\|\\||&&|\\?\\?|[+\\-*/%&|^]))?\\s*=)\\s*(?:"([^"\\r\\n]*)"|'([^'\\r\\n]*)'|\\x60([^\\x60\\r\\n]*)\\x60|([^\\s,;)\\]\\x60.!?]+))`, 'giu');
 const SAFE_NON_SECRET_FIELD = /^(?:CSS[ _-]+)?(?:design|custom|color|theme)[ _-]token$/i;
 const SAFE_CREDENTIAL_PLACEHOLDER = /^(?:<YOUR_[A-Z0-9_]+>|\$\{[A-Z_][A-Z0-9_]*\}|\{\{[A-Z_][A-Z0-9_]*\}\}|%[A-Z_][A-Z0-9_]*%|\$[A-Z_][A-Z0-9_]*|(?:YOUR|REPLACE|CHANGE|INSERT)_[A-Z0-9_]+|REDACTED|MASKED|PLACEHOLDER|NONE|NULL|UNSET|CHANGEME|X{3,}|\*{3}|(?:EXAMPLE|SAMPLE|DUMMY|FAKE)(?:_(?:VALUE|SECRET|TOKEN|KEY|PASSWORD))?)(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?$/;
-const SAFE_CREDENTIAL_FINAL_TAIL = /^(?:[ \t]*[`.,!?。,:;)]*[ \t]*|[ \t]+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)(?:합니다)?|입니다)[.!?。]?)$/i;
+const SAFE_CREDENTIAL_FINAL_TAIL = /^(?:[ \t]*[`.,!?。,:;)]*[ \t]*|(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로)(?:[ \t]+(?:입력|사용|확인|설정)합니다)?[.!?。]?|입니다[.!?。]?|[ \t]+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)(?:합니다)?|입니다)[.!?。]?)$/i;
 const EXPLICIT_BEARER_PLACEHOLDER_SOURCE = '(?:<YOUR_[A-Z0-9_]+>|REPLACE_ME|REDACTED|MASKED|\\*{3}|\\$\\{[A-Z_][A-Z0-9_]*\\})';
 
 function normalizeCredentialMarkdown(value) {
