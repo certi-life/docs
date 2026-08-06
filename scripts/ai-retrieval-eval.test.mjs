@@ -146,6 +146,8 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([{...base, question: '식별자 123e4567e89b12d3a456426614174000 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: 'id_123e4567-e89b-12d3-a456-426614174000_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: 'id_123e4567e89b12d3a456426614174000_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'f123e4567-e89b-12d3-a456-426614174000f 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'f123e4567e89b12d3a456426614174000f 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 02-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 10-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 (02) 1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
@@ -155,6 +157,7 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([{...base, question: '연락처 070.1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82.70.1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '대표번호 1588.1234 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '대표번호 15881234 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 080-123-4567 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 0505-123-4567 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 (10) 1234 5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
