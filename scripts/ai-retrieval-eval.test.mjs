@@ -143,16 +143,83 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 http:\/\/10.0.0.7 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 fd00::1 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '식별자 018f9f58-5c6e-7c35-8d2f-12a4d77d9f20 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '식별자 123e4567e89b12d3a456426614174000 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'id_123e4567-e89b-12d3-a456-426614174000_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'id_123e4567e89b12d3a456426614174000_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 02-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 10-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 (02) 1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 +82 (0)2-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '연락처 070-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 02.1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 070.1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 +82.70.1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '대표번호 1588.1234 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 080-123-4567 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 0505-123-4567 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 +82 (10) 1234 5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '연락처 +82 (70) 1234.5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '설정에서 "token": "super-secret-value"를 확인하세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '설정에서 \\"token\\": \\"super-secret-value\\"를 확인하세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, requiredEvidence: ['token=super-secret-value']}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, api_key: 'super-secret-value'}], new Set(base.expectedTop3), {expectedCount: 1}), /unknown field/);
   assert.throws(() => validateFixtures([{...base, forbiddenClaims: ['id 123e4567-e89b-12d3-a456-426614174000']}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, expectedTop3: ['help/faq']}], new Set(base.expectedTop3), {expectedCount: 1}), /exactly 3/);
+});
+
+test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 값은 거부한다', () => {
+  const publicIds = new Set(['help/faq', 'help/troubleshooting', 'help/privacy-security']);
+  const base = {
+    id: 'q01', category: 'safety', expectedTop1: 'help/faq', expectedTop3: [...publicIds],
+    requiredEvidence: ['공개 FAQ입니다.'], forbiddenClaims: ['비밀번호를 공유하세요.'],
+  };
+  for (const question of [
+    '설정 예시는 token: <YOUR_TOKEN>입니다',
+    '설정 예시는 token: "<YOUR_TOKEN>"을 입력합니다',
+    '설정 예시는 api_key=REPLACE_ME, 값을 바꿉니다',
+    '설정 예시는 authorization: ***을 입력합니다',
+    '설정 예시는 secret: REDACTED. 입니다',
+    '설정 예시는 token: PLACEHOLDER입니다',
+    'Use token: PLACEHOLDER for local testing.',
+    'Use token: "<YOUR_TOKEN>" when testing.',
+  ]) {
+    assert.doesNotThrow(() => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}));
+  }
+  for (const question of [
+    '설정에서 token: live-value를 확인하세요',
+    '설정에서 \\"api_key\\": \\"live-value\\"를 확인하세요',
+    '설정에서 token: "PLACEHOLDER live-value"를 확인하세요',
+    '설정에서 token: "REDACTED live-secret"을 확인하세요',
+    '설정에서 token: \\"REDACTED live-secret\\"을 확인하세요',
+    '설정에서 token: "<YOUR_TOKEN> live-value"를 확인하세요',
+    '설정에서 token: "PLACEHOLDER"live-value를 확인하세요',
+    '설정에서 token: \\"PLACEHOLDER\\"live-value를 확인하세요',
+    '설정에서 token: \\\\"<YOUR_TOKEN>\\\\"live-value를 확인하세요',
+    '설정에서 token: "PLACEHOLDER"-live-value를 확인하세요',
+    '설정에서 token: "PLACEHOLDER"_live-value를 확인하세요',
+    '설정에서 token: "PLACEHOLDER"실제값을 확인하세요',
+    '설정에서 token: "PLACEHOLDER" live-value를 확인하세요',
+    '설정에서 token: "PLACEHOLDER" + "live-secret-value"를 확인하세요',
+    '설정에서 token: "PLACEHOLDER".concat("live-secret-value")를 확인하세요',
+    '설정에서 token: \\"PLACEHOLDER\\".concat(\\"live-secret-value\\")를 확인하세요',
+    '설정에서 token: "PLACEHOLDER",live-value를 확인하세요',
+    '설정에서 token: PLACEHOLDER,live-value를 확인하세요',
+    '설정에서 token: PLACEHOLDER;live-value를 확인하세요',
+    '설정에서 token: "PLACEHOLDER".live-value를 확인하세요',
+    '설정에서 token: "PLACEHOLDER":live-value를 확인하세요',
+    '설정에서 token: PLACEHOLDER; live-value를 확인하세요',
+    '설정에서 token: ***]live-value를 확인하세요',
+    '설정에서 token: PLACEHOLDER for local testing live-secret-value',
+    "설정에서 authorization = '*** live-secret'을 확인하세요",
+    '설정에서 token: PLACEHOLDER 실제비밀을 확인하세요',
+    '설정에서 token: *를 확인하세요',
+    '설정에서 token: **를 확인하세요',
+    '설정에서 token: ****를 확인하세요',
+    '설정에서 token: <your_token>을 확인하세요',
+    '설정에서 token: replace_me를 확인하세요',
+  ]) {
+    assert.throws(() => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}), /non-public identifier/);
+  }
 });
 
 test('validateFixtureFile은 루트 스키마와 필드를 exact allowlist로 제한한다', () => {
