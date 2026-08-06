@@ -154,6 +154,10 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
   assert.throws(() => validateFixtures([base, {...base}], new Set(base.expectedTop3), {expectedCount: 2}), /duplicate fixture id/);
   assert.throws(() => validateFixtures([{...base, question: 'WORK-95를 봐 주세요'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 http:\/\/10.0.0.7 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: '공개 버전 v1.2.3.4.5 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: "URL https://docs.certi.life/a'010-1234-5678 확인"}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'URL https://docs.certi.life/a]010-1234-5678 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
+  assert.throws(() => validateFixtures([{...base, question: 'URL https://[2606:4700:4700::1111]/ 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 id_10.0.0.7_value 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '내부 주소 fd00::1 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);
   assert.throws(() => validateFixtures([{...base, question: '식별자 018f9f58-5c6e-7c35-8d2f-12a4d77d9f20 확인'}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/);

@@ -302,7 +302,7 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
   const decodedUrlSurfaces = [];
   for (const match of publicUrls) {
     const normalizedUrl = match.url.replace(/\\([\[\]()?])/g, '$1');
-    if (normalizedUrl.includes('\\') || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
+    if (normalizedUrl.includes('\\') || normalizedUrl.includes("'") || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
       throw new Error(`${label}: private or credential-like content detected`);
     }
     let parsed;
@@ -312,16 +312,15 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
       throw new Error(`${label}: private or credential-like content detected`);
     }
     const host = parsed.hostname.replace(/^\[|\]$/g, '').toLocaleLowerCase('en-US');
-    if (isIP(host) === 6 && (
-      host === '::' ||
-      host === '::1' ||
-      host.startsWith('::ffff:') ||
-      /^(?:f[cd]|fe[89a-f]|ff|2001:db8:)/i.test(host)
-    )) {
+    if (isIP(host) !== 0) {
       throw new Error(`${label}: private or credential-like content detected`);
     }
     try {
-      decodedUrlSurfaces.push(decodeUrlComponentLayers(`${parsed.pathname}${parsed.search}${parsed.hash}`));
+      const decodedUrlSurface = decodeUrlComponentLayers(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+      if (/[\[\]{}]/u.test(decodedUrlSurface)) {
+        throw new Error('URL component contains unsafe delimiters');
+      }
+      decodedUrlSurfaces.push(decodedUrlSurface);
     } catch {
       throw new Error(`${label}: private or credential-like content detected`);
     }

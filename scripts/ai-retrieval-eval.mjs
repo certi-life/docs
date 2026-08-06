@@ -267,7 +267,7 @@ function assertPublicFixtureText(value, fixtureId) {
   const urls = extractHttpUrls(value);
   for (const match of urls) {
     const normalizedUrl = match.url.replace(/\\([()?])/g, '$1');
-    if (normalizedUrl.includes('\\') || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
+    if (normalizedUrl.includes('\\') || normalizedUrl.includes("'") || /[\u0000-\u001F\u007F]/.test(normalizedUrl)) {
       throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
     }
     let parsed;
@@ -282,6 +282,7 @@ function assertPublicFixtureText(value, fixtureId) {
     let decodedUrlSurface;
     try {
       decodedUrlSurface = decodeUrlComponentLayers(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+      if (/[\[\]{}]/u.test(decodedUrlSurface)) throw new Error('URL component contains unsafe delimiters');
     } catch {
       throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
     }

@@ -24,7 +24,7 @@ export function normalizeIdentifierSurface(value) {
 
 export function maskExplicitPublicVersions(value) {
   return normalizeInvisibleCharacters(value).replace(
-    /(^|[\p{White_Space}([{"'`])v\d+(?:\.\d+){3}(?=(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?(?:[\s.,!?。,:;)\]}"'`]|$))/giu,
+    /(^|[\p{White_Space}([{"'`])v\d+(?:\.\d+){3}(?!\.\d)(?=(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?(?:[\s.,!?。,:;)\]}"'`]|$))/giu,
     '$1PUBLIC_VERSION',
   );
 }

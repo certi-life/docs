@@ -306,6 +306,13 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     '[escaped backtick credential](https://docs.certi.life/guide/a\\`token%3Dlive-secret-value)',
     '[mixed malformed zero width](https://docs.certi.life/guide/help?to%E2%80%8Bken%3Dlive-secret-value%ZZ%E0%A4%A)',
     `[excessive encoding](https://docs.certi.life/guide/help?q=${deeplyEncodedAssignment})`,
+    '공개 버전 v1.2.3.4.5를 사용합니다.',
+    '[IPv4 literal](https://1.1.1.1/)',
+    '[IPv6 literal](https://[2606:4700:4700::1111]/)',
+    '[link-local IPv4](http://169.254.169.254/latest/meta-data/)',
+    'URL https://docs.certi.life/a]010-1234-5678',
+    'URL https://docs.certi.life/a}010-1234-5678',
+    "URL https://docs.certi.life/a'010-1234-5678",
   ];
   for (const body of leaked) {
     assert.throws(() => createCleanMarkdownArtifacts(document(body)), /private or credential-like content detected/, body);
@@ -329,8 +336,6 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     '`Authorization: Bearer <YOUR_TOKEN>.`',
     '[공개 정책](https://example.com/123e4567e89b12d3a456426614174000)',
     '[공개 연락처](https://example.com/02.1234.5678)',
-    '[공개 IPv4](https://1.1.1.1/)',
-    '[공개 IPv6](https://[2606:4700:4700::1111]/)',
     '[encoded percent](https://docs.certi.life/guide/discount%25)',
     '[balanced parenthesis](https://docs.certi.life/guide/(overview)?q=ok)',
     '[escaped parenthesis](https://docs.certi.life/guide/a\\(b\\)?q=ok)',
