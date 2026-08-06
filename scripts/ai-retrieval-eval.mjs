@@ -274,7 +274,11 @@ function assertPublicFixtureText(value, fixtureId) {
   }
   const scannedValue = value
     .replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM')
-    .replace(/https?:\/\/[^\s"'<>]+/gi, 'PUBLIC_URL');
+    .replace(/https?:\/\/[^\s"'<>]+/gi, 'PUBLIC_URL')
+    .replace(
+      /(^|[^\p{L}\p{M}\p{N}\p{Pc}])(?:버전|version)[ \t]+v\d+(?:\.\d+){3}(?![\p{L}\p{M}\p{N}\p{Pc}]|\.\d)/giu,
+      '$1PUBLIC_VERSION',
+    );
   for (const pattern of NON_PUBLIC_PATTERNS) {
     if (pattern.test(scannedValue)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
