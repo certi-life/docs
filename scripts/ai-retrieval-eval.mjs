@@ -168,15 +168,16 @@ const NON_PUBLIC_PATTERNS = [
   /\bWORK-\d+\b/i,
   /\bplane\.certi\b/i,
   /\blocalhost\b|\b127\.0\.0\.1\b/i,
-  /\b(?:10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)\d{1,3}\.\d{1,3}\b/,
-  /\b(?:\d{1,3}\.){3}\d{1,3}\b/,
-  /[0-9a-f]{8}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{4}-?[0-9a-f]{12}/i,
+  /(?<!\d)(?:10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)\d{1,3}\.\d{1,3}(?!\d)/,
+  /(?<!\d)(?:\d{1,3}\.){3}\d{1,3}(?!\d)/,
+  /[0-9a-f]{8}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{4}[-_]?[0-9a-f]{12}/i,
+  /[0-9a-f]{32,64}/i,
   /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
   /[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/,
   /(?:\(?0\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /\b1[5-8]\d{2}[ .-]\d{4}\b/,
-  /(?<!\d)1[5-8]\d{6}(?!\d)/,
+  /(?<!\d)1[5-8]\d{6,7}(?!\d)/,
 ];
 const FIXTURE_FIELDS = new Set([
   'id',
@@ -194,17 +195,21 @@ const SAFE_QUOTED_SECRET_TAIL = /^(?:$|(?:은|는|이|가|을|를|과|와|의|�
 const SAFE_UNQUOTED_SECRET_TAIL = /^(?:\s*$|\s+(?:for\s+(?:local\s+)?testing|when\s+testing|in\s+(?:an?\s+)?(?:example|documentation)|(?:입력|사용|확인|설정)합니다|입니다)[.!?。]?)$/i;
 
 function containsUnsafeSecretAssignment(value) {
-  const normalized = value.replace(/\\+(?=["'])/g, '');
-  const assignment = /(?:api[_-]?key|token|secret|authorization)(?:["']|\s)*[:=]\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;}\]]+))/gi;
-  for (const match of normalized.matchAll(assignment)) {
-    const quoted = match[1] !== undefined || match[2] !== undefined;
-    const candidate = match[1] ?? match[2] ?? match[3];
-    if (!SAFE_SECRET_PLACEHOLDER.test(candidate)) return true;
-    const tail = normalized.slice(match.index + match[0].length);
-    const tailPassed = SAFE_PUNCTUATED_SECRET_TAIL.test(tail) ||
-      (quoted ? SAFE_QUOTED_SECRET_TAIL.test(tail) : SAFE_UNQUOTED_SECRET_TAIL.test(tail));
-    if (!tailPassed) {
-      return true;
+  const unescaped = value.replace(/\\+(?=["'])/g, '');
+  const normalizedVariants = [
+    unescaped.replace(/\/\*[\s\S]*?\*\//g, ''),
+    unescaped.replace(/\/\*([\s\S]*?)\*\//g, ' $1 '),
+  ];
+  const assignment = /(?<![\p{L}\p{N}_-])(?:api[_-]?key|(?:access|refresh|auth|id)[_-]?token|token|secret|authorization)(?:["']|\s)*(?::|(?:(?:\*\*|>>>|<<|>>|\|\||&&|\?\?|[+\-*/%&|^]))?=)\s*(?:"([^"\r\n]*)"|'([^'\r\n]*)'|([^\s,;}\]]+))/giu;
+  for (const normalized of normalizedVariants) {
+    for (const match of normalized.matchAll(assignment)) {
+      const quoted = match[1] !== undefined || match[2] !== undefined;
+      const candidate = match[1] ?? match[2] ?? match[3];
+      if (!SAFE_SECRET_PLACEHOLDER.test(candidate)) return true;
+      const tail = normalized.slice(match.index + match[0].length);
+      const tailPassed = SAFE_PUNCTUATED_SECRET_TAIL.test(tail) ||
+        (quoted ? SAFE_QUOTED_SECRET_TAIL.test(tail) : SAFE_UNQUOTED_SECRET_TAIL.test(tail));
+      if (!tailPassed) return true;
     }
   }
   return false;
