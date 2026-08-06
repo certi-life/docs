@@ -20,7 +20,24 @@ export function normalizeIdentifierSurface(value) {
   return normalizeIpSurface(value)
     .replace(IDENTIFIER_DASHES, '-')
     .replace(/(?<=[0-9])[\p{P}\p{S}\p{Z}]+(?=[0-9])/gu, '-')
-    .replace(/(?<=[0-9a-f])\p{Pd}+(?=[0-9a-f])/giu, '-');
+    .replace(/(?<=[0-9a-f])[\p{P}\p{S}\p{Z}]+(?=[0-9a-f])/giu, '-');
+}
+
+export function maskExplicitPublicVersions(value) {
+  return normalizeInvisibleCharacters(value).replace(
+    /(^|[\p{White_Space}([{"'`])v\d+(?:\.\d+){3}(?=(?:은|는|이|가|을|를|과|와|의|에|에서|으로|로|입니다)?(?:[\s.,!?。,:;)\]}"'`]|$))/giu,
+    '$1PUBLIC_VERSION',
+  );
+}
+
+const ASSIGNMENT_FIELD = /(?<![\p{L}\p{N}])([\p{L}\p{N}_ -]{1,128})\s*(?::|(?:[+\-*/%&|^?<>]{0,3})=)/gu;
+
+export function hasConfusableAssignmentField(value) {
+  const normalized = normalizeInvisibleCharacters(value);
+  for (const match of normalized.matchAll(ASSIGNMENT_FIELD)) {
+    if (/[A-Za-z]/.test(match[1]) && /[\p{Script=Cyrillic}\p{Script=Greek}]/u.test(match[1])) return true;
+  }
+  return false;
 }
 
 export function hasUnclosedBlockComment(value) {

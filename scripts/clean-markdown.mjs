@@ -10,7 +10,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
-import {decodeUrlComponentLayers, extractHttpUrls, hasUnclosedBlockComment, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasConfusableAssignmentField, hasUnclosedBlockComment, maskExplicitPublicVersions, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
 
 const parser = unified().use(remarkParse).use(remarkMdx).use(remarkDirective).use(remarkGfm);
 const stringifier = unified().use(remarkParse).use(remarkGfm).use(remarkStringify, {
@@ -325,7 +325,7 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
       throw new Error(`${label}: private or credential-like content detected`);
     }
   }
-  const rawProseWithoutUrls = replaceHttpUrls(value);
+  const rawProseWithoutUrls = replaceHttpUrls(maskExplicitPublicVersions(value));
   for (const proseWithoutUrls of new Set([
     rawProseWithoutUrls,
     normalizeIpSurface(rawProseWithoutUrls),
@@ -339,6 +339,9 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
     }
   }
   const unescaped = [value, ...decodedUrlSurfaces].join('\n').replace(/\\+(?=["'])/g, '');
+  if (hasConfusableAssignmentField(unescaped)) {
+    throw new Error(`${label}: private or credential-like content detected`);
+  }
   const variants = [...new Set([unescaped, normalizeInvisibleCharacters(unescaped)])]
     .flatMap(credentialCommentVariants)
     .map(normalizeCredentialMarkdown)

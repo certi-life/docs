@@ -190,6 +190,9 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
     '12345678.1234.1234.1234.123456789012',
     '12345678:1234:1234:1234:123456789012',
     'abcdefab:cdef:abcd:abcd:abcdefabcdef',
+    'abcdefab/cdef/abcd/abcd/abcdefabcdef',
+    `a${String.fromCodePoint(0x203f)}v10.0.0.1`,
+    `a${String.fromCodePoint(0x301)}v10.0.0.1`,
   ]) {
     assert.throws(() => validateFixtures([{...base, question: `식별자 ${identifier} 확인`}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/, identifier);
   }
@@ -199,6 +202,7 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
     '설정에서 to\u034fken = live-secret-value 확인',
     '설정에서 to\u2061ken = live-secret-value 확인',
     '설정에서 to\u00adken = live-secret-value 확인',
+    `설정에서 t${String.fromCodePoint(0x43e)}ken = live-secret-value 확인`,
     String.raw`공개 문서 https://docs.certi.life/a\<010-1234-5678 확인`,
   ]) {
     assert.throws(() => validateFixtures([{...base, question}], new Set(base.expectedTop3), {expectedCount: 1}), /non-public identifier/, question);
@@ -256,6 +260,8 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '**password**: REPLACE_ME',
     '비밀번호는 공개 문서에 입력하지 마세요.',
     '공개 SHA-256 checksum: abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcd 입니다',
+    '공개 버전 v1.2.3.4를 사용합니다.',
+    '공개 버전 (v1.2.3.4)을 사용합니다.',
   ]) {
     assert.doesNotThrow(
       () => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}),

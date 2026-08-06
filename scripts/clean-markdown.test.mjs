@@ -271,6 +271,7 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     'api\u2060Key = compound-secret-value-123',
     'to\u2061ken = compound-secret-value-123',
     'to\u00adken = compound-secret-value-123',
+    `t${String.fromCodePoint(0x43e)}ken = compound-secret-value-123`,
     '연락처 010\u2061-1234-5678',
     '내부 주소 10\u00ad.0.0.1',
     'db_pwd ??= compound-secret-value-123',
@@ -340,6 +341,8 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     'CSS custom_token: primary-blue',
     '비밀번호는 공개 문서에 입력하지 마세요.',
     `실제 개인 키 블록은 \`${'-----BEGIN PRIVATE KEY-----'}\`로 시작합니다.`,
+    '공개 버전 v1.2.3.4를 사용합니다.',
+    '공개 버전 (v1.2.3.4)을 사용합니다.',
   ];
   for (const [index, body] of safe.entries()) {
     assert.doesNotThrow(() => createCleanMarkdownArtifacts(document(body)), `safe[${index}] ${body}`);
@@ -378,6 +381,9 @@ test('credential scanner는 공개 Markdown의 UUID·전화번호·내부 주소
     '식별자 12345678.1234.1234.1234.123456789012',
     '식별자 12345678:1234:1234:1234:123456789012',
     '식별자 abcdefab:cdef:abcd:abcd:abcdefabcdef',
+    '식별자 abcdefab/cdef/abcd/abcd/abcdefabcdef',
+    `식별자 a${String.fromCodePoint(0x203f)}v10.0.0.1`,
+    `식별자 a${String.fromCodePoint(0x301)}v10.0.0.1`,
     '설정에서 to️ken = live-secret-value',
     '설정에서 tóken = live-secret-value',
     '설정에서 to͏ken = live-secret-value',

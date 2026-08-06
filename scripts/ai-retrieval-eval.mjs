@@ -4,7 +4,7 @@ import {isIP} from 'node:net';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from '@11ty/gray-matter';
-import {decodeUrlComponentLayers, extractHttpUrls, hasUnclosedBlockComment, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasConfusableAssignmentField, hasUnclosedBlockComment, maskExplicitPublicVersions, normalizeIdentifierSurface, normalizeInvisibleCharacters, normalizeIpSurface, replaceHttpUrls} from './credential-safety.mjs';
 
 const WORD_PATTERN = /[\p{L}\p{N}]+/gu;
 
@@ -213,6 +213,7 @@ function normalizeFixtureCredentialMarkdown(value) {
 }
 
 function containsUnsafeSecretAssignment(value) {
+  if (hasConfusableAssignmentField(value)) return true;
   const unescaped = value.replace(/\\+(?=["'])/g, '');
   const normalizedVariants = [...new Set([unescaped, normalizeInvisibleCharacters(unescaped)])]
     .flatMap((candidate) => [
@@ -288,7 +289,7 @@ function assertPublicFixtureText(value, fixtureId) {
     }
   }
   const rawScannedValue = replaceHttpUrls(
-    value.replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM'),
+    maskExplicitPublicVersions(value).replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM'),
   );
   for (const scannedValue of new Set([
     rawScannedValue,
