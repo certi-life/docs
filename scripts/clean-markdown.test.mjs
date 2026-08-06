@@ -222,6 +222,50 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     `Fine-grained token: ${'github_pat_'}${'11ABCDEFG0123456789_abcdefghijklmnopqrstuvwxyz'}`,
     'password: "S3cure-example-credential!"',
     'passwd = another-secret-value-123',
+    'password/**/: comment-smuggled-secret-value-123',
+    'db_password = database-secret-value-123',
+    'user-passwd = account-secret-value-123',
+    'password: REPLACE_ME live-secret-value-123',
+    'password: "REPLACE_/*live-secret*/ME"',
+    'password: "<YOUR_/*live-secret*/PASSWORD>"',
+    'password: "REPLACE_ME"live-secret-value-123',
+    'token: "REDACTED live-secret-value-123"',
+    'token: \\"REDACTED live-secret-value-123\\"',
+    'token: "<YOUR_TOKEN> live-secret-value-123"',
+    'token: "PLACEHOLDER live-secret-value-123"',
+    'token: replace_me',
+    'token: <your_token>',
+    'token: *',
+    'token: **',
+    'token: ****',
+    "authorization = '*** live-secret-value-123'",
+    '"token": "live-secret-value-123"',
+    '\\"token\\": \\"live-secret-value-123\\"',
+    'Authorization: Bearer <YOUR_TOKEN>live-secret-value-123',
+    'password += compound-secret-value-123',
+    'dbPassword = compound-secret-value-123',
+    'clientSecret = compound-secret-value-123',
+    'accessToken = compound-secret-value-123',
+    'authorizationToken = compound-secret-value-123',
+    'pass**word**: compound-secret-value-123',
+    'pass`word`: compound-secret-value-123',
+    String.raw`pass\word: compound-secret-value-123`,
+    String.raw`pass\\word: compound-secret-value-123`,
+    String.raw`api\_key: compound-secret-value-123`,
+    String.raw`api\\_key: compound-secret-value-123`,
+    'client**_secret**: compound-secret-value-123',
+    'auth**orization** = compound-secret-value-123',
+    'password /*x*/ ** /*y*/ = compound-secret-value-123',
+    'password * * = compound-secret-value-123',
+    'password ? ? = compound-secret-value-123',
+    'password > > > = compound-secret-value-123',
+    'password | | = compound-secret-value-123',
+    'password & & = compound-secret-value-123',
+    'pass\u200Bword = compound-secret-value-123',
+    'api\u2060Key = compound-secret-value-123',
+    'db_pwd ??= compound-secret-value-123',
+    'client_/* split */secret += comment-compound-secret-123',
+    'proxy-authorization ??= compound-secret-value-123',
     'client_secret = client-secret-value-123456',
     'access_token = access-token-value-123456',
     '**password**: "formatted-secret-value-123"',
@@ -239,13 +283,49 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
   const safe = [
     'API key와 password는 공개 문서에 입력하지 마세요.',
     'API key: REPLACE_ME',
-    `\`API_KEY=${'<YOUR_API_KEY>'}\``,
-    `\`client_secret=${'${CLIENT_SECRET}'}\``,
-    `\`Authorization: Bearer ${'<YOUR_TOKEN>'}\``,
-    `\`password=${'REPLACE_ME'}\``,
+    '`API_KEY=<YOUR_API_KEY>`',
+    '`client_secret=${CLIENT_SECRET}`',
+    '`password=REPLACE_ME`',
+    'password: REPLACE_ME.',
+    'token: REDACTED.',
+    '"token": "REDACTED".',
+    '`token: <YOUR_TOKEN>!`',
+    '`db_password=<YOUR_PASSWORD>`',
+    'Authorization: Bearer ***',
+    '`Authorization: Bearer <YOUR_TOKEN>.`',
+    '[공개 정책](https://example.com/123e4567e89b12d3a456426614174000)',
+    '[공개 연락처](https://example.com/02.1234.5678)',
+    '[공개 IPv4](https://1.1.1.1/)',
+    '[공개 IPv6](https://[2606:4700:4700::1111]/)',
+    '**password**: REPLACE_ME',
+    'password: REPLACE_ME, api_key: PLACEHOLDER',
+    'CSS --token: primary-blue',
+    'CSS design_token: primary-blue',
+    'CSS custom_token: primary-blue',
+    '비밀번호는 공개 문서에 입력하지 마세요.',
     `실제 개인 키 블록은 \`${'-----BEGIN PRIVATE KEY-----'}\`로 시작합니다.`,
-  ].join('\n\n');
-  assert.doesNotThrow(() => createCleanMarkdownArtifacts(document(safe)));
+  ];
+  for (const [index, body] of safe.entries()) {
+    assert.doesNotThrow(() => createCleanMarkdownArtifacts(document(body)), `safe[${index}] ${body}`);
+  }
+});
+
+test('credential scanner는 공개 Markdown의 UUID·전화번호·내부 주소를 차단한다', () => {
+  const document = (body) => [{
+    id: 'security',
+    canonicalUrl: 'https://docs.certi.life/guide/security',
+    source: `---\ntitle: 보안 안내\ndescription: 공개 설명입니다.\n---\n${body}\n`,
+  }];
+  for (const body of [
+    '식별자 123e4567e89b12d3a456426614174000',
+    '연락처 02.1234.5678',
+    '연락처 070.1234.5678',
+    '연락처 +82.70.1234.5678',
+    '내부 주소 fd00::1',
+    '[내부 주소](http://[fd00::1]/)',
+  ]) {
+    assert.throws(() => createCleanMarkdownArtifacts(document(body)), /private or credential-like content detected/, body);
+  }
 });
 
 test('clean Markdown artifacts는 duplicate route와 identical output을 fail-closed로 거부한다', () => {
