@@ -4,6 +4,7 @@ import {isIP} from 'node:net';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from '@11ty/gray-matter';
+import {hasUnclosedBlockComment} from './credential-safety.mjs';
 
 const WORD_PATTERN = /[\p{L}\p{N}]+/gu;
 
@@ -256,7 +257,7 @@ function assertPublicFixtureText(value, fixtureId) {
   if (value.length > MAX_FIXTURE_TEXT_LENGTH) {
     throw new Error(`fixture ${fixtureId} exceeds maximum text length ${MAX_FIXTURE_TEXT_LENGTH}`);
   }
-  if (containsUnsafeSecretAssignment(value)) {
+  if (hasUnclosedBlockComment(value) || containsUnsafeSecretAssignment(value)) {
     throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
   const urls = [...value.matchAll(/https?:\/\/[^\s"'<>]+/gi)];

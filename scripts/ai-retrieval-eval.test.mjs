@@ -231,6 +231,8 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '설정에서 access_token: live-value를 확인하세요',
     '설정에서 github_token = live-secret을 확인하세요',
     '설정에서 github_token/**/=live-secret을 확인하세요',
+    '설정에서 token/*=live-secret을 확인하세요',
+    '설정에서 password/*=live-secret을 확인하세요',
     '설정에서 client_secret = live-secret을 확인하세요',
     '설정에서 proxy-authorization = live-secret을 확인하세요',
     '설정에서 password: live-secret-value를 확인하세요',
