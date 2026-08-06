@@ -1,4 +1,4 @@
-const IDENTIFIER_DASHES = /[‐‑‒–—―⁃−﹘﹣－⁄∕／]/gu;
+const IDENTIFIER_DASHES = /[‐‑‒–—―⁃−﹘﹣－⁄∕／\/\\╱⧵⧸⧹]/gu;
 const IDENTIFIER_DOTS = /[․‧·•∙⋅。．｡]/gu;
 const IDENTIFIER_COLONS = /[꞉ː∶︰：]/gu;
 
@@ -19,8 +19,7 @@ export function normalizeIpSurface(value) {
 export function normalizeIdentifierSurface(value) {
   return normalizeIpSurface(value)
     .replace(IDENTIFIER_DASHES, '-')
-    .replace(/(?<=[0-9])[\p{P}\p{S}\p{Z}]+(?=[0-9])/gu, '-')
-    .replace(/(?<=[0-9a-f])[\p{P}\p{S}\p{Z}]+(?=[0-9a-f])/giu, '-');
+    .replace(/(?<=[0-9a-f])\p{Pd}+(?=[0-9a-f])/giu, '-');
 }
 
 export function maskExplicitPublicVersions(value) {

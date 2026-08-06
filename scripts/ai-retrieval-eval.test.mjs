@@ -185,7 +185,7 @@ test('validateFixtures는 중복·비공개 식별자·불완전 Top3를 fail-cl
     `010${String.fromCodePoint(0x2061)}-1234-5678`, `10${String.fromCodePoint(0xad)}.0.0.1`,
     `02/${String.fromCodePoint(0x338)}1234/${String.fromCodePoint(0x338)}5678`,
     'fd00∶∶1', '010֊1234֊5678', '010᠆1234᠆5678', '02╱1234╱5678', '02⧵1234⧵5678',
-    '010:1234:5678', '10:0:0:1',
+    '010:1234:5678', '10:0:0:1', '192/168/0/1', '172_16_0_1',
     '12345678/1234/1234/1234/123456789012',
     '12345678.1234.1234.1234.123456789012',
     '12345678:1234:1234:1234:123456789012',
@@ -262,6 +262,10 @@ test('validateFixtures는 명시적 secret placeholder를 허용하고 실제 �
     '공개 SHA-256 checksum: abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcd 입니다',
     '공개 버전 v1.2.3.4를 사용합니다.',
     '공개 버전 (v1.2.3.4)을 사용합니다.',
+    '공개 릴리스 단계 1-2-3-4를 설명합니다.',
+    '공개 범위 1/2/3/4를 설명합니다.',
+    '공개 비율 1:2:3:4를 설명합니다.',
+    '공개 단계 1_2_3_4를 설명합니다.',
   ]) {
     assert.doesNotThrow(
       () => validateFixtures([{...base, question}], publicIds, {expectedCount: 1}),
