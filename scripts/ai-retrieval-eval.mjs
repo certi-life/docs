@@ -4,7 +4,7 @@ import {isIP} from 'node:net';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from '@11ty/gray-matter';
-import {decodeUrlComponentLayers, hasUnclosedBlockComment} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasUnclosedBlockComment, replaceHttpUrls} from './credential-safety.mjs';
 
 const WORD_PATTERN = /[\p{L}\p{N}]+/gu;
 
@@ -204,6 +204,7 @@ function normalizeFixtureCredentialMarkdown(value) {
   const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
   const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
   return value
+    .replace(/[\u200B-\u200D\u2060\uFEFF]/g, '')
     .replace(/[`\\]+/g, '')
     .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
     .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
@@ -260,11 +261,11 @@ function assertPublicFixtureText(value, fixtureId) {
   if (hasUnclosedBlockComment(value) || containsUnsafeSecretAssignment(value)) {
     throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }
-  const urls = [...value.matchAll(/https?:\/\/[^\s"'<>]+/gi)];
+  const urls = extractHttpUrls(value);
   for (const match of urls) {
     let parsed;
     try {
-      parsed = new URL(match[0]);
+      parsed = new URL(match.url);
     } catch {
       throw new Error(`fixture ${fixtureId} contains a malformed URL`);
     }
@@ -281,9 +282,9 @@ function assertPublicFixtureText(value, fixtureId) {
       throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
     }
   }
-  const scannedValue = value
-    .replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM')
-    .replace(/https?:\/\/[^\s"'<>]+/gi, 'PUBLIC_URL');
+  const scannedValue = replaceHttpUrls(
+    value.replace(/\bSHA-256\s+checksum:\s*[0-9a-f]{64}\b/gi, 'PUBLIC_CHECKSUM'),
+  );
   for (const pattern of NON_PUBLIC_PATTERNS) {
     if (pattern.test(scannedValue)) throw new Error(`fixture ${fixtureId} contains a non-public identifier`);
   }

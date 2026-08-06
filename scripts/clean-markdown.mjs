@@ -10,7 +10,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMdx from 'remark-mdx';
 import remarkParse from 'remark-parse';
 import remarkStringify from 'remark-stringify';
-import {decodeUrlComponentLayers, hasUnclosedBlockComment} from './credential-safety.mjs';
+import {decodeUrlComponentLayers, extractHttpUrls, hasUnclosedBlockComment, replaceHttpUrls} from './credential-safety.mjs';
 
 const parser = unified().use(remarkParse).use(remarkMdx).use(remarkDirective).use(remarkGfm);
 const stringifier = unified().use(remarkParse).use(remarkGfm).use(remarkStringify, {
@@ -237,6 +237,7 @@ function normalizeCredentialMarkdown(value) {
   const code = new RegExp('`(' + CREDENTIAL_FIELD_SOURCE + ')`', 'giu');
   const link = new RegExp(`\\[(${CREDENTIAL_FIELD_SOURCE})\\]\\([^)]+\\)`, 'giu');
   return value
+    .replace(/[\u200B-\u200D\u2060\uFEFF]/g, '')
     .replace(/[`\\]+/g, '')
     .replace(/(?<=[\p{L}\p{N}_])\*+(?=[\p{L}\p{N}_:]|$)/gu, '')
     .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
@@ -297,12 +298,12 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
   for (const pattern of LEAK_PATTERNS) {
     if (pattern.test(value)) throw new Error(`${label}: private or credential-like content detected`);
   }
-  const publicUrls = [...value.matchAll(/https?:\/\/[^\s)<>"']+/gi)];
+  const publicUrls = extractHttpUrls(value);
   const decodedUrlSurfaces = [];
   for (const match of publicUrls) {
     let parsed;
     try {
-      parsed = new URL(match[0]);
+      parsed = new URL(match.url);
     } catch {
       throw new Error(`${label}: private or credential-like content detected`);
     }
@@ -316,7 +317,7 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
       throw new Error(`${label}: private or credential-like content detected`);
     }
   }
-  const proseWithoutUrls = value.replace(/https?:\/\/[^\s)<>"']+/gi, 'PUBLIC_URL');
+  const proseWithoutUrls = replaceHttpUrls(value);
   for (const pattern of IDENTIFIER_PATTERNS) {
     if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
   }

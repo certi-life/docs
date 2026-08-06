@@ -215,6 +215,10 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     canonicalUrl: 'https://docs.certi.life/guide/security',
     source: `---\ntitle: 보안 안내\ndescription: 공개 설명입니다.\n---\n${body}\n`,
   }];
+  const deeplyEncodedAssignment = Array.from({length: 65}).reduce(
+    (value) => encodeURIComponent(value),
+    'token=live-secret-value',
+  );
   const leaked = [
     `AWS 키: ${'AKIA'}${'Z3N7Q5J2M8R4T6VU'}`,
     `임시 AWS 키: ${'ASIA'}${'Q7W2E9R4T6Y8U1IO'}`,
@@ -281,6 +285,20 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     '[encoded path](https://docs.certi.life/guide/token%3Dlive-secret-value)',
     '[double encoded fragment](https://docs.certi.life/guide/help#token%253Dlive-secret-value)',
     '[malformed encoded query](https://docs.certi.life/guide/help?token%3Dlive-secret-value%ZZ)',
+    '[malformed field separator](https://docs.certi.life/guide/help?token%ZZ%3Dlive-secret-value)',
+    '[malformed field prefix](https://docs.certi.life/guide/%ZZtoken%3Dlive-secret-value)',
+    '[malformed zero-width prefix](https://docs.certi.life/guide/help?q=%ZZto%E2%80%8Bken%3Dlive-secret-value)',
+    '[malformed zero-width separator](https://docs.certi.life/guide/help?to%E2%80%8Bken%ZZ%3Dlive-secret-value)',
+    "[apostrophe path](https://docs.certi.life/guide/pre'token%3Dlive-secret-value)",
+    '[encoded zero width](https://docs.certi.life/guide/help?to%E2%80%8Bken%3Dlive-secret-value)',
+    '[malformed encoded zero width](https://docs.certi.life/guide/help?to%E2%80%8Bken%3Dlive-secret-value%ZZ)',
+    '[balanced parenthesis credential](https://docs.certi.life/guide/(safe)?to%E2%80%8Bken%3Dlive-secret-value)',
+    '[escaped closing parenthesis credential](https://docs.certi.life/guide/a\\)token%3Dlive-secret-value)',
+    String.raw`[escaped quote credential](https://docs.certi.life/guide/a\"token%3Dlive-secret-value)`,
+    String.raw`[escaped angle credential](https://docs.certi.life/guide/a\>token%3Dlive-secret-value)`,
+    '[escaped backtick credential](https://docs.certi.life/guide/a\\`token%3Dlive-secret-value)',
+    '[mixed malformed zero width](https://docs.certi.life/guide/help?to%E2%80%8Bken%3Dlive-secret-value%ZZ%E0%A4%A)',
+    `[excessive encoding](https://docs.certi.life/guide/help?q=${deeplyEncodedAssignment})`,
   ];
   for (const body of leaked) {
     assert.throws(() => createCleanMarkdownArtifacts(document(body)), /private or credential-like content detected/, body);
@@ -306,6 +324,9 @@ test('credential scanner는 대표 secret을 차단하고 안전한 설명·plac
     '[공개 연락처](https://example.com/02.1234.5678)',
     '[공개 IPv4](https://1.1.1.1/)',
     '[공개 IPv6](https://[2606:4700:4700::1111]/)',
+    '[encoded percent](https://docs.certi.life/guide/discount%25)',
+    '[balanced parenthesis](https://docs.certi.life/guide/(overview)?q=ok)',
+    '[escaped parenthesis](https://docs.certi.life/guide/a\\(b\\)?q=ok)',
     '**password**: REPLACE_ME',
     'password: REPLACE_ME, api_key: PLACEHOLDER',
     'CSS --token: primary-blue',
