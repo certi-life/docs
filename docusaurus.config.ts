@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'CertiLife Docs',
   tagline: '인증서부터 AI 상담, CRM 마케팅까지',
-  favicon: 'img/certilife-symbol.svg',
+  favicon: 'favicon.ico',
   future: {v4: true},
   url: 'https://docs.certi.life',
   baseUrl: '/',
