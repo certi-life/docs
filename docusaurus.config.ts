@@ -31,7 +31,12 @@ const config: Config = {
         },
         blog: false,
         theme: {customCss: './src/css/custom.css'},
-        sitemap: {changefreq: 'weekly', priority: 0.5, lastmod: 'date'},
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          lastmod: 'date',
+          ignorePatterns: ['/search'],
+        },
       } satisfies Preset.Options,
     ],
   ],
@@ -59,6 +64,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    image: 'img/certilife-docs-og.png',
     metadata: [
       {name: 'keywords', content: '서티라이프, CertiLife, 인증서, AI 상담, CRM, 병원 고객관리, 제조사'},
     ],

@@ -18,6 +18,7 @@ export default function SearchPage(props: Props): React.JSX.Element {
     <>
       <Head>
         <meta name="description" content="CertiLife 사용 가이드 전체에서 기능, 문제 상황, 해결 방법을 검색하세요." />
+        <meta name="robots" content="noindex, follow" />
       </Head>
       <OriginalSearchPage {...props} />
     </>
