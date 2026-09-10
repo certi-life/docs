@@ -12,6 +12,7 @@ import {gitLastModifiedIso, jsonLdHasType, normalizeJsonLd, validateBreadcrumbLi
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
 const diagnostic = (url, expected, actual) => `URL=${url} expected=${expected} actual=${actual}`;
+const socialImageUrl = 'https://docs.certi.life/img/certilife-docs-og.png';
 
 export async function fetchWithRetry(url, {fetchImpl = fetch, retries = 3, delayMs = 500} = {}) {
   let lastError;
@@ -80,6 +81,33 @@ function normalizeVisibleText(value) {
   return value.replace(/[\u200B-\u200D\uFEFF]/g, '').replace(/\s+/g, ' ').trim();
 }
 
+function validateSocialMetadata(url, nodes) {
+  const ogImages = nodes.filter((node) => node.nodeName === 'meta' && attr(node, 'property') === 'og:image');
+  const twitterImages = nodes.filter((node) => node.nodeName === 'meta' && attr(node, 'name') === 'twitter:image');
+  for (const [name, matches] of [['og:image', ogImages], ['twitter:image', twitterImages]]) {
+    const values = matches.map((node) => attr(node, 'content') ?? '<missing>');
+    if (matches.length !== 1 || values[0] !== socialImageUrl) {
+      throw new Error(diagnostic(url, `one ${name} content=${socialImageUrl}`, values.join(',') || '<missing>'));
+    }
+  }
+}
+
+function socialHtmlCheck(url) {
+  return (body) => validateSocialMetadata(url, descendants(parse(body)));
+}
+
+function searchHtmlCheck(url) {
+  return (body) => {
+    const nodes = descendants(parse(body));
+    validateSocialMetadata(url, nodes);
+    const robots = nodes.filter((node) => node.nodeName === 'meta' && attr(node, 'name') === 'robots');
+    const values = robots.map((node) => (attr(node, 'content') ?? '').toLowerCase().replace(/\s+/g, ''));
+    if (robots.length !== 1 || values[0] !== 'noindex,follow') {
+      throw new Error(diagnostic(url, 'one robots meta content=noindex, follow', values.join(',') || '<missing>'));
+    }
+  };
+}
+
 function visibleFaqEntries(nodes) {
   const article = nodes.find((node) => node.nodeName === 'article');
   if (!article) return [];
@@ -98,6 +126,7 @@ function visibleFaqEntries(nodes) {
 
 export function validateHtmlBody(url, title, body, navigationTitle = title, articleExpected, faqExpected = []) {
   const nodes = descendants(parse(body));
+  validateSocialMetadata(url, nodes);
   const canonicals = nodes.filter((node) => node.nodeName === 'link' && (attr(node, 'rel') ?? '').split(/\s+/).includes('canonical'));
   if (canonicals.length !== 1 || attr(canonicals[0], 'href') !== url) {
     throw new Error(diagnostic(url, `one canonical link href=${url}`, canonicals.map((node) => attr(node, 'href') ?? '<missing>').join(',') || '<missing>'));
@@ -213,15 +242,30 @@ export async function verifyProduction({
   const root = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
   const artifacts = projectCleanMarkdownArtifacts(projectRoot);
   const artifactById = new Map(artifacts.map((artifact) => [artifact.id, artifact]));
+  const sitemapBody = readFileSync(join(projectRoot, 'build', 'sitemap.xml'));
+  if (sitemapBody.toString('utf8').includes('<loc>https://docs.certi.life/search</loc>')) {
+    throw new Error(diagnostic(new URL('sitemap.xml', root).href, 'no /search URL', '/search is present'));
+  }
   const checks = [
     ['robots.txt', 'text/plain', readFileSync(join(projectRoot, 'build', 'robots.txt'))],
     ['llms.txt', 'text/plain', readFileSync(join(projectRoot, 'build', 'llms.txt'))],
-    ['sitemap.xml', 'application/xml', readFileSync(join(projectRoot, 'build', 'sitemap.xml'))],
+    ['sitemap.xml', 'application/xml', sitemapBody],
+    ['img/certilife-docs-og.png', 'image/png', readFileSync(join(projectRoot, 'build', 'img', 'certilife-docs-og.png'))],
   ];
   const tasks = checks.map(([path, contentType, body]) => async () => {
     const url = new URL(path, root).href;
     const response = await fetchWithRetry(url, {fetchImpl, retries, delayMs});
     await verifyResponse(url, response, {status: 200, contentType, body});
+  });
+  const homeUrl = root;
+  tasks.push(async () => {
+    const response = await fetchWithRetry(homeUrl, {fetchImpl, retries, delayMs});
+    await verifyResponse(homeUrl, response, {status: 200, contentType: 'text/html', check: socialHtmlCheck(homeUrl)});
+  });
+  const searchUrl = new URL('search', root).href;
+  tasks.push(async () => {
+    const response = await fetchWithRetry(searchUrl, {fetchImpl, retries, delayMs});
+    await verifyResponse(searchUrl, response, {status: 200, contentType: 'text/html', check: searchHtmlCheck(searchUrl)});
   });
   for (const id of requiredDocIds) {
     const canonical = publicDocUrl(id).replace('https://docs.certi.life', root.replace(/\/$/, ''));

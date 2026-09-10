@@ -18,6 +18,15 @@ function buildFixtureFetch(url) {
   } else if (pathname === '/sitemap.xml') {
     relativePath = 'sitemap.xml';
     contentType = 'application/xml';
+  } else if (pathname === '/img/certilife-docs-og.png') {
+    relativePath = 'img/certilife-docs-og.png';
+    contentType = 'image/png';
+  } else if (pathname === '/') {
+    relativePath = 'index.html';
+    contentType = 'text/html; charset=utf-8';
+  } else if (pathname === '/search') {
+    relativePath = 'search.html';
+    contentType = 'text/html; charset=utf-8';
   } else if (pathname.endsWith('.md')) {
     relativePath = pathname.slice(1);
     contentType = 'text/markdown; charset=utf-8';

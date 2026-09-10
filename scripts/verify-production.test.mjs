@@ -5,6 +5,7 @@ import {buildFaqPage} from '../src/utils/docStructuredData.mjs';
 import {fetchWithRetry, loadDocFaqExpected, loadDocNavigationTitle, loadDocTitle, validateHtmlBody, verifyResponse} from './verify-production.mjs';
 
 const projectRoot = join(import.meta.dirname, '..');
+const socialMetadata = '<meta property="og:image" content="https://docs.certi.life/img/certilife-docs-og.png"><meta name="twitter:image" content="https://docs.certi.life/img/certilife-docs-og.png">';
 
 test('fetchWithRetry는 일시적 5xx만 제한 횟수 재시도하고 성공 응답을 반환한다', async () => {
   let attempts = 0;
@@ -93,7 +94,7 @@ test('fetchWithRetry는 Retry-After 없는 429와 network error도 제한적으�
 
 test('HTML 검증은 서로 무관한 canonical·JSON-LD 문자열 우회를 거부한다', () => {
   const url = 'https://docs.certi.life/guide/help/troubleshooting';
-  const fake = `<html><body><div>rel=canonical</div><a href=${url}>not canonical</a><h1>문제 해결</h1><p>TechArticle BreadcrumbList</p></body></html>`;
+  const fake = `<html><head>${socialMetadata}</head><body><div>rel=canonical</div><a href=${url}>not canonical</a><h1>문제 해결</h1><p>TechArticle BreadcrumbList</p></body></html>`;
   assert.throws(() => validateHtmlBody(url, '문제 해결', fake), /canonical/);
 });
 
@@ -102,7 +103,7 @@ test('HTML 검증은 실제 canonical·H1·TechArticle·BreadcrumbList의 연결
   const articleExpected = {description: '공식 로그인 문제를 점검합니다.', dateModified: '2026-07-31T02:04:46.000Z'};
   const article = {'@context': 'https://schema.org', '@type': 'TechArticle', headline: '문제 해결', url, mainEntityOfPage: url, inLanguage: 'ko-KR', ...articleExpected};
   const breadcrumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{'@type': 'ListItem', position: 1, name: '문제 해결', item: url}]};
-  const html = `<html><head><link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script></head><body><h1>문제 해결</h1></body></html>`;
+  const html = `<html><head>${socialMetadata}<link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script></head><body><h1>문제 해결</h1></body></html>`;
   assert.doesNotThrow(() => validateHtmlBody(url, '문제 해결', html, '문제 해결', articleExpected));
   assert.throws(() => validateHtmlBody(url, '다른 제목', html, '문제 해결', articleExpected), /H1/);
   const malformedBreadcrumb = {'@type': 'BreadcrumbList', itemListElement: [{name: '문제 해결', item: url}]};
@@ -123,7 +124,7 @@ test('HTML 검증은 FAQ 문서에서만 화면 문답과 동일한 FAQPage를 �
   const breadcrumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{'@type': 'ListItem', position: 1, name: title, item: url}]};
   const entries = [{question: '가격은 얼마인가요?', answer: '공개 가격표에서 확인할 수 있습니다.'}];
   const faq = buildFaqPage(entries);
-  const html = `<html><head><link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script><script type="application/ld+json">${JSON.stringify(faq)}</script></head><body><article><h1>${title}</h1><h2>${entries[0].question}\u200b</h2><p>${entries[0].answer}</p></article></body></html>`;
+  const html = `<html><head>${socialMetadata}<link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script><script type="application/ld+json">${JSON.stringify(faq)}</script></head><body><article><h1>${title}</h1><h2>${entries[0].question}\u200b</h2><p>${entries[0].answer}</p></article></body></html>`;
   assert.doesNotThrow(() => validateHtmlBody(url, title, html, title, articleExpected, entries));
   assert.throws(() => validateHtmlBody(url, title, html, title, articleExpected, [{question: '다른 질문?', answer: '다른 답변'}]), /visible FAQ entries|FAQPage/);
 });
@@ -136,7 +137,7 @@ test('HTML 검증은 FAQPage 답변이 화면 전체 답변의 일부만 담으�
   const breadcrumbs = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{'@type': 'ListItem', position: 1, name: title, item: url}]};
   const entries = [{question: '가격은 얼마인가요?', answer: '공개 가격표에서 확인할 수 있습니다.'}];
   const faq = buildFaqPage(entries);
-  const html = `<html><head><link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script><script type="application/ld+json">${JSON.stringify(faq)}</script></head><body><article><h1>${title}</h1><h2>가격은 얼마인가요?</h2><p>공개 가격표에서 확인할 수 있습니다. 병원별 조건은 도입 문의에서 확인하세요.</p></article></body></html>`;
+  const html = `<html><head>${socialMetadata}<link rel="canonical" href="${url}"><script type="application/ld+json">${JSON.stringify(article)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbs)}</script><script type="application/ld+json">${JSON.stringify(faq)}</script></head><body><article><h1>${title}</h1><h2>가격은 얼마인가요?</h2><p>공개 가격표에서 확인할 수 있습니다. 병원별 조건은 도입 문의에서 확인하세요.</p></article></body></html>`;
   assert.throws(() => validateHtmlBody(url, title, html, title, articleExpected, entries), /visible FAQ entries/);
 });
 
