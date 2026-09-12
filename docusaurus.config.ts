@@ -67,6 +67,7 @@ const config: Config = {
     image: 'img/certilife-docs-og.png',
     metadata: [
       {name: 'keywords', content: '서티라이프, CertiLife, 인증서, AI 상담, CRM, 병원 고객관리, 제조사'},
+      {name: 'naver-site-verification', content: 'a35e2a51750093ba52f01ca5d886efcbd3337173'},
     ],
     colorMode: {defaultMode: 'light', disableSwitch: true, respectPrefersColorScheme: false},
     navbar: {
