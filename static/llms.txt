@@ -35,8 +35,9 @@ CertiLife의 공개 서비스 범위와 문서 사용법을 먼저 확인합니�
 
 등록 자료 기반 답변을 위한 지식 준비와 상담원 연결 정책을 안내합니다.
 
-- [AI 상담](https://docs.certi.life/guide/products/ai-chatbot.md): 등록 자료를 바탕으로 답변하고 상담원 연결까지 이어지는 AI 상담 운영 원칙을 소개합니다.
+- [AI 상담](https://docs.certi.life/guide/products/ai-chatbot.md): 등록 자료 기반 답변, 다국어 상담 번역과 상담원 연결까지 이어지는 AI 상담 운영 방법을 소개합니다.
 - [AI 상담 지식 준비](https://docs.certi.life/guide/products/ai-chatbot/knowledge-preparation.md): 등록 자료 기반 답변을 위해 공개 가능하고 최신인 상담 지식을 정리하는 방법을 안내합니다.
+- [상담 메시지 번역](https://docs.certi.life/guide/products/ai-chatbot/message-translation.md): 상담방 언어를 자동으로 판단하고 수신 메시지를 번역하며, 발신 전 번역 여부를 선택하는 방법을 안내합니다.
 - [상담원 연결 정책](https://docs.certi.life/guide/products/ai-chatbot/handoff-policy.md): 업무시간과 문의 유형에 따라 AI 상담을 상담원 또는 담당자에게 전달하는 기준을 세웁니다.
 
 ## CRM 메시징
@@ -80,6 +81,8 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 - [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access.md): Studio 공식 로그인 화면에서 Username과 Password로 안전하게 접속하고 문제에 대응하는 절차입니다.
 - [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management.md): AI 챗봇이 참고할 공개 자료를 선별하고 최신성·정확성·개인정보 기준을 유지하는 운영 가이드입니다.
 - [상담 시나리오와 사람 연결](https://docs.certi.life/guide/studio/scenario-and-handoff.md): AI 상담 흐름을 설계하고 업무시간별 상담원 연결·의료 문의·예외 상황을 안전하게 처리하는 방법입니다.
+- [상담 내역 조회와 화면 설정](https://docs.certi.life/guide/studio/conversation-history.md): 채널별 상담 내역을 검색하고 요약·분류·대화 내용을 확인하며 목록과 상세 화면을 구성하는 방법입니다.
+- [상담 기록 필드 설정](https://docs.certi.life/guide/studio/consultation-records.md): 전화상담 후처리에 사용할 단일·복수 선택 필드와 상담 메모 양식을 만들고 AI 자동 선택을 안전하게 운영하는 방법입니다.
 - [Studio 출시 체크리스트](https://docs.certi.life/guide/studio/launch-checklist.md): AI 챗봇·상담원 연결·AI 음성봇을 고객에게 공개하기 전과 공개 직후 확인할 운영 체크리스트입니다.
 
 ## 도움말
@@ -88,7 +91,7 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 
 - [자주 묻는 질문](https://docs.certi.life/guide/help/faq.md): CertiLife 서비스, 병원 AI 상담 도입, 지원 채널, 상담원 연결, 가격, 접속과 개인정보 보호에 관한 자주 묻는 질문입니다.
 - [문제 해결](https://docs.certi.life/guide/help/troubleshooting.md): CertiLife 공식 서비스 접속과 공개 로그인 문제를 안전하게 점검하는 방법입니다.
-- [용어집](https://docs.certi.life/guide/help/glossary.md): CertiLife 공개 문서에서 사용하는 서비스와 개인정보·운영 관련 용어를 설명합니다.
+- [용어집](https://docs.certi.life/guide/help/glossary.md): CertiLife 인증서, 가상 데이터, 인증 코드 등 서비스와 개인정보·운영 관련 용어를 설명합니다.
 - [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security.md): CertiLife를 안전하게 이용하고 공유 자료에서 개인정보를 제거하기 위한 공개 원칙과 체크리스트입니다.
 
 ## 추가 공개 경로

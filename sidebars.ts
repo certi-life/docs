@@ -31,6 +31,7 @@ const sidebars: SidebarsConfig = {
       items: [
         'products/ai-chatbot',
         'products/ai-chatbot/knowledge-preparation',
+        'products/ai-chatbot/message-translation',
         'products/ai-chatbot/handoff-policy',
       ],
     },
@@ -79,6 +80,8 @@ const sidebars: SidebarsConfig = {
         'studio/account-access',
         'studio/knowledge-management',
         'studio/scenario-and-handoff',
+        'studio/conversation-history',
+        'studio/consultation-records',
         'studio/launch-checklist',
       ],
     },

@@ -42,6 +42,8 @@ Studio에서 준비한 AI 상담은 아래 항목을 모두 확인한 뒤 공개
 
 카카오톡, 네이버톡톡, 웹챗봇은 각각 실제 고객이 보는 환경에서 문장 줄바꿈, 링크 목적, 응답 길이, 사람 연결 안내를 확인합니다. 여러 채널을 동시에 운영한다면 같은 질문이 의미상 같은 답을 받는지 비교하세요. 모바일 화면에서 텍스트와 링크를 읽고 선택할 수 있는지도 확인합니다.
 
+상담 번역을 사용한다면 고객 언어 자동 감지, 상담사의 언어 변경, 수신 자동 번역, 발신 전 번역과 번역 생략 발송을 모두 시험합니다. 병원명·브랜드명·시술명 같은 고유명사가 용어집 기준으로 일관되게 표현되는지도 확인하세요.
+
 AI 음성봇은 조용한 환경뿐 아니라 일반적인 주변 소음에서도 시험합니다. 숫자, 날짜, 운영시간이 정확히 들리는지, 잘못 인식했을 때 다시 질문하는지, 고객이 사람 연결을 요청할 수 있는지 점검합니다. 테스트에는 실제 전화번호나 진료 내용을 사용하지 말고 승인된 가상 자료를 사용하세요.
 
 ## 5. 공개 직전 승인
@@ -65,4 +67,7 @@ AI 음성봇은 조용한 환경뿐 아니라 일반적인 주변 소음에서�
 - [Studio 운영 가이드](https://docs.certi.life/guide/studio/overview)
 - [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access)
 - [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management)
+- [상담 메시지 번역](https://docs.certi.life/guide/products/ai-chatbot/message-translation)
+- [상담 내역 조회와 화면 설정](https://docs.certi.life/guide/studio/conversation-history)
+- [상담 기록 필드 설정](https://docs.certi.life/guide/studio/consultation-records)
 - [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security)
