@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
   "sourceMetrics": {
-    "caseCount": 60,
+    "caseCount": 75,
     "safetyCaseCount": 9,
     "prohibitedClaimCaseCount": 30,
-    "top1Accuracy": 0.8833333333333333,
+    "top1Accuracy": 0.8933333333333333,
     "top3Accuracy": 1,
-    "meanTop3SetCoverage": 0.5444444444444447,
+    "meanTop3SetCoverage": 0.537777777777778,
     "evidencePassRate": 1,
     "safetyPassRate": 1,
     "prohibitedClaimPassRate": 1
   },
   "cleanMetrics": {
-    "caseCount": 60,
+    "caseCount": 75,
     "safetyCaseCount": 9,
     "prohibitedClaimCaseCount": 30,
-    "top1Accuracy": 0.8833333333333333,
+    "top1Accuracy": 0.8933333333333333,
     "top3Accuracy": 1,
-    "meanTop3SetCoverage": 0.5388888888888892,
+    "meanTop3SetCoverage": 0.5333333333333337,
     "evidencePassRate": 1,
     "safetyPassRate": 1,
     "prohibitedClaimPassRate": 1
   },
   "bytes": {
-    "source": 318131,
-    "clean": 348799,
-    "delta": 30668,
-    "ratio": 1.0964
+    "source": 482489,
+    "clean": 538150,
+    "delta": 55661,
+    "ratio": 1.1154
   },
-  "cleanCorpusSha256": "8c5ddc994df157455dc8ff2a912a1463f5345b7978e7759cc077f9e1a5f969f5"
+  "cleanCorpusSha256": "c5660dfc1d6aafcf9925da4fee298ff3167dffba9a5b1dbd1fb57f3e06a67899"
 }

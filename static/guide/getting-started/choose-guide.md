@@ -1,6 +1,6 @@
 # 내게 맞는 가이드 찾기
 
-> 역할과 목적에 따라 지금 읽을 CertiLife 문서와 공식 서비스 링크를 선택하세요.
+> 병원·제조사·Studio 담당자가 자신의 역할에 맞는 문서를 고르고 공식 서비스 링크를 찾도록 돕습니다.
 
 [사람이 읽는 원문](https://docs.certi.life/guide/getting-started/choose-guide)
 
