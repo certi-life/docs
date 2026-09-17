@@ -249,6 +249,7 @@ export async function verifyProduction({
   const checks = [
     ['robots.txt', 'text/plain', readFileSync(join(projectRoot, 'build', 'robots.txt'))],
     ['llms.txt', 'text/plain', readFileSync(join(projectRoot, 'build', 'llms.txt'))],
+    ['llms-full.md', 'text/markdown', readFileSync(join(projectRoot, 'build', 'llms-full.md'))],
     ['sitemap.xml', 'application/xml', sitemapBody],
     ['img/certilife-docs-og.png', 'image/png', readFileSync(join(projectRoot, 'build', 'img', 'certilife-docs-og.png'))],
   ];

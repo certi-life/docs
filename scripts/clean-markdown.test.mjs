@@ -442,7 +442,9 @@ test('단일 파일 검증은 누락·stale·build 바이트 차이·빌드 HTML
   writeFileSync(join(pages, 'ai-settings.html'), '<h2 id="커스텀-페르소나-설정"></h2><h2 id="페르소나"></h2><h2 id="페르소나-1"></h2>');
   writeFileSync(join(pages, 'tools.html'), '<h2 id="다른-제목"></h2>');
   assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /anchor is missing from the built page: .*tools#도구/);
-  writeFileSync(join(pages, 'tools.html'), '<h2 id="도구"></h2>');
+  writeFileSync(join(pages, 'tools.html'), '<h2 id=도구-목록></h2>');
+  assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /anchor is missing from the built page: .*tools#도구/);
+  writeFileSync(join(pages, 'tools.html'), '<h2 class=anchor id=도구></h2>');
   assert.doesNotThrow(() => verifyCombinedMarkdown(root, content, {buildRoot}));
   writeFileSync(join(buildRoot, COMBINED_MARKDOWN_PATH), 'drift\n');
   assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /built combined Markdown differs/);

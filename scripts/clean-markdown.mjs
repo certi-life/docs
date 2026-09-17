@@ -481,7 +481,9 @@ export function verifyCombinedMarkdown(projectRoot, content, {buildRoot} = {}) {
     if (!htmlPath) throw new Error(`combined Markdown source has no built page: ${sourceUrl}`);
     if (!htmlCache.has(htmlPath)) htmlCache.set(htmlPath, readFileSync(htmlPath, 'utf8'));
     const fragment = decodeURIComponent(url.hash.slice(1));
-    if (!htmlCache.get(htmlPath).includes(`id="${fragment}"`)) throw new Error(`combined Markdown anchor is missing from the built page: ${sourceUrl}`);
+    // The production build minifies attributes, so ids appear both quoted and unquoted.
+    const escaped = fragment.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    if (!new RegExp(`\\sid=(?:"${escaped}"|${escaped}(?=[\\s>]))`).test(htmlCache.get(htmlPath))) throw new Error(`combined Markdown anchor is missing from the built page: ${sourceUrl}`);
   }
   return true;
 }
