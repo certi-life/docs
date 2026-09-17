@@ -61,6 +61,25 @@ function firstProseParagraph(source) {
   return paragraph.join(' ');
 }
 
+// Screen guides are retrieved by the UI labels the chatbot SDK reads, so every ## must carry the fixed frame.
+const SCREEN_DOC_PREFIX = 'studio/screens/';
+const SCREEN_FRAME_LINES = ['**위치:**', '**이 화면에서 할 수 있는 일:**'];
+
+export function missingScreenFrameLines(source) {
+  const body = matter(source).content.replace(/```[\s\S]*?```/g, '');
+  const sections = body.split(/^## /m).slice(1);
+  if (sections.length === 0) return ['(no ## screen section)'];
+  return sections.flatMap((section) => {
+    const heading = section.split('\n', 1)[0].trim();
+    return SCREEN_FRAME_LINES.filter((line) => !section.includes(`\n- ${line} `)).map((line) => `${heading}: ${line}`);
+  });
+}
+
+export function auditScreenDocuments(projectRoot) {
+  return requiredDocIds.filter((id) => id.startsWith(SCREEN_DOC_PREFIX)).flatMap((id) =>
+    missingScreenFrameLines(readFileSync(join(projectRoot, 'docs', `${id}.mdx`), 'utf8')).map((missing) => `${id} > ${missing}`));
+}
+
 export function auditPublicDocuments(projectRoot) {
   return requiredDocIds.map((id) => {
     const source = readFileSync(join(projectRoot, 'docs', `${id}.mdx`), 'utf8');
@@ -111,6 +130,8 @@ function main() {
     const entries = auditPublicDocuments(projectRoot);
     const failures = entries.filter((entry) => entry.classification !== 'pass');
     if (failures.length) throw new Error(`answer-first contract requires review: ${failures.map((entry) => entry.id).join(', ')}`);
+    const frameFailures = auditScreenDocuments(projectRoot);
+    if (frameFailures.length) throw new Error(`screen guide sections are missing required frame lines:\n- ${frameFailures.join('\n- ')}`);
     console.log(`Answer-first audit passed: ${entries.length} public documents`);
   }
 }

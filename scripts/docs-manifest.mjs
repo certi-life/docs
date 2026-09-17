@@ -86,6 +86,26 @@ export const docsSections = [
     ],
   },
   {
+    label: 'Studio 화면별 안내',
+    description: 'Studio 챗봇 영역의 화면마다 위치, 할 수 있는 일, 주요 버튼을 화면에 보이는 이름 그대로 안내합니다.',
+    docs: [
+      'studio/screens/chatbot-list',
+      'studio/screens/scenarios',
+      'studio/screens/flows',
+      'studio/screens/statistics',
+      'studio/screens/settings',
+      'studio/screens/basic-info',
+      'studio/screens/ai-settings',
+      'studio/screens/tools',
+      'studio/screens/manuals',
+      'studio/screens/operating-hours',
+      'studio/screens/training-materials',
+      'studio/screens/channel-settings',
+      'studio/screens/chat-window-settings',
+      'studio/screens/delete-chatbot',
+    ],
+  },
+  {
     label: '도움말',
     description: '자주 묻는 질문, 문제 해결, 용어, 개인정보와 보안 원칙을 확인합니다.',
     docs: [

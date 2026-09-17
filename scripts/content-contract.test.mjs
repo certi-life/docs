@@ -3,7 +3,9 @@ import test from 'node:test';
 import {join} from 'node:path';
 import {
   auditPublicDocuments,
+  auditScreenDocuments,
   classifyOpening,
+  missingScreenFrameLines,
   renderAuditReport,
 } from './content-contract.mjs';
 import {requiredDocIds} from './docs-manifest.mjs';
@@ -45,4 +47,13 @@ test('공개 문서 감사는 전체 manifest를 결정론적으로 검사하고
   assert.equal(report, renderAuditReport(second));
   assert.doesNotMatch(report, /generatedAt|점수|score/i);
   assert.match(report, new RegExp(`${requiredDocIds.length}개`));
+});
+
+test('화면별 안내는 모든 ## 섹션에 위치와 할 수 있는 일 줄이 있어야 한다', () => {
+  const frame = '- **위치:** 챗봇 > 설정 > AI 설정\n- **이 화면에서 할 수 있는 일:** 응답 버전을 고릅니다.\n';
+  const page = (body) => `---\ntitle: AI 설정 화면\ndescription: 설명입니다.\n---\n# AI 설정 화면\n\n소개 문단입니다.\n\n${body}`;
+  assert.deepEqual(missingScreenFrameLines(page(`## 응답 버전\n\n${frame}\n### 세부\n\n본문\n`)), []);
+  assert.deepEqual(missingScreenFrameLines(page(`## 응답 버전\n\n${frame}\n## 페르소나\n\n- **위치:** 챗봇 > 설정 > AI 설정 > 페르소나\n`)), ['페르소나: **이 화면에서 할 수 있는 일:**']);
+  assert.deepEqual(missingScreenFrameLines(page('본문만 있습니다.\n')), ['(no ## screen section)']);
+  assert.deepEqual(auditScreenDocuments(join(import.meta.dirname, '..')), []);
 });
