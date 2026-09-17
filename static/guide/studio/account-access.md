@@ -4,7 +4,7 @@
 
 [사람이 읽는 원문](https://docs.certi.life/guide/studio/account-access)
 
-Studio의 공개 로그인 화면은 [Studio 공식 로그인](https://studio.certi.life)입니다. 공개 화면에서 확인되는 항목은 **Username**, **Password**, **로그인**입니다. 로그인 이후 챗봇 영역의 메뉴와 버튼은 [챗봇 목록 화면](https://docs.certi.life/guide/studio/screens/chatbot-list)부터 이어지는 화면별 안내에서 확인할 수 있으며, 계정 관리처럼 아직 화면 안내가 없는 기능은 이 문서에서 추측하지 않습니다. 계정 발급, 변경, 복구가 필요한 경우 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)를 이용하세요.
+Studio의 공개 로그인 화면은 [Studio 공식 로그인](https://studio.certi.life)입니다. 공개 화면에서 확인되는 항목은 **Username**, **Password**, **로그인**입니다. 로그인 이후 챗봇 영역의 메뉴와 버튼은 [Studio 메뉴 한눈에 보기](https://docs.certi.life/guide/studio/screens/overview)부터 이어지는 화면별 안내에서 확인할 수 있으며, 계정 관리처럼 아직 화면 안내가 없는 기능은 이 문서에서 추측하지 않습니다. 계정 발급, 변경, 복구가 필요한 경우 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)를 이용하세요.
 
 ## 로그인하기
 

@@ -49,11 +49,13 @@ test('공개 문서 감사는 전체 manifest를 결정론적으로 검사하고
   assert.match(report, new RegExp(`${requiredDocIds.length}개`));
 });
 
-test('화면별 안내는 모든 ## 섹션에 위치와 할 수 있는 일 줄이 있어야 한다', () => {
-  const frame = '- **위치:** 챗봇 > 설정 > AI 설정\n- **이 화면에서 할 수 있는 일:** 응답 버전을 고릅니다.\n';
-  const page = (body) => `---\ntitle: AI 설정 화면\ndescription: 설명입니다.\n---\n# AI 설정 화면\n\n소개 문단입니다.\n\n${body}`;
-  assert.deepEqual(missingScreenFrameLines(page(`## 응답 버전\n\n${frame}\n### 세부\n\n본문\n`)), []);
-  assert.deepEqual(missingScreenFrameLines(page(`## 응답 버전\n\n${frame}\n## 페르소나\n\n- **위치:** 챗봇 > 설정 > AI 설정 > 페르소나\n`)), ['페르소나: **이 화면에서 할 수 있는 일:**']);
-  assert.deepEqual(missingScreenFrameLines(page('본문만 있습니다.\n')), ['(no ## screen section)']);
+test('화면별 안내는 첫 ## 앞에 페이지 위치 줄이 있고 섹션이 하나 이상 있어야 한다', () => {
+  const page = (body) => `---\ntitle: AI 설정\ndescription: 설명입니다.\n---\n# AI 설정\n\n소개 문단입니다.\n\n${body}`;
+  assert.deepEqual(missingScreenFrameLines(page('**위치:** 챗봇 > 설정 > AI 설정\n\n## 응답 버전 바꾸기\n\n본문\n')), []);
+  assert.deepEqual(
+    missingScreenFrameLines(page('## 응답 버전 바꾸기\n\n**위치:** 챗봇 > 설정 > AI 설정 > 응답 버전\n')),
+    ['page-level **위치:** line before the first ##'],
+  );
+  assert.deepEqual(missingScreenFrameLines(page('**위치:** 챗봇\n\n본문만 있습니다.\n')), ['at least one ## section']);
   assert.deepEqual(auditScreenDocuments(join(import.meta.dirname, '..')), []);
 });

@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "33cbfd0493807d6cd68422e79f3ed79cfaeff0f1f68311fc8cc8a0947711e917",
-  "fixtureSha256": "ffde4618060cd9179d8b00024d9e660e533018948306c7d22dd5b88a4ebbcb0c",
+  "corpusSha256": "5d8e943dfe85f5a296ebfe227b4ca83ad3c41792d24139df5f2dc2bdd983ad0a",
+  "fixtureSha256": "bdb94aa5c69669afca13380e5667bbd1a829c0101fa6fa0d55aa98f9ab8d01f2",
   "metrics": {
-    "caseCount": 47,
+    "caseCount": 60,
     "safetyCaseCount": 9,
     "prohibitedClaimCaseCount": 30,
-    "top1Accuracy": 0.9148936170212766,
+    "top1Accuracy": 0.8833333333333333,
     "top3Accuracy": 1,
-    "meanTop3SetCoverage": 0.5815602836879433,
+    "meanTop3SetCoverage": 0.5444444444444447,
     "evidencePassRate": 1,
     "safetyPassRate": 1,
     "prohibitedClaimPassRate": 1
@@ -28,20 +28,20 @@
       "ranked": [
         {
           "id": "intro",
-          "score": 209.301888
+          "score": 230.90253
         },
         {
-          "id": "help/faq",
-          "score": 41.690419
+          "id": "studio/screens/crm",
+          "score": 47.205996
         },
         {
           "id": "help/glossary",
-          "score": 40.07413
+          "score": 44.202449
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 0.6666666666666666,
+      "top3SetCoverage": 0.3333333333333333,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -61,15 +61,15 @@
       "ranked": [
         {
           "id": "getting-started/quick-tour",
-          "score": 86.898724
+          "score": 93.343875
         },
         {
           "id": "products/event-marketing",
-          "score": 62.400554
+          "score": 62.522784
         },
         {
           "id": "products/event-marketing/campaign-planning",
-          "score": 62.057088
+          "score": 62.219666
         }
       ],
       "top1Passed": true,
@@ -94,15 +94,15 @@
       "ranked": [
         {
           "id": "getting-started/sign-in-directory",
-          "score": 51.272062
+          "score": 53.577229
+        },
+        {
+          "id": "studio/screens/encyclopedia",
+          "score": 35.863901
         },
         {
           "id": "getting-started/choose-guide",
-          "score": 31.549545
-        },
-        {
-          "id": "getting-started/quick-tour",
-          "score": 27.955138
+          "score": 30.539052
         }
       ],
       "top1Passed": false,
@@ -127,15 +127,15 @@
       "ranked": [
         {
           "id": "getting-started/plans-and-contact",
-          "score": 116.22374
+          "score": 123.493869
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 51.797466
+          "score": 55.611729
         },
         {
           "id": "help/faq",
-          "score": 44.622865
+          "score": 47.489366
         }
       ],
       "top1Passed": true,
@@ -160,15 +160,15 @@
       "ranked": [
         {
           "id": "getting-started/downloads",
-          "score": 89.019016
+          "score": 92.547851
         },
         {
           "id": "manufacturer/overview",
-          "score": 19.698441
+          "score": 17.454766
         },
         {
           "id": "hospital/overview",
-          "score": 17.27178
+          "score": 14.924811
         }
       ],
       "top1Passed": true,
@@ -193,15 +193,15 @@
       "ranked": [
         {
           "id": "hospital/account-access",
-          "score": 74.039215
+          "score": 81.31064
         },
         {
           "id": "getting-started/sign-in-directory",
-          "score": 73.918248
+          "score": 78.329169
         },
         {
           "id": "manufacturer/account-access",
-          "score": 66.528929
+          "score": 73.829939
         }
       ],
       "top1Passed": false,
@@ -226,15 +226,15 @@
       "ranked": [
         {
           "id": "hospital/certificate-workflow",
-          "score": 117.169677
+          "score": 120.780104
         },
         {
           "id": "products/certificate/channels",
-          "score": 95.775952
+          "score": 100.032558
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 28.56877
+          "score": 29.083616
         }
       ],
       "top1Passed": false,
@@ -259,15 +259,15 @@
       "ranked": [
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 43.307044
+          "score": 42.436738
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 38.549857
+          "score": 38.790801
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 31.061909
+          "score": 33.049444
         }
       ],
       "top1Passed": true,
@@ -292,15 +292,15 @@
       "ranked": [
         {
           "id": "studio/knowledge-management",
-          "score": 77.339675
+          "score": 76.472728
         },
         {
           "id": "products/ai-chatbot/knowledge-preparation",
-          "score": 75.031627
+          "score": 69.794983
         },
         {
-          "id": "help/faq",
-          "score": 30.266491
+          "id": "studio/screens/encyclopedia",
+          "score": 42.791985
         }
       ],
       "top1Passed": false,
@@ -325,15 +325,15 @@
       "ranked": [
         {
           "id": "products/ai-chatbot/handoff-policy",
-          "score": 121.987045
+          "score": 117.415801
         },
         {
-          "id": "getting-started/plans-and-contact",
-          "score": 36.589853
+          "id": "studio/screens/counsel",
+          "score": 61.30247
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 36.309296
+          "score": 31.215738
         }
       ],
       "top1Passed": true,
@@ -358,20 +358,20 @@
       "ranked": [
         {
           "id": "products/crm-messaging/segment-planning",
-          "score": 103.224464
+          "score": 106.392535
         },
         {
           "id": "products/crm-messaging",
-          "score": 78.356572
+          "score": 79.951871
         },
         {
-          "id": "products/crm-messaging/message-checklist",
-          "score": 40.270443
+          "id": "studio/screens/crm",
+          "score": 76.515826
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 1,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -391,15 +391,15 @@
       "ranked": [
         {
           "id": "products/crm-messaging/message-checklist",
-          "score": 211.438154
+          "score": 192.369728
         },
         {
-          "id": "studio/screens/tools",
-          "score": 86.518351
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 74.23911
         },
         {
-          "id": "studio/screens/chatbot-list",
-          "score": 49.946471
+          "id": "studio/screens/crm",
+          "score": 57.253051
         }
       ],
       "top1Passed": true,
@@ -424,15 +424,15 @@
       "ranked": [
         {
           "id": "products/event-marketing/campaign-planning",
-          "score": 158.741057
+          "score": 162.861552
         },
         {
           "id": "products/event-marketing",
-          "score": 69.875215
+          "score": 69.481917
         },
         {
           "id": "products/event-marketing/performance-review",
-          "score": 59.421122
+          "score": 58.581146
         }
       ],
       "top1Passed": true,
@@ -457,15 +457,15 @@
       "ranked": [
         {
           "id": "products/event-marketing/performance-review",
-          "score": 194.760463
+          "score": 188.616429
         },
         {
           "id": "products/event-marketing",
-          "score": 86.416285
+          "score": 87.287678
         },
         {
           "id": "products/event-marketing/campaign-planning",
-          "score": 84.226394
+          "score": 85.343111
         }
       ],
       "top1Passed": true,
@@ -489,19 +489,19 @@
       ],
       "ranked": [
         {
+          "id": "studio/screens/certificates",
+          "score": 72.632426
+        },
+        {
           "id": "hospital/overview",
-          "score": 62.429484
+          "score": 65.175138
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 47.048705
-        },
-        {
-          "id": "getting-started/buyer-faq",
-          "score": 43.746072
+          "score": 49.963884
         }
       ],
-      "top1Passed": true,
+      "top1Passed": false,
       "top3Passed": true,
       "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
@@ -523,15 +523,15 @@
       "ranked": [
         {
           "id": "hospital/account-access",
-          "score": 105.022185
+          "score": 112.812952
         },
         {
           "id": "manufacturer/account-access",
-          "score": 35.055018
+          "score": 37.174317
         },
         {
           "id": "hospital/safe-operation",
-          "score": 32.866717
+          "score": 36.197828
         }
       ],
       "top1Passed": true,
@@ -556,20 +556,20 @@
       "ranked": [
         {
           "id": "hospital/certificate-workflow",
-          "score": 52.78422
+          "score": 55.411828
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 35.5223
+          "score": 36.119541
         },
         {
-          "id": "products/certificate/delivery-checklist",
-          "score": 15.559346
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 23.764785
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 0.6666666666666666,
+      "top3SetCoverage": 0.3333333333333333,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -589,15 +589,15 @@
       "ranked": [
         {
           "id": "hospital/safe-operation",
-          "score": 109.012924
-        },
-        {
-          "id": "manufacturer/safe-operation",
-          "score": 52.913336
+          "score": 113.869966
         },
         {
           "id": "hospital/account-access",
-          "score": 49.777788
+          "score": 53.382625
+        },
+        {
+          "id": "manufacturer/safe-operation",
+          "score": 50.482428
         }
       ],
       "top1Passed": true,
@@ -622,15 +622,15 @@
       "ranked": [
         {
           "id": "manufacturer/overview",
-          "score": 99.582579
+          "score": 107.479187
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 35.15942
+          "score": 39.856887
         },
         {
           "id": "manufacturer/account-access",
-          "score": 34.995433
+          "score": 39.646822
         }
       ],
       "top1Passed": true,
@@ -655,15 +655,15 @@
       "ranked": [
         {
           "id": "manufacturer/account-access",
-          "score": 69.051888
+          "score": 74.465614
         },
         {
           "id": "manufacturer/overview",
-          "score": 54.984412
+          "score": 57.136889
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 40.102422
+          "score": 44.992119
         }
       ],
       "top1Passed": true,
@@ -688,15 +688,15 @@
       "ranked": [
         {
           "id": "manufacturer/safe-operation",
-          "score": 86.16585
+          "score": 94.750976
         },
         {
           "id": "manufacturer/account-access",
-          "score": 81.450579
+          "score": 89.491698
         },
         {
           "id": "manufacturer/overview",
-          "score": 75.215832
+          "score": 83.01335
         }
       ],
       "top1Passed": true,
@@ -721,15 +721,15 @@
       "ranked": [
         {
           "id": "studio/overview",
-          "score": 104.879857
+          "score": 109.591042
         },
         {
           "id": "studio/scenario-and-handoff",
-          "score": 81.362109
+          "score": 86.740558
         },
         {
-          "id": "studio/screens/scenarios",
-          "score": 64.655826
+          "id": "studio/screens/chatbot/scenarios",
+          "score": 75.76854
         }
       ],
       "top1Passed": true,
@@ -754,15 +754,15 @@
       "ranked": [
         {
           "id": "studio/account-access",
-          "score": 100.82517
+          "score": 105.584748
         },
         {
           "id": "hospital/account-access",
-          "score": 35.848987
+          "score": 40.293541
         },
         {
           "id": "manufacturer/account-access",
-          "score": 32.379004
+          "score": 36.42107
         }
       ],
       "top1Passed": true,
@@ -787,15 +787,15 @@
       "ranked": [
         {
           "id": "studio/knowledge-management",
-          "score": 118.287646
+          "score": 119.94105
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 32.323404
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 50.968403
         },
         {
-          "id": "studio/overview",
-          "score": 30.245349
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 43.740999
         }
       ],
       "top1Passed": true,
@@ -820,15 +820,15 @@
       "ranked": [
         {
           "id": "studio/scenario-and-handoff",
-          "score": 85.973316
+          "score": 86.847008
         },
         {
           "id": "manufacturer/account-access",
-          "score": 43.596629
+          "score": 43.863489
         },
         {
           "id": "manufacturer/overview",
-          "score": 36.507951
+          "score": 37.906572
         }
       ],
       "top1Passed": true,
@@ -853,15 +853,15 @@
       "ranked": [
         {
           "id": "studio/launch-checklist",
-          "score": 116.070713
+          "score": 106.525041
         },
         {
-          "id": "studio/screens/channel-settings",
-          "score": 66.229752
+          "id": "studio/screens/callbot",
+          "score": 63.496749
         },
         {
-          "id": "products/ai-chatbot/handoff-policy",
-          "score": 58.814089
+          "id": "studio/screens/chatbot/overview",
+          "score": 54.146038
         }
       ],
       "top1Passed": true,
@@ -886,15 +886,15 @@
       "ranked": [
         {
           "id": "help/faq",
-          "score": 40.980451
+          "score": 33.071699
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 40.968428
+          "score": 33.062914
         },
         {
-          "id": "intro",
-          "score": 21.174662
+          "id": "studio/screens/ai",
+          "score": 19.122377
         }
       ],
       "top1Passed": true,
@@ -919,15 +919,15 @@
       "ranked": [
         {
           "id": "help/troubleshooting",
-          "score": 68.436177
+          "score": 71.31419
         },
         {
           "id": "studio/account-access",
-          "score": 46.993499
+          "score": 50.198081
         },
         {
           "id": "getting-started/sign-in-directory",
-          "score": 35.607959
+          "score": 37.040329
         }
       ],
       "top1Passed": true,
@@ -952,15 +952,15 @@
       "ranked": [
         {
           "id": "help/glossary",
-          "score": 122.022637
+          "score": 129.117936
+        },
+        {
+          "id": "studio/screens/crm",
+          "score": 83.412978
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 65.376042
-        },
-        {
-          "id": "products/certificate",
-          "score": 64.377087
+          "score": 68.854656
         }
       ],
       "top1Passed": true,
@@ -985,15 +985,15 @@
       "ranked": [
         {
           "id": "help/privacy-security",
-          "score": 83.959647
+          "score": 101.163656
         },
         {
-          "id": "studio/screens/delete-chatbot",
-          "score": 34.667441
+          "id": "studio/screens/chatbot/settings/delete-chatbot",
+          "score": 37.808631
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 33.374663
+          "score": 36.582937
         }
       ],
       "top1Passed": true,
@@ -1009,24 +1009,24 @@
       "id": "s01",
       "category": "screen",
       "question": "챗봇 새 챗봇 만들기 챗봇 생성 방법 선택 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/chatbot-list",
+      "expectedTop1": "studio/screens/chatbot/list",
       "expectedTop3": [
-        "studio/screens/chatbot-list",
-        "studio/screens/basic-info",
-        "studio/screens/settings"
+        "studio/screens/chatbot/list",
+        "studio/screens/chatbot/overview",
+        "studio/screens/chatbot/settings/basic-info"
       ],
       "ranked": [
         {
-          "id": "studio/screens/chatbot-list",
-          "score": 105.659979
+          "id": "studio/screens/chatbot/list",
+          "score": 93.690277
         },
         {
-          "id": "studio/screens/training-materials",
-          "score": 58.807534
+          "id": "studio/screens/chatbot/flows",
+          "score": 80.51485
         },
         {
-          "id": "studio/screens/delete-chatbot",
-          "score": 43.476246
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 61.687077
         }
       ],
       "top1Passed": true,
@@ -1042,29 +1042,29 @@
       "id": "s02",
       "category": "screen",
       "question": "챗봇 시나리오 블럭 디자이너 여기서 뭐 할 수 있어",
-      "expectedTop1": "studio/screens/scenarios",
+      "expectedTop1": "studio/screens/chatbot/scenarios",
       "expectedTop3": [
-        "studio/screens/scenarios",
-        "studio/screens/flows",
-        "studio/screens/settings"
+        "studio/screens/chatbot/scenarios",
+        "studio/screens/chatbot/flows",
+        "studio/screens/chatbot/overview"
       ],
       "ranked": [
         {
-          "id": "studio/screens/scenarios",
-          "score": 203.328492
+          "id": "studio/screens/chatbot/scenarios",
+          "score": 179.368764
         },
         {
           "id": "studio/scenario-and-handoff",
-          "score": 48.672357
+          "score": 53.849223
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 39.007518
+          "id": "studio/screens/chatbot/overview",
+          "score": 43.807134
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 0.3333333333333333,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1075,24 +1075,24 @@
       "id": "s03",
       "category": "screen",
       "question": "챗봇 플로우 플로우 설정 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/flows",
+      "expectedTop1": "studio/screens/chatbot/flows",
       "expectedTop3": [
-        "studio/screens/flows",
-        "studio/screens/scenarios",
-        "studio/screens/settings"
+        "studio/screens/chatbot/flows",
+        "studio/screens/chatbot/scenarios",
+        "studio/screens/chatbot/overview"
       ],
       "ranked": [
         {
-          "id": "studio/screens/flows",
-          "score": 110.609789
+          "id": "studio/screens/chatbot/flows",
+          "score": 109.416252
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 56.247005
+          "id": "studio/screens/chatbot/settings/channel-settings",
+          "score": 54.364585
         },
         {
-          "id": "studio/screens/delete-chatbot",
-          "score": 48.759754
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 53.590046
         }
       ],
       "top1Passed": true,
@@ -1108,29 +1108,29 @@
       "id": "s04",
       "category": "screen",
       "question": "챗봇 통계 실패 발화 여기는 무슨 페이지야",
-      "expectedTop1": "studio/screens/statistics",
+      "expectedTop1": "studio/screens/chatbot/statistics",
       "expectedTop3": [
-        "studio/screens/statistics",
-        "studio/screens/training-materials",
-        "studio/screens/settings"
+        "studio/screens/chatbot/statistics",
+        "studio/screens/chatbot/settings/training-materials",
+        "studio/screens/stats"
       ],
       "ranked": [
         {
-          "id": "studio/screens/statistics",
-          "score": 153.239026
+          "id": "studio/screens/chatbot/statistics",
+          "score": 136.589796
         },
         {
-          "id": "studio/screens/scenarios",
-          "score": 35.405611
+          "id": "studio/screens/stats",
+          "score": 67.830317
         },
         {
-          "id": "studio/screens/chatbot-list",
-          "score": 30.900175
+          "id": "studio/screens/chatbot/scenarios",
+          "score": 31.158487
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 0.3333333333333333,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1141,24 +1141,24 @@
       "id": "s05",
       "category": "screen",
       "question": "설정 탭 설정 메뉴에는 어떤 항목이 있고 어디서 바꿔",
-      "expectedTop1": "studio/screens/settings",
+      "expectedTop1": "studio/screens/chatbot/settings/menu",
       "expectedTop3": [
-        "studio/screens/settings",
-        "studio/screens/basic-info",
-        "studio/screens/ai-settings"
+        "studio/screens/chatbot/settings/menu",
+        "studio/screens/org-settings",
+        "studio/screens/chatbot/overview"
       ],
       "ranked": [
         {
-          "id": "studio/screens/settings",
-          "score": 58.71829
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 61.855983
         },
         {
-          "id": "studio/screens/flows",
-          "score": 45.482107
+          "id": "studio/screens/chatbot/settings/chat-window-settings",
+          "score": 51.175018
         },
         {
-          "id": "studio/screens/scenarios",
-          "score": 40.228236
+          "id": "studio/screens/chatbot/flows",
+          "score": 44.114319
         }
       ],
       "top1Passed": true,
@@ -1174,24 +1174,24 @@
       "id": "s06",
       "category": "screen",
       "question": "챗봇 설정 기본 정보 챗봇 내보내기 여기서 뭐 할 수 있어",
-      "expectedTop1": "studio/screens/basic-info",
+      "expectedTop1": "studio/screens/chatbot/settings/basic-info",
       "expectedTop3": [
-        "studio/screens/basic-info",
-        "studio/screens/settings",
-        "studio/screens/chatbot-list"
+        "studio/screens/chatbot/settings/basic-info",
+        "studio/screens/chatbot/list",
+        "studio/screens/chatbot/settings/menu"
       ],
       "ranked": [
         {
-          "id": "studio/screens/basic-info",
-          "score": 107.512356
+          "id": "studio/screens/chatbot/settings/basic-info",
+          "score": 112.666207
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 50.78796
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 56.601331
         },
         {
-          "id": "studio/screens/settings",
-          "score": 47.761256
+          "id": "studio/screens/chatbot/settings/ai-settings",
+          "score": 56.496717
         }
       ],
       "top1Passed": true,
@@ -1207,29 +1207,29 @@
       "id": "s07",
       "category": "screen",
       "question": "AI 설정 커스텀 페르소나 설정 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/ai-settings",
+      "expectedTop1": "studio/screens/chatbot/settings/ai-settings",
       "expectedTop3": [
-        "studio/screens/ai-settings",
-        "studio/screens/settings",
-        "studio/screens/training-materials"
+        "studio/screens/chatbot/settings/ai-settings",
+        "studio/screens/chatbot/settings/menu",
+        "studio/screens/chatbot/overview"
       ],
       "ranked": [
         {
-          "id": "studio/screens/ai-settings",
-          "score": 145.762259
+          "id": "studio/screens/chatbot/settings/ai-settings",
+          "score": 121.119529
         },
         {
-          "id": "studio/screens/chat-window-settings",
-          "score": 73.593114
+          "id": "studio/screens/chatbot/settings/chat-window-settings",
+          "score": 52.667461
         },
         {
-          "id": "studio/screens/training-materials",
-          "score": 53.973878
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 43.174545
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 0.6666666666666666,
+      "top3SetCoverage": 0.3333333333333333,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1240,24 +1240,57 @@
       "id": "s08",
       "category": "screen",
       "question": "AI 설정 이 프롬프트로 대화해보기 창은 뭐야",
-      "expectedTop1": "studio/screens/ai-settings",
+      "expectedTop1": "studio/screens/chatbot/settings/ai-settings",
       "expectedTop3": [
-        "studio/screens/ai-settings",
-        "studio/screens/settings",
-        "studio/screens/scenarios"
+        "studio/screens/chatbot/settings/ai-settings",
+        "studio/screens/chatbot/settings/manuals",
+        "studio/screens/chatbot/settings/menu"
       ],
       "ranked": [
         {
-          "id": "studio/screens/ai-settings",
-          "score": 49.052222
+          "id": "studio/screens/chatbot/settings/ai-settings",
+          "score": 122.468059
         },
         {
-          "id": "studio/screens/training-materials",
-          "score": 42.009328
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 43.69173
         },
         {
-          "id": "studio/screens/settings",
-          "score": 28.262688
+          "id": "studio/screens/chatbot/settings/channel-settings",
+          "score": 29.851179
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.3333333333333333,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s09",
+      "category": "screen",
+      "question": "챗봇 설정 도구 대화 정보 추출 화면에서 할 수 있는 일",
+      "expectedTop1": "studio/screens/chatbot/settings/tools",
+      "expectedTop3": [
+        "studio/screens/chatbot/settings/tools",
+        "studio/screens/chatbot/settings/manuals",
+        "studio/screens/chatbot/settings/menu"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 175.32375
+        },
+        {
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 66.661586
+        },
+        {
+          "id": "studio/screens/chatbot/settings/ai-settings",
+          "score": 55.456393
         }
       ],
       "top1Passed": true,
@@ -1270,65 +1303,32 @@
       "forbiddenMatches": []
     },
     {
-      "id": "s09",
-      "category": "screen",
-      "question": "챗봇 설정 도구 대화 정보 추출 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/tools",
-      "expectedTop3": [
-        "studio/screens/tools",
-        "studio/screens/manuals",
-        "studio/screens/settings"
-      ],
-      "ranked": [
-        {
-          "id": "studio/screens/tools",
-          "score": 161.552502
-        },
-        {
-          "id": "studio/screens/settings",
-          "score": 57.00277
-        },
-        {
-          "id": "studio/screens/manuals",
-          "score": 54.228085
-        }
-      ],
-      "top1Passed": true,
-      "top3Passed": true,
-      "top3SetCoverage": 1,
-      "evidencePassed": true,
-      "missingEvidence": [],
-      "safetyPassed": null,
-      "prohibitedClaimsPassed": null,
-      "forbiddenMatches": []
-    },
-    {
       "id": "s10",
       "category": "screen",
       "question": "챗봇 도구 도구 목록 새 API 도구 여기서 뭐 해",
-      "expectedTop1": "studio/screens/tools",
+      "expectedTop1": "studio/screens/chatbot/settings/tools",
       "expectedTop3": [
-        "studio/screens/tools",
-        "studio/screens/manuals",
-        "studio/screens/chatbot-list"
+        "studio/screens/chatbot/settings/tools",
+        "studio/screens/chatbot/settings/manuals",
+        "studio/screens/chatbot/list"
       ],
       "ranked": [
         {
-          "id": "studio/screens/tools",
-          "score": 149.172901
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 146.684223
         },
         {
-          "id": "studio/screens/chatbot-list",
-          "score": 87.484339
+          "id": "studio/screens/chatbot/list",
+          "score": 84.324115
         },
         {
-          "id": "studio/screens/manuals",
-          "score": 57.968089
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 46.667658
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 1,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1339,24 +1339,24 @@
       "id": "s11",
       "category": "screen",
       "question": "챗봇 설정 매뉴얼 연결 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/manuals",
+      "expectedTop1": "studio/screens/chatbot/settings/manuals",
       "expectedTop3": [
-        "studio/screens/manuals",
-        "studio/screens/tools",
-        "studio/screens/settings"
+        "studio/screens/chatbot/settings/manuals",
+        "studio/screens/chatbot/settings/tools",
+        "studio/screens/chatbot/settings/menu"
       ],
       "ranked": [
         {
-          "id": "studio/screens/manuals",
-          "score": 131.198112
+          "id": "studio/screens/chatbot/settings/manuals",
+          "score": 109.80646
         },
         {
-          "id": "studio/screens/settings",
-          "score": 61.078234
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 69.418442
         },
         {
-          "id": "studio/screens/training-materials",
-          "score": 49.292097
+          "id": "studio/screens/chatbot/settings/channel-settings",
+          "score": 64.703148
         }
       ],
       "top1Passed": true,
@@ -1372,24 +1372,24 @@
       "id": "s12",
       "category": "screen",
       "question": "챗봇 설정 작동시간 공휴일 자동 설정 여기서 뭐 할 수 있어",
-      "expectedTop1": "studio/screens/operating-hours",
+      "expectedTop1": "studio/screens/chatbot/settings/operating-hours",
       "expectedTop3": [
-        "studio/screens/operating-hours",
-        "studio/screens/settings",
-        "studio/screens/scenarios"
+        "studio/screens/chatbot/settings/operating-hours",
+        "studio/screens/chatbot/settings/menu",
+        "studio/screens/chatbot/scenarios"
       ],
       "ranked": [
         {
-          "id": "studio/screens/operating-hours",
-          "score": 237.960253
+          "id": "studio/screens/chatbot/settings/operating-hours",
+          "score": 222.945634
         },
         {
-          "id": "studio/screens/settings",
-          "score": 72.199929
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 80.72998
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 34.540343
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 49.012907
         }
       ],
       "top1Passed": true,
@@ -1405,29 +1405,29 @@
       "id": "s13",
       "category": "screen",
       "question": "챗봇 설정 AI 학습자료 설정 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/training-materials",
+      "expectedTop1": "studio/screens/chatbot/settings/training-materials",
       "expectedTop3": [
-        "studio/screens/training-materials",
-        "studio/screens/settings",
-        "studio/screens/ai-settings"
+        "studio/screens/chatbot/settings/training-materials",
+        "studio/screens/encyclopedia",
+        "studio/screens/chatbot/settings/ai-settings"
       ],
       "ranked": [
         {
-          "id": "studio/screens/training-materials",
-          "score": 160.592179
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 150.753924
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 101.58387
+          "id": "studio/screens/chatbot/settings/ai-settings",
+          "score": 85.928567
         },
         {
-          "id": "studio/screens/settings",
-          "score": 65.793155
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 72.844104
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 1,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1438,29 +1438,29 @@
       "id": "s14",
       "category": "screen",
       "question": "AI 학습자료 관리 연결된 학습자료 여기는 무슨 화면이야",
-      "expectedTop1": "studio/screens/training-materials",
+      "expectedTop1": "studio/screens/chatbot/settings/training-materials",
       "expectedTop3": [
-        "studio/screens/training-materials",
-        "studio/screens/settings",
-        "studio/screens/ai-settings"
+        "studio/screens/chatbot/settings/training-materials",
+        "studio/screens/encyclopedia",
+        "studio/screens/chatbot/settings/ai-settings"
       ],
       "ranked": [
         {
-          "id": "studio/screens/training-materials",
-          "score": 139.52782
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 114.250147
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 60.126952
+          "id": "studio/screens/chatbot/settings/ai-settings",
+          "score": 51.651276
         },
         {
-          "id": "studio/screens/settings",
-          "score": 37.119996
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 32.385999
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 1,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1471,29 +1471,29 @@
       "id": "s15",
       "category": "screen",
       "question": "챗봇 설정 채널 설정 웹채팅 SDK 스크립트 여기서 뭐 할 수 있어",
-      "expectedTop1": "studio/screens/channel-settings",
+      "expectedTop1": "studio/screens/chatbot/settings/channel-settings",
       "expectedTop3": [
-        "studio/screens/channel-settings",
-        "studio/screens/chat-window-settings",
-        "studio/screens/settings"
+        "studio/screens/chatbot/settings/channel-settings",
+        "studio/screens/chatbot/settings/chat-window-settings",
+        "studio/screens/org-settings"
       ],
       "ranked": [
         {
-          "id": "studio/screens/channel-settings",
-          "score": 189.279104
+          "id": "studio/screens/chatbot/settings/channel-settings",
+          "score": 187.737213
         },
         {
-          "id": "studio/screens/chat-window-settings",
-          "score": 66.411152
+          "id": "studio/screens/chatbot/settings/chat-window-settings",
+          "score": 121.081284
         },
         {
-          "id": "studio/screens/settings",
-          "score": 40.660787
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 49.629135
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
-      "top3SetCoverage": 1,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,
@@ -1504,24 +1504,24 @@
       "id": "s16",
       "category": "screen",
       "question": "챗봇 설정 채팅창 설정 여기서 뭐 할 수 있어",
-      "expectedTop1": "studio/screens/chat-window-settings",
+      "expectedTop1": "studio/screens/chatbot/settings/chat-window-settings",
       "expectedTop3": [
-        "studio/screens/chat-window-settings",
-        "studio/screens/channel-settings",
-        "studio/screens/settings"
+        "studio/screens/chatbot/settings/chat-window-settings",
+        "studio/screens/chatbot/settings/channel-settings",
+        "studio/screens/chatbot/settings/menu"
       ],
       "ranked": [
         {
-          "id": "studio/screens/chat-window-settings",
-          "score": 134.424524
+          "id": "studio/screens/chatbot/settings/chat-window-settings",
+          "score": 130.406805
         },
         {
-          "id": "studio/screens/settings",
-          "score": 64.37826
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 74.572866
         },
         {
-          "id": "studio/screens/ai-settings",
-          "score": 35.139664
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 48.035502
         }
       ],
       "top1Passed": true,
@@ -1537,29 +1537,458 @@
       "id": "s17",
       "category": "screen",
       "question": "챗봇 설정 챗봇 삭제 화면에서 할 수 있는 일",
-      "expectedTop1": "studio/screens/delete-chatbot",
+      "expectedTop1": "studio/screens/chatbot/settings/delete-chatbot",
       "expectedTop3": [
-        "studio/screens/delete-chatbot",
-        "studio/screens/settings",
-        "studio/screens/basic-info"
+        "studio/screens/chatbot/settings/delete-chatbot",
+        "studio/screens/chatbot/settings/basic-info",
+        "studio/screens/chatbot/settings/menu"
       ],
       "ranked": [
         {
-          "id": "studio/screens/delete-chatbot",
-          "score": 92.910368
+          "id": "studio/screens/chatbot/settings/delete-chatbot",
+          "score": 89.195138
         },
         {
-          "id": "studio/screens/settings",
-          "score": 46.047895
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 58.116005
         },
         {
-          "id": "studio/screens/training-materials",
-          "score": 45.877941
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 54.595339
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
       "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s18",
+      "category": "screen",
+      "question": "챗봇 설정 어떻게 해요 챗봇은 어떤 방식으로 구성하나요",
+      "expectedTop1": "studio/screens/chatbot/overview",
+      "expectedTop3": [
+        "studio/screens/chatbot/overview",
+        "studio/screens/chatbot/list",
+        "studio/screens/chatbot/settings/menu"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/chatbot/settings/menu",
+          "score": 66.188477
+        },
+        {
+          "id": "studio/screens/chatbot/overview",
+          "score": 61.312264
+        },
+        {
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 47.779193
+        }
+      ],
+      "top1Passed": false,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s19",
+      "category": "screen",
+      "question": "새 챗봇은 어떻게 만들어요 만드는 방법이 뭐가 있어요",
+      "expectedTop1": "studio/screens/chatbot/list",
+      "expectedTop3": [
+        "studio/screens/chatbot/list",
+        "studio/screens/chatbot/overview",
+        "studio/screens/chatbot/settings/basic-info"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/chatbot/list",
+          "score": 46.455326
+        },
+        {
+          "id": "studio/screens/chatbot/flows",
+          "score": 45.549388
+        },
+        {
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 32.261175
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.3333333333333333,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s20",
+      "category": "screen",
+      "question": "상담 대기 진행중 이관 여기서 뭐 할 수 있어",
+      "expectedTop1": "studio/screens/counsel",
+      "expectedTop3": [
+        "studio/screens/counsel",
+        "studio/screens/conversation-history",
+        "studio/screens/phone-counsel"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/counsel",
+          "score": 116.768686
+        },
+        {
+          "id": "studio/screens/phone-counsel",
+          "score": 39.70523
+        },
+        {
+          "id": "studio/screens/conversation-history",
+          "score": 18.946483
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 1,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s21",
+      "category": "screen",
+      "question": "상담 내역 AI 채팅 상담 내역 내보내기 화면에서 할 수 있는 일",
+      "expectedTop1": "studio/screens/conversation-history",
+      "expectedTop3": [
+        "studio/screens/conversation-history",
+        "studio/conversation-history",
+        "studio/screens/counsel"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/conversation-history",
+          "score": 122.041073
+        },
+        {
+          "id": "studio/conversation-history",
+          "score": 86.527934
+        },
+        {
+          "id": "studio/screens/counsel",
+          "score": 55.658764
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 1,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s22",
+      "category": "screen",
+      "question": "백과사전 상담 백과사전 태그 추가 파일 업로드 여기는 무슨 페이지야",
+      "expectedTop1": "studio/screens/encyclopedia",
+      "expectedTop3": [
+        "studio/screens/encyclopedia",
+        "studio/screens/chatbot/settings/training-materials",
+        "studio/screens/ai"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/encyclopedia",
+          "score": 201.988769
+        },
+        {
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 111.529863
+        },
+        {
+          "id": "studio/screens/counsel",
+          "score": 50.533459
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s23",
+      "category": "screen",
+      "question": "AI 문서함 챗봇에 반영 화면에서 할 수 있는 일",
+      "expectedTop1": "studio/screens/ai",
+      "expectedTop3": [
+        "studio/screens/ai",
+        "studio/screens/encyclopedia",
+        "studio/screens/chatbot/settings/training-materials"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/ai",
+          "score": 183.700593
+        },
+        {
+          "id": "studio/screens/chatbot/settings/tools",
+          "score": 61.217882
+        },
+        {
+          "id": "studio/screens/chatbot/settings/training-materials",
+          "score": 28.936126
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s24",
+      "category": "screen",
+      "question": "설정 메뉴 운영 설정 상담 시간 번역 여기서 뭐 할 수 있어",
+      "expectedTop1": "studio/screens/org-settings",
+      "expectedTop3": [
+        "studio/screens/org-settings",
+        "studio/screens/chatbot/settings/menu",
+        "studio/screens/counsel"
+      ],
+      "ranked": [
+        {
+          "id": "products/ai-chatbot/message-translation",
+          "score": 83.449495
+        },
+        {
+          "id": "studio/screens/org-settings",
+          "score": 67.478781
+        },
+        {
+          "id": "studio/screens/counsel",
+          "score": 43.523289
+        }
+      ],
+      "top1Passed": false,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s25",
+      "category": "screen",
+      "question": "CRM 캠페인 새 캠페인 화면에서 할 수 있는 일",
+      "expectedTop1": "studio/screens/crm",
+      "expectedTop3": [
+        "studio/screens/crm",
+        "products/crm-messaging",
+        "products/crm-messaging/message-checklist"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/crm",
+          "score": 83.392979
+        },
+        {
+          "id": "products/event-marketing/campaign-planning",
+          "score": 61.030029
+        },
+        {
+          "id": "products/crm-messaging/segment-planning",
+          "score": 36.488422
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.3333333333333333,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s26",
+      "category": "screen",
+      "question": "콜봇 시작하기 에이전트 번호 관리 여기서 뭐 해",
+      "expectedTop1": "studio/screens/callbot",
+      "expectedTop3": [
+        "studio/screens/callbot",
+        "studio/screens/phone-counsel",
+        "studio/screens/stats"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/callbot",
+          "score": 177.739382
+        },
+        {
+          "id": "studio/screens/phone-counsel",
+          "score": 88.237707
+        },
+        {
+          "id": "studio/screens/chatbot/overview",
+          "score": 76.063328
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s27",
+      "category": "screen",
+      "question": "전화상담 상담하기 전화걸기 상담사 상태 화면에서 할 수 있는 일",
+      "expectedTop1": "studio/screens/phone-counsel",
+      "expectedTop3": [
+        "studio/screens/phone-counsel",
+        "studio/screens/callbot",
+        "studio/screens/stats"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/phone-counsel",
+          "score": 306.434765
+        },
+        {
+          "id": "studio/consultation-records",
+          "score": 40.817595
+        },
+        {
+          "id": "studio/screens/overview",
+          "score": 36.434544
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.3333333333333333,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s28",
+      "category": "screen",
+      "question": "통계 실시간 통계 마케팅 통계 직원 통계 여기는 무슨 화면이야",
+      "expectedTop1": "studio/screens/stats",
+      "expectedTop3": [
+        "studio/screens/stats",
+        "studio/screens/phone-counsel",
+        "studio/screens/chatbot/statistics"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/stats",
+          "score": 147.522406
+        },
+        {
+          "id": "studio/screens/chatbot/statistics",
+          "score": 66.335917
+        },
+        {
+          "id": "products/event-marketing",
+          "score": 48.185349
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s29",
+      "category": "screen",
+      "question": "인증서 메뉴 병원 화면에 연결할 수 없습니다 어떻게 해요",
+      "expectedTop1": "studio/screens/certificates",
+      "expectedTop3": [
+        "studio/screens/certificates",
+        "hospital/account-access",
+        "hospital/certificate-workflow"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/certificates",
+          "score": 79.866599
+        },
+        {
+          "id": "getting-started/buyer-faq",
+          "score": 53.865881
+        },
+        {
+          "id": "hospital/certificate-workflow",
+          "score": 45.489263
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s30",
+      "category": "screen",
+      "question": "Studio 왼쪽 메뉴에 뭐가 있고 각각 뭐 하는 곳이야",
+      "expectedTop1": "studio/screens/overview",
+      "expectedTop3": [
+        "studio/screens/overview",
+        "studio/overview",
+        "studio/screens/chatbot/overview"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/overview",
+          "score": 57.223111
+        },
+        {
+          "id": "studio/screens/certificates",
+          "score": 45.526254
+        },
+        {
+          "id": "studio/screens/ai",
+          "score": 36.028912
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.3333333333333333,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,

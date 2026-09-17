@@ -159,7 +159,7 @@ export function loadPublicDocuments(projectRoot, ids) {
 
 // 'screen' = "what is this screen?" questions shaped like the chatbot planner's query: UI labels + the question.
 const ALLOWED_CATEGORIES = new Set(['product', 'role', 'faq', 'safety', 'recovery', 'screen']);
-export const FIXTURE_CASE_COUNT = 47;
+export const FIXTURE_CASE_COUNT = 60;
 const ALLOWED_PUBLIC_HOSTS = new Set([
   'certi.life',
   'docs.certi.life',

@@ -87,22 +87,44 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 
 ## Studio 화면별 안내
 
-Studio 챗봇 영역의 화면마다 위치, 할 수 있는 일, 주요 버튼을 화면에 보이는 이름 그대로 안내합니다.
+Studio 왼쪽 메뉴의 위계 그대로, 메뉴마다 무엇을 하는 곳이고 하려는 일을 어떻게 하는지 화면에 보이는 이름으로 안내합니다.
 
-- [챗봇 목록 화면](https://docs.certi.life/guide/studio/screens/chatbot-list.md): Studio 챗봇 메뉴의 챗봇 목록, 새 챗봇 만들기, 템플릿 선택, 챗봇 가져오기 창에서 할 수 있는 일을 화면 이름 그대로 안내합니다.
-- [시나리오 탭 화면](https://docs.certi.life/guide/studio/screens/scenarios.md): Studio 챗봇 상세의 시나리오 탭에서 기본 시나리오, 블럭 디자이너, 퀵 리플라이, 실패 메시지를 편집하는 방법을 화면 이름 그대로 안내합니다.
-- [플로우 탭 화면](https://docs.certi.life/guide/studio/screens/flows.md): Studio 챗봇 상세의 플로우 탭에서 플로우를 만들고 시나리오를 연결하며 플로우 설정, 태그, AI 참조 토픽을 관리하는 방법을 화면 이름 그대로 안내합니다.
-- [통계 탭 화면](https://docs.certi.life/guide/studio/screens/statistics.md): Studio 챗봇 상세의 통계 탭에서 통계 개요, 실패 발화, Q&A 보강 화면으로 챗봇이 답하지 못한 질문을 찾고 학습자료에 반영하는 방법을 화면 이름 그대로 안내합니다.
-- [설정 탭 화면](https://docs.certi.life/guide/studio/screens/settings.md): Studio 챗봇 상세의 설정 탭과 설정 메뉴의 기본 정보, AI 설정, 도구, 매뉴얼, 작동시간, AI 학습자료 설정, 채널 설정, 채팅창 설정, 챗봇 삭제 항목을 안내합니다.
-- [기본 정보 화면](https://docs.certi.life/guide/studio/screens/basic-info.md): Studio 챗봇 설정의 기본 정보 화면에서 챗봇 프로필 이미지, 챗봇 이름, 설명을 바꾸고 챗봇 내보내기 코드를 만드는 방법을 안내합니다.
-- [AI 설정 화면](https://docs.certi.life/guide/studio/screens/ai-settings.md): Studio 챗봇 설정의 AI 설정 화면에서 응답 버전, 페르소나, 커스텀 페르소나 설정, 학습자료로만 답변하기, AI 답변 시나리오, 챗봇 기본 언어와 다국어 응대 방식을 정하는 방법을 안내합니다.
-- [도구 화면](https://docs.certi.life/guide/studio/screens/tools.md): Studio 챗봇 설정의 도구 화면과 챗봇 메뉴의 도구 목록에서 대화 정보 추출, 병원 진료시간 활용, 컴플레인 대응, 알림톡 보내기, 브랜드메시지 보내기, API 도구를 추가하고 설정하는 방법을 안내합니다.
-- [매뉴얼 화면](https://docs.certi.life/guide/studio/screens/manuals.md): Studio 챗봇 설정의 매뉴얼 화면에서 챗봇에 매뉴얼을 연결·해제하고, 챗봇 메뉴의 매뉴얼 목록에서 트리거와 본문, 사용 도구를 작성하는 방법을 안내합니다.
-- [작동시간 화면](https://docs.certi.life/guide/studio/screens/operating-hours.md): Studio 챗봇 설정의 작동시간 화면에서 챗봇 24시간 작동, 요일별 미작동 시간, 특수일 작동 설정, 공휴일 자동 설정을 정하는 방법을 안내합니다.
-- [AI 학습자료 설정 화면](https://docs.certi.life/guide/studio/screens/training-materials.md): Studio 챗봇 설정의 AI 학습자료 설정(AI 학습자료 관리) 화면에서 학습자료 파일을 업로드하고, 백과사전 카탈로그 태그로 v2 학습자료를 연결하며, 병원 정보 기반 학습자료를 생성하는 방법을 안내합니다.
-- [채널 설정 화면](https://docs.certi.life/guide/studio/screens/channel-settings.md): Studio 챗봇 설정의 채널 설정 화면에서 웹채팅 SDK 스크립트, 카카오톡, 네이버 톡톡, Instagram, LINE, WhatsApp 채널을 챗봇과 연동하고 상담원 바로 연결을 정하는 방법을 안내합니다.
-- [채팅창 설정 화면](https://docs.certi.life/guide/studio/screens/chat-window-settings.md): Studio 챗봇 설정의 채팅창 설정 화면에서 웹채팅 창의 상담 유도 메시지, 디자인 설정, 창 크기, 채팅창 테두리/그림자, 플로팅 버튼, 커스텀 메뉴를 꾸미는 방법을 안내합니다.
-- [챗봇 삭제 화면](https://docs.certi.life/guide/studio/screens/delete-chatbot.md): Studio 챗봇 설정의 챗봇 삭제 화면에서 삭제될 데이터를 확인하고 챗봇 이름과 계정 비밀번호를 입력해 챗봇을 영구 삭제하는 방법과 주의사항을 안내합니다.
+- [Studio 메뉴 한눈에 보기](https://docs.certi.life/guide/studio/screens/overview.md): Studio 왼쪽 메뉴(인증서, CRM, 챗봇, 콜봇, 상담, 전화상담, 상담 내역, 통계, 백과사전, AI, 설정)가 각각 무엇을 하는 곳인지와, 하고 싶은 일에 따라 어느 메뉴로 가야 하는지 안내합니다.
+- [인증서 - Studio에서 병원 관리 화면 열기](https://docs.certi.life/guide/studio/screens/certificates.md): Studio 인증서 메뉴가 누구에게 보이는지, 이 메뉴에서 열리는 병원 관리 화면으로 인증서 업무를 보는 방법, 연결이 끊겼을 때 다시 로그인·다시 연결하는 방법을 안내합니다.
+- [CRM - 고객 데이터를 모아 메시지 운영하기](https://docs.certi.life/guide/studio/screens/crm.md): Studio CRM 메뉴의 운영 홈, 캘린더, 고객 목록, 데이터 연동, 메시지 템플릿, 캠페인, 시나리오 자동화, 발송 현황에서 고객 등록·세그먼트 저장·캠페인 발송·자동화를 하는 방법을 목적별로 안내합니다.
+- [콜봇 - 전화를 받는 AI 상담원 만들기](https://docs.certi.life/guide/studio/screens/callbot.md): Studio 콜봇 메뉴에서 시작하기 단계에 따라 에이전트 만들기, 도구와 지식 베이스 연결, 조직 인증, 번호 관리, 캠페인 발신까지 전화 응대 AI 상담원을 준비하는 방법을 목적별로 안내합니다.
+- [상담 - 채팅 상담을 직접 응대하기](https://docs.certi.life/guide/studio/screens/counsel.md): Studio 상담 메뉴에서 대기·진행중·완료·종료 상담을 찾고, 상담을 시작·이관·완료하고, 번역과 메모, 상담 백과사전, 고객정보 패널을 활용해 채팅 상담에 응대하는 방법을 목적별로 안내합니다.
+- [전화상담 - 콜봇과 상담사의 통화 응대하기](https://docs.certi.life/guide/studio/screens/phone-counsel.md): Studio 전화상담 메뉴의 상담하기 화면에서 콜봇·대기·응대·콜백·전체콜 목록으로 통화를 확인하고, 대화록과 AI 분석을 보고, 전화걸기, 상담사 상태 변경, 상담 기록 저장을 하는 방법을 안내합니다.
+- [상담 내역 - 지난 상담 찾아보고 내려받기](https://docs.certi.life/guide/studio/screens/conversation-history.md): Studio 상담 내역 메뉴(AI 채팅 상담 내역)에서 상담 유형·조회기간·상태·채널로 지난 상담을 찾고, 상담 상세와 AI 요약을 확인하고, 내보내기와 리포트 다운로드, 표시 항목 설정을 쓰는 방법을 안내합니다.
+- [통계 - 전화 응대 현황 확인하기](https://docs.certi.life/guide/studio/screens/stats.md): Studio 통계 메뉴의 실시간 통계, 마케팅 통계, 직원 통계에서 오늘 통화와 콜봇 처리 현황, 채널별 유입과 문의 키워드, 직원별 응대 지표를 확인하고 내려받는 방법을 안내합니다.
+- [백과사전 - 조직의 상담 지식 문서 관리하기](https://docs.certi.life/guide/studio/screens/encyclopedia.md): Studio 백과사전 메뉴(화면 제목 상담 백과사전)에서 폴더와 태그로 상담 지식을 정리하고, 파일 업로드와 본문 편집으로 문서를 관리해 챗봇·콜봇·상담원이 함께 쓰게 하는 방법을 안내합니다.
+- [AI - AI와 함께 문서 작성하고 챗봇에 반영하기](https://docs.certi.life/guide/studio/screens/ai.md): Studio AI 메뉴에서 AI와 대화하며 문서 질문·요약, 글 작성·편집을 하고, 문서함에서 문서 작성·버전 비교·복원, 카탈로그 태그 할당, 챗봇에 반영, 용어 통일 검토를 하는 방법을 안내합니다.
+- [설정(조직 설정) - 조직 공통 설정 관리하기](https://docs.certi.life/guide/studio/screens/org-settings.md): Studio 왼쪽 아래 톱니 아이콘의 설정(설정 메뉴)에서 운영 설정(상담 시간·관리자 알림·상담사 알림·번역), 채널 설정(알림톡·상담톡·네이버 톡톡·Instagram·LINE·WhatsApp), 회원 관리, 고객 태그, 자동메시지 등 조직 공통 설정을 관리하는 방법을 안내합니다.
+
+## Studio 화면별 안내 - 챗봇
+
+챗봇 메뉴에서 챗봇을 만들고, 시나리오·플로우·AI 답변을 구성하고, 통계로 보강하는 방법을 목적별로 안내합니다.
+
+- [챗봇 메뉴 시작하기](https://docs.certi.life/guide/studio/screens/chatbot/overview.md): Studio 챗봇 메뉴에서 챗봇을 만들고, 답변 방식(시나리오·플로우·AI 답변)을 구성하고, 채널에 연결해 공개하기까지 어떤 순서로 무엇을 하면 되는지 목적별로 안내합니다.
+- [챗봇 만들기와 챗봇 목록](https://docs.certi.life/guide/studio/screens/chatbot/list.md): Studio 챗봇 목록에서 새 챗봇을 만드는 세 가지 방법(빈 챗봇 만들기, 템플릿으로 시작, 챗봇 가져오기)과 챗봇 카드를 읽는 법, 챗봇 상세 화면으로 들어가는 방법을 안내합니다.
+- [시나리오 탭 - 정해진 상황의 메시지 만들기](https://docs.certi.life/guide/studio/screens/chatbot/scenarios.md): Studio 챗봇 상세의 시나리오 탭에서 첫 인사(시작 시나리오), 업무시간 외 안내(미작동 시나리오), AI 답변 형식, 실패 메시지를 블럭 디자이너와 퀵 리플라이로 편집하는 방법을 목적별로 안내합니다.
+- [플로우 탭 - 버튼으로 이어지는 안내 만들기](https://docs.certi.life/guide/studio/screens/chatbot/flows.md): Studio 챗봇 상세의 플로우 탭에서 새 플로우 만들기, 시나리오 추가와 연결, 시작 시나리오 지정, 플로우 설정과 AI 참조 토픽 관리까지 단계형 안내를 만드는 방법을 목적별로 안내합니다.
+- [통계 탭 - 답하지 못한 질문 찾아 보강하기](https://docs.certi.life/guide/studio/screens/chatbot/statistics.md): Studio 챗봇 상세의 통계 탭에서 통계 개요로 실패율을 확인하고, 실패 발화에 보강 답변을 저장해 학습자료에 반영하고, Q&A 보강에서 직접 Q&A를 등록하고 시험하는 방법을 목적별로 안내합니다.
+
+## Studio 화면별 안내 - 챗봇 설정
+
+챗봇 상세의 설정 탭에서 기본 정보, AI 설정, 도구, 매뉴얼, 작동시간, 학습자료, 채널, 채팅창을 바꾸는 방법을 목적별로 안내합니다.
+
+- [설정 탭 - 챗봇 설정 항목 찾기](https://docs.certi.life/guide/studio/screens/chatbot/settings/menu.md): Studio 챗봇 상세의 설정 탭과 설정 메뉴(기본 정보, AI 설정, 도구, 매뉴얼, 작동시간, AI 학습자료 설정, 채널 설정, 채팅창 설정, 챗봇 삭제)에서 각각 무엇을 바꾸는지, 저장은 어떻게 되는지 안내합니다.
+- [기본 정보 - 챗봇 이름·이미지 변경과 다른 계정으로 복사](https://docs.certi.life/guide/studio/screens/chatbot/settings/basic-info.md): Studio 챗봇 설정의 기본 정보에서 챗봇 프로필 이미지, 챗봇 이름, 설명을 바꾸는 방법과 챗봇 내보내기 코드로 챗봇을 다른 계정에 복사하는 방법을 안내합니다.
+- [AI 설정 - 챗봇의 말투와 답변 범위 정하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings.md): Studio 챗봇 설정의 AI 설정에서 페르소나 선택, 커스텀 페르소나 설정(시스템 프롬프트 작성·버전 관리·이 내용으로 대화해보기), 학습자료로만 답변하기, 응답 버전(v1·v2), 챗봇 기본 언어와 다국어 응대 방식을 목적별로 안내합니다.
+- [도구 - 챗봇에게 할 수 있는 일 늘려 주기](https://docs.certi.life/guide/studio/screens/chatbot/settings/tools.md): Studio 챗봇 설정의 도구에서 대화 정보 추출, 병원 진료시간 활용, 컴플레인 대응, 알림톡 보내기, 브랜드메시지 보내기를 추가하는 방법과 챗봇 메뉴의 도구 목록에서 API 도구를 만드는 방법을 목적별로 안내합니다.
+- [매뉴얼 - 특정 상황에서 정해진 절차대로 응대하게 하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/manuals.md): Studio 챗봇 메뉴의 매뉴얼 목록에서 트리거와 본문으로 매뉴얼을 작성하고, 챗봇 설정의 매뉴얼에서 챗봇에 연결·해제하는 방법과 잘 동작하는 트리거를 쓰는 요령을 안내합니다.
+- [작동시간 - 챗봇이 쉬는 시간 정하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/operating-hours.md): Studio 챗봇 설정의 작동시간에서 챗봇 24시간 작동을 끄고 요일별 미작동 시간, 특수일 작동 설정, 공휴일 자동 설정으로 챗봇이 응답하지 않을 시간을 정하는 방법을 목적별로 안내합니다.
+- [AI 학습자료 설정 - 챗봇이 참고할 자료 넣기](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials.md): Studio 챗봇 설정의 AI 학습자료 설정(화면 제목 AI 학습자료 관리)에서 v1 파일 업로드, v2 백과사전 카탈로그 태그 연결, 병원 정보 기반 학습자료 생성으로 챗봇 답변의 근거 자료를 관리하는 방법을 안내합니다.
+- [채널 설정 - 챗봇을 고객이 있는 곳에 연결하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings.md): Studio 챗봇 설정의 채널 설정에서 웹채팅 SDK 스크립트로 홈페이지에 채팅 버튼을 달고, 카카오톡(오픈빌더·상담톡 봇), 네이버 톡톡, Instagram, LINE, WhatsApp에 챗봇을 연결하고, 상담원 바로 연결을 설정하는 방법을 안내합니다.
+- [채팅창 설정 - 웹채팅 모양을 우리 사이트에 맞추기](https://docs.certi.life/guide/studio/screens/chatbot/settings/chat-window-settings.md): Studio 챗봇 설정의 채팅창 설정에서 상담 유도 메시지(말풍선), 디자인 설정(헤더·테마 색상·제목), 창 크기, 채팅창 테두리/그림자, 플로팅 버튼, 커스텀 메뉴를 바꿔 웹채팅 창을 꾸미는 방법을 안내합니다.
+- [챗봇 삭제 - 삭제 전 확인할 것과 삭제 방법](https://docs.certi.life/guide/studio/screens/chatbot/settings/delete-chatbot.md): Studio 챗봇 설정의 챗봇 삭제에서 삭제될 데이터를 확인하고 챗봇 이름과 계정 비밀번호를 입력해 챗봇을 영구 삭제하는 절차, 삭제 전에 점검할 사항과 삭제 대신 쓸 수 있는 방법을 안내합니다.
 
 ## 도움말
 
