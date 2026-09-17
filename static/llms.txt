@@ -65,6 +65,23 @@ CertiLife의 공개 서비스 범위와 문서 사용법을 먼저 확인합니�
 - [인증서 발행·전달 가이드](https://docs.certi.life/guide/hospital/certificate-workflow.md): 인증서를 준비해 카카오톡·문자·위챗·이메일로 안전하게 전달하고 사후 확인하는 운영 절차입니다.
 - [Hospital 안전한 운영 가이드](https://docs.certi.life/guide/hospital/safe-operation.md): 고객 정보를 최소한으로 다루고 화면 공유·오발송·담당자 변경에 안전하게 대응하는 운영 원칙입니다.
 
+## Hospital 화면별 안내
+
+Hospital 병원 관리자 화면의 메뉴별로 인증서 발행과 설정, 발행 내역과 환자 관리, 예약과 후기, 주문과 계약, 병원 정보와 계정, 알림톡을 다루는 방법을 목적별로 안내합니다.
+
+- [Hospital 메뉴 한눈에 보기](https://docs.certi.life/guide/hospital/screens/overview.md): Hospital 병원 관리자 화면의 왼쪽 메뉴(대시보드, 브랜드관, 진료과별 인증서 발행과 설정, 예약 관리, 발행/환자 관리, 구매/주문 관리, 병원 관리, 알림톡, 상담/챗봇 관리, 안내)가 각각 무엇을 하는 곳인지와 메뉴가 보이는 조건을 안내합니다.
+- [대시보드 - 발행 현황과 처리할 일 확인하기](https://docs.certi.life/guide/hospital/screens/dashboard.md): Hospital 대시보드에서 총 발행 인증서 수, 당일 발행 수, 등록 환자 수, 주간 발행 추이, 제품별 발행 수를 확인하고, 상단 안내 배너와 서비스 공지사항, 사용 가이드를 보는 방법을 안내합니다.
+- [병원 소개 페이지 - 고객에게 보이는 병원 정보 꾸미기](https://docs.certi.life/guide/hospital/screens/brand-page.md): Hospital 브랜드관의 병원 설정(병원 소개 페이지 설정)에서 병원 연락처, 공식 채널, 진료시간과 휴진일, 진료 정보와 가격, 병원소개 글과 이미지, 검색 태그, 웹챗봇을 설정하고 링크를 복사해 공유하는 방법을 안내합니다.
+- [인증서 발행 - 환자 정보 입력부터 알림 전송까지](https://docs.certi.life/guide/hospital/screens/issue-certificate.md): Hospital 인증서 발행 화면에서 환자 정보 입력과 개인정보 동의(병원 담당자 직접 동의, 환자 QR 동의), 시술과 제품 선택, 치료 후 주의사항과 병원 보증사항 입력, 발행하기까지의 순서와 제품 코드 오류, 위챗 발송, 안과 확인서 대량 발행 방법을 안내합니다.
+- [인증서 설정 - 인증서 양식과 주의사항, 보증사항 미리 만들어 두기](https://docs.certi.life/guide/hospital/screens/certificate-settings.md): Hospital 인증서 설정에서 병원 인증서를 추가하고 수술명, 인증서 이미지, 상세 정보 속성, 치료 후 주의사항, 병원 보증사항을 미리 입력하며, 병원 채널 알림톡 발송 설정과 병원 기본 이미지, 치과 템플릿(기본 템플릿, 모두 번역)을 관리하는 방법을 안내합니다.
+- [발행 내역과 환자 관리 - 발행한 인증서 찾고, 다시 보내고, 바로잡기](https://docs.certi.life/guide/hospital/screens/history.md): Hospital 발행/환자 관리의 발행 내역에서 인증서를 검색하고 인증서 상태(카톡 전송됨, 발송 실패, 지갑 저장됨, 회수됨, 삭제됨)를 확인하며 알림을 다시 보내는 방법과, 환자 관리의 환자 상세에서 잘못 보낸 인증서를 회수하거나 삭제하고 환자 정보를 수정하는 방법을 안내합니다.
+- [예약 관리와 후기 관리 - 예약 확정하고 고객 후기 노출 정하기](https://docs.certi.life/guide/hospital/screens/reservations-reviews.md): Hospital 예약 관리에서 환자가 신청한 예약을 예약 대기에서 예약 확정, 진료 완료, 예약 취소로 바꾸고 알림을 보내며 예약 담당자를 관리하는 방법과, 후기 관리에서 고객 후기를 검수요청, 노출, 비노출로 관리하고 엑셀로 내려받는 방법을 안내합니다.
+- [구매/주문 관리 - 결제 내역, 주문과 배송, 전자계약 확인하기](https://docs.certi.life/guide/hospital/screens/orders.md): Hospital 구매/주문 관리의 결제 내역 관리에서 정기 결제와 렌탈 내역, 결제 카드를 확인하고, 주문 관리에서 충전금 잔액과 충전금 이력, 배송 현황을 보고 구매확정하며, 전자계약에서 제조사와 맺은 계약서의 서명 진행 상황을 확인하는 방법을 안내합니다.
+- [시술동의서와 근로계약서 - 전자 서명으로 받고 관리하기](https://docs.certi.life/guide/hospital/screens/contracts.md): Hospital 병원 관리의 시술동의서에서 임플란트 시술동의서를 작성해 환자에게 알림톡으로 보내 서명을 받고 PDF로 내려받는 방법과, 근로계약서에서 직원 근로계약서를 작성하고 서명 상태 확인, 재발송, 퇴사 처리, 책임자 연락처 인증으로 민감정보를 확인하는 방법을 안내합니다.
+- [병원 정보 관리 - 병원 정보, 관리자 정보, 비밀번호 바꾸기](https://docs.certi.life/guide/hospital/screens/hospital-info.md): Hospital 병원 관리의 병원 정보 관리에서 병원 기본 정보와 로고, 관리자 정보, 비밀번호, 책임자 연락처, 운영시간(휴진일·진료시간·임시 휴진일·정기 휴무 예외일), SNS 채널을 확인하고 수정하는 방법을 안내합니다.
+- [계정 관리 - 직원용 서브계정 만들고 권한 주기](https://docs.certi.life/guide/hospital/screens/accounts.md): Hospital 병원 관리의 계정 관리에서 직원용 서브계정을 추가하고(아이디 중복 확인, 초기 비밀번호), 권한 템플릿과 권한 그룹으로 사용할 수 있는 메뉴를 정하고, 계정을 수정하는 방법을 안내합니다.
+- [알림톡 - 병원 카카오톡 채널과 템플릿 준비하기](https://docs.certi.life/guide/hospital/screens/alimtalk.md): Hospital 알림톡 메뉴의 채널 설정에서 병원 카카오톡 채널을 등록하고 발신프로필 인증을 마친 뒤, 템플릿 등록과 템플릿 대량 등록으로 알림톡 템플릿을 만들어 검수를 받고, 템플릿 조회에서 검수 상태를 확인하는 방법을 안내합니다.
+
 ## Manufacturer
 
 제조사 사용자의 공식 로그인과 안전한 계정 이용 범위를 안내합니다.
@@ -89,13 +106,13 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 
 Studio 왼쪽 메뉴의 위계 그대로, 메뉴마다 무엇을 하는 곳이고 하려는 일을 어떻게 하는지 화면에 보이는 이름으로 안내합니다.
 
-- [Studio 메뉴 한눈에 보기](https://docs.certi.life/guide/studio/screens/overview.md): Studio 왼쪽 메뉴(인증서, CRM, 챗봇, 콜봇, 상담, 전화상담, 상담 내역, 통계, 백과사전, AI, 설정)가 각각 무엇을 하는 곳인지와, 하고 싶은 일에 따라 어느 메뉴로 가야 하는지 안내합니다.
+- [Studio 메뉴 한눈에 보기](https://docs.certi.life/guide/studio/screens/overview.md): Studio 왼쪽 메뉴(인증서, CRM, 챗봇, 콜봇, 상담, 전화상담, 상담 내역, 통계, 백과사전, AI, 설정)가 각각 무엇을 하는 곳인지와, 하고 싶은 일에 따라 어느 메뉴로 가야 하는지, 화면 위쪽의 즐겨찾기 추가와 데스크톱 앱 내려받기, 로그아웃을 쓰는 방법을 안내합니다.
 - [인증서 - Studio에서 병원 관리 화면 열기](https://docs.certi.life/guide/studio/screens/certificates.md): Studio 인증서 메뉴가 누구에게 보이는지, 이 메뉴에서 열리는 병원 관리 화면으로 인증서 업무를 보는 방법, 연결이 끊겼을 때 다시 로그인·다시 연결하는 방법을 안내합니다.
 - [전화상담 - 콜봇과 상담사의 통화 응대하기](https://docs.certi.life/guide/studio/screens/phone-counsel.md): Studio 전화상담의 상담하기 화면에서 콜봇·대기·응대·콜백·전체콜 목록을 보고, 당겨받기로 대기 콜을 받고, 상담사 전환과 전달하기로 통화를 넘기고, 대화록·녹음·AI 분석을 확인하고, 콜백 예약과 상담 기록, 알림톡 발송, 상담사 상태 변경을 하는 방법을 안내합니다.
 - [상담 내역 - 지난 상담 찾아보고 내려받기](https://docs.certi.life/guide/studio/screens/conversation-history.md): Studio 상담 내역 메뉴에서 AI 채팅 상담 내역을 상담 유형·조회기간·상태·채널로 찾고, 상담 상세와 AI 요약·AI 초안을 확인하고, 내보내기와 리포트 다운로드를 하고, Vox 전화 상담 내역·페르소나 상담 내역·카카오 1:1 채팅 내역을 보는 방법을 안내합니다.
 - [통계 - 전화 응대 현황 확인하기](https://docs.certi.life/guide/studio/screens/stats.md): Studio 통계 메뉴의 실시간 통계, 마케팅 통계, 직원 통계에서 오늘 통화와 콜봇 처리 현황, 채널별 유입과 문의 키워드, 직원별 응대 지표를 확인하고 내려받는 방법을 안내합니다.
 - [백과사전 - 조직의 상담 지식 문서 관리하기](https://docs.certi.life/guide/studio/screens/encyclopedia.md): Studio 백과사전(화면 제목 상담 백과사전)에서 태그와 폴더로 상담 지식을 정리하고, 태그 추가로 새 문서를 작성하거나 파일을 업로드하고, 인용문으로 상담원용 빠른 입력 문구를 만들고, 고객 태그를 관리하는 방법을 목적별로 안내합니다.
-- [AI - AI와 함께 문서 작성하고 챗봇에 반영하기](https://docs.certi.life/guide/studio/screens/ai.md): Studio AI 메뉴에서 AI와 대화하며 문서 질문·요약, 글 작성·편집을 하고, 문서함에서 문서 작성·버전 비교·복원, 카탈로그 태그 할당, 챗봇에 반영, 용어 통일 검토를 하는 방법을 안내합니다.
+- [AI - AI와 함께 문서 작성하고 챗봇에 반영하기](https://docs.certi.life/guide/studio/screens/ai.md): Studio AI 메뉴에서 AI와 대화하며 문서 질문·요약, 글 작성·편집을 하고, 웹 검색·문서 검색·상담 검색 도구를 고르고, AI의 편집 제안을 적용·제외·되돌리기 하며, 문서함에서 문서 작성·버전 비교·복원, 카탈로그 태그 할당, 챗봇에 반영, 용어 통일 검토를 하는 방법을 안내합니다.
 
 ## Studio 화면별 안내 - CRM
 
@@ -108,6 +125,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 - [메시지 템플릿 - 알림톡·브랜드 메시지·WhatsApp 템플릿 만들기](https://docs.certi.life/guide/studio/screens/crm/templates.md): Studio CRM의 메시지 템플릿에서 알림톡 템플릿을 등록해 카카오 검수를 받고, 브랜드 메시지와 WhatsApp 템플릿을 만들고, 변수와 버튼을 넣고, 검수 상태를 확인하고 반려된 템플릿을 고쳐 재검수하는 방법을 안내합니다.
 - [캠페인 - 대상을 정해 메시지 한 번 보내기](https://docs.certi.life/guide/studio/screens/crm/campaigns.md): Studio CRM의 캠페인에서 대상 선택, 메시지, 예약, 확인·발송 네 단계로 알림톡·브랜드 메시지·WhatsApp 캠페인을 만들고, 변수 매핑과 안전 검증을 통과하고, 테스트 발송 후 발송하거나 예약하고, 발송 현황과 캠페인 성과를 확인하는 방법을 안내합니다.
 - [시나리오 자동화 - 조건에 맞는 고객에게 자동으로 메시지 보내기](https://docs.certi.life/guide/studio/screens/crm/automation.md): Studio CRM의 시나리오 자동화에서 트리거·대기·분기·A/B 분할·알림톡·브랜드 메시지·종료 블록으로 자동 발송 흐름을 만들고, 활성화하고, 고객을 편입하고, 진행 현황을 확인하고, 일시 정지 후 수정하는 방법을 안내합니다.
+- [발송 현황 - 보낸 메시지 확인하고 예약 메시지 보내거나 취소하기](https://docs.certi.life/guide/studio/screens/crm/message-status.md): Studio CRM의 발송 현황에서 오늘 발송, 예약 대기, 발송 완료, 실패 건수를 보고, 상태·기간·출처·채널로 메시지를 찾고, 실패 사유를 확인해 재발송하며, 예약된 메시지를 즉시 발송하거나 예약 취소하고 타임라인으로 시간대별 발송량을 보는 방법을 안내합니다.
 
 ## Studio 화면별 안내 - 챗봇
 
@@ -116,6 +134,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 - [챗봇 메뉴 시작하기](https://docs.certi.life/guide/studio/screens/chatbot/overview.md): Studio 챗봇 메뉴에서 챗봇을 만들고, 답변 방식(시나리오·플로우·AI 답변)을 구성하고, 채널에 연결해 공개하기까지 어떤 순서로 무엇을 하면 되는지 목적별로 안내합니다.
 - [챗봇 만들기와 챗봇 목록](https://docs.certi.life/guide/studio/screens/chatbot/list.md): Studio 챗봇 목록에서 새 챗봇을 만드는 세 가지 방법(빈 챗봇 만들기, 템플릿으로 시작, 챗봇 가져오기)과 챗봇 카드를 읽는 법, 챗봇 상세 화면으로 들어가는 방법을 안내합니다.
 - [시나리오 탭 - 정해진 상황의 메시지 만들기](https://docs.certi.life/guide/studio/screens/chatbot/scenarios.md): Studio 챗봇 상세의 시나리오 탭에서 첫 인사(시작 시나리오), 업무시간 외 안내(미작동 시나리오), AI 답변 형식, 실패 메시지를 블럭 디자이너와 퀵 리플라이로 편집하는 방법을 목적별로 안내합니다.
+- [블럭과 버튼 - 챗봇 메시지를 카드와 버튼으로 꾸미기](https://docs.certi.life/guide/studio/screens/chatbot/blocks.md): Studio 챗봇 블럭 디자이너에서 텍스트, 텍스트 카드, 기본 카드, 캐러셀, 리스트 카드, 상품 카드, 고객 정보 수집 블럭을 고르는 기준과 글자 수·이미지 크기 제한, 버튼과 퀵 리플라이의 동작(메시지 전송, 플로우 이동, 웹 링크, 전화 걸기, 채널 추가, 상담사 연결, 카카오싱크 가입)을 정하는 방법을 안내합니다.
 - [플로우 탭 - 버튼으로 이어지는 안내 만들기](https://docs.certi.life/guide/studio/screens/chatbot/flows.md): Studio 챗봇 상세의 플로우 탭에서 새 플로우 만들기, 시나리오 추가와 연결, 시작 시나리오 지정, 플로우 설정과 AI 참조 토픽 관리까지 단계형 안내를 만드는 방법을 목적별로 안내합니다.
 - [통계 탭 - 답하지 못한 질문 찾아 보강하기](https://docs.certi.life/guide/studio/screens/chatbot/statistics.md): Studio 챗봇 상세의 통계 탭에서 통계 개요로 실패율을 확인하고, 실패 발화에 보강 답변을 저장해 학습자료에 반영하고, Q&A 보강에서 직접 Q&A를 등록하고 시험하는 방법을 목적별로 안내합니다.
 
@@ -145,9 +164,11 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 - [보이스 - 콜봇 목소리 찾아 미리 듣기](https://docs.certi.life/guide/studio/screens/callbot/voices.md): Studio 콜봇의 보이스 화면에서 언어와 프로바이더로 목소리를 찾고 샘플을 미리 들은 뒤, 에이전트 설정의 음성에서 그 목소리를 적용하는 방법을 안내합니다.
 - [콜봇 도구 - 통화 중에 할 수 있는 일 늘리기](https://docs.certi.life/guide/studio/screens/callbot/tools.md): Studio 콜봇에서 통화 종료·통화 전환·에이전트 전환·DTMF 전송 기본 도구를 에이전트에 넣는 방법과, 도구 화면에서 우리 시스템을 호출하는 API 도구를 만들고 실행 중 안내 멘트를 정하는 방법을 안내합니다.
 - [콜봇 매뉴얼 - 특정 상황의 통화 절차 정해 주기](https://docs.certi.life/guide/studio/screens/callbot/manuals.md): Studio 콜봇의 매뉴얼 화면에서 트리거와 본문으로 상황별 응대 절차를 만들고(새 매뉴얼, 템플릿에서 시작), 실행 대기음을 정하고, 에이전트에 연결하는 방법과 반영 시점을 안내합니다.
+- [DTMF 메뉴 - "1번은 예약, 2번은 상담원" ARS 메뉴 만들기](https://docs.certi.life/guide/studio/screens/callbot/dtmf-menus.md): Studio 콜봇의 DTMF 메뉴 설정에서 메뉴 세트를 만들고, 전화 키패드 키마다 라벨과 안내 멘트, 입력 후 동작(AI 응대 계속, 통화 종료, 상담원 전환, 알림톡 발송, 브랜드메시지 발송, 콜백 예약)과 하위 메뉴를 구성해 에이전트에 연결하는 방법을 안내합니다.
 - [지식 베이스 - 콜봇이 우리 회사 정보로 답하게 하기](https://docs.certi.life/guide/studio/screens/callbot/knowledge.md): Studio 콜봇의 지식 베이스 화면에서 새 지식 베이스를 만들고, 백과사전에서 가져오기(지식 구축)로 문서를 담고, 에이전트에 연결해 콜봇이 조직의 자료를 근거로 답하게 하는 방법을 안내합니다.
 - [캠페인 - 콜봇으로 여러 고객에게 전화 걸기](https://docs.certi.life/guide/studio/screens/callbot/campaign.md): Studio 콜봇의 캠페인 화면에서 대상 목록을 만들고(붙여넣기·CSV·열 지정), 에이전트와 발신번호, 통화 허용 시간대를 정해 캠페인을 시작하고, 일시정지·재개·취소와 실패분 재발신을 하는 방법과 비용 주의사항을 안내합니다.
 - [번호 관리 - 전화번호를 받아 에이전트에 연결하기](https://docs.certi.life/guide/studio/screens/callbot/phone-numbers.md): Studio 콜봇의 번호 관리 화면에서 에이전트 번호와 대표번호 구매, SIP 트렁크 연동, 발신표기번호 등록으로 전화번호를 준비하고, 인바운드 콜 에이전트를 지정해 콜봇이 전화를 받게 하는 방법을 안내합니다.
+- [사용자 관리 - 상담사 번호 등록하고 계정과 그룹에 연결하기](https://docs.certi.life/guide/studio/screens/callbot/users.md): Studio 콜봇의 사용자 관리에서 통화를 넘겨받을 상담사 번호를 등록하고(내선, 착신전환, 링그룹), Studio 계정에 번호를 연결하며, 번호 그룹과 배정 전략(순차 배정, 최소 상담시간, 최대 대기시간, 랜덤 배정)을 정하는 방법을 안내합니다.
 - [조직 인증 - 번호 구매를 위한 사업자 인증 받기](https://docs.certi.life/guide/studio/screens/callbot/verification.md): Studio 콜봇의 조직 인증 화면에서 인증 유형과 신청자 구분을 고르고 사업자등록증·재직증명서를 제출해 인증을 신청하는 방법, 심사 상태를 읽는 법, 반려됐을 때 다시 신청하는 방법을 안내합니다.
 
 ## Studio 화면별 안내 - 상담
