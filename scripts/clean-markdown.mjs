@@ -358,7 +358,10 @@ function fragmentsFromSource(source) {
   const slugger = new GithubSlugger();
   const fragments = new Set();
   walk(tree, (node) => {
-    if (node.type === 'heading') fragments.add(slugger.slug(textValue(node)));
+    if (node.type !== 'heading') return;
+    // Every heading advances the slugger (duplicate suffixes), but Docusaurus renders the H1 without an id.
+    const slug = slugger.slug(textValue(node));
+    if (node.depth > 1) fragments.add(slug);
   });
   return fragments;
 }
@@ -401,9 +404,86 @@ export function createCleanMarkdownArtifacts(documents) {
     const previous = seenSemanticHashes.get(hash);
     if (previous) throw new Error(`identical clean Markdown output: ${previous} and ${path}`);
     seenSemanticHashes.set(hash, path);
-    return {id: document.id, canonicalUrl: document.canonicalUrl, path, content};
+    return {id: document.id, canonicalUrl: document.canonicalUrl, path, content, fragments: routeMap.get(document.id).fragments};
   });
   return artifacts.sort((left, right) => left.path.localeCompare(right.path, 'en'));
+}
+
+export const COMBINED_MARKDOWN_PATH = 'llms-full.md';
+const SOURCE_LINE_PREFIX = '출처: ';
+
+// One clean page → combined-file block: headings pushed down two levels (page title = ###, page ## = ####)
+// and a source URL line under the title and under every page-level ## so any chunk keeps its origin nearby.
+function renderCombinedPage(artifact) {
+  const tree = unified().use(remarkParse).use(remarkGfm).parse(artifact.content);
+  const lines = artifact.content.trimEnd().split('\n');
+  const slugger = new GithubSlugger();
+  const sourceLines = new Map();
+  walk(tree, (node) => {
+    if (node.type !== 'heading') return;
+    // Slug every heading in document order so duplicate-title suffixes match the published page.
+    const slug = slugger.slug(textValue(node));
+    const index = node.position.start.line - 1;
+    if (!/^#{1,6} /.test(lines[index])) return;
+    lines[index] = `${'#'.repeat(Math.min(6, node.depth + 2))}${lines[index].replace(/^#+/, '')}`;
+    if (node.depth === 1) sourceLines.set(index, artifact.canonicalUrl);
+    // ponytail: headings without a published anchor (TabItem labels) fall back to the page URL.
+    if (node.depth === 2) sourceLines.set(index, `${artifact.canonicalUrl}${artifact.fragments?.has(slug) ? `#${slug}` : ''}`);
+  });
+  const humanLink = `[사람이 읽는 원문](${artifact.canonicalUrl})`;
+  const output = [];
+  for (const [index, line] of lines.entries()) {
+    if (line === humanLink) {
+      if (lines[index + 1] === '') lines[index + 1] = null;
+      continue;
+    }
+    if (line === null) continue;
+    output.push(line);
+    if (sourceLines.has(index)) output.push('', `${SOURCE_LINE_PREFIX}${sourceLines.get(index)}`);
+  }
+  return output.join('\n').trim();
+}
+
+export function renderCombinedMarkdown(sections, artifacts, {title, summary}) {
+  const byId = new Map(artifacts.map((artifact) => [artifact.id, artifact]));
+  const parts = [`# ${title}`, `> ${summary}`];
+  for (const section of sections) {
+    parts.push(`## ${section.label}`, section.description);
+    for (const id of section.docs) {
+      const artifact = byId.get(id);
+      if (!artifact) throw new Error(`combined Markdown is missing a public document: ${id}`);
+      parts.push('---', renderCombinedPage(artifact));
+    }
+  }
+  const content = `${parts.join('\n\n')}\n`;
+  assertNoLeaks(content, COMBINED_MARKDOWN_PATH, {allowGeneratedMarkdownEscapes: true});
+  return content;
+}
+
+export function combinedSourceUrls(content) {
+  return content.split('\n').filter((line) => line.startsWith(SOURCE_LINE_PREFIX)).map((line) => line.slice(SOURCE_LINE_PREFIX.length));
+}
+
+export function verifyCombinedMarkdown(projectRoot, content, {buildRoot} = {}) {
+  const path = join(projectRoot, 'static', COMBINED_MARKDOWN_PATH);
+  if (!existsSync(path)) throw new Error(`missing combined Markdown: ${COMBINED_MARKDOWN_PATH}`);
+  if (readFileSync(path, 'utf8') !== content) throw new Error(`stale combined Markdown: ${COMBINED_MARKDOWN_PATH}`);
+  if (!buildRoot) return true;
+  const built = join(buildRoot, COMBINED_MARKDOWN_PATH);
+  if (!existsSync(built)) throw new Error(`missing built combined Markdown: ${COMBINED_MARKDOWN_PATH}`);
+  if (!readFileSync(built).equals(Buffer.from(content))) throw new Error(`built combined Markdown differs: ${COMBINED_MARKDOWN_PATH}`);
+  // Anchors must exist in the HTML Docusaurus actually emitted, not only in our slug computation.
+  const htmlCache = new Map();
+  for (const sourceUrl of combinedSourceUrls(content)) {
+    const url = new URL(sourceUrl);
+    if (!url.hash) continue;
+    const htmlPath = [join(buildRoot, `${url.pathname.slice(1)}.html`), join(buildRoot, url.pathname.slice(1), 'index.html')].find(existsSync);
+    if (!htmlPath) throw new Error(`combined Markdown source has no built page: ${sourceUrl}`);
+    if (!htmlCache.has(htmlPath)) htmlCache.set(htmlPath, readFileSync(htmlPath, 'utf8'));
+    const fragment = decodeURIComponent(url.hash.slice(1));
+    if (!htmlCache.get(htmlPath).includes(`id="${fragment}"`)) throw new Error(`combined Markdown anchor is missing from the built page: ${sourceUrl}`);
+  }
+  return true;
 }
 
 function walkFiles(directory) {

@@ -95,7 +95,7 @@ export function renderLlmsTxt() {
     '',
     '> 디지털 인증서부터 등록 자료 기반 AI 상담, CRM 메시징, 이벤트 마케팅까지 안내하는 CertiLife 공식 공개 사용 가이드입니다.',
     '',
-    'CertiLife Docs는 Hospital·Manufacturer·Studio 사용자와 도입 검토자가 공개적으로 확인할 수 있는 서비스 설명, 시작 경로, 운영 체크리스트, 문제 해결 정보를 제공합니다. 로그인 이후 메뉴·권한·업무 흐름은 공개적으로 검증된 범위만 다루며, AI 상담 안내는 의료진의 판단이나 진단을 대체하지 않습니다.',
+    'CertiLife Docs는 Hospital·Manufacturer·Studio 사용자와 도입 검토자가 공개적으로 확인할 수 있는 서비스 설명, 시작 경로, 운영 체크리스트, 문제 해결 정보를 제공합니다. 로그인 이후 메뉴·버튼 이름과 기능 설명은 실제 화면 또는 소스로 확인한 범위만 다루며, AI 상담 안내는 의료진의 판단이나 진단을 대체하지 않습니다.',
     '',
     '핵심 용어: CertiLife, 서티라이프, 디지털 인증서, AI 상담, 상담원 연결, CRM 메시징, 고객 세그먼트, 이벤트 마케팅, Hospital, Manufacturer, Studio',
   ];
@@ -112,6 +112,7 @@ export function renderLlmsTxt() {
     '',
     '## 추가 공개 경로',
     '',
+    `- [전체 문서 단일 파일](${new URL('llms-full.md', siteRoot).href}): 모든 공개 문서를 출처 주소와 함께 한 파일로 합친 AI 학습용 Markdown입니다.`,
     `- [CertiLife Docs 홈](${siteRoot.href}): 제품과 역할별 공개 문서의 시작점입니다.`,
     `- [문서 Sitemap](${sitemapUrl}): 검색엔진용 공개 URL 목록입니다.`,
     '- [CertiLife 홈페이지](https://certi.life/): 서비스 소개와 공식 도입 문의 경로입니다.',
