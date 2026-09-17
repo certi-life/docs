@@ -203,9 +203,10 @@ export function loadDocTitle(projectRoot, id) {
 
 export function loadDocNavigationTitle(projectRoot, id) {
   const sourcePath = join(projectRoot, 'docs', `${id}.mdx`);
-  const title = matter(readFileSync(sourcePath, 'utf8')).data.title;
+  // Docusaurus names the final breadcrumb after the sidebar label when a page sets one.
+  const {title, sidebar_label: sidebarLabel} = matter(readFileSync(sourcePath, 'utf8')).data;
   if (typeof title !== 'string' || !title.trim()) throw new Error(`missing frontmatter title: ${sourcePath}`);
-  return title.trim();
+  return typeof sidebarLabel === 'string' && sidebarLabel.trim() ? sidebarLabel.trim() : title.trim();
 }
 
 export function loadDocArticleExpected(projectRoot, id) {
