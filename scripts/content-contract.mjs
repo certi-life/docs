@@ -63,7 +63,7 @@ function firstProseParagraph(source) {
 
 // Screen guides are retrieved by the UI labels the chatbot SDK reads from the screen, so every page must state
 // its menu path verbatim in a page-level "위치" line before the first ## (task sections repeat it by convention).
-const SCREEN_DOC_PREFIX = 'studio/screens/';
+const SCREEN_DOC_PATTERN = /^(studio|hospital)\/screens\//;
 const SCREEN_LOCATION_LINE = /^\*\*위치:\*\* \S/m;
 
 export function missingScreenFrameLines(source) {
@@ -76,7 +76,7 @@ export function missingScreenFrameLines(source) {
 }
 
 export function auditScreenDocuments(projectRoot) {
-  return requiredDocIds.filter((id) => id.startsWith(SCREEN_DOC_PREFIX)).flatMap((id) =>
+  return requiredDocIds.filter((id) => SCREEN_DOC_PATTERN.test(id)).flatMap((id) =>
     missingScreenFrameLines(readFileSync(join(projectRoot, 'docs', `${id}.mdx`), 'utf8')).map((missing) => `${id} > ${missing}`));
 }
 
