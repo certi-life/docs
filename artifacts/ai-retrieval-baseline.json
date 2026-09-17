@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "5d8e943dfe85f5a296ebfe227b4ca83ad3c41792d24139df5f2dc2bdd983ad0a",
+  "corpusSha256": "d9033fe5f0a3db8458b3d1538fecb07c1c437eb912e5826792f3614c22bddc11",
   "fixtureSha256": "bdb94aa5c69669afca13380e5667bbd1a829c0101fa6fa0d55aa98f9ab8d01f2",
   "metrics": {
     "caseCount": 60,
