@@ -23,10 +23,10 @@
     "prohibitedClaimPassRate": 1
   },
   "bytes": {
-    "source": 165019,
-    "clean": 171461,
+    "source": 164597,
+    "clean": 171039,
     "delta": 6442,
-    "ratio": 1.039
+    "ratio": 1.0391
   },
-  "cleanCorpusSha256": "6efb451f2b75b4bfcffafc74974c2539699499a9ed603a4df698444cbaedaa64"
+  "cleanCorpusSha256": "d65cbbc3948151606323e84879febd83fde65a1079d9f2dae1281d8947091394"
 }

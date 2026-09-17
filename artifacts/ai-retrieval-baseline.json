@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "995a38bd8f401eb6f8920bfef6756aa2c66d6916ed99588134f4aca0aa244351",
+  "corpusSha256": "dfe6a44cf7004f7c0832428c7a3f7826e77f366ceda5199345270d1fb32ff751",
   "fixtureSha256": "ef3fa739ae4f172706d9d1c6d8b8308fa6bf25a37b4c4f2e4f523d7bd6c9ca21",
   "metrics": {
     "caseCount": 30,
@@ -32,11 +32,11 @@
         },
         {
           "id": "help/faq",
-          "score": 32.804041
+          "score": 32.815543
         },
         {
           "id": "help/glossary",
-          "score": 28.984015
+          "score": 28.985516
         }
       ],
       "top1Passed": true,
@@ -94,15 +94,15 @@
       "ranked": [
         {
           "id": "getting-started/sign-in-directory",
-          "score": 44.976728
+          "score": 45.099831
         },
         {
           "id": "getting-started/choose-guide",
-          "score": 25.833564
+          "score": 25.956666
         },
         {
           "id": "getting-started/quick-tour",
-          "score": 25.310233
+          "score": 25.333252
         }
       ],
       "top1Passed": false,
@@ -296,11 +296,11 @@
         },
         {
           "id": "studio/knowledge-management",
-          "score": 65.357026
+          "score": 65.219628
         },
         {
           "id": "products/ai-chatbot",
-          "score": 29.639577
+          "score": 31.11869
         }
       ],
       "top1Passed": true,
@@ -325,15 +325,15 @@
       "ranked": [
         {
           "id": "products/ai-chatbot/handoff-policy",
-          "score": 107.733744
+          "score": 107.930194
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 35.639689
+          "score": 35.645411
         },
         {
           "id": "products/ai-chatbot",
-          "score": 30.513629
+          "score": 30.515058
         }
       ],
       "top1Passed": true,
@@ -424,15 +424,15 @@
       "ranked": [
         {
           "id": "products/event-marketing/campaign-planning",
-          "score": 138.007532
+          "score": 137.43898
         },
         {
           "id": "products/event-marketing",
-          "score": 59.215082
+          "score": 59.172967
         },
         {
           "id": "products/event-marketing/performance-review",
-          "score": 50.091613
+          "score": 50.049498
         }
       ],
       "top1Passed": true,
@@ -490,11 +490,11 @@
       "ranked": [
         {
           "id": "hospital/overview",
-          "score": 51.606665
+          "score": 51.646285
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 33.702153
+          "score": 33.703307
         },
         {
           "id": "hospital/certificate-workflow",
@@ -622,7 +622,7 @@
       "ranked": [
         {
           "id": "manufacturer/overview",
-          "score": 82.38502
+          "score": 82.396522
         },
         {
           "id": "manufacturer/safe-operation",
@@ -688,15 +688,15 @@
       "ranked": [
         {
           "id": "manufacturer/safe-operation",
-          "score": 67.61419
+          "score": 67.615344
         },
         {
           "id": "manufacturer/account-access",
-          "score": 63.91138
+          "score": 63.951001
         },
         {
           "id": "manufacturer/overview",
-          "score": 58.732132
+          "score": 58.733286
         }
       ],
       "top1Passed": true,
@@ -787,15 +787,15 @@
       "ranked": [
         {
           "id": "studio/knowledge-management",
-          "score": 112.346667
+          "score": 112.470913
         },
         {
           "id": "products/ai-chatbot",
-          "score": 31.251271
+          "score": 31.239679
         },
         {
           "id": "studio/launch-checklist",
-          "score": 27.028023
+          "score": 27.029177
         }
       ],
       "top1Passed": true,
@@ -820,15 +820,15 @@
       "ranked": [
         {
           "id": "studio/scenario-and-handoff",
-          "score": 73.520456
+          "score": 73.579038
         },
         {
           "id": "manufacturer/account-access",
-          "score": 35.363315
+          "score": 35.364744
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 32.401784
+          "score": 32.403213
         }
       ],
       "top1Passed": true,
@@ -952,7 +952,7 @@
       "ranked": [
         {
           "id": "help/glossary",
-          "score": 101.015394
+          "score": 101.722033
         },
         {
           "id": "hospital/certificate-workflow",
