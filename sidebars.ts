@@ -114,6 +114,7 @@ const sidebars: SidebarsConfig = {
                 {
                   type: 'category',
                   label: '설정',
+                  key: 'chatbot-settings',
                   items: [
                     'studio/screens/chatbot/settings/menu',
                     'studio/screens/chatbot/settings/basic-info',
@@ -166,6 +167,7 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               label: '설정',
+              key: 'org-settings',
               items: [
                 'studio/screens/org-settings/overview',
                 'studio/screens/org-settings/hours',
