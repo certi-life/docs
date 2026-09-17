@@ -2,6 +2,7 @@ import {existsSync, mkdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {dirname, join} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {
+  FIXTURE_CASE_COUNT,
   createBaseline,
   evaluateCases,
   loadPublicDocuments,
@@ -33,7 +34,7 @@ export function assertNoEvaluationRegression(sourceMetrics, cleanMetrics) {
 
 export function evaluateCleanMarkdown(projectRoot) {
   const fixtureFile = readJson(join(projectRoot, 'tests', 'fixtures', 'ai-retrieval-cases.json'));
-  const fixtures = validateFixtureFile(fixtureFile, new Set(requiredDocIds), {expectedCount: 30});
+  const fixtures = validateFixtureFile(fixtureFile, new Set(requiredDocIds), {expectedCount: FIXTURE_CASE_COUNT});
   const sourceDocuments = loadPublicDocuments(projectRoot, requiredDocIds);
   const sourceById = new Map(sourceDocuments.map((document) => [document.id, document]));
   const artifacts = projectCleanMarkdownArtifacts(projectRoot);

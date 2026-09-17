@@ -61,6 +61,25 @@ function firstProseParagraph(source) {
   return paragraph.join(' ');
 }
 
+// Screen guides are retrieved by the UI labels the chatbot SDK reads from the screen, so every page must state
+// its menu path verbatim in a page-level "위치" line before the first ## (task sections repeat it by convention).
+const SCREEN_DOC_PREFIX = 'studio/screens/';
+const SCREEN_LOCATION_LINE = /^\*\*위치:\*\* \S/m;
+
+export function missingScreenFrameLines(source) {
+  const body = matter(source).content.replace(/```[\s\S]*?```/g, '');
+  const [intro, ...sections] = body.split(/^## /m);
+  const missing = [];
+  if (!SCREEN_LOCATION_LINE.test(intro)) missing.push('page-level **위치:** line before the first ##');
+  if (sections.length === 0) missing.push('at least one ## section');
+  return missing;
+}
+
+export function auditScreenDocuments(projectRoot) {
+  return requiredDocIds.filter((id) => id.startsWith(SCREEN_DOC_PREFIX)).flatMap((id) =>
+    missingScreenFrameLines(readFileSync(join(projectRoot, 'docs', `${id}.mdx`), 'utf8')).map((missing) => `${id} > ${missing}`));
+}
+
 export function auditPublicDocuments(projectRoot) {
   return requiredDocIds.map((id) => {
     const source = readFileSync(join(projectRoot, 'docs', `${id}.mdx`), 'utf8');
@@ -111,6 +130,8 @@ function main() {
     const entries = auditPublicDocuments(projectRoot);
     const failures = entries.filter((entry) => entry.classification !== 'pass');
     if (failures.length) throw new Error(`answer-first contract requires review: ${failures.map((entry) => entry.id).join(', ')}`);
+    const frameFailures = auditScreenDocuments(projectRoot);
+    if (frameFailures.length) throw new Error(`screen guides are missing required lines:\n- ${frameFailures.join('\n- ')}`);
     console.log(`Answer-first audit passed: ${entries.length} public documents`);
   }
 }

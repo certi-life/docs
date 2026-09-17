@@ -157,7 +157,9 @@ export function loadPublicDocuments(projectRoot, ids) {
   });
 }
 
-const ALLOWED_CATEGORIES = new Set(['product', 'role', 'faq', 'safety', 'recovery']);
+// 'screen' = "what is this screen?" questions shaped like the chatbot planner's query: UI labels + the question.
+const ALLOWED_CATEGORIES = new Set(['product', 'role', 'faq', 'safety', 'recovery', 'screen']);
+export const FIXTURE_CASE_COUNT = 75;
 const ALLOWED_PUBLIC_HOSTS = new Set([
   'certi.life',
   'docs.certi.life',
@@ -283,7 +285,7 @@ function assertPublicFixtureText(value, fixtureId) {
   }
 }
 
-export function validateFixtures(fixtures, publicIds, {expectedCount = 30} = {}) {
+export function validateFixtures(fixtures, publicIds, {expectedCount = FIXTURE_CASE_COUNT} = {}) {
   if (!Array.isArray(fixtures) || fixtures.length !== expectedCount) {
     throw new Error(`fixture set must contain exactly ${expectedCount} cases`);
   }
@@ -393,7 +395,7 @@ if (invokedPath) {
   const fixturePath = join(projectRoot, 'tests', 'fixtures', 'ai-retrieval-cases.json');
   const baselinePath = join(projectRoot, 'artifacts', 'ai-retrieval-baseline.json');
   const fixtureFile = readJson(fixturePath);
-  const fixtures = validateFixtureFile(fixtureFile, new Set(requiredDocIds), {expectedCount: 30});
+  const fixtures = validateFixtureFile(fixtureFile, new Set(requiredDocIds), {expectedCount: FIXTURE_CASE_COUNT});
   const docs = loadPublicDocuments(projectRoot, requiredDocIds);
   const baseline = createBaseline(docs, fixtures);
   verifyBaselineThresholds(baseline.metrics);

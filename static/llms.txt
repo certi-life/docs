@@ -2,7 +2,7 @@
 
 > 디지털 인증서부터 등록 자료 기반 AI 상담, CRM 메시징, 이벤트 마케팅까지 안내하는 CertiLife 공식 공개 사용 가이드입니다.
 
-CertiLife Docs는 Hospital·Manufacturer·Studio 사용자와 도입 검토자가 공개적으로 확인할 수 있는 서비스 설명, 시작 경로, 운영 체크리스트, 문제 해결 정보를 제공합니다. 로그인 이후 메뉴·권한·업무 흐름은 공개적으로 검증된 범위만 다루며, AI 상담 안내는 의료진의 판단이나 진단을 대체하지 않습니다.
+CertiLife Docs는 Hospital·Manufacturer·Studio 사용자와 도입 검토자가 공개적으로 확인할 수 있는 서비스 설명, 시작 경로, 운영 체크리스트, 문제 해결 정보를 제공합니다. 로그인 이후 메뉴·버튼 이름과 기능 설명은 실제 화면 또는 소스로 확인한 범위만 다루며, AI 상담 안내는 의료진의 판단이나 진단을 대체하지 않습니다.
 
 핵심 용어: CertiLife, 서티라이프, 디지털 인증서, AI 상담, 상담원 연결, CRM 메시징, 고객 세그먼트, 이벤트 마케팅, Hospital, Manufacturer, Studio
 
@@ -17,7 +17,7 @@ CertiLife의 공개 서비스 범위와 문서 사용법을 먼저 확인합니�
 역할·목적별 가이드, 요금과 도입 문의, 다운로드, 로그인 경로를 찾습니다.
 
 - [5분 둘러보기](https://docs.certi.life/guide/getting-started/quick-tour.md): CertiLife의 네 가지 서비스를 업무 흐름으로 이해하고 알맞은 다음 문서를 선택하세요.
-- [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide.md): 역할과 목적에 따라 지금 읽을 CertiLife 문서와 공식 서비스 링크를 선택하세요.
+- [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide.md): 병원·제조사·Studio 담당자가 자신의 역할에 맞는 문서를 고르고 공식 서비스 링크를 찾도록 돕습니다.
 - [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact.md): CertiLife 공개 가격 페이지를 바탕으로 필요한 서비스 조합을 고르고 도입 상담을 준비하는 방법입니다.
 - [병원 도입 구매 FAQ](https://docs.certi.life/guide/getting-started/buyer-faq.md): 병원·치과 원장과 상담실장이 CertiLife의 가격, AI 상담 채널, 사람 연결, 도입 준비와 메디컬 인증서를 검토할 때 자주 묻는 질문입니다.
 - [CertiLife 다운로드](https://docs.certi.life/guide/getting-started/downloads.md): 기업용 데스크톱 서비스와 환자용 모바일 앱 중 목적과 운영체제에 맞는 다운로드를 선택하는 방법입니다.
@@ -78,12 +78,103 @@ CertiLife의 공개 서비스 범위와 문서 사용법을 먼저 확인합니�
 AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공개 운영 가이드입니다.
 
 - [Studio 운영 가이드](https://docs.certi.life/guide/studio/overview.md): AI 상담 지식, 시나리오, 상담원 연결과 출시 점검을 준비하는 Studio 공개 운영 가이드입니다.
-- [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access.md): Studio 공식 로그인 화면에서 Username과 Password로 안전하게 접속하고 문제에 대응하는 절차입니다.
+- [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access.md): Studio 공식 로그인 화면에서 Username과 Password로 안전하게 접속하고, 로그인이 안 되거나 비밀번호 재설정이 필요할 때 대응하는 절차입니다.
 - [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management.md): AI 챗봇이 참고할 공개 자료를 선별하고 최신성·정확성·개인정보 기준을 유지하는 운영 가이드입니다.
 - [상담 시나리오와 사람 연결](https://docs.certi.life/guide/studio/scenario-and-handoff.md): AI 상담 흐름을 설계하고 업무시간별 상담원 연결·의료 문의·예외 상황을 안전하게 처리하는 방법입니다.
 - [상담 내역 조회와 화면 설정](https://docs.certi.life/guide/studio/conversation-history.md): 채널별 상담 내역을 검색하고 요약·분류·대화 내용을 확인하며 목록과 상세 화면을 구성하는 방법입니다.
 - [상담 기록 필드 설정](https://docs.certi.life/guide/studio/consultation-records.md): 전화상담 후처리에 사용할 단일·복수 선택 필드와 상담 메모 양식을 만들고 AI 자동 선택을 안전하게 운영하는 방법입니다.
 - [Studio 출시 체크리스트](https://docs.certi.life/guide/studio/launch-checklist.md): AI 챗봇·상담원 연결·AI 음성봇을 고객에게 공개하기 전과 공개 직후 확인할 운영 체크리스트입니다.
+
+## Studio 화면별 안내
+
+Studio 왼쪽 메뉴의 위계 그대로, 메뉴마다 무엇을 하는 곳이고 하려는 일을 어떻게 하는지 화면에 보이는 이름으로 안내합니다.
+
+- [Studio 메뉴 한눈에 보기](https://docs.certi.life/guide/studio/screens/overview.md): Studio 왼쪽 메뉴(인증서, CRM, 챗봇, 콜봇, 상담, 전화상담, 상담 내역, 통계, 백과사전, AI, 설정)가 각각 무엇을 하는 곳인지와, 하고 싶은 일에 따라 어느 메뉴로 가야 하는지 안내합니다.
+- [인증서 - Studio에서 병원 관리 화면 열기](https://docs.certi.life/guide/studio/screens/certificates.md): Studio 인증서 메뉴가 누구에게 보이는지, 이 메뉴에서 열리는 병원 관리 화면으로 인증서 업무를 보는 방법, 연결이 끊겼을 때 다시 로그인·다시 연결하는 방법을 안내합니다.
+- [전화상담 - 콜봇과 상담사의 통화 응대하기](https://docs.certi.life/guide/studio/screens/phone-counsel.md): Studio 전화상담의 상담하기 화면에서 콜봇·대기·응대·콜백·전체콜 목록을 보고, 당겨받기로 대기 콜을 받고, 상담사 전환과 전달하기로 통화를 넘기고, 대화록·녹음·AI 분석을 확인하고, 콜백 예약과 상담 기록, 알림톡 발송, 상담사 상태 변경을 하는 방법을 안내합니다.
+- [상담 내역 - 지난 상담 찾아보고 내려받기](https://docs.certi.life/guide/studio/screens/conversation-history.md): Studio 상담 내역 메뉴에서 AI 채팅 상담 내역을 상담 유형·조회기간·상태·채널로 찾고, 상담 상세와 AI 요약·AI 초안을 확인하고, 내보내기와 리포트 다운로드를 하고, Vox 전화 상담 내역·페르소나 상담 내역·카카오 1:1 채팅 내역을 보는 방법을 안내합니다.
+- [통계 - 전화 응대 현황 확인하기](https://docs.certi.life/guide/studio/screens/stats.md): Studio 통계 메뉴의 실시간 통계, 마케팅 통계, 직원 통계에서 오늘 통화와 콜봇 처리 현황, 채널별 유입과 문의 키워드, 직원별 응대 지표를 확인하고 내려받는 방법을 안내합니다.
+- [백과사전 - 조직의 상담 지식 문서 관리하기](https://docs.certi.life/guide/studio/screens/encyclopedia.md): Studio 백과사전(화면 제목 상담 백과사전)에서 태그와 폴더로 상담 지식을 정리하고, 태그 추가로 새 문서를 작성하거나 파일을 업로드하고, 인용문으로 상담원용 빠른 입력 문구를 만들고, 고객 태그를 관리하는 방법을 목적별로 안내합니다.
+- [AI - AI와 함께 문서 작성하고 챗봇에 반영하기](https://docs.certi.life/guide/studio/screens/ai.md): Studio AI 메뉴에서 AI와 대화하며 문서 질문·요약, 글 작성·편집을 하고, 문서함에서 문서 작성·버전 비교·복원, 카탈로그 태그 할당, 챗봇에 반영, 용어 통일 검토를 하는 방법을 안내합니다.
+
+## Studio 화면별 안내 - CRM
+
+CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페인과 시나리오 자동화로 메시지를 보내는 방법을 목적별로 안내합니다.
+
+- [CRM - 고객 데이터를 모아 메시지 운영하기](https://docs.certi.life/guide/studio/screens/crm/overview.md): Studio CRM 메뉴의 운영 홈, 캘린더, 고객 목록, 데이터 연동, 메시지 템플릿, 캠페인, 시나리오 자동화, 발송 현황이 각각 무엇을 하는지와 고객을 모아 메시지를 보내기까지의 순서를 목적별로 안내합니다.
+- [캘린더 - 일정과 예약 관리하기](https://docs.certi.life/guide/studio/screens/crm/calendar.md): Studio CRM의 캘린더에서 일정 추가와 서티 예약으로 일정을 만들고, 일·주·월과 캘린더·칸반·타임라인·목록 보기를 바꾸고, 캘린더 관리에서 캘린더를 만들고 알림과 고객 저장 옵션을 정하는 방법을 안내합니다.
+- [고객 등록과 관리 - 고객 목록, 세그먼트, 수신 동의, 병합](https://docs.certi.life/guide/studio/screens/crm/customers.md): Studio CRM의 고객 목록에서 직접 등록과 CSV 업로드로 고객을 넣고, 필터 조건을 세그먼트로 저장하고, 고객 상세에서 수신 동의·고객 연결·태그를 관리하고, 같은 전화번호의 중복 고객을 병합하는 방법을 안내합니다.
+- [데이터 연동 - 인증서와 EMR에서 고객 가져오기](https://docs.certi.life/guide/studio/screens/crm/connectors.md): Studio CRM의 데이터 연동에서 NFT 인증서 커넥터와 EMR 고객 데이터 연동을 설정해 고객 데이터를 CRM으로 계속 가져오고, 동기화 상태를 확인하고, 커넥터 설정을 바꾸거나 삭제하는 방법을 안내합니다.
+- [메시지 템플릿 - 알림톡·브랜드 메시지·WhatsApp 템플릿 만들기](https://docs.certi.life/guide/studio/screens/crm/templates.md): Studio CRM의 메시지 템플릿에서 알림톡 템플릿을 등록해 카카오 검수를 받고, 브랜드 메시지와 WhatsApp 템플릿을 만들고, 변수와 버튼을 넣고, 검수 상태를 확인하고 반려된 템플릿을 고쳐 재검수하는 방법을 안내합니다.
+- [캠페인 - 대상을 정해 메시지 한 번 보내기](https://docs.certi.life/guide/studio/screens/crm/campaigns.md): Studio CRM의 캠페인에서 대상 선택, 메시지, 예약, 확인·발송 네 단계로 알림톡·브랜드 메시지·WhatsApp 캠페인을 만들고, 변수 매핑과 안전 검증을 통과하고, 테스트 발송 후 발송하거나 예약하고, 발송 현황과 캠페인 성과를 확인하는 방법을 안내합니다.
+- [시나리오 자동화 - 조건에 맞는 고객에게 자동으로 메시지 보내기](https://docs.certi.life/guide/studio/screens/crm/automation.md): Studio CRM의 시나리오 자동화에서 트리거·대기·분기·A/B 분할·알림톡·브랜드 메시지·종료 블록으로 자동 발송 흐름을 만들고, 활성화하고, 고객을 편입하고, 진행 현황을 확인하고, 일시 정지 후 수정하는 방법을 안내합니다.
+
+## Studio 화면별 안내 - 챗봇
+
+챗봇 메뉴에서 챗봇을 만들고, 시나리오·플로우·AI 답변을 구성하고, 통계로 보강하는 방법을 목적별로 안내합니다.
+
+- [챗봇 메뉴 시작하기](https://docs.certi.life/guide/studio/screens/chatbot/overview.md): Studio 챗봇 메뉴에서 챗봇을 만들고, 답변 방식(시나리오·플로우·AI 답변)을 구성하고, 채널에 연결해 공개하기까지 어떤 순서로 무엇을 하면 되는지 목적별로 안내합니다.
+- [챗봇 만들기와 챗봇 목록](https://docs.certi.life/guide/studio/screens/chatbot/list.md): Studio 챗봇 목록에서 새 챗봇을 만드는 세 가지 방법(빈 챗봇 만들기, 템플릿으로 시작, 챗봇 가져오기)과 챗봇 카드를 읽는 법, 챗봇 상세 화면으로 들어가는 방법을 안내합니다.
+- [시나리오 탭 - 정해진 상황의 메시지 만들기](https://docs.certi.life/guide/studio/screens/chatbot/scenarios.md): Studio 챗봇 상세의 시나리오 탭에서 첫 인사(시작 시나리오), 업무시간 외 안내(미작동 시나리오), AI 답변 형식, 실패 메시지를 블럭 디자이너와 퀵 리플라이로 편집하는 방법을 목적별로 안내합니다.
+- [플로우 탭 - 버튼으로 이어지는 안내 만들기](https://docs.certi.life/guide/studio/screens/chatbot/flows.md): Studio 챗봇 상세의 플로우 탭에서 새 플로우 만들기, 시나리오 추가와 연결, 시작 시나리오 지정, 플로우 설정과 AI 참조 토픽 관리까지 단계형 안내를 만드는 방법을 목적별로 안내합니다.
+- [통계 탭 - 답하지 못한 질문 찾아 보강하기](https://docs.certi.life/guide/studio/screens/chatbot/statistics.md): Studio 챗봇 상세의 통계 탭에서 통계 개요로 실패율을 확인하고, 실패 발화에 보강 답변을 저장해 학습자료에 반영하고, Q&A 보강에서 직접 Q&A를 등록하고 시험하는 방법을 목적별로 안내합니다.
+
+## Studio 화면별 안내 - 챗봇 설정
+
+챗봇 상세의 설정 탭에서 기본 정보, AI 설정, 도구, 매뉴얼, 작동시간, 학습자료, 채널, 채팅창을 바꾸는 방법을 목적별로 안내합니다.
+
+- [설정 탭 - 챗봇 설정 항목 찾기](https://docs.certi.life/guide/studio/screens/chatbot/settings/menu.md): Studio 챗봇 상세의 설정 탭과 설정 메뉴(기본 정보, AI 설정, 도구, 매뉴얼, 작동시간, AI 학습자료 설정, 채널 설정, 채팅창 설정, 챗봇 삭제)에서 각각 무엇을 바꾸는지, 저장은 어떻게 되는지 안내합니다.
+- [기본 정보 - 챗봇 이름·이미지 변경과 다른 계정으로 복사](https://docs.certi.life/guide/studio/screens/chatbot/settings/basic-info.md): Studio 챗봇 설정의 기본 정보에서 챗봇 프로필 이미지, 챗봇 이름, 설명을 바꾸는 방법과 챗봇 내보내기 코드로 챗봇을 다른 계정에 복사하는 방법을 안내합니다.
+- [AI 설정 - 챗봇의 말투와 답변 범위 정하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings.md): Studio 챗봇 설정의 AI 설정에서 페르소나 선택, 커스텀 페르소나 설정(시스템 프롬프트 작성·버전 관리·이 내용으로 대화해보기), 학습자료로만 답변하기, 응답 버전(v1·v2), 챗봇 기본 언어와 다국어 응대 방식을 목적별로 안내합니다.
+- [도구 - 챗봇에게 할 수 있는 일 늘려 주기](https://docs.certi.life/guide/studio/screens/chatbot/settings/tools.md): Studio 챗봇 설정의 도구에서 대화 정보 추출, 병원 진료시간 활용, 컴플레인 대응, 알림톡 보내기, 브랜드메시지 보내기를 추가하는 방법과 챗봇 메뉴의 도구 목록에서 API 도구를 만드는 방법을 목적별로 안내합니다.
+- [매뉴얼 - 특정 상황에서 정해진 절차대로 응대하게 하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/manuals.md): Studio 챗봇 메뉴의 매뉴얼 목록에서 트리거와 본문으로 매뉴얼을 작성하고, 챗봇 설정의 매뉴얼에서 챗봇에 연결·해제하는 방법과 잘 동작하는 트리거를 쓰는 요령을 안내합니다.
+- [작동시간 - 챗봇이 쉬는 시간 정하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/operating-hours.md): Studio 챗봇 설정의 작동시간에서 챗봇 24시간 작동을 끄고 요일별 미작동 시간, 특수일 작동 설정, 공휴일 자동 설정으로 챗봇이 응답하지 않을 시간을 정하는 방법을 목적별로 안내합니다.
+- [AI 학습자료 설정 - 챗봇이 참고할 자료 넣기](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials.md): Studio 챗봇 설정의 AI 학습자료 설정(화면 제목 AI 학습자료 관리)에서 v1 파일 업로드, v2 백과사전 카탈로그 태그 연결, 병원 정보 기반 학습자료 생성으로 챗봇 답변의 근거 자료를 관리하는 방법을 안내합니다.
+- [채널 설정 - 챗봇을 고객이 있는 곳에 연결하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings.md): Studio 챗봇 설정의 채널 설정에서 웹채팅 SDK 스크립트로 홈페이지에 채팅 버튼을 달고, 카카오톡(오픈빌더·상담톡 봇), 네이버 톡톡, Instagram, LINE, WhatsApp에 챗봇을 연결하고, 상담원 바로 연결을 설정하는 방법을 안내합니다.
+- [채팅창 설정 - 웹채팅 모양을 우리 사이트에 맞추기](https://docs.certi.life/guide/studio/screens/chatbot/settings/chat-window-settings.md): Studio 챗봇 설정의 채팅창 설정에서 상담 유도 메시지(말풍선), 디자인 설정(헤더·테마 색상·제목), 창 크기, 채팅창 테두리/그림자, 플로팅 버튼, 커스텀 메뉴를 바꿔 웹채팅 창을 꾸미는 방법을 안내합니다.
+- [챗봇 삭제 - 삭제 전 확인할 것과 삭제 방법](https://docs.certi.life/guide/studio/screens/chatbot/settings/delete-chatbot.md): Studio 챗봇 설정의 챗봇 삭제에서 삭제될 데이터를 확인하고 챗봇 이름과 계정 비밀번호를 입력해 챗봇을 영구 삭제하는 절차, 삭제 전에 점검할 사항과 삭제 대신 쓸 수 있는 방법을 안내합니다.
+
+## Studio 화면별 안내 - 콜봇
+
+콜봇 메뉴에서 전화를 받는 AI 상담원을 만들고 도구·지식·번호를 연결해 실제 통화에 쓰기까지의 방법을 목적별로 안내합니다.
+
+- [콜봇 시작하기 - 전화를 받는 AI 상담원 준비하기](https://docs.certi.life/guide/studio/screens/callbot/overview.md): Studio 콜봇 메뉴에서 에이전트 만들기, 도구와 지식 베이스 연결, 조직 인증, 번호 발급과 연결, 통화 확인까지 콜봇이 실제 전화를 받게 하는 순서와 콜봇 메뉴 구성을 목적별로 안내합니다.
+- [에이전트 - 전화를 받을 AI 상담원 만들기](https://docs.certi.life/guide/studio/screens/callbot/agents.md): Studio 콜봇의 에이전트 화면에서 새 에이전트를 만드는 방법(통화 방향, 프롬프트·플로우 타입, 맞춤형·템플릿·스마트 ARS·빈 에이전트 생성 방식)과 에이전트 목록에서 상태를 확인하는 방법을 목적별로 안내합니다.
+- [에이전트 설정 - 목소리·응대 내용 다듬고 배포하기](https://docs.certi.life/guide/studio/screens/callbot/agent-settings.md): Studio 콜봇의 에이전트 상세 화면에서 LLM·음성·언어, 첫 메시지, 프롬프트, 도구, 지식 베이스, 매뉴얼, 통화 정보 추출, 발화 설정, 통화 설정, 보안 설정, 웹훅 설정을 바꾸고 테스트한 뒤 배포하는 방법을 목적별로 안내합니다.
+- [플로우 편집 - 통화의 대화 순서 직접 그리기](https://docs.certi.life/guide/studio/screens/callbot/flow-editor.md): Studio 콜봇의 플로우 편집 화면에서 대화·도구·분기·추출·에이전트 전환·통화 전환·통화 종료 노드로 통화 흐름을 구성하고, 변수를 쓰고, 검증하고 저장하는 방법을 안내합니다.
+- [보이스 - 콜봇 목소리 찾아 미리 듣기](https://docs.certi.life/guide/studio/screens/callbot/voices.md): Studio 콜봇의 보이스 화면에서 언어와 프로바이더로 목소리를 찾고 샘플을 미리 들은 뒤, 에이전트 설정의 음성에서 그 목소리를 적용하는 방법을 안내합니다.
+- [콜봇 도구 - 통화 중에 할 수 있는 일 늘리기](https://docs.certi.life/guide/studio/screens/callbot/tools.md): Studio 콜봇에서 통화 종료·통화 전환·에이전트 전환·DTMF 전송 기본 도구를 에이전트에 넣는 방법과, 도구 화면에서 우리 시스템을 호출하는 API 도구를 만들고 실행 중 안내 멘트를 정하는 방법을 안내합니다.
+- [콜봇 매뉴얼 - 특정 상황의 통화 절차 정해 주기](https://docs.certi.life/guide/studio/screens/callbot/manuals.md): Studio 콜봇의 매뉴얼 화면에서 트리거와 본문으로 상황별 응대 절차를 만들고(새 매뉴얼, 템플릿에서 시작), 실행 대기음을 정하고, 에이전트에 연결하는 방법과 반영 시점을 안내합니다.
+- [지식 베이스 - 콜봇이 우리 회사 정보로 답하게 하기](https://docs.certi.life/guide/studio/screens/callbot/knowledge.md): Studio 콜봇의 지식 베이스 화면에서 새 지식 베이스를 만들고, 백과사전에서 가져오기(지식 구축)로 문서를 담고, 에이전트에 연결해 콜봇이 조직의 자료를 근거로 답하게 하는 방법을 안내합니다.
+- [캠페인 - 콜봇으로 여러 고객에게 전화 걸기](https://docs.certi.life/guide/studio/screens/callbot/campaign.md): Studio 콜봇의 캠페인 화면에서 대상 목록을 만들고(붙여넣기·CSV·열 지정), 에이전트와 발신번호, 통화 허용 시간대를 정해 캠페인을 시작하고, 일시정지·재개·취소와 실패분 재발신을 하는 방법과 비용 주의사항을 안내합니다.
+- [번호 관리 - 전화번호를 받아 에이전트에 연결하기](https://docs.certi.life/guide/studio/screens/callbot/phone-numbers.md): Studio 콜봇의 번호 관리 화면에서 에이전트 번호와 대표번호 구매, SIP 트렁크 연동, 발신표기번호 등록으로 전화번호를 준비하고, 인바운드 콜 에이전트를 지정해 콜봇이 전화를 받게 하는 방법을 안내합니다.
+- [조직 인증 - 번호 구매를 위한 사업자 인증 받기](https://docs.certi.life/guide/studio/screens/callbot/verification.md): Studio 콜봇의 조직 인증 화면에서 인증 유형과 신청자 구분을 고르고 사업자등록증·재직증명서를 제출해 인증을 신청하는 방법, 심사 상태를 읽는 법, 반려됐을 때 다시 신청하는 방법을 안내합니다.
+
+## Studio 화면별 안내 - 상담
+
+상담 메뉴에서 응대할 상담을 찾고, 시작·이관·마무리하고, 번역과 답변 도구, 고객 정보를 활용하는 방법을 목적별로 안내합니다.
+
+- [상담 - 채팅 상담 화면 한눈에 보기](https://docs.certi.life/guide/studio/screens/counsel/overview.md): Studio 상담 메뉴의 화면 구성(상담 목록, 상담 백과사전, 대화창, 고객정보 패널)과 상담원의 하루 업무 흐름, 하고 싶은 일에 따라 어느 안내를 보면 되는지 정리합니다.
+- [응대할 상담 찾기 - 상태 탭, 필터, 검색](https://docs.certi.life/guide/studio/screens/counsel/inbox.md): Studio 상담 화면에서 대기·진행중·완료·종료 상태 탭과 기간·채널·챗봇·태그 필터, 활성 유저만·내 상담만·안읽음만 토글, 고객 이름·연락처·상담사·상담내용 검색으로 응대할 상담을 찾고 검색 필터 설정으로 시작 화면을 정하는 방법을 안내합니다.
+- [상담 시작하고 마무리하기 - 시작, 이관, 완료와 내용 정리](https://docs.certi.life/guide/studio/screens/counsel/handle.md): Studio 상담 화면에서 바로 상담 시작으로 응대를 시작하고, 이관으로 다른 상담원에게 넘기고, 상담완료·상담종료와 내용 정리(상담사 정리, AI 초안)로 마무리하고, 메모를 남기고, 일괄 종료로 오래된 상담을 정리하는 방법을 안내합니다.
+- [외국어 고객과 대화하기 - 상담 화면에서 번역 쓰기](https://docs.certi.life/guide/studio/screens/counsel/translation.md): Studio 상담 화면에서 언어 바로 고객 언어와 상담사 언어를 정하고, 고객 메시지의 번역을 읽고, 답변을 번역해 원문과 실제 발송 문구를 확인한 뒤 보내는 방법, 바로 전송, 언어 변경 제안, 번역이 안 될 때의 대처를 안내합니다.
+- [빠르고 정확하게 답하기 - 상담 백과사전, 서티 AI, 자주 쓰는 답변, 첨부](https://docs.certi.life/guide/studio/screens/counsel/reply-tools.md): Studio 상담 화면에서 상담 백과사전의 인용문을 채팅 입력창에 넣고, 서티 AI에게 질문하거나 답변 초안을 받고, 자주 쓰는 답변을 슬래시로 불러오고, 파일과 이미지를 첨부하고, 메시지를 복사·삭제하는 방법을 안내합니다.
+- [고객 정보 확인하고 활용하기 - 고객정보 패널, 태그, 정보 수집, 알림톡](https://docs.certi.life/guide/studio/screens/counsel/customer.md): Studio 상담 화면의 고객정보 패널에서 고객 카드와 상담 히스토리를 확인하고, 고객 태그를 붙이고, 정보 수집 메시지 발송으로 이름과 연락처를 받고, 알림톡·WhatsApp 템플릿 발송, 시나리오 편입, 일정 잡기, 중복 고객 병합을 하는 방법을 안내합니다.
+
+## Studio 화면별 안내 - 설정
+
+조직 공통 설정에서 상담 시간, 알림, 번역, 채널 연동, 자동메시지, 상담 기록 양식을 정하는 방법을 목적별로 안내합니다.
+
+- [설정(조직 설정) - 조직 공통 설정 한눈에 보기](https://docs.certi.life/guide/studio/screens/org-settings/overview.md): Studio 왼쪽 아래 톱니 아이콘의 설정(설정 메뉴)에서 운영 설정, 채널 설정, 회원 관리, 상담 파일 관리, 고객 태그, 헤더 고객 정보, 자동메시지, 상담 기록 설정이 각각 무엇을 하는지와 저장 방식을 안내합니다.
+- [상담 시간 - 진료시간과 상담·챗봇·콜봇 운영 시간 정하기](https://docs.certi.life/guide/studio/screens/org-settings/hours.md): Studio 설정의 운영 설정 > 상담 시간에서 병원 진료시간(요일별 진료시간·임시 휴진일·정기 휴무 예외일), 채팅 상담 가능 시간, AI 챗봇 작동시간 일괄 적용, AI 콜봇 운영시간을 정하는 방법을 목적별로 안내합니다.
+- [알림 설정 - 상담이 들어오면 누구에게 알릴지 정하기](https://docs.certi.life/guide/studio/screens/org-settings/alerts.md): Studio 설정의 운영 설정에서 관리자 알림(상담 인입 알림톡 발송 정책)과 상담사 알림(상담사 알림 정책, 챗봇 진행 중 알림)으로 상담 인입을 관리자와 상담사에게 알리는 기준을 정하는 방법을 안내합니다.
+- [번역 설정 - 외국어 채팅 상담 준비하기](https://docs.certi.life/guide/studio/screens/org-settings/translation.md): Studio 설정의 운영 설정 > 번역(채팅 번역)에서 번역 사용, 번역 방향(고객이 쓰는 언어·상담사가 읽을 언어), 자동 메시지 번역, 번역·전송 버튼 합치기, 번역 없이 발송할 때 확인을 정하는 방법과 각 옵션이 상담 화면을 어떻게 바꾸는지 안내합니다.
+- [상황별 콜백 - 자주 보내는 알림톡을 묶음으로 만들어 두기](https://docs.certi.life/guide/studio/screens/org-settings/callback-situations.md): Studio 설정의 운영 설정 > 상황별 콜백에서 발송 상황을 추가해 알림톡 채널·템플릿·기본 본문을 묶어 두고, 채팅 상담과 AI 전화 상담 화면에서 상담사가 한 번에 골라 보내게 하는 방법을 안내합니다.
+- [채널 연동 - 메신저 계정을 조직에 연결하기](https://docs.certi.life/guide/studio/screens/org-settings/channels.md): Studio 설정의 채널 설정에서 카카오 알림톡 채널, 상담톡 채널, 네이버 톡톡, Instagram, LINE, WhatsApp, AI 콜봇을 조직에 연동하는 절차와 채널별로 필요한 정보, 연동 후 웹훅 등록 등 빠뜨리기 쉬운 단계를 안내합니다.
+- [자동메시지 - 상담 중 자동으로 나가는 안내 정하기](https://docs.certi.life/guide/studio/screens/org-settings/auto-messages.md): Studio 설정의 자동메시지에서 고객 정보 수집, 상담 시작·완료 메시지, 상담원 배정 메시지, 운영 시간 외 메시지, AI 전화 콜백 문자를 설정하고 변수와 이미지를 넣는 방법, 카카오 상담톡에서 달라지는 점을 안내합니다.
+- [고객 표시와 회원 관리 - 헤더 고객 정보, 고객 태그, 회원 목록](https://docs.certi.life/guide/studio/screens/org-settings/customer-info.md): Studio 설정의 헤더 고객 정보에서 채팅방 헤더에 보일 고객 정보를 고르고, 고객 태그 목록을 확인하고, 회원 관리의 전체 회원 목록과 인증회원 목록에서 채널별 회원을 찾는 방법을 안내합니다.
+- [상담 파일 관리 - 첨부파일 저장 용량 확인하고 정리하기](https://docs.certi.life/guide/studio/screens/org-settings/file-storage.md): Studio 설정의 상담 파일 관리에서 상담 메시지 첨부파일의 사용량과 파일 수, 용량 초과로 차단된 파일을 확인하고 파일을 삭제해 용량을 확보하는 방법을 안내합니다.
+- [상담 기록 설정 - 전화상담 기록 양식 만들기](https://docs.certi.life/guide/studio/screens/org-settings/counsel-record.md): Studio 설정의 상담 기록 설정에서 상담 메모 양식 항목과 단일 선택·복수 선택 필드를 만들어 전화상담 기록 양식을 조직에 맞게 정의하고, AI 자동 선택을 켜고 끄는 방법과 주의사항을 안내합니다.
 
 ## 도움말
 
@@ -96,6 +187,7 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 
 ## 추가 공개 경로
 
+- [전체 문서 단일 파일](https://docs.certi.life/llms-full.md): 모든 공개 문서를 출처 주소와 함께 한 파일로 합친 AI 학습용 Markdown입니다.
 - [CertiLife Docs 홈](https://docs.certi.life/): 제품과 역할별 공개 문서의 시작점입니다.
 - [문서 Sitemap](https://docs.certi.life/sitemap.xml): 검색엔진용 공개 URL 목록입니다.
 - [CertiLife 홈페이지](https://certi.life/): 서비스 소개와 공식 도입 문의 경로입니다.

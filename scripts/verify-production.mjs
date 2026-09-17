@@ -203,9 +203,10 @@ export function loadDocTitle(projectRoot, id) {
 
 export function loadDocNavigationTitle(projectRoot, id) {
   const sourcePath = join(projectRoot, 'docs', `${id}.mdx`);
-  const title = matter(readFileSync(sourcePath, 'utf8')).data.title;
+  // Docusaurus names the final breadcrumb after the sidebar label when a page sets one.
+  const {title, sidebar_label: sidebarLabel} = matter(readFileSync(sourcePath, 'utf8')).data;
   if (typeof title !== 'string' || !title.trim()) throw new Error(`missing frontmatter title: ${sourcePath}`);
-  return title.trim();
+  return typeof sidebarLabel === 'string' && sidebarLabel.trim() ? sidebarLabel.trim() : title.trim();
 }
 
 export function loadDocArticleExpected(projectRoot, id) {
@@ -249,6 +250,7 @@ export async function verifyProduction({
   const checks = [
     ['robots.txt', 'text/plain', readFileSync(join(projectRoot, 'build', 'robots.txt'))],
     ['llms.txt', 'text/plain', readFileSync(join(projectRoot, 'build', 'llms.txt'))],
+    ['llms-full.md', 'text/markdown', readFileSync(join(projectRoot, 'build', 'llms-full.md'))],
     ['sitemap.xml', 'application/xml', sitemapBody],
     ['img/certilife-docs-og.png', 'image/png', readFileSync(join(projectRoot, 'build', 'img', 'certilife-docs-og.png'))],
   ];

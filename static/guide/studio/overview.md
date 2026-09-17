@@ -18,6 +18,8 @@ Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운�
 6. [상담 기록 필드 설정](https://docs.certi.life/guide/studio/consultation-records)에서 전화상담 후처리 필드와 AI 자동 선택을 준비합니다.
 7. [출시 체크리스트](https://docs.certi.life/guide/studio/launch-checklist)로 채널별 테스트와 운영 책임자를 확인한 뒤 고객에게 공개합니다.
 
+지금 보고 있는 화면에서 무엇을 어떻게 하는지 궁금하다면 화면별 안내를 확인하세요. [Studio 메뉴 한눈에 보기](https://docs.certi.life/guide/studio/screens/overview)에서 메뉴별 역할을 확인하고, 챗봇은 [챗봇 메뉴 시작하기](https://docs.certi.life/guide/studio/screens/chatbot/overview)에서 만들기부터 채널 연결까지 목적별로 따라갈 수 있습니다.
+
 ## 운영의 핵심 구조
 
 AI 상담 품질은 등록 자료의 최신성과 범위에 좌우됩니다. 홈페이지, 진료·서비스 안내, 운영시간, 위치, 예약 방법처럼 공개가 승인된 정보만 사용하고, 고객 기록이나 내부 메모는 지식 자료에 넣지 않습니다. 같은 질문에 서로 다른 답이 있는 자료는 책임자가 하나의 기준으로 정리하고, 변경일과 검토일을 관리하세요.

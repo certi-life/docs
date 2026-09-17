@@ -3,8 +3,8 @@ import {join, relative} from 'node:path';
 import {inflateSync} from 'node:zlib';
 import {requiredDocIds, requiredDocs} from './docs-manifest.mjs';
 import {cleanMarkdownUrls, expectedAiDiscoveryFiles} from './generate-ai-discovery.mjs';
-import {verifyCleanMarkdownArtifacts} from './clean-markdown.mjs';
-import {projectCleanMarkdownArtifacts} from './generate-clean-markdown.mjs';
+import {verifyCleanMarkdownArtifacts, verifyCombinedMarkdown} from './clean-markdown.mjs';
+import {projectCleanMarkdownArtifacts, projectCombinedMarkdown} from './generate-clean-markdown.mjs';
 import {readDocusaurusPublicConfig} from './read-docusaurus-config.mjs';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -16,7 +16,9 @@ const actionableDocs = requiredDocs.filter((path) =>
 const failures = [];
 
 try {
-  verifyCleanMarkdownArtifacts(root, projectCleanMarkdownArtifacts(root));
+  const cleanArtifacts = projectCleanMarkdownArtifacts(root);
+  verifyCleanMarkdownArtifacts(root, cleanArtifacts);
+  verifyCombinedMarkdown(root, projectCombinedMarkdown(cleanArtifacts));
 } catch (error) {
   failures.push(error instanceof Error ? error.message : String(error));
 }
@@ -235,7 +237,7 @@ if (existsSync(llmsPath)) {
   }
   const listedDocUrls = [...llms.matchAll(/^- \[[^\]]+\]\((https:\/\/docs\.certi\.life\/[^)]+)\):/gm)]
     .map((match) => match[1])
-    .filter((url) => url !== 'https://docs.certi.life/' && !url.endsWith('/sitemap.xml'));
+    .filter((url) => url !== 'https://docs.certi.life/' && !url.endsWith('/sitemap.xml') && !url.endsWith('/llms-full.md'));
   const expectedUrls = cleanMarkdownUrls();
   const expectedUrlSet = new Set(expectedUrls);
   const actualUrlSet = new Set(listedDocUrls);

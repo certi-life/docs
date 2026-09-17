@@ -4,9 +4,13 @@ import {existsSync, mkdtempSync, mkdirSync, readFileSync, readdirSync, writeFile
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {
+  COMBINED_MARKDOWN_PATH,
+  combinedSourceUrls,
   createCleanMarkdownArtifacts,
   renderCleanMarkdown,
+  renderCombinedMarkdown,
   verifyCleanMarkdownArtifacts,
+  verifyCombinedMarkdown,
   writeCleanMarkdownArtifacts,
 } from './clean-markdown.mjs';
 import {cleanMarkdownUrl, renderLlmsTxt} from './generate-ai-discovery.mjs';
@@ -342,4 +346,106 @@ test('clean Markdown artifacts는 duplicate route와 identical output을 fail-cl
     {id: 'a', canonicalUrl: 'https://docs.certi.life/guide/a', source},
     {id: 'b', canonicalUrl: 'https://docs.certi.life/guide/b', source},
   ]), /identical clean Markdown output/);
+});
+
+function combinedFixture() {
+  const page = (id, title, body) => ({
+    id,
+    canonicalUrl: `https://docs.certi.life/guide/${id}`,
+    source: `---\ntitle: ${title}\ndescription: ${title} 공개 설명입니다.\n---\n# ${title}\n\n${body}\n`,
+  });
+  const artifacts = createCleanMarkdownArtifacts([
+    page('studio/screens/ai-settings', 'AI 설정 화면', [
+      '## 커스텀 페르소나 설정',
+      '- **위치:** 챗봇 > 설정 > AI 설정 > 커스텀 페르소나 설정',
+      '- **관련 가이드:** [도구](./tools#도구)',
+      '### 버전 기록과 비교',
+      '버전을 비교합니다.',
+      '```md\n## 코드 안의 제목\n```',
+      '## 페르소나',
+      '첫 번째 설명입니다.',
+      '## 페르소나',
+      '같은 제목의 두 번째 섹션입니다.',
+    ].join('\n\n')),
+    page('studio/screens/tools', '도구 화면', '## 도구\n\n챗봇이 쓰는 도구입니다.'),
+  ]);
+  const sections = [
+    {label: 'Studio 화면별 안내', description: '화면별 안내 섹션입니다.', docs: ['studio/screens/ai-settings', 'studio/screens/tools']},
+  ];
+  return {artifacts, content: renderCombinedMarkdown(sections, artifacts, {title: 'CertiLife Docs', summary: '단일 파일 요약입니다.'})};
+}
+
+test('단일 파일은 헤딩을 섹션 > 페이지 > 패널로 재배치하고 코드 블록은 건드리지 않는다', () => {
+  const {content} = combinedFixture();
+  const headings = content.split('\n').filter((line) => /^#{1,6} /.test(line));
+  assert.deepEqual(headings, [
+    '# CertiLife Docs',
+    '## Studio 화면별 안내',
+    '### AI 설정 화면',
+    '#### 커스텀 페르소나 설정',
+    '##### 버전 기록과 비교',
+    '## 코드 안의 제목',
+    '#### 페르소나',
+    '#### 페르소나',
+    '### 도구 화면',
+    '#### 도구',
+  ]);
+  assert.match(content, /```md\n## 코드 안의 제목\n```/);
+  assert.doesNotMatch(content, /사람이 읽는 원문/);
+});
+
+test('단일 파일은 페이지 제목과 모든 ## 바로 아래에 실제 앵커와 일치하는 출처 줄을 둔다', () => {
+  const {artifacts, content} = combinedFixture();
+  const base = 'https://docs.certi.life/guide/studio/screens';
+  assert.deepEqual(combinedSourceUrls(content), [
+    `${base}/ai-settings`,
+    `${base}/ai-settings#커스텀-페르소나-설정`,
+    `${base}/ai-settings#페르소나`,
+    `${base}/ai-settings#페르소나-1`,
+    `${base}/tools`,
+    `${base}/tools#도구`,
+  ]);
+  const lines = content.split('\n');
+  for (const [index, line] of lines.entries()) {
+    if (/^#{3,4} /.test(line)) assert.match(lines[index + 2], /^출처: https:\/\/docs\.certi\.life\/guide\//, `source line must follow: ${line}`);
+  }
+  for (const url of combinedSourceUrls(content).filter((value) => value.includes('#'))) {
+    const [pageUrl, fragment] = url.split('#');
+    assert.ok(artifacts.find((artifact) => artifact.canonicalUrl === pageUrl).fragments.has(fragment), `unknown anchor: ${url}`);
+  }
+  assert.match(content, /\[도구\]\(https:\/\/docs\.certi\.life\/guide\/studio\/screens\/tools#도구\)/);
+});
+
+test('단일 파일은 페이지마다 구분선으로 나뉘고 manifest에 없는 문서는 거부한다', () => {
+  const {artifacts, content} = combinedFixture();
+  assert.equal(content.split('\n').filter((line) => line === '---').length, 2);
+  assert.match(content, /\n---\n\n### 도구 화면\n\n출처: /);
+  assert.throws(
+    () => renderCombinedMarkdown([{label: 'x', description: 'y', docs: ['missing/doc']}], artifacts, {title: 't', summary: 's'}),
+    /missing a public document: missing\/doc/,
+  );
+});
+
+test('단일 파일 검증은 누락·stale·build 바이트 차이·빌드 HTML에 없는 앵커를 거부한다', () => {
+  const {content} = combinedFixture();
+  const root = mkdtempSync(join(tmpdir(), 'certilife-combined-'));
+  mkdirSync(join(root, 'static'), {recursive: true});
+  assert.throws(() => verifyCombinedMarkdown(root, content), /missing combined Markdown/);
+  writeFileSync(join(root, 'static', COMBINED_MARKDOWN_PATH), content);
+  assert.doesNotThrow(() => verifyCombinedMarkdown(root, content));
+  assert.throws(() => verifyCombinedMarkdown(root, `${content}drift\n`), /stale combined Markdown/);
+  const buildRoot = join(root, 'build');
+  const pages = join(buildRoot, 'guide', 'studio', 'screens');
+  mkdirSync(pages, {recursive: true});
+  assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /missing built combined Markdown/);
+  writeFileSync(join(buildRoot, COMBINED_MARKDOWN_PATH), content);
+  writeFileSync(join(pages, 'ai-settings.html'), '<h2 id="커스텀-페르소나-설정"></h2><h2 id="페르소나"></h2><h2 id="페르소나-1"></h2>');
+  writeFileSync(join(pages, 'tools.html'), '<h2 id="다른-제목"></h2>');
+  assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /anchor is missing from the built page: .*tools#도구/);
+  writeFileSync(join(pages, 'tools.html'), '<h2 id=도구-목록></h2>');
+  assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /anchor is missing from the built page: .*tools#도구/);
+  writeFileSync(join(pages, 'tools.html'), '<h2 class=anchor id=도구></h2>');
+  assert.doesNotThrow(() => verifyCombinedMarkdown(root, content, {buildRoot}));
+  writeFileSync(join(buildRoot, COMBINED_MARKDOWN_PATH), 'drift\n');
+  assert.throws(() => verifyCombinedMarkdown(root, content, {buildRoot}), /built combined Markdown differs/);
 });

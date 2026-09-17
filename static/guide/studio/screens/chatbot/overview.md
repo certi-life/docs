@@ -1,0 +1,61 @@
+# 챗봇 메뉴 시작하기
+
+> Studio 챗봇 메뉴에서 챗봇을 만들고, 답변 방식(시나리오·플로우·AI 답변)을 구성하고, 채널에 연결해 공개하기까지 어떤 순서로 무엇을 하면 되는지 목적별로 안내합니다.
+
+[사람이 읽는 원문](https://docs.certi.life/guide/studio/screens/chatbot/overview)
+
+Studio 왼쪽 메뉴의 `챗봇`은 고객 문의에 자동으로 답하는 챗봇을 만들고 다듬는 곳입니다. 처음이라면 이 페이지에서 전체 그림을 먼저 잡고, 필요한 화면으로 이동하세요. 이미 운영 중이라면 아래 [하고 싶은 일로 찾기](https://docs.certi.life/guide/studio/screens/chatbot/overview#하고-싶은-일로-찾기) 표에서 바로 찾아가면 됩니다.
+
+**위치:** 챗봇
+
+## 챗봇은 세 가지 방식으로 답합니다
+
+챗봇 하나 안에서 세 가지 답변 방식을 함께 씁니다. 어떤 질문을 어느 방식에 맡길지 정하는 것이 챗봇 구성의 핵심입니다.
+
+| 방식        | 이런 질문에 맞습니다                                  | 어디서 만드나요                                                                                                                                                                               |
+| --------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **시나리오**  | 첫 인사, 업무시간 외 안내처럼 정해진 상황에 항상 같은 메시지를 보내야 할 때 | [`시나리오` 탭](https://docs.certi.life/guide/studio/screens/chatbot/scenarios)                                                                                                             |
+| **플로우**   | "예약 → 지점 선택 → 안내"처럼 버튼을 눌러 단계별로 따라가는 안내      | [`플로우` 탭](https://docs.certi.life/guide/studio/screens/chatbot/flows)                                                                                                                  |
+| **AI 답변** | 고객이 자유롭게 입력한 질문. 등록한 학습자료를 근거로 AI가 답합니다      | [`AI 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings), [`AI 학습자료 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials) |
+
+정답이 하나로 정해져 있고 틀리면 안 되는 안내(가격표, 예약 절차)는 시나리오와 플로우로 고정하고, 표현이 다양한 질문은 AI 답변에 맡기는 구성이 가장 안정적입니다.
+
+## 처음 만들 때 권장 순서
+
+1. **챗봇을 만듭니다.** [챗봇 목록](https://docs.certi.life/guide/studio/screens/chatbot/list)에서 `새 챗봇 만들기`를 누릅니다. 빈 챗봇, 템플릿, 다른 챗봇 복제 중에서 고를 수 있습니다.
+2. **AI가 참고할 자료를 넣습니다.** [`AI 학습자료 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials)에서 공개해도 되는 안내 자료를 올립니다. 어떤 자료를 넣을지는 [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management)를 참고하세요.
+3. **말투와 답변 범위를 정합니다.** [`AI 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings)에서 페르소나를 고르고, 자료에 없는 내용은 답하지 않게 하려면 `학습자료로만 답변하기`를 켭니다.
+4. **첫 인사와 고정 안내를 만듭니다.** [`시나리오` 탭](https://docs.certi.life/guide/studio/screens/chatbot/scenarios)에서 `시작 시나리오`를 다듬고, 단계형 안내가 필요하면 [`플로우` 탭](https://docs.certi.life/guide/studio/screens/chatbot/flows)에서 만듭니다.
+5. **응답하지 않을 시간을 정합니다.** [`작동시간`](https://docs.certi.life/guide/studio/screens/chatbot/settings/operating-hours)에서 챗봇이 쉬는 시간과 그때 보낼 안내를 정합니다.
+6. **채널에 연결합니다.** [`채널 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings)에서 웹채팅 스크립트를 복사하거나 카카오톡·네이버 톡톡 등을 연결하고, [`채팅창 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/chat-window-settings)에서 웹채팅 모양을 맞춥니다.
+7. **공개 전에 시험합니다.** 가상 질문으로 정상 답변, 답변 거절, 상담원 연결을 확인합니다. 점검 항목은 [출시 체크리스트](https://docs.certi.life/guide/studio/launch-checklist)에 있습니다.
+8. **운영하면서 보강합니다.** [`통계` 탭](https://docs.certi.life/guide/studio/screens/chatbot/statistics)에서 챗봇이 답하지 못한 질문을 찾아 답변을 보강합니다.
+
+## 하고 싶은 일로 찾기
+
+| 하고 싶은 일                              | 가야 할 화면                                                                                                                                                                                   |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 새 챗봇을 만들거나 다른 챗봇을 복제하고 싶어요           | [챗봇 목록](https://docs.certi.life/guide/studio/screens/chatbot/list)                                                                                                                        |
+| 챗봇 이름이나 프로필 이미지를 바꾸고 싶어요             | [`기본 정보`](https://docs.certi.life/guide/studio/screens/chatbot/settings/basic-info)                                                                                                       |
+| 챗봇 말투를 바꾸거나 프롬프트를 직접 쓰고 싶어요          | [`AI 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings)                                                                                                      |
+| 챗봇이 엉뚱한 내용을 지어내지 않게 하고 싶어요           | [`AI 설정`의 `학습자료로만 답변하기`](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings#자료에-있는-내용만-답하게-하기)                                                                     |
+| 답변에 쓸 자료를 추가하거나 바꾸고 싶어요              | [`AI 학습자료 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials)                                                                                          |
+| 첫 인사 메시지를 바꾸고 싶어요                    | [`시나리오` 탭](https://docs.certi.life/guide/studio/screens/chatbot/scenarios)                                                                                                                |
+| 버튼으로 이어지는 안내를 만들고 싶어요                | [`플로우` 탭](https://docs.certi.life/guide/studio/screens/chatbot/flows)                                                                                                                     |
+| 밤이나 주말에는 챗봇을 끄고 싶어요                  | [`작동시간`](https://docs.certi.life/guide/studio/screens/chatbot/settings/operating-hours)                                                                                                   |
+| 홈페이지에 채팅 버튼을 달고 싶어요                  | [`채널 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings), [`채팅창 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/chat-window-settings) |
+| 카카오톡·네이버 톡톡·Instagram 등에 연결하고 싶어요    | [`채널 설정`](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings)                                                                                                 |
+| 챗봇이 대화 중에 고객 이름·연락 희망 시간을 챙기게 하고 싶어요 | [`도구`](https://docs.certi.life/guide/studio/screens/chatbot/settings/tools)                                                                                                               |
+| 특정 상황에서 정해진 절차대로 응대하게 하고 싶어요         | [`매뉴얼`](https://docs.certi.life/guide/studio/screens/chatbot/settings/manuals)                                                                                                            |
+| 챗봇이 답하지 못한 질문을 확인하고 싶어요              | [`통계` 탭](https://docs.certi.life/guide/studio/screens/chatbot/statistics)                                                                                                                 |
+| 챗봇을 지우고 싶어요                          | [`챗봇 삭제`](https://docs.certi.life/guide/studio/screens/chatbot/settings/delete-chatbot)                                                                                                   |
+
+## 화면은 이렇게 생겼습니다
+
+`챗봇` 메뉴에 들어오면 챗봇 카드 목록이 보이고, 위쪽에 `챗봇`, `도구`, `매뉴얼` 탭이 있습니다. `도구`와 `매뉴얼`은 조직의 모든 챗봇이 함께 쓰는 공용 목록이며 `v2 beta`로 표시됩니다.
+
+카드의 `상세보기`를 누르면 챗봇 상세 화면으로 들어가고, 위쪽의 `시나리오`, `플로우`, `통계`, `설정` 네 탭으로 작업합니다. `시나리오`, `플로우`, `설정` 탭에서 바꾼 내용은 왼쪽 아래 `저장`을 눌러야 적용됩니다. 저장하지 않고 다른 곳으로 이동하려 하면 "저장하지 않은 변경사항이 있습니다" 확인 창이 나옵니다.
+
+> **v1과 v2**
+>
+> 챗봇마다 응답 버전(`v1` 또는 `v2`)이 있습니다. `도구`와 `매뉴얼`은 v2에서만 동작하며, 버전은 [`AI 설정`의 `응답 버전`](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings#응답-버전-바꾸기)에서 바꿉니다.
