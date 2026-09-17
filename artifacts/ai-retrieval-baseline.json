@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "4ff830598c77ffb0387975b62b43cdc95f6a67a98c06a10ef6028aad852eebed",
+  "corpusSha256": "33cbfd0493807d6cd68422e79f3ed79cfaeff0f1f68311fc8cc8a0947711e917",
   "fixtureSha256": "ffde4618060cd9179d8b00024d9e660e533018948306c7d22dd5b88a4ebbcb0c",
   "metrics": {
     "caseCount": 47,
@@ -457,11 +457,11 @@
       "ranked": [
         {
           "id": "products/event-marketing/performance-review",
-          "score": 195.097991
+          "score": 194.760463
         },
         {
           "id": "products/event-marketing",
-          "score": 86.441287
+          "score": 86.416285
         },
         {
           "id": "products/event-marketing/campaign-planning",
@@ -754,11 +754,11 @@
       "ranked": [
         {
           "id": "studio/account-access",
-          "score": 100.827314
+          "score": 100.82517
         },
         {
           "id": "hospital/account-access",
-          "score": 35.851131
+          "score": 35.848987
         },
         {
           "id": "manufacturer/account-access",
@@ -989,7 +989,7 @@
         },
         {
           "id": "studio/screens/delete-chatbot",
-          "score": 38.368636
+          "score": 34.667441
         },
         {
           "id": "manufacturer/safe-operation",
