@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "dfe6a44cf7004f7c0832428c7a3f7826e77f366ceda5199345270d1fb32ff751",
+  "corpusSha256": "a5d27b6a7665694d917d44e2f7aff521960af4b15d75c15113057ec32a532329",
   "fixtureSha256": "ef3fa739ae4f172706d9d1c6d8b8308fa6bf25a37b4c4f2e4f523d7bd6c9ca21",
   "metrics": {
     "caseCount": 30,
@@ -127,15 +127,15 @@
       "ranked": [
         {
           "id": "getting-started/plans-and-contact",
-          "score": 91.10622
+          "score": 90.897492
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 40.515913
+          "score": 40.307184
         },
         {
           "id": "help/faq",
-          "score": 34.616137
+          "score": 34.407408
         }
       ],
       "top1Passed": true,
@@ -259,15 +259,15 @@
       "ranked": [
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 31.935145
+          "score": 31.395899
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 31.145526
+          "score": 30.867191
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 22.775603
+          "score": 22.740815
         }
       ],
       "top1Passed": true,
@@ -391,15 +391,15 @@
       "ranked": [
         {
           "id": "products/crm-messaging/message-checklist",
-          "score": 211.247757
+          "score": 208.253796
         },
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 32.02206
+          "score": 30.721241
         },
         {
           "id": "products/certificate/channels",
-          "score": 30.964402
+          "score": 29.174902
         }
       ],
       "top1Passed": true,
@@ -589,7 +589,7 @@
       "ranked": [
         {
           "id": "hospital/safe-operation",
-          "score": 91.397132
+          "score": 91.320171
         },
         {
           "id": "manufacturer/safe-operation",
@@ -952,7 +952,7 @@
       "ranked": [
         {
           "id": "help/glossary",
-          "score": 101.722033
+          "score": 102.57087
         },
         {
           "id": "hospital/certificate-workflow",

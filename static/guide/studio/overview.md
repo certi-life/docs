@@ -12,7 +12,7 @@ Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운�
 
 1. [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access)에서 공식 로그인 화면과 안전한 접속 원칙을 확인합니다.
 2. [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management)에서 공개 가능한 자료를 선별하고 답변 근거를 관리합니다.
-3. [상담 메시지 번역](https://docs.certi.life/guide/products/ai-chatbot/message-translation)에서 언어 감지, 수신·발신 번역과 용어집 사용 방법을 확인합니다.
+3. [상담 메시지 번역](https://docs.certi.life/guide/products/ai-chatbot/message-translation)에서 언어 감지와 수신·발신 번역, 고유명사 확인 절차를 살펴봅니다.
 4. [상담 시나리오와 사람 연결](https://docs.certi.life/guide/studio/scenario-and-handoff)에서 고객 질문 흐름, 업무시간, 상담원 연결 조건을 정합니다.
 5. [상담 내역 조회와 화면 설정](https://docs.certi.life/guide/studio/conversation-history)에서 요약·분류와 상세 화면 구성을 확인합니다.
 6. [상담 기록 필드 설정](https://docs.certi.life/guide/studio/consultation-records)에서 전화상담 후처리 필드와 AI 자동 선택을 준비합니다.
