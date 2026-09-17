@@ -14,16 +14,16 @@
 
 ## 메뉴 구성
 
-| 그룹       | 메뉴         | 하는 일                                   | 화면 안내                                                                        |
-| -------- | ---------- | -------------------------------------- | ---------------------------------------------------------------------------- |
-|          | `운영 홈`     | 발송량, 전환, 활성 고객, 이탈 위험 등 운영 지표를 한눈에 봅니다 | 이 페이지                                                                        |
-| `일정 관리`  | `캘린더`      | 일정과 예약을 등록하고 관리합니다                     | [캘린더](https://docs.certi.life/guide/studio/screens/crm/calendar)             |
-| `고객 데이터` | `고객 목록`    | 고객을 등록하고 찾고 세그먼트로 저장합니다                | [고객 등록과 관리](https://docs.certi.life/guide/studio/screens/crm/customers)      |
-|          | `데이터 연동`   | 인증서·EMR 데이터에서 고객을 계속 가져옵니다             | [데이터 연동](https://docs.certi.life/guide/studio/screens/crm/connectors)        |
-| `메시지 운영` | `메시지 템플릿`  | `알림톡`, `브랜드 메시지`, `WhatsApp` 템플릿을 만듭니다 | [메시지 템플릿](https://docs.certi.life/guide/studio/screens/crm/templates)        |
-|          | `캠페인`      | 대상을 골라 메시지를 한 번 발송하거나 예약합니다            | [캠페인](https://docs.certi.life/guide/studio/screens/crm/campaigns)            |
-|          | `시나리오 자동화` | 조건에 맞는 고객에게 자동으로 메시지가 나가는 흐름을 만듭니다     | [시나리오 자동화](https://docs.certi.life/guide/studio/screens/crm/automation)      |
-|          | `발송 현황`    | 오늘 발송, 예약 대기, 발송 완료를 확인하고 예약을 취소합니다    | [캠페인](https://docs.certi.life/guide/studio/screens/crm/campaigns#발송-결과-확인하기) |
+| 그룹       | 메뉴         | 하는 일                                   | 화면 안내                                                                    |
+| -------- | ---------- | -------------------------------------- | ------------------------------------------------------------------------ |
+|          | `운영 홈`     | 발송량, 전환, 활성 고객, 이탈 위험 등 운영 지표를 한눈에 봅니다 | 이 페이지                                                                    |
+| `일정 관리`  | `캘린더`      | 일정과 예약을 등록하고 관리합니다                     | [캘린더](https://docs.certi.life/guide/studio/screens/crm/calendar)         |
+| `고객 데이터` | `고객 목록`    | 고객을 등록하고 찾고 세그먼트로 저장합니다                | [고객 등록과 관리](https://docs.certi.life/guide/studio/screens/crm/customers)  |
+|          | `데이터 연동`   | 인증서·EMR 데이터에서 고객을 계속 가져옵니다             | [데이터 연동](https://docs.certi.life/guide/studio/screens/crm/connectors)    |
+| `메시지 운영` | `메시지 템플릿`  | `알림톡`, `브랜드 메시지`, `WhatsApp` 템플릿을 만듭니다 | [메시지 템플릿](https://docs.certi.life/guide/studio/screens/crm/templates)    |
+|          | `캠페인`      | 대상을 골라 메시지를 한 번 발송하거나 예약합니다            | [캠페인](https://docs.certi.life/guide/studio/screens/crm/campaigns)        |
+|          | `시나리오 자동화` | 조건에 맞는 고객에게 자동으로 메시지가 나가는 흐름을 만듭니다     | [시나리오 자동화](https://docs.certi.life/guide/studio/screens/crm/automation)  |
+|          | `발송 현황`    | 오늘 발송, 예약 대기, 발송 완료를 확인하고 예약을 취소합니다    | [발송 현황](https://docs.certi.life/guide/studio/screens/crm/message-status) |
 
 ## 처음 메시지를 보내기까지
 
