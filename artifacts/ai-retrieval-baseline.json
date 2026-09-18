@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "1ca25c4153585bf3d80dbac24dc00a0524e52845d619a21c402e83ce472078a4",
+  "corpusSha256": "05224f1b6c6027066f598e1ccaf94c83731fa86807188641fdb095bdfd91318f",
   "fixtureSha256": "f4f9f471d04f063be670170374d8d4e51c3713c4422b066d9c8bd778c4b27665",
   "metrics": {
     "caseCount": 93,
@@ -164,7 +164,7 @@
         },
         {
           "id": "manufacturer/overview",
-          "score": 19.282616
+          "score": 19.264683
         },
         {
           "id": "getting-started/sign-in-directory",
@@ -230,7 +230,7 @@
         },
         {
           "id": "products/certificate/channels",
-          "score": 102.915547
+          "score": 102.883807
         },
         {
           "id": "hospital/screens/alimtalk",
@@ -622,7 +622,7 @@
       "ranked": [
         {
           "id": "manufacturer/overview",
-          "score": 125.587975
+          "score": 125.570041
         },
         {
           "id": "manufacturer/safe-operation",
@@ -1183,15 +1183,15 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/basic-info",
-          "score": 114.124015
+          "score": 113.343026
         },
         {
           "id": "studio/screens/chatbot/settings/ai-settings",
-          "score": 54.292454
+          "score": 54.035299
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
-          "score": 53.985889
+          "score": 53.728734
         }
       ],
       "top1Passed": true,
@@ -2008,15 +2008,15 @@
       "ranked": [
         {
           "id": "studio/screens/counsel/translation",
-          "score": 199.932438
+          "score": 199.515514
         },
         {
           "id": "products/ai-chatbot/message-translation",
-          "score": 137.461473
+          "score": 137.460505
         },
         {
           "id": "studio/screens/org-settings/translation",
-          "score": 127.375081
+          "score": 127.34334
         }
       ],
       "top1Passed": true,

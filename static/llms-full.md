@@ -311,13 +311,13 @@ CRM 메시징은 진료 전후 안내와 재방문 관리,
 인증서는 설치비와 월 이용료가 0원이고,
 [Hospital 로그인](https://hospital.certi.life/signin)으로 웹 화면에서 별도 설치 없이 씁니다.
 인증서 설정에서 인증서 양식을 먼저 만들고, 카카오톡으로 보내려면 환자의 개인정보 수집·제공 동의를 받습니다.
-병원 이름의 카카오톡 채널로 알림톡을 보내려면 알림톡 메뉴에서 채널 등록, 발신프로필 인증, 템플릿 검수를 마쳐야 합니다.
+인증서는 기본적으로 CertiLife 채널로 발송되며, 병원 이름의 카카오톡 채널로 보내는 자체 채널 발송은 플랜에 따라 다르므로 정확한 포함 범위는 [공식 가격 안내](https://certi.life/pricing)에서 확인하세요.
 
 준비 순서는 다음과 같습니다.
 
 1. [인증서 설정](https://docs.certi.life/guide/hospital/screens/certificate-settings)에서 인증서 양식을 먼저 만듭니다.
 2. 카카오톡으로 보내려면 환자의 개인정보 수집·제공 동의를 받습니다. 방법은 [인증서 발행](https://docs.certi.life/guide/hospital/screens/issue-certificate#환자-동의-받기)에 있습니다.
-3. 병원 이름의 카카오톡 채널로 알림톡을 보내려면 [알림톡](https://docs.certi.life/guide/hospital/screens/alimtalk) 메뉴에서 채널 등록, 발신프로필 인증, 템플릿 검수를 마칩니다.
+3. 병원 이름의 카카오톡 채널로 보내는 플랜이라면 [알림톡](https://docs.certi.life/guide/hospital/screens/alimtalk) 메뉴에서 채널 등록, 발신프로필 인증, 템플릿 검수를 마칩니다.
 
 #### 가격은 얼마인가요?
 
