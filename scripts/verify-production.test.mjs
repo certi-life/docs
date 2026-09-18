@@ -146,5 +146,5 @@ test('production verifier는 artifact에 없는 제목을 MDX frontmatter에서 
   assert.equal(loadDocNavigationTitle(projectRoot, 'intro'), 'CertiLife 소개');
   assert.equal(loadDocTitle(projectRoot, 'help/troubleshooting'), '문제 해결');
   assert.equal(loadDocFaqExpected(projectRoot, 'help/troubleshooting').length, 0);
-  assert.equal(loadDocFaqExpected(projectRoot, 'getting-started/buyer-faq').length, 14);
+  assert.equal(loadDocFaqExpected(projectRoot, 'getting-started/buyer-faq').length, 16);
 });

@@ -40,7 +40,8 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 ## 다음 문서
 
-- [발송 채널 선택하기](https://docs.certi.life/guide/products/certificate/channels)
+- [인증서 발행](https://docs.certi.life/guide/hospital/screens/issue-certificate) (Hospital 화면의 실제 발행 순서)
+- [인증서 발송 채널](https://docs.certi.life/guide/products/certificate/channels)
 - [인증서 전달 전 체크리스트](https://docs.certi.life/guide/products/certificate/delivery-checklist)
 - [CRM 메시징 알아보기](https://docs.certi.life/guide/products/crm-messaging)
 - [도입 문의](https://certi.life/contact)

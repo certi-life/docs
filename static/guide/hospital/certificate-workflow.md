@@ -38,6 +38,8 @@ Hospital 인증서 운영은 **준비 → 검토 → 전달 → 확인 → 예�
 4. 조직의 승인된 절차에 따라 필요한 조치를 수행합니다. 화면에서 인증서를 회수하는 방법은 [잘못 보낸 인증서 바로잡기](https://docs.certi.life/guide/hospital/screens/history#잘못-보낸-인증서-바로잡기)에 있습니다.
 5. 재발 방지를 위해 주소 대조, 이중 검토, 담당자 역할 분리 가운데 보완할 항목을 정합니다.
 
+안과의 [확인서 대량 발행](https://docs.certi.life/guide/hospital/screens/issue-certificate#확인서-대량-발행하기)에서 일부 환자만 발송에 실패했다면 엑셀 파일을 다시 올리지 마세요. 같은 확인서가 중복으로 발행됩니다. 발행 내역의 [알림 다시 보내기](https://docs.certi.life/guide/hospital/screens/history#알림-다시-보내기)에서 실패한 건만 다시 보냅니다.
+
 > **개인정보를 지원 자료에 남기지 마세요**
 >
 > 지원 요청용 캡처와 메모에는 이름, 전화번호, 이메일 주소, 인증서 식별 정보를 포함하지 않습니다. 현상을 설명할 때는 “전달 후 모바일에서 열리지 않음”처럼 개인정보 없는 표현을 사용하세요.
@@ -45,6 +47,6 @@ Hospital 인증서 운영은 **준비 → 검토 → 전달 → 확인 → 예�
 ## 함께 보기
 
 - [Hospital 계정 접속](https://docs.certi.life/guide/hospital/account-access)
-- [안전한 운영 가이드](https://docs.certi.life/guide/hospital/safe-operation)
+- [Hospital 안전한 운영 가이드](https://docs.certi.life/guide/hospital/safe-operation)
 - [CertiLife 인증서 소개](https://docs.certi.life/guide/products/certificate)
 - [Hospital 운영 가이드](https://docs.certi.life/guide/hospital/overview)

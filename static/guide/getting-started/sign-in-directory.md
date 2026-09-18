@@ -8,39 +8,42 @@ CertiLife는 사용자 역할과 서비스에 따라 접속 화면이 다릅니�
 
 ## 역할별 접속 경로
 
-| 사용자            | 공식 경로                                              | 공개 화면에서 확인할 수 있는 항목                   |
-| -------------- | -------------------------------------------------- | ------------------------------------- |
-| 병원 관리자         | [Hospital 로그인](https://hospital.certi.life/signin) | 관리자 아이디, 비밀번호, 회원가입, 아이디 찾기, 비밀번호 재설정 |
-| 제조사 관리자        | [제조사 로그인](https://manufacturer.certi.life/signin)  | ID, 비밀번호, 가입·제휴 문의                    |
-| AI 상담 운영자      | [Studio 로그인](https://studio.certi.life)            | Username, Password, 로그인               |
-| 데스크톱·모바일 앱 사용자 | [공식 다운로드](https://certi.life/download)             | Windows, macOS, Android, iOS 선택지      |
-| 도입 전 사용자       | [도입 문의](https://certi.life/contact)                | 서비스 도입 상담 신청                          |
+| 사용자              | 공식 경로                                                                                      | 공개 화면에서 확인할 수 있는 항목                   |
+| ---------------- | ------------------------------------------------------------------------------------------ | ------------------------------------- |
+| 병원 관리자와 직원(서브계정) | Hospital 로그인: [hospital.certi.life/signin](https://hospital.certi.life/signin)             | 아이디, 비밀번호, 회원가입, 아이디 찾기, 비밀번호 재설정     |
+| 제조사 관리자          | Manufacturer 로그인: [manufacturer.certi.life/signin](https://manufacturer.certi.life/signin) | 아이디(ID), 비밀번호, 로그인, 비밀번호 찾기, 가입·제휴 문의 |
+| AI 상담·CRM·콜봇 운영자 | Studio 로그인: [studio.certi.life](https://studio.certi.life)                                 | Username, Password, 로그인               |
+| 데스크톱·모바일 앱 사용자   | [공식 다운로드](https://certi.life/download)                                                     | Windows, macOS, Android, iOS 선택지      |
+| 도입 전 사용자         | [도입 문의](https://certi.life/contact)                                                        | 서비스 도입 상담 신청                          |
+
+Hospital, Manufacturer, Studio는 웹 브라우저에서 위 주소로 접속합니다. 앱 설치는 인증서 발행의 `제품 코드 한 번에 스캔하기`처럼 병원용 앱이 필요한 일부 기능과 환자용 앱에만 필요합니다.
 
 ## Hospital에 접속할 때
 
 1. 주소가 `hospital.certi.life/signin`인지 확인합니다.
-2. 병원 관리자 아이디와 비밀번호를 입력합니다.
+2. 아이디와 비밀번호를 입력합니다. 화면의 입력란 이름은 `아이디`입니다. `계정 관리`에서 만든 직원용 서브계정도 이 화면에서 로그인합니다.
 3. 계정이 없다면 로그인 화면의 **회원가입**을 선택합니다.
 4. 아이디를 잊었다면 **아이디 찾기**, 비밀번호를 잊었다면 **비밀번호 재설정**을 선택합니다.
 5. 계정 생성이나 제휴 관련 문의는 화면의 **제휴 문의**를 이용합니다.
 
-자세한 내용은 [Hospital 계정과 로그인](https://docs.certi.life/guide/hospital/account-access)을 확인하세요.
+자세한 내용은 [Hospital 계정 접속](https://docs.certi.life/guide/hospital/account-access)을 확인하세요.
 
 ## 제조사 관리자 화면에 접속할 때
 
 1. 주소가 `manufacturer.certi.life/signin`인지 확인합니다.
-2. 제조사 관리자 ID와 비밀번호를 입력합니다.
-3. 계정 또는 제휴 안내가 필요하면 화면의 **가입·제휴 문의**를 이용합니다.
+2. 아이디(ID)와 비밀번호를 입력합니다.
+3. 비밀번호를 잊었다면 **비밀번호 찾기**를 선택합니다.
+4. 계정 또는 제휴 안내가 필요하면 화면의 **가입·제휴 문의**를 이용합니다.
 
 제조사 계정을 병원 계정이나 Studio 계정과 혼동하지 마세요. 동일한 담당자라도 역할에 따라 별도 계정이 필요할 수 있으므로, 확인되지 않은 계정 정보를 반복 입력하기보다 조직 담당자에게 먼저 문의하세요. 자세한 내용은 [Manufacturer 계정 접속](https://docs.certi.life/guide/manufacturer/account-access)을 확인하세요.
 
 ## Studio에 접속할 때
 
-1. 주소가 `studio.certi.life`인지 확인합니다.
+1. 주소가 `studio.certi.life`인지 확인합니다. 로그인 화면의 주소는 `studio.certi.life/login`입니다.
 2. 발급받은 Username과 Password를 입력합니다.
 3. 로그인 정보가 없거나 작동하지 않으면 비밀번호를 공유받지 말고 조직의 CertiLife 담당자에게 계정 상태를 확인합니다.
 
-자세한 운영 준비는 [Studio 계정과 로그인](https://docs.certi.life/guide/studio/account-access)과 [지식 관리](https://docs.certi.life/guide/studio/knowledge-management)를 확인하세요.
+Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 챗봇·상담·CRM·콜봇을 맡은 담당자가 씁니다. 계정 안내는 [Studio 계정 접속](https://docs.certi.life/guide/studio/account-access), 운영 준비는 [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management)를 확인하세요.
 
 > **계정 정보를 보호하세요**
 >

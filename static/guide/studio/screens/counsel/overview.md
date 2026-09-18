@@ -1,6 +1,6 @@
 # 상담 - 채팅 상담 화면 한눈에 보기
 
-> Studio 상담 메뉴의 화면 구성(상담 목록, 상담 백과사전, 대화창, 고객정보 패널)과 상담원의 하루 업무 흐름, 하고 싶은 일에 따라 어느 안내를 보면 되는지 정리합니다.
+> Studio 상담 메뉴의 화면 구성(상담 목록, 상담 백과사전, 대화창, 고객 정보 패널)과 상담원의 하루 업무 흐름, 하고 싶은 일에 따라 어느 안내를 보면 되는지 정리합니다.
 
 [사람이 읽는 원문](https://docs.certi.life/guide/studio/screens/counsel/overview)
 
@@ -14,8 +14,8 @@
 | ----- | -------------------------------------------- | ----------------------- |
 | 왼쪽    | 상태 탭(`대기`, `진행중`, `완료`, `종료`), 필터, 검색, 상담 목록 | 응대할 상담을 찾습니다            |
 | 가운데   | `상담 백과사전`                                    | 답변에 쓸 내용을 찾아 입력창에 넣습니다  |
-| 오른쪽   | 대화창, 언어 바, 입력창                               | 고객과 대화하고 번역합니다          |
-| 오른쪽 끝 | `고객정보`, `서티 AI`, `페르소나` 탭                    | 고객이 누구인지 확인하고 AI에게 묻습니다 |
+| 오른쪽   | 대화창, 언어 바(고객·상담사 언어가 표시되는 줄), 입력창            | 고객과 대화하고 번역합니다          |
+| 오른쪽 끝 | `고객 정보`, `서티 AI`, `페르소나` 탭                   | 고객이 누구인지 확인하고 AI에게 묻습니다 |
 
 모바일에서는 `상담 백과사전`이 보이지 않고, 가로모드는 지원하지 않습니다.
 
@@ -24,7 +24,7 @@
 1. **출근하면** `대기` 탭에서 밤사이 들어온 상담을 확인합니다. → [응대할 상담 찾기](https://docs.certi.life/guide/studio/screens/counsel/inbox)
 2. **상담을 열고** `바로 상담 시작`을 눌러 응대를 시작합니다. → [상담 시작하고 마무리하기](https://docs.certi.life/guide/studio/screens/counsel/handle)
 3. **답변할 때** `상담 백과사전`에서 안내 문구를 찾아 넣고, 외국어 고객이면 번역해 보냅니다. → [빠르고 정확하게 답하기](https://docs.certi.life/guide/studio/screens/counsel/reply-tools), [외국어 고객과 대화하기](https://docs.certi.life/guide/studio/screens/counsel/translation)
-4. **고객이 누구인지** 오른쪽 `고객정보`에서 지난 상담을 확인합니다. → [고객 정보 확인하고 활용하기](https://docs.certi.life/guide/studio/screens/counsel/customer)
+4. **고객이 누구인지** 오른쪽 `고객 정보`에서 지난 상담을 확인합니다. → [고객 정보 확인하고 활용하기](https://docs.certi.life/guide/studio/screens/counsel/customer)
 5. **내가 답하기 어려우면** `이관`으로 다른 상담원에게 넘깁니다. → [다른 상담원에게 넘기기](https://docs.certi.life/guide/studio/screens/counsel/handle#다른-상담원에게-넘기기)
 6. **끝나면** `상담완료`를 누르고 내용을 정리해 저장합니다. → [상담 마무리하기](https://docs.certi.life/guide/studio/screens/counsel/handle#상담-마무리하기)
 

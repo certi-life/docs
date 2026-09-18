@@ -17,7 +17,14 @@
 
 ## 안전한 계정과 접속
 
-본인에게 발급된 계정만 사용하고 로그인 정보를 공유하지 마세요. Hospital은 [공식 Hospital 로그인](https://hospital.certi.life/signin), Manufacturer는 [공식 Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio는 [공식 Studio 로그인](https://studio.certi.life)을 이용합니다. 주소 표시줄의 도메인을 확인한 후 정보를 입력하고, 공식 주소와 다른 페이지가 로그인이나 설치를 요구하면 진행하지 마세요. 다운로드가 필요하다면 [공식 다운로드 페이지](https://certi.life/download)를 이용합니다.
+본인에게 발급된 계정만 사용하고 로그인 정보를 공유하지 마세요. 공식 로그인 주소는 다음과 같습니다. 직원 공지에 붙여 넣을 때는 주소 문자열을 그대로 쓰세요.
+
+- Hospital: `hospital.certi.life/signin` — [Hospital 로그인](https://hospital.certi.life/signin)
+- Manufacturer: `manufacturer.certi.life/signin` — [Manufacturer 로그인](https://manufacturer.certi.life/signin)
+- Studio: `studio.certi.life` — [Studio 로그인](https://studio.certi.life)
+- 다운로드: `certi.life/download` — [공식 다운로드 페이지](https://certi.life/download)
+
+주소 표시줄의 도메인이 `certi.life`로 끝나는지 확인한 후 정보를 입력하고, 공식 주소와 다른 페이지가 로그인이나 설치를 요구하면 진행하지 마세요.
 
 공용 기기나 화면 공유 중에는 로그인 상태와 개인정보 노출에 특히 주의하세요. 사용하지 않는 화면은 닫고, 주변 사람이나 회의 참석자에게 고객·환자 정보가 보이지 않는지 확인합니다. 계정 관련 이상이 의심되면 비밀번호나 인증 코드를 문의 메시지에 보내지 말고 조직의 담당 경로를 통해 알리세요.
 
@@ -53,8 +60,10 @@ AI 상담은 일반 안내와 반복 문의 대응을 지원하지만 의료진�
 
 ## 공식 정책과 문의
 
-- [이용약관](https://abiding-door-957.notion.site/2025-07-2338672510d0800d818cf3d1ca7e7ba7)
-- [개인정보처리방침](https://abiding-door-957.notion.site/2026-04-2958672510d08077b995f8e47a076aaf)
+이용약관과 개인정보처리방침은 CertiLife가 Notion에 게시한 문서입니다. 링크를 누르면 `certi.life`가 아니라 `abiding-door-957.notion.site` 도메인으로 이동합니다. 이 주소는 공식 페이지에서 연결한 공개 문서이며, 로그인 정보나 개인정보 입력을 요구하지 않습니다.
+
+- [이용약관](https://abiding-door-957.notion.site/2025-07-2338672510d0800d818cf3d1ca7e7ba7) (Notion, 2025-07 판)
+- [개인정보처리방침](https://abiding-door-957.notion.site/2026-04-2958672510d08077b995f8e47a076aaf) (Notion, 2026-04 판)
 - [도입 및 서비스 문의](https://certi.life/contact)
 
 정책의 적용이나 개인정보 처리에 관한 판단이 필요하면 공개 도움말만으로 결론 내리지 말고 최신 공식 정책과 조직의 담당 안내를 확인하세요.

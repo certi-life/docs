@@ -17,7 +17,7 @@
 | `네이버 톡톡`                        | 조직에 등록된 채널을 골라 `연결하기`          | 조직의 채널 설정에 네이버 톡톡 등록         |
 | `Instagram`, `LINE`, `WhatsApp` | `연동 채널`에서 계정을 고릅니다             | 조직의 채널 설정에 해당 계정 연동          |
 
-`WeChat`은 화면에 `준비중`으로 표시됩니다. 메신저 계정을 조직에 새로 연동하는 작업은 이 화면이 아니라 [설정(조직 설정)의 `채널 설정`](https://docs.certi.life/guide/studio/screens/org-settings/overview)에서 합니다. 이 화면의 목록에는 이미 연동된 계정만 나타납니다.
+`WeChat`은 화면에 `준비중`으로 표시됩니다. 메신저 계정을 조직에 새로 연동하는 작업은 이 화면이 아니라 설정(조직 설정)의 `채널 설정`에서 합니다. 절차는 [채널 연동](https://docs.certi.life/guide/studio/screens/org-settings/channels)을 보세요. 이 화면의 목록에는 이미 연동된 계정만 나타납니다.
 
 채널을 바꾼 뒤에는 왼쪽 아래 `저장`을 누릅니다.
 
@@ -82,7 +82,7 @@
 | `카카오톡`   | 카카오 스킬 요청이 오면 상담원 연결 안내를 응답합니다            |
 | `네이버 톡톡` | 고객이 톡톡을 시작하거나 메시지를 보내면 챗봇 없이 상담 대기로 시작합니다 |
 
-상담원이 응대할 수 없는 시간에도 상담 대기로 들어오므로, 켜기 전에 상담 가능 시간과 [상담원 연결 정책](https://docs.certi.life/guide/products/ai-chatbot/handoff-policy)을 먼저 정해 두세요.
+상담원이 응대할 수 없는 시간에도 상담 대기로 들어오므로, 켜기 전에 상담 가능 시간과 [상담원 연결 정책](https://docs.certi.life/guide/products/ai-chatbot/handoff-policy)을 먼저 정해 두세요. 챗봇이 답하다가 고객이 원할 때만 사람에게 넘기려면 이 설정 대신 카드 블럭의 버튼에 [`상담사 연결` 동작](https://docs.certi.life/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)을 넣습니다.
 
 ## 연결한 뒤에는
 

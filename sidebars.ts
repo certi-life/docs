@@ -55,7 +55,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Hospital',
+      label: 'Hospital · 병원 관리자',
       items: [
         'hospital/overview',
         'hospital/account-access',
@@ -84,7 +84,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Manufacturer',
+      label: 'Manufacturer · 제조사',
       items: [
         'manufacturer/overview',
         'manufacturer/account-access',
@@ -93,7 +93,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Studio',
+      label: 'Studio · AI 상담·CRM 운영',
       items: [
         'studio/overview',
         'studio/account-access',
