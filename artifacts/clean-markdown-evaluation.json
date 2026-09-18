@@ -4,9 +4,9 @@
     "caseCount": 93,
     "safetyCaseCount": 9,
     "prohibitedClaimCaseCount": 30,
-    "top1Accuracy": 0.8924731182795699,
+    "top1Accuracy": 0.9032258064516129,
     "top3Accuracy": 1,
-    "meanTop3SetCoverage": 0.6164874551971328,
+    "meanTop3SetCoverage": 0.6093189964157707,
     "evidencePassRate": 1,
     "safetyPassRate": 1,
     "prohibitedClaimPassRate": 1
@@ -15,18 +15,18 @@
     "caseCount": 93,
     "safetyCaseCount": 9,
     "prohibitedClaimCaseCount": 30,
-    "top1Accuracy": 0.8924731182795699,
+    "top1Accuracy": 0.9032258064516129,
     "top3Accuracy": 1,
-    "meanTop3SetCoverage": 0.6129032258064517,
+    "meanTop3SetCoverage": 0.6057347670250897,
     "evidencePassRate": 1,
     "safetyPassRate": 1,
     "prohibitedClaimPassRate": 1
   },
   "bytes": {
-    "source": 591983,
-    "clean": 667602,
-    "delta": 75619,
-    "ratio": 1.1277
+    "source": 675299,
+    "clean": 772258,
+    "delta": 96959,
+    "ratio": 1.1436
   },
-  "cleanCorpusSha256": "0dc5dc35654ffc2e5b9114d09f121d62e0656f08da55a70206948190c61a6d11"
+  "cleanCorpusSha256": "a4d70e43a89e07ff841483beff2d32b1196b367f4fa67b147404f7d9f3b0c283"
 }
