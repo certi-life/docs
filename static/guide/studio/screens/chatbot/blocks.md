@@ -1,22 +1,23 @@
 # 블럭과 버튼 - 챗봇 메시지를 카드와 버튼으로 꾸미기
 
-> Studio 챗봇 블럭 디자이너에서 텍스트, 텍스트 카드, 기본 카드, 캐러셀, 리스트 카드, 상품 카드, 고객 정보 수집 블럭을 고르는 기준과 글자 수·이미지 크기 제한, 버튼과 퀵 리플라이의 동작(메시지 전송, 플로우 이동, 웹 링크, 전화 걸기, 채널 추가, 상담사 연결, 카카오싱크 가입)을 정하는 방법을 안내합니다.
+> Studio 챗봇 블럭 디자이너에서 텍스트, 텍스트 카드, 기본 카드, 캐러셀, 리스트 카드, 상품 카드, 고객 정보 수집 블럭을 고르는 기준과 글자 수·이미지 크기 제한, 버튼과 퀵 리플라이의 동작(메시지 전송, 플로우 이동, 웹 링크, 전화 걸기, 채널 추가, 상담사 연결, 카카오싱크 가입)을 정하는 방법과 채팅 상담원 연결 버튼을 다는 방법을 안내합니다.
 
 [사람이 읽는 원문](https://docs.certi.life/guide/studio/screens/chatbot/blocks)
 
-챗봇이 보내는 메시지 한 덩어리를 **블럭**이라고 합니다. 글만 보낼 수도 있고, 이미지가 있는 카드나 옆으로 넘기는 카드 묶음을 보낼 수도 있습니다. 블럭에는 **버튼**을 달 수 있고, 메시지 아래에는 **퀵 리플라이**를 달 수 있습니다. 시나리오와 플로우 어디에서나 같은 `블럭 디자이너`로 만듭니다.
+챗봇이 보내는 메시지 한 덩어리를 **블럭**이라고 합니다. 글만 보낼 수도 있고, 이미지가 있는 카드나 옆으로 넘기는 카드 묶음을 보낼 수도 있습니다. 블럭에는 **버튼**을 달 수 있고, 메시지 아래에는 **퀵 리플라이**를 달 수 있습니다. 고객이 사람과 대화하고 싶을 때 누르는 상담원 연결 버튼(동작 이름 `상담사 연결`)도 여기서 답니다. 시나리오와 플로우 어디에서나 같은 `블럭 디자이너`로 만듭니다.
 
 **위치:** 챗봇 > (챗봇 선택) > 시나리오 > (시나리오 선택) > 블럭 디자이너
 
 ## 이럴 때 사용하세요
 
-| 하려는 일                      | 가는 곳                                                                                   |
-| -------------------------- | -------------------------------------------------------------------------------------- |
-| 어떤 블럭을 써야 할지 모를 때          | [블럭 고르기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#블럭-고르기)           |
-| 이미지가 올라가지 않을 때             | [이미지 넣기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#이미지-넣기)           |
-| 버튼을 누르면 홈페이지나 전화로 연결하기     | [버튼 동작 정하기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)     |
-| 고객이 자주 고르는 선택지를 메시지 아래에 달기 | [퀵 리플라이 달기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#퀵-리플라이-달기)     |
-| 상담 전에 이름과 연락처 받기           | [고객 정보 수집 블럭](https://docs.certi.life/guide/studio/screens/chatbot/blocks#고객-정보-수집-블럭) |
+| 하려는 일                            | 가는 곳                                                                                         |
+| -------------------------------- | -------------------------------------------------------------------------------------------- |
+| 어떤 블럭을 써야 할지 모를 때                | [블럭 고르기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#블럭-고르기)                 |
+| 이미지가 올라가지 않을 때                   | [이미지 넣기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#이미지-넣기)                 |
+| 버튼을 누르면 홈페이지나 전화로 연결하기           | [버튼 동작 정하기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)           |
+| 고객이 "상담원 연결해 주세요"라고 할 때 누를 버튼 달기 | [버튼 동작 정하기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)의 `상담사 연결` |
+| 고객이 자주 고르는 선택지를 메시지 아래에 달기       | [퀵 리플라이 달기](https://docs.certi.life/guide/studio/screens/chatbot/blocks#퀵-리플라이-달기)           |
+| 상담 전에 이름과 연락처 받기                 | [고객 정보 수집 블럭](https://docs.certi.life/guide/studio/screens/chatbot/blocks#고객-정보-수집-블럭)       |
 
 ## 블럭 고르기
 
@@ -76,7 +77,7 @@
 
 > **콜봇의 상담사 연결과는 다릅니다**
 >
-> 여기의 `상담사 연결`은 채팅 상담을 사람에게 넘기는 버튼입니다. 전화를 상담사에게 넘기는 설정은 콜봇의 [도구](https://docs.certi.life/guide/studio/screens/callbot/tools)에 있습니다.
+> 여기의 `상담사 연결`은 채팅 상담을 사람에게 넘기는 버튼입니다. 전화를 상담사에게 넘기는 설정은 콜봇의 [도구](https://docs.certi.life/guide/studio/screens/callbot/tools)에 있습니다. 버튼 없이 특정 채널을 처음부터 사람이 받게 하려면 [채널 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기)의 `상담원 바로 연결`을 켭니다. 챗봇이 쉬는 시간의 안내는 [작동시간](https://docs.certi.life/guide/studio/screens/chatbot/settings/operating-hours)의 `미작동 시나리오`에서 정합니다.
 
 ## 퀵 리플라이 달기
 

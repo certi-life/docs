@@ -95,4 +95,4 @@
 ## 함께 보기
 
 - [구매/주문 관리](https://docs.certi.life/guide/hospital/screens/orders#전자계약-확인하기)의 전자계약
-- [안전한 Hospital 운영](https://docs.certi.life/guide/hospital/safe-operation)
+- [Hospital 안전한 운영 가이드](https://docs.certi.life/guide/hospital/safe-operation)

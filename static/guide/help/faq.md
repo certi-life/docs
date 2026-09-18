@@ -10,7 +10,11 @@ CertiLife는 메디컬 인증서를 기반으로 인증서, AI 상담, CRM 메�
 
 ## 어떤 문서부터 읽어야 하나요?
 
-처음 방문했다면 [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원 사용자는 [Hospital 안내](https://docs.certi.life/guide/hospital/overview), 제조사 사용자는 [Manufacturer 안내](https://docs.certi.life/guide/manufacturer/overview), Studio 사용자는 [Studio 안내](https://docs.certi.life/guide/studio/overview), 도입 검토 담당자는 [가격 안내](https://certi.life/pricing)와 [도입 문의](https://certi.life/contact)에서 시작하는 것이 좋습니다.
+처음 방문했다면 [내게 맞는 가이드 찾기](https://docs.certi.life/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원에서 인증서 발행·환자 관리·계정을 맡은 사용자는 [Hospital 운영 가이드](https://docs.certi.life/guide/hospital/overview), 병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅)는 [Studio 운영 가이드](https://docs.certi.life/guide/studio/overview), 제조사 사용자는 [Manufacturer 안내](https://docs.certi.life/guide/manufacturer/overview), 도입 검토 담당자는 [병원 도입 구매 FAQ](https://docs.certi.life/guide/getting-started/buyer-faq)와 [가격 안내](https://certi.life/pricing)에서 시작하는 것이 좋습니다. Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, Hospital의 `상담/챗봇 관리` 메뉴에서 새 탭으로 열립니다.
+
+## 한의원이나 목록에 없는 진료과도 쓸 수 있나요?
+
+네. 한의원, 이비인후과처럼 Hospital의 진료과 목록(치과, 안과, 성형외과, 피부과, 내과, 정형외과, 수의과)에 없는 의료기관도 같은 병원용 서비스를 씁니다. 인증서는 진료과와 관계없이 쓰는 `병원` 그룹으로 발행하며, 발행 순서는 [인증서 발행](https://docs.certi.life/guide/hospital/screens/issue-certificate)의 "그 밖의 진료과" 경로를 따릅니다. 인증서 양식은 [인증서 설정](https://docs.certi.life/guide/hospital/screens/certificate-settings)에서 먼저 만듭니다.
 
 ## Hospital, Manufacturer와 Studio는 어디에서 접속하나요?
 
@@ -30,7 +34,7 @@ CertiLife는 메디컬 인증서를 기반으로 인증서, AI 상담, CRM 메�
 
 ## AI 상담은 어떤 채널에서 사용할 수 있나요?
 
-CertiLife AI 상담은 카카오톡, 네이버 톡톡과 웹챗봇에서 활용할 수 있습니다. 조직마다 실제 이용 채널과 계약 범위는 다를 수 있으므로, 공개 소개에서 확인한 후보 채널을 정리한 뒤 [AI 상담 안내](https://docs.certi.life/guide/products/ai-chatbot)와 [도입 문의](https://certi.life/contact)에서 적용 범위를 확인하세요.
+웹챗, 카카오톡, 네이버 톡톡에 더해 Studio의 [채널 연동](https://docs.certi.life/guide/studio/screens/org-settings/channels)에서 Instagram, LINE, WhatsApp을 연결할 수 있습니다. 위챗은 인증서 발송에만 쓰고, 상담 채널로는 화면에 "준비중"으로 표시됩니다. 조직마다 실제 이용 채널과 계약 범위는 다를 수 있으므로, 공개 소개에서 확인한 후보 채널을 정리한 뒤 [AI 상담 안내](https://docs.certi.life/guide/products/ai-chatbot)와 [도입 문의](https://certi.life/contact)에서 적용 범위를 확인하세요.
 
 ## AI 상담 도입 전에 무엇을 준비해야 하나요?
 
@@ -42,7 +46,7 @@ CertiLife AI 상담은 카카오톡, 네이버 톡톡과 웹챗봇에서 활용�
 
 ## AI 채팅봇과 AI 음성봇은 어떻게 다른가요?
 
-AI 채팅봇은 카카오톡·네이버 톡톡·웹챗봇의 반복 채팅 문의를 지원하고, AI 음성봇은 점심시간·휴일·업무시간 외 전화 문의 대응을 위한 선택지입니다. 두 서비스를 함께 사용할 수도 있지만 실제 구성과 비용은 조직별 이용 범위에 따라 달라질 수 있으므로 [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact)와 [공식 가격 안내](https://certi.life/pricing)를 확인하세요.
+AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반복 채팅 문의를 지원하고, AI 음성봇은 점심시간·휴일·업무시간 외 전화 문의 대응을 위한 선택지입니다. 음성봇은 가격 페이지에서 `음성봇`, Studio 왼쪽 메뉴에서 `콜봇`이라는 이름으로 보입니다. 두 서비스를 함께 사용할 수도 있지만 실제 구성과 비용은 조직별 이용 범위에 따라 달라질 수 있으므로 [요금제와 도입 문의](https://docs.certi.life/guide/getting-started/plans-and-contact)와 [공식 가격 안내](https://certi.life/pricing)를 확인하세요.
 
 ## AI 상담이 의료진을 대신하나요?
 

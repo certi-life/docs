@@ -10,37 +10,39 @@ Studio는 고객 상담을 **준비하고(챗봇·콜봇·백과사전), 응대�
 
 ## 메뉴별로 하는 일
 
-| 메뉴                | 한 줄 설명                                 | 화면 안내                                                                           |
-| ----------------- | -------------------------------------- | ------------------------------------------------------------------------------- |
-| `인증서`             | 병원 관리 화면을 Studio 안에서 열어 인증서 업무를 봅니다    | [인증서](https://docs.certi.life/guide/studio/screens/certificates)                |
-| `CRM`             | 고객 데이터를 모으고 캠페인·자동화 메시지를 운영합니다         | [CRM](https://docs.certi.life/guide/studio/screens/crm/overview)                |
-| `챗봇`              | 채팅 문의에 자동으로 답하는 챗봇을 만들고 다듬습니다          | [챗봇](https://docs.certi.life/guide/studio/screens/chatbot/overview)             |
-| `콜봇`              | 전화를 받는 AI 상담원(에이전트)을 만들고 번호를 연결합니다     | [콜봇](https://docs.certi.life/guide/studio/screens/callbot/overview)             |
-| `상담`              | 들어온 채팅 상담에 상담원이 직접 응대합니다               | [상담](https://docs.certi.life/guide/studio/screens/counsel/overview)             |
-| `전화상담`            | 콜봇과 상담사의 통화를 실시간으로 보고 응대합니다            | [전화상담](https://docs.certi.life/guide/studio/screens/phone-counsel)              |
-| `상담 내역`           | 지난 상담을 검색하고 요약·결과를 확인하고 내보냅니다          | [상담 내역](https://docs.certi.life/guide/studio/screens/conversation-history)      |
-| `통계`              | 전화 응대 현황과 유입·직원별 통계를 봅니다               | [통계](https://docs.certi.life/guide/studio/screens/stats)                        |
-| `백과사전`            | 챗봇·콜봇·상담원이 함께 쓰는 조직의 지식 문서를 관리합니다      | [백과사전](https://docs.certi.life/guide/studio/screens/encyclopedia)               |
-| `AI`              | AI와 대화하며 문서를 작성·검토하고 챗봇 자료로 반영합니다      | [AI](https://docs.certi.life/guide/studio/screens/ai)                           |
-| 설정 (왼쪽 아래 톱니 아이콘) | 상담 시간, 알림, 번역, 채널 연동 등 조직 공통 설정을 관리합니다 | [설정(조직 설정)](https://docs.certi.life/guide/studio/screens/org-settings/overview) |
+| 메뉴                | 한 줄 설명                                                                    | 화면 안내                                                                           |
+| ----------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `인증서`             | 병원 관리 화면을 Studio 안에서 열어 인증서 업무를 봅니다                                       | [인증서](https://docs.certi.life/guide/studio/screens/certificates)                |
+| `CRM`             | 고객 데이터를 모으고 캠페인·자동화 메시지를 운영합니다                                            | [CRM](https://docs.certi.life/guide/studio/screens/crm/overview)                |
+| `챗봇`              | 채팅 문의에 자동으로 답하는 챗봇을 만들고 다듬습니다                                             | [챗봇](https://docs.certi.life/guide/studio/screens/chatbot/overview)             |
+| `콜봇`              | 전화를 받는 AI 상담원(에이전트)을 만들고 번호를 연결합니다. 제품 소개와 요금제에서 AI 음성봇이라고 부르는 것이 이 메뉴입니다 | [콜봇](https://docs.certi.life/guide/studio/screens/callbot/overview)             |
+| `상담`              | 들어온 채팅 상담에 상담원이 직접 응대합니다                                                  | [상담](https://docs.certi.life/guide/studio/screens/counsel/overview)             |
+| `전화상담`            | 콜봇과 상담사의 통화를 실시간으로 보고 응대합니다                                               | [전화상담](https://docs.certi.life/guide/studio/screens/phone-counsel)              |
+| `상담 내역`           | 지난 상담을 검색하고 요약·결과를 확인하고 내보냅니다                                             | [상담 내역](https://docs.certi.life/guide/studio/screens/conversation-history)      |
+| `통계`              | 전화 응대 현황과 유입·직원별 통계를 봅니다                                                  | [통계](https://docs.certi.life/guide/studio/screens/stats)                        |
+| `백과사전`            | 챗봇·콜봇·상담원이 함께 쓰는 조직의 지식 문서를 관리합니다                                         | [백과사전](https://docs.certi.life/guide/studio/screens/encyclopedia)               |
+| `AI`              | AI와 대화하며 문서를 작성·검토하고 챗봇 자료로 반영합니다                                         | [AI](https://docs.certi.life/guide/studio/screens/ai)                           |
+| 설정 (왼쪽 아래 톱니 아이콘) | 상담 시간, 알림, 번역, 채널 연동 등 조직 공통 설정을 관리합니다                                    | [설정(조직 설정)](https://docs.certi.life/guide/studio/screens/org-settings/overview) |
 
 > **메뉴가 안 보인다면**
 >
-> 모든 조직에 모든 메뉴가 보이는 것은 아닙니다. `인증서`는 병원 계정으로 직접 로그인했을 때만 보이고, `CRM`, `콜봇`, `전화상담`, `통계`는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 필요한 메뉴가 없다면 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)로 확인하세요.
+> 모든 조직에 모든 메뉴가 보이는 것은 아닙니다. `인증서`는 병원 계정으로 직접 로그인했을 때만 보이고, `CRM`, `콜봇`, `전화상담`, `통계`는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 필요한 메뉴가 없다면 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)로 확인하세요. Hospital에서 인증서 업무를 보러 넘어온 병원 직원은 `인증서` 메뉴만 쓰면 됩니다. 나머지 메뉴는 상담·마케팅 업무용입니다.
 
 ## 하고 싶은 일로 찾기
 
-| 하고 싶은 일                             | 가야 할 곳                                                                                                                                                               |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 채팅 문의에 자동으로 답하게 하고 싶어요              | [챗봇 메뉴 시작하기](https://docs.certi.life/guide/studio/screens/chatbot/overview)                                                                                          |
-| 전화 문의를 AI가 받게 하고 싶어요                | [콜봇](https://docs.certi.life/guide/studio/screens/callbot/overview)                                                                                                  |
-| 챗봇이 참고할 자료를 등록하고 싶어요                | [백과사전](https://docs.certi.life/guide/studio/screens/encyclopedia), [AI 학습자료 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials)    |
-| 지금 들어온 채팅 상담에 답하고 싶어요               | [상담](https://docs.certi.life/guide/studio/screens/counsel/overview)                                                                                                  |
-| 외국어로 문의한 고객과 대화하고 싶어요               | [외국어 고객과 대화하기](https://docs.certi.life/guide/studio/screens/counsel/translation), [상담 메시지 번역](https://docs.certi.life/guide/products/ai-chatbot/message-translation) |
-| 지난주 상담을 찾아보거나 파일로 내려받고 싶어요          | [상담 내역](https://docs.certi.life/guide/studio/screens/conversation-history)                                                                                           |
-| 상담 가능 시간이나 알림을 바꾸고 싶어요              | [설정(조직 설정)](https://docs.certi.life/guide/studio/screens/org-settings/overview)                                                                                      |
-| 카카오톡·Instagram 등 채널 계정을 새로 연동하고 싶어요 | [설정의 채널 연동](https://docs.certi.life/guide/studio/screens/org-settings/channels)                                                                                      |
-| 고객에게 알림톡·브랜드 메시지를 보내고 싶어요           | [CRM](https://docs.certi.life/guide/studio/screens/crm/overview)                                                                                                     |
+| 하고 싶은 일                              | 가야 할 곳                                                                                                                                                                                                              |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 채팅 문의에 자동으로 답하게 하고 싶어요               | [챗봇 메뉴 시작하기](https://docs.certi.life/guide/studio/screens/chatbot/overview)                                                                                                                                         |
+| 전화 문의를 AI가 받게 하고 싶어요                 | [콜봇](https://docs.certi.life/guide/studio/screens/callbot/overview)                                                                                                                                                 |
+| 콜봇이 넘긴 전화를 받고 싶어요, 대기 중인 콜을 당겨받고 싶어요 | [전화상담](https://docs.certi.life/guide/studio/screens/phone-counsel)                                                                                                                                                  |
+| 챗봇이 참고할 자료를 등록하고 싶어요                 | [백과사전](https://docs.certi.life/guide/studio/screens/encyclopedia), [AI 학습자료 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials)                                                   |
+| 지금 들어온 채팅 상담에 답하고 싶어요                | [상담](https://docs.certi.life/guide/studio/screens/counsel/overview)                                                                                                                                                 |
+| 고객이 사람과 대화하고 싶을 때 상담원에게 연결하고 싶어요     | [블럭과 버튼](https://docs.certi.life/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)의 `상담사 연결`, [채널 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기)의 `상담원 바로 연결` |
+| 외국어로 문의한 고객과 대화하고 싶어요                | [외국어 고객과 대화하기](https://docs.certi.life/guide/studio/screens/counsel/translation), [상담 메시지 번역](https://docs.certi.life/guide/products/ai-chatbot/message-translation)                                                |
+| 지난주 상담을 찾아보거나 파일로 내려받고 싶어요           | [상담 내역](https://docs.certi.life/guide/studio/screens/conversation-history)                                                                                                                                          |
+| 상담 가능 시간이나 알림을 바꾸고 싶어요               | [설정(조직 설정)](https://docs.certi.life/guide/studio/screens/org-settings/overview)                                                                                                                                     |
+| 카카오톡·Instagram 등 채널 계정을 새로 연동하고 싶어요  | [설정의 채널 연동](https://docs.certi.life/guide/studio/screens/org-settings/channels)                                                                                                                                     |
+| 고객에게 알림톡·브랜드 메시지를 보내고 싶어요            | [CRM](https://docs.certi.life/guide/studio/screens/crm/overview)                                                                                                                                                    |
 
 ## 화면 공통 구성
 

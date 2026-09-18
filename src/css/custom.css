@@ -310,6 +310,10 @@ time {
   background: var(--color-paper-2);
 }
 
+.alert [class*='admonitionHeading'] {
+  text-transform: none;
+}
+
 .alert {
   border: var(--rule-thin) solid var(--color-rule);
   border-inline-start-width: var(--rule-thin);
@@ -382,6 +386,15 @@ time {
     width: 100%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    /* 가로 스크롤이 있음을 오른쪽 그림자로 알린다 */
+    background:
+      linear-gradient(90deg, var(--ifm-background-color) 40%, rgba(255, 255, 255, 0)) left,
+      linear-gradient(270deg, var(--ifm-background-color) 40%, rgba(255, 255, 255, 0)) right,
+      radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0)) left,
+      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0)) right;
+    background-repeat: no-repeat;
+    background-size: 3rem 100%, 3rem 100%, 1rem 100%, 1rem 100%;
+    background-attachment: local, local, scroll, scroll;
   }
 
   .markdown table thead,

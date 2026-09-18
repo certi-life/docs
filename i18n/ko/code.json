@@ -42,5 +42,17 @@
   "theme.SearchPage.noResultsText": {
     "message": "일치하는 문서를 찾지 못했습니다. 다른 제품명·문제·행동 키워드로 검색해 보세요.",
     "description": "검색 결과가 없을 때 안내"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "문서 하단 최종 수정 날짜 뒤에 붙는 문구(조사 없이 날짜만)"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " ({user})",
+    "description": "문서 하단 최종 수정자 표시"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "최종 수정:{atDate}{byUser}",
+    "description": "문서 하단 최종 수정 표시 문장"
   }
 }

@@ -62,8 +62,8 @@ const hospitalPath = {
 };
 
 const connectedPaths = [
-  {title: '제조사·브랜드', description: '제품 정보와 병원 파트너 계정 운영', to: '/guide/manufacturer/account-access'},
-  {title: 'Studio 운영팀', description: 'AI 상담 지식과 사람 연결 기준 관리', to: '/guide/studio/knowledge-management'},
+  {title: '제조사·브랜드', description: '공식 로그인과 안전한 계정 이용, 병원 전자계약 확인', to: '/guide/manufacturer/overview'},
+  {title: 'Studio · AI 상담·CRM', description: '챗봇·콜봇·CRM 메시징·상담 화면 운영', to: '/guide/studio/overview'},
 ];
 
 export default function Home(): ReactNode {
@@ -76,7 +76,7 @@ export default function Home(): ReactNode {
         <section className={styles.hero}>
           <div className={`container ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
-              <span className={styles.docsLabel}>병원용 CertiLife 가이드</span>
+              <span className={styles.docsLabel}>CertiLife 사용 가이드</span>
               <Heading as="h1">인증서에서 상담·재방문까지,<br />병원의 고객 경험을 잇습니다</Heading>
               <p>
                 CertiLife는 시술·제품 정보를 정품 인증서로 환자에게 전달하고,

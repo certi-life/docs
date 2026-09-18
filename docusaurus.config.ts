@@ -79,6 +79,7 @@ const config: Config = {
         {to: '/guide/help/faq', label: '도움말', position: 'left'},
         {href: 'https://hospital.certi.life/signin', label: '병원용 로그인', position: 'right'},
         {href: 'https://manufacturer.certi.life/signin', label: '제조사용 로그인', position: 'right'},
+        {href: 'https://studio.certi.life', label: 'Studio 로그인', position: 'right'},
         {href: 'https://certi.life/contact', label: '도입 문의', position: 'right', className: 'navbar-cta'},
       ],
     },

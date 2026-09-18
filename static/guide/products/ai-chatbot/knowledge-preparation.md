@@ -11,7 +11,7 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 - 자주 묻는 질문에 일관된 근거로 답할 수 있는 자료를 만듭니다.
 - 오래된 운영시간, 혜택, 연락처가 답변에 사용되는 일을 줄입니다.
 - AI 답변 대상과 담당자 확인 대상을 구분합니다.
-- 카카오톡·네이버 톡톡·웹챗봇에서 사용할 공통 정보와 채널별 안내를 정리합니다.
+- 웹챗·카카오톡 등 운영하는 채널에서 사용할 공통 정보와 채널별 안내를 정리합니다.
 
 ## 준비할 내용
 
@@ -19,7 +19,7 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 2. 실제로 자주 접수되는 질문 목록에서 개인정보를 제거한 자료
 3. 문서별 소유자와 마지막 확인일
 4. 답변하지 않을 항목 및 담당자 전달 기준
-5. 카카오톡·네이버 톡톡·웹챗봇별 문장 길이와 고객 안내 원칙
+5. 운영하는 채널별 문장 길이와 고객 안내 원칙
 
 ## 절차
 
@@ -37,10 +37,12 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 
 > **주의**
 >
-> 고객 대화 원문, 연락처, 민감한 개인 정보, 내부 전용 지침을 공개 상담 지식에 그대로 등록하지 마세요. AI가 등록 자료만으로 확인할 수 없는 내용은 자연스럽게 들리더라도 추정해서 답하도록 설계하지 않아야 합니다. 실제 화면의 등록 메뉴와 클릭 경로는 확인된 운영 안내를 따르세요.
+> 고객 대화 원문, 연락처, 민감한 개인 정보, 내부 전용 지침을 공개 상담 지식에 그대로 등록하지 마세요. AI가 등록 자료만으로 확인할 수 없는 내용은 자연스럽게 들리더라도 추정해서 답하도록 설계하지 않아야 합니다. 정리한 자료를 올리고 챗봇에 연결하는 화면은 Studio의 [AI 학습자료 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials)입니다. 자료에 없는 내용을 답하지 않게 하는 설정은 [AI 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/ai-settings#자료에-있는-내용만-답하게-하기)의 `학습자료로만 답변하기`입니다.
 
 ## 다음 문서
 
+- [AI 학습자료 설정](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials)
+- [상담 지식 관리](https://docs.certi.life/guide/studio/knowledge-management)
 - [상담원 연결 정책 세우기](https://docs.certi.life/guide/products/ai-chatbot/handoff-policy)
 - [AI 상담 개요](https://docs.certi.life/guide/products/ai-chatbot)
 - [개인정보 및 보안](https://docs.certi.life/guide/help/privacy-security)
