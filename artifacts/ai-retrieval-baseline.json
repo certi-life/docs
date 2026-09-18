@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "1ca25c4153585bf3d80dbac24dc00a0524e52845d619a21c402e83ce472078a4",
+  "corpusSha256": "7a183fedae21bbd907b298c1071302c4b8a0665d42b9250a1453375b82ecb606",
   "fixtureSha256": "f4f9f471d04f063be670170374d8d4e51c3713c4422b066d9c8bd778c4b27665",
   "metrics": {
     "caseCount": 93,
@@ -201,7 +201,7 @@
         },
         {
           "id": "getting-started/sign-in-directory",
-          "score": 86.500783
+          "score": 86.467445
         }
       ],
       "top1Passed": false,
@@ -824,7 +824,7 @@
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 55.010266
+          "score": 55.00974
         },
         {
           "id": "manufacturer/account-access",
@@ -919,7 +919,7 @@
       "ranked": [
         {
           "id": "help/troubleshooting",
-          "score": 80.978387
+          "score": 80.965606
         },
         {
           "id": "studio/account-access",
@@ -927,7 +927,7 @@
         },
         {
           "id": "getting-started/sign-in-directory",
-          "score": 44.544777
+          "score": 44.543109
         }
       ],
       "top1Passed": true,
@@ -2932,15 +2932,15 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/dtmf-menus",
-          "score": 259.363531
+          "score": 259.360099
         },
         {
           "id": "studio/screens/callbot/tools",
-          "score": 75.381281
+          "score": 75.377848
         },
         {
           "id": "hospital/screens/certificate-settings",
-          "score": 74.750473
+          "score": 74.632631
         }
       ],
       "top1Passed": true,
@@ -2965,7 +2965,7 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/users",
-          "score": 447.084651
+          "score": 447.081219
         },
         {
           "id": "studio/screens/phone-counsel",
@@ -2973,7 +2973,7 @@
         },
         {
           "id": "hospital/screens/accounts",
-          "score": 76.936069
+          "score": 76.821658
         }
       ],
       "top1Passed": true,
@@ -3064,7 +3064,7 @@
       "ranked": [
         {
           "id": "studio/screens/overview",
-          "score": 335.055352
+          "score": 335.05192
         },
         {
           "id": "studio/screens/conversation-history",
