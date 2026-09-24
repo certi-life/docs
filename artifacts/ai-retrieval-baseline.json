@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "f3b5dc456e0810298aaa0c69adf136bd60a08a83e7abdcf37e48af004536be35",
+  "corpusSha256": "d5e2634848ba3e7001813059b85335a0662c43b9dc2d74b7206e77a5cd59f36c",
   "fixtureSha256": "15f170bb77423d4d4082a35bfca69514eebd1b3202e845d890b12680b2d6c13d",
   "metrics": {
     "caseCount": 93,
@@ -127,15 +127,15 @@
       "ranked": [
         {
           "id": "getting-started/plans-and-contact",
-          "score": 153.165376
+          "score": 153.152825
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 94.263514
+          "score": 94.263208
         },
         {
           "id": "help/faq",
-          "score": 57.629241
+          "score": 57.628935
         }
       ],
       "top1Passed": true,
@@ -226,11 +226,11 @@
       "ranked": [
         {
           "id": "hospital/certificate-workflow",
-          "score": 121.233506
+          "score": 121.843772
         },
         {
           "id": "products/certificate/channels",
-          "score": 100.743123
+          "score": 101.353389
         },
         {
           "id": "hospital/screens/alimtalk",
@@ -655,15 +655,15 @@
       "ranked": [
         {
           "id": "manufacturer/account-access",
-          "score": 88.777052
+          "score": 88.774705
         },
         {
           "id": "manufacturer/overview",
-          "score": 70.083595
+          "score": 70.083289
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 57.103524
+          "score": 57.080823
         }
       ],
       "top1Passed": true,
@@ -754,15 +754,15 @@
       "ranked": [
         {
           "id": "studio/account-access",
-          "score": 111.466739
+          "score": 111.466304
         },
         {
           "id": "hospital/screens/hospital-info",
-          "score": 91.260095
+          "score": 91.231189
         },
         {
           "id": "hospital/account-access",
-          "score": 46.490035
+          "score": 46.461129
         }
       ],
       "top1Passed": true,
@@ -853,15 +853,15 @@
       "ranked": [
         {
           "id": "studio/launch-checklist",
-          "score": 120.642723
+          "score": 120.642417
         },
         {
           "id": "studio/screens/callbot/overview",
-          "score": 63.745972
+          "score": 63.745666
         },
         {
           "id": "studio/screens/chatbot/overview",
-          "score": 60.783051
+          "score": 60.782745
         }
       ],
       "top1Passed": true,
@@ -2701,7 +2701,7 @@
       "ranked": [
         {
           "id": "hospital/screens/reservations-reviews",
-          "score": 373.848902
+          "score": 373.84783
         },
         {
           "id": "studio/screens/crm/calendar",
@@ -2800,7 +2800,7 @@
       "ranked": [
         {
           "id": "hospital/screens/hospital-info",
-          "score": 210.958896
+          "score": 210.922107
         },
         {
           "id": "hospital/screens/contracts",
@@ -2808,7 +2808,7 @@
         },
         {
           "id": "hospital/screens/accounts",
-          "score": 56.306708
+          "score": 56.269919
         }
       ],
       "top1Passed": true,
