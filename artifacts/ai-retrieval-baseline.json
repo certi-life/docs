@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
   "algorithm": "weighted-unicode-ngram-v1",
-  "corpusSha256": "d5e2634848ba3e7001813059b85335a0662c43b9dc2d74b7206e77a5cd59f36c",
-  "fixtureSha256": "15f170bb77423d4d4082a35bfca69514eebd1b3202e845d890b12680b2d6c13d",
+  "corpusSha256": "91b113eb464b5e810559d103af7cf4bdbb22cd3b0a42a579e24ddec5f7efad9b",
+  "fixtureSha256": "b38463d59b45888f5892de5f7d766d1ca60406134072b7379ccd264f966a5e37",
   "metrics": {
-    "caseCount": 93,
+    "caseCount": 94,
     "safetyCaseCount": 9,
     "prohibitedClaimCaseCount": 30,
-    "top1Accuracy": 0.9032258064516129,
+    "top1Accuracy": 0.9042553191489362,
     "top3Accuracy": 1,
-    "meanTop3SetCoverage": 0.6057347670250897,
+    "meanTop3SetCoverage": 0.6063829787234043,
     "evidencePassRate": 1,
     "safetyPassRate": 1,
     "prohibitedClaimPassRate": 1
@@ -28,15 +28,15 @@
       "ranked": [
         {
           "id": "intro",
-          "score": 247.327993
+          "score": 246.960539
         },
         {
           "id": "help/glossary",
-          "score": 48.160267
+          "score": 47.667091
         },
         {
           "id": "help/faq",
-          "score": 48.155575
+          "score": 47.662399
         }
       ],
       "top1Passed": true,
@@ -61,15 +61,15 @@
       "ranked": [
         {
           "id": "getting-started/quick-tour",
-          "score": 103.475586
+          "score": 103.437133
         },
         {
           "id": "products/event-marketing",
-          "score": 65.032961
+          "score": 65.030223
         },
         {
           "id": "products/event-marketing/campaign-planning",
-          "score": 65.032961
+          "score": 65.030223
         }
       ],
       "top1Passed": true,
@@ -94,15 +94,15 @@
       "ranked": [
         {
           "id": "getting-started/choose-guide",
-          "score": 107.10237
+          "score": 106.459177
         },
         {
           "id": "getting-started/sign-in-directory",
-          "score": 54.244243
+          "score": 54.240208
         },
         {
           "id": "studio/screens/encyclopedia",
-          "score": 36.787457
+          "score": 35.865185
         }
       ],
       "top1Passed": true,
@@ -127,15 +127,15 @@
       "ranked": [
         {
           "id": "getting-started/plans-and-contact",
-          "score": 153.152825
+          "score": 152.659648
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 94.263208
+          "score": 94.112912
         },
         {
           "id": "help/faq",
-          "score": 57.628935
+          "score": 57.135758
         }
       ],
       "top1Passed": true,
@@ -226,11 +226,11 @@
       "ranked": [
         {
           "id": "hospital/certificate-workflow",
-          "score": 121.843772
+          "score": 121.822313
         },
         {
           "id": "products/certificate/channels",
-          "score": 101.353389
+          "score": 101.352764
         },
         {
           "id": "hospital/screens/alimtalk",
@@ -259,15 +259,15 @@
       "ranked": [
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 73.396591
+          "score": 73.374321
         },
         {
           "id": "studio/screens/crm/campaigns",
-          "score": 68.047162
+          "score": 68.046351
         },
         {
           "id": "hospital/screens/history",
-          "score": 41.332463
+          "score": 41.283976
         }
       ],
       "top1Passed": true,
@@ -292,7 +292,7 @@
       "ranked": [
         {
           "id": "studio/knowledge-management",
-          "score": 100.840076
+          "score": 100.806738
         },
         {
           "id": "products/ai-chatbot/knowledge-preparation",
@@ -300,7 +300,7 @@
         },
         {
           "id": "studio/screens/encyclopedia",
-          "score": 58.150877
+          "score": 58.117539
         }
       ],
       "top1Passed": false,
@@ -325,11 +325,11 @@
       "ranked": [
         {
           "id": "products/ai-chatbot/handoff-policy",
-          "score": 131.045289
+          "score": 130.878619
         },
         {
           "id": "studio/screens/counsel/handle",
-          "score": 34.356117
+          "score": 34.342783
         },
         {
           "id": "getting-started/plans-and-contact",
@@ -424,15 +424,15 @@
       "ranked": [
         {
           "id": "products/event-marketing/campaign-planning",
-          "score": 182.706301
+          "score": 182.620418
         },
         {
           "id": "products/event-marketing",
-          "score": 95.406284
+          "score": 95.403783
         },
         {
           "id": "products/event-marketing/performance-review",
-          "score": 67.202635
+          "score": 67.200133
         }
       ],
       "top1Passed": true,
@@ -490,15 +490,15 @@
       "ranked": [
         {
           "id": "studio/screens/certificates",
-          "score": 77.04014
+          "score": 76.987917
         },
         {
           "id": "hospital/screens/issue-certificate",
-          "score": 67.81011
+          "score": 67.80974
         },
         {
           "id": "hospital/overview",
-          "score": 66.805665
+          "score": 66.713709
         }
       ],
       "top1Passed": false,
@@ -523,11 +523,11 @@
       "ranked": [
         {
           "id": "hospital/account-access",
-          "score": 108.498877
+          "score": 108.442958
         },
         {
           "id": "hospital/screens/hospital-info",
-          "score": 48.2551
+          "score": 48.253736
         },
         {
           "id": "hospital/screens/overview",
@@ -556,11 +556,11 @@
       "ranked": [
         {
           "id": "hospital/screens/history",
-          "score": 95.302851
+          "score": 94.458958
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 57.191008
+          "score": 56.902814
         },
         {
           "id": "studio/screens/crm/message-status",
@@ -622,15 +622,15 @@
       "ranked": [
         {
           "id": "manufacturer/overview",
-          "score": 124.950468
+          "score": 124.910678
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 51.790683
+          "score": 51.785718
         },
         {
           "id": "manufacturer/account-access",
-          "score": 51.625639
+          "score": 51.625073
         }
       ],
       "top1Passed": true,
@@ -655,7 +655,7 @@
       "ranked": [
         {
           "id": "manufacturer/account-access",
-          "score": 88.774705
+          "score": 88.77436
         },
         {
           "id": "manufacturer/overview",
@@ -663,7 +663,7 @@
         },
         {
           "id": "manufacturer/safe-operation",
-          "score": 57.080823
+          "score": 57.080478
         }
       ],
       "top1Passed": true,
@@ -688,15 +688,15 @@
       "ranked": [
         {
           "id": "manufacturer/safe-operation",
-          "score": 114.661184
+          "score": 114.660202
         },
         {
           "id": "manufacturer/account-access",
-          "score": 109.367339
+          "score": 109.35401
         },
         {
           "id": "manufacturer/overview",
-          "score": 102.795542
+          "score": 102.795172
         }
       ],
       "top1Passed": true,
@@ -787,7 +787,7 @@
       "ranked": [
         {
           "id": "studio/knowledge-management",
-          "score": 140.491852
+          "score": 140.450252
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -795,7 +795,7 @@
         },
         {
           "id": "studio/screens/org-settings/hours",
-          "score": 49.839312
+          "score": 49.838329
         }
       ],
       "top1Passed": true,
@@ -824,7 +824,7 @@
         },
         {
           "id": "getting-started/buyer-faq",
-          "score": 54.734543
+          "score": 54.732893
         },
         {
           "id": "manufacturer/account-access",
@@ -894,7 +894,7 @@
         },
         {
           "id": "help/faq",
-          "score": 37.60657
+          "score": 37.603731
         }
       ],
       "top1Passed": false,
@@ -919,7 +919,7 @@
       "ranked": [
         {
           "id": "help/troubleshooting",
-          "score": 76.748194
+          "score": 75.180729
         },
         {
           "id": "studio/account-access",
@@ -985,7 +985,7 @@
       "ranked": [
         {
           "id": "help/privacy-security",
-          "score": 130.752425
+          "score": 130.081788
         },
         {
           "id": "hospital/screens/issue-certificate",
@@ -1018,15 +1018,15 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/list",
-          "score": 85.811631
+          "score": 84.932265
         },
         {
           "id": "studio/screens/callbot/agents",
-          "score": 65.941508
+          "score": 65.323505
         },
         {
           "id": "studio/screens/chatbot/flows",
-          "score": 62.535289
+          "score": 61.655923
         }
       ],
       "top1Passed": true,
@@ -1051,11 +1051,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/blocks",
-          "score": 177.189311
+          "score": 176.54712
         },
         {
           "id": "studio/screens/chatbot/scenarios",
-          "score": 166.951652
+          "score": 166.346231
         },
         {
           "id": "studio/screens/crm/automation",
@@ -1084,15 +1084,15 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/flows",
-          "score": 102.200728
+          "score": 101.936267
         },
         {
           "id": "studio/screens/callbot/flow-editor",
-          "score": 98.678808
+          "score": 98.414347
         },
         {
           "id": "studio/screens/chatbot/blocks",
-          "score": 56.825529
+          "score": 56.761133
         }
       ],
       "top1Passed": true,
@@ -1121,11 +1121,11 @@
         },
         {
           "id": "studio/screens/stats",
-          "score": 64.861315
+          "score": 64.860583
         },
         {
           "id": "studio/screens/callbot/agent-settings",
-          "score": 38.247094
+          "score": 38.246362
         }
       ],
       "top1Passed": true,
@@ -1150,11 +1150,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/menu",
-          "score": 43.267544
+          "score": 43.252397
         },
         {
           "id": "studio/screens/chatbot/settings/chat-window-settings",
-          "score": 40.125976
+          "score": 39.198169
         },
         {
           "id": "studio/screens/counsel/inbox",
@@ -1183,11 +1183,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/basic-info",
-          "score": 123.452209
+          "score": 123.415439
         },
         {
           "id": "studio/screens/chatbot/settings/ai-settings",
-          "score": 53.967061
+          "score": 53.966329
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -1216,7 +1216,7 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/ai-settings",
-          "score": 122.5618
+          "score": 121.131438
         },
         {
           "id": "studio/screens/conversation-history",
@@ -1224,7 +1224,7 @@
         },
         {
           "id": "studio/screens/chatbot/settings/chat-window-settings",
-          "score": 47.343026
+          "score": 45.912664
         }
       ],
       "top1Passed": true,
@@ -1249,15 +1249,15 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/ai-settings",
-          "score": 124.57601
+          "score": 124.563748
         },
         {
           "id": "studio/screens/chatbot/settings/training-materials",
-          "score": 38.655391
+          "score": 38.655033
         },
         {
           "id": "studio/screens/callbot/agent-settings",
-          "score": 32.549323
+          "score": 32.546585
         }
       ],
       "top1Passed": true,
@@ -1282,15 +1282,15 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/tools",
-          "score": 148.325109
+          "score": 147.063415
         },
         {
           "id": "studio/screens/callbot/flow-editor",
-          "score": 95.665158
+          "score": 95.249722
         },
         {
           "id": "studio/screens/callbot/tools",
-          "score": 75.797301
+          "score": 74.535607
         }
       ],
       "top1Passed": true,
@@ -1315,15 +1315,15 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/tools",
-          "score": 126.218428
+          "score": 124.956002
         },
         {
           "id": "studio/screens/callbot/tools",
-          "score": 93.365106
+          "score": 92.103412
         },
         {
           "id": "studio/screens/chatbot/list",
-          "score": 64.809399
+          "score": 64.587991
         }
       ],
       "top1Passed": true,
@@ -1381,11 +1381,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/operating-hours",
-          "score": 220.227227
+          "score": 220.055063
         },
         {
           "id": "studio/screens/org-settings/hours",
-          "score": 83.03302
+          "score": 83.020321
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -1447,11 +1447,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/training-materials",
-          "score": 127.301748
+          "score": 127.167681
         },
         {
           "id": "studio/screens/chatbot/settings/ai-settings",
-          "score": 66.080529
+          "score": 65.897079
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -1480,11 +1480,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/channel-settings",
-          "score": 199.193251
+          "score": 217.574229
         },
         {
           "id": "studio/screens/chatbot/settings/chat-window-settings",
-          "score": 119.857219
+          "score": 119.820449
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -1513,7 +1513,7 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/settings/chat-window-settings",
-          "score": 135.449539
+          "score": 135.412769
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -1521,7 +1521,7 @@
         },
         {
           "id": "studio/screens/chatbot/settings/channel-settings",
-          "score": 49.612931
+          "score": 50.929795
         }
       ],
       "top1Passed": true,
@@ -1579,7 +1579,7 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/overview",
-          "score": 68.337216
+          "score": 67.89384
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
@@ -1587,7 +1587,7 @@
         },
         {
           "id": "studio/screens/chatbot/settings/training-materials",
-          "score": 45.669772
+          "score": 45.601638
         }
       ],
       "top1Passed": true,
@@ -1612,7 +1612,7 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/list",
-          "score": 35.498721
+          "score": 35.429677
         },
         {
           "id": "studio/screens/chatbot/flows",
@@ -1620,7 +1620,7 @@
         },
         {
           "id": "studio/screens/callbot/agents",
-          "score": 30.035973
+          "score": 30.035064
         }
       ],
       "top1Passed": true,
@@ -1649,11 +1649,11 @@
         },
         {
           "id": "studio/screens/counsel/inbox",
-          "score": 75.981802
+          "score": 75.945032
         },
         {
           "id": "studio/screens/callbot/users",
-          "score": 32.322343
+          "score": 32.321611
         }
       ],
       "top1Passed": true,
@@ -1711,15 +1711,15 @@
       "ranked": [
         {
           "id": "studio/screens/encyclopedia",
-          "score": 206.85769
+          "score": 206.528056
         },
         {
           "id": "studio/screens/counsel/reply-tools",
-          "score": 140.116784
+          "score": 139.787881
         },
         {
           "id": "studio/screens/chatbot/settings/training-materials",
-          "score": 108.990047
+          "score": 108.660413
         }
       ],
       "top1Passed": true,
@@ -1744,7 +1744,7 @@
       "ranked": [
         {
           "id": "studio/screens/ai",
-          "score": 202.733528
+          "score": 201.34714
         },
         {
           "id": "studio/screens/chatbot/settings/tools",
@@ -1752,7 +1752,7 @@
         },
         {
           "id": "studio/screens/chatbot/settings/manuals",
-          "score": 31.121073
+          "score": 31.088543
         }
       ],
       "top1Passed": true,
@@ -1777,15 +1777,15 @@
       "ranked": [
         {
           "id": "studio/screens/org-settings/overview",
-          "score": 61.90789
+          "score": 61.859498
         },
         {
           "id": "studio/screens/chatbot/settings/menu",
-          "score": 34.046876
+          "score": 34.0047
         },
         {
           "id": "studio/screens/chatbot/overview",
-          "score": 33.421766
+          "score": 33.33253
         }
       ],
       "top1Passed": true,
@@ -1843,15 +1843,15 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/phone-numbers",
-          "score": 160.167419
+          "score": 159.762476
         },
         {
           "id": "studio/screens/callbot/overview",
-          "score": 134.962124
+          "score": 134.952248
         },
         {
           "id": "studio/screens/callbot/agent-settings",
-          "score": 121.105274
+          "score": 121.058628
         }
       ],
       "top1Passed": false,
@@ -1909,7 +1909,7 @@
       "ranked": [
         {
           "id": "studio/screens/stats",
-          "score": 145.678426
+          "score": 145.677694
         },
         {
           "id": "studio/screens/chatbot/statistics",
@@ -1942,11 +1942,11 @@
       "ranked": [
         {
           "id": "studio/screens/certificates",
-          "score": 83.729703
+          "score": 83.570876
         },
         {
           "id": "hospital/screens/issue-certificate",
-          "score": 65.77747
+          "score": 65.765706
         },
         {
           "id": "hospital/screens/certificate-settings",
@@ -1975,15 +1975,15 @@
       "ranked": [
         {
           "id": "studio/screens/overview",
-          "score": 46.809966
+          "score": 46.747759
         },
         {
           "id": "studio/screens/org-settings/overview",
-          "score": 39.628093
+          "score": 39.612945
         },
         {
           "id": "hospital/screens/overview",
-          "score": 39.079204
+          "score": 39.016997
         }
       ],
       "top1Passed": true,
@@ -2041,11 +2041,11 @@
       "ranked": [
         {
           "id": "studio/screens/org-settings/translation",
-          "score": 152.456852
+          "score": 152.35139
         },
         {
           "id": "studio/screens/counsel/translation",
-          "score": 83.935856
+          "score": 83.899086
         },
         {
           "id": "products/ai-chatbot/message-translation",
@@ -2074,11 +2074,11 @@
       "ranked": [
         {
           "id": "studio/screens/counsel/reply-tools",
-          "score": 188.671971
+          "score": 188.64622
         },
         {
           "id": "studio/screens/encyclopedia",
-          "score": 130.858706
+          "score": 130.857956
         },
         {
           "id": "studio/screens/chatbot/settings/training-materials",
@@ -2140,7 +2140,7 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/agent-settings",
-          "score": 215.308177
+          "score": 215.276173
         },
         {
           "id": "studio/screens/callbot/agents",
@@ -2206,15 +2206,15 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/phone-numbers",
-          "score": 123.817575
+          "score": 123.412631
         },
         {
           "id": "studio/screens/callbot/campaign",
-          "score": 76.395741
+          "score": 76.336481
         },
         {
           "id": "studio/screens/callbot/users",
-          "score": 75.783624
+          "score": 75.378681
         }
       ],
       "top1Passed": true,
@@ -2239,15 +2239,15 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/campaign",
-          "score": 200.358926
+          "score": 200.239285
         },
         {
           "id": "studio/screens/crm/campaigns",
-          "score": 111.760485
+          "score": 111.640845
         },
         {
           "id": "studio/screens/chatbot/flows",
-          "score": 67.838625
+          "score": 66.959259
         }
       ],
       "top1Passed": true,
@@ -2305,15 +2305,15 @@
       "ranked": [
         {
           "id": "studio/screens/org-settings/auto-messages",
-          "score": 193.946158
+          "score": 189.325485
         },
         {
           "id": "studio/screens/counsel/customer",
-          "score": 88.057441
+          "score": 87.96664
         },
         {
           "id": "studio/screens/org-settings/overview",
-          "score": 71.586047
+          "score": 70.142768
         }
       ],
       "top1Passed": true,
@@ -2437,15 +2437,15 @@
       "ranked": [
         {
           "id": "studio/screens/crm/automation",
-          "score": 265.49938
+          "score": 263.425531
         },
         {
           "id": "studio/screens/crm/overview",
-          "score": 102.204091
+          "score": 102.182423
         },
         {
           "id": "studio/screens/chatbot/scenarios",
-          "score": 70.963262
+          "score": 70.962785
         }
       ],
       "top1Passed": true,
@@ -2503,15 +2503,15 @@
       "ranked": [
         {
           "id": "hospital/screens/overview",
-          "score": 229.301167
+          "score": 228.044185
         },
         {
           "id": "hospital/screens/history",
-          "score": 126.775771
+          "score": 126.325859
         },
         {
           "id": "hospital/screens/issue-certificate",
-          "score": 121.968128
+          "score": 121.913282
         }
       ],
       "top1Passed": true,
@@ -2536,11 +2536,11 @@
       "ranked": [
         {
           "id": "hospital/screens/dashboard",
-          "score": 391.068333
+          "score": 390.700879
         },
         {
           "id": "hospital/screens/issue-certificate",
-          "score": 105.321488
+          "score": 105.296915
         },
         {
           "id": "hospital/screens/history",
@@ -2569,11 +2569,11 @@
       "ranked": [
         {
           "id": "hospital/screens/brand-page",
-          "score": 248.485331
+          "score": 248.475454
         },
         {
           "id": "hospital/screens/overview",
-          "score": 75.203615
+          "score": 75.07028
         },
         {
           "id": "studio/screens/chatbot/settings/basic-info",
@@ -2602,15 +2602,15 @@
       "ranked": [
         {
           "id": "hospital/screens/issue-certificate",
-          "score": 347.113609
+          "score": 347.113043
         },
         {
           "id": "hospital/screens/history",
-          "score": 172.239386
+          "score": 172.219951
         },
         {
           "id": "products/certificate/delivery-checklist",
-          "score": 103.156493
+          "score": 103.155927
         }
       ],
       "top1Passed": true,
@@ -2668,15 +2668,15 @@
       "ranked": [
         {
           "id": "hospital/screens/history",
-          "score": 273.125493
+          "score": 272.30306
         },
         {
           "id": "hospital/screens/issue-certificate",
-          "score": 136.862149
+          "score": 136.817693
         },
         {
           "id": "hospital/certificate-workflow",
-          "score": 98.824288
+          "score": 98.557553
         }
       ],
       "top1Passed": true,
@@ -2701,11 +2701,11 @@
       "ranked": [
         {
           "id": "hospital/screens/reservations-reviews",
-          "score": 373.84783
+          "score": 373.442887
         },
         {
           "id": "studio/screens/crm/calendar",
-          "score": 50.350498
+          "score": 49.945555
         },
         {
           "id": "studio/screens/crm/message-status",
@@ -2734,15 +2734,15 @@
       "ranked": [
         {
           "id": "hospital/screens/orders",
-          "score": 683.841948
+          "score": 683.437004
         },
         {
           "id": "hospital/screens/overview",
-          "score": 68.445127
+          "score": 68.311792
         },
         {
           "id": "hospital/screens/history",
-          "score": 60.850754
+          "score": 60.445811
         }
       ],
       "top1Passed": true,
@@ -2767,15 +2767,15 @@
       "ranked": [
         {
           "id": "hospital/screens/contracts",
-          "score": 590.276317
+          "score": 590.219174
         },
         {
           "id": "studio/screens/ai",
-          "score": 50.055934
+          "score": 49.998791
         },
         {
           "id": "studio/screens/counsel/inbox",
-          "score": 32.185614
+          "score": 32.12847
         }
       ],
       "top1Passed": true,
@@ -2800,15 +2800,15 @@
       "ranked": [
         {
           "id": "hospital/screens/hospital-info",
-          "score": 210.922107
+          "score": 210.517163
         },
         {
           "id": "hospital/screens/contracts",
-          "score": 69.914275
+          "score": 69.509332
         },
         {
           "id": "hospital/screens/accounts",
-          "score": 56.269919
+          "score": 55.864975
         }
       ],
       "top1Passed": true,
@@ -2833,11 +2833,11 @@
       "ranked": [
         {
           "id": "hospital/screens/accounts",
-          "score": 327.407304
+          "score": 327.002361
         },
         {
           "id": "hospital/screens/hospital-info",
-          "score": 108.940561
+          "score": 108.535617
         },
         {
           "id": "studio/screens/crm/templates",
@@ -2899,11 +2899,11 @@
       "ranked": [
         {
           "id": "studio/screens/chatbot/blocks",
-          "score": 439.475437
+          "score": 438.870017
         },
         {
           "id": "studio/screens/chatbot/scenarios",
-          "score": 101.177985
+          "score": 100.572565
         },
         {
           "id": "studio/screens/callbot/campaign",
@@ -2932,11 +2932,11 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/dtmf-menus",
-          "score": 254.824637
+          "score": 254.242145
         },
         {
           "id": "studio/screens/callbot/tools",
-          "score": 74.311208
+          "score": 74.199313
         },
         {
           "id": "hospital/screens/certificate-settings",
@@ -2965,15 +2965,15 @@
       "ranked": [
         {
           "id": "studio/screens/callbot/users",
-          "score": 441.006312
+          "score": 440.601369
         },
         {
           "id": "studio/screens/phone-counsel",
-          "score": 88.399557
+          "score": 88.389681
         },
         {
           "id": "hospital/screens/accounts",
-          "score": 75.017046
+          "score": 74.612103
         }
       ],
       "top1Passed": true,
@@ -3031,15 +3031,15 @@
       "ranked": [
         {
           "id": "studio/screens/ai",
-          "score": 246.099664
+          "score": 245.365384
         },
         {
           "id": "studio/screens/chatbot/settings/chat-window-settings",
-          "score": 74.017388
+          "score": 73.799737
         },
         {
-          "id": "studio/screens/encyclopedia",
-          "score": 59.604108
+          "id": "studio/screens/counsel/inbox",
+          "score": 59.047137
         }
       ],
       "top1Passed": true,
@@ -3064,20 +3064,53 @@
       "ranked": [
         {
           "id": "studio/screens/overview",
-          "score": 326.381694
+          "score": 326.067266
         },
         {
           "id": "studio/screens/conversation-history",
-          "score": 111.07649
+          "score": 110.554453
         },
         {
           "id": "getting-started/downloads",
-          "score": 88.729775
+          "score": 88.724989
         }
       ],
       "top1Passed": true,
       "top3Passed": true,
       "top3SetCoverage": 1,
+      "evidencePassed": true,
+      "missingEvidence": [],
+      "safetyPassed": null,
+      "prohibitedClaimsPassed": null,
+      "forbiddenMatches": []
+    },
+    {
+      "id": "s52",
+      "category": "screen",
+      "question": "홈페이지에 설치 스크립트를 붙였는데 채팅 버튼이 안 보여요",
+      "expectedTop1": "studio/screens/chatbot/settings/channel-settings",
+      "expectedTop3": [
+        "studio/screens/chatbot/settings/channel-settings",
+        "studio/screens/chatbot/settings/chat-window-settings",
+        "studio/launch-checklist"
+      ],
+      "ranked": [
+        {
+          "id": "studio/screens/chatbot/settings/channel-settings",
+          "score": 189.389811
+        },
+        {
+          "id": "studio/screens/chatbot/settings/chat-window-settings",
+          "score": 49.62613
+        },
+        {
+          "id": "studio/screens/org-settings/translation",
+          "score": 42.407464
+        }
+      ],
+      "top1Passed": true,
+      "top3Passed": true,
+      "top3SetCoverage": 0.6666666666666666,
       "evidencePassed": true,
       "missingEvidence": [],
       "safetyPassed": null,

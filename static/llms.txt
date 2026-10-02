@@ -149,7 +149,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 - [매뉴얼 - 특정 상황에서 정해진 절차대로 응대하게 하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/manuals.md): Studio 챗봇 메뉴의 매뉴얼 목록에서 트리거와 본문으로 매뉴얼을 작성하고, 챗봇 설정의 매뉴얼에서 챗봇에 연결·해제하는 방법과 잘 동작하는 트리거를 쓰는 요령을 안내합니다.
 - [작동시간 - 챗봇이 쉬는 시간 정하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/operating-hours.md): Studio 챗봇 설정의 작동시간에서 챗봇 24시간 작동을 끄고 요일별 미작동 시간, 특수일 작동 설정, 공휴일 자동 설정으로 챗봇이 응답하지 않을 시간을 정하는 방법을 목적별로 안내합니다.
 - [AI 학습자료 설정 - 챗봇이 참고할 자료 넣기](https://docs.certi.life/guide/studio/screens/chatbot/settings/training-materials.md): Studio 챗봇 설정의 AI 학습자료 설정(화면 제목 AI 학습자료 관리)에서 v1 파일 업로드, v2 백과사전 카탈로그 태그 연결, 병원 정보 기반 학습자료 생성으로 챗봇 답변의 근거 자료를 관리하는 방법을 안내합니다.
-- [채널 설정 - 챗봇을 고객이 있는 곳에 연결하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings.md): Studio 챗봇 설정의 채널 설정에서 웹채팅 SDK 스크립트로 홈페이지에 채팅 버튼을 달고, 카카오톡(오픈빌더·상담톡 봇), 네이버 톡톡, Instagram, LINE, WhatsApp에 챗봇을 연결하고, 상담원 바로 연결을 설정하는 방법을 안내합니다.
+- [채널 설정 - 챗봇을 고객이 있는 곳에 연결하기](https://docs.certi.life/guide/studio/screens/chatbot/settings/channel-settings.md): Studio 챗봇 설정의 채널 설정에서 웹채팅 SDK 스크립트로 홈페이지에 채팅 버튼을 달고, 카카오톡(오픈빌더·상담톡 봇), 네이버 톡톡, Instagram, LINE, WhatsApp에 챗봇을 연결하고, 상담원 바로 연결을 설정하는 방법을 안내합니다. 아임웹·워드프레스·카페24·Google 태그 관리자에 설치 스크립트를 붙이는 곳과 채팅 버튼이 보이지 않을 때의 해결 방법도 다룹니다.
 - [채팅창 설정 - 웹채팅 모양을 우리 사이트에 맞추기](https://docs.certi.life/guide/studio/screens/chatbot/settings/chat-window-settings.md): Studio 챗봇 설정의 채팅창 설정에서 상담 유도 메시지(말풍선), 화면 맥락 전달(고객이 보던 페이지 알려 주기), 디자인 설정(헤더·테마 색상·제목), 창 크기, 채팅창 테두리/그림자, 플로팅 버튼, 커스텀 메뉴를 바꿔 웹채팅 창을 꾸미는 방법을 안내합니다.
 - [챗봇 삭제 - 삭제 전 확인할 것과 삭제 방법](https://docs.certi.life/guide/studio/screens/chatbot/settings/delete-chatbot.md): Studio 챗봇 설정의 챗봇 삭제에서 삭제될 데이터를 확인하고 챗봇 이름과 계정 비밀번호를 입력해 챗봇을 영구 삭제하는 절차, 삭제 전에 점검할 사항과 삭제 대신 쓸 수 있는 방법을 안내합니다.
 
@@ -208,7 +208,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 
 ## 추가 공개 경로
 
-- [전체 문서 단일 파일](https://docs.certi.life/llms-full.md): 모든 공개 문서를 출처 주소와 함께 한 파일로 합친 AI 학습용 Markdown입니다.
+- [전체 문서 단일 파일](https://docs.certi.life/llms-full.md): 모든 공개 문서를 출처 주소와 함께 한 파일로 합친 AI 학습용 Markdown입니다. 용량이 커서 한 번에 읽기 어려우므로, 질문에 답할 때는 이 파일 대신 위의 개별 문서 링크를 읽으세요.
 - [CertiLife Docs 홈](https://docs.certi.life/): 제품과 역할별 공개 문서의 시작점입니다.
 - [문서 Sitemap](https://docs.certi.life/sitemap.xml): 검색엔진용 공개 URL 목록입니다.
 - [CertiLife 홈페이지](https://certi.life/): 서비스 소개와 공식 도입 문의 경로입니다.
