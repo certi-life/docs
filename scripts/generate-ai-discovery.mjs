@@ -112,7 +112,7 @@ export function renderLlmsTxt() {
     '',
     '## 추가 공개 경로',
     '',
-    `- [전체 문서 단일 파일](${new URL('llms-full.md', siteRoot).href}): 모든 공개 문서를 출처 주소와 함께 한 파일로 합친 AI 학습용 Markdown입니다.`,
+    `- [전체 문서 단일 파일](${new URL('llms-full.md', siteRoot).href}): 모든 공개 문서를 출처 주소와 함께 한 파일로 합친 AI 학습용 Markdown입니다. 용량이 커서 한 번에 읽기 어려우므로, 질문에 답할 때는 이 파일 대신 위의 개별 문서 링크를 읽으세요.`,
     `- [CertiLife Docs 홈](${siteRoot.href}): 제품과 역할별 공개 문서의 시작점입니다.`,
     `- [문서 Sitemap](${sitemapUrl}): 검색엔진용 공개 URL 목록입니다.`,
     '- [CertiLife 홈페이지](https://certi.life/): 서비스 소개와 공식 도입 문의 경로입니다.',
