@@ -68,8 +68,8 @@ if (
 ) {
   failures.push('legacy GitHub project-page deployment remains in config');
 }
-if (publicConfig.editUrl !== 'https://github.com/certi-life/docs/edit/develop/') {
-  failures.push('docs must expose per-page GitHub edit links against the develop branch');
+if (publicConfig.editUrl !== 'https://github.com/certi-life/docs/edit/main/') {
+  failures.push('docs must expose per-page GitHub edit links against the main branch');
 }
 const koreanTranslations = JSON.parse(readFileSync(join(root, 'i18n', 'ko', 'code.json'), 'utf8'));
 if (koreanTranslations['theme.common.editThisPage']?.message !== '이 페이지 개선하기') {

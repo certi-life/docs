@@ -267,9 +267,11 @@ a {
   text-decoration-color: currentColor;
 }
 
-.markdown :not(pre) > code {
+.markdown :not(pre) > code,
+.table-of-contents code {
   /* Inline code here is almost always a Korean UI label; the mono stack drops
-   * Hangul to a fixed-width fallback with wide gaps, so use the body font. */
+   * Hangul to a fixed-width fallback with wide gaps, so use the body font.
+   * The TOC repeats headings that are a quoted UI message, so it shares this. */
   padding: 0.1em 0.4em;
   border: 0;
   border-radius: 0.375rem;

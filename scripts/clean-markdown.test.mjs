@@ -329,11 +329,14 @@ test('credential scanner는 공개 Markdown의 UUID·전화번호·내부 주소
     '연락처 02.1234.5678',
     '연락처 070.1234.5678',
     '연락처 +82.70.1234.5678',
+    '대표번호 1588-1234',
+    '대표번호 1800-8985',
     '내부 주소 fd00::1',
     '[내부 주소](http://[fd00::1]/)',
   ]) {
     assert.throws(() => createCleanMarkdownArtifacts(document(body)), /private or credential-like content detected/, body);
   }
+  assert.doesNotThrow(() => createCleanMarkdownArtifacts(document('CertiLife 고객센터 1800-8984로 문의합니다.')));
 });
 
 test('clean Markdown artifacts는 duplicate route와 identical output을 fail-closed로 거부한다', () => {

@@ -55,4 +55,4 @@ CertiLife를 알아보는 단계와 실제로 이용하는 단계에는 필요�
 
 > **화면 절차에 관하여**
 >
-> 화면별 버튼과 메뉴 위치는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)와 [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)에서 시작하는 화면별 안내에 있습니다. 화면별 안내에 없는 버튼 이름, 메뉴 위치 또는 권한별 동작은 이 가이드에서 추측하지 않습니다. 실제 화면과 문서가 다르거나 필요한 절차가 공개되어 있지 않다면 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)를 이용하세요. 담당자가 따로 없는 병원은 도입 문의를 바로 이용하면 됩니다. 문의 자료에는 고객·환자 개인정보를 제거해야 합니다.
+> 화면별 버튼과 메뉴 위치는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)와 [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)에서 시작하는 화면별 안내에 있습니다. 화면별 안내에 없는 버튼 이름, 메뉴 위치 또는 권한별 동작은 이 가이드에서 추측하지 않습니다. 실제 화면과 문서가 다르거나 필요한 절차가 공개되어 있지 않다면 조직의 CertiLife 담당자 또는 CertiLife 고객센터(1800-8984)에 문의하세요. 담당자가 따로 없는 병원은 고객센터에 바로 문의하면 됩니다. 문의 자료에는 고객·환자 개인정보를 제거해야 합니다.

@@ -228,6 +228,8 @@ const IDENTIFIER_PATTERNS = [
   /(?:\+82[ .-]?(?:\(0\)[ .-]?)?\(?\d{1,3}\)?[ .-]?\d{3,4}[ .-]?\d{4})/,
   /\b1[5-8]\d{2}[ .-]?\d{4}\b/,
 ];
+// CertiLife's own customer center number is published in the certi.life footer; every other number stays blocked.
+const PUBLIC_SUPPORT_PHONE = /(?<!\d)1800-8984(?!\d)/g;
 const CREDENTIAL_FIELD_SOURCE = '(?:(?:[\\p{L}\\p{N}]+[ _-])*(?:api[ _-]?key|token|secret|authorization|password|passwd|pwd))';
 const CREDENTIAL_ASSIGNMENT = new RegExp(`(?<![\\p{L}\\p{N}])(${CREDENTIAL_FIELD_SOURCE})(?:["']|\\s)*(?::|(?:(?:\\*\\*|>>>|<<|>>|\\|\\||&&|\\?\\?|[+\\-*/%&|^]))?\\s*=)\\s*(?:"([^"\\r\\n]*)"|'([^'\\r\\n]*)'|\\x60([^\\x60\\r\\n]*)\\x60|([^\\s,;)\\]\\x60.!?]+))`, 'giu');
 const SAFE_NON_SECRET_FIELD = /^(?:CSS[ _-]+)?(?:design|custom|color|theme)[ _-]token$/i;
@@ -312,7 +314,7 @@ function assertNoLeaks(value, label, {allowGeneratedMarkdownEscapes = false} = {
       throw new Error(`${label}: private or credential-like content detected`);
     }
   }
-  const proseWithoutUrls = value.replace(/https?:\/\/[^\s)<>"']+/gi, 'PUBLIC_URL');
+  const proseWithoutUrls = value.replace(/https?:\/\/[^\s)<>"']+/gi, 'PUBLIC_URL').replace(PUBLIC_SUPPORT_PHONE, 'PUBLIC_PHONE');
   for (const pattern of IDENTIFIER_PATTERNS) {
     if (pattern.test(proseWithoutUrls)) throw new Error(`${label}: private or credential-like content detected`);
   }

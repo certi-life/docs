@@ -33,7 +33,7 @@ npm run ai-discovery:generate
 npm run docs:check
 ```
 
-`docs:check`는 두 파일의 최신 상태, 34개 공개 가이드의 정확한 1회 수록, 운영 도메인과 sitemap, 내부 식별자 노출 여부를 검사합니다.
+`docs:check`는 두 파일의 최신 상태, 모든 공개 가이드가 `llms.txt`에 한 번씩 수록됐는지, 운영 도메인과 sitemap, 내부 식별자 노출 여부를 검사합니다.
 
 ## 콘텐츠 원칙
 
