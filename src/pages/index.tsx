@@ -80,7 +80,7 @@ export default function Home(): ReactNode {
           <div className={`container ${styles.heroGrid}`}>
             <div className={styles.heroCopy}>
               <span className={styles.docsLabel}>CertiLife 사용 가이드</span>
-              <Heading as="h1">인증서에서 상담·재방문까지,<br />병원의 고객 경험을 잇습니다</Heading>
+              <Heading as="h1">인증서에서 <span className={styles.keepTogether}>상담·재방문까지,</span><br />병원의 고객 경험을 잇습니다</Heading>
               <p>
                 CertiLife는 시술·제품 정보를 정품 인증서로 환자에게 전달하고,
                 AI 상담과 CRM 메시징으로 관계를 이어가는 병원 고객관리 플랫폼입니다.

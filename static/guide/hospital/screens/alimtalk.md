@@ -77,5 +77,5 @@ Hospital 알림톡의 `템플릿 코드`는 화면이 채널 설정 기준으로
 
 - 알림톡은 정보성 메시지 전용입니다. 할인이나 이벤트 같은 광고 문구는 검수에서 반려될 수 있습니다.
 - 변수에 환자 이름이나 예약일처럼 개인정보가 들어갑니다. 템플릿 문구 자체에는 특정 환자의 정보를 적지 마세요.
-- 인증서 알림톡 템플릿과 채널 인증은 Hospital 알림톡(이 메뉴)에서, CRM 캠페인·시나리오 자동화용 템플릿은 Studio [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 관리합니다. [인증서 설정의 병원 채널로 발송하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-채널로-발송하기)가 이 메뉴에서 승인된 템플릿을 씁니다. Studio 쪽 채널 등록은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels#카카오-알림톡-채널-연동하기)을 보세요. 두 곳의 템플릿이 서로 공유되는지는 확인되지 않았습니다.
+- 인증서 알림톡 템플릿과 채널 인증은 Hospital 알림톡(이 메뉴)에서, CRM 캠페인·시나리오 자동화용 템플릿은 Studio [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 관리합니다. [인증서 설정의 병원 채널로 발송하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-채널로-발송하기)가 이 메뉴에서 승인된 템플릿을 씁니다. Studio 쪽 채널 등록은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels#카카오-알림톡-채널-연동하기)을 보세요. Hospital `알림톡`과 Studio [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)은 같은 템플릿 목록을 씁니다. Hospital에는 `대표 채널`의 템플릿만 보입니다.
 - 발송 전 점검 항목은 [인증서 전달 전 체크리스트](https://certi.life/docs/guide/products/certificate/delivery-checklist)와 [CRM 메시지 발송 전 체크리스트](https://certi.life/docs/guide/products/crm-messaging/message-checklist)를 참고하세요.

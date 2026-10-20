@@ -13,16 +13,16 @@
 - 테스트와 예시에는 특정인을 떠올릴 수 없는 완전한 가상 데이터를 사용합니다.
 - 로그인 정보, 비밀번호, 인증 코드, 토큰 또는 키를 문서·메신저·문의 내용에 적지 않습니다.
 - 개인정보가 포함된 자료를 개인 저장 공간이나 승인되지 않은 서비스로 옮기지 않습니다.
-- 의심스러운 접근이나 정보 노출을 발견하면 추가 공유를 멈추고 즉시 조직의 담당자에게 알립니다.
+- 의심스러운 접근이나 정보 노출을 발견하면 추가 공유를 멈추고 즉시 조직의 개인정보·사고 대응 담당자에게 알립니다. 병원 관리자 또는 CertiLife 고객센터(1800-8984)에도 알립니다.
 
 ## 안전한 계정과 접속
 
 본인에게 발급된 계정만 사용하고 로그인 정보를 공유하지 마세요. 공식 로그인 주소는 다음과 같습니다. 직원 공지에 붙여 넣을 때는 주소 문자열을 그대로 쓰세요.
 
-- Hospital: `hospital.certi.life/signin` — [Hospital 로그인](https://hospital.certi.life/signin)
-- Manufacturer: `manufacturer.certi.life/signin` — [Manufacturer 로그인](https://manufacturer.certi.life/signin)
-- Studio: `studio.certi.life` — [Studio 로그인](https://studio.certi.life)
-- 다운로드: `certi.life/download` — [공식 다운로드 페이지](https://certi.life/download)
+- Hospital: `hospital.certi.life/signin` ([Hospital 로그인](https://hospital.certi.life/signin))
+- Manufacturer: `manufacturer.certi.life/signin` ([Manufacturer 로그인](https://manufacturer.certi.life/signin))
+- Studio: `studio.certi.life` ([Studio 로그인](https://studio.certi.life))
+- 다운로드: `certi.life/download` ([공식 다운로드 페이지](https://certi.life/download))
 
 주소 표시줄의 도메인이 `certi.life`로 끝나는지 확인한 후 정보를 입력하고, 공식 주소와 다른 페이지가 로그인이나 설치를 요구하면 진행하지 마세요.
 
@@ -55,7 +55,7 @@ AI 상담은 일반 안내와 반복 문의 대응을 지원하지만 의료진�
 
 1. 해당 자료의 추가 전송, 화면 공유 또는 게시를 즉시 중단합니다.
 2. 자료를 임의로 더 복제하지 말고 어떤 정보가 어디에 노출되었는지 최소 범위로 파악합니다.
-3. 조직의 CertiLife 담당자와 조직이 정한 개인정보·보안 보고 경로에 즉시 알립니다.
+3. 조직에서 CertiLife 계정을 관리하는 사람(병원은 병원 관리자)과 조직이 정한 개인정보·보안 보고 경로에 즉시 알립니다.
 4. 외부 지원이 필요하면 [도입 및 서비스 문의](https://certi.life/contact)를 이용하되, 문의 자체에 노출된 개인정보나 로그인 정보를 다시 첨부하지 않습니다.
 
 ## 공식 정책과 문의
@@ -66,4 +66,4 @@ AI 상담은 일반 안내와 반복 문의 대응을 지원하지만 의료진�
 - [개인정보처리방침](https://certi.life/terms/privacy)
 - [도입 및 서비스 문의](https://certi.life/contact)
 
-정책의 적용이나 개인정보 처리에 관한 판단이 필요하면 공개 도움말만으로 결론 내리지 말고 최신 공식 정책과 조직의 담당 안내를 확인하세요.
+정책의 적용이나 개인정보 처리에 관한 판단이 필요하면 이 안내만으로 결론 내리지 말고 최신 공식 정책과 조직의 담당 안내를 확인하세요.

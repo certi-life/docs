@@ -296,6 +296,15 @@ const banned = [
   /develop\s*(브랜치|branch)/i,
   /내부\s*(로드맵|문서화 계획|운영 지표)/i,
 ];
+// Author research notes and the ambiguous "CertiLife 담당자" must not reach readers.
+// Quoted UI text in backticks or fenced code is exempt (a screen can say "확인하지 못했습니다").
+const authorNotes = [
+  /CertiLife 담당자/,
+  /(?:화면|소스|문서)에서(?:는)?\s*(?:확인되지 않|확인하지 못)/,
+  /점검한\s*(?:계정|챗봇|병원|화면)/,
+  /추측(?:하지|해\s*안내하지|으로\s*쓰지)\s*않/,
+  /확인될\s*때까지는/,
+];
 
 function stripFrontmatterAndFencedCode(content) {
   return content
@@ -313,6 +322,10 @@ for (const file of walk(docsRoot).filter((path) => path.endsWith('.mdx'))) {
   const content = readFileSync(file, 'utf8');
   for (const pattern of banned) {
     if (pattern.test(content)) failures.push(`public-content violation ${pattern}: ${relative(root, file)}`);
+  }
+  const readerText = content.replace(/```[\s\S]*?```/g, '').replace(/`[^`\n]*`/g, '');
+  for (const pattern of authorNotes) {
+    if (pattern.test(readerText)) failures.push(`author note must not reach readers ${pattern}: ${relative(root, file)}`);
   }
 
   const linkProse = stripFrontmatterAndFencedCode(content);

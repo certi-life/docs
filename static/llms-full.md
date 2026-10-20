@@ -37,15 +37,15 @@ CertiLife는 **메디컬 인증서를 기반으로 병원과 고객의 관계를
 
 CertiLife의 화면은 세 가지입니다. **Hospital**은 병원 관리자가 인증서를 발행하고 환자·계정·알림톡을 관리하는 병원용 화면입니다. **Studio**는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, 챗봇·상담·CRM·콜봇 화면이 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. **Manufacturer**는 제조사 사용자용 화면입니다.
 
-- **병원 원무·데스크·실장**(인증서 발행, 계정, 결제 담당)이라면 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)에서 시작하세요.
+- **병원 원무·데스크·수납·계정 담당**(직원 서브계정 포함)이라면 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)에서 시작하세요.
 - **병원 소속이지만 AI 상담·CRM·번역을 맡은 담당자**(상담실장, 코디네이터, 콜센터 상담사, 외국인 환자 코디, 마케팅)라면 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview)에서 시작하세요. 인증서 발행은 Hospital에서, 챗봇·상담·CRM은 Studio에서 합니다.
 - **제조사 사용자**라면 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview)에서 공식 접속과 안전한 계정 이용 방법을 확인하세요.
-- **Studio 계정을 받은 운영자**라면 [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)를 확인하세요.
-- 서비스 구성이 궁금하다면 [빠른 둘러보기](https://certi.life/docs/guide/getting-started/quick-tour)를 먼저 읽어보세요.
+- **Studio 계정을 받은 운영자**라면 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview)에서 시작하세요.
+- 서비스 구성이 궁금하다면 [5분 둘러보기](https://certi.life/docs/guide/getting-started/quick-tour)를 먼저 읽어보세요.
 
 > **가장 빠른 시작**
 >
-> 처음 방문했다면 **빠른 둘러보기 → 서비스 소개 → 역할별 안내** 순서로 확인하는 것을 권장합니다.
+> 처음 방문했다면 **5분 둘러보기 → 서비스 소개 → 역할별 안내** 순서로 확인하는 것을 권장합니다.
 
 #### 바로 해결하고 싶은 일이 있나요?
 
@@ -58,9 +58,9 @@ CertiLife의 화면은 세 가지입니다. **Hospital**은 병원 관리자가 
 | 도입 비용과 구성 확인           | [요금제와 도입 문의](https://certi.life/docs/guide/getting-started/plans-and-contact)           |
 | AI 상담의 한계와 사람 전환 여부 확인 | [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)                 |
 | AI가 참고할 자료 정리          | [AI 상담 지식 준비](https://certi.life/docs/guide/products/ai-chatbot/knowledge-preparation)  |
-| 의료진·직원에게 연결할 기준 설계     | [사람 연결과 안전 기준](https://certi.life/docs/guide/products/ai-chatbot/handoff-policy)        |
-| CRM 발송 대상을 정리          | [고객 세그먼트 설계](https://certi.life/docs/guide/products/crm-messaging/segment-planning)     |
-| 이벤트 목적과 지표 정리          | [이벤트 캠페인 기획](https://certi.life/docs/guide/products/event-marketing/campaign-planning)  |
+| 의료진·직원에게 연결할 기준 설계     | [상담원 연결 정책](https://certi.life/docs/guide/products/ai-chatbot/handoff-policy)           |
+| CRM 발송 대상을 정리          | [CRM 세그먼트 계획](https://certi.life/docs/guide/products/crm-messaging/segment-planning)    |
+| 이벤트 목적과 지표 정리          | [이벤트 캠페인 계획](https://certi.life/docs/guide/products/event-marketing/campaign-planning)  |
 | 로그인이나 설치 문제 해결         | [문제 해결](https://certi.life/docs/guide/help/troubleshooting)                             |
 
 서비스를 처음 검토한다면 [요금제와 도입 문의](https://certi.life/docs/guide/getting-started/plans-and-contact), 앱 설치가 필요하다면 [CertiLife 다운로드](https://certi.life/docs/guide/getting-started/downloads)를 확인하세요.
@@ -111,12 +111,12 @@ CertiLife는 **메디컬 인증서를 기반으로 고객과의 관계를 이어
 
 출처: https://certi.life/docs/guide/getting-started/quick-tour#역할별로-이렇게-시작하세요
 
-- **병원에서 인증서 발행·환자 관리·계정을 맡은 사용자:** 서비스 구성을 이해한 뒤 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview)를 읽고 [Hospital 로그인](https://hospital.certi.life/signin)으로 이동하세요.
-- **병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅):** Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview)에서 공개된 운영 원칙을 확인한 뒤 [Studio 로그인](https://studio.certi.life)으로 이동하세요.
+- **병원에서 인증서 발행·환자 관리·계정을 맡은 사용자:** [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)에서 시작한 뒤 [Hospital 로그인](https://hospital.certi.life/signin)으로 이동하세요.
+- **병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅):** Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview)에서 운영 원칙을 확인한 뒤 [Studio 로그인](https://studio.certi.life)으로 이동하세요.
 - **제조사 사용자:** [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview)에서 공식 계정 접속과 안전 원칙을 확인한 뒤 [Manufacturer 로그인](https://manufacturer.certi.life/signin)으로 이동하세요.
-- **도입을 검토하는 담당자:** [가격 안내](https://certi.life/pricing)를 확인하고 구체적인 적용 범위는 [도입 문의](https://certi.life/contact)에서 상담하세요.
-- **앱 설치가 필요한 사용자:** 공식 [다운로드 페이지](https://certi.life/download)를 이용하세요. 출처가 불분명한 설치 파일은 사용하지 마세요.
-- **문제 해결이 필요한 사용자:** [문제 해결](https://certi.life/docs/guide/help/troubleshooting)에서 공개 로그인과 기본 점검 방법을 확인하세요.
+- **도입을 검토하는 담당자:** [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)와 [가격 안내](https://certi.life/pricing)를 확인하고 구체적인 적용 범위는 [도입 문의](https://certi.life/contact)에서 상담하세요.
+- **앱 설치가 필요한 사용자:** [CertiLife 다운로드](https://certi.life/docs/guide/getting-started/downloads)에서 필요한 앱과 받는 곳을 확인하세요. 출처가 불분명한 설치 파일은 사용하지 마세요.
+- **문제 해결이 필요한 사용자:** [문제 해결](https://certi.life/docs/guide/help/troubleshooting)에서 로그인 점검 순서와 증상별 안내를 확인하세요.
 
 더 세분화된 선택이 필요하면 [내게 맞는 가이드 찾기](https://certi.life/docs/guide/getting-started/choose-guide)의 역할·목적별 표를 이용하세요.
 
@@ -126,11 +126,11 @@ CertiLife는 **메디컬 인증서를 기반으로 고객과의 관계를 이어
 
 1. 실제 고객·환자 개인정보를 공개 문서, 테스트 자료 또는 지원 요청 화면에 넣지 않습니다.
 2. AI 상담은 일반 안내를 지원하며 의료진의 진단이나 의학적 판단을 대신하지 않습니다.
-3. 화면별 절차가 공개 가이드에서 확인되지 않으면 추측해 진행하지 말고 조직의 CertiLife 담당자나 [도입 문의](https://certi.life/contact)를 이용합니다.
+3. 필요한 화면 절차가 문서에 없으면 임의로 진행하지 말고 CertiLife 고객센터(1800-8984)에 문의합니다. 도입 전이라면 [도입 문의](https://certi.life/contact)를 이용합니다.
 
 > **다음 문서 고르기**
 >
-> 서비스를 처음 알아보는 중이면 **빠른 둘러보기 → 관심 서비스 소개 → 역할별 안내** 순서가 좋습니다. 이미 이용 중 문제가 발생했다면 서비스 소개보다 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)을 먼저 확인하세요.
+> 서비스를 처음 알아보는 중이면 **5분 둘러보기 → 관심 서비스 소개 → 역할별 안내** 순서가 좋습니다. 이미 이용 중 문제가 발생했다면 서비스 소개보다 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)을 먼저 확인하세요.
 
 ---
 
@@ -142,45 +142,45 @@ CertiLife는 **메디컬 인증서를 기반으로 고객과의 관계를 이어
 
 CertiLife를 알아보는 단계와 실제로 이용하는 단계에는 필요한 정보가 다릅니다. 아래 표에서 현재 역할이나 목적에 가장 가까운 항목을 찾아 시작하세요. 하나의 조직에서 여러 역할을 맡고 있다면 **지금 해결하려는 목적**을 기준으로 문서를 고르면 됩니다. 원장이 도입 검토와 운영을 함께 맡는 병원은 병원 도입 구매 FAQ와 가격 안내를 먼저 읽은 뒤 Hospital 계정 접속으로 넘어가면 됩니다.
 
-병원 안에서도 쓰는 화면이 다릅니다. **Hospital**은 인증서 발행, 환자 관리, 계정, 결제, 알림톡을 다루는 병원용 화면입니다. **Studio**는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, 챗봇·상담·CRM·콜봇·번역 화면이 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. 한의원처럼 진료과 목록(치과, 안과, 성형외과, 피부과, 내과, 정형외과, 수의과)에 없는 의료기관도 같은 병원용 서비스를 쓰며, 인증서는 진료과와 관계없이 쓰는 `병원` 그룹으로 발행합니다.
+병원 안에서도 쓰는 화면이 다릅니다. **Hospital**은 인증서 발행, 환자 관리, 계정, 결제, 알림톡을 다루는 병원용 화면입니다. **Studio**는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, 챗봇·상담·CRM·콜봇·번역 화면이 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. 한의원처럼 Hospital 진료과 목록에 없는 의료기관은 인증서 발행 메뉴가 보이지 않을 수 있습니다. 이때는 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 역할별 문서 선택표
 
 출처: https://certi.life/docs/guide/getting-started/choose-guide#역할별-문서-선택표
 
-| 현재 역할                                                              | 먼저 읽을 문서                                                                                                         | 이어서 할 일                                                                                                                                                                                                  |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| CertiLife를 처음 접한 사용자                                               | [5분 둘러보기](https://certi.life/docs/guide/getting-started/quick-tour)                                              | 인증서, AI 상담, CRM 메시징, 이벤트 마케팅 중 관심 서비스 확인                                                                                                                                                                 |
-| 병원 원장·상담실장(도입 검토)                                                  | [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)                                          | [가격 안내](https://certi.life/pricing)를 확인하고 [도입 문의](https://certi.life/contact)로 상담                                                                                                                        |
-| 병원 원무·데스크·수납·계정 담당(직원 서브계정 포함)                                     | [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)                                          | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)으로 이동. 메뉴 전체는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)                                    |
-| 병원 소속인데 AI 상담·CRM·번역을 맡은 담당자(상담실장, 코디네이터, 콜센터 상담사, 외국인 환자 코디, 마케팅) | [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview) — Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다 | 인증서 발행은 Hospital, 챗봇·상담·CRM은 Studio를 씁니다. [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)로 이동                                                                                  |
-| 외국인 환자 응대·번역 담당자                                                   | [외국어 고객과 대화하기](https://certi.life/docs/guide/studio/screens/counsel/translation) (Studio)                        | 인증서 위챗 발송은 Hospital의 [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기), 상담 번역은 Studio에서 합니다                                                                          |
-| 제조사 CS·영업 담당자                                                      | [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview)                                           | 병원이 묻는 전자계약은 [구매/주문 관리](https://certi.life/docs/guide/hospital/screens/orders#전자계약-확인하기), 제품 코드 오류와 발행 권한은 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)에서 확인 |
-| Studio 계정을 받은 운영자                                                  | [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview)                                                   | 안전 원칙을 확인한 뒤 [Studio 로그인](https://studio.certi.life)으로 이동                                                                                                                                                |
-| 개인정보 보호를 검토하는 담당자                                                  | [개인정보 및 보안](https://certi.life/docs/guide/help/privacy-security)                                                 | 입력·공유·지원 요청 전 개인정보 제거 체크리스트 확인                                                                                                                                                                           |
-| 용어가 낯선 사용자                                                         | [용어집](https://certi.life/docs/guide/help/glossary)                                                               | 정의를 확인한 뒤 관련 서비스 소개로 이동                                                                                                                                                                                  |
+| 현재 역할                                                              | 먼저 읽을 문서                                                                                                        | 이어서 할 일                                                                                                                                                                                                  |
+| ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| CertiLife를 처음 접한 사용자                                               | [5분 둘러보기](https://certi.life/docs/guide/getting-started/quick-tour)                                             | 인증서, AI 상담, CRM 메시징, 이벤트 마케팅 중 관심 서비스 확인                                                                                                                                                                 |
+| 병원 원장·상담실장(도입 검토)                                                  | [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)                                         | [가격 안내](https://certi.life/pricing)를 확인하고 [도입 문의](https://certi.life/contact)로 상담                                                                                                                        |
+| 병원 원무·데스크·수납·계정 담당(직원 서브계정 포함)                                     | [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)                                         | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)으로 이동. 메뉴 전체는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)                                    |
+| 병원 소속인데 AI 상담·CRM·번역을 맡은 담당자(상담실장, 코디네이터, 콜센터 상담사, 외국인 환자 코디, 마케팅) | [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview). Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다 | 인증서 발행은 Hospital, 챗봇·상담·CRM은 Studio를 씁니다. [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)로 이동                                                                                  |
+| 외국인 환자 응대·번역 담당자                                                   | [외국어 고객과 대화하기](https://certi.life/docs/guide/studio/screens/counsel/translation) (Studio)                       | 인증서 위챗 발송은 Hospital의 [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기), 상담 번역은 Studio에서 합니다                                                                          |
+| 제조사 CS·영업 담당자                                                      | [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview)                                          | 병원이 묻는 전자계약은 [구매/주문 관리](https://certi.life/docs/guide/hospital/screens/orders#전자계약-확인하기), 제품 코드 오류와 발행 권한은 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)에서 확인 |
+| Studio 계정을 받은 운영자                                                  | [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview)                                                  | 안전 원칙을 확인한 뒤 [Studio 로그인](https://studio.certi.life)으로 이동                                                                                                                                                |
+| 개인정보 보호를 검토하는 담당자                                                  | [개인정보 및 보안](https://certi.life/docs/guide/help/privacy-security)                                                | 입력·공유·지원 요청 전 개인정보 제거 체크리스트 확인                                                                                                                                                                           |
+| 용어가 낯선 사용자                                                         | [용어집](https://certi.life/docs/guide/help/glossary)                                                              | 정의를 확인한 뒤 관련 서비스 소개로 이동                                                                                                                                                                                  |
 
 #### 목적별 문서 선택표
 
 출처: https://certi.life/docs/guide/getting-started/choose-guide#목적별-문서-선택표
 
-| 하고 싶은 일            | 추천 문서 또는 공식 링크                                                                                          | 문서에서 확인할 내용                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------- | ----------------------------- |
-| 환자에게 인증서 발행해 보내기   | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate) (Hospital)                   | 환자 정보 입력, 동의, 시술·제품 선택, 발행 순서 |
-| 환자에게 인증서 카톡 다시 보내기 | [발행 내역](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기) (Hospital)                    | 재발송 위치와 회수·삭제의 차이             |
-| 위챗 환자에게 인증서 보내기    | [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기) (Hospital)        | 환자가 먼저 갖춰야 할 조건과 알림 실패 시 대처   |
-| 챗봇에 우리 병원 FAQ 넣기   | [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials) (Studio) | 챗봇이 참고할 자료를 넣는 방법             |
-| 대기 콜 받기            | [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel) (Studio)                             | 콜봇이 넘긴 전화를 상담사가 받는 순서         |
-| 외국어 고객과 상담하기(번역)   | [외국어 고객과 대화하기](https://certi.life/docs/guide/studio/screens/counsel/translation) (Studio)               | 상담 화면에서 번역을 쓰는 방법             |
-| 제조사와 맺은 계약·주문 확인   | [구매/주문 관리](https://certi.life/docs/guide/hospital/screens/orders#전자계약-확인하기) (Hospital)                  | 전자계약과 주문·배송 조회                |
-| 고객에게 전달하는 인증서 이해   | [인증서](https://certi.life/docs/guide/products/certificate)                                               | 인증서의 역할과 다른 서비스와의 연결          |
-| 반복되는 일반 문의 대응 이해   | [AI 상담](https://certi.life/docs/guide/products/ai-chatbot)                                              | 지원 범위와 의료적 판단의 경계             |
-| 고객 안내 메시지 이해       | [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)                                         | 메시징의 목적과 안전한 활용 원칙            |
-| 이벤트를 통한 고객 접점 이해   | [이벤트 마케팅](https://certi.life/docs/guide/products/event-marketing)                                       | 이벤트 마케팅의 역할과 확인 사항            |
-| 로그인 문제 해결          | [문제 해결](https://certi.life/docs/guide/help/troubleshooting)                                             | 공식 주소, 브라우저, 네트워크, 지원 요청 전 점검 |
-| 자주 묻는 질문 확인        | [자주 묻는 질문](https://certi.life/docs/guide/help/faq)                                                      | 서비스 범위, 접속, 다운로드, 개인정보 관련 답변  |
-| 공식 앱 또는 프로그램 다운로드  | [다운로드](https://certi.life/download)                                                                     | 공식 배포 페이지에서 제공되는 항목 확인        |
-| 가격 확인 또는 도입 상담     | [가격 안내](https://certi.life/pricing) · [도입 문의](https://certi.life/contact)                               | 공개 가격 정보와 조직별 적용 상담           |
+| 하고 싶은 일            | 추천 문서 또는 공식 링크                                                                                          | 문서에서 확인할 내용                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 환자에게 인증서 발행해 보내기   | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate) (Hospital)                   | 환자 정보 입력, 동의, 시술·제품 선택, 발행 순서                                                      |
+| 환자에게 인증서 카톡 다시 보내기 | [발행 내역](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기) (Hospital)                    | 재발송 위치와 회수·삭제의 차이                                                                  |
+| 위챗 환자에게 인증서 보내기    | [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기) (Hospital)        | 환자가 먼저 갖춰야 할 조건과 알림 실패 시 대처                                                        |
+| 챗봇에 우리 병원 FAQ 넣기   | [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials) (Studio) | 챗봇이 참고할 자료를 넣는 방법                                                                  |
+| 대기 콜 받기            | [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel) (Studio)                             | 콜봇이 넘긴 전화를 상담사가 받는 순서                                                              |
+| 외국어 고객과 상담하기(번역)   | [외국어 고객과 대화하기](https://certi.life/docs/guide/studio/screens/counsel/translation) (Studio)               | 상담 화면에서 번역을 쓰는 방법                                                                  |
+| 제조사와 맺은 계약·주문 확인   | [구매/주문 관리](https://certi.life/docs/guide/hospital/screens/orders#전자계약-확인하기) (Hospital)                  | 전자계약과 주문·배송 조회                                                                     |
+| 고객에게 전달하는 인증서 이해   | [인증서](https://certi.life/docs/guide/products/certificate)                                               | 인증서의 역할과 다른 서비스와의 연결                                                               |
+| 반복되는 일반 문의 대응 이해   | [AI 상담](https://certi.life/docs/guide/products/ai-chatbot)                                              | 지원 범위와 의료적 판단의 경계                                                                  |
+| 고객 안내 메시지 이해       | [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)                                         | 메시징의 목적과 안전한 활용 원칙                                                                 |
+| 이벤트를 통한 고객 접점 이해   | [이벤트 마케팅](https://certi.life/docs/guide/products/event-marketing)                                       | 이벤트 마케팅의 역할과 확인 사항                                                                 |
+| 로그인 문제 해결          | [문제 해결](https://certi.life/docs/guide/help/troubleshooting)                                             | 공식 주소, 브라우저, 네트워크, 지원 요청 전 점검                                                      |
+| 자주 묻는 질문 확인        | [자주 묻는 질문](https://certi.life/docs/guide/help/faq)                                                      | 서비스 범위, 접속, 다운로드, 개인정보 관련 답변                                                       |
+| 공식 앱 또는 프로그램 다운로드  | [CertiLife 다운로드](https://certi.life/docs/guide/getting-started/downloads)                               | 필요한 앱과 받는 곳. 치과의 제품 코드 스캔에 쓰는 병원용 앱은 공식 다운로드 페이지에 없고 App Store와 Google Play에서 받습니다 |
+| 가격 확인 또는 도입 상담     | [가격 안내](https://certi.life/pricing) · [도입 문의](https://certi.life/contact)                               | 공개 가격 정보와 조직별 적용 상담                                                                |
 
 #### 공식 서비스 바로가기
 
@@ -197,7 +197,7 @@ CertiLife를 알아보는 단계와 실제로 이용하는 단계에는 필요�
 
 > **화면 절차에 관하여**
 >
-> 화면별 버튼과 메뉴 위치는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)와 [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)에서 시작하는 화면별 안내에 있습니다. 화면별 안내에 없는 버튼 이름, 메뉴 위치 또는 권한별 동작은 이 가이드에서 추측하지 않습니다. 실제 화면과 문서가 다르거나 필요한 절차가 공개되어 있지 않다면 조직의 CertiLife 담당자 또는 CertiLife 고객센터(1800-8984)에 문의하세요. 담당자가 따로 없는 병원은 고객센터에 바로 문의하면 됩니다. 문의 자료에는 고객·환자 개인정보를 제거해야 합니다.
+> 화면별 버튼과 메뉴 위치는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)와 [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)에서 시작하는 화면별 안내에 있습니다. Hospital에서 문서에 있는 메뉴가 보이지 않으면 병원 관리자(계정을 만들어 준 사람)에게 권한을 요청하세요. 실제 화면과 문서가 다르거나 필요한 절차가 문서에 없으면 CertiLife 고객센터(1800-8984)에 문의하세요. 문의 자료에는 고객·환자 개인정보를 제거해야 합니다.
 
 ---
 
@@ -229,6 +229,20 @@ CertiLife를 알아보는 단계와 실제로 이용하는 단계에는 필요�
 > **가격 페이지에서 확인할 항목**
 >
 > 공개 가격 페이지에는 월 이용료뿐 아니라 설치비, 연 구독 할인과 서비스별 포함 기능이 함께 표시됩니다. 표시 금액은 VAT 별도입니다.
+
+#### 가격 페이지 용어와 문서 용어
+
+출처: https://certi.life/docs/guide/getting-started/plans-and-contact#가격-페이지-용어와-문서-용어
+
+가격 페이지의 기능 이름과 이 문서에서 쓰는 이름이 다른 경우가 있습니다. 아래 표의 뜻은 가격 페이지와 [CertiLife 자주묻는질문](https://certi.life/faq)의 설명을 따릅니다.
+
+| 가격 페이지 항목       | 가격 페이지에서 이 항목이 보이는 플랜                                  | 뜻                                                                 | 문서에서 부르는 이름                                                                                                  |
+| --------------- | ------------------------------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `음성봇`, `AI 음성봇` | `음성봇`, `음성봇+채팅봇+CRM`                                   | 전화 문의를 AI 에이전트가 받습니다                                              | AI 음성봇. Studio 왼쪽 메뉴에서는 `콜봇`입니다([콜봇 시작하기](https://certi.life/docs/guide/studio/screens/callbot/overview))    |
+| `STT 상담 내역 조회`  | `음성봇`                                                  | 음성봇이 응대한 통화를 음성 인식(STT)으로 글로 옮겨 상담 내역으로 봅니다                       | Studio `상담 내역`의 [전화 통화 기록 보기](https://certi.life/docs/guide/studio/screens/conversation-history#전화-통화-기록-보기) |
+| `케어톡 서비스`       | `CRM 메시지`                                              | 시술 후 안내, 복약 안내, 정기검진 알림, 재방문 안내를 병원이 정한 시나리오와 발송 시점에 맞춰 자동으로 보냅니다 | [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)                                              |
+| `병원용 인증서`       | `CRM 메시지`                                              | 병원의 로고, 디자인과 전달할 정보를 반영해 만드는 병원용 커스텀 인증서입니다                       | 커스텀 인증서([인증서](https://certi.life/docs/guide/products/certificate))                                           |
+| `인증서 자체 채널 발송`  | 적용 플랜과 비용은 [도입 문의](https://certi.life/contact)에서 확인하세요 | 인증서 알림을 병원 이름의 카카오톡 채널로 보냅니다                                      | 자체 비즈니스 채널([인증서 발송 채널](https://certi.life/docs/guide/products/certificate/channels))                         |
 
 #### 도입 문의 전에 준비할 내용
 
@@ -293,7 +307,7 @@ CertiLife는 메디컬 인증서를 기반으로 AI 상담, CRM 메시징과 이
 AI 상담은 반복 문의 응대,
 CRM 메시징은 진료 전후 안내와 재방문 관리,
 인증서는 시술·제품 정보를 환자에게 전달하는 기능입니다.
-자세한 제품별 역할은 [제품 둘러보기](https://certi.life/docs/guide/getting-started/quick-tour)를 확인하세요.
+자세한 제품별 역할은 [5분 둘러보기](https://certi.life/docs/guide/getting-started/quick-tour)를 확인하세요.
 
 #### 한 가지 서비스만 먼저 도입할 수 있나요?
 
@@ -426,7 +440,6 @@ AI 음성봇은 점심시간·휴일·업무시간 외 전화 문의 대응을 �
 계약기간, 해지·환불, 메시지별 추가 비용,
 기존 EMR·CRM의 연동 범위와 데이터 보관 조건은
 병원별 계약과 기술 조건에 따라 다릅니다.
-확인되지 않은 조건을 공개 문서에서 추측하지 않으며,
 [도입 문의](https://certi.life/contact)에서 병원 상황을 적어 확인하세요.
 
 ---
@@ -443,13 +456,14 @@ AI 음성봇은 점심시간·휴일·업무시간 외 전화 문의 대응을 �
 
 출처: https://certi.life/docs/guide/getting-started/downloads#어떤-앱이-필요한가요
 
-| 사용자                          | 용도                     | 공개된 다운로드 선택지                                                      |
-| ---------------------------- | ---------------------- | ----------------------------------------------------------------- |
-| 병원 담당자(인증서 발행, 발행 내역, 계정 관리) | Hospital 업무            | 설치 없음. 웹 브라우저로 [Hospital 로그인](https://hospital.certi.life/signin) |
-| 병원·기업 담당자                    | AI 상담, CRM 마케팅, 이벤트 관리 | Windows x64, macOS Intel, macOS Apple Silicon                     |
-| 고객·환자                        | 병원 예약, 인증서 확인          | Android Google Play, iOS App Store                                |
+| 사용자                          | 용도                                          | 받는 곳                                                                                                                |
+| ---------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| 병원 담당자(인증서 발행, 발행 내역, 계정 관리) | Hospital 업무                                 | 설치 없음. 웹 브라우저로 [Hospital 로그인](https://hospital.certi.life/signin)                                                   |
+| 치과 담당자                       | 인증서 발행에서 제품 코드를 휴대폰으로 스캔(`제품 코드 한 번에 스캔하기`) | 서티라이프 병원용 앱. 공식 다운로드 페이지에는 없습니다. [병원용 앱 설치](https://certi.life/docs/guide/getting-started/downloads#병원용-앱-설치)를 따릅니다 |
+| 병원·기업 담당자                    | Studio 업무(AI 상담, CRM)를 데스크톱 앱으로 할 때         | 공식 다운로드 페이지의 Windows x64, macOS Intel, macOS Apple Silicon                                                          |
+| 고객·환자                        | 병원 예약, 인증서 확인                               | 공식 다운로드 페이지의 Android Google Play, iOS App Store                                                                     |
 
-Hospital 웹 서비스에 접속하려는 경우에는 별도 설치 없이 [Hospital 로그인](https://hospital.certi.life/signin)을 이용할 수 있습니다. 제조사 사용자는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio 사용자는 [Studio 로그인](https://studio.certi.life)으로 이동하세요.
+Hospital, Manufacturer, Studio는 웹 브라우저로 접속하며 설치하지 않아도 됩니다. 제조사 사용자는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio 사용자는 [Studio 로그인](https://studio.certi.life)으로 이동하세요. 공식 다운로드 페이지의 데스크톱 앱은 Studio 화면 위쪽의 `데스크톱 앱 다운로드`에서 받는 앱과 같습니다.
 
 #### 기업용 서비스 설치 준비
 
@@ -464,6 +478,19 @@ Hospital 웹 서비스에 접속하려는 경우에는 별도 설치 없이 [Hos
 > **계정과 설치 파일을 공유하지 마세요**
 >
 > 설치 파일을 비공식 저장소에 다시 올리거나 계정 비밀번호를 다른 사람에게 전달하지 마세요. 여러 사람이 사용해야 한다면 조직의 계정 운영 기준을 확인하세요.
+
+#### 병원용 앱 설치
+
+출처: https://certi.life/docs/guide/getting-started/downloads#병원용-앱-설치
+
+치과에서 인증서를 발행할 때 제품 코드를 휴대폰으로 스캔하려면 서티라이프 병원용 앱이 필요합니다. 병원용 앱은 공식 다운로드 페이지에 없습니다. [App Store의 서티라이프 병원용 앱](https://apps.apple.com/kr/app/%EC%84%9C%ED%8B%B0%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%B3%91%EC%9B%90%EC%9A%A9/id6450404968)이나 [Google Play의 서티라이프 병원용 앱](https://play.google.com/store/apps/details?id=com.certilife.hospital)에서 받습니다. 제품 코드를 직접 입력할 때는 앱이 필요하지 않습니다.
+
+1. 휴대폰에 서티라이프 병원용 앱을 설치합니다.
+2. 치과 병원의 Hospital에는 왼쪽 메뉴 맨 아래에 앱 버튼이 있습니다. 컴퓨터에서 Hospital에 로그인하고 이 버튼을 누르면 `QR코드로 앱에 로그인` 창이 열립니다.
+3. 앱의 로그인 화면에서 'QR 코드로 로그인'을 고르고 창의 QR 코드를 스캔합니다.
+4. Hospital의 인증서 발행 화면에서 치아를 두 개 이상 고르면 `제품 코드 한 번에 스캔하기`가 보입니다. 이 버튼을 누르면 버튼이 `앱에서 스캔 실행 중`으로 바뀝니다. 휴대폰 앱으로 제품 코드를 스캔하면 발행 화면에 코드가 들어갑니다.
+
+스캔을 요청했을 때 "병원용 앱 Push Token이 없습니다. 병원용 앱에서 로그인 해 주세요." 또는 "서티라이프 스캔을 위해서는 앱 설치가 필요합니다."가 나오면 휴대폰 앱이 설치되어 있지 않거나 로그인되어 있지 않은 것입니다. 안내 창을 닫으면 `QR코드로 앱에 로그인` 창이 열리므로 3단계를 다시 합니다.
 
 #### 환자용 앱 안내
 
@@ -504,15 +531,15 @@ CertiLife는 사용자 역할과 서비스에 따라 접속 화면이 다릅니�
 
 출처: https://certi.life/docs/guide/getting-started/sign-in-directory#역할별-접속-경로
 
-| 사용자              | 공식 경로                                                                                      | 공개 화면에서 확인할 수 있는 항목                   |
-| ---------------- | ------------------------------------------------------------------------------------------ | ------------------------------------- |
-| 병원 관리자와 직원(서브계정) | Hospital 로그인: [hospital.certi.life/signin](https://hospital.certi.life/signin)             | 아이디, 비밀번호, 회원가입, 아이디 찾기, 비밀번호 재설정     |
-| 제조사 관리자          | Manufacturer 로그인: [manufacturer.certi.life/signin](https://manufacturer.certi.life/signin) | 아이디(ID), 비밀번호, 로그인, 비밀번호 찾기, 가입·제휴 문의 |
-| AI 상담·CRM·콜봇 운영자 | Studio 로그인: [studio.certi.life](https://studio.certi.life)                                 | Username, Password, 로그인               |
-| 데스크톱·모바일 앱 사용자   | [공식 다운로드](https://certi.life/download)                                                     | Windows, macOS, Android, iOS 선택지      |
-| 도입 전 사용자         | [도입 문의](https://certi.life/contact)                                                        | 서비스 도입 상담 신청                          |
+| 사용자              | 공식 경로                                                                                      | 로그인 화면에 있는 항목                           |
+| ---------------- | ------------------------------------------------------------------------------------------ | --------------------------------------- |
+| 병원 관리자와 직원(서브계정) | Hospital 로그인: [hospital.certi.life/signin](https://hospital.certi.life/signin)             | 아이디, 비밀번호, 회원가입, 아이디 찾기, 비밀번호 재설정       |
+| 제조사 관리자          | Manufacturer 로그인: [manufacturer.certi.life/signin](https://manufacturer.certi.life/signin) | 아이디(ID), 비밀번호, 로그인, 비밀번호 찾기, 가입 · 제휴 문의 |
+| AI 상담·CRM·콜봇 운영자 | Studio 로그인: [studio.certi.life](https://studio.certi.life)                                 | Username, Password, 로그인                 |
+| 데스크톱·모바일 앱 사용자   | [공식 다운로드](https://certi.life/download)                                                     | Windows, macOS, Android, iOS 선택지        |
+| 도입 전 사용자         | [도입 문의](https://certi.life/contact)                                                        | 서비스 도입 상담 신청                            |
 
-Hospital, Manufacturer, Studio는 웹 브라우저에서 위 주소로 접속합니다. 앱 설치는 인증서 발행의 `제품 코드 한 번에 스캔하기`처럼 병원용 앱이 필요한 일부 기능과 환자용 앱에만 필요합니다.
+Hospital, Manufacturer, Studio는 웹 브라우저에서 위 주소로 접속하며 설치하지 않아도 됩니다. 치과에서 인증서를 발행할 때 제품 코드를 휴대폰으로 스캔하려면(`제품 코드 한 번에 스캔하기`) 서티라이프 병원용 앱이 필요합니다. 병원용 앱은 공식 다운로드 페이지에 없고 App Store와 Google Play에서 받습니다. 받는 방법은 [병원용 앱 설치](https://certi.life/docs/guide/getting-started/downloads#병원용-앱-설치)에 있습니다.
 
 #### Hospital에 접속할 때
 
@@ -520,9 +547,9 @@ Hospital, Manufacturer, Studio는 웹 브라우저에서 위 주소로 접속합
 
 1. 주소가 `hospital.certi.life/signin`인지 확인합니다.
 2. 아이디와 비밀번호를 입력합니다. 화면의 입력란 이름은 `아이디`입니다. `계정 관리`에서 만든 직원용 서브계정도 이 화면에서 로그인합니다.
-3. 계정이 없다면 로그인 화면의 **회원가입**을 선택합니다.
-4. 아이디를 잊었다면 **아이디 찾기**, 비밀번호를 잊었다면 **비밀번호 재설정**을 선택합니다.
-5. 계정 생성이나 제휴 관련 문의는 화면의 **제휴 문의**를 이용합니다.
+3. 병원의 첫 관리자 계정을 만들 때만 로그인 화면의 `회원가입`을 선택합니다. 직원용 서브계정은 회원가입하지 않습니다. 병원 관리자가 `계정 관리`에서 만들어 주므로, 계정이 없는 직원은 병원 관리자에게 요청합니다.
+4. 아이디를 잊었다면 `아이디 찾기`, 비밀번호를 잊었다면 `비밀번호 재설정`을 선택합니다.
+5. 계정 생성이나 제휴 관련 문의는 화면의 `제휴 문의`를 이용합니다.
 
 자세한 내용은 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)을 확인하세요.
 
@@ -532,10 +559,10 @@ Hospital, Manufacturer, Studio는 웹 브라우저에서 위 주소로 접속합
 
 1. 주소가 `manufacturer.certi.life/signin`인지 확인합니다.
 2. 아이디(ID)와 비밀번호를 입력합니다.
-3. 비밀번호를 잊었다면 **비밀번호 찾기**를 선택합니다.
-4. 계정 또는 제휴 안내가 필요하면 화면의 **가입·제휴 문의**를 이용합니다.
+3. 비밀번호를 잊었다면 `비밀번호 찾기`를 누릅니다. 덴티움 통합 ID라면 안내 창에 적힌 대로 덴티움 ERP에서 비밀번호를 확인합니다. 안내 창의 `확인`을 누르면 CertiLife 문의 페이지가 새 탭으로 열립니다.
+4. 계정 또는 제휴 안내가 필요하면 화면의 `가입 · 제휴 문의`를 이용합니다.
 
-제조사 계정을 병원 계정이나 Studio 계정과 혼동하지 마세요. 동일한 담당자라도 역할에 따라 별도 계정이 필요할 수 있으므로, 확인되지 않은 계정 정보를 반복 입력하기보다 조직 담당자에게 먼저 문의하세요. 자세한 내용은 [Manufacturer 계정 접속](https://certi.life/docs/guide/manufacturer/account-access)을 확인하세요.
+제조사 계정을 병원 계정이나 Studio 계정과 혼동하지 마세요. 동일한 담당자라도 역할에 따라 별도 계정이 필요할 수 있습니다. 어느 계정인지 모르는 아이디를 반복 입력하지 말고 제조사 내부 담당자에게 먼저 문의하세요. 자세한 내용은 [Manufacturer 계정 접속](https://certi.life/docs/guide/manufacturer/account-access)을 확인하세요.
 
 #### Studio에 접속할 때
 
@@ -543,7 +570,7 @@ Hospital, Manufacturer, Studio는 웹 브라우저에서 위 주소로 접속합
 
 1. 주소가 `studio.certi.life`인지 확인합니다. 로그인 화면의 주소는 `studio.certi.life/login`입니다.
 2. 발급받은 Username과 Password를 입력합니다.
-3. 로그인 정보가 없거나 작동하지 않으면 비밀번호를 공유받지 말고 조직의 CertiLife 담당자에게 계정 상태를 확인합니다.
+3. 로그인 정보가 없거나 작동하지 않으면 비밀번호를 공유받지 말고 계정을 만들어 준 사람에게 계정 상태를 확인합니다. 병원 직원이면 병원 관리자에게 Hospital `계정 관리`에서 `상담/챗봇 관리` 권한을 받았는지 확인합니다. 계정을 누가 만들었는지 모르면 CertiLife 고객센터(1800-8984)에 문의합니다.
 
 Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 챗봇·상담·CRM·콜봇을 맡은 담당자가 씁니다. 계정 안내는 [Studio 계정 접속](https://certi.life/docs/guide/studio/account-access), 운영 준비는 [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)를 확인하세요.
 
@@ -558,7 +585,7 @@ Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운�
 - 주소의 도메인 철자를 확인합니다.
 - Caps Lock과 키보드 입력 언어를 확인합니다.
 - 계정 종류가 접속하려는 서비스와 일치하는지 확인합니다.
-- 비밀번호를 여러 차례 추측해 입력하지 말고 공개된 복구 기능이나 조직 담당자를 이용합니다.
+- 비밀번호를 짐작해 여러 차례 입력하지 말고 로그인 화면의 복구 기능(`아이디 찾기`, `비밀번호 재설정`, `비밀번호 찾기`)이나 계정을 만들어 준 관리자를 이용합니다.
 - 브라우저를 새로 열거나 네트워크 연결을 확인합니다.
 - 해결되지 않으면 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)의 점검 항목을 따라 정보를 정리합니다.
 
@@ -589,7 +616,7 @@ CertiLife 인증서는 시술 또는 제품과 관련된 정보를 고객에게 
 출처: https://certi.life/docs/guide/products/certificate#목적
 
 - 고객이 시술·제품 관련 정보를 모바일에서 간편하게 확인하도록 안내합니다.
-- 카카오톡, 문자, 위챗, 이메일 중 고객과 운영 환경에 맞는 전달 채널을 선택합니다.
+- 카카오톡, 위챗, 이메일 중 고객과 운영 환경에 맞는 전달 채널을 선택합니다. 카카오톡 알림을 받을 수 없는 번호에는 문자가 자동으로 나갑니다.
 - 인증서 전달 이후 CRM 메시징 등 후속 커뮤니케이션을 준비할 수 있는 기반을 만듭니다.
 - 병원 또는 브랜드의 일관된 고객 경험을 구성합니다.
 
@@ -605,7 +632,7 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 1. **발급 목적:** 어떤 시술 또는 제품 정보를 전달할지 정합니다.
 2. **고객 안내 정보:** 고객이 인증서를 받는 이유와 확인해야 할 내용을 짧게 정리합니다.
-3. **전달 채널:** 카카오톡·문자·위챗·이메일 가운데 대상 고객에게 적합한 방식을 선택합니다.
+3. **전달 채널:** 카카오톡·위챗·이메일 가운데 대상 고객에게 적합한 방식을 선택합니다. 문자는 직접 고르지 않습니다. 카카오톡 알림을 받을 수 없는 번호이면 문자가 자동으로 나갑니다.
 4. **발신 주체:** 무료로 이용할 수 있는 서티라이프 채널을 사용할지, 비용이 발생할 수 있는 자체 비즈니스 채널을 사용할지 검토합니다.
 5. **검수 기준:** 오탈자, 날짜, 제품명, 시술명, 연락처와 공개 가능한 정보 범위를 확인할 담당자를 정합니다.
 
@@ -622,7 +649,7 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 > **주의**
 >
-> 고객 정보는 인증서 전달에 필요한 범위에서만 다루고, 조직의 개인정보 처리 기준과 관련 법령을 따르세요. 이 문서는 실제 관리 화면의 메뉴나 클릭 경로를 설명하지 않습니다. 운영 화면과 권한은 도입 환경에 따라 다를 수 있으므로 확인되지 않은 경로를 가정하지 마세요.
+> 고객 정보는 인증서 전달에 필요한 범위에서만 다루고, 조직의 개인정보 처리 기준과 관련 법령을 따르세요.
 
 #### 다음 문서
 
@@ -642,9 +669,9 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 > 카카오톡, 문자, 위챗, 이메일의 특성을 비교해 인증서 전달 채널을 계획합니다.
 
-인증서는 카카오톡, 문자, 위챗, 이메일 네 채널로 전달할 수 있습니다. 환자에게는 대개 "카톡으로 보내 드릴게요"라고 안내하게 되며, 고객은 별도 앱을 설치하지 않고 전달받은 안내를 통해 인증서를 확인하고 모바일에 영구 보관할 수 있습니다. 채널 선택의 핵심은 기능의 많고 적음이 아니라 고객이 평소 확인하는 접점과 조직이 관리할 수 있는 발신 방식이 서로 맞는지에 있습니다.
+인증서는 카카오톡, 문자, 위챗, 이메일 네 채널로 전달됩니다. 병원이 고르는 채널은 카카오톡, 위챗, 이메일입니다. 문자는 고르는 채널이 아닙니다. 카카오톡 알림을 받을 수 없는 번호이면 서티라이프가 같은 번호로 문자를 자동으로 보냅니다. 환자에게는 대개 "카톡으로 보내 드릴게요"라고 안내하게 되며, 고객은 별도 앱을 설치하지 않고 전달받은 안내를 통해 인증서를 확인하고 모바일에 영구 보관할 수 있습니다. 채널 선택의 핵심은 기능의 많고 적음이 아니라 고객이 평소 확인하는 접점과 조직이 관리할 수 있는 발신 방식이 서로 맞는지에 있습니다.
 
-실제 발행 화면의 `전송 방식 선택`에는 `카카오톡`, `위챗`, `이메일`이 보이고, 문자는 발행 내역의 `문자 전송됨` 상태로 확인됩니다. 어느 전송 방식이 우리 병원 화면에 보이는지는 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)에서 확인하세요. 국내 환자만 보는 병원은 이 문서의 위챗 항목을 건너뛰어도 됩니다.
+발행 화면의 `전송 방식 선택`에서 `카카오톡`, `위챗`, `이메일` 가운데 하나를 고릅니다. 안과는 이 선택이 항상 보입니다. 치과는 병원에 전송 방식이 두 가지 이상 등록되어 있을 때만 보이고, 선택이 보이지 않으면 카카오톡으로 보냅니다. 치과에서 필요한 전송 방식이 보이지 않으면 CertiLife 고객센터(1800-8984)에 문의하세요. 문자로 나간 인증서는 발행 내역에 `문자 전송됨`으로 표시됩니다. 발행 순서는 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)에 있습니다. 국내 환자만 보는 병원은 이 문서의 위챗 항목을 건너뛰어도 됩니다.
 
 #### 목적
 
@@ -658,16 +685,16 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 출처: https://certi.life/docs/guide/products/certificate/channels#서티라이프-채널과-자체-비즈니스-채널
 
-- **서티라이프 채널**은 서티라이프가 제공하는 발송 채널이며 무료로 쓸 수 있습니다. 위챗은 환자가 서티라이프 위챗 공중계정을 팔로우해 받으므로 서티라이프 채널에 해당합니다. 환자 휴대폰에 표시되는 발신자 이름은 공개 문서에서 확인되지 않았으므로 발행 화면에서 확인하세요.
+- **서티라이프 채널**은 서티라이프가 제공하는 발송 채널이며 무료로 쓸 수 있습니다. 위챗은 환자가 서티라이프 위챗 공중계정을 팔로우해 받으므로 서티라이프 채널에 해당합니다. 서티라이프 채널로 보낸 알림은 서티라이프의 카카오톡 채널, 위챗 공중계정, 발신 번호, 이메일 주소에서 나갑니다. 환자에게 서티라이프에서 인증서 알림이 간다고 미리 알려 주세요.
 - **자체 비즈니스 채널**은 병원 이름의 카카오톡 채널로 알림톡을 보내는 방식입니다. Hospital `알림톡` 메뉴에서 병원 채널을 등록해 인증을 마치고 템플릿 검수를 통과해야 하며, 비용이 발생할 수 있습니다. 절차는 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk)에 있습니다.
-- 문자와 이메일의 발신 주체와 비용 조건은 공개 문서에서 확인되지 않았습니다. 조직의 CertiLife 담당자에게 확인하세요.
+- 문자는 서티라이프 발신 번호로, 이메일은 서티라이프 이메일 주소로 나갑니다. 문자와 이메일의 비용 조건은 CertiLife 고객센터(1800-8984)에 문의하세요. 병원 이름의 카카오톡 채널을 쓰는 병원도 카카오톡 알림을 받을 수 없는 번호에는 서티라이프 발신 번호로 문자가 나갑니다.
 
 #### 준비할 내용
 
 출처: https://certi.life/docs/guide/products/certificate/channels#준비할-내용
 
 - 고객이 연락 수단 제공과 메시지 수신에 동의했는지 확인합니다.
-- 카카오톡·문자·위챗·이메일 중 고객군이 주로 사용하는 채널을 파악합니다.
+- 카카오톡·위챗·이메일 중 고객군이 주로 사용하는 채널을 파악합니다. 카카오톡 알림을 받을 수 없는 환자에게는 문자가 자동으로 나간다는 점도 함께 고려합니다.
 - 발신 주체가 누구인지, 문의가 들어오면 누가 답할지 정합니다.
 - 한 채널에서 전달되지 않았을 때 다른 채널을 사용할 수 있는지 내부 기준을 세웁니다.
 - 테스트에는 실제 고객이 아닌 가상 수신 정보를 사용합니다.
@@ -678,12 +705,12 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 어느 채널로 보내든 발행 전에 환자의 개인정보 수집·제공 동의를 받아야 합니다. 방법은 [환자 동의 받기](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-동의-받기)에 있습니다.
 
-| 채널   | 적합한 상황                         | 발신 주체                                  | 환자와 병원이 먼저 갖출 것                                                                                                                                                                                    |
-| ---- | ------------------------------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 카카오톡 | 국내 환자 대부분에게 보낼 때               | 서티라이프 채널 또는 병원 이름의 카카오톡 채널(자체 비즈니스 채널) | 병원 채널로 보내려면 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk)에서 채널 등록·발신프로필 인증·템플릿 검수를 마칩니다. 발송 후 상태는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에서 봅니다 |
-| 문자   | 휴대전화 번호만 있는 환자에게 간결하게 안내할 때    | 확인되지 않음                                | 발신 번호와 링크를 신뢰할 수 있도록 발신 주체를 명확히 씁니다. 상태는 발행 내역의 `문자 전송됨`으로 확인합니다                                                                                                                                   |
-| 위챗   | 위챗을 주로 쓰는 중국어권 환자에게 보낼 때       | 서티라이프 채널(서티라이프 위챗 공중계정)                | 환자가 먼저 서티라이프 위챗 공중계정을 팔로우하고 미니앱에 가입해야 합니다. 발행 화면의 QR을 환자에게 보여 주고 가입을 마친 뒤 발행합니다. 절차는 [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기)에 있습니다                   |
-| 이메일  | 이메일로 기록을 찾는 고객 또는 긴 안내가 필요한 경우 | 확인되지 않음                                | 제목, 발신자명, 스팸함 확인 안내를 검토합니다                                                                                                                                                                         |
+| 채널   | 적합한 상황                                       | 발신 주체                                  | 환자와 병원이 먼저 갖출 것                                                                                                                                                                                    |
+| ---- | -------------------------------------------- | -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 카카오톡 | 국내 환자 대부분에게 보낼 때                             | 서티라이프 채널 또는 병원 이름의 카카오톡 채널(자체 비즈니스 채널) | 병원 채널로 보내려면 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk)에서 채널 등록·발신프로필 인증·템플릿 검수를 마칩니다. 발송 후 상태는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에서 봅니다 |
+| 문자   | 직접 고르지 않습니다. 카카오톡 알림을 받을 수 없는 번호이면 자동으로 나갑니다 | 서티라이프 발신 번호                            | 환자가 서티라이프 번호에서 온 문자를 의심하지 않도록 미리 안내합니다. 상태는 발행 내역의 `문자 전송됨`으로 확인합니다                                                                                                                                |
+| 위챗   | 위챗을 주로 쓰는 중국어권 환자에게 보낼 때                     | 서티라이프 채널(서티라이프 위챗 공중계정)                | 환자가 먼저 서티라이프 위챗 공중계정을 팔로우하고 미니앱에 가입해야 합니다. 발행 화면의 QR을 환자에게 보여 주고 가입을 마친 뒤 발행합니다. 절차는 [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기)에 있습니다                   |
+| 이메일  | 이메일로 기록을 찾는 고객 또는 긴 안내가 필요한 경우               | 서티라이프 이메일 주소                           | 발행 화면에서 `이메일`을 고르고 이메일 주소를 입력합니다. 서티라이프 주소에서 메일이 간다는 점과 스팸함 확인을 환자에게 안내합니다. 상태는 발행 내역의 `이메일 전송됨`으로 확인합니다                                                                                           |
 
 #### 선택 절차
 
@@ -698,7 +725,7 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 > **주의**
 >
-> 자체 비즈니스 채널은 비용이 발생할 수 있으므로 적용 전에 조건을 확인하세요. 동일 고객에게 여러 채널로 반복 발송하면 불편을 줄 수 있습니다. 수신 동의와 고객 선호를 우선하고, 이 문서에 없는 실제 화면 메뉴나 버튼 위치를 추측하지 마세요.
+> 자체 비즈니스 채널은 비용이 발생할 수 있으므로 적용 전에 조건을 확인하세요. 동일 고객에게 여러 채널로 반복 발송하면 불편을 줄 수 있습니다. 수신 동의와 고객 선호를 우선하세요.
 
 #### 다음 문서
 
@@ -726,7 +753,7 @@ CertiLife는 실물 인증서와 커스텀 인증서를 지원합니다. 커스�
 
 - 환자 이름과 연락처, 시술·제품 내용을 발행 직전에 다시 확인합니다.
 - 환자가 별도 앱 없이 인증서를 확인할 수 있도록 안내를 분명히 합니다.
-- 카카오톡·문자·위챗·이메일 중 고른 전송 방식이 환자에게 맞는지 점검합니다.
+- 카카오톡·위챗·이메일 중 고른 전송 방식이 환자에게 맞는지 점검합니다. 카카오톡 알림을 받을 수 없는 번호에는 문자가 자동으로 나갑니다.
 - 환자가 "카톡이 안 왔어요"라고 할 때 누가 확인할지 정해 둡니다.
 
 #### 발행 전에 손에 있어야 할 것
@@ -942,7 +969,7 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 
 > 상담방 언어를 자동으로 판단하고 수신 메시지를 번역하며, 발신 전 번역 여부를 선택하는 방법을 안내합니다.
 
-상담 메시지 번역은 고객과 상담사가 서로 다른 언어를 사용할 때 수신 메시지를 자동으로 번역하고, 상담사가 답변을 보내기 전에 번역 여부를 선택할 수 있는 기능입니다. 언어 설정은 상담방별로 관리되며 조직에 연동한 모든 채팅 상담 채널에서 같은 방식으로 동작합니다. 연동할 수 있는 채널 목록은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)에 있습니다.
+상담 메시지 번역은 고객과 상담원이 서로 다른 언어를 사용할 때 수신 메시지를 자동으로 번역하고, 상담원이 답변을 보내기 전에 번역 여부를 선택할 수 있는 기능입니다. 언어 설정은 상담방별로 관리되며 조직에 연동한 모든 채팅 상담 채널에서 같은 방식으로 동작합니다. 연동할 수 있는 채널 목록은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)에 있습니다.
 
 위챗은 채널 연동 화면에 `준비중`으로 표시되므로 상담 채널로 쓸 수 없습니다.
 
@@ -967,9 +994,9 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 
 출처: https://certi.life/docs/guide/products/ai-chatbot/message-translation#고객-언어가-결정되는-방식
 
-자동 감지를 사용하면 고객의 첫 3턴을 확인한 뒤 가장 많이 사용된 언어를 상담방의 고객 언어로 정합니다. 자동으로 판단된 언어가 실제 대화 언어와 다르거나 대화 중 언어가 바뀌면 상담사가 고객 언어를 직접 변경할 수 있습니다.
+자동 감지를 사용하면 고객이 처음 보낸 메시지들로 상담방의 고객 언어를 정합니다. 같은 언어로 쓴 메시지가 두 개 모이면 그 언어로 정합니다. 처음 세 메시지의 언어가 모두 다르면 세 번째 메시지의 언어로 정합니다. 번역해도 원문과 같아지는 메시지(숫자나 이모지만 있는 메시지 등)는 세지 않습니다. 자동으로 판단된 언어가 실제 대화 언어와 다르거나 대화 중 언어가 바뀌면 상담원이 고객 언어를 직접 변경할 수 있습니다.
 
-언어 변경은 현재 상담방에만 적용됩니다. 다른 상담방이나 다른 상담사의 언어 설정을 함께 바꾸지 않습니다.
+언어 변경은 현재 상담방에만 적용됩니다. 다른 상담방이나 다른 상담원의 언어 설정을 함께 바꾸지 않습니다.
 
 #### 수신 메시지 확인하기
 
@@ -986,18 +1013,18 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 
 출처: https://certi.life/docs/guide/products/ai-chatbot/message-translation#답변-보내기
 
-상담사는 두 가지 방식으로 답변을 보낼 수 있습니다.
+상담원은 두 가지 방식으로 답변을 보낼 수 있습니다.
 
-- **번역해서 보내기:** 상담사가 작성한 답변을 고객 언어로 번역한 뒤 발송합니다.
+- **번역해서 보내기:** 상담원이 작성한 답변을 고객 언어로 번역한 뒤 발송합니다.
 - **번역하지 않고 보내기:** 입력한 원문을 그대로 발송합니다.
 
-번역해 보낸 메시지에는 상담사가 작성한 내용과 고객에게 전달된 내용을 구분할 수 있도록 `실제 발송` 표기가 나타날 수 있습니다. 전송 전에 고객 언어가 맞는지, 이름·브랜드·시술명 같은 고유명사가 의도대로 표현됐는지 확인하세요.
+번역해 보낸 메시지에는 상담원이 작성한 내용과 고객에게 전달된 내용을 구분할 수 있도록 `실제 발송` 표기가 나타날 수 있습니다. 전송 전에 고객 언어가 맞는지, 이름·브랜드·시술명 같은 고유명사가 의도대로 표현됐는지 확인하세요.
 
 #### 고유명사 확인
 
 출처: https://certi.life/docs/guide/products/ai-chatbot/message-translation#고유명사-확인
 
-번역 기능은 내부 용어집을 이용해 병원명, 브랜드명, 시술명 같은 고유명사가 일관되게 표현되도록 돕습니다.
+번역 기능은 CertiLife가 관리하는 공통 용어집을 참고해 용어를 일관되게 옮깁니다. 병원이 이 용어집을 보거나 고치는 화면은 없습니다. 병원명, 브랜드명, 시술명 같은 고유명사는 용어집에 없을 수 있습니다. 같은 고유명사가 계속 틀리게 번역되면 CertiLife 고객센터(1800-8984)에 알립니다.
 
 문맥에 따라 번역이 달라질 수 있으므로 고유명사와 중요한 안내 문구는 실제 발송 전에 확인하세요.
 
@@ -1120,7 +1147,7 @@ AI 상담은 조직이 등록한 자료를 바탕으로 답변합니다. 따라�
 
 출처: https://certi.life/docs/guide/products/crm-messaging
 
-> 고객 세그먼트에 맞춘 메시지를 계획하고 Studio CRM 운영 홈의 발송량·전환률·도달률로 성과를 살펴보는 방법을 소개합니다.
+> 고객 세그먼트에 맞춘 메시지를 계획하고 Studio CRM 운영 홈의 발송량과 성공률로 성과를 살펴보는 방법을 소개합니다.
 
 CertiLife CRM 메시징은 고객의 연령, 성별, 시술 이력, 방문일 등 확인 가능한 기준으로 대상을 나누고 필요한 메시지를 전달하는 서비스입니다. 인증서를 받은 고객에게 관련 안내를 이어갈 수 있어, 모든 고객에게 같은 내용을 반복 발송하기보다 목적과 상황에 맞는 커뮤니케이션을 설계하는 데 활용할 수 있습니다. 이 문서에서 "세그먼트"는 조건으로 나눈 고객 묶음을 뜻합니다.
 
@@ -1132,7 +1159,7 @@ CertiLife CRM 메시징은 고객의 연령, 성별, 시술 이력, 방문일 �
 
 - 메시지 목적에 맞는 고객군을 구체적으로 정의합니다.
 - 인증서 고객에게 필요한 후속 안내와 관계 형성 메시지를 준비합니다.
-- 발송량, 도달률, 전환률을 확인해 다음 메시지를 개선합니다.
+- 발송량과 성공률을 확인해 다음 메시지를 개선합니다.
 - 수신 동의와 고객 기대를 존중하는 운영 기준을 만듭니다.
 
 #### 두 가지 보내는 방법
@@ -1174,11 +1201,11 @@ CertiLife CRM 메시징은 고객의 연령, 성별, 시술 이력, 방문일 �
 3. 제목과 본문, 행동 요청을 작성합니다.
 4. 실제 고객 정보가 아닌 가상 사례로 문구, 링크, 날짜 표현을 점검합니다.
 5. 수신 대상과 제외 대상을 최종 확인한 뒤 운영 정책에 따라 발송합니다.
-6. 발송량, 도달률, 전환률을 함께 검토하고 다음 발송의 가설을 기록합니다.
+6. 발송량과 성공률을 함께 검토하고 다음 발송의 가설을 기록합니다.
 
 ##### 가상 예시
 
-가상의 병원이 최근 방문 고객에게 안내 메시지를 보낸다고 가정해 보겠습니다. 단순히 “모든 고객”을 선택하기보다 방문일과 시술 이력을 기준으로 안내와 관련 있는 고객군을 정합니다. 메시지에는 확인해야 할 정보와 문의 방법만 담고, 성과 검토 시 발송량뿐 아니라 도달률과 전환률을 함께 살펴봅니다.
+가상의 병원이 최근 방문 고객에게 안내 메시지를 보낸다고 가정해 보겠습니다. 단순히 “모든 고객”을 선택하기보다 방문일과 시술 이력을 기준으로 안내와 관련 있는 고객군을 정합니다. 메시지에는 확인해야 할 정보와 문의 방법만 담고, 성과 검토 시 발송량뿐 아니라 성공률을 함께 살펴봅니다.
 
 > **주의**
 >
@@ -1222,7 +1249,7 @@ Studio 화면의 순서와 버튼 이름은 아래 문서에 있습니다.
 - 캠페인 목표와 관련 있는 고객에게 필요한 메시지를 전달합니다.
 - 대상이 너무 넓거나 좁아지는 문제를 발송 전에 발견합니다.
 - 세그먼트 선정 이유를 담당자가 설명하고 다시 검토할 수 있게 합니다.
-- 발송량, 도달률, 전환률을 세그먼트별로 비교할 수 있는 계획을 세웁니다.
+- 발송량과 성공률을 세그먼트별로 비교할 수 있는 계획을 세웁니다.
 
 #### 준비할 내용
 
@@ -1232,13 +1259,13 @@ Studio 화면의 순서와 버튼 이름은 아래 문서에 있습니다.
 2. 사용할 수 있는 연령·성별·시술 이력·방문일 정보의 상태
 3. 인증서 수신 고객과 메시지 내용의 연관성
 4. 수신 동의, 제외 대상, 연락 제한에 관한 조직 기준
-5. 성과를 판단할 발송량·도달률·전환률 기준. 지표의 확인 위치는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging#성과-지표와-확인-위치)에 있습니다
+5. 성과를 판단할 발송량과 성공률 기준. 지표의 확인 위치는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging#성과-지표와-확인-위치)에 있습니다
 
 #### 조건 예시
 
 출처: https://certi.life/docs/guide/products/crm-messaging/segment-planning#조건-예시
 
-"6개월 넘게 안 오신 필러 고객에게 재방문 안내를 보내자"는 지시를 조건으로 옮기면 다음과 같습니다.
+"6개월 넘게 안 오신 필러 고객에게 재방문 안내를 보내자"는 지시를 조건으로 옮기면 다음과 같습니다. 아래 표는 계획서에 대상을 적는 예시입니다. Studio `고객 목록`에서는 이 조건으로 고객을 좁힐 수 없습니다. 시술이나 방문 시점이 기준인 안내는 [시나리오 자동화](https://certi.life/docs/guide/studio/screens/crm/automation)로 보냅니다.
 
 | 목표          | 조건 예시                               | 어디에서 오는 정보인가                                                                                                            |
 | ----------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -1246,11 +1273,11 @@ Studio 화면의 순서와 버튼 이름은 아래 문서에 있습니다.
 | 계절 시술 안내    | 지난해 여름에 "레이저 제모"를 받았고 올해는 방문 기록이 없음 | 위와 같음                                                                                                                   |
 | 인증서 보관 안내   | 최근 30일 안에 인증서를 받음                   | `NFT 인증서` 탭                                                                                                             |
 
-시술 이력과 방문일이 어느 항목으로 들어오는지는 조직의 연동 상태에 따라 다릅니다. 고객 목록 화면에서 확인된 열은 `고객`, `프로필`, `최근 활동`, `고객 속성`, `시나리오 편입`, `최근 메시지`, `유입`입니다. 필터에서 고를 수 있는 조건의 전체 목록은 이 문서에서 확인하지 못했으므로 화면의 필터 항목을 따르세요.
+시술 이력과 방문일이 어느 항목으로 들어오는지는 조직의 연동 상태에 따라 다릅니다. 고객 목록의 열은 `고객`, `프로필`, `최근 활동`, `고객 속성`, `시나리오 편입`, `최근 메시지`, `유입`입니다. 고객 목록에서는 검색어와 `온 적 있는 경로`로 고객을 좁힙니다. 시술 종류나 방문 시점 같은 조건을 하나씩 더하는 필터는 없습니다. 세그먼트에는 검색어와 경로만 조건으로 저장됩니다.
 
-화면의 `세그먼트 분포`는 고객을 `신규`, `재활동`, `정기`, `단골`, `이탈위험`으로 나누어 보여 줍니다. 이 다섯 단계는 활동 횟수에 따른 자동 분류이고, 위 표처럼 직접 조건을 걸어 저장하는 세그먼트와는 다릅니다. 각 단계의 판정 기준은 화면에 표시되지 않아 이 문서에서 확인하지 못했습니다.
+화면의 `세그먼트 분포`는 고객을 `신규`, `재활동`, `정기`, `단골`, `이탈위험`으로 나누어 보여 줍니다. 이 다섯 단계는 활동 횟수에 따른 자동 분류이고, 직접 저장하는 세그먼트와는 다릅니다. 활동은 고객 등록과 수정, 데이터 연동, 인증서, EMR 예약 같은 기록이 쌓인 횟수이며, 방문 횟수만 세는 것이 아닙니다. 단계별 기준은 [고객 등록과 관리](https://certi.life/docs/guide/studio/screens/crm/customers#조건으로-고객-나누기)에 있습니다.
 
-본원과 분원처럼 지점별로 고객을 나누는 조건은 이 문서에서 확인하지 못했습니다. 여러 지점을 운영한다면 조직의 CertiLife 담당자에게 고객 데이터를 어떻게 나누어 관리하는지 먼저 확인하세요.
+고객 목록에는 본원과 분원처럼 지점을 고르는 조건이 없습니다. 여러 지점의 고객을 나누어 관리해야 한다면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 "시술 3개월 뒤"처럼 고객마다 시점이 다른 안내는 세그먼트를 저장해 한 번에 보내는 것보다 [시나리오 자동화](https://certi.life/docs/guide/studio/screens/crm/automation)가 맞습니다. 세그먼트는 조건에 맞는 고객이 새로 생기면 자동으로 포함되지만, 발송 시점은 캠페인이나 시나리오가 정합니다.
 
@@ -1264,7 +1291,7 @@ Studio 화면의 순서와 버튼 이름은 아래 문서에 있습니다.
 4. **규모를 점검합니다.** 예상 대상이 지나치게 많거나 적으면 조건의 필요성과 데이터 상태를 다시 확인합니다.
 5. **가상 고객으로 검토합니다.** 마지막 방문일이 딱 6개월 전인 고객처럼 조건의 기준선에 걸리는 가상 사례를 만들어, 포함되거나 빠지는 결과가 목적과 맞는지 살펴봅니다.
 6. **메시지와 연결합니다.** 세그먼트 기준을 본문에서 직접 드러낼 필요는 없지만, 고객이 왜 관련 안내를 받는지 이해할 수 있게 씁니다.
-7. **검토 기록을 남깁니다.** 발송 후 발송량, 도달률, 전환률을 확인하고 어떤 조건을 유지하거나 바꿀지 정리합니다.
+7. **검토 기록을 남깁니다.** 발송 후 발송량과 성공률을 확인하고 어떤 조건을 유지하거나 바꿀지 정리합니다.
 
 ##### 가상 예시
 
@@ -1304,7 +1331,7 @@ CRM 메시지는 짧아도 대상 선정, 표현, 링크, 기간, 문의 대응�
 
 - 연령·성별·시술 이력·방문일로 계획한 세그먼트가 메시지 목적에 맞는지 확인합니다.
 - 고객이 읽고 해야 할 행동을 명확하게 전달합니다.
-- 발송량, 도달률, 전환률을 확인할 준비를 갖춥니다.
+- 발송량과 성공률을 확인할 준비를 갖춥니다.
 - 잘못된 대상, 오래된 정보, 작동하지 않는 링크로 인한 혼란을 줄입니다.
 
 #### 준비할 내용
@@ -1361,14 +1388,14 @@ Studio `CRM > 캠페인`의 3단계 `예약`에서 `안전 검증`이 아래 항
 출처: https://certi.life/docs/guide/products/crm-messaging/message-checklist#운영측정-체크리스트
 
 - [ ] 고객 응답을 확인할 담당자와 확인 시점을 정했습니다.
-- [ ] 발송량, 도달률, 전환률 중 우선 지표를 정했습니다. 지표의 확인 위치는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging#성과-지표와-확인-위치)에 있습니다.
+- [ ] 발송량과 성공률 중 우선 지표를 정했습니다. 지표의 확인 위치는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging#성과-지표와-확인-위치)에 있습니다.
 - [ ] 지표의 집계 기간과 비교 기준을 기록했습니다.
 - [ ] 발송 후 잘못된 정보가 발견될 때 대응할 책임자를 정했습니다.
 - [ ] 다음 발송에서 바꿔 볼 점을 적어 둘 곳을 정했습니다.
 
 > **주의**
 >
-> 도달률이나 전환률을 높이기 위해 고객을 불안하게 만들거나 사실과 다른 긴급성을 사용하지 마세요. 성과 수치는 발송 목적과 대상 규모를 함께 보아야 하며, 한 지표만으로 고객 만족이나 장기 성과를 단정할 수 없습니다.
+> 성과 수치를 높이기 위해 고객을 불안하게 만들거나 사실과 다른 긴급성을 사용하지 마세요. 성과 수치는 발송 목적과 대상 규모를 함께 보아야 하며, 한 지표만으로 고객 만족이나 장기 성과를 단정할 수 없습니다.
 
 #### 알아 둘 점: 템플릿 코드의 기호
 
@@ -1380,7 +1407,7 @@ Studio `CRM > 캠페인`의 3단계 `예약`에서 `안전 검증`이 아래 항
 - 권장 기호: 밑줄 `_` 또는 하이픈 `-`
 - 사용할 수 없는 기호: 슬래시 `/`
 
-템플릿 코드는 메시지 본문과 다른 식별값입니다. 고객에게 보이는 문구를 검수할 때와 별도로, 등록 신청 전에 코드에 허용되지 않은 기호가 없는지 확인하세요. Hospital의 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk) 화면에서는 템플릿 코드가 채널 설정에서 정해진 값이라 입력하지 않으므로 이 기준이 필요 없습니다. Studio의 브랜드 메시지 템플릿에는 템플릿 코드 입력 칸이 확인되지 않았습니다.
+템플릿 코드는 메시지 본문과 다른 식별값입니다. 고객에게 보이는 문구를 검수할 때와 별도로, 등록 신청 전에 코드에 허용되지 않은 기호가 없는지 확인하세요. Hospital의 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk) 화면에서는 템플릿 코드가 채널 설정에서 정해진 값이라 입력하지 않으므로 이 기준이 필요 없습니다. Studio에서 브랜드 메시지 템플릿을 만들 때도 템플릿 코드를 입력하지 않으므로 이 기준이 필요 없습니다.
 
 #### 다음 문서
 
@@ -1412,9 +1439,9 @@ Studio `CRM > 캠페인`의 3단계 `예약`에서 `안전 검증`이 아래 항
 
 CertiLife 이벤트 마케팅은 퀴즈, 후기, 공유, 정품인증과 같은 참여 방식을 통해 고객과 병원·브랜드의 접점을 넓히는 활동입니다. 카카오 공유로 참여 경험을 이어가고, 정해진 조건에 따라 리워드를 제공할 수 있습니다. 이벤트를 시작하기 전에 참여 목적과 조건을 명확히 하고, 종료 후에는 참여율·공유 수·전환률·신규 고객 수를 함께 살펴보는 것이 중요합니다.
 
-> **이벤트를 만드는 화면은 공개 문서에 없습니다**
+> **이벤트는 CertiLife에 요청해 엽니다**
 >
-> 현재 공개 문서에는 이벤트를 만들고 참여자를 관리하는 화면 안내가 없습니다. Hospital과 Studio 어느 쪽에서 만드는지, 제조사가 켜 주는 기능인지도 이 문서에서 확인하지 못했습니다. 이벤트를 열려면 [도입 문의](https://certi.life/contact)나 조직의 CertiLife 담당자에게 문의하세요. 이벤트 안내 메시지를 고객 여러 명에게 보내는 일은 Studio [캠페인](https://certi.life/docs/guide/studio/screens/crm/campaigns)에서 합니다.
+> Hospital과 Studio에는 이벤트를 만들거나 참여자를 관리하는 메뉴가 없습니다. 이벤트는 CertiLife가 운영 화면에서 만들고 운영합니다. 이벤트를 열려면 이 문서로 계획을 정리한 뒤 CertiLife 고객센터(1800-8984)에 요청하세요. 도입 전이라면 [도입 문의](https://certi.life/contact)를 이용합니다. 이벤트 안내 메시지를 고객 여러 명에게 보내는 일은 Studio [캠페인](https://certi.life/docs/guide/studio/screens/crm/campaigns)에서 합니다.
 
 #### 목적
 
@@ -1434,7 +1461,7 @@ CertiLife 이벤트 마케팅은 퀴즈, 후기, 공유, 정품인증과 같은 
 3. **참여 흐름:** 고객이 확인할 안내, 수행할 행동, 완료 기준을 짧은 단계로 정리합니다.
 4. **리워드:** 제공 내용, 수량, 지급 조건과 시점을 실제 운영 가능한 범위에서 확정합니다.
 5. **공유 방식:** 카카오 공유를 사용할 경우 공유 문구와 공개되는 정보가 적절한지 검수합니다.
-6. **성과 지표:** 참여율, 공유 수, 전환률, 신규 고객 수 가운데 목표를 가장 잘 보여주는 지표를 정합니다. 이 네 지표를 어느 화면에서 읽는지는 현재 공개 문서에서 확인되지 않았습니다. 이벤트의 전환률은 Studio CRM 운영 홈의 `전환률`(메시지 성과)과 다른 지표이므로 보고서에서 구분하세요.
+6. **성과 지표:** 참여율, 공유 수, 전환률, 신규 고객 수 가운데 목표를 가장 잘 보여주는 지표를 정합니다. 이 지표는 Hospital과 Studio 화면에 없으므로, 결과가 필요하면 CertiLife 고객센터(1800-8984)에 요청합니다. 이벤트의 전환률은 Studio CRM 운영 홈의 `전환률`(메시지 성과)과 다른 지표이므로 보고서에서 구분하세요.
 
 ##### 유형은 목표에 맞춰 고릅니다
 
@@ -1481,7 +1508,7 @@ CertiLife 이벤트 마케팅은 퀴즈, 후기, 공유, 정품인증과 같은 
 
 출처: https://certi.life/docs/guide/products/event-marketing#함께-보기
 
-이벤트 화면 문서는 아직 없습니다. 이벤트 안내 메시지 발송과 대상 고객 관리는 아래 Studio 문서를 참고하세요.
+이벤트를 만드는 메뉴는 Hospital과 Studio에 없습니다. 이벤트 안내 메시지 발송과 대상 고객 관리는 아래 Studio 문서를 참고하세요.
 
 - [캠페인](https://certi.life/docs/guide/studio/screens/crm/campaigns): 이벤트 안내를 고객 여러 명에게 한 번 보내기
 - [고객 등록과 관리](https://certi.life/docs/guide/studio/screens/crm/customers): 안내를 받을 고객 묶음(세그먼트) 만들기
@@ -1539,7 +1566,7 @@ CertiLife 이벤트 마케팅은 퀴즈, 후기, 공유, 정품인증과 같은 
 
 > **주의**
 >
-> 후기 이벤트에서 긍정적인 내용만 요구하거나 사실과 다른 경험을 유도하지 마세요. 리워드가 있는 경우 조건을 눈에 띄게 안내하고, 제공할 수 없는 수량이나 일정을 약속하지 않아야 합니다. 이벤트를 만드는 화면은 현재 공개 문서에 없으므로, 화면 설정은 조직의 CertiLife 담당자에게 확인하세요.
+> 후기 이벤트에서 긍정적인 내용만 요구하거나 사실과 다른 경험을 유도하지 마세요. 리워드가 있는 경우 조건을 눈에 띄게 안내하고, 제공할 수 없는 수량이나 일정을 약속하지 않아야 합니다. Hospital과 Studio에는 이벤트를 만드는 메뉴가 없습니다. 계획서를 정리해 CertiLife 고객센터(1800-8984)에 이벤트 개설을 요청하세요.
 
 #### 다음 문서
 
@@ -1563,7 +1590,7 @@ CertiLife 이벤트 마케팅은 퀴즈, 후기, 공유, 정품인증과 같은 
 
 > 참여율, 공유 수, 전환률, 신규 고객 수를 함께 살펴보고 다음 캠페인을 개선합니다.
 
-이벤트가 끝난 뒤에는 단순 참여 건수만 보지 말고 처음 세운 목표와 참여 흐름을 함께 검토해야 합니다. CertiLife 이벤트 마케팅에서는 참여율, 공유 수, 전환률, 신규 고객 수를 성과 기준으로 살펴볼 수 있습니다. 각 지표는 서로 다른 질문에 답하므로, 하나의 수치만으로 캠페인의 전체 성과를 단정하지 않는 것이 중요합니다. 이 네 지표를 어느 화면에서 읽는지는 현재 공개 문서에서 확인되지 않았으므로, 집계 방법은 조직의 CertiLife 담당자에게 확인하세요.
+이벤트가 끝난 뒤에는 단순 참여 건수만 보지 말고 처음 세운 목표와 참여 흐름을 함께 검토해야 합니다. CertiLife 이벤트 마케팅에서는 참여율, 공유 수, 전환률, 신규 고객 수를 성과 기준으로 살펴볼 수 있습니다. 각 지표는 서로 다른 질문에 답하므로, 하나의 수치만으로 캠페인의 전체 성과를 단정하지 않는 것이 중요합니다. 이벤트는 CertiLife가 운영하므로 Hospital과 Studio에는 이 지표를 보는 화면이 없습니다. 지표 결과와 집계 방법은 CertiLife 고객센터(1800-8984)에 요청하세요.
 
 #### 목적
 
@@ -1643,7 +1670,7 @@ CertiLife 이벤트 마케팅은 퀴즈, 후기, 공유, 정품인증과 같은 
 
 > 병원 관리자가 계정 접근부터 인증서 전달과 안전한 운영까지 준비하는 공개 가이드입니다.
 
-Hospital은 병원 관리자가 CertiLife 서비스를 이용하는 진입점입니다. 이 문서는 처음 접속하는 담당자가 계정을 확인하고, 인증서를 고객에게 전달하며, 일상 운영 중 개인정보를 안전하게 다루는 데 필요한 기준을 안내합니다. 로그인한 뒤의 메뉴와 화면별 사용법은 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)에서 시작하는 화면별 안내에 정리되어 있습니다.
+Hospital은 병원 관리자와 직원이 환자에게 인증서를 발행하고, 발행 내역과 병원 정보를 관리하는 화면입니다. 처음 쓰는 담당자는 계정 접속, 메뉴 확인, 인증서 발행 순서로 시작합니다. 화면별 버튼과 순서는 [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)에서 시작하는 화면별 안내에 있습니다.
 
 #### 어디서 시작하나요?
 
@@ -1651,27 +1678,29 @@ Hospital은 병원 관리자가 CertiLife 서비스를 이용하는 진입점입
 
 처음 사용하는 담당자는 다음 순서로 준비하세요.
 
-1. [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)에서 공식 로그인 주소와 계정 문제 해결 경로를 확인합니다.
-2. [인증서 발행·전달 가이드](https://certi.life/docs/guide/hospital/certificate-workflow)에서 발행 전 확인, 고객 전달, 사후 점검 절차를 정합니다.
-3. [Hospital 안전한 운영 가이드](https://certi.life/docs/guide/hospital/safe-operation)에서 개인정보 최소 수집, 화면 공유, 오류 대응 원칙을 팀과 함께 확인합니다.
+1. [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)에서 로그인하고, 아이디나 비밀번호를 잊었을 때의 순서를 확인합니다.
+2. [Hospital 메뉴 한눈에 보기](https://certi.life/docs/guide/hospital/screens/overview)에서 왼쪽 메뉴가 각각 무엇을 하는지 봅니다.
+3. [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)에서 환자 정보 입력부터 알림 전송까지의 순서를 따라 인증서를 발행합니다.
 
-공식 로그인 화면은 [Hospital 로그인](https://hospital.certi.life/signin)(주소 `hospital.certi.life/signin`)입니다. 공개 화면에는 **병원 관리자 로그인**, **아이디**, **비밀번호**, **로그인** 항목과 **제휴 문의**, **회원가입**, **아이디 찾기**, **비밀번호 재설정** 경로가 제공됩니다. 로그인 정보는 조직에서 승인한 담당자만 사용하고, 개인 메신저나 공개 문서로 공유하지 마세요.
+발행 전후에 지킬 기준은 [인증서 발행·전달 가이드](https://certi.life/docs/guide/hospital/certificate-workflow)에, 개인정보와 계정을 다루는 기준은 [Hospital 안전한 운영 가이드](https://certi.life/docs/guide/hospital/safe-operation)에 있습니다. 로그인 정보는 병원에서 승인한 담당자만 사용하고, 개인 메신저나 공개 문서로 공유하지 마세요.
 
 #### 인증서 운영의 기본 흐름
 
 출처: https://certi.life/docs/guide/hospital/overview#인증서-운영의-기본-흐름
 
-인증서는 고객이 모바일에서 확인할 수 있도록 카카오톡, 문자, 위챗 또는 이메일로 전달할 수 있습니다. 채널을 선택하기 전에 고객이 실제로 사용하는 연락 수단과 수신 동의를 확인하고, 발행 대상과 입력 정보가 맞는지 다른 담당자가 한 번 더 점검하는 방식을 권장합니다. 전달 후에는 고객이 메시지를 받았는지, 모바일에서 인증서를 열 수 있는지 확인하되 인증서 내용이나 고객 정보를 불필요하게 복사하거나 별도로 보관하지 않습니다.
+환자는 병원이 고른 카카오톡, 위챗, 이메일 중 하나로 인증서 알림을 받고, 모바일에서 인증서를 엽니다. 환자 번호로 카카오톡 알림을 받을 수 없으면 서티라이프가 문자를 대신 보냅니다. 전송 방식을 고르기 전에 환자가 실제로 쓰는 연락 수단과 수신 동의를 확인하고, 발행 대상과 입력 정보가 맞는지 다른 담당자가 한 번 더 점검하는 방식을 권장합니다. 전달 후에는 발행 내역의 상태로 알림이 갔는지 확인하고, 인증서 내용이나 환자 정보를 불필요하게 복사하거나 따로 보관하지 않습니다.
+
+화면: 전송 방식 고르기와 발행은 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate), 상태 확인과 알림 다시 보내기는 [발행 내역과 환자 관리](https://certi.life/docs/guide/hospital/screens/history)에 있습니다.
 
 #### 운영 원칙
 
 출처: https://certi.life/docs/guide/hospital/overview#운영-원칙
 
 - 업무에 필요한 최소한의 정보만 확인하고 입력합니다.
-- 고객에게 보낼 정보와 대상을 발행 전에 대조합니다.
-- 실제 고객 정보로 연습하지 말고 승인된 테스트 자료를 사용합니다.
+- 환자에게 보낼 정보와 대상을 발행 전에 대조합니다.
+- 실제 환자 정보로 연습하지 말고 승인된 테스트 자료를 사용합니다.
 - 오류가 의심되면 반복 전송하지 말고 먼저 원인과 영향을 확인합니다.
-- 지원 요청 시 고객 이름, 연락처, 인증서 내용이 보이지 않도록 가립니다.
+- 지원 요청 시 환자 이름, 연락처, 인증서 내용이 보이지 않도록 가립니다.
 
 > **의료적 판단과 서비스 운영을 구분하세요**
 >
@@ -1695,26 +1724,44 @@ Hospital은 병원 관리자가 CertiLife 서비스를 이용하는 진입점입
 
 > Hospital 공식 로그인 화면에서 로그인하고 아이디·비밀번호 문제를 해결하는 절차를 안내합니다.
 
-Hospital을 이용할 때는 [Hospital 공식 로그인 화면](https://hospital.certi.life/signin)(주소 `hospital.certi.life/signin`)으로 이동하세요. 공개 로그인 화면의 제목은 **병원 관리자 로그인**이며, **아이디**(안내 문구 "관리자 아이디를 입력하세요.")와 **비밀번호** 입력란, **로그인** 버튼이 있습니다. 같은 화면에서 **제휴 문의**, **회원가입**, **아이디 찾기**, **비밀번호 재설정** 경로도 이용할 수 있습니다.
+Hospital은 [Hospital 공식 로그인 화면](https://hospital.certi.life/signin)(주소 `hospital.certi.life/signin`)에서 로그인합니다. 로그인 화면의 제목은 `병원 관리자 로그인`이고, `아이디`(안내 문구 "관리자 아이디를 입력하세요.")와 `비밀번호` 입력란, `로그인` 버튼이 있습니다. 같은 화면에 `제휴 문의`, `회원가입`, `아이디 찾기`, `비밀번호 재설정`도 있습니다.
 
-직원용 서브계정은 회원가입하지 않습니다. 병원의 관리자 계정이 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)에서 만들어 줍니다. 병원의 첫 계정이 아직 없으면 [병원 관리자 계정을 처음 만드는 경우](https://certi.life/docs/guide/hospital/account-access#병원-관리자-계정을-처음-만드는-경우)로 가세요.
+직원용 서브계정은 회원가입하지 않습니다. 병원 관리자가 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)에서 만들어 줍니다. 병원의 첫 계정이 아직 없으면 [병원 관리자 계정을 처음 만드는 경우](https://certi.life/docs/guide/hospital/account-access#병원-관리자-계정을-처음-만드는-경우)로 가세요.
 
 #### 기존 계정으로 로그인하기
 
 출처: https://certi.life/docs/guide/hospital/account-access#기존-계정으로-로그인하기
 
 1. [Hospital 로그인 화면을 엽니다](https://hospital.certi.life/signin).
-2. 화면이 **병원 관리자 로그인**인지, 주소가 `hospital.certi.life`로 시작하는지 확인합니다.
-3. **아이디** 입력란에 병원 관리자에게서 받은 아이디를 입력합니다.
-4. **비밀번호** 입력란에 본인의 비밀번호를 입력합니다. 다른 사람이 보는 곳에서 입력하거나 브라우저 화면을 공유한 상태로 입력하지 마세요.
-5. **로그인**을 선택합니다.
-6. 로그인이 완료되면 본인이 사용해야 하는 조직 환경인지 확인한 뒤 업무를 시작합니다. 예상과 다른 조직이나 정보가 보이면 아무 작업도 하지 말고 조직의 CertiLife 담당자에게 확인하세요.
+2. 화면이 `병원 관리자 로그인`인지, 주소가 `hospital.certi.life`로 시작하는지 확인합니다.
+3. `아이디` 입력란에 본인의 아이디를 입력합니다. 서브계정은 병원 관리자에게서 받은 아이디를 씁니다.
+4. `비밀번호` 입력란에 본인의 비밀번호를 입력합니다. 다른 사람이 보는 곳에서 입력하거나 브라우저 화면을 공유한 상태로 입력하지 마세요.
+5. `로그인`을 누릅니다.
+6. 로그인이 끝나면 본인 병원의 화면인지 확인한 뒤 업무를 시작합니다. 다른 병원의 이름이나 정보가 보이면 아무 작업도 하지 말고 CertiLife 고객센터(1800-8984)에 알리세요.
+
+서브계정으로 처음 로그인하거나 비밀번호가 초기화된 뒤 로그인하면 `비밀번호 변경` 창이 뜹니다. "최초 로그인 시 비밀번호를 변경해야 합니다."라는 안내에 따라 `현재 비밀번호`, `새 비밀번호`, `새 비밀번호 확인`을 입력하고 `비밀번호 변경`을 누릅니다. 새 비밀번호는 영문과 숫자를 섞어 8-16자로 만듭니다. 이 창은 닫을 수 없으므로, 비밀번호를 바꿔야 로그인이 끝납니다.
 
 #### 아이디나 비밀번호를 잊었을 때
 
 출처: https://certi.life/docs/guide/hospital/account-access#아이디나-비밀번호를-잊었을-때
 
-아이디를 기억하지 못하면 로그인 화면의 **아이디 찾기**를 이용합니다. 비밀번호를 잊었거나 기존 비밀번호로 접속되지 않으면 **비밀번호 재설정**을 이용하세요. 각 화면에서 요구하는 본인 확인 절차를 완료한 뒤 새 비밀번호를 설정합니다. 새 비밀번호는 다른 서비스에서 쓰던 것과 다르게 만들고, 동료와 공유하지 마세요. 본인이 요청하지 않은 재설정 안내를 받았다면 링크를 누르기 전에 조직 담당자에게 알리는 것이 안전합니다.
+서브계정은 아래 두 기능을 쓰지 않습니다. 아이디를 잊었으면 병원 관리자에게 묻고, 비밀번호를 잊었으면 병원 관리자에게 [비밀번호 초기화](https://certi.life/docs/guide/hospital/screens/accounts#계정-고치고-정리하기)를 요청하세요.
+
+병원 관리자 계정의 아이디를 잊었을 때는 다음과 같이 합니다.
+
+1. 로그인 화면의 `아이디 찾기`를 누릅니다.
+2. `사업자등록번호`를 입력하고 `아이디 찾기`를 누릅니다.
+3. `아이디 확인` 화면에 병원의 아이디가 나옵니다.
+
+병원 관리자 계정의 비밀번호를 잊었을 때는 다음과 같이 합니다.
+
+1. 로그인 화면의 `비밀번호 재설정`을 누릅니다.
+2. `병원 아이디`와 `관리자 전화번호`를 입력하고 `인증번호 받기`를 누릅니다.
+3. 문자로 받은 인증번호를 `인증번호 입력`에 넣고 `비밀번호 재설정`을 누릅니다. 인증번호가 오지 않으면 `인증번호 재발송`을 누릅니다.
+4. 새 비밀번호를 두 번 입력하고 `완료`를 누릅니다.
+5. "비밀번호 재설정이 완료되었습니다."가 나오면 `로그인`을 눌러 새 비밀번호로 로그인합니다.
+
+관리자 전화번호를 등록하지 않아 인증번호를 받을 수 없으면 CertiLife 고객센터(1800-8984)에 문의하세요. 새 비밀번호는 다른 서비스에서 쓰던 것과 다르게 만들고, 동료와 공유하지 마세요. 본인이 요청하지 않은 인증번호 문자를 받았다면 그 번호를 누구에게도 알려 주지 말고 바로 비밀번호를 바꾼 뒤 CertiLife 고객센터(1800-8984)에 알리세요.
 
 #### 접속되지 않을 때 확인 순서
 
@@ -1722,23 +1769,22 @@ Hospital을 이용할 때는 [Hospital 공식 로그인 화면](https://hospital
 
 - 공식 주소와 입력한 아이디의 오탈자를 확인합니다.
 - 키보드의 한/영 상태와 Caps Lock 상태를 확인합니다.
-- 비밀번호를 반복 추측하지 말고 **비밀번호 재설정**을 이용합니다.
+- 비밀번호를 짐작해 여러 번 입력하지 말고 [비밀번호를 잊었을 때의 순서](https://certi.life/docs/guide/hospital/account-access#아이디나-비밀번호를-잊었을-때)를 따릅니다.
 - 공용 기기라면 자동 저장된 다른 사람의 계정 정보가 채워지지 않았는지 확인합니다.
-- 문제가 계속되면 오류 발생 시각과 일반적인 현상만 기록해 먼저 병원의 관리자 계정 담당자(원장이나 계정을 만들어 준 사람)에게 알립니다. 병원 안에서 해결되지 않으면 [도입 문의](https://certi.life/contact)로 요청합니다. 화면 캡처에는 고객·환자 정보나 비밀번호가 포함되지 않도록 가립니다.
+- "제조사 계정입니다."라는 창이 뜨면 제조사용 계정입니다. 창의 `제조사 페이지에서 로그인하기`를 눌러 Manufacturer 로그인 화면에서 로그인합니다. 자세한 내용은 [Manufacturer 계정 접속](https://certi.life/docs/guide/manufacturer/account-access)에 있습니다.
+- 문제가 계속되면 오류 발생 시각과 일반적인 현상만 기록해 먼저 병원 관리자(원장이나 계정을 만들어 준 사람)에게 알립니다. 병원 안에서 해결되지 않으면 CertiLife 고객센터(1800-8984)에 문의합니다. 화면 캡처에는 환자 정보나 비밀번호가 포함되지 않도록 가립니다.
 
 > **계정 공유 금지**
 >
-> 관리자 아이디와 비밀번호를 개인 메신저, 이메일 본문, 메모지로 전달하지 마세요. 담당자가 변경되면 기존 비밀번호를 넘겨주는 대신 조직의 계정 관리 절차에 따라 접근을 정리하세요.
+> 관리자 아이디와 비밀번호를 개인 메신저, 이메일 본문, 메모지로 전달하지 마세요. 담당자가 바뀌어도 비밀번호를 넘겨주지 마세요. 병원 관리자가 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)에서 새 담당자의 서브계정을 만들고, 퇴사한 직원의 계정은 삭제합니다.
 
 #### 병원 관리자 계정을 처음 만드는 경우
 
 출처: https://certi.life/docs/guide/hospital/account-access#병원-관리자-계정을-처음-만드는-경우
 
-> **직원은 이 절을 건너뜁니다**
->
-> 직원용 서브계정은 회원가입하지 않습니다. 병원 관리자 계정이 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)에서 만들어 줍니다. 이 절은 병원의 첫 관리자 계정을 만드는 원장이나 관리자를 위한 내용입니다.
+이 절은 병원의 첫 관리자 계정을 만드는 원장이나 관리자를 위한 내용입니다. 직원은 이 절을 건너뜁니다.
 
-로그인 화면의 **회원가입** 경로를 이용할 수 있습니다. 가입 전에 조직에서 누가 관리자 계정을 사용할지, 어떤 업무를 맡을지 먼저 정하세요. 서비스 도입 또는 제휴 상담이 먼저 필요한 경우에는 로그인 화면의 **제휴 문의** 또는 [도입 문의](https://certi.life/contact)를 이용합니다. 가입 과정에서 실제 업무에 필요하지 않은 개인정보를 별도로 기록하거나 전달하지 마세요.
+로그인 화면의 `회원가입`을 누릅니다. 가입 전에 병원에서 누가 관리자 계정을 사용할지, 어떤 업무를 맡을지 먼저 정하세요. 서비스 도입 또는 제휴 상담이 먼저 필요한 경우에는 로그인 화면의 `제휴 문의` 또는 [도입 문의](https://certi.life/contact)를 이용합니다. 가입 과정에서 실제 업무에 필요하지 않은 개인정보를 별도로 기록하거나 전달하지 마세요.
 
 회원가입은 `사업자 인증`과 `추가정보` 두 단계로 진행합니다.
 
@@ -1747,7 +1793,9 @@ Hospital을 이용할 때는 [Hospital 공식 로그인 화면](https://hospital
 3. `다음`을 누르고 `병원명`, `병원장명`, `진료과목`, 주소, `아이디`, `비밀번호`, `담당자명`, `담당자 연락처`를 입력합니다. 아이디는 최소 4자이고 `중복 확인`을 해야 합니다. 비밀번호는 영문과 숫자를 포함해 8자 이상입니다.
 4. `약관 동의`에서 필수 약관에 동의하고 `회원가입`을 누릅니다.
 
-완료 화면에 "회원가입 신청이 완료되었습니다. 관리자 승인 후 이용 가능합니다."가 나오면 승인을 기다린 뒤 로그인합니다. 승인에 걸리는 시간과 승인 완료를 알려 주는 방법은 확인되지 않았으므로 [도입 문의](https://certi.life/contact)에서 확인하세요. 기공소나 제조사는 가입 중에 나오는 안내 창에서 `기공소/제조사로 가입하기`를 골라 다른 가입 화면으로 이동합니다.
+완료 화면에 "회원가입이 완료되었습니다. 로그인하여 서비스를 이용해주세요."가 나오면 바로 로그인할 수 있습니다. "회원가입 신청이 완료되었습니다. 관리자 승인 후 이용 가능합니다."가 나오면 승인을 기다린 뒤 로그인합니다. 승인 진행 상황은 CertiLife 고객센터(1800-8984)에 문의하세요.
+
+올린 사업자등록증에서 인식한 업종에 제조업이 있으면 "혹시 기공소/제조사 이신가요?" 창이 뜹니다. 병원이면 `병원으로 가입하기`를 누르고 계속 가입합니다. 기공소나 제조사이면 `기공소/제조사로 가입하기`를 누릅니다. Manufacturer 로그인 화면으로 이동하며, 그 뒤의 절차는 [Manufacturer 계정 접속](https://certi.life/docs/guide/manufacturer/account-access#처음-계정이-필요할-때)에 있습니다.
 
 로그인한 뒤 직원용 계정을 만드는 방법은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)를, 비밀번호를 바꾸는 방법은 [병원 정보 관리](https://certi.life/docs/guide/hospital/screens/hospital-info#비밀번호-바꾸기)를 참고하세요.
 
@@ -1767,51 +1815,63 @@ Hospital을 이용할 때는 [Hospital 공식 로그인 화면](https://hospital
 
 > 인증서를 준비해 카카오톡·문자·위챗·이메일로 안전하게 전달하고 사후 확인하는 운영 절차입니다.
 
-Hospital 인증서 운영은 **준비 → 검토 → 전달 → 확인 → 예외 처리** 순서로 진행합니다. 이 문서는 어느 진료과에서나 적용할 수 있는 운영 절차를 다룹니다. 화면에서 누르는 순서는 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)과 [발행 내역과 환자 관리](https://certi.life/docs/guide/hospital/screens/history)를 함께 보세요.
+Hospital 인증서 운영은 준비, 검토, 전달, 확인, 예외 처리 순서로 합니다. 아래 원칙은 어느 진료과에서나 같습니다. 화면에서 누르는 순서는 각 단계 끝의 "화면:" 줄에 있는 화면 안내를 따르세요.
 
 #### 1. 발행 전 준비
 
 출처: https://certi.life/docs/guide/hospital/certificate-workflow#1-발행-전-준비
 
-먼저 인증서를 받을 고객과 발행 목적을 확인합니다. 업무상 필요한 최소 정보만 준비하고, 종이나 개인 메모 앱에 고객 정보를 옮겨 적지 마세요. 고객이 카카오톡, 문자, 위챗, 이메일 가운데 어떤 채널로 받기를 원하는지 확인하고 해당 연락처를 사용할 수 있는지 점검합니다. 고객의 수신 의사와 병원의 내부 기준도 함께 확인하세요.
+먼저 인증서를 받을 환자와 발행 목적을 확인합니다. 업무상 필요한 최소 정보만 준비하고, 종이나 개인 메모 앱에 환자 정보를 옮겨 적지 마세요. 환자가 카카오톡, 위챗, 이메일 가운데 어떤 방식으로 받기를 원하는지 확인하고, 그 연락처를 쓸 수 있는지 점검합니다. 환자의 수신 의사와 병원의 내부 기준도 함께 확인하세요.
+
+전송 방식은 발행 화면의 첫 단계인 `환자 정보 입력`에서 연락처를 넣기 전에 고릅니다. `전송 방식 선택`이 보이지 않는 병원은 카카오톡으로 보냅니다.
 
 발행 담당자와 검토 담당자를 분리할 수 있다면 다음 항목을 교차 확인합니다.
 
-- 발행 대상이 올바른 고객인지
+- 발행 대상이 올바른 환자인지
 - 인증서의 시술·제품 관련 정보가 병원 기록과 일치하는지
-- 고객에게 공개되어도 되는 내용만 포함되었는지
-- 수신 채널과 연락처가 고객이 확인한 정보인지
+- 환자에게 공개되어도 되는 내용만 포함되었는지
+- 전송 방식과 연락처가 환자가 확인한 정보인지
 - 발행 시점이 병원의 운영 기준에 맞는지
+
+화면: 전송 방식과 환자 정보는 [환자 정보 입력](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-정보-입력)에서, 개인정보 동의는 [환자 동의 받기](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-동의-받기)에서 입력합니다.
 
 #### 2. 발행 내용 검토
 
 출처: https://certi.life/docs/guide/hospital/certificate-workflow#2-발행-내용-검토
 
-화면에서 인증서 내용을 최종 제출하기 전에 고객 식별 정보와 인증서 정보를 한 번 더 대조합니다. 비슷한 이름의 고객이나 연속된 업무 건을 처리할 때는 이전 고객 정보가 남아 있지 않은지 특히 주의하세요. 내용이 확실하지 않다면 임의로 보완하지 말고 원자료의 담당자에게 확인합니다. 의료적 판단이나 시술 결과의 해석이 필요한 항목은 반드시 의료진 또는 병원이 지정한 책임자의 확인을 받습니다.
+`발행하기`를 누르기 전에 환자 식별 정보와 인증서 정보를 한 번 더 대조합니다. 비슷한 이름의 환자나 연속된 업무 건을 처리할 때는 이전 환자의 정보가 남아 있지 않은지 특히 주의하세요. 내용이 확실하지 않다면 임의로 보완하지 말고 원자료의 담당자에게 확인합니다. 의료적 판단이나 시술 결과의 해석이 필요한 항목은 반드시 의료진 또는 병원이 지정한 책임자의 확인을 받습니다.
 
-#### 3. 전달 채널 선택
+화면: 발행 화면에는 미리보기가 없으므로 마지막 단계의 `환자 정보 확인`에서 대조합니다. 순서는 [병원 추가사항 입력과 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#병원-추가사항-입력과-발행)에 있습니다.
 
-출처: https://certi.life/docs/guide/hospital/certificate-workflow#3-전달-채널-선택
+#### 3. 전달
 
-인증서는 **카카오톡, 문자, 위챗, 이메일**로 전달할 수 있고 고객은 모바일에서 확인할 수 있습니다. 한 채널이 실패했다고 판단되더라도 즉시 여러 채널로 중복 전송하지 마세요. 먼저 연락처 오탈자, 고객의 채널 사용 여부, 수신 차단 가능성을 확인한 뒤 고객과 합의한 대체 채널을 사용합니다. 이메일은 주소 철자와 수신자를, 문자와 메신저는 국가번호를 포함한 연락처 형식을 확인하세요.
+출처: https://certi.life/docs/guide/hospital/certificate-workflow#3-전달
+
+`발행하기`를 누른 뒤 확인 창에서 `알림 메시지 전송`을 누르면 인증서가 발행되고 환자에게 알림이 바로 갑니다. 따로 보내는 단계가 없으므로 누르기 전에 대상과 내용을 끝까지 확인하세요. 환자 번호로 카카오톡 알림을 받을 수 없으면 서티라이프가 문자를 대신 보냅니다.
+
+알림이 가지 않았다고 판단되더라도 같은 인증서를 다시 발행하지 마세요. 먼저 발행 내역의 상태와 연락처 오탈자, 환자의 카카오톡·위챗 사용 여부, 수신 차단 가능성을 확인합니다. 연락처가 맞으면 알림만 다시 보냅니다. 연락처가 틀렸고 알림이 이미 다른 번호로 갔다면 아래 [5절](https://certi.life/docs/guide/hospital/certificate-workflow#5-잘못-보냈거나-중복-전송한-경우)을 따릅니다. 아직 가지 않았다면 연락처를 고친 뒤 알림만 다시 보냅니다. 이메일은 주소 철자와 수신자를, 카카오톡과 위챗은 연락처 앞의 국가번호(예: `+82`)가 환자의 번호와 맞는지 확인하세요.
+
+화면: 위챗 발송 준비는 [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기), 다시 보내기는 [알림 다시 보내기](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기), 연락처 오류는 [연락처가 틀렸을 때 고르는 기준](https://certi.life/docs/guide/hospital/screens/history#연락처가-틀렸을-때-고르는-기준)에 있습니다.
 
 #### 4. 전달 후 확인
 
 출처: https://certi.life/docs/guide/hospital/certificate-workflow#4-전달-후-확인
 
-전달이 끝나면 고객에게 메시지 수신 여부와 모바일에서 열리는지 확인하도록 안내합니다. 고객이 열지 못하는 경우, 메시지를 전달받은 채널과 오류 현상을 확인하되 인증서 안의 개인정보를 채팅으로 다시 보내 달라고 요청하지 마세요. 필요한 경우 고객이 사용하는 브라우저를 새로 열거나 네트워크 상태를 확인하도록 일반적인 방법만 안내하고, 계속 실패하면 조직의 지원 절차로 전환합니다.
+발행이 끝나면 발행 내역의 상태로 알림이 갔는지 확인합니다. 환자에게는 메시지를 받았는지, 모바일에서 인증서가 열리는지 확인하도록 안내합니다. 환자가 열지 못하는 경우, 메시지를 받은 방식과 오류 현상을 확인하되 인증서 안의 개인정보를 채팅으로 다시 보내 달라고 요청하지 마세요. 필요한 경우 환자가 사용하는 브라우저를 새로 열거나 네트워크 상태를 확인하도록 일반적인 방법만 안내하고, 계속 열리지 않으면 CertiLife 고객센터(1800-8984)에 문의합니다.
+
+화면: 상태의 뜻은 [인증서 상태 읽기](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에 있습니다.
 
 #### 5. 잘못 보냈거나 중복 전송한 경우
 
 출처: https://certi.life/docs/guide/hospital/certificate-workflow#5-잘못-보냈거나-중복-전송한-경우
 
 1. 추가 전송을 즉시 멈춥니다.
-2. 잘못된 수신자, 포함된 정보, 전송 채널과 시각을 확인합니다.
-3. 고객에게 직접 임의 대응하기 전에 조직의 개인정보·사고 대응 담당자에게 알립니다.
-4. 조직의 승인된 절차에 따라 필요한 조치를 수행합니다. 화면에서 인증서를 회수하는 방법은 [잘못 보낸 인증서 바로잡기](https://certi.life/docs/guide/hospital/screens/history#잘못-보낸-인증서-바로잡기)에 있습니다.
+2. 잘못된 수신자, 포함된 정보, 전송 방식과 시각을 확인합니다.
+3. 환자에게 직접 임의 대응하기 전에 병원의 개인정보·사고 대응 담당자에게 알립니다.
+4. 병원의 승인된 절차에 따라 필요한 조치를 합니다. 화면에서 인증서를 회수하는 방법은 [잘못 보낸 인증서 바로잡기](https://certi.life/docs/guide/hospital/screens/history#잘못-보낸-인증서-바로잡기)에 있습니다.
 5. 재발 방지를 위해 주소 대조, 이중 검토, 담당자 역할 분리 가운데 보완할 항목을 정합니다.
 
-안과의 [확인서 대량 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기)에서 일부 환자만 발송에 실패했다면 엑셀 파일을 다시 올리지 마세요. 같은 확인서가 중복으로 발행됩니다. 발행 내역의 [알림 다시 보내기](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기)에서 실패한 건만 다시 보냅니다.
+안과의 [확인서 대량 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기)에서 일부 환자만 발송에 실패했다면 엑셀 파일을 다시 올리지 마세요. 같은 확인서가 중복으로 발행됩니다. 실패한 건만 [알림 다시 보내기](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기)로 다시 보냅니다.
 
 > **개인정보를 지원 자료에 남기지 마세요**
 >
@@ -1834,7 +1894,7 @@ Hospital 인증서 운영은 **준비 → 검토 → 전달 → 확인 → 예�
 
 > 고객 정보를 최소한으로 다루고 화면 공유·오발송·담당자 변경에 안전하게 대응하는 운영 원칙입니다.
 
-Hospital에서 고객 인증서를 운영할 때는 편의보다 정확성과 개인정보 보호를 우선합니다. 이 문서는 특정 메뉴나 권한 구조를 전제로 하지 않고, 어떤 화면에서도 적용할 수 있는 팀 운영 기준을 제공합니다. 병원의 개인정보 처리 방침과 내부 보안 규정이 더 엄격하다면 내부 규정을 우선하세요. 이 문서의 "고객"은 인증서를 받는 환자를 뜻합니다. 안과는 "인증서"를 "확인서"로, 수의과는 "고객"을 "보호자"로 읽으세요.
+Hospital에서 환자 인증서를 운영할 때는 편의보다 정확성과 개인정보 보호를 우선합니다. 아래 기준은 어느 메뉴에서 일하든 같게 적용합니다. 병원의 개인정보 처리 방침과 내부 보안 규정이 더 엄격하다면 내부 규정을 우선하세요. 안과는 "인증서"를 "확인서"로, 수의과는 "환자"를 "보호자"로 읽으세요.
 
 #### 업무 시작 전
 
@@ -1843,16 +1903,18 @@ Hospital에서 고객 인증서를 운영할 때는 편의보다 정확성과 �
 - 승인된 담당자만 본인의 계정으로 접속합니다.
 - 주소창이 공식 Hospital 도메인(`hospital.certi.life`)인지 확인합니다.
 - 공용 또는 공유 기기에서는 자동 로그인과 비밀번호 저장을 사용하지 않습니다.
-- 화면을 공유하거나 회의를 녹화 중이라면 고객 정보가 보이는 업무를 시작하지 않습니다.
-- 연습이 필요하면 실제 고객 정보 대신 조직에서 승인한 가상 자료를 사용합니다.
+- 화면을 공유하거나 회의를 녹화 중이라면 환자 정보가 보이는 업무를 시작하지 않습니다.
+- 연습이 필요하면 실제 환자 정보 대신 병원에서 승인한 가상 자료를 사용합니다.
 
-계정은 담당자별로 구분해 사용하는 것이 안전합니다. 동료의 계정을 대신 사용하거나 비밀번호를 전달하면 문제가 발생했을 때 작업자를 확인하기 어렵습니다. 담당자가 휴가나 퇴사로 변경될 때는 비밀번호를 인계하는 방식이 아니라 조직의 계정 관리 절차에 따라 접근을 정리하고 새 담당자의 접속을 준비하세요. 직원별 계정을 만들고 권한을 고치는 화면은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)입니다.
+계정은 담당자별로 구분해 사용하는 것이 안전합니다. 동료의 계정을 대신 사용하거나 비밀번호를 전달하면 문제가 발생했을 때 작업자를 확인하기 어렵습니다. 담당자가 휴가나 퇴사로 바뀌어도 비밀번호를 인계하지 마세요. 병원 관리자는 새 담당자에게 서브계정을 따로 만들어 주고, 퇴사한 직원의 계정은 삭제합니다.
 
-#### 고객 정보 최소화
+화면: 직원별 계정 만들기, 권한 고치기, 비밀번호 초기화, 퇴사자 계정 삭제는 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)에서 합니다.
 
-출처: https://certi.life/docs/guide/hospital/safe-operation#고객-정보-최소화
+#### 환자 정보 최소화
 
-업무 목적에 필요한 정보만 확인하고 입력합니다. 고객 목록을 개인 스프레드시트, 메신저 대화, 이메일 초안에 복사해 두지 마세요. 여러 건을 연속 처리할 때는 한 건을 완료한 뒤 다음 고객으로 넘어가고, 이전 고객의 정보가 화면이나 클립보드에 남아 있지 않은지 확인합니다. 다운로드나 인쇄가 꼭 필요하다면 조직의 승인된 저장 위치와 파기 기준을 따릅니다.
+출처: https://certi.life/docs/guide/hospital/safe-operation#환자-정보-최소화
+
+업무 목적에 필요한 정보만 확인하고 입력합니다. 환자 목록을 개인 스프레드시트, 메신저 대화, 이메일 초안에 복사해 두지 마세요. 여러 건을 연속 처리할 때는 한 건을 마친 뒤 다음 환자로 넘어가고, 이전 환자의 정보가 화면이나 클립보드에 남아 있지 않은지 확인합니다. 다운로드나 인쇄가 꼭 필요하다면 조직의 승인된 저장 위치와 파기 기준을 따릅니다.
 
 안과의 [확인서 대량 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기)에 쓰는 엑셀 양식과 발행 내역의 엑셀 다운로드 파일에는 환자 이름과 연락처가 들어 있습니다. 채운 양식은 병원이 지정한 폴더에만 두고, 발행을 마치면 병원 기준에 따라 그날 지우세요. 다운로드 폴더와 메신저에 남기지 마세요.
 
@@ -1860,7 +1922,7 @@ Hospital에서 고객 인증서를 운영할 때는 편의보다 정확성과 �
 
 출처: https://certi.life/docs/guide/hospital/safe-operation#화면-공유와-지원-요청
 
-지원 담당자에게 현상을 설명할 때는 고객·환자의 이름, 연락처, 이메일, 인증서 내용이 보이지 않도록 화면을 정리합니다. 전체 화면 대신 문제가 발생한 부분만 캡처하고, 비밀번호나 로그인 정보는 어떤 경우에도 포함하지 않습니다. 고객 정보를 가렸더라도 파일 이름이나 브라우저 탭 제목에 식별 정보가 남아 있지 않은지 확인하세요. 가능하면 오류 시각, 사용한 브라우저, 수행한 일반 단계처럼 개인정보가 없는 정보로 현상을 설명합니다.
+지원 담당자에게 현상을 설명할 때는 환자의 이름, 연락처, 이메일, 인증서 내용이 보이지 않도록 화면을 정리합니다. 전체 화면 대신 문제가 발생한 부분만 캡처하고, 비밀번호나 로그인 정보는 어떤 경우에도 포함하지 않습니다. 환자 정보를 가렸더라도 파일 이름이나 브라우저 탭 제목에 식별 정보가 남아 있지 않은지 확인하세요. 가능하면 오류 시각, 사용한 브라우저, 수행한 일반 단계처럼 개인정보가 없는 정보로 현상을 설명합니다.
 
 #### 이상 상황 대응
 
@@ -1870,20 +1932,20 @@ Hospital에서 고객 인증서를 운영할 때는 편의보다 정확성과 �
 
 1. 반복 발행과 추가 전송을 멈춥니다.
 2. 발생 시각, 사용한 채널, 영향 범위를 필요한 수준에서 확인합니다.
-3. 즉시 조직의 개인정보 또는 사고 대응 담당자에게 알립니다.
+3. 즉시 병원의 개인정보 또는 사고 대응 담당자에게 알립니다.
 4. 임의로 기록을 삭제하거나 환자에게 책임 있는 답변을 약속하지 말고, 승인된 대응 절차를 따릅니다. 화면에서 인증서를 회수하는 방법은 [잘못 보낸 인증서 바로잡기](https://certi.life/docs/guide/hospital/screens/history#잘못-보낸-인증서-바로잡기)에 있습니다.
 
-계정이 도용되었다고 의심되면 해당 기기에서 추가 업무를 중단하고 비밀번호 재설정과 조직 보고를 우선합니다.
+계정이 도용되었다고 의심되면 그 기기에서 업무를 멈추고, 병원 관리자와 병원의 개인정보·사고 대응 담당자에게 알립니다. 병원 관리자는 그 서브계정을 삭제하고 새 서브계정을 만들어 줍니다. 관리자 계정이면 바로 [`비밀번호 재설정`](https://certi.life/docs/guide/hospital/account-access#아이디나-비밀번호를-잊었을-때)으로 비밀번호를 바꿉니다.
 
 #### 업무 종료 체크리스트
 
 출처: https://certi.life/docs/guide/hospital/safe-operation#업무-종료-체크리스트
 
 1. 처리 중인 인증서가 남아 있지 않은지 확인합니다.
-2. 고객 정보를 복사한 클립보드, 임시 메모, 다운로드 파일을 내부 기준에 따라 정리합니다.
+2. 환자 정보를 복사한 클립보드, 임시 메모, 다운로드 파일을 내부 기준에 따라 정리합니다.
 3. 공용 기기에서는 로그아웃하고 브라우저에 계정 정보가 저장되지 않았는지 확인합니다. `로그아웃`은 왼쪽 메뉴 맨 아래에 있습니다.
 4. 오류나 예외가 있었다면 개인정보를 제외한 운영 기록을 남기고 담당자에게 인계합니다.
-5. 다음 근무자에게는 비밀번호가 아니라 필요한 업무 상태만 전달합니다.
+5. 다음 근무자에게는 필요한 업무 상태만 전달하고, 비밀번호는 전달하지 않습니다.
 
 > **의료 문의의 연결 기준**
 >
@@ -1923,9 +1985,9 @@ Hospital은 병원 담당자가 **인증서를 발행하고, 발행 내역과 �
 | ---------------------------------------------------- | ----------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | (그룹 없음)                                              | `대시보드`                                                            | 발행 현황과 공지, 처리할 일을 한눈에 봅니다                      | [대시보드](https://certi.life/docs/guide/hospital/screens/dashboard)                                                                                                                                                                                       |
 | `브랜드관`                                               | `병원 설정`                                                           | 고객에게 보이는 병원 소개 페이지를 꾸밉니다                       | [병원 소개 페이지](https://certi.life/docs/guide/hospital/screens/brand-page)                                                                                                                                                                                 |
-| 진료과 그룹: 치과, 성형외과, 피부과, 내과, 정형외과, 수의과, 그리고 공통 그룹 `병원` | `인증서 발행`, `인증서 설정` (앞에 진료과 이름이 붙습니다. 예: `치과 인증서 발행`, `병원 인증서 발행`) | 인증서를 발행하고, 인증서에 들어갈 내용을 미리 설정합니다               | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate), [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)                                                                                              |
+| 진료과 그룹: 치과, 성형외과, 피부과, 내과, 정형외과, 수의과, 그리고 공통 그룹 `병원` | `인증서 발행`, `인증서 설정` (앞에 진료과 이름이 붙습니다. 예: `치과 인증서 발행`, `병원 인증서 설정`) | 인증서를 발행하고, 인증서에 들어갈 내용을 미리 설정합니다               | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate), [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)                                                                                              |
 | 진료과 그룹: 안과                                           | `안과 확인서 발행`, `확인서 대량 발행`, `안과 확인서 설정`                             | 확인서를 한 명씩 또는 엑셀로 여러 명에게 발행하고, 확인서 내용을 미리 설정합니다 | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate), [확인서 대량 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기), [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings) |
-| `예약 관리`                                              | `예약 관리`, `후기 관리`                                                  | 고객의 예약과 후기를 확인하고 처리합니다                         | [예약과 후기](https://certi.life/docs/guide/hospital/screens/reservations-reviews)                                                                                                                                                                          |
+| `예약 관리`                                              | `예약 관리`, `후기 관리`                                                  | 환자의 예약과 후기를 확인하고 처리합니다                         | [예약과 후기](https://certi.life/docs/guide/hospital/screens/reservations-reviews)                                                                                                                                                                          |
 | `발행/환자 관리`                                           | `발행 내역`, `환자 관리`                                                  | 발행한 인증서와 환자를 찾아보고 다시 보내거나 고칩니다                 | [발행 내역과 환자 관리](https://certi.life/docs/guide/hospital/screens/history)                                                                                                                                                                                 |
 | `구매/주문 관리`                                           | `결제 내역 관리`, `주문 관리`, `전자계약`                                       | 구매·렌탈 내역과 주문, 계약을 확인합니다                        | [주문과 결제](https://certi.life/docs/guide/hospital/screens/orders)                                                                                                                                                                                        |
 | `병원 관리`                                              | `시술동의서`, `근로계약서`, `병원 정보 관리`, `계정 관리`                             | 전자 서명 문서, 병원 정보, 직원 계정을 관리합니다                  | [전자 서명 문서](https://certi.life/docs/guide/hospital/screens/contracts), [병원 정보 관리](https://certi.life/docs/guide/hospital/screens/hospital-info), [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)                                       |
@@ -1935,7 +1997,7 @@ Hospital은 병원 담당자가 **인증서를 발행하고, 발행 내역과 �
 
 화면 왼쪽 위에는 병원 로고와 병원명, 담당자 이름이 보이고, 맨 아래에 `로그아웃`이 있습니다.
 
-한의원처럼 위 진료과 목록에 없는 병원은 공통 그룹 `병원`의 `병원 인증서 발행`을 씁니다. 한의원 계정에서 실제로 어떤 그룹이 보이는지는 화면에서 확인되지 않았으므로, 로그인한 뒤 왼쪽 메뉴에서 확인하세요.
+신경외과, 흉부외과처럼 위 목록에 진료과 그룹이 없는 진료과는 공통 그룹 `병원`의 `병원 인증서 발행`과 `병원 인증서 설정`을 씁니다. 한의원처럼 왼쪽 메뉴에 진료과 그룹도 `병원` 그룹도 보이지 않으면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 메뉴가 보이는 조건
 
@@ -1943,10 +2005,10 @@ Hospital은 병원 담당자가 **인증서를 발행하고, 발행 내역과 �
 
 **위치:** Hospital 왼쪽 메뉴
 
-- **진료과:** 진료과 그룹은 병원에 등록된 진료과만 보입니다. 진료과가 여러 개인 병원은 그룹이 여러 개 보입니다. `병원` 그룹은 진료과와 관계없이 쓰는 공통 인증서입니다. 점검한 계정에서는 `병원` 그룹에 `병원 인증서 발행`만 보이고 `인증서 설정`은 보이지 않았습니다. 권한에 따라 다를 수 있습니다.
-- **권한:** 직원용 서브계정은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)의 `권한 설정`에서 받은 메뉴만 보입니다. 필요한 메뉴가 없다면 병원의 관리자 계정 담당자에게 그 메뉴의 권한을 요청하세요.
+- **진료과:** 진료과 그룹은 병원에 등록된 진료과만 보입니다. 진료과가 여러 개인 병원은 그룹이 여러 개 보입니다. `병원` 그룹은 진료과 그룹이 따로 없는 진료과가 쓰는 공통 그룹이고, `병원 인증서 발행`과 `병원 인증서 설정`이 있습니다.
+- **권한:** 직원용 서브계정은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts#권한-이름과-보이는-메뉴)의 `권한 설정`에서 받은 메뉴만 보입니다. 필요한 메뉴가 없다면 병원 관리자(계정을 만들어 준 사람)에게 그 메뉴의 권한을 요청하세요.
 - **안과:** 안과는 "인증서" 대신 **확인서**라는 말을 쓰고, [`확인서 대량 발행`](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기) 메뉴가 추가로 있습니다. 대시보드의 문구도 확인서로 바뀝니다.
-- **수의과:** `환자 관리`가 `고객관리`로 표시됩니다. 점검한 치과 계정에서도 `고객관리`로 보였으므로, 이름이 달라도 같은 화면입니다.
+- **수의과:** 진료과에 수의과가 있는 병원은 `환자 관리`가 `고객관리`로 표시됩니다. 이름이 달라도 같은 화면입니다.
 - **치과:** `구매/주문 관리` 그룹은 치과 병원에만 보입니다.
 - **알림톡 템플릿:** `채널 설정`에서 채널을 등록하기 전에는 템플릿 메뉴 세 개가 비활성으로 보입니다.
 
@@ -1971,7 +2033,7 @@ Hospital은 병원 담당자가 **인증서를 발행하고, 발행 내역과 �
 
 출처: https://certi.life/docs/guide/hospital/screens/overview#studio-안에서-열었을-때
 
-Studio의 [`인증서` 메뉴](https://certi.life/docs/guide/studio/screens/certificates)로 들어오면 같은 화면이 Studio 안에 열립니다. 로그인과 로그아웃은 Studio가 맡습니다. 점검한 계정에서는 Studio 안에서 `대시보드`, `브랜드관`, 진료과 그룹만 보이고 `병원 관리`, `알림톡`, `예약 관리`, `발행/환자 관리` 그룹은 보이지 않았습니다. 권한에 따라 다를 수 있으므로, 보이지 않는 메뉴는 Hospital에 직접 로그인해 확인하세요. 달라지는 점은 Studio의 인증서 안내에 정리되어 있습니다.
+Studio의 [`인증서` 메뉴](https://certi.life/docs/guide/studio/screens/certificates)로 들어오면 같은 화면이 Studio 안에 열립니다. 로그인과 로그아웃은 Studio가 맡습니다. Studio 안에서도 왼쪽 메뉴는 로그인한 계정의 권한에 따라 보입니다. 필요한 메뉴가 보이지 않으면 Hospital에 직접 로그인해 작업하세요. 달라지는 점은 Studio의 인증서 안내에 정리되어 있습니다.
 
 #### 함께 보기
 
@@ -2001,7 +2063,7 @@ Studio의 [`인증서` 메뉴](https://certi.life/docs/guide/studio/screens/cert
 
 **위치:** 대시보드 > 상단 안내 배너
 
-화면 위쪽에 안내 배너가 뜨면 처리할 일이 있다는 뜻입니다. 배너는 X를 눌러 닫을 수 있습니다. 닫은 배너가 다음 로그인 때 다시 뜨는지는 화면에서 확인되지 않았으므로, 닫기 전에 할 일을 처리하세요.
+화면 위쪽에 안내 배너가 뜨면 처리할 일이 있다는 뜻입니다. 배너는 X를 눌러 닫을 수 있습니다. 닫아도 할 일을 처리하지 않으면 대시보드를 다시 열 때 배너가 다시 뜹니다.
 
 | 배너 문구                                      | 뜻                          | 할 일                                                                                                                         |
 | ------------------------------------------ | -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -2110,7 +2172,7 @@ Studio에서 만든 챗봇이 있다면 `웹챗봇 설정`에서 메인 챗봇�
 
 - 이 화면의 진료시간은 소개 페이지에 보이는 값입니다. 병원의 기준 운영시간은 [병원 정보 관리](https://certi.life/docs/guide/hospital/screens/hospital-info#진료시간과-휴진일-관리하기)에 있으니 서로 다르지 않게 맞춰 주세요.
 - 병원 이미지에 환자 얼굴이나 차트, 모니터 화면이 찍혀 있지 않은지 올리기 전에 확인하세요.
-- 직원용 서브계정은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)의 `권한 설정`에서 `병원 설정` 메뉴의 권한을 받아야 이 메뉴가 보입니다. 이 권한이 다섯 그룹 중 어디에 있는지는 화면에서 확인되지 않았습니다.
+- 직원용 서브계정은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)의 `권한 설정`에서 `운영` 그룹의 `병원 설정`을 받아야 이 메뉴가 보입니다.
 
 ---
 
@@ -2126,7 +2188,7 @@ Studio에서 만든 챗봇이 있다면 `웹챗봇 설정`에서 메인 챗봇�
 
 왼쪽 메뉴에서는 `치과 인증서 발행`, `병원 인증서 발행`처럼 진료과 이름이 앞에 붙습니다. 안과는 "인증서" 대신 "확인서"라는 말을 쓰고, 메뉴도 `안과 확인서 발행`과 [`확인서 대량 발행`](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기)으로 나뉩니다.
 
-치과와 안과가 아닌 진료과(성형외과, 피부과, 내과, 정형외과, `병원` 그룹을 쓰는 한의원 등)는 제품 코드와 치아번호 대신 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에 만들어 둔 인증서를 고릅니다. 이 차이는 [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기)에 모아 두었으니, 치과 전용 설명(제품 코드, GTIN)은 건너뛰어도 됩니다.
+치과와 안과가 아닌 진료과(성형외과, 피부과, 내과, 정형외과, 공통 그룹 `병원`)는 제품 코드와 치아번호 대신 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에 만들어 둔 인증서를 고릅니다. 이 차이는 [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기)에 모아 두었으니, 치과 전용 설명(제품 코드, GTIN)은 건너뛰어도 됩니다.
 
 #### 이럴 때 사용하세요
 
@@ -2138,7 +2200,7 @@ Studio에서 만든 챗봇이 있다면 `웹챗봇 설정`에서 메인 챗봇�
 | 환자가 "인증서 안 왔어요", "카톡이 안 와요"라고 할 때 | [알림 다시 보내기](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기)                                   |
 | 안과 확인서를 엑셀로 여러 명에게 한 번에 보내기       | [확인서 대량 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#확인서-대량-발행하기)                     |
 | 잘못 보낸 인증서를 바로잡기                   | [잘못 보낸 인증서 바로잡기](https://certi.life/docs/guide/hospital/screens/history#잘못-보낸-인증서-바로잡기)                         |
-| 성형외과·피부과·내과·정형외과·한의원에서 발행하기       | [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기) |
+| 성형외과·피부과·내과·정형외과와 `병원` 그룹에서 발행하기  | [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기) |
 | 환자가 직접 개인정보 동의를 하게 하기             | [환자 동의 받기](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-동의-받기)                           |
 | 치과에서 제품 코드가 오류라고 나올 때             | [제품 코드 오류 해결하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)                 |
 | 위챗을 쓰는 환자에게 보내기                   | [위챗으로 보내기](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기)                           |
@@ -2159,17 +2221,17 @@ Studio에서 만든 챗봇이 있다면 `웹챗봇 설정`에서 메인 챗봇�
 
 ##### 환자 정보 입력
 
-1. 필요하면 `언어 선택`에서 `한국어`, `중국어`, `영어` 중 하나를 고릅니다. `중국어`가 간체인지 번체인지는 화면에서 확인되지 않았습니다.
-2. `전송 방식 선택`이 보이면 `카카오톡`, `위챗`, `이메일` 중 하나를 고릅니다. 어떤 병원에 이 선택이 보이는지, 문자로 보내는 방법은 어디에서 고르는지는 화면에서 확인되지 않았습니다.
-3. `연락처`, `이름`, `성별`, `생년월일`, `시술일자`, `수술 의사`를 입력합니다. 이메일로 보낼 때는 `이메일`도 입력합니다.
+1. 필요하면 `언어 선택`에서 `한국어`, `중국어`, `영어` 중 하나를 고릅니다.
+2. `전송 방식 선택`이 보이면 연락처를 넣기 전에 `카카오톡`, `위챗`, `이메일` 중 하나를 고릅니다. 안과는 이 선택이 항상 보이고, 치과는 병원에 전송 방식이 두 개 이상 등록되어 있을 때만 보입니다. 선택이 보이지 않는 병원은 카카오톡으로 보냅니다. 문자는 고르는 항목이 아닙니다. 환자 번호로 카카오톡 알림을 받을 수 없으면 서티라이프가 문자를 대신 보냅니다.
+3. `연락처`, `이름`, `성별`, `생년월일`, `시술일자`, `수술 의사`를 입력합니다. `연락처` 앞의 국가번호(예: `+82`)가 환자의 번호와 맞는지 확인하고, 목록에 없는 나라는 `직접 입력`으로 고릅니다. 이메일로 보낼 때는 `이메일`도 입력합니다.
 4. 개인정보 동의를 받습니다. 방법은 [환자 동의 받기](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-동의-받기)를 참고하세요.
 5. `다음 단계로`를 누릅니다.
 
-연락처를 입력하면 같은 번호로 등록된 고객 정보를 불러옵니다. 번호를 잘못 넣으면 다른 환자의 정보가 채워질 수 있으므로, 불러온 이름과 생년월일이 지금 앞에 있는 환자와 같은지 확인하세요. 치과에서 EMR(전자 진료기록 프로그램)을 연결한 병원은 `접수 목록`에서 접수한 환자를 골라 올 수 있습니다. 화면 머리글 옆에 `CertiLife Connector 연결 안됨`이 보이면 EMR과 연결되지 않은 상태입니다. 연결 방법은 이 문서에서 다루지 않으므로 병원의 CertiLife 담당자에게 문의하세요.
+연락처를 입력하면 같은 번호로 등록된 고객 정보를 불러옵니다. 번호를 잘못 넣으면 다른 환자의 정보가 채워질 수 있으므로, 불러온 이름과 생년월일이 지금 앞에 있는 환자와 같은지 확인하세요. 치과에서 EMR(전자 진료기록 프로그램)을 연결한 병원은 `접수 목록`에서 접수한 환자를 골라 올 수 있습니다. 화면 머리글 옆에 `CertiLife Connector 연결 안됨`이 보이면 EMR과 연결되지 않은 상태이고, 이때는 `접수 목록`을 쓸 수 없습니다. Hospital 화면에는 EMR 연결을 설정하는 메뉴가 없으므로, 연결이 필요하면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 ##### 수술/시술 선택
 
-치과와 안과에는 없는 단계입니다. `인증서 선택`에서 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에 만들어 둔 인증서를 고릅니다. 이름으로 검색할 수 있고(초성 검색 가능), 한 번에 최대 10개까지 고를 수 있습니다. 목록이 비어 있으면 아직 인증서를 만들지 않은 것입니다. 먼저 진료과 이름 > `인증서 설정` > `인증서 추가`에서 인증서를 만든 뒤 돌아오세요. 자세한 차이는 [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기)에 있습니다.
+치과와 안과에는 없는 단계입니다. `인증서 선택`에서 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에 만들어 둔 인증서를 고릅니다. 이름으로 검색할 수 있고(초성 검색 가능), 한 번에 최대 10개까지 고를 수 있습니다. 인증서를 하나도 만들지 않았으면 `인증서 템플릿 없음` 창에 "등록된 인증서 템플릿이 없습니다."가 나옵니다. `확인`을 누르면 인증서 설정 화면으로 이동하므로, [병원 인증서 만들기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-인증서-만들기)를 따라 인증서를 만든 뒤 돌아오세요. 자세한 차이는 [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기)에 있습니다.
 
 ##### 상세 정보 입력
 
@@ -2178,8 +2240,8 @@ Studio에서 만든 챗봇이 있다면 `웹챗봇 설정`에서 메인 챗봇�
   2. `치아번호` 그림에서 수술 치아를 선택합니다.
   3. `제품 코드`를 입력합니다. 제품명이 자동으로 채워집니다. 코드 없이 발행하려면 `코드 스캔 없이 제품 선택으로 발행하기`로 `제조사`, `제품명`, `제품 사양`을 고릅니다.
   4. 다음 단계로 넘어갑니다. 코드에 오류 문구가 뜨면 [제품 코드 오류 해결하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)를 보세요.
-- **안과:** `시술 부위 선택`(`좌안`, `우안`)과 `수술 방법 선택`을 고릅니다. `시술 부위 선택`은 대량 발행 양식의 `수술 부위` 열과 같은 항목입니다. 단건 발행에서 `양안`을 고를 수 있는지는 화면에서 확인되지 않았습니다.
-- **그 밖의 진료과:** 이 단계에서 입력하는 항목은 화면에서 확인되지 않았습니다. 화면에 보이는 항목을 채우고 다음 단계로 넘어갑니다.
+- **안과:** `시술 부위 선택`과 `수술 방법 선택`을 고릅니다. `시술 부위 선택`에는 `OD (우안)`과 `OS (좌안)` 카드가 있고, 처음에는 둘 다 선택되어 있습니다. 한쪽 눈만 수술했으면 다른 쪽 카드를 눌러 선택을 풉니다. `양안`이라는 선택지는 따로 없습니다. `시술 부위 선택`은 대량 발행 양식의 `수술 부위` 열과 같은 항목입니다.
+- **그 밖의 진료과:** 앞 단계에서 고른 인증서마다 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에서 만든 속성이 나옵니다. 값은 선택 사항이므로 필요한 칸만 채우고 다음 단계로 넘어갑니다.
 
 치과의 제조사 목록은 `제휴 제조사`와 `미제휴 제조사`로 나뉩니다. 제휴를 맺지 않은 제조사의 제품도 인증서는 발행할 수 있습니다.
 
@@ -2188,7 +2250,8 @@ Studio에서 만든 챗봇이 있다면 `웹챗봇 설정`에서 메인 챗봇�
 1. `치료 후 주의사항`을 입력합니다. [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에 만들어 둔 템플릿을 고르거나 직접 입력합니다.
 2. `병원 보증사항`에 보증기간과 보증범위 같은 보증 내용을 입력합니다.
 3. `환자 정보 확인`에서 이름, 연락처, 성별, 생년월일, 시술일자를 마지막으로 확인합니다. 여기에서 고칠 수 있습니다.
-4. `발행하기`를 누릅니다. "인증서를 발행하시겠습니까?" 창에서 `알림 메시지 전송`을 누르면 입력한 환자 번호로 알림 메시지가 갑니다.
+4. `발행하기`를 누릅니다. "인증서를 발행하시겠습니까?" 창에서 `알림 메시지 전송`을 누르면 인증서가 발행되고 입력한 환자 번호로 알림 메시지가 바로 갑니다. 공통 그룹 `병원`에서는 창 제목에 발행할 장수가 나오고(예: "인증서 2장을 발행합니다"), 버튼 이름은 `발행`입니다.
+5. `인증서 발행 완료` 창이 나오면 `확인`을 누릅니다. 발행 화면은 처음 상태로 돌아갑니다. 알림이 갔는지는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)의 상태로 확인합니다.
 
 여러 인증서를 함께 발행하는 진료과에서는 `전체 인증서에 적용`으로 주의사항과 보증사항을 한 번에 넣을 수 있습니다. 작성 중에 다른 메뉴로 나가면 입력한 내용이 저장되지 않습니다.
 
@@ -2227,12 +2290,12 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 **위치:** 진료과 이름 > 인증서 발행 > 수술/시술 선택
 
-성형외과, 피부과, 내과, 정형외과와 `병원` 공통 그룹은 같은 4단계 화면을 씁니다. 한의원처럼 진료과 목록에 없는 병원은 `병원` 그룹을 씁니다. 한의원 계정에서 실제로 어떤 메뉴가 보이는지는 화면에서 확인되지 않았으므로, 로그인한 뒤 왼쪽 메뉴에서 확인하세요.
+성형외과, 피부과, 내과, 정형외과와 `병원` 공통 그룹은 같은 4단계 화면을 씁니다. 신경외과, 흉부외과와 공통 진료과는 `병원` 그룹의 `병원 인증서 발행`을 씁니다. 한의원처럼 왼쪽 메뉴에 `병원` 그룹이 보이지 않으면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 치과와 다른 점은 세 가지입니다.
 
 - **제품 코드와 치아번호가 없습니다.** 시술 이름, 주의사항, 보증사항을 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-인증서-만들기)에 미리 만들어 두고, 발행할 때는 `수술/시술 선택` 단계의 `인증서 선택`에서 고르기만 합니다. [제품 코드 오류 해결하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)는 이 진료과와 관계없습니다.
-- **인증서 목록이 비어 있으면 먼저 인증서를 만듭니다.** `인증서 선택`에 아무것도 없으면 진료과 이름 > `인증서 설정` > `인증서 추가`에서 `수술명`을 넣어 인증서를 만듭니다. 그다음 `인증서 발행`으로 돌아옵니다.
+- **인증서 목록이 비어 있으면 먼저 인증서를 만듭니다.** `병원` 그룹은 `병원` > `병원 인증서 설정`의 `새 인증서 만들기`에서, 다른 진료과는 진료과 이름 > 인증서 설정의 `수술 추가하기`에서 `수술명`을 넣어 인증서를 만듭니다. 그다음 인증서 발행 메뉴로 돌아옵니다.
 - **한 번에 여러 인증서를 고를 수 있습니다.** 최대 10개까지 고르고, `병원 추가사항 입력`에서 `전체 인증서에 적용`으로 주의사항과 보증사항을 한 번에 넣습니다.
 
 제품 코드 없이 발행한 인증서는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#발행한-인증서-찾기)에서 `고유번호`가 "간편발행"으로 표시됩니다. 잘못 보냈을 때 회수와 삭제를 고르는 기준은 치과와 같습니다. [잘못 보낸 인증서 바로잡기](https://certi.life/docs/guide/hospital/screens/history#잘못-보낸-인증서-바로잡기)를 보세요.
@@ -2253,7 +2316,7 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 | "중복되는 제품코드가 있습니다. 다시 확인해주세요." | 한 인증서 안에 같은 코드를 두 번 넣었습니다. 하나를 지웁니다.                                                                                                                                                                                                                                                                                                                      |
 | "발행 권한이 없습니다"                 | 해당 제품의 제조사에 발행 권한을 문의합니다.                                                                                                                                                                                                                                                                                                                                 |
 
-`제품 코드 한 번에 스캔하기`는 병원용 앱이 필요하고, 일부 제조사의 제품만 지원합니다. 앱은 [CertiLife 다운로드](https://certi.life/docs/guide/getting-started/downloads)에서 받습니다. 지원하지 않는 제조사의 제품은 코드를 직접 입력합니다. 임플란트 보철은 `바코드 스캔` 또는 `직접 입력`으로 GTIN 코드 14자리, 제조일자, LOT 번호(제조 묶음 번호)를 넣습니다. GTIN은 제품 라벨의 (01) 뒤 14자리 숫자입니다.
+`제품 코드 한 번에 스캔하기`는 서티라이프 병원용 앱이 필요하고, 일부 제조사의 제품만 지원합니다. 병원용 앱은 공식 다운로드 페이지에 없습니다. [App Store의 서티라이프 병원용 앱](https://apps.apple.com/kr/app/%EC%84%9C%ED%8B%B0%EB%9D%BC%EC%9D%B4%ED%94%84-%EB%B3%91%EC%9B%90%EC%9A%A9/id6450404968)이나 [Google Play의 서티라이프 병원용 앱](https://play.google.com/store/apps/details?id=com.certilife.hospital)에서 받고, 설치와 로그인 순서는 [병원용 앱 설치](https://certi.life/docs/guide/getting-started/downloads#병원용-앱-설치)를 따릅니다. 지원하지 않는 제조사의 제품은 코드를 직접 입력합니다. 임플란트 보철은 `바코드 스캔` 또는 `직접 입력`으로 GTIN 코드 14자리, 제조일자, LOT 번호(제조 묶음 번호)를 넣습니다. GTIN은 제품 라벨의 (01) 뒤 14자리 숫자입니다.
 
 #### 위챗으로 보내기
 
@@ -2261,7 +2324,9 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 **위치:** 진료과 이름 > 인증서 발행 > 전송 방식 선택 > 위챗
 
-위챗을 쓰는 환자(주로 중국어권 환자)에게 보낼 때 고릅니다. 위챗으로 받으려면 환자가 먼저 서티라이프 위챗 공중계정을 팔로우하고 미니앱에 가입해야 합니다. 발행 화면의 QR을 환자에게 보여 주고 가입을 마친 뒤에 발행하세요. 이 QR은 [환자 동의 받기](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-동의-받기)의 동의용 QR과 다른 것입니다. 위챗 가입 QR이 화면 어디에 어떤 이름으로 보이는지는 확인되지 않았습니다.
+위챗을 쓰는 환자(주로 중국어권 환자)에게 보낼 때 고릅니다. 치과와 안과는 `전송 방식 선택`에서 `위챗`을 고릅니다. 다른 진료과는 위챗 발송을 쓰는 병원에만 `환자 정보 입력`에 `보조 언어 설정`의 `중국어`가 보입니다. `중국어`를 누르면 인증서에 중국어가 한국어와 함께 표기되고 위챗으로 보냅니다.
+
+위챗으로 받으려면 환자가 먼저 서티라이프 위챗 공중계정을 팔로우하고 미니앱에 가입해야 합니다. 위챗을 고르면 `서티라이프 위챗 공중계정 QR 스캔` 창이 열립니다. 이 창의 QR을 환자에게 보여 주고 가입을 마친 뒤에 발행하세요. 이 QR은 [환자 동의 받기](https://certi.life/docs/guide/hospital/screens/issue-certificate#환자-동의-받기)의 동의용 QR과 다른 것입니다.
 
 > **알림만 실패했다면 재발행하지 마세요**
 >
@@ -2313,14 +2378,14 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 출처: https://certi.life/docs/guide/hospital/screens/certificate-settings#이럴-때-사용하세요
 
-| 하려는 일                          | 가는 곳                                                                                               |
-| ------------------------------ | -------------------------------------------------------------------------------------------------- |
-| 우리 병원 수술·시술에 맞는 인증서 만들기(치과 제외) | [병원 인증서 만들기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-인증서-만들기)       |
-| 치과 주의사항 템플릿 관리하기               | [치과 템플릿 관리하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#치과-템플릿-관리하기)     |
-| 우리 병원이 진료과 목록에 없을 때(한의원 등)     | [병원 인증서 만들기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-인증서-만들기)       |
-| 대시보드에 "병원 보증사항을 입력해 주세요"가 뜰 때  | [주의사항과 보증사항 넣기](https://certi.life/docs/guide/hospital/screens/certificate-settings#주의사항과-보증사항-넣기) |
-| 인증서 알림톡을 병원 채널로 보내기            | [병원 채널로 발송하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-채널로-발송하기)     |
-| 인증서에 들어가는 그림 바꾸기               | [인증서 이미지 바꾸기](https://certi.life/docs/guide/hospital/screens/certificate-settings#인증서-이미지-바꾸기)     |
+| 하려는 일                               | 가는 곳                                                                                               |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------- |
+| 우리 병원 수술·시술에 맞는 인증서 만들기(치과 제외)      | [병원 인증서 만들기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-인증서-만들기)       |
+| 치과 주의사항 템플릿 관리하기                    | [치과 템플릿 관리하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#치과-템플릿-관리하기)     |
+| 신경외과·흉부외과·공통 진료과에서 인증서 만들기(`병원` 그룹) | [병원 인증서 만들기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-인증서-만들기)       |
+| 대시보드에 "병원 보증사항을 입력해 주세요"가 뜰 때       | [주의사항과 보증사항 넣기](https://certi.life/docs/guide/hospital/screens/certificate-settings#주의사항과-보증사항-넣기) |
+| 인증서 알림톡을 병원 채널로 보내기                 | [병원 채널로 발송하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-채널로-발송하기)     |
+| 인증서에 들어가는 그림 바꾸기                    | [인증서 이미지 바꾸기](https://certi.life/docs/guide/hospital/screens/certificate-settings#인증서-이미지-바꾸기)     |
 
 #### 병원 인증서 만들기
 
@@ -2328,18 +2393,22 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 **위치:** 진료과 이름 > 인증서 설정 > 인증서 추가
 
-성형외과, 피부과, 내과, 정형외과, 수의과, `병원` 공통 인증서는 같은 구조의 `병원 인증서 설정` 화면을 씁니다. 한의원처럼 진료과 목록에 없는 병원은 `병원` 공통 그룹을 씁니다. 한의원 계정에서 실제로 어떤 그룹이 보이는지는 화면에서 확인되지 않았습니다. 치과는 이 6단계를 쓰지 않고 시술 구분별 템플릿을 관리하며, 안과는 `스마일 확인서 설정`을 씁니다. 두 진료과는 [치과 템플릿 관리하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#치과-템플릿-관리하기)를 보세요.
+공통 그룹 `병원`은 `병원` > `병원 인증서 설정`에서, 성형외과·피부과·내과·정형외과·수의과는 진료과 이름 > 인증서 설정(예: `성형외과 인증서 설정`)에서 인증서를 만듭니다. 신경외과, 흉부외과와 공통 진료과는 `병원` 그룹을 씁니다. 한의원처럼 왼쪽 메뉴에 `병원` 그룹이 보이지 않으면 CertiLife 고객센터(1800-8984)에 문의하세요. 치과는 시술 구분별 템플릿을 관리하고, 안과는 `스마일 확인서 설정`을 씁니다. 두 진료과는 [치과 템플릿 관리하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#치과-템플릿-관리하기)를 보세요.
 
-1. `인증서 추가`를 누릅니다.
+`병원` 그룹에서 만드는 순서는 다음과 같습니다.
+
+1. `병원` > `병원 인증서 설정`의 `병원 인증서` 목록에서 `새 인증서 만들기`를 누릅니다.
 2. `인증서 기본 설정`에서 `수술명`을 입력합니다. 필수 항목입니다. 인증서에 표시할 시술 이름을 넣는 칸이므로, 수술이 아닌 시술(예: 피부 레이저, 추나 치료)도 이 칸에 적습니다.
 3. `인증서 이미지`를 정합니다. `이미지 변경`으로 올리거나 `기본 이미지 사용`을 고릅니다.
 4. `인증서 상세 정보`에서 `속성 추가하기`를 눌러 인증서에 표시할 항목을 만듭니다. 속성명과 기본값을 넣으며, 기본값은 선택 사항입니다.
 5. `치료 후 주의사항`과 `병원 보증사항`을 입력합니다.
-6. `미리보기`로 환자가 보게 될 모습을 확인하고 `저장`을 누릅니다.
+6. `미리보기`로 환자가 보게 될 모습을 확인하고 `인증서 추가`를 누릅니다. 이미 만든 인증서를 고쳤을 때는 `저장`을 누릅니다.
 
 비슷한 인증서를 하나 더 만들 때는 `복제`를 씁니다. `삭제`를 누르면 인증서 양식만 지워지고, 환자에게 이미 발행한 인증서는 지워지지 않습니다. 저장하지 않고 다른 곳으로 가려 하면 "저장하지 않은 변경이 있습니다. 이동하시겠습니까?"라고 묻습니다.
 
-화면 아래의 `인증서 세부항목`은 병원이 발행하는 모든 인증서에 공통으로 적용됩니다. 여기에 어떤 항목이 들어가는지는 화면에서 확인되지 않았으므로 화면의 안내를 따르세요.
+성형외과, 피부과, 내과, 정형외과, 수의과의 인증서 설정 화면은 버튼 이름이 다릅니다. `수술 추가하기`를 눌러 같은 항목(`수술명`, `인증서 이미지`, `인증서 상세 정보`, `치료 후 주의사항`, `병원 보증사항`)을 채우고 `수술 추가`를 누릅니다. 인증서 이미지는 `이미지 업로드`로 올립니다. 이미 만든 인증서를 고칠 때는 `수정하기`를 누릅니다.
+
+`인증서 세부항목`은 병원이 발행하는 모든 인증서에 공통으로 적용됩니다. `속성 추가하기`로 줄을 만들고 속성명과 기본값(선택 사항)을 넣습니다. 줄은 끌어서 순서를 바꿀 수 있습니다.
 
 #### 치과 템플릿 관리하기
 
@@ -2416,7 +2485,7 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 **위치:** 발행/환자 관리 > 발행 내역
 
-화면에 따라 "인증서"가 "확인서"로, `환자 관리`가 `고객관리`로 표시됩니다. 점검한 치과 계정에서도 발행 내역의 필터는 `확인서 상태`, 왼쪽 메뉴는 `고객관리`로 보였으므로, 이름이 달라도 같은 화면입니다. 이 문서는 인증서와 환자 관리로 적습니다.
+진료과에 안과가 있는 병원은 "인증서"가 "확인서"로 표시됩니다. 발행 내역의 상태 필터 이름은 PC 화면에서는 안과가 있는 병원만 `확인서 상태`로, 모바일 화면에서는 모든 병원이 `확인서 상태`로 보입니다. 진료과에 수의과가 있는 병원은 왼쪽 메뉴의 `환자 관리`가 `고객관리`로 표시됩니다. 이름이 달라도 같은 화면입니다. 이 문서는 인증서와 환자 관리로 적습니다.
 
 #### 이럴 때 사용하세요
 
@@ -2439,10 +2508,10 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 - **`검색어`:** `전체`, `환자명`, `전화번호` 중에서 골라 검색합니다.
 - **`조회 기간`:** 발행 시각 기준입니다. `전체`, `최근 3개월`, `최근 1년`, `최근 3년`, `기간 설정` 중에서 고릅니다.
-- **인증서 상태(화면 이름 `확인서 상태`), 타입(`온라인`, `오프라인`):** 상태별로 거릅니다.
+- **`인증서 상태`, 타입(`온라인`, `오프라인`):** 상태별로 거릅니다. PC 화면에서는 안과가 있는 병원만 `확인서 상태`로, 모바일 화면에서는 모든 병원이 `확인서 상태`로 보입니다.
 - **채널 탭:** `카카오톡/이메일`과 `위챗`으로 나뉩니다. 위챗으로 보낸 인증서는 `위챗` 탭에서 찾습니다.
 
-목록의 `발행 방법`은 `단건`과 `대량`으로 구분됩니다. 발행 방법으로 거르는 필터는 화면에서 확인되지 않았으므로, 대량 발행한 건을 한꺼번에 보려면 `조회 기간`을 발행일로 좁히세요. `고유번호`가 "간편발행"으로 표시된 인증서는 제품 코드를 입력하지 않고 발행한 인증서입니다. `새 창으로 보기`를 누르면 환자 상세가 열립니다.
+목록의 `발행 방법`은 `단건`과 `대량`으로 구분됩니다. 발행 방법으로 거르는 필터는 없습니다. 대량 발행한 건을 한꺼번에 보려면 `조회 기간`을 발행일로 좁히세요. `고유번호`가 "간편발행"으로 표시된 인증서는 제품 코드를 입력하지 않고 발행한 인증서입니다. `새 창으로 보기`를 누르면 환자 상세가 열립니다.
 
 #### 인증서 상태 읽기
 
@@ -2452,16 +2521,16 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 | 상태                                      | 뜻                                                                                                                                                                                                                |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `카톡 전송됨`, `위챗 전송됨`, `이메일 전송됨`, `문자 전송됨` | 알림이 환자에게 전송되었습니다                                                                                                                                                                                                 |
+| `카톡 전송됨`, `위챗 전송됨`, `이메일 전송됨`, `문자 전송됨` | 알림이 환자에게 전송되었습니다. `문자 전송됨`은 환자 번호로 카카오톡 알림을 받을 수 없어 서티라이프가 문자를 대신 보낸 경우입니다                                                                                                                                       |
 | `지갑 저장됨`                                | 환자가 인증서를 자기 지갑에 저장했습니다                                                                                                                                                                                           |
-| `발송 대기`, `발송 보류`                        | 아직 전송되지 않았습니다. 목록을 다시 조회해 상태가 바뀌는지 봅니다. 얼마나 기다려야 하는지는 화면에서 확인되지 않았습니다                                                                                                                                            |
+| `발송 대기`, `발송 보류`                        | 아직 전송되지 않았습니다. 목록을 다시 조회해 상태가 바뀌는지 봅니다. 상태가 계속 바뀌지 않으면 CertiLife 고객센터(1800-8984)에 문의하세요                                                                                                                          |
 | `발송 실패`                                 | 전송에 실패했습니다. 연락처가 맞으면 [알림 다시 보내기](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기)를 누르고, 틀리면 [연락처가 틀렸을 때 고르는 기준](https://certi.life/docs/guide/hospital/screens/history#연락처가-틀렸을-때-고르는-기준)을 따릅니다 |
 | `회수됨`                                   | 병원이 회수한 인증서입니다                                                                                                                                                                                                   |
 | `삭제됨`                                   | 병원이 삭제한 인증서입니다                                                                                                                                                                                                   |
 
 ##### 투명교정 인증서만 다른 점
 
-치과 투명교정 인증서에는 `다음 발송 예정일`과 `시술 종료일`이 함께 보입니다. 등록한 알림톡을 모두 보내면 `모두 발송됨`으로 표시되고, 추가 알림톡을 등록하라는 안내가 나옵니다. 추가 알림톡을 등록하는 화면의 위치는 확인되지 않았으므로 안내가 가리키는 곳을 따르세요. 임플란트나 다른 인증서에는 이 항목이 없습니다.
+투명교정을 발행하는 치과의 발행 내역에는 `다음 발송 예정일`과 `시술 종료일`이 함께 보입니다. 등록한 교체 알림톡을 모두 보냈는데 시술 종료일이 남아 있으면 `시술 종료일`이 붉게 표시되고, 마우스를 올리면 "등록한 알림톡을 모두 발송했습니다. 추가 알림톡을 등록해주세요."가 나옵니다. 추가 알림톡은 그 인증서의 행을 눌러 환자 상세를 연 뒤, 인증서를 골라 `인증서 상세설정`의 `알림추가`로 등록합니다.
 
 #### 알림 다시 보내기
 
@@ -2473,9 +2542,9 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 1. 발행 내역에서 인증서를 찾습니다.
 2. `알림 발송` 열에 있는 버튼을 누릅니다.
-3. "환자에게 인증서 알림톡을 다시 보내시겠습니까?"에서 확인합니다. `위챗` 탭에서 재발송할 때 뜨는 확인 창 문구는 확인되지 않았습니다.
+3. "환자에게 인증서 알림톡을 다시 보내시겠습니까?"에서 확인합니다. `위챗` 탭에서는 "환자에게 위챗 인증서 알림을 다시 보내시겠습니까?"가 나옵니다.
 
-`회수됨`과 `삭제됨` 상태의 인증서에는 재발송 버튼이 없습니다. 위챗 알림은 방금 재발송한 인증서를 바로 다시 보낼 수 없으며, 잠시 뒤에 다시 시도해야 합니다. 몇 분을 기다려야 하는지는 화면에서 확인되지 않았습니다.
+`회수됨`과 `삭제됨` 상태의 인증서에는 재발송 버튼이 없습니다. 위챗 알림은 방금 재발송한 인증서를 바로 다시 보낼 수 없습니다. "방금 재발송한 인증서입니다. 잠시 후 다시 시도해 주세요."가 나오면 잠시 뒤에 다시 누릅니다.
 
 재발송은 같은 연락처로 같은 인증서 알림을 다시 보내는 기능입니다. **연락처가 틀렸다면 재발송으로는 해결되지 않습니다.** 아래 기준으로 회수할지 연락처를 고칠지 정하세요.
 
@@ -2492,18 +2561,33 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 회수와 삭제는 발행 내역 목록이 아니라 **환자 상세** 화면에 있습니다. 발행 내역에서 `새 창으로 보기`를 누르거나 `환자 관리`에서 환자를 눌러 들어갑니다.
 
-| 방법 | 결과                                                      | 쓰는 경우                       |
-| -- | ------------------------------------------------------- | --------------------------- |
-| 회수 | 환자에게 보낸 인증서를 거두어들입니다. 회수한 인증서는 **새 내용으로 다시 발행할 수 있습니다** | 내용이나 받는 사람이 틀려서 다시 발행해야 할 때 |
-| 삭제 | 인증서를 지웁니다. **같은 제품 코드로는 다시 발행할 수 없고, 취소할 수 없습니다**       | 그 제품 코드로 다시 발행할 일이 없을 때     |
+| 방법 | 결과                                                                        | 쓰는 경우                       |
+| -- | ------------------------------------------------------------------------- | --------------------------- |
+| 회수 | 환자에게 보낸 인증서를 거두어들입니다. 회수한 인증서는 **새 내용으로 다시 발행할 수 있고, 제품 코드도 다시 쓸 수 있습니다** | 내용이나 받는 사람이 틀려서 다시 발행해야 할 때 |
+| 삭제 | 인증서를 지웁니다. **같은 제품 코드로는 다시 발행할 수 없고, 취소할 수 없습니다**                         | 그 제품 코드로 다시 발행할 일이 없을 때     |
 
 > **다시 발행하려면 삭제가 아니라 회수입니다**
 >
 > 삭제 확인 창에도 '재발행을 원하신다면 "회수" 버튼을 클릭하세요.'라고 나옵니다. 확실하지 않으면 회수를 고르세요. 제품 코드 없이 발행한 인증서("간편발행", 치과·안과가 아닌 진료과)도 삭제는 취소할 수 없습니다.
 
-회수한 뒤 다시 발행하는 버튼이 환자 상세에 있는지는 화면에서 확인되지 않았습니다. 진료과 이름 > [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)에서 처음부터 다시 입력해 발행하는 방법은 언제나 쓸 수 있습니다.
-
 다른 사람에게 시술 정보가 전달된 경우에는 회수만으로 끝내지 말고, 병원의 개인정보 사고 대응 절차에 따라 기록하고 보고하세요. 기준은 [Hospital 안전한 운영 가이드](https://certi.life/docs/guide/hospital/safe-operation)를 참고하세요.
+
+안과에서는 아래 버튼과 창의 "인증서"가 "확인서"로 표시됩니다.
+
+##### 회수하기
+
+1. 환자 상세의 `수신 인증서` 목록에서 회수할 인증서 오른쪽의 ⋮ 버튼을 누릅니다.
+2. `회수`를 누릅니다.
+3. `인증서 회수` 창에 "환자에게 보낸 인증서를 회수하시겠습니까? 회수한 인증서는 새로운 내용으로 다시 발행할 수 있습니다."가 나오면 `회수`를 누릅니다.
+4. "인증서 회수가 완료되었습니다."가 나오면 회수가 끝난 것입니다. 목록의 인증서 이름은 "회수된 인증서입니다"로 바뀌고, 발행 내역의 상태는 `회수됨`이 됩니다.
+
+회수하면 인증서의 시술 정보와 이미지가 지워지고, 인증서 내용은 "회수된 인증서 입니다."라는 문구로 바뀝니다. 회수해도 환자에게 따로 알림이 가지 않고, 이미 보낸 알림 메시지도 지워지지 않습니다. 환자 상세에는 회수한 인증서를 다시 발행하는 버튼이 없습니다. 진료과 이름 > [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)에서 맞는 정보를 처음부터 입력해 다시 발행합니다.
+
+##### 삭제하기
+
+1. 환자 상세의 `수신 인증서` 목록에서 지울 인증서 오른쪽의 ⋮ 버튼을 누르고 `삭제`를 누릅니다.
+2. `인증서 삭제` 창의 안내를 읽고 `삭제`를 누릅니다. 창에는 "같은 제품코드로는 다시 발행할 수 없습니다."와 "이 작업은 취소할 수 없습니다."가 함께 나옵니다.
+3. "인증서 삭제가 완료되었습니다."가 나오면 삭제가 끝난 것입니다. 발행 내역의 상태는 `삭제됨`이 됩니다.
 
 #### 환자 정보 고치기
 
@@ -2513,7 +2597,7 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 `환자 관리`는 인증서를 받은 환자의 목록입니다. `검색어`(`환자명`, `전화번호`), `조회 기간`(환자 등록일 기준), `지갑 연동 상태`(`연동`, `미연동`), 인증서 종류로 찾습니다. 목록에서는 환자별 인증서 개수와 최근 발행일을 볼 수 있습니다.
 
-환자를 누르면 환자 상세가 열리고, 여기에서 환자 정보를 수정하거나 `알림톡 재발송`을 할 수 있습니다. 연락처를 고치기 전에 알림이 이미 다른 번호로 갔는지 [연락처가 틀렸을 때 고르는 기준](https://certi.life/docs/guide/hospital/screens/history#연락처가-틀렸을-때-고르는-기준)으로 확인하세요. 위챗 고객의 정보는 이 화면에서 수정하거나 삭제할 수 없습니다.
+환자를 누르면 환자 상세가 열리고, 여기에서 환자 정보를 수정하거나 `알림톡 재발송`을 할 수 있습니다. 연락처를 고치기 전에 알림이 이미 다른 번호로 갔는지 [연락처가 틀렸을 때 고르는 기준](https://certi.life/docs/guide/hospital/screens/history#연락처가-틀렸을-때-고르는-기준)으로 확인하세요. 위챗으로 인증서를 받은 환자의 정보는 이 화면에서 수정하거나 삭제할 수 없습니다.
 
 `지갑 연동 상태`가 `미연동`인 환자는 아직 인증서를 자기 지갑에 저장하지 않은 환자입니다. 내원했을 때 알림톡을 확인하도록 안내해 주세요.
 
@@ -2569,7 +2653,7 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 3. 환자와 통화해 일정을 맞춘 뒤 `예약 상태`를 `예약 확정`으로 바꿉니다. 시간이 바뀌었다면 `예약 시간`도 고칩니다.
 4. `수정완료`를 누릅니다.
 
-예약을 받을 수 없으면 같은 방법으로 `예약 취소`로 바꾸고, 진료가 끝난 예약은 `진료 완료`로 바꿉니다. 새 예약이 들어왔는지는 브라우저를 새로고침해 확인합니다. 화면에 별도 `새로 고침` 버튼이 있는지는 확인되지 않았습니다.
+예약을 받을 수 없으면 같은 방법으로 `예약 취소`로 바꾸고, 진료가 끝난 예약은 `진료 완료`로 바꿉니다. 새 예약이 들어왔는지는 화면의 `새로 고침` 버튼을 눌러 확인합니다.
 
 > **tip**
 >
@@ -2626,7 +2710,7 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 3. 출처를 남깁니다.
 4. 서티라이프 앱 QR과 함께 게재합니다.
 
-가이드는 `가이드 보기`로 언제든 다시 볼 수 있습니다. 내려받은 파일에는 고객 정보가 들어 있으므로 [Hospital 안전한 운영 가이드](https://certi.life/docs/guide/hospital/safe-operation)의 기준에 따라 보관하세요.
+가이드는 `가이드 보기`로 언제든 다시 볼 수 있습니다. 내려받은 파일에는 환자 정보가 들어 있으므로 [Hospital 안전한 운영 가이드](https://certi.life/docs/guide/hospital/safe-operation)의 기준에 따라 보관하세요.
 
 #### 함께 보기
 
@@ -2647,7 +2731,7 @@ QR 동의를 적용하면 `동의 완료`로 표시되고, 이름·연락처·�
 
 **위치:** 구매/주문 관리(`결제 내역 관리`, `주문 관리`, `전자계약`)
 
-이 그룹은 치과 진료과를 쓰는 병원에서, 해당 권한이 있는 계정에만 보입니다. 성형외과처럼 치과가 아닌 진료과가 결제 내역, 충전금, 계약서를 어디에서 확인하는지는 화면에서 확인되지 않았습니다. 이 메뉴가 보이지 않는 병원은 계약 담당자나 [도입 문의](https://certi.life/contact)로 확인하세요.
+이 그룹은 진료과에 치과가 있는 병원에서, `결제` 그룹의 권한이 있는 계정에만 보입니다. 진료과에 치과가 없는 병원의 Hospital에는 결제 내역, 충전금, 제조사와의 전자계약을 보는 메뉴가 없습니다. 이런 병원은 결제와 계약 내용을 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 이럴 때 사용하세요
 
@@ -2720,10 +2804,10 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 
 - **필터:** `검색어`(제목), `계약생성일`, `계약일`, `계약 상태`
 - **`계약생성일`과 `계약일`의 차이:** 계약생성일은 전자계약서를 만든 날짜이고, 계약일은 계약서 문서에 적힌 날짜입니다.
-- **진행상황:** `서명 진행중`, `첫번째 서명 진행중`, `두번째 서명 진행중`, `모든 서명 완료`, `서명 중단됨`. 첫 번째와 두 번째 서명자가 병원인지 제조사인지는 화면에서 확인되지 않았으므로 `계약서 보기`에서 서명 순서를 확인하세요. `서명 중단됨`이면 거래 제조사 담당자에게 연락합니다.
+- **진행상황:** `서명 진행중`, `첫번째 서명 진행중`, `두번째 서명 진행중`, `모든 서명 완료`, `서명 중단됨`. 누가 먼저 서명하는지는 `계약서 보기`에서 확인하세요. `서명 중단됨`이면 거래 제조사 담당자에게 연락합니다.
 - **`계약서 보기`:** 계약서를 엽니다.
 
-이 화면은 조회 전용입니다. 계약서를 만들고 서명을 요청하는 절차는 이 가이드에 없으므로 거래 제조사 담당자에게 확인하세요. 진행된 계약이 없으면 "진행된 계약이 없습니다."가 표시됩니다. 직원과 맺는 근로계약서, 환자에게 받는 시술동의서는 [시술동의서와 근로계약서](https://certi.life/docs/guide/hospital/screens/contracts)에서 다룹니다.
+이 화면은 조회 전용이라 여기에서 계약서를 만들거나 서명을 요청할 수 없습니다. 새 계약이나 서명 요청은 거래 제조사 담당자에게 문의하세요. 진행된 계약이 없으면 "진행된 계약이 없습니다."가 표시됩니다. 직원과 맺는 근로계약서, 환자에게 받는 시술동의서는 [시술동의서와 근로계약서](https://certi.life/docs/guide/hospital/screens/contracts)에서 다룹니다.
 
 #### 함께 보기
 
@@ -2738,7 +2822,7 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 
 출처: https://certi.life/docs/guide/hospital/screens/contracts
 
-> Hospital 병원 관리의 시술동의서에서 임플란트 시술동의서를 작성해 환자에게 알림톡으로 보내 서명을 받고 PDF로 내려받는 방법과, 근로계약서에서 직원 근로계약서를 작성하고 서명 상태 확인, 재발송, 퇴사 처리, 책임자 연락처 인증으로 민감정보를 확인하는 방법을 안내합니다.
+> Hospital 병원 관리의 시술동의서에서 임플란트 시술동의서를 작성해 환자에게 알림톡으로 보내 서명을 받고 PDF로 내려받는 방법과, 근로계약서에서 직원 근로계약서를 작성하고 서명 상태 확인, 재발송, 퇴사 처리, 책임자 연락처 인증으로 직원 연락처와 계약 상세를 확인하는 방법을 안내합니다.
 
 `병원 관리`에는 **종이 대신 전자 서명으로 받는 문서** 두 가지가 있습니다. `시술동의서`는 환자에게, `근로계약서`는 직원에게 받습니다. 두 메뉴 모두 작성한 뒤 알림톡으로 보내고, 서명이 끝나면 상태가 자동으로 바뀝니다.
 
@@ -2750,13 +2834,13 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 
 출처: https://certi.life/docs/guide/hospital/screens/contracts#이럴-때-사용하세요
 
-| 하려는 일               | 가는 곳                                                                                      |
-| ------------------- | ----------------------------------------------------------------------------------------- |
-| 시술 전에 환자 동의를 받기     | [시술동의서 받기](https://certi.life/docs/guide/hospital/screens/contracts#시술동의서-받기)             |
-| 환자가 알림톡을 못 받았다고 할 때 | [서명 확인하고 다시 보내기](https://certi.life/docs/guide/hospital/screens/contracts#서명-확인하고-다시-보내기) |
-| 새 직원과 근로계약서 쓰기      | [근로계약서 쓰기](https://certi.life/docs/guide/hospital/screens/contracts#근로계약서-쓰기)             |
-| 직원 연락처나 계약 상세 보기    | [민감정보 확인하기](https://certi.life/docs/guide/hospital/screens/contracts#민감정보-확인하기)           |
-| 직원이 퇴사했을 때          | [퇴사 처리하기](https://certi.life/docs/guide/hospital/screens/contracts#퇴사-처리하기)               |
+| 하려는 일               | 가는 곳                                                                                          |
+| ------------------- | --------------------------------------------------------------------------------------------- |
+| 시술 전에 환자 동의를 받기     | [시술동의서 받기](https://certi.life/docs/guide/hospital/screens/contracts#시술동의서-받기)                 |
+| 환자가 알림톡을 못 받았다고 할 때 | [서명 확인하고 다시 보내기](https://certi.life/docs/guide/hospital/screens/contracts#서명-확인하고-다시-보내기)     |
+| 새 직원과 근로계약서 쓰기      | [근로계약서 쓰기](https://certi.life/docs/guide/hospital/screens/contracts#근로계약서-쓰기)                 |
+| 직원 연락처나 계약 상세 보기    | [직원 연락처와 계약 상세 보기](https://certi.life/docs/guide/hospital/screens/contracts#직원-연락처와-계약-상세-보기) |
+| 직원이 퇴사했을 때          | [퇴사 처리하기](https://certi.life/docs/guide/hospital/screens/contracts#퇴사-처리하기)                   |
 
 #### 시술동의서 받기
 
@@ -2816,13 +2900,13 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 
 근무상태에는 이 밖에 `수습 중`, `휴직 중`, `퇴사`, `계약 해지`가 있습니다. 목록은 `재직자`와 `퇴사자` 탭으로 나뉩니다. 직원이 서명 요청을 받지 못했으면 행의 `재발송`을 누릅니다.
 
-#### 민감정보 확인하기
+#### 직원 연락처와 계약 상세 보기
 
-출처: https://certi.life/docs/guide/hospital/screens/contracts#민감정보-확인하기
+출처: https://certi.life/docs/guide/hospital/screens/contracts#직원-연락처와-계약-상세-보기
 
 **위치:** 병원 관리 > 근로계약서 > 연락처 보기
 
-직원 연락처와 계약 상세에는 급여 같은 민감정보가 있어 바로 보이지 않습니다. `연락처 보기`나 `상세`를 누르면 본인 인증 창이 열립니다.
+직원 연락처와 계약 상세에는 급여처럼 보호가 필요한 정보가 있어 바로 보이지 않습니다. `연락처 보기`나 `상세`를 누르면 본인 인증 창이 열립니다.
 
 1. `관리자 전화번호`를 입력하고 `인증요청`을 누릅니다.
 2. 받은 `인증번호`를 입력하고 `확인`을 누릅니다.
@@ -2838,7 +2922,7 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 1. 직원 행에서 `퇴사`를 누릅니다.
 2. `퇴사 처리` 창에서 `퇴사일자`를 고르고 `확인`을 누릅니다.
 
-처리된 직원은 `퇴사자` 탭으로 옮겨집니다. 퇴사한 직원이 Hospital 서브계정을 쓰고 있었다면 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts#계정-고치고-정리하기)에서 계정도 함께 정리하세요.
+처리된 직원은 `퇴사자` 탭으로 옮겨집니다. 퇴사한 직원이 Hospital 서브계정을 쓰고 있었다면 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts#계정-고치고-정리하기)에서 그 계정도 삭제하세요.
 
 #### 함께 보기
 
@@ -2880,7 +2964,7 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 2. `비밀번호 확인` 화면에서 기존 비밀번호를 입력합니다. 개인정보를 보호하기 위한 확인 단계입니다.
 3. 수정 화면에서 `병원 정보`, `관리자 정보`, `병원 운영 시간`을 고치고 저장합니다.
 
-병원 로고가 비어 있으면 "로고 이미지를 등록하세요"가 표시됩니다. 로고는 고객이 받는 인증서와 병원 소개에 쓰이므로 등록해 두는 것이 좋습니다. 로고 파일의 형식, 용량, 권장 크기는 확인되지 않았으므로 업로드 창의 안내를 따르세요.
+병원 로고가 비어 있으면 "로고 이미지를 등록하세요"가 표시됩니다. 로고는 환자가 받는 인증서와 병원 소개에 쓰이므로 등록해 두는 것이 좋습니다. 수정 화면의 `이미지 등록/수정`으로 올리고 `이미지 삭제`로 지웁니다. 로고 파일은 PNG, JPG, JPEG, SVG 형식에 100MB 이하이고, 최소 200x200 크기의 정사각형 이미지를 권장합니다.
 
 #### 비밀번호 바꾸기
 
@@ -2891,8 +2975,11 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 1. `관리자 정보`의 비밀번호 옆 `변경하기`를 누릅니다.
 2. `기존 비밀번호`, `새 비밀번호`, `새 비밀번호 확인`을 입력합니다.
 3. `변경하기`를 누릅니다. 그만두려면 `취소하기`를 누릅니다.
+4. "비밀번호가 수정되었습니다."가 나오면 변경이 끝난 것입니다. "기존비밀번호와 일치하지 않습니다."가 나오면 `기존 비밀번호`를 다시 입력합니다.
 
-처음 로그인한 계정은 대시보드에 "병원 정보 관리에서 비밀번호를 변경해주세요."라는 안내가 뜹니다. 다른 서비스와 같은 비밀번호를 쓰지 말고, 담당자가 바뀌면 비밀번호도 바꾸세요. 비밀번호를 잊었을 때는 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)을 참고하세요. `병원 정보 관리` 권한이 없는 서브계정이 비밀번호를 바꾸는 경로는 확인되지 않았습니다.
+처음 로그인한 계정은 대시보드에 "병원 정보 관리에서 비밀번호를 변경해주세요."라는 안내가 뜹니다. 다른 서비스와 같은 비밀번호를 쓰지 말고, 담당자가 바뀌면 비밀번호도 바꾸세요. 비밀번호를 잊었을 때는 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access)을 참고하세요.
+
+서브계정으로 로그인하면 이 화면의 `관리자 정보`에 본인 계정의 정보가 보이고, 여기에서 본인 비밀번호를 바꿉니다. 로그인한 뒤 비밀번호를 바꿀 수 있는 곳은 이 화면뿐입니다. `병원 정보 관리` 메뉴가 보이지 않는 서브계정은 병원 관리자에게 [비밀번호 초기화](https://certi.life/docs/guide/hospital/screens/accounts#계정-고치고-정리하기)를 요청하세요. 초기화한 뒤 다시 로그인하면 `비밀번호 변경` 창에서 새 비밀번호를 정합니다.
 
 #### 책임자 연락처 등록하기
 
@@ -2900,7 +2987,7 @@ CertiLife에서 구매한 상품과 렌탈 내역을 봅니다.
 
 **위치:** 병원 관리 > 병원 정보 관리 > 관리자 정보 > 책임자 연락처 등록
 
-책임자 연락처는 [근로계약서](https://certi.life/docs/guide/hospital/screens/contracts)에 적힌 연락처나 연봉 같은 민감정보를 확인할 때 본인 인증에 쓰입니다. 상태가 `미등록`이면 그런 정보를 확인할 수 없으므로, 근로계약서 기능을 쓰는 병원은 먼저 등록해야 합니다.
+책임자 연락처는 [근로계약서](https://certi.life/docs/guide/hospital/screens/contracts)에 적힌 연락처나 연봉처럼 보호가 필요한 정보를 확인할 때 본인 인증에 쓰입니다. 상태가 `미등록`이면 그런 정보를 확인할 수 없으므로, 근로계약서 기능을 쓰는 병원은 먼저 등록해야 합니다.
 
 #### 진료시간과 휴진일 관리하기
 
@@ -2916,8 +3003,8 @@ Studio를 함께 쓰는 병원은 Studio의 [상담 시간 설정](https://certi
 
 출처: https://certi.life/docs/guide/hospital/screens/hospital-info#알아-둘-점
 
-- 직원용 서브계정은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)의 `권한 설정`에서 `병원 정보 관리` 메뉴의 권한을 받아야 이 메뉴가 보입니다. 이 권한이 다섯 그룹 중 어디에 있는지는 화면에서 확인되지 않았습니다.
-- 고객에게 보이는 병원 소개 페이지의 연락처와 진료시간은 [병원 소개 페이지](https://certi.life/docs/guide/hospital/screens/brand-page)에서 따로 설정합니다.
+- 직원용 서브계정은 [계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)의 `권한 설정`에서 `관리` 그룹의 `병원 정보 관리`를 받아야 이 메뉴가 보입니다.
+- 환자에게 보이는 병원 소개 페이지의 연락처와 진료시간은 [병원 소개 페이지](https://certi.life/docs/guide/hospital/screens/brand-page)에서 따로 설정합니다.
 - 이 화면에는 사업자등록번호와 관리자 연락처가 표시됩니다. 화면을 공유하거나 캡처할 때는 [Hospital 안전한 운영 가이드](https://certi.life/docs/guide/hospital/safe-operation)의 기준을 따르세요.
 
 ---
@@ -2926,11 +3013,13 @@ Studio를 함께 쓰는 병원은 Studio의 [상담 시간 설정](https://certi
 
 출처: https://certi.life/docs/guide/hospital/screens/accounts
 
-> Hospital 병원 관리의 계정 관리에서 직원용 서브계정을 추가하고(아이디 중복 확인, 초기 비밀번호), 권한 템플릿과 권한 그룹으로 사용할 수 있는 메뉴를 정하고, 계정을 수정하는 방법을 안내합니다.
+> Hospital 병원 관리의 계정 관리에서 직원용 서브계정을 추가하고(아이디 중복 확인, 초기 비밀번호), 권한 템플릿과 권한 그룹으로 사용할 수 있는 메뉴를 정하고, 계정을 수정하거나 비밀번호를 초기화하고 퇴사자 계정을 삭제하는 방법을 안내합니다.
 
 병원 계정 하나를 여러 직원이 함께 쓰면 누가 무엇을 했는지 알 수 없고, 퇴사한 직원도 계속 접속할 수 있습니다. `계정 관리`에서 **직원마다 서브계정을 만들고, 맡은 업무에 필요한 메뉴만 쓸 수 있게 권한을 줍니다.**
 
 **위치:** 병원 관리 > 계정 관리
+
+이 메뉴는 병원 관리자 계정과 `계정 관리` 권한을 받은 서브계정에 보입니다.
 
 #### 서브계정 만들기
 
@@ -2939,33 +3028,53 @@ Studio를 함께 쓰는 병원은 Studio의 [상담 시간 설정](https://certi
 **위치:** 병원 관리 > 계정 관리 > 계정 추가
 
 1. `계정 추가`를 누릅니다.
-2. `기본 정보`에서 `아이디`를 입력하고 `중복 확인`을 누릅니다. "사용 가능한 아이디입니다."가 나오면 쓸 수 있습니다.
+2. `기본 정보`에서 `아이디`를 입력하고 `중복 확인`을 누릅니다. "사용 가능한 아이디입니다. (초기 비밀번호: 아이디와 동일)"이 나오면 쓸 수 있습니다.
 3. `이름`을 입력합니다. `연락처`와 `직급`은 필요하면 입력합니다.
-4. `권한 설정`에서 권한을 고릅니다. `권한 템플릿`을 누르면 역할에 맞는 권한이 한 번에 선택되고, `모두 선택`과 `모두 해제`도 쓸 수 있습니다. 권한은 `인증서`, `결제`, `메시지`, `운영`, `관리` 그룹으로 나뉩니다. 템플릿의 이름과 템플릿마다 켜지는 권한, 각 그룹 안의 체크박스 이름은 화면에서 확인되지 않았으므로 `권한 설정` 화면에서 직접 확인하세요.
+4. `권한 설정`에서 권한을 고릅니다. 권한은 하나 이상 골라야 합니다. 체크박스 이름은 [권한 이름과 보이는 메뉴](https://certi.life/docs/guide/hospital/screens/accounts#권한-이름과-보이는-메뉴)에 있습니다.
 5. `계정 생성`을 누릅니다.
+
+`권한 템플릿`을 누르면 권한이 한 번에 선택됩니다. `공동 최고 관리자`는 모든 권한을 켜고, `일반 사용자`는 `전자 계약`, `근로 계약서`, `계정 관리`를 뺀 모든 권한을 켭니다. `모두 선택`과 `모두 해제`도 쓸 수 있습니다. 새 계정에는 `상담/챗봇 관리` 권한이 체크하지 않아도 함께 켜집니다. Studio에 들어가지 않아야 하는 직원이면 계정을 만든 뒤 `계정 수정`에서 이 권한을 끄세요.
 
 > **초기 비밀번호는 아이디와 같습니다**
 >
-> 새 서브계정의 초기 비밀번호는 아이디와 같습니다. 계정을 전달하면서 **처음 로그인한 뒤 바로 비밀번호를 바꾸도록** 안내하세요. 처음 로그인하면 대시보드에도 비밀번호 변경 안내가 표시됩니다. 비밀번호를 바꾸기 전에도 로그인이 계속 되는지, 서브계정이 스스로 비밀번호를 바꾸는 경로가 어디인지는 화면에서 확인되지 않았습니다. 안내가 가리키는 [병원 정보 관리](https://certi.life/docs/guide/hospital/screens/hospital-info#비밀번호-바꾸기)는 그 메뉴 권한이 있는 계정에만 보입니다.
+> 새 서브계정의 초기 비밀번호는 아이디와 같습니다. 직원이 Hospital에 처음 로그인하면 `비밀번호 변경` 창이 뜨고, 새 비밀번호를 정해야 로그인이 끝납니다. **계정을 만들면 바로 직원에게 알려 Hospital에 로그인해 비밀번호를 바꾸게 하세요.** Studio를 쓰지 않을 직원은 `계정 수정`에서 `상담/챗봇 관리`를 끄세요.
+
+#### 권한 이름과 보이는 메뉴
+
+출처: https://certi.life/docs/guide/hospital/screens/accounts#권한-이름과-보이는-메뉴
+
+서브계정은 받은 권한의 메뉴만 왼쪽에 보입니다. 다른 화면 안내에서 "계정 관리에서 이 메뉴의 권한을 받아야 보입니다"라고 적은 것은 아래 체크박스를 켜는 일을 뜻합니다. 체크박스 이름과 왼쪽 메뉴 이름이 조금 다른 곳이 있습니다.
+
+| 그룹               | 체크박스                                                                                           | 보이는 메뉴                                                              |
+| ---------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `인증서`            | 병원에 등록된 진료과마다 하나(`치과`, `안과`, `성형`, `피부과`, `정형외과`, `내과`, `동물병원`, `일반`, `신경외과`, `흉부외과` 중 해당하는 것) | 그 진료과 그룹의 인증서 발행과 설정. `일반`, `신경외과`, `흉부외과`는 공통 그룹 `병원`의 메뉴를 보이게 합니다 |
+| `운영`             | `병원 설정`                                                                                        | `브랜드관` > `병원 설정`                                                    |
+| `운영`             | `예약관리`                                                                                         | `예약 관리` 그룹                                                          |
+| `운영`             | `발행/환자 관리`                                                                                     | `발행/환자 관리` 그룹                                                       |
+| `결제`(치과가 있는 병원만) | `결제 내역`, `주문 관리`, `전자 계약`                                                                      | `구매/주문 관리`의 `결제 내역 관리`, `주문 관리`, `전자계약`                             |
+| `관리`             | `병원 정보 관리`, `시술 동의서`, `근로 계약서`, `계정 관리`                                                        | `병원 관리`의 `병원 정보 관리`, `시술동의서`, `근로계약서`, `계정 관리`                      |
+| `메시지`            | `알림톡 관리`                                                                                       | `알림톡` 그룹                                                            |
+| `메시지`            | `상담/챗봇 관리`                                                                                     | `상담/챗봇 관리` 그룹과 Studio                                               |
+
+안과 병원에서도 체크박스 이름은 `안과`이고 그룹 이름은 `인증서`입니다.
 
 #### 권한을 고르는 기준
 
 출처: https://certi.life/docs/guide/hospital/screens/accounts#권한을-고르는-기준
 
-서브계정은 받은 권한의 메뉴만 왼쪽에 보입니다. 업무에 필요한 최소한만 주는 것이 원칙입니다. 다른 화면 안내에서 "계정 관리에서 이 메뉴의 권한을 받아야 보입니다"라고 적은 것은 모두 이 `권한 설정`에서 메뉴 이름과 같은 체크박스를 켜는 일을 뜻합니다.
+업무에 필요한 최소한의 권한만 주는 것이 원칙입니다.
 
-| 직원의 업무                      | 필요한 권한의 예                        |
-| --------------------------- | -------------------------------- |
-| 인증서 발행 담당                   | 해당 진료과의 인증서 권한, 발행/환자 관리         |
-| 상담·코디(인증서 발행만 맡고 결제는 보지 않음) | 해당 진료과의 인증서 권한만 주고 `결제` 그룹은 비웁니다 |
-| 예약과 후기 담당                   | 예약 관리                            |
-| 알림톡 템플릿 담당                  | 알림톡 관리                           |
-| 계약·정산 담당                    | 결제 내역, 주문 관리, 전자계약               |
-| Studio에서 상담·챗봇 업무           | `메시지` 그룹의 `상담/챗봇 관리`             |
+| 직원의 업무                      | 켤 체크박스의 예                             |
+| --------------------------- | ------------------------------------- |
+| 인증서 발행 담당                   | `인증서` 그룹의 해당 진료과, `운영` 그룹의 `발행/환자 관리` |
+| 상담·코디(인증서 발행만 맡고 결제는 보지 않음) | `인증서` 그룹의 해당 진료과만 켜고 `결제` 그룹은 비웁니다    |
+| 예약과 후기 담당                   | `운영` 그룹의 `예약관리`                       |
+| 병원 소개 페이지 담당                | `운영` 그룹의 `병원 설정`                      |
+| 알림톡 템플릿 담당                  | `메시지` 그룹의 `알림톡 관리`                    |
+| 계약·정산 담당                    | `결제` 그룹의 `결제 내역`, `주문 관리`, `전자 계약`    |
+| Studio에서 상담·챗봇 업무           | `메시지` 그룹의 `상담/챗봇 관리`                  |
 
-`상담/챗봇 관리`를 켠 서브계정만 Hospital 왼쪽 메뉴에 `상담/챗봇 관리`(`챗봇 관리`, `상담 관리`)가 보이고 Studio에 들어갈 수 있습니다. Studio의 `설정`에는 직원 계정과 권한을 관리하는 메뉴가 없으므로, 병원 직원의 Studio 권한도 이 화면에서 줍니다.
-
-표의 권한 이름이 다섯 그룹(`인증서`, `결제`, `메시지`, `운영`, `관리`) 중 어디에 있는지, 안과 병원에서 권한 이름이 "확인서"로 보이는지는 화면에서 확인되지 않았습니다. `권한 설정` 화면에서 메뉴 이름과 같은 체크박스를 찾으세요.
+`상담/챗봇 관리`가 켜진 서브계정만 Hospital 왼쪽 메뉴에 `상담/챗봇 관리`(`챗봇 관리`, `상담 관리`)가 보이고 Studio에 들어갈 수 있습니다. Studio의 `설정`에는 직원 계정과 권한을 관리하는 메뉴가 없으므로, 병원 직원의 Studio 권한도 이 화면에서 줍니다.
 
 근로계약서처럼 직원의 급여와 연락처가 담긴 메뉴와, 다른 계정을 만들 수 있는 `계정 관리` 권한은 꼭 필요한 사람에게만 주세요.
 
@@ -2975,11 +3084,21 @@ Studio를 함께 쓰는 병원은 Studio의 [상담 시간 설정](https://certi
 
 **위치:** 병원 관리 > 계정 관리 > 계정 수정
 
-목록에서 계정을 누르면 `계정 수정` 창이 열립니다. 이름, 연락처, 직급, 권한을 고친 뒤 `수정 완료`를 누릅니다. 직원의 업무가 바뀌면 권한도 함께 바꾸세요.
+목록에서 계정 행의 `수정`을 누르면 `계정 수정` 창이 열립니다. `이름`, `연락처`, `직급`, 권한을 고친 뒤 `수정 완료`를 누릅니다. 직원의 업무가 바뀌면 권한도 함께 바꾸세요.
 
-퇴사한 직원의 계정을 삭제하거나 잠그는 버튼은 화면에서 확인되지 않았습니다. 확인될 때까지는 `계정 수정`에서 권한을 모두 빼서 어떤 메뉴도 보이지 않게 하세요. 계정을 정리한 뒤에도 그 직원이 발행한 내역이 남는지는 확인되지 않았습니다.
+직원이 비밀번호를 잊었거나 `병원 정보 관리` 권한이 없어 비밀번호를 바꿀 수 없으면 비밀번호를 초기화합니다.
 
-등록된 서브계정이 없으면 "등록된 서브계정이 없습니다."가 표시됩니다.
+1. `계정 수정` 창의 `아이디` 옆 `비밀번호 초기화`를 누릅니다.
+2. "(이름)님의 비밀번호를 아이디와 동일하게 초기화하시겠습니까?"에서 `초기화`를 누릅니다.
+3. "비밀번호가 아이디와 동일하게 초기화되었습니다."가 나오면 직원에게 바로 알립니다. 직원이 다음에 로그인하면 `비밀번호 변경` 창에서 새 비밀번호를 정합니다.
+
+퇴사한 직원의 계정은 삭제합니다. 계정을 잠그거나 잠시 멈추는 기능은 없습니다.
+
+1. 목록에서 그 직원의 행에 있는 `삭제`를 누릅니다.
+2. "(이름)님의 계정을 삭제하시겠습니까? 삭제된 계정은 복구할 수 없습니다."에서 `삭제`를 누릅니다.
+3. "계정이 삭제되었습니다."가 나오면 삭제가 끝난 것입니다.
+
+지금 로그인한 본인의 계정 행에는 `삭제`가 없습니다. 목록에는 서브계정만 보이고, 병원 관리자 계정은 보이지 않습니다. 등록된 서브계정이 없으면 "등록된 서브계정이 없습니다."가 표시됩니다.
 
 #### 함께 보기
 
@@ -3080,7 +3199,7 @@ Hospital 알림톡의 `템플릿 코드`는 화면이 채널 설정 기준으로
 
 - 알림톡은 정보성 메시지 전용입니다. 할인이나 이벤트 같은 광고 문구는 검수에서 반려될 수 있습니다.
 - 변수에 환자 이름이나 예약일처럼 개인정보가 들어갑니다. 템플릿 문구 자체에는 특정 환자의 정보를 적지 마세요.
-- 인증서 알림톡 템플릿과 채널 인증은 Hospital 알림톡(이 메뉴)에서, CRM 캠페인·시나리오 자동화용 템플릿은 Studio [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 관리합니다. [인증서 설정의 병원 채널로 발송하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-채널로-발송하기)가 이 메뉴에서 승인된 템플릿을 씁니다. Studio 쪽 채널 등록은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels#카카오-알림톡-채널-연동하기)을 보세요. 두 곳의 템플릿이 서로 공유되는지는 확인되지 않았습니다.
+- 인증서 알림톡 템플릿과 채널 인증은 Hospital 알림톡(이 메뉴)에서, CRM 캠페인·시나리오 자동화용 템플릿은 Studio [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 관리합니다. [인증서 설정의 병원 채널로 발송하기](https://certi.life/docs/guide/hospital/screens/certificate-settings#병원-채널로-발송하기)가 이 메뉴에서 승인된 템플릿을 씁니다. Studio 쪽 채널 등록은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels#카카오-알림톡-채널-연동하기)을 보세요. Hospital `알림톡`과 Studio [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)은 같은 템플릿 목록을 씁니다. Hospital에는 `대표 채널`의 템플릿만 보입니다.
 - 발송 전 점검 항목은 [인증서 전달 전 체크리스트](https://certi.life/docs/guide/products/certificate/delivery-checklist)와 [CRM 메시지 발송 전 체크리스트](https://certi.life/docs/guide/products/crm-messaging/message-checklist)를 참고하세요.
 
 ## Manufacturer
@@ -3095,31 +3214,28 @@ Hospital 알림톡의 `템플릿 코드`는 화면이 채널 설정 기준으로
 
 > 제조사 사용자가 CertiLife의 공식 로그인과 공개된 계정·문의 경로를 안전하게 이용하기 위한 안내입니다.
 
-Manufacturer는 제조사 사용자를 위한 CertiLife의 공식 서비스 진입점입니다. CertiLife 공개 홈페이지에는 **제조사용 로그인** 링크가 제공되며, 공식 로그인 화면에서 **제조사 관리자 로그인**, 아이디, 비밀번호, 로그인, 비밀번호 찾기, 가입·제휴 문의 항목을 확인할 수 있습니다.
+Manufacturer는 제조사 사용자가 CertiLife를 이용하는 관리자 화면입니다. CertiLife 홈페이지의 `제조사용 로그인`이나 [Manufacturer 로그인 화면](https://manufacturer.certi.life/signin)(주소 `manufacturer.certi.life/signin`)에서 로그인합니다. 로그인한 뒤의 메뉴 중 이 문서에 없는 것은 CertiLife 고객센터(1800-8984)에 문의하세요.
 
-로그인 이후의 메뉴, 기능, 권한별 동작과 제조사의 구체적인 업무 절차는 공개적으로 확인되지 않았습니다. 이 공개 가이드는 화면이나 기능을 추측하지 않고, 공식 주소 확인과 계정 접속, 안전한 지원 요청에 필요한 범위만 안내합니다.
+#### 로그인 화면
 
-#### 공개적으로 확인된 범위
+출처: https://certi.life/docs/guide/manufacturer/overview#로그인-화면
 
-출처: https://certi.life/docs/guide/manufacturer/overview#공개적으로-확인된-범위
+로그인 화면의 제목은 `제조사 관리자 로그인`입니다. 화면에는 다음 항목이 있습니다.
 
-| 구분       | 확인된 내용                                                                                         |
-| -------- | ---------------------------------------------------------------------------------------------- |
-| 공식 접속 주소 | [Manufacturer 로그인 화면 (manufacturer.certi.life/signin)](https://manufacturer.certi.life/signin) |
-| 공개 화면 제목 | 제조사 관리자 로그인                                                                                    |
-| 로그인 항목   | 아이디, 비밀번호, 로그인                                                                                 |
-| 계정 지원    | 비밀번호 찾기                                                                                        |
-| 신규 이용 문의 | 가입·제휴 문의                                                                                       |
+- `아이디` 입력란(안내 문구 "ID를 입력해주세요.")과 `비밀번호` 입력란
+- `로그인` 버튼
+- `가입 · 제휴 문의`: CertiLife 문의 페이지를 새 창으로 엽니다.
+- `비밀번호 찾기`: 덴티움 통합 아이디 안내를 보여 준 뒤 CertiLife 문의 페이지를 엽니다.
 
-로그인 화면에는 제휴 형태에 따른 별도 안내가 표시될 수 있습니다. 특정 파트너를 위한 문구를 모든 제조사 계정의 공통 절차로 해석하지 말고, 본인의 조직이 해당 안내 대상인지 담당자에게 확인하세요.
+로그인 화면에는 "덴티움 통합 아이디인 경우, 덴티움 ERP에서 아이디와 비밀번호를 확인해주세요."라는 안내가 항상 보입니다. 이 안내는 덴티움 통합 아이디를 쓰는 계정에만 해당합니다. 덴티움 통합 아이디를 쓰지 않는 제조사는 발급받은 아이디를 그대로 입력합니다.
 
 #### 어디서 시작하나요?
 
 출처: https://certi.life/docs/guide/manufacturer/overview#어디서-시작하나요
 
-1. [Manufacturer 계정 접속](https://certi.life/docs/guide/manufacturer/account-access)에서 공식 주소와 공개된 로그인·복구 경로를 확인합니다.
+1. [Manufacturer 계정 접속](https://certi.life/docs/guide/manufacturer/account-access)에서 로그인 순서와 비밀번호를 잊었을 때 할 일을 확인합니다.
 2. [Manufacturer 안전한 이용](https://certi.life/docs/guide/manufacturer/safe-operation)에서 계정 공유, 화면 캡처와 지원 요청 원칙을 확인합니다.
-3. 계정이 없거나 이용 범위를 확인해야 한다면 공식 로그인 화면의 **가입·제휴 문의** 또는 [도입 문의](https://certi.life/contact)를 이용합니다.
+3. 계정이 없거나 이용 범위를 확인해야 한다면 로그인 화면의 `가입 · 제휴 문의` 또는 [도입 문의](https://certi.life/contact)를 이용합니다.
 
 #### 안전한 이용 원칙
 
@@ -3130,26 +3246,30 @@ Manufacturer는 제조사 사용자를 위한 CertiLife의 공식 서비스 진�
 - Hospital·Studio 계정을 Manufacturer 화면에 반복 입력하지 않습니다.
 - 비밀번호와 인증 정보는 동료나 지원 담당자에게도 전달하지 않습니다.
 - 지원 요청 전 화면에서 개인정보와 조직의 비공개 정보를 제거합니다.
-- 공개 문서에 없는 메뉴나 동작을 임의로 추측하지 않습니다.
 
-> **공개 가이드의 한계**
->
-> 조직마다 이용 범위와 계정 상태가 다를 수 있습니다. 로그인 이후 사용법은 조직에서 승인한 안내를 우선하고, 공개되지 않은 기능은 조직의 CertiLife 담당자에게 확인하세요.
+#### 거래처 병원의 문의에 답하기
 
-#### 병원에 안내할 수 있는 공개 범위
+출처: https://certi.life/docs/guide/manufacturer/overview#거래처-병원의-문의에-답하기
 
-출처: https://certi.life/docs/guide/manufacturer/overview#병원에-안내할-수-있는-공개-범위
+거래처 병원이 제조사에 자주 묻는 일은 병원이 보는 Hospital 화면 안내로 답할 수 있습니다.
 
-거래처 병원이 제조사에 자주 묻는 일은 Hospital 화면별 안내에 정리되어 있습니다. Manufacturer 화면의 절차는 공개되지 않았지만, 병원 쪽 화면은 아래 문서를 그대로 안내할 수 있습니다.
+| 병원이 묻는 일              | 병원이 보는 화면                    | 안내할 문서                                                                                                                                                      |
+| --------------------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 제조사와 맺은 전자계약을 어디서 보나요 | Hospital `구매/주문 관리` > `전자계약` | [구매/주문 관리](https://certi.life/docs/guide/hospital/screens/orders#전자계약-확인하기)                                                                                 |
+| 제품 코드를 넣었는데 오류가 나요    | Hospital `인증서 발행` > 제품 코드 입력 | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)                                                                    |
+| "발행 권한이 없습니다"가 나와요    | Hospital `인증서 발행`            | 같은 절에 "해당 제품의 제조사에 발행 권한을 문의합니다."라고 안내되어 있습니다. 병원이 이 문의를 하면 아래 [발행 권한 문의를 받았을 때](https://certi.life/docs/guide/manufacturer/overview#발행-권한-문의를-받았을-때)를 따르세요 |
+| "폐기된 제품입니다"가 나와요      | Hospital `인증서 발행`            | 같은 절의 제품 코드 오류 표. 병원은 제품을 공급한 제조사에 확인합니다                                                                                                                    |
 
-| 병원이 묻는 일              | 병원이 보는 화면                    | 안내할 문서                                                                                     |
-| --------------------- | ---------------------------- | ------------------------------------------------------------------------------------------ |
-| 제조사와 맺은 전자계약을 어디서 보나요 | Hospital `구매/주문 관리` > `전자계약` | [구매/주문 관리](https://certi.life/docs/guide/hospital/screens/orders#전자계약-확인하기)                |
-| 제품 코드를 넣었는데 오류가 나요    | Hospital `인증서 발행` > 제품 코드 입력 | [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)   |
-| "발행 권한이 없습니다"가 나와요    | Hospital `인증서 발행`            | 같은 절에 "해당 제품의 제조사에 발행 권한을 문의해야 합니다"라고 안내되어 있습니다. 병원은 제조사에 문의하므로 제조사 쪽 처리 절차를 조직 안에서 정해 두세요 |
-| "폐기된 제품입니다"가 나와요      | Hospital `인증서 발행`            | 같은 절의 제품 코드 오류 표. 병원은 제품을 공급한 제조사에 확인합니다                                                   |
+##### 발행 권한 문의를 받았을 때
 
-병원 쪽 문서는 병원 담당자가 읽는 기준으로 쓰여 있습니다. 제조사 화면에서 어떤 조작이 필요한지는 공개 문서에서 확인되지 않았으므로 조직의 CertiLife 담당자에게 확인하세요.
+"발행 권한이 없습니다"는 그 병원이 해당 제품의 인증서를 발행할 수 있도록 아직 허용되지 않았다는 뜻입니다.
+
+1. 병원 이름과 발행하려던 제품을 확인합니다.
+2. Manufacturer의 `병원 관리`에서 그 병원의 정보를 엽니다.
+3. 병원 정보에 `인증서 발행 권한 설정`이 보이면 그 제품의 스위치를 켜고 바뀐 내용을 저장합니다.
+4. `인증서 발행 권한 설정`이 보이지 않으면 병원 이름과 제품을 CertiLife 고객센터(1800-8984)에 알려 발행 권한을 요청합니다.
+
+이 밖에 Manufacturer 화면에서 할 일이 이 표에 없으면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 함께 보기
 
@@ -3172,40 +3292,46 @@ Manufacturer는 제조사 사용자를 위한 CertiLife의 공식 서비스 진�
 
 > 제조사 관리자 공식 로그인 화면에서 안전하게 접속하고 비밀번호·가입 문의를 해결하는 방법입니다.
 
-Manufacturer를 이용할 때는 [Manufacturer 공식 로그인 화면](https://manufacturer.certi.life/signin)으로 이동하세요. 공개 로그인 화면의 제목은 **제조사 관리자 로그인**이며, 아이디(ID)와 비밀번호 입력란, **로그인**, **비밀번호 찾기**, **가입·제휴 문의**가 제공됩니다.
+Manufacturer는 [Manufacturer 공식 로그인 화면](https://manufacturer.certi.life/signin)(주소 `manufacturer.certi.life/signin`)에서 로그인합니다. 로그인 화면의 제목은 `제조사 관리자 로그인`이고, `아이디`와 `비밀번호` 입력란, `로그인` 버튼이 있습니다. 같은 화면에 `가입 · 제휴 문의`와 `비밀번호 찾기`도 있습니다.
 
 #### 기존 계정으로 로그인하기
 
 출처: https://certi.life/docs/guide/manufacturer/account-access#기존-계정으로-로그인하기
 
 1. [Manufacturer 로그인 화면을 엽니다](https://manufacturer.certi.life/signin).
-2. 주소 표시줄이 `manufacturer.certi.life`로 시작하고 화면에 **제조사 관리자 로그인**이 표시되는지 확인합니다.
-3. 조직에서 본인에게 승인한 아이디를 입력합니다.
-4. 비밀번호를 입력합니다. 화면 공유·회의 녹화 중이거나 다른 사람이 볼 수 있는 환경에서는 입력하지 마세요.
-5. **로그인**을 선택합니다.
-6. 접속 후 본인이 업무해야 하는 제조사 환경인지 확인합니다. 예상과 다른 조직이나 정보가 보이면 아무 작업도 하지 말고 조직의 CertiLife 담당자에게 확인하세요.
+2. 주소 표시줄이 `manufacturer.certi.life`로 시작하고 화면에 `제조사 관리자 로그인`이 표시되는지 확인합니다.
+3. `아이디` 입력란에 본인에게 발급된 아이디를 입력합니다.
+4. `비밀번호` 입력란에 비밀번호를 입력합니다. 화면 공유·회의 녹화 중이거나 다른 사람이 볼 수 있는 환경에서는 입력하지 마세요.
+5. `로그인`을 누릅니다.
+6. 접속 후 본인이 업무해야 하는 제조사 화면인지 확인합니다. 다른 회사의 이름이나 정보가 보이면 아무 작업도 하지 말고 CertiLife 고객센터(1800-8984)에 알리세요.
 
-로그인 화면에는 "덴티움 통합 아이디인 경우, 덴티움 ERP에서 아이디와 비밀번호를 확인해주세요."라는 안내가 항상 보입니다. 이 안내는 덴티움 통합 아이디를 쓰는 계정에만 해당합니다. 덴티움 통합 아이디를 쓰지 않는 제조사는 조직에서 승인받은 아이디를 그대로 입력합니다. 본인의 계정이 어느 쪽인지 모르면 내부 담당자에게 먼저 확인하세요.
+로그인 화면에는 "덴티움 통합 아이디인 경우, 덴티움 ERP에서 아이디와 비밀번호를 확인해주세요."라는 안내가 항상 보입니다. 이 안내는 덴티움 통합 아이디를 쓰는 계정에만 해당합니다. 덴티움 통합 아이디를 쓰지 않는 제조사는 발급받은 아이디를 그대로 입력합니다. 본인의 계정이 어느 쪽인지 모르면 회사의 계정 관리자에게 먼저 확인하세요.
 
 #### 비밀번호를 잊었을 때
 
 출처: https://certi.life/docs/guide/manufacturer/account-access#비밀번호를-잊었을-때
 
-로그인 화면의 **비밀번호 찾기**를 열고 화면에 표시되는 공식 안내를 따르세요. 공개 화면에서 확인되지 않은 이후 절차는 이 문서에서 추측하지 않습니다. 비밀번호 관련 안내를 진행할 때도 본인 계정만 이용하고 정보를 동료에게 전달하지 마세요.
+`비밀번호 찾기`는 비밀번호를 바로 재설정하지 않고, 안내 창과 CertiLife 문의 페이지를 차례로 엽니다.
 
-본인이 요청하지 않은 비밀번호 변경 안내나 인증 요청을 받았다면 링크를 누르거나 정보를 입력하기 전에 조직 담당자에게 알립니다. 공개 도움말이나 CertiLife 담당자는 기존 비밀번호를 조회해 전달하지 않습니다.
+1. 로그인 화면의 `비밀번호 찾기`를 누릅니다.
+2. `안내` 창에 "덴티움 통합 ID인 경우, 덴티움 ERP에서 비밀번호를 확인해주세요."가 나옵니다. 덴티움 통합 아이디이면 덴티움 ERP에서 비밀번호를 확인합니다.
+3. 덴티움 통합 아이디가 아니면 창을 닫은 뒤 새 창으로 열리는 CertiLife 문의 페이지에서 비밀번호 문제를 알리거나, CertiLife 고객센터(1800-8984)에 문의합니다.
+
+비밀번호 문제를 문의할 때도 본인 계정만 다루고, 비밀번호나 인증 정보를 동료에게 전달하지 마세요. 본인이 요청하지 않은 비밀번호 변경 안내나 인증 요청을 받았다면 링크를 누르거나 정보를 입력하기 전에 회사의 계정 관리자에게 알립니다. CertiLife 고객센터는 기존 비밀번호를 조회해 알려 주지 않습니다.
 
 #### 처음 계정이 필요할 때
 
 출처: https://certi.life/docs/guide/manufacturer/account-access#처음-계정이-필요할-때
 
-공식 로그인 화면의 **가입·제휴 문의**는 CertiLife 공개 문의 영역으로 연결됩니다. 문의 전에 다음 내용을 개인정보 없이 정리하면 상담에 도움이 됩니다.
+Manufacturer 로그인 화면에는 회원가입 화면이 없습니다. 계정은 `가입 · 제휴 문의`로 신청합니다. Hospital 회원가입 중에 "혹시 기공소/제조사 이신가요?" 창에서 `기공소/제조사로 가입하기`를 눌러도 이 로그인 화면으로 이동하므로, 같은 방법으로 신청합니다.
+
+로그인 화면의 `가입 · 제휴 문의`는 CertiLife 문의 페이지를 새 창으로 엽니다. 문의 전에 다음 내용을 개인정보 없이 정리하면 상담에 도움이 됩니다.
 
 - 제조사 또는 조직명
 - 담당 부서와 일반적인 도입 목적
 - 계정 또는 서비스 이용과 관련해 확인이 필요한 사항
 
-비밀번호, 인증 코드, 담당자 개인정보와 계약상 비공개 자료는 가입·제휴 문의에 첨부하지 마세요. 계정이 이미 존재하는지 확실하지 않다면 동료의 아이디를 빌려 쓰지 말고 조직 담당자에게 확인합니다.
+비밀번호, 인증 코드, 담당자 개인정보와 계약상 비공개 자료는 `가입 · 제휴 문의`에 첨부하지 마세요. 계정이 이미 있는지 모르겠다면 동료의 아이디를 빌려 쓰지 말고 회사의 계정 관리자나 CertiLife 고객센터(1800-8984)에 확인합니다.
 
 #### 접속되지 않을 때 확인 순서
 
@@ -3214,13 +3340,13 @@ Manufacturer를 이용할 때는 [Manufacturer 공식 로그인 화면](https://
 - 제조사 공식 주소인지 다시 확인합니다.
 - 아이디의 앞뒤 공백, 한/영 입력 상태와 Caps Lock을 확인합니다.
 - 브라우저 자동 완성에 다른 계정이 저장되어 있지 않은지 확인합니다.
-- 비밀번호를 반복해서 추측하지 말고 **비밀번호 찾기**를 이용합니다.
-- 계정 종류가 Hospital 또는 Studio용이 아닌 제조사용인지 확인합니다.
-- 문제가 계속되면 발생 시각, 브라우저 종류와 개인정보 없는 오류 문구만 정리해 지원을 요청합니다.
+- 비밀번호를 짐작해 여러 번 입력하지 말고 [비밀번호를 잊었을 때](https://certi.life/docs/guide/manufacturer/account-access#비밀번호를-잊었을-때)의 순서를 따릅니다.
+- 계정 종류가 Hospital 또는 Studio용이 아닌 제조사용인지 확인합니다. 제조사 계정으로 Hospital에 로그인하면 "제조사 계정입니다."라는 창과 함께 Manufacturer 로그인 링크가 나옵니다.
+- 문제가 계속되면 발생 시각, 브라우저 종류와 개인정보 없는 오류 문구만 정리해 CertiLife 고객센터(1800-8984)에 문의합니다.
 
 > **계정 공유 금지**
 >
-> 제조사 관리자 아이디와 비밀번호를 메신저, 이메일 본문, 공동 문서로 전달하지 마세요. 담당자가 바뀌면 기존 비밀번호를 인계하지 말고 조직의 계정 관리 절차에 따라 접근을 정리하세요.
+> 제조사 관리자 아이디와 비밀번호를 메신저, 이메일 본문, 공동 문서로 전달하지 마세요. 담당자가 바뀌어도 기존 비밀번호를 인계하지 마세요. 새 담당자의 계정과 이전 담당자의 접근 정리는 회사의 계정 관리자나 CertiLife 고객센터(1800-8984)에 요청합니다.
 
 #### 다음 단계
 
@@ -3238,7 +3364,7 @@ Manufacturer를 이용할 때는 [Manufacturer 공식 로그인 화면](https://
 
 > 제조사 계정과 로그인 정보를 보호하고 화면 공유·지원 요청·담당자 변경에 안전하게 대응하는 원칙입니다.
 
-Manufacturer를 이용할 때는 공식 주소와 본인 계정을 확인하고 로그인 정보가 노출되지 않도록 주의해야 합니다. 이 문서는 로그인 이후의 기능이나 권한 구조를 전제로 하지 않고, 공개 로그인과 일반적인 지원 과정에서 적용할 수 있는 안전 원칙만 안내합니다. 조직의 보안 규정이 더 엄격하다면 해당 기준을 우선하세요.
+Manufacturer를 이용할 때는 공식 주소와 본인 계정을 확인하고 로그인 정보가 노출되지 않도록 주의해야 합니다. 아래 원칙은 로그인할 때와 지원을 요청할 때 적용합니다. 회사의 보안 규정이 더 엄격하다면 그 기준을 우선하세요.
 
 #### 로그인 전 확인
 
@@ -3250,15 +3376,15 @@ Manufacturer를 이용할 때는 공식 주소와 본인 계정을 확인하고 
 - 공용 기기에서는 자동 로그인과 비밀번호 저장을 사용하지 않습니다.
 - 화면 공유나 회의 녹화 중이라면 로그인하지 않습니다.
 
-제조사 계정을 여러 사람이 함께 사용하면 예상하지 못한 변경이나 접속 문제가 발생했을 때 원인을 확인하기 어렵습니다. 담당자가 바뀌면 기존 비밀번호를 인계하지 말고 조직의 계정 관리 절차에 따라 접근을 정리하세요.
+제조사 계정을 여러 사람이 함께 사용하면 예상하지 못한 변경이나 접속 문제가 발생했을 때 원인을 확인하기 어렵습니다. 담당자가 바뀌어도 기존 비밀번호를 인계하지 마세요. 회사의 계정 관리 절차에 따라 기존 담당자의 접근을 정리합니다.
 
 #### 비밀번호와 인증 정보 보호
 
 출처: https://certi.life/docs/guide/manufacturer/safe-operation#비밀번호와-인증-정보-보호
 
-비밀번호는 메신저, 이메일 본문, 공동 문서와 종이 메모로 전달하지 않습니다. 지원 담당자나 조직의 동료가 요청하더라도 비밀번호와 일회용 인증 정보를 제공하지 마세요. 비밀번호를 잊었다면 로그인 화면의 **비밀번호 찾기**를 본인 계정에 대해서만 이용합니다.
+비밀번호는 메신저, 이메일 본문, 공동 문서와 종이 메모로 전달하지 않습니다. 지원 담당자나 조직의 동료가 요청하더라도 비밀번호와 일회용 인증 정보를 제공하지 마세요. 비밀번호를 잊었다면 로그인 화면의 `비밀번호 찾기`를 본인 계정에 대해서만 이용합니다. 순서는 [비밀번호를 잊었을 때](https://certi.life/docs/guide/manufacturer/account-access#비밀번호를-잊었을-때)에 있습니다.
 
-본인이 요청하지 않은 비밀번호 변경 또는 인증 안내를 받았다면 링크를 누르기 전에 조직 담당자에게 알립니다. 같은 비밀번호를 다른 서비스에서 함께 사용하지 않는 것이 안전합니다.
+본인이 요청하지 않은 비밀번호 변경 또는 인증 안내를 받았다면 링크를 누르기 전에 회사의 계정 관리자에게 알립니다. 같은 비밀번호를 다른 서비스에서 함께 사용하지 않는 것이 안전합니다.
 
 #### 화면 공유(거래처 응대·지원 요청)와 캡처
 
@@ -3278,9 +3404,9 @@ Manufacturer를 이용할 때는 공식 주소와 본인 계정을 확인하고 
 
 출처: https://certi.life/docs/guide/manufacturer/safe-operation#예상과-다른-화면이-보일-때
 
-로그인 후 예상하지 못한 조직이나 정보가 보이면 아무 작업도 하지 말고 로그아웃한 뒤 조직의 CertiLife 담당자에게 확인하세요. 공개 문서에 없는 메뉴나 기능을 찾기 위해 임의로 화면을 탐색하거나 다른 사람의 계정을 사용하지 않습니다.
+로그인 후 다른 회사의 이름이나 정보가 보이면 아무 작업도 하지 말고 로그아웃한 뒤 CertiLife 고객센터(1800-8984)에 알리세요. 문제를 확인하려고 다른 사람의 계정으로 로그인하지 않습니다.
 
-계정 도용이 의심되면 해당 기기에서 추가 접속을 멈추고 **비밀번호 찾기**와 조직의 보안 보고 절차를 이용합니다. 브라우저가 안전하지 않은 연결이나 인증서 경고를 표시하면 경고를 무시하고 진행하지 마세요.
+계정 도용이 의심되면 해당 기기에서 추가 접속을 멈추고 CertiLife 고객센터(1800-8984)에 알린 뒤, 회사의 보안 보고 절차를 따릅니다. 브라우저가 안전하지 않은 연결이나 인증서 경고를 표시하면 경고를 무시하고 진행하지 마세요.
 
 #### 담당자가 변경될 때
 
@@ -3288,13 +3414,13 @@ Manufacturer를 이용할 때는 공식 주소와 본인 계정을 확인하고 
 
 1. 기존 담당자는 처리 중인 일반적인 업무 상태만 인계합니다.
 2. 비밀번호나 로그인 세션을 새 담당자에게 넘기지 않습니다.
-3. 조직의 계정 관리 절차에 따라 기존 접근을 정리합니다.
+3. 회사의 계정 관리 절차에 따라 기존 접근을 정리합니다.
 4. 새 담당자는 본인에게 승인된 계정으로 공식 주소에 접속합니다.
-5. 계정 안내가 필요하면 **가입·제휴 문의** 또는 조직의 CertiLife 담당자를 이용합니다.
+5. 계정 안내가 필요하면 로그인 화면의 `가입 · 제휴 문의`나 CertiLife 고객센터(1800-8984)를 이용합니다.
 
 > **공개 문의에 로그인 정보를 넣지 마세요**
 >
-> 비밀번호, 인증 코드, 로그인 세션 정보는 가입·제휴 문의, 도입 문의 또는 화면 캡처에 포함하지 않습니다.
+> 비밀번호, 인증 코드, 로그인 세션 정보는 `가입 · 제휴 문의`, 도입 문의 또는 화면 캡처에 포함하지 않습니다.
 
 #### 함께 보기
 
@@ -3319,19 +3445,23 @@ AI 상담 지식·시나리오·사람 연결·출시 점검을 준비하는 공
 
 Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 여러 상담 채널의 메시지를 한곳에서 확인하고, 서로 다른 언어의 상담을 번역하며, 상담 내역의 요약·분류와 전화상담 기록을 관리할 수 있습니다. 운영자는 지식 자료와 답변 경계, 상담원 연결 기준, 상담 기록 구조를 함께 준비해야 합니다. 제품 소개에서 AI 음성봇이라고 부르는 전화 응대 AI는 Studio 왼쪽 메뉴에서 `콜봇`이라는 이름으로 보입니다.
 
-이 가이드는 실제 Studio 화면에서 확인한 상담 번역, 상담 내역과 상담 기록 설정의 사용 흐름을 포함합니다. 기능별 세부 화면은 연결된 가이드에서 확인하고, 개인정보와 의료적 판단이 포함된 상담은 조직의 운영·보안 기준을 함께 적용하세요.
+개인정보와 의료적 판단이 포함된 상담에는 조직의 운영·보안 기준을 함께 적용하세요.
 
 #### 권장 시작 순서
 
 출처: https://certi.life/docs/guide/studio/overview#권장-시작-순서
 
-1. [Studio 계정 접속](https://certi.life/docs/guide/studio/account-access)에서 공식 로그인 화면과 안전한 접속 원칙을 확인합니다.
-2. [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)에서 공개 가능한 자료를 선별하고 답변 근거를 관리합니다.
-3. [상담 메시지 번역](https://certi.life/docs/guide/products/ai-chatbot/message-translation)에서 언어 감지와 수신·발신 번역, 고유명사 확인 절차를 살펴봅니다.
-4. [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)에서 고객 질문 흐름, 업무시간, 상담원 연결 조건을 정합니다.
-5. [상담 내역 조회와 화면 설정](https://certi.life/docs/guide/studio/conversation-history)에서 요약·분류와 상세 화면 구성을 확인합니다.
-6. [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records)에서 전화상담 후처리 필드와 AI 자동 선택을 준비합니다.
-7. [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)로 채널별 테스트와 운영 책임자를 확인한 뒤 고객에게 공개합니다.
+처음 도입할 때는 아래 순서로 준비합니다. [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/org-settings/overview#상담-운영-기준-정하기)에 나오는 `운영 설정`의 순서는 아래 3단계를 자세히 나눈 것입니다.
+
+1. 계정: [Studio 계정 접속](https://certi.life/docs/guide/studio/account-access)에서 내 계정 종류에 맞는 로그인 방법과 안전한 접속 원칙을 확인합니다.
+2. 채널 연동: 메신저 계정을 조직에 연동하고, 웹훅 등록이 필요한 채널은 등록까지 마칩니다. 알림톡 채널은 3단계의 `상황별 콜백`보다 먼저 연동해야 합니다. 화면: [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)
+3. 조직 운영 기준: `설정`의 `운영 설정`에서 상담 시간, 알림, 번역, 상황별 콜백, 자주 사용하는 답변을 정하고, `자동메시지`에서 `운영 시간 외` 문구를 정합니다. 화면: [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/org-settings/overview#상담-운영-기준-정하기), [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages)
+4. 지식: [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)의 기준으로 공개 가능한 자료를 골라 백과사전에 등록합니다. 화면: [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)
+5. 시나리오와 사람 연결: [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)에서 고객 질문 흐름, 업무시간, 상담원 연결 조건을 정한 뒤 챗봇에 입력합니다. 화면: [챗봇 메뉴 시작하기](https://certi.life/docs/guide/studio/screens/chatbot/overview)
+6. 상담 기록: 전화상담을 쓴다면 [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records)에서 후처리 필드와 AI 자동 선택을 준비합니다.
+7. 출시 점검: [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)로 채널별 시험과 운영 책임자를 확인한 뒤 고객에게 공개합니다.
+
+운영을 시작한 뒤에는 [상담 내역 조회와 화면 설정](https://certi.life/docs/guide/studio/conversation-history)의 기준으로 지난 상담을 확인합니다. 외국어 상담이 있다면 [상담 메시지 번역](https://certi.life/docs/guide/products/ai-chatbot/message-translation)에서 언어 감지와 고유명사 확인 절차를 미리 읽어 두세요.
 
 지금 보고 있는 화면에서 무엇을 어떻게 하는지 궁금하다면 화면별 안내를 확인하세요. [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)에서 메뉴별 역할을 확인하고, 챗봇은 [챗봇 메뉴 시작하기](https://certi.life/docs/guide/studio/screens/chatbot/overview)에서 만들기부터 채널 연결까지 목적별로 따라갈 수 있습니다.
 
@@ -3343,11 +3473,15 @@ AI 상담 품질은 등록 자료의 최신성과 범위에 좌우됩니다. 홈
 
 상담 시나리오는 모든 질문에 AI가 답하도록 만드는 작업이 아닙니다. 의료진의 판단이 필요한 질문, 개인 상태에 따른 조언, 민감한 개인정보가 포함된 요청, 불만과 긴급 문의는 사람이 확인하도록 경계를 정해야 합니다. 업무시간 안과 밖의 연결 방식도 구분하고, 연결할 수 없는 시간에는 고객이 기대할 수 있는 답변 시점을 명확히 안내합니다.
 
+화면: 지식 문서는 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia), 상담 시간은 [상담 시간](https://certi.life/docs/guide/studio/screens/org-settings/hours), 시간 외 안내 문구는 [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages)에서 정합니다.
+
 #### 채널을 준비할 때
 
 출처: https://certi.life/docs/guide/studio/overview#채널을-준비할-때
 
 카카오톡, 네이버 톡톡, 웹챗처럼 여러 채널을 운영한다면 같은 정책과 최신 정보를 사용하되 채널별 길이와 표현을 점검합니다. AI 음성봇(`콜봇`)은 듣기 쉬운 문장, 숫자·시간의 정확한 발음, 다시 듣기 또는 상담원 연결 방법을 별도로 시험하세요. 실제 고객에게 공개하기 전에는 개인정보가 없는 가상 질문으로 정상 답변, 답변 거절, 상담원 연결, 업무시간 외 안내를 모두 확인합니다.
+
+화면: 메신저 계정은 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels), 전화 응대는 [콜봇](https://certi.life/docs/guide/studio/screens/callbot/overview)에서 준비합니다.
 
 > **AI 상담의 역할**
 >
@@ -3373,7 +3507,7 @@ AI 상담 품질은 등록 자료의 최신성과 범위에 좌우됩니다. 홈
 
 > Studio 공식 로그인 화면에서 Username과 Password로 안전하게 접속하고, 로그인이 안 되거나 비밀번호 재설정이 필요할 때 대응하는 절차입니다.
 
-Studio의 공개 로그인 화면은 [Studio 공식 로그인](https://studio.certi.life)입니다. 공개 화면에서 확인되는 항목은 **Username**, **Password**, **로그인**입니다. 로그인 이후 챗봇 영역의 메뉴와 버튼은 [Studio 메뉴 한눈에 보기](https://certi.life/docs/guide/studio/screens/overview)부터 이어지는 화면별 안내에서 확인할 수 있으며, 계정 관리처럼 아직 화면 안내가 없는 기능은 이 문서에서 추측하지 않습니다. 계정 발급, 변경, 복구가 필요한 경우 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)를 이용하세요.
+Studio는 [Studio 공식 로그인](https://studio.certi.life) 화면에서 `Username`과 `Password`를 입력하고 `로그인`을 눌러 접속합니다. Studio에는 비밀번호 찾기, 비밀번호 재설정, 비밀번호 변경 화면이 없습니다. 비밀번호를 잊었거나 계정이 필요하면 [계정 종류별로 할 일](https://certi.life/docs/guide/studio/account-access#계정-종류별로-할-일)에서 내 계정 종류에 맞는 방법을 따르세요.
 
 #### 로그인하기
 
@@ -3381,29 +3515,65 @@ Studio의 공개 로그인 화면은 [Studio 공식 로그인](https://studio.ce
 
 1. [Studio 로그인 화면을 엽니다](https://studio.certi.life).
 2. 주소가 `studio.certi.life`인지 확인합니다. 유사한 철자의 다른 도메인이나 메시지로 전달받은 알 수 없는 링크에서는 계정 정보를 입력하지 마세요.
-3. **Username** 입력란에 조직에서 승인받은 사용자 이름을 입력합니다.
-4. **Password** 입력란에 본인의 비밀번호를 입력합니다. 화면 공유나 녹화가 진행 중이면 먼저 중단하세요.
-5. **로그인**을 선택합니다.
-6. 접속 후 예상한 조직의 작업 환경인지 확인합니다. 알 수 없는 자료나 다른 조직으로 보이는 정보가 나타나면 수정하거나 삭제하지 말고 즉시 담당자에게 확인합니다.
+3. `Username` 입력란에 사용자 이름을 입력합니다. 병원 계정이라면 Hospital에서 쓰는 아이디를 그대로 입력합니다.
+4. `Password` 입력란에 본인의 비밀번호를 입력합니다. 화면 공유나 녹화가 진행 중이면 먼저 중단하세요.
+5. `로그인`을 누릅니다.
+6. 접속 후 예상한 조직의 작업 환경인지 확인합니다. 다른 조직으로 보이는 정보가 나타나면 수정하거나 삭제하지 말고 로그아웃한 뒤 CertiLife 고객센터(1800-8984)에 알립니다.
+
+#### 계정 종류별로 할 일
+
+출처: https://certi.life/docs/guide/studio/account-access#계정-종류별로-할-일
+
+계정을 만들고 비밀번호를 되찾는 방법은 계정 종류에 따라 다릅니다.
+
+| 계정 종류                           | 계정을 만드는 사람                                                                   | 비밀번호를 잊었을 때                                                                                           |
+| ------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 병원 대표 계정                        | 병원이 Hospital에 가입할 때 만듭니다                                                     | Hospital 로그인 화면의 `비밀번호 재설정`으로 새 비밀번호를 정한 뒤, 같은 아이디와 새 비밀번호로 Studio에 로그인합니다                            |
+| 병원 직원 서브계정                      | 병원 관리자가 Hospital의 `병원 관리 > 계정 관리`에서 만들고, `권한 설정`의 `메시지` 그룹에서 `상담/챗봇 관리`를 줍니다 | 병원 관리자에게 `계정 관리`의 `비밀번호 초기화`를 요청합니다. 초기화하면 비밀번호가 아이디와 같아지므로, Hospital에 먼저 로그인해 비밀번호를 바꾼 뒤 Studio를 씁니다 |
+| 그 밖의 계정(Studio 전용 계정, 제조사 계정 등) | 계정 발급과 변경은 CertiLife 고객센터(1800-8984)에 문의합니다                                  | CertiLife 고객센터(1800-8984)에 문의합니다                                                                      |
+
+> **서브계정의 초기 비밀번호는 아이디와 같습니다**
+>
+> 새로 만들었거나 비밀번호를 초기화한 서브계정은 Studio를 쓰기 전에 Hospital에 로그인해 비밀번호를 바꾸세요. 새로 만든 서브계정에는 `상담/챗봇 관리`가 함께 켜집니다. Studio를 쓰지 않을 직원이라면 병원 관리자가 `계정 관리`의 `계정 수정`에서 이 권한을 끄세요.
+
+병원 계정 조직의 직원 계정과 권한 관리 절차는 [Hospital 계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)에 있습니다.
 
 #### 로그인되지 않을 때
 
 출처: https://certi.life/docs/guide/studio/account-access#로그인되지-않을-때
 
-먼저 Username의 대소문자와 앞뒤 공백, 키보드 입력 언어, Caps Lock 상태를 확인합니다. Password를 여러 번 추측해 입력하지 마세요. Studio 공개 로그인 화면에서는 별도의 계정 찾기나 비밀번호 재설정 경로가 확인되지 않으므로, 조직의 공식 계정 지원 절차에 따라 담당자에게 도움을 요청합니다. 계정이나 비밀번호를 채팅 메시지 또는 이메일 본문에 적어 보내지 말고, 오류 현상과 발생 시각처럼 비밀 정보가 아닌 내용만 전달하세요.
+##### `접근권한이 없습니다.`
 
-브라우저 문제인지 확인해야 한다면 먼저 페이지를 새로 열고 네트워크 연결을 확인합니다. 다른 사람이 함께 사용하는 기기에서는 저장된 계정 정보가 자동 입력되지 않았는지 살펴보세요. 오류 화면을 캡처할 때는 Username, Password, 고객 상담 내용, 등록 자료가 포함되지 않도록 로그인 화면의 필요한 부분만 남깁니다.
+계정에 Studio를 쓸 권한이 없거나 병원 가입 승인이 끝나지 않았다는 뜻입니다. 비밀번호를 다시 입력하지 말고 아래 안내를 따르세요.
+
+- 병원 직원 서브계정이면 병원 관리자에게 Hospital `계정 관리`에서 `상담/챗봇 관리` 권한을 켜 달라고 요청합니다.
+- 병원 대표 계정이거나 그 밖의 계정이면 CertiLife 고객센터(1800-8984)에 문의합니다. 병원 가입 승인이 끝나지 않았거나 거절된 경우에도 이 문구가 나옵니다.
+
+Hospital 화면에서 Studio로 넘어올 때 권한이 없으면 "접근 권한이 없습니다. 상담/챗봇 관리 권한이 필요합니다."가 나옵니다. 할 일은 같습니다.
+
+##### 그 밖의 오류 문구가 나올 때
+
+"아이디 또는 비밀번호를 확인해주세요." 같은 문구가 나오면 `Username`의 대소문자와 앞뒤 공백, 키보드 입력 언어, Caps Lock 상태를 확인합니다. Password를 여러 번 추측해 입력하지 마세요. 그래도 안 되면 [계정 종류별로 할 일](https://certi.life/docs/guide/studio/account-access#계정-종류별로-할-일)의 방법으로 비밀번호를 다시 정합니다.
+
+계정이나 비밀번호를 채팅 메시지 또는 이메일 본문에 적어 보내지 말고, 오류 문구와 발생 시각처럼 비밀 정보가 아닌 내용만 전달하세요. 오류 화면을 캡처할 때는 `Username`, `Password`, 고객 상담 내용, 등록 자료가 포함되지 않도록 필요한 부분만 남깁니다.
+
+#### 데스크톱 앱의 자동 로그인
+
+출처: https://certi.life/docs/guide/studio/account-access#데스크톱-앱의-자동-로그인
+
+[데스크톱 앱](https://certi.life/docs/guide/studio/screens/overview#데스크톱-앱-내려받기)의 로그인 화면에는 `자동 로그인`이 있습니다. 켜고 로그인하면 앱이 로그인 정보를 저장하고, 다음에 앱을 열 때 저장한 정보로 바로 로그인합니다. `자동 로그인`을 끄고 로그인하거나 로그아웃하면 저장한 로그인 정보가 지워집니다. 여러 사람이 함께 쓰는 컴퓨터에서는 켜지 마세요.
 
 #### 안전한 계정 사용
 
 출처: https://certi.life/docs/guide/studio/account-access#안전한-계정-사용
 
-- 각 담당자는 승인받은 본인 계정을 사용합니다.
+- 각 직원은 본인 계정을 사용합니다.
 - 비밀번호를 동료와 공유하거나 개인 메모 앱에 저장하지 않습니다.
-- 공용 컴퓨터에서는 자동 로그인과 브라우저 비밀번호 저장을 피합니다.
+- 공용 컴퓨터에서는 `자동 로그인`과 브라우저 비밀번호 저장을 쓰지 않습니다.
 - 자리를 비울 때는 화면을 잠그고, 업무가 끝나면 조직 기준에 따라 로그아웃합니다.
-- 담당자가 바뀌면 기존 계정을 전달하지 말고 접근 정리와 새 계정 요청 절차를 따릅니다.
-- 본인이 시도하지 않은 로그인 알림이나 계정 변경 안내를 받으면 링크를 누르지 말고 담당자에게 보고합니다.
+- 직원이 그만두거나 업무가 바뀌면 기존 계정을 넘겨주지 않습니다. 새 직원에게는 새 서브계정을 만들어 줍니다.
+- 병원 계정 조직에서 직원이 그만두면 병원 관리자가 Hospital `계정 관리`에서 그 계정을 삭제합니다. 업무만 바뀌면 `계정 수정`에서 `상담/챗봇 관리`를 끕니다.
+- 본인이 시도하지 않은 로그인 알림이나 계정 변경 안내를 받으면 링크를 누르지 말고 조직의 보안 책임자에게 보고합니다.
 
 > **지원 요청에 비밀번호를 보내지 마세요**
 >
@@ -3426,7 +3596,9 @@ Studio의 공개 로그인 화면은 [Studio 공식 로그인](https://studio.ce
 
 > AI 챗봇이 참고할 공개 자료를 선별하고 최신성·정확성·개인정보 기준을 유지하는 운영 가이드입니다.
 
-Studio의 AI 챗봇은 등록한 자료를 기반으로 상담합니다. 따라서 좋은 답변을 만들기 위한 첫 단계는 많은 자료를 넣는 것이 아니라, 고객에게 공개해도 되는 정확한 자료를 선별하고 책임 있게 갱신하는 것입니다. 자료를 올리고 연결하는 화면의 메뉴와 버튼은 [AI 학습자료 설정 화면](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials)에서 확인하고, 아래 절차는 어떤 자료를 넣을지 정하는 운영 기준으로 사용하세요.
+Studio에서 AI가 참고할 지식은 `백과사전`에 문서로 등록합니다. 백과사전 문서는 v2 챗봇의 학습자료로 연결되고, 콜봇의 지식 베이스에 담기고, 상담원이 상담 화면에서 찾아봅니다. 그래서 좋은 답변을 만드는 첫 단계는 많은 자료를 넣는 것이 아니라, 고객에게 공개해도 되는 정확한 자료를 골라 책임 있게 갱신하는 것입니다. 아래 기준으로 넣을 자료를 정하세요.
+
+화면: 문서를 만들고 올리는 곳은 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia), 챗봇에 연결하는 곳은 [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials#v2-백과사전-문서를-연결하기), 콜봇에 담는 곳은 [콜봇 지식 베이스](https://certi.life/docs/guide/studio/screens/callbot/knowledge)입니다.
 
 #### 1. 자료 범위를 정하기
 
@@ -3443,6 +3615,8 @@ Studio의 AI 챗봇은 등록한 자료를 기반으로 상담합니다. 따라�
 - 사용할 수 있는 채널과 대상 고객
 - 답변에서 제외해야 하는 예외 조건
 
+화면: 백과사전에 넣을 문서의 기준은 [어떤 문서를 넣어야 하나요?](https://certi.life/docs/guide/studio/screens/encyclopedia#어떤-문서를-넣어야-하나요)에도 있습니다.
+
 #### 2. 정확성과 일관성 검토
 
 출처: https://certi.life/docs/guide/studio/knowledge-management#2-정확성과-일관성-검토
@@ -3451,11 +3625,17 @@ Studio의 AI 챗봇은 등록한 자료를 기반으로 상담합니다. 따라�
 
 의료 시술이나 치료에 관한 자료는 사실 소개와 개인별 의학적 판단을 분리해야 합니다. 일반적인 서비스 설명을 제공하더라도 고객의 증상, 적합성, 결과를 판단하는 답변은 지식 범위에 넣지 않습니다. 의료진의 확인이 필요한 질문은 [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)에서 정한 상담원 연결 기준에 따라 사람에게 넘어가도록 준비합니다.
 
+화면: 주제마다 기준 문서 하나를 두려면 [백과사전의 폴더와 태그](https://certi.life/docs/guide/studio/screens/encyclopedia#폴더와-태그로-정리하기)로 정리하고, 문서마다 다른 표기는 [AI의 용어 통일](https://certi.life/docs/guide/studio/screens/ai#여러-문서의-용어-통일하기)로 찾습니다.
+
 #### 3. 개인정보와 민감정보 제거
 
 출처: https://certi.life/docs/guide/studio/knowledge-management#3-개인정보와-민감정보-제거
 
 실제 상담 내역을 자료로 활용하지 마세요. 예시가 필요하면 이름, 전화번호, 진료 기록이 없는 완전한 가상 사례를 새로 작성합니다. 문서 본문뿐 아니라 파일 이름, 표의 숨은 열, 이미지, 주석, 문서 속성에도 고객 정보가 남아 있지 않은지 확인하세요. 공개 가능한 자료라도 내부 편집 메모나 작성자 연락처가 포함되어 있다면 제거한 사본을 사용합니다.
+
+상담원에게만 필요한 안내도 백과사전 문서에 넣지 마세요. 챗봇과 콜봇은 인용 문단뿐 아니라 문서 전체를 답변 근거로 쓰고, 문서 안의 일부 문단을 고객에게서 가려 두는 방법은 없습니다.
+
+화면: 인용 문단과 일반 문단을 나누어 쓰는 방법은 [상담원용 빠른 입력 문구 만들기](https://certi.life/docs/guide/studio/screens/encyclopedia#상담원용-빠른-입력-문구-만들기)에 있습니다.
 
 #### 4. 테스트와 승인
 
@@ -3463,11 +3643,17 @@ Studio의 AI 챗봇은 등록한 자료를 기반으로 상담합니다. 따라�
 
 자료를 반영한 뒤에는 정상 질문, 표현이 다른 질문, 범위를 벗어난 질문, 의료 판단 질문, 개인정보를 포함한 질문을 가상 데이터로 시험합니다. 답변이 원자료와 일치하는지, 모르는 내용을 꾸며내지 않는지, 필요한 경우 상담원 연결을 안내하는지 확인합니다. 출시 승인자는 테스트 결과와 남은 예외를 검토한 뒤 공개 여부를 결정합니다.
 
+화면: 홈페이지에 붙이기 전에는 [채널 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#홈페이지에-채팅-버튼-달기)의 `웹채팅 URL`로 시험합니다. 운영 중에 챗봇이 답하지 못한 질문은 [챗봇 통계 탭](https://certi.life/docs/guide/studio/screens/chatbot/statistics)에서 봅니다.
+
 #### 5. 변경 관리
 
 출처: https://certi.life/docs/guide/studio/knowledge-management#5-변경-관리
 
 운영시간, 정책, 서비스 정보가 바뀌면 원자료와 AI 상담 지식을 함께 갱신하는 책임자를 정합니다. 정기 검토일을 두고, 변경 직후에는 주요 질문을 다시 시험하세요. 잘못된 답변이 발견되면 해당 질문과 근거 자료를 확인하고, 즉시 고쳐야 할 위험이 있다면 상담 범위를 일시적으로 줄인 뒤 검토를 완료합니다. 고객 개인정보가 포함된 대화를 복사해 수정 요청에 첨부하지 않습니다.
+
+백과사전에서 고친 내용은 챗봇의 연결 방식에 따라 자동으로 반영되거나 반영되지 않고, 콜봇에는 다시 가져와야 반영됩니다. 고친 뒤에는 챗봇과 콜봇에서 주요 질문을 각각 다시 시험하세요.
+
+화면: 반영 규칙은 [고친 내용이 반영되는 곳](https://certi.life/docs/guide/studio/screens/encyclopedia#고친-내용이-반영되는-곳), 잘못 고친 문서를 되돌리는 방법은 [예전 버전으로 되돌리기](https://certi.life/docs/guide/studio/screens/encyclopedia#예전-버전으로-되돌리기)에 있습니다.
 
 > **자료 등록은 공개 승인이 아닙니다**
 >
@@ -3477,6 +3663,7 @@ Studio의 AI 챗봇은 등록한 자료를 기반으로 상담합니다. 따라�
 
 출처: https://certi.life/docs/guide/studio/knowledge-management#함께-보기
 
+- [백과사전 화면 안내](https://certi.life/docs/guide/studio/screens/encyclopedia)
 - [Studio 계정 접속](https://certi.life/docs/guide/studio/account-access)
 - [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)
 - [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)
@@ -3515,7 +3702,7 @@ Studio의 AI 챗봇은 등록한 자료를 기반으로 상담합니다. 따라�
 
 AI가 연결 전에 과도한 개인정보를 요구하지 않도록 합니다. 상담원 응대에 꼭 필요한 정보가 있다면 연결된 담당자가 승인된 환경에서 확인하도록 하고, 챗봇 대화에 주민등록번호나 상세 진료 기록을 입력하지 않도록 안내합니다. 긴급 상황은 일반 대기열로만 안내하지 말고 병원이 승인한 긴급 대응 문구와 연락 기준을 사용하세요.
 
-화면: 고객이 누르는 `상담사 연결` 버튼은 [블럭과 버튼](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기), 특정 채널을 처음부터 사람이 받게 하는 `상담원 바로 연결`은 [채널 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기), 화가 난 고객을 상담사에게 알리는 `컴플레인 대응`은 [도구](https://certi.life/docs/guide/studio/screens/chatbot/settings/tools)에 있습니다.
+화면: 고객이 누르는 `상담사 연결` 버튼은 [블럭과 버튼](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기), 특정 채널을 처음부터 사람이 받게 하는 `상담원 바로 연결`은 [채널 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기), 화가 난 고객을 상담원에게 알리는 `컴플레인 대응`은 [도구](https://certi.life/docs/guide/studio/screens/chatbot/settings/tools)에 있습니다.
 
 #### 3. 업무시간 안과 밖을 구분하기
 
@@ -3564,85 +3751,39 @@ AI가 연결 전에 과도한 개인정보를 요구하지 않도록 합니다. 
 
 > 채널별 상담 내역을 검색하고 요약·분류·대화 내용을 확인하며 목록과 상세 화면을 구성하는 방법입니다.
 
-`상담 내역`에서는 AI 채팅, 페르소나, Vox 전화, 카카오 일대일 채팅의 상담 기록을 한곳에서 조회할 수 있습니다. 기간·상태·채널·검색어로 필요한 상담을 찾고, 목록의 요약과 분류를 확인한 뒤 상세 화면에서 상담 정보와 전체 대화를 검토할 수 있습니다.
+`상담 내역`에서는 `AI 채팅 상담 내역`, `페르소나 상담 내역`, `Vox 전화 상담 내역`, `카카오 1:1 채팅 내역`의 기록을 한곳에서 찾고, 읽고, 내려받습니다. 버튼을 누르는 순서는 [상담 내역 화면 안내](https://certi.life/docs/guide/studio/screens/conversation-history)에 있습니다. 아래 기준은 지난 상담을 확인하고 공유할 때 팀이 같은 판단을 하도록 돕습니다.
 
-#### 상담 내역 찾기
+#### 1. 찾을 범위를 먼저 정하기
 
-출처: https://certi.life/docs/guide/studio/conversation-history#상담-내역-찾기
+출처: https://certi.life/docs/guide/studio/conversation-history#1-찾을-범위를-먼저-정하기
 
-1. Studio에서 `상담 내역`을 선택합니다.
-2. 확인할 내역 유형을 선택합니다.
-   - AI 채팅 상담 내역
-   - 페르소나 상담 내역
-   - Vox 전화 상담 내역
-   - 카카오 일대일 채팅 내역
-3. 상담 유형, 조회 기간, 상태와 채널을 선택합니다.
-4. 필요한 경우 고객명이나 상담 내용으로 검색합니다.
-5. `조회`를 선택해 결과를 확인합니다.
+확인할 내역 종류, 상담 유형, 조회 기간, 상태, 채널을 먼저 정한 뒤 조회합니다. 범위를 넓게 잡으면 관계없는 고객의 기록까지 화면에 나옵니다. 고객명이나 상담 내용으로 검색한 결과에는 개인정보가 들어 있습니다. 그래서 검색 결과를 화면 공유나 공개 자료에 그대로 쓰면 안 됩니다.
 
-필터를 처음부터 다시 선택하려면 `초기화`를 사용합니다. 고객명이나 상담 내용에는 개인정보가 포함될 수 있으므로, 검색 결과를 화면 공유나 공개 자료에 그대로 사용하지 마세요.
+화면: 채팅 상담은 [조건으로 상담 찾기](https://certi.life/docs/guide/studio/screens/conversation-history#조건으로-상담-찾기), 지난 통화는 [전화 통화 기록 보기](https://certi.life/docs/guide/studio/screens/conversation-history#전화-통화-기록-보기)에서 찾습니다.
 
-#### 목록에서 확인할 수 있는 정보
+#### 2. 요약으로 찾고, 원문으로 확정하기
 
-출처: https://certi.life/docs/guide/studio/conversation-history#목록에서-확인할-수-있는-정보
+출처: https://certi.life/docs/guide/studio/conversation-history#2-요약으로-찾고-원문으로-확정하기
 
-목록에는 운영 설정에 따라 다음 항목을 표시할 수 있습니다.
+요약과 분류는 많은 상담 가운데 다시 볼 기록을 찾는 데 씁니다. 의료적 판단이나 고객 대응 결과를 요약만으로 확정하지 마세요. 확정은 `대화 내용` 원문과 상담원이 정리한 `상담 결과`를 기준으로 합니다. `AI 초안`은 AI가 만든 참고용 초안이며 확정 기록이 아닙니다.
 
-- 고객명
-- 채널
-- 상태
-- 요약
-- 상담 분류
-- 치료 유형
-- 플래그
-- 고객 분류
-- 처리 결과
-- 상담 결과
-- 담당자와 참조자
-- 상담 시작·상담원 연결·상담 종료 시간
-- 마지막 메시지와 마지막 메시지 시간
+화면: 요약과 초안을 만들고 읽는 방법은 [상담 내용과 요약 확인하기](https://certi.life/docs/guide/studio/screens/conversation-history#상담-내용과-요약-확인하기)에 있습니다.
 
-요약과 분류는 많은 상담 중 확인이 필요한 기록을 찾는 데 활용합니다. 의료적 판단이나 고객 대응 결과를 요약만으로 확정하지 말고, 중요한 내용은 상세 화면의 대화 원문과 함께 확인하세요.
+#### 3. 표시 항목은 조직 기준으로 정하기
 
-#### 상담 상세 확인하기
+출처: https://certi.life/docs/guide/studio/conversation-history#3-표시-항목은-조직-기준으로-정하기
 
-출처: https://certi.life/docs/guide/studio/conversation-history#상담-상세-확인하기
+`상담 내역 표시 설정`에서 바꾼 `목록 컬럼`과 `상세 팝업` 구성은 별도의 저장 단계 없이 바로 저장되고 조직 전체 사용자에게 적용됩니다. 개인 화면만 바뀌는 설정이 아닙니다. 그래서 어떤 컬럼과 섹션을 보일지는 팀이 먼저 합의한 뒤 바꿉니다. 조직이 정한 설정 관리자만 바꾸세요. 자세한 내용은 [누가 무엇을 바꿀 수 있나요](https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요)를 보세요.
 
-목록에서 `상세보기`를 선택하면 설정에 따라 다음 영역을 확인할 수 있습니다.
+화면: [목록과 상세 화면 구성 바꾸기](https://certi.life/docs/guide/studio/screens/conversation-history#목록과-상세-화면-구성-바꾸기)
 
-- 고객 정보
-- 상담 정보
-- 상담 결과
-- AI 요약 또는 챗봇 요약
-- AI 초안
-- 메모
-- 대화 내용
+#### 4. 내려받은 파일은 개인정보로 다루기
 
-비어 있는 항목은 별도로 펼쳐 확인할 수 있습니다. 요약을 다시 생성할 수 있는 상담에서는 먼저 대화 원문과 현재 요약을 검토하고, 다시 생성한 결과가 이전 내용과 달라졌는지 확인하세요.
+출처: https://certi.life/docs/guide/studio/conversation-history#4-내려받은-파일은-개인정보로-다루기
 
-#### 목록과 상세 화면 구성하기
+`내보내기`와 `리포트 다운로드`로 받은 파일에는 고객 이름과 상담 내용이 들어 있습니다. 필요한 기간과 상담 유형만 받고, 공용 폴더나 메신저로 공유하지 마세요. 파일을 다루는 기준은 [개인정보 및 보안](https://certi.life/docs/guide/help/privacy-security)을 따릅니다.
 
-출처: https://certi.life/docs/guide/studio/conversation-history#목록과-상세-화면-구성하기
-
-`표시 항목 설정`에서는 목록 열과 상세 화면 섹션의 표시 여부와 순서를 바꿀 수 있습니다.
-
-1. 상담 내역 화면에서 `표시 항목 설정`을 엽니다.
-2. 목록에 표시할 열을 선택합니다.
-3. 화살표를 사용해 왼쪽부터 표시할 순서를 정합니다.
-4. 상세 화면에서 사용할 섹션과 순서를 정합니다.
-5. 선택한 항목과 순서를 다시 확인합니다.
-
-`상세보기` 열은 항상 유지됩니다.
-
-> **변경 즉시 회사 전체에 적용됩니다**
->
-> 표시 항목과 순서를 바꾸면 별도의 저장 단계 없이 즉시 저장되며 회사 전체 사용자에게 적용됩니다. 개인 화면만 바뀌는 설정이 아니므로, 운영 중에는 필요한 열과 상세 섹션을 팀과 합의한 뒤 변경하세요.
-
-#### 내보내기와 리포트
-
-출처: https://certi.life/docs/guide/studio/conversation-history#내보내기와-리포트
-
-조회한 상담 내역에서는 `내보내기`와 `리포트 다운로드`를 사용할 수 있습니다. 필요한 상담 유형과 조회 조건을 확인한 뒤 사용할 동작을 선택하세요.
+화면: 내려받는 순서는 [상담 기록 내려받기](https://certi.life/docs/guide/studio/screens/conversation-history#상담-기록-내려받기)에 있습니다.
 
 #### 운영 점검
 
@@ -3650,13 +3791,14 @@ AI가 연결 전에 과도한 개인정보를 요구하지 않도록 합니다. 
 
 - [ ] 확인할 상담 유형과 기간을 정확히 선택했습니다.
 - [ ] 요약과 분류를 대화 원문과 함께 검토했습니다.
-- [ ] 표시 항목 변경이 회사 전체에 적용된다는 점을 확인했습니다.
+- [ ] 표시 항목 변경이 조직 전체에 적용된다는 점을 팀이 알고 있습니다.
 - [ ] 화면 캡처와 공유 자료에서 고객 정보를 제거했습니다.
 
 #### 함께 보기
 
 출처: https://certi.life/docs/guide/studio/conversation-history#함께-보기
 
+- [상담 내역 화면 안내](https://certi.life/docs/guide/studio/screens/conversation-history)
 - [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records)
 - [상담 메시지 번역](https://certi.life/docs/guide/products/ai-chatbot/message-translation)
 - [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)
@@ -3670,61 +3812,48 @@ AI가 연결 전에 과도한 개인정보를 요구하지 않도록 합니다. 
 
 > 전화상담 후처리에 사용할 단일·복수 선택 필드와 상담 메모 양식을 만들고 AI 자동 선택을 안전하게 운영하는 방법입니다.
 
-`상담 기록 설정`에서는 전화상담 워크스페이스, 후처리 화면과 통화 기록 상세에 사용할 기록 필드를 조직에 맞게 구성할 수 있습니다. 단일 선택 또는 복수 선택 필드와 상담 메모 양식을 만들고, 통화 종료 후 AI 분류 결과를 자동으로 저장할지 선택할 수 있습니다.
+`상담 기록 설정`에서는 전화상담 화면의 `상담 기록`과 통화 기록 상세에 쓸 기록 필드를 조직에 맞게 정합니다. 단일 선택 또는 복수 선택 필드와 상담 메모 양식을 만들고, 통화가 끝난 뒤 AI 분류 결과를 자동으로 저장할지 고릅니다. 버튼을 누르는 순서는 [상담 기록 설정 화면 안내](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record)에 있고, 이 페이지에는 필드를 설계하고 운영하는 기준을 모았습니다.
 
-#### 상담 기록 필드 만들기
+#### 1. 필드는 실제로 볼 분류만 두기
 
-출처: https://certi.life/docs/guide/studio/consultation-records#상담-기록-필드-만들기
+출처: https://certi.life/docs/guide/studio/consultation-records#1-필드는-실제로-볼-분류만-두기
 
-1. Studio의 `설정`에서 `상담 기록 설정`을 선택합니다.
-2. 새 필드의 이름을 입력합니다.
-3. 필요한 경우 AI가 분류할 때 참고할 설명을 작성합니다.
-4. 필드 유형을 선택합니다.
-   - **단일 선택:** 여러 항목 중 하나만 선택합니다.
-   - **복수 선택:** 필요한 항목을 여러 개 선택할 수 있습니다.
-5. 선택 항목을 추가하고 순서를 정합니다.
-6. 상담사가 실제로 입력할 흐름에 맞춰 필드 순서를 조정합니다.
+필드 설명에는 어떤 상황에서 그 값을 골라야 하는지 구체적으로 적으세요. 의미가 겹치는 항목이나 지나치게 많은 필드는 상담원의 입력을 느리게 하고 AI 분류의 일관성도 낮출 수 있습니다. 하나만 해당하는 분류는 단일 선택, 여러 개가 해당할 수 있는 분류는 복수 선택으로 만듭니다. 필드 순서는 상담원이 실제로 입력하는 흐름에 맞춥니다.
 
-필드 설명에는 어떤 상황에서 해당 값을 선택해야 하는지 구체적으로 적으세요. 의미가 겹치는 항목이나 지나치게 많은 필드는 상담사의 입력을 느리게 하고 AI 분류의 일관성도 낮출 수 있습니다.
+화면: 필드를 만드는 순서는 [선택 필드 만들기](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record#선택-필드-만들기)에 있습니다.
 
-#### 상담 메모 양식 구성하기
+#### 2. 메모 양식에 민감정보 항목을 만들지 않기
 
-출처: https://certi.life/docs/guide/studio/consultation-records#상담-메모-양식-구성하기
+출처: https://certi.life/docs/guide/studio/consultation-records#2-메모-양식에-민감정보-항목을-만들지-않기
 
-상담 메모 양식은 새 상담 메모가 시작될 때 사용할 항목 구조를 정합니다.
+상담 메모 양식은 새 상담 메모가 시작될 때 쓰는 항목 구조입니다. 상담 요약 발송은 설정한 메모 항목 구조를 따를 수 있습니다. 그래서 내부 메모용 표현과 고객에게 전달할 수 있는 표현이 섞이지 않았는지 확인하세요. 주민등록번호, 상세 진료 기록처럼 불필요한 민감정보를 수집하는 항목은 만들지 않습니다.
 
-1. 상담 메모에 필요한 항목을 추가합니다.
-2. AI가 각 항목에서 추출할 내용을 설명합니다.
-3. 항목의 순서를 실제 후처리 순서에 맞게 정합니다.
-4. 미리보기에서 새 메모의 시작 형태를 확인합니다.
+화면: [메모 양식 만들기](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record#메모-양식-만들기)
 
-상담 요약 발송은 설정한 메모 항목 구조를 따를 수 있으므로, 내부 메모용 표현과 고객에게 전달할 수 있는 표현이 섞이지 않았는지 확인하세요. 주민등록번호, 상세 진료 기록처럼 불필요한 민감정보를 수집하는 항목은 만들지 않습니다.
+#### 3. AI 자동 선택은 덮어쓰기를 알고 켜기
 
-#### AI 자동 선택 사용하기
+출처: https://certi.life/docs/guide/studio/consultation-records#3-ai-자동-선택은-덮어쓰기를-알고-켜기
 
-출처: https://certi.life/docs/guide/studio/consultation-records#ai-자동-선택-사용하기
+`AI 자동 선택`을 끄면 AI 결과는 참고용으로만 보이고 상담원이 직접 값을 고릅니다. 켜면 통화가 끝날 때마다 AI 결과가 기록에 자동으로 저장됩니다.
 
-AI 자동 선택은 통화가 끝난 뒤 AI 분류 결과를 상담 기록 필드에 자동으로 선택하고 저장하는 기능입니다.
-
-- **꺼짐:** AI 결과는 참고용으로 표시되고 상담사가 직접 값을 선택합니다.
-- **켜짐:** 통화가 끝날 때마다 AI 결과가 필드에 자동으로 저장됩니다.
-
-> **기존 입력을 덮어쓸 수 있습니다**
+> **상담원이 저장한 값도 AI 결과로 바뀝니다**
 >
-> AI 자동 선택이 켜져 있으면 통화 종료 시 상담사가 미리 선택한 기록 값과 작성한 메모가 AI 결과로 덮어써질 수 있습니다. 운영 중에 기능을 켜기 전에 가상 통화로 결과를 확인하고, 상담사에게 덮어쓰기 동작을 안내하세요.
+> `AI 자동 선택`이 켜져 있으면 통화가 끝난 뒤 AI가 분류한 필드의 값과, AI가 항목을 뽑아낸 메모 전체를 AI 결과로 바꿉니다. 상담원이 통화 중에 이미 저장한 값과 메모도 바뀝니다. AI가 분류하지 못한 필드에만 상담원이 고른 값이 남습니다. 운영 중에 켜기 전에 가상 통화로 결과를 확인하고, 상담원에게 이 동작을 알려 주세요.
 
-#### 권장 운영 순서
+화면: [AI가 기록을 대신 채우게 하기](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record#ai가-기록을-대신-채우게-하기)
 
-출처: https://certi.life/docs/guide/studio/consultation-records#권장-운영-순서
+#### 4. 운영 순서와 변경 관리
+
+출처: https://certi.life/docs/guide/studio/consultation-records#4-운영-순서와-변경-관리
 
 1. 상담 결과를 검토할 책임자를 정합니다.
 2. 꼭 필요한 필드부터 적은 수로 시작합니다.
 3. 각 필드와 항목의 선택 기준을 구체적으로 작성합니다.
 4. 개인정보가 없는 가상 통화로 단일 선택, 복수 선택과 메모 추출을 시험합니다.
-5. AI 자동 선택을 켜기 전 상담사 입력이 어떻게 바뀌는지 확인합니다.
+5. `AI 자동 선택`을 켜기 전에 상담원 입력이 어떻게 바뀌는지 확인합니다.
 6. 운영 후 자주 비어 있거나 겹치는 필드를 정리합니다.
 
-필드 이름, 항목이나 순서를 변경하기 전에는 기존 상담 기록과 내보내기 업무에 미치는 영향을 조직의 담당자와 확인하세요.
+필드 이름, 항목이나 순서를 바꾸기 전에는 기존 상담 기록과 내보내기 업무에 미치는 영향을 팀과 확인하세요.
 
 #### 설정 점검
 
@@ -3733,7 +3862,7 @@ AI 자동 선택은 통화가 끝난 뒤 AI 분류 결과를 상담 기록 필�
 - [ ] 각 필드의 목적과 선택 기준이 명확합니다.
 - [ ] 단일 선택과 복수 선택을 업무 목적에 맞게 구분했습니다.
 - [ ] 상담 메모 항목에 불필요한 개인정보가 없습니다.
-- [ ] AI 자동 선택의 덮어쓰기 동작을 상담사가 알고 있습니다.
+- [ ] `AI 자동 선택`의 덮어쓰기 동작을 상담원이 알고 있습니다.
 - [ ] 가상 통화로 분류와 메모 결과를 확인했습니다.
 - [ ] 입력이 느려지지 않도록 필요한 필드만 유지합니다.
 
@@ -3741,6 +3870,8 @@ AI 자동 선택은 통화가 끝난 뒤 AI 분류 결과를 상담 기록 필�
 
 출처: https://certi.life/docs/guide/studio/consultation-records#함께-보기
 
+- [상담 기록 설정 화면 안내](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record)
+- [전화상담에서 기록 남기기](https://certi.life/docs/guide/studio/screens/phone-counsel#통화-내용-확인하고-기록-남기기)
 - [상담 내역 조회와 화면 설정](https://certi.life/docs/guide/studio/conversation-history)
 - [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)
 - [Studio 출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)
@@ -3754,7 +3885,7 @@ AI 자동 선택은 통화가 끝난 뒤 AI 분류 결과를 상담 기록 필�
 
 > AI 챗봇·상담원 연결·AI 음성봇을 고객에게 공개하기 전과 공개 직후 확인할 운영 체크리스트입니다.
 
-Studio에서 준비한 AI 상담은 아래 항목을 모두 확인한 뒤 공개를 승인하세요. 카카오톡, 네이버톡톡, 웹챗봇 또는 AI 음성봇 공개 전 공통으로 사용하는 체크리스트입니다. 각 항목을 설정하는 화면의 메뉴와 버튼은 [챗봇 설정 탭](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu)에서 확인하세요.
+Studio에서 준비한 AI 상담은 아래 항목을 모두 확인한 뒤 공개를 승인하세요. 카카오톡, 네이버톡톡, 웹챗봇 또는 AI 음성봇 공개 전 공통으로 사용하는 체크리스트입니다. 항목을 설정하는 화면은 각 단계 끝의 "화면:" 줄에 있습니다.
 
 #### 1. 책임과 범위
 
@@ -3766,11 +3897,35 @@ Studio에서 준비한 AI 상담은 아래 항목을 모두 확인한 뒤 공개
 - [ ] 적용할 채널과 대상 고객을 명확히 정했습니다.
 - [ ] 업무시간, 휴일, 임시 운영 변경의 관리 책임자를 정했습니다.
 
-한 사람이 자료 준비부터 승인까지 모두 맡기보다 내용 책임자와 최종 승인자가 서로 검토하는 방식을 권장합니다. 문제가 발생했을 때 누가 상담 범위를 줄이거나 운영을 중단할지 미리 결정하세요.
+한 사람이 자료 준비부터 승인까지 모두 맡기보다 내용 책임자와 최종 승인자가 서로 검토하는 방식을 권장합니다. 문제가 발생했을 때 누가 상담 범위를 줄이거나 운영을 중단할지 미리 결정하세요. 조직 설정은 조직의 모든 상담원 화면에 적용되므로, 조직 설정을 바꿀 사람도 이때 정합니다. 자세한 내용은 [누가 무엇을 바꿀 수 있나요](https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요)를 보세요.
 
-#### 2. 지식 자료
+화면: [누가 무엇을 바꿀 수 있나요](https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요)
 
-출처: https://certi.life/docs/guide/studio/launch-checklist#2-지식-자료
+#### 2. 채널 연동과 수신 시험
+
+출처: https://certi.life/docs/guide/studio/launch-checklist#2-채널-연동과-수신-시험
+
+- [ ] 공개할 채널의 계정을 `채널 설정`에서 조직에 연동했습니다.
+- [ ] 네이버 톡톡과 LINE은 화면에 표시된 웹훅 URL을 상대 서비스에 등록했습니다. 등록하지 않으면 연동된 것처럼 보여도 메시지가 들어오지 않습니다.
+- [ ] 챗봇의 `채널 설정`에서 채널마다 응답할 챗봇을 지정했습니다.
+- [ ] 채널마다 고객 쪽에서 직접 메시지를 보내, 상담 화면에 도착하는지와 답이 나가는지 확인했습니다. Studio에는 연결을 시험하는 버튼이 없습니다.
+
+화면: [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels), [챗봇의 채널 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings)
+
+#### 3. 상담 시간, 알림, 시간 외 안내
+
+출처: https://certi.life/docs/guide/studio/launch-checklist#3-상담-시간-알림-시간-외-안내
+
+- [ ] `상담 시간`의 `채팅 상담` 가능 시간과 특수일을 실제 근무에 맞췄습니다.
+- [ ] 상담이 들어오면 알림톡을 받을 관리자를 `관리자 알림`의 `관리자 목록`에 등록하고, 받을 채널을 골랐습니다.
+- [ ] `상담사 알림`의 알림 대상을 정하고, 시험 상담으로 알림이 실제로 오는지 확인했습니다.
+- [ ] `자동메시지`의 `운영 시간 외 메시지`에 상담 가능 시간과 답변을 받을 시점을 적었습니다.
+
+화면: [상담 시간](https://certi.life/docs/guide/studio/screens/org-settings/hours), [알림](https://certi.life/docs/guide/studio/screens/org-settings/alerts), [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages)
+
+#### 4. 지식 자료
+
+출처: https://certi.life/docs/guide/studio/launch-checklist#4-지식-자료
 
 - [ ] 등록 자료가 고객 공개 승인을 받은 최신 자료입니다.
 - [ ] 고객·환자 정보, 내부 메모, 직원 개인정보가 포함되지 않았습니다.
@@ -3781,9 +3936,11 @@ Studio에서 준비한 AI 상담은 아래 항목을 모두 확인한 뒤 공개
 
 자세한 기준은 [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)를 참고하세요.
 
-#### 3. 시나리오와 상담원 연결
+화면: [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia), [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials)
 
-출처: https://certi.life/docs/guide/studio/launch-checklist#3-시나리오와-상담원-연결
+#### 5. 시나리오와 상담원 연결
+
+출처: https://certi.life/docs/guide/studio/launch-checklist#5-시나리오와-상담원-연결
 
 - [ ] 정상 질문이 승인된 근거로 답변됩니다.
 - [ ] 모르는 질문에 내용을 꾸며내지 않고 한계를 안내합니다.
@@ -3794,19 +3951,23 @@ Studio에서 준비한 AI 상담은 아래 항목을 모두 확인한 뒤 공개
 
 연결 정책을 정할 때는 [상담 시나리오와 사람 연결](https://certi.life/docs/guide/studio/scenario-and-handoff)을 사용하세요.
 
-#### 4. 채널별 시험
+화면: [블럭과 버튼](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기), [작동시간](https://certi.life/docs/guide/studio/screens/chatbot/settings/operating-hours)
 
-출처: https://certi.life/docs/guide/studio/launch-checklist#4-채널별-시험
+#### 6. 채널별 시험
+
+출처: https://certi.life/docs/guide/studio/launch-checklist#6-채널별-시험
 
 카카오톡, 네이버톡톡, 웹챗봇은 각각 실제 고객이 보는 환경에서 문장 줄바꿈, 링크 목적, 응답 길이, 사람 연결 안내를 확인합니다. 여러 채널을 동시에 운영한다면 같은 질문이 의미상 같은 답을 받는지 비교하세요. 모바일 화면에서 텍스트와 링크를 읽고 선택할 수 있는지도 확인합니다.
 
-상담 번역을 사용한다면 고객 언어 자동 감지, 상담사의 언어 변경, 수신 자동 번역, 발신 전 번역과 번역 생략 발송을 모두 시험합니다. 병원명·브랜드명·시술명 같은 고유명사가 용어집 기준으로 일관되게 표현되는지도 확인하세요.
+상담 번역을 사용한다면 고객 언어 자동 감지, 상담원의 언어 변경, 수신 자동 번역, 발신 전 번역과 번역 생략 발송을 모두 시험합니다. 병원명·브랜드명·시술명 같은 고유명사가 의도대로 번역되는지는 시험 메시지의 `실제 발송` 문구로 확인하세요. Studio에는 번역 용어집을 보거나 고치는 화면이 없으므로, 계속 틀리게 번역되는 고유명사는 CertiLife 고객센터(1800-8984)에 알립니다.
 
-AI 음성봇은 조용한 환경뿐 아니라 일반적인 주변 소음에서도 시험합니다. 숫자, 날짜, 운영시간이 정확히 들리는지, 잘못 인식했을 때 다시 질문하는지, 고객이 사람 연결을 요청할 수 있는지 점검합니다. 테스트에는 실제 전화번호나 진료 내용을 사용하지 말고 승인된 가상 자료를 사용하세요.
+AI 음성봇은 조용한 환경뿐 아니라 일반적인 주변 소음에서도 시험합니다. 숫자, 날짜, 운영시간이 정확히 들리는지, 잘못 인식했을 때 다시 질문하는지, 고객이 사람 연결을 요청할 수 있는지 확인합니다. 테스트에는 실제 전화번호나 진료 내용을 사용하지 말고 승인된 가상 자료를 사용하세요.
 
-#### 5. 공개 직전 승인
+화면: [외국어 고객과 대화하기](https://certi.life/docs/guide/studio/screens/counsel/translation), [번역 설정](https://certi.life/docs/guide/studio/screens/org-settings/translation), [콜봇](https://certi.life/docs/guide/studio/screens/callbot/overview)
 
-출처: https://certi.life/docs/guide/studio/launch-checklist#5-공개-직전-승인
+#### 7. 공개 직전 승인
+
+출처: https://certi.life/docs/guide/studio/launch-checklist#7-공개-직전-승인
 
 - [ ] 개인정보 없는 테스트 결과와 남은 예외를 승인자가 검토했습니다.
 - [ ] 고객에게 AI 상담임을 혼동 없이 알릴 표현을 확인했습니다.
@@ -3814,11 +3975,13 @@ AI 음성봇은 조용한 환경뿐 아니라 일반적인 주변 소음에서�
 - [ ] 상담원과 운영 담당자가 연결 정책과 인계 내용을 이해했습니다.
 - [ ] 계정 비밀번호와 내부 자료가 테스트 캡처에 포함되지 않았습니다.
 
-#### 6. 공개 후 점검
+#### 8. 공개 후 점검
 
-출처: https://certi.life/docs/guide/studio/launch-checklist#6-공개-후-점검
+출처: https://certi.life/docs/guide/studio/launch-checklist#8-공개-후-점검
 
 공개 직후에는 대표 질문, 사람 연결, 업무시간 외 안내가 계속 정상인지 확인합니다. 잘못된 답변을 발견하면 고객 개인정보를 복사해 공유하지 말고 질문 유형, 기대 답변, 사용한 근거 자료를 중심으로 기록합니다. 개인정보 노출, 의료적 오안내, 반복적인 연결 실패처럼 위험이 큰 문제가 있으면 범위를 즉시 줄이거나 조직이 정한 방식으로 운영을 중단하고 책임자에게 보고하세요. 수정 후에는 관련 시나리오뿐 아니라 유사 질문도 다시 시험합니다.
+
+화면: 챗봇이 답하지 못한 질문은 [챗봇 통계 탭](https://certi.life/docs/guide/studio/screens/chatbot/statistics), 지난 상담은 [상담 내역](https://certi.life/docs/guide/studio/screens/conversation-history)에서 봅니다.
 
 > **출시는 끝이 아니라 운영 시작입니다**
 >
@@ -3863,7 +4026,7 @@ Studio는 고객 상담을 **준비하고(챗봇·콜봇·백과사전), 응대�
 | `챗봇`              | 채팅 문의에 자동으로 답하는 챗봇을 만들고 다듬습니다                                             | [챗봇](https://certi.life/docs/guide/studio/screens/chatbot/overview)             |
 | `콜봇`              | 전화를 받는 AI 상담원(에이전트)을 만들고 번호를 연결합니다. 제품 소개와 요금제에서 AI 음성봇이라고 부르는 것이 이 메뉴입니다 | [콜봇](https://certi.life/docs/guide/studio/screens/callbot/overview)             |
 | `상담`              | 들어온 채팅 상담에 상담원이 직접 응대합니다                                                  | [상담](https://certi.life/docs/guide/studio/screens/counsel/overview)             |
-| `전화상담`            | 콜봇과 상담사의 통화를 실시간으로 보고 응대합니다                                               | [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)              |
+| `전화상담`            | 콜봇과 상담원의 통화를 실시간으로 보고 응대합니다                                               | [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)              |
 | `상담 내역`           | 지난 상담을 검색하고 요약·결과를 확인하고 내보냅니다                                             | [상담 내역](https://certi.life/docs/guide/studio/screens/conversation-history)      |
 | `통계`              | 전화 응대 현황과 유입·직원별 통계를 봅니다                                                  | [통계](https://certi.life/docs/guide/studio/screens/stats)                        |
 | `백과사전`            | 챗봇·콜봇·상담원이 함께 쓰는 조직의 지식 문서를 관리합니다                                         | [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)               |
@@ -3872,7 +4035,7 @@ Studio는 고객 상담을 **준비하고(챗봇·콜봇·백과사전), 응대�
 
 > **메뉴가 안 보인다면**
 >
-> 모든 조직에 모든 메뉴가 보이는 것은 아닙니다. `인증서`는 병원 계정으로 직접 로그인했을 때만 보이고, `CRM`, `콜봇`, `전화상담`, `통계`는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 필요한 메뉴가 없다면 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)로 확인하세요. Hospital에서 인증서 업무를 보러 넘어온 병원 직원은 `인증서` 메뉴만 쓰면 됩니다. 나머지 메뉴는 상담·마케팅 업무용입니다.
+> 모든 조직에 모든 메뉴가 보이는 것은 아닙니다. `인증서`는 병원 계정으로 직접 로그인했을 때만 보이고, `CRM`, `콜봇`, `전화상담`, `통계`는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 필요한 메뉴가 없다면 CertiLife 고객센터(1800-8984) 또는 [도입 문의](https://certi.life/contact)로 확인하세요. Hospital에서 인증서 업무를 보러 넘어온 병원 직원은 `인증서` 메뉴만 쓰면 됩니다. 나머지 메뉴는 상담·마케팅 업무용입니다.
 
 #### 하고 싶은 일로 찾기
 
@@ -3900,7 +4063,21 @@ Studio는 고객 상담을 **준비하고(챗봇·콜봇·백과사전), 응대�
 - **위쪽 영역:** 조직 이름, `병원 페이지`(또는 `제조사 페이지`) 이동 버튼, `캘린더`, `즐겨찾기`, 데스크톱 앱 내려받기, 사용자 메뉴가 있습니다.
 - **왼쪽 아래 톱니 아이콘:** [설정(조직 설정)](https://certi.life/docs/guide/studio/screens/org-settings/overview)을 엽니다.
 
-Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗봇을 만들 수 있는 개수를 모두 쓰면 `새 챗봇 만들기`를 누를 때 `무제한 챗봇 플랜` 창이 열리고 업그레이드 문의 방법이 표시됩니다. 플랜과 계약은 조직의 CertiLife 담당자에게 문의하세요. 자세한 내용은 [챗봇 목록의 문제 해결](https://certi.life/docs/guide/studio/screens/chatbot/list#문제가-생기면)을 보세요.
+Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗봇을 만들 수 있는 개수를 모두 쓰면 `새 챗봇 만들기`를 누를 때 `무제한 챗봇 플랜` 창이 열리고 업그레이드 문의 방법이 표시됩니다. 플랜과 계약은 CertiLife 고객센터(1800-8984)에 문의하세요. 자세한 내용은 [챗봇 목록의 문제 해결](https://certi.life/docs/guide/studio/screens/chatbot/list#문제가-생기면)을 보세요.
+
+#### 누가 무엇을 바꿀 수 있나요
+
+출처: https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요
+
+Studio에는 설정별로 권한을 나누는 기능이 없습니다. 조직 설정을 바꾸면 모든 상담원 화면에 적용되므로, 설정을 바꿀 사람을 조직에서 미리 정하고 상담원에게 알려 두세요. 화면 안내의 "관리자"나 "설정 관리자"는 조직이 설정 변경을 맡긴 사람을 뜻합니다.
+
+| 무엇을                                     | 누가 정하나요                                                                                                                                                                                                      |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Studio에 들어올 수 있는 사람                     | 병원 계정 조직은 병원 관리자가 Hospital의 `계정 관리`에서 직원 계정마다 `상담/챗봇 관리` 권한으로 정합니다. 그 밖의 조직은 CertiLife 고객센터(1800-8984)에 문의합니다. 자세한 내용은 [Studio 계정 접속](https://certi.life/docs/guide/studio/account-access#계정-종류별로-할-일)에 있습니다 |
+| 설정(조직 설정), `상담 내역 표시 설정`, `채팅 상담 화면 구성` | 바꾸면 조직의 모든 상담원 화면에 적용됩니다                                                                                                                                                                                     |
+| 어떤 메뉴가 보이는지                             | 조직의 이용 범위에 따라 정해집니다. 바꾸려면 CertiLife 고객센터(1800-8984)에 문의합니다                                                                                                                                                   |
+
+설정을 바꾼 사람은 바꾼 내용과 시각을 팀에 공유합니다.
 
 #### 위쪽 영역 쓰기
 
@@ -3922,7 +4099,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 ##### 데스크톱 앱 내려받기
 
-위쪽의 내려받기 아이콘을 누르면 `데스크톱 앱 다운로드` 목록이 열립니다. `Windows (x64)`, `MacOS (Intel CPU)`, `MacOS (Apple Silicon)` 중에서 내 컴퓨터에 맞는 것을 고릅니다. 데스크톱 앱의 로그인 화면에는 `자동 로그인`이 있습니다. 여러 사람이 함께 쓰는 컴퓨터에서는 켜지 마세요.
+위쪽의 내려받기 아이콘을 누르면 `데스크톱 앱 다운로드` 목록이 열립니다. `Windows (x64)`, `MacOS (Intel CPU)`, `MacOS (Apple Silicon)` 중에서 내 컴퓨터에 맞는 것을 고릅니다. 데스크톱 앱의 로그인 화면에는 `자동 로그인`이 있습니다. 켜고 로그인하면 다음에 앱을 열 때 바로 로그인되고, 로그아웃하면 저장한 로그인 정보가 지워집니다. 여러 사람이 함께 쓰는 컴퓨터에서는 켜지 마세요. 데스크톱 앱 안에서는 이 내려받기 아이콘이 보이지 않습니다.
 
 ##### 로그아웃하기
 
@@ -3999,7 +4176,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 병원 관리 화면 안쪽에 "Studio에서 다시 로그인해주세요." 또는 "Studio에서 인증서 메뉴를 다시 열어주세요."처럼 Studio를 가리키는 문구만 보일 때도 있습니다. 로그인 연결이 끊긴 것이므로 문구대로 `인증서` 메뉴를 다시 열거나 Studio에 다시 로그인합니다. "병원 계정이 일치하지 않습니다."가 나오면 Studio에 로그인한 계정과 병원 계정이 다른 것이므로, 로그아웃한 뒤 맞는 병원 계정으로 로그인합니다.
 
-여러 번 시도해도 열리지 않으면 [Hospital 공식 로그인 화면](https://hospital.certi.life/signin)에서 직접 접속해 업무를 보고, 조직의 CertiLife 담당자에게 알려 주세요. 문의할 때 고객 정보가 보이는 화면을 그대로 캡처해 보내지 않도록 주의합니다.
+여러 번 시도해도 열리지 않으면 [Hospital 공식 로그인 화면](https://hospital.certi.life/signin)에서 직접 접속해 업무를 보고, CertiLife 고객센터(1800-8984)에 알려 주세요. 문의할 때 고객 정보가 보이는 화면을 그대로 캡처해 보내지 않도록 주의합니다.
 
 #### 함께 보기
 
@@ -4018,7 +4195,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 > Studio 전화상담 화면에서 콜봇·대기·응대·콜백·전체콜 목록을 보고, 당겨받기로 대기 콜을 받고, 상담사 전환과 전달하기로 통화를 넘기고, 대화록·녹음·AI 분석을 확인하고, 콜백 예약과 상담 기록, 알림톡 발송, 상담사 상태 변경을 하는 방법을 안내합니다.
 
-`전화상담`은 전화 응대를 위한 작업 화면입니다. [콜봇](https://certi.life/docs/guide/studio/screens/callbot/overview)이 받고 있는 전화, 상담사 연결을 기다리는 전화, 내가 통화 중인 전화가 실시간으로 보입니다. 상담사의 일은 세 가지입니다. **기다리는 콜을 받고, 통화 내용을 확인하고, 끝나면 기록을 남깁니다.** 메뉴 이름은 화면에 `전화상담`으로 붙여 표시됩니다. 이 문서는 전화를 받는 사람을 화면 표기대로 상담사라고 부릅니다.
+`전화상담`은 전화 응대를 위한 작업 화면입니다. [콜봇](https://certi.life/docs/guide/studio/screens/callbot/overview)이 받고 있는 전화, 상담원 연결을 기다리는 전화, 내가 통화 중인 전화가 실시간으로 보입니다. 상담원의 일은 세 가지입니다. **기다리는 콜을 받고, 통화 내용을 확인하고, 끝나면 기록을 남깁니다.** 메뉴 이름은 화면에 `전화상담`으로 붙여 표시됩니다. 화면의 버튼과 메뉴에는 전화를 받는 사람이 `상담사`로 표시되고, 본문에서는 상담원이라고 씁니다.
 
 **위치:** 전화상담 (메뉴를 누르면 바로 상담 화면이 열립니다)
 
@@ -4035,7 +4212,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 | 영역    | 탭                      | 내용                                   |
 | ----- | ---------------------- | ------------------------------------ |
 | 왼쪽 목록 | `콜봇`                   | 지금 콜봇이 응대 중인 콜 (실시간)                 |
-|       | `대기`                   | 지금 상담사 연결을 기다리는 콜 (실시간)              |
+|       | `대기`                   | 지금 상담원 연결을 기다리는 콜 (실시간)              |
 |       | `응대`                   | 지금 내가 통화 중인 콜 (실시간)                  |
 |       | `콜백`                   | 내게 배정된 미완료 콜백 예약                     |
 |       | `전체콜`                  | 오늘 조직으로 들어온 콜 전부 (콜봇 응대 종료 포함)       |
@@ -4067,7 +4244,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. 콜의 `당겨받기`를 누릅니다. 내 상담사 번호가 여러 개면 `당겨받을 번호 선택`에서 고릅니다.
 3. "당겨받기 요청됨 — 내 전화로 연결 중입니다. 벨이 울리면 받아주세요."가 표시되고, 내 전화기의 벨이 울리면 받습니다.
 
-"내 계정에 연결된 상담사 번호가 없습니다"가 나오면 콜봇의 `사용자 관리`에서 상담사 번호에 내 계정을 연결해야 합니다. "이미 연결된 통화입니다"는 다른 상담사가 먼저 받은 경우입니다.
+"내 계정에 연결된 상담사 번호가 없습니다"가 나오면 콜봇의 `사용자 관리`에서 상담사 번호에 내 계정을 연결해야 합니다. "이미 연결된 통화입니다"는 다른 상담원이 먼저 받은 경우입니다.
 
 #### 통화 넘기고 끝내기
 
@@ -4079,10 +4256,12 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 | 버튼       | 언제           | 동작                                                |
 | -------- | ------------ | ------------------------------------------------- |
-| `상담사 전환` | 콜봇이 응대 중인 통화 | 콜봇에서 사람 상담사로 통화를 넘깁니다. `전환 대상 선택`에서 대상을 고릅니다      |
-| `전달하기`   | 내가 통화 중인 통화  | 다른 상담사에게 통화를 넘깁니다. `전달 대상 선택`에서 대상을 고르면 연결을 기다립니다 |
+| `상담사 전환` | 콜봇이 응대 중인 통화 | 콜봇에서 사람 상담원으로 통화를 넘깁니다. `전환 대상 선택`에서 대상을 고릅니다     |
+| `전달하기`   | 내가 통화 중인 통화  | 다른 상담원에게 통화를 넘깁니다. `전달 대상 선택`에서 대상을 고르면 연결을 기다립니다 |
 
-전달이 성공하면 내 통화는 자동으로 종료됩니다. 상대가 받지 않거나 통화 중이면 "전달 실패 — 고객과의 통화는 그대로 유지 중입니다."가 표시되고 고객과의 통화는 끊기지 않습니다. 콜 목록의 `전환 요청됨` 표시는 전환을 요청했다는 뜻이며 아직 연결된 것은 아닙니다. `상담사 전환`이 실패했을 때 화면에 어떤 문구가 뜨는지, 콜봇 통화가 유지되는지는 확인되지 않았습니다. `전환 요청됨`이 오래 남아 있으면 `콜봇` 탭에서 통화가 계속 콜봇 응대 중인지 확인하세요.
+전달이 성공하면 내 통화는 자동으로 종료됩니다. 상대가 받지 않거나 통화 중이면 "전달 실패(무응답) — 고객과의 통화는 그대로 유지 중입니다."처럼 괄호 안에 사유가 표시되고, 고객과의 통화는 끊기지 않습니다.
+
+`상담사 전환` 요청이 받아들여지지 않으면 "상담사 전환 요청에 실패했습니다." 같은 문구가 뜨고, 콜봇 통화는 그대로 이어집니다. 고른 상담원이 지금 전화를 받을 수 없는 상태이면 "지정한 상담사가 지금 통화 가능한 상태가 아닙니다."가 뜹니다. 요청이 받아들여지면 "○○님에게 전환 요청됨 — 성사 여부는 통화 종료 시 확정됩니다."가 표시되고, 콜 목록에 `전환 요청됨`이 붙습니다. 이 표시는 요청이 받아들여졌다는 뜻이며 아직 연결된 것은 아닙니다. 전환이 됐는지는 콜봇 통화가 끝날 때 "상담사에게 전환되어 콜봇 통화가 종료되었습니다." 또는 "상담사 전환 없이 콜봇 통화가 종료되었습니다."로 알 수 있습니다.
 
 통화를 끝내려면 `통화 종료`를 누르고 확인 창에서 다시 `통화 종료`를 누릅니다. 종료하면 되돌릴 수 없고, 이어서 상담 기록(후처리) 작성으로 넘어갑니다. 이 화면에는 보류나 음소거 버튼이 없으므로 그런 조작은 전화기에서 합니다.
 
@@ -4096,9 +4275,13 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. `대화록`을 확인합니다. 진행 중인 통화는 `실시간`으로 발화가 표시됩니다. 화자를 `전체`, `콜봇·상담사`, `고객`으로 거르거나 검색할 수 있고, 글자 크기를 바꿀 수 있습니다. 발화를 누르면 그 시점부터 녹음이 재생됩니다.
 3. 통화가 끝나면 `AI 분석`에 요약, 키워드, 고객 감정, 종료 사유가 자동으로 채워집니다. `요약을 메모로 복사`를 누르면 요약을 상담 메모로 가져옵니다.
 4. 아래쪽 `상담 기록`에서 분류 항목을 고르고 `메모`를 적은 뒤 `저장`합니다. 메모는 조직이 정한 양식으로 미리 채워져 있습니다.
-5. 후속 처리까지 끝났다면 `후처리 완료`를 누릅니다. 기록이 저장되고 내 상태가 통화대기로 돌아가 다음 전화를 받을 수 있게 됩니다.
+5. 후속 처리까지 끝났다면 `후처리 완료`를 누릅니다. 기록이 저장되고 내 상태가 `통화대기`로 돌아가 다음 전화를 받을 수 있게 됩니다.
 
-녹음은 `콜봇 구간`과 `상담사 구간`으로 나뉘며, 재생 속도를 바꾸거나 파일로 내려받을 수 있습니다. 상담 기록의 항목은 관리자가 [상담 기록 설정](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record)에서 정합니다. `AI 통화 결과`에 `자동 적용됨`이 표시되면 조직 설정에 따라 AI가 기록을 자동으로 채운 것이니 내용이 맞는지 확인하세요. `참고용`이면 자동으로 채워지지 않으므로 직접 고릅니다.
+> **AI 자동 선택이 켜져 있으면 저장한 기록이 바뀝니다**
+>
+> 조직이 [`AI 자동 선택`](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record#ai가-기록을-대신-채우게-하기)을 켜 두었다면, 통화가 끝난 뒤 AI가 분류한 필드의 값과 AI가 항목을 뽑아낸 메모 전체를 AI 결과로 바꿉니다. 4번에서 이미 `저장`한 값과 메모도 바뀝니다. AI 결과가 들어올 때 고치던 내용이 있으면 화면은 그대로 남고, 그 내용을 `저장`하면 상담원이 입력한 값이 저장됩니다. `후처리 완료`를 누르기 전에 `상담 기록`의 값이 맞는지 다시 확인하세요.
+
+녹음은 `콜봇 구간`과 `상담사 구간`으로 나뉘며, 재생 속도를 바꾸거나 파일로 내려받을 수 있습니다. 상담 기록의 항목은 [상담 기록 설정](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record)에서 정합니다. `AI 통화 결과`에 `자동 적용됨`이 표시되면 조직 설정에 따라 AI가 기록을 자동으로 채운 것이니 내용이 맞는지 확인하세요. `참고용`이면 자동으로 채워지지 않으므로 직접 고릅니다.
 
 > **대화록은 참고용입니다**
 >
@@ -4114,7 +4297,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. `예약 일시`와 `담당자 번호`를 고르고 `콜백 예약 노트`에 무엇 때문에 다시 전화하는지 적습니다. 고객 전화번호는 자동으로 채워집니다.
 3. `콜백 예약`을 누릅니다.
 
-예약한 콜백은 담당 상담사의 `콜백` 탭에 나타납니다. 시간이 되면 콜백의 `시도`를 눌러 전화걸기를 엽니다. 필요 없어진 예약은 `취소`로 삭제하며 되돌릴 수 없습니다. 콜백 상태는 `예약 대기`, `완료`, `실패`, `수동 완료`로 표시됩니다. 웹 통화는 고객 번호가 없어 콜백을 예약할 수 없습니다.
+예약한 콜백은 담당 상담원의 `콜백` 탭에 나타납니다. 시간이 되면 콜백의 `시도`를 눌러 전화걸기를 엽니다. 필요 없어진 예약은 `취소`로 삭제하며 되돌릴 수 없습니다. 콜백 상태는 `예약 대기`, `완료`, `실패`, `수동 완료`로 표시됩니다. 웹 통화는 고객 번호가 없어 콜백을 예약할 수 없습니다.
 
 #### 고객에게 전화 걸기
 
@@ -4135,7 +4318,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 **위치:** 전화상담 > (통화 선택) > 알림톡
 
-통화에서 안내한 내용을 글로 남겨 주려면 위쪽의 `알림톡`을 누릅니다. `알림톡 보내기` 창에서 `발송 채널`과 `알림톡 템플릿`을 고르고 `보내기`를 누르면 이 통화의 고객 번호로 발송됩니다. 승인된 템플릿이 없으면 CRM에서 [템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)을 먼저 준비해야 합니다. 자주 보내는 안내는 관리자가 [상황별 콜백](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations)으로 묶어 둘 수 있습니다.
+통화에서 안내한 내용을 글로 남겨 주려면 위쪽의 `알림톡`을 누릅니다. `알림톡 보내기` 창에서 `발송 채널`과 `알림톡 템플릿`을 고르고 `보내기`를 누르면 이 통화의 고객 번호로 발송됩니다. 승인된 템플릿이 없으면 CRM에서 [템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)을 먼저 준비해야 합니다. 자주 보내는 안내는 [상황별 콜백](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations)으로 묶어 둘 수 있습니다.
 
 #### 내 상태 바꾸기
 
@@ -4143,7 +4326,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 **위치:** 전화상담 > 상담사 상태
 
-화면 위쪽 `상담사 상태` 옆의 드롭다운(내 상담사 번호와 현재 상태가 표시됨)에서 지금 상태를 고릅니다. 콜봇은 **`통화대기` 상태인 상담사에게만** 전화를 넘깁니다.
+화면 위쪽 `상담사 상태` 옆의 드롭다운(내 상담사 번호와 현재 상태가 표시됨)에서 지금 상태를 고릅니다. 콜봇은 **`통화대기` 상태인 상담원에게만** 전화를 넘깁니다.
 
 | 그룹   | 상태                     |
 | ---- | ---------------------- |
@@ -4151,7 +4334,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 | `업무` | `작업`, `교육`, `회의`       |
 | `휴게` | `식사`, `휴식`, `자리비움`     |
 
-자리를 비울 때 상태를 바꿔 두지 않으면 받을 수 없는 전화가 넘어옵니다. 통화가 끝나면 자동으로 `후처리`가 되고, `후처리 완료`를 누르면 `통화대기`로 돌아갑니다. `상담사 상태`를 누르면 다른 상담사들의 상태도 볼 수 있습니다. `착신전환`으로 표시된 번호는 상태와 관계없이 바로 전환됩니다.
+자리를 비울 때 상태를 바꿔 두지 않으면 받을 수 없는 전화가 넘어옵니다. 통화가 끝나면 자동으로 `후처리`가 되고, `후처리 완료`를 누르면 `통화대기`로 돌아갑니다. `상담사 상태`를 누르면 다른 상담원들의 상태도 볼 수 있습니다. `착신전환`으로 표시된 번호는 상태와 관계없이 바로 전환됩니다.
 
 #### 고객 정보와 메모 남기기
 
@@ -4179,7 +4362,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 > Studio 상담 내역 메뉴에서 AI 채팅 상담 내역을 상담 유형·조회기간·상태·채널로 찾고, 상담 상세와 AI 요약·AI 초안을 확인하고, 내보내기와 리포트 다운로드를 하고, Vox 전화 상담 내역·페르소나 상담 내역·카카오 1:1 채팅 내역을 보는 방법을 안내합니다.
 
-`상담 내역`은 끝났거나 진행 중인 모든 상담의 기록을 찾아보는 곳입니다. [`상담`](https://certi.life/docs/guide/studio/screens/counsel/overview) 메뉴가 "지금 응대하는 곳"이라면 여기는 "돌아보는 곳"입니다. 이 화면은 **보기 전용**입니다. 메모와 상담 결과를 고치는 일은 상담 화면에서 하고, 여기서는 찾고, 읽고, 내려받습니다.
+`상담 내역`은 끝났거나 진행 중인 모든 상담의 기록을 찾아보는 곳입니다. [`상담`](https://certi.life/docs/guide/studio/screens/counsel/overview) 메뉴가 "지금 응대하는 곳"이라면 여기는 "돌아보는 곳"입니다. 여기서는 상담 메모와 상담 결과를 고칠 수 없습니다. 정리를 고치는 일은 상담 화면의 [`정리하기`](https://certi.life/docs/guide/studio/screens/counsel/handle#상담-마무리하기)에서 합니다. 다만 이 화면에도 기록을 바꾸는 기능이 있습니다. 조직 전체의 목록 표시를 바꾸고, 여러 고객에게 알림톡을 보내고, 보관한 카카오 대화를 지울 수 있습니다.
 
 **위치:** 상담 내역 > AI 채팅 상담 내역
 
@@ -4188,7 +4371,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 | 메뉴              | 담긴 기록                    | 보이는 조건          |
 | --------------- | ------------------------ | --------------- |
 | `AI 채팅 상담 내역`   | 챗봇과 상담원의 채팅 상담           | 항상              |
-| `Vox 전화 상담 내역`  | 콜봇과 상담사의 전화 통화           | 콜봇을 이용하는 조직     |
+| `Vox 전화 상담 내역`  | 콜봇과 상담원의 전화 통화           | 콜봇을 이용하는 조직     |
 | `페르소나 상담 내역`    | 페르소나 콜봇 통화               | 해당 서비스를 이용하는 조직 |
 | `카카오 1:1 채팅 내역` | 카카오톡 채널에서 옮겨 온 예전 일대일 대화 | 옮겨 온 대화가 있는 조직  |
 
@@ -4238,9 +4421,9 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 > **AI 초안은 확정 기록이 아닙니다**
 >
-> 화면에도 "AI 가 만든 참고용 초안입니다. 상담사가 확정한 정리 기록과는 다릅니다."라고 표시됩니다. 상담사가 직접 정리한 내용은 `상담 결과`에 있습니다. 보고나 분쟁 확인에는 `상담 결과`와 `대화 내용` 원문을 기준으로 하세요.
+> 화면에도 "AI 가 만든 참고용 초안입니다. 상담사가 확정한 정리 기록과는 다릅니다."라고 표시됩니다. 상담원이 직접 정리한 내용은 `상담 결과`에 있습니다. 보고나 분쟁 확인에는 `상담 결과`와 `대화 내용` 원문을 기준으로 하세요.
 
-요약과 분류를 어떻게 읽는지는 [상담 내역 조회와 화면 설정](https://certi.life/docs/guide/studio/conversation-history)에 자세히 있습니다.
+요약과 분류는 많은 상담 가운데 다시 볼 기록을 찾는 데 씁니다. 의료적 판단이나 고객 대응 결과는 요약만으로 확정하지 말고, `대화 내용` 원문으로 확인하세요. `다시 생성`을 누르기 전에는 지금 요약과 원문을 먼저 읽고, 다시 만든 요약이 이전 내용과 어떻게 달라졌는지 확인합니다.
 
 #### 상담 기록 내려받기
 
@@ -4274,7 +4457,9 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 - `목록 컬럼`: 목록 표에 보일 컬럼을 체크하고 화살표로 순서를 바꿉니다. 기본으로 `고객명`, `채널`, `상태`, `요약`, `상담 결과`, `담당자`, `상담 시작`이 보이고, `참조자`, `상담원 연결`, `상담 종료`, `마지막 메시지` 등은 필요할 때 켭니다.
 - `상세 팝업`: `상담 상세` 창 왼쪽에 보일 섹션과 순서를 정합니다.
 
-변경하면 바로 저장되고 **조직 전체에 적용**됩니다. 나만의 설정이 아니므로 다른 상담원과 상의해서 바꾸세요.
+> **바꾸면 조직 전체의 화면이 바뀝니다**
+>
+> 화면에도 "변경하면 바로 저장됩니다"라고 표시되며, 저장 단계 없이 조직의 모든 사용자에게 적용됩니다. 조직이 정한 설정 관리자만 바꾸세요. 자세한 내용은 [누가 무엇을 바꿀 수 있나요](https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요)를 보세요.
 
 #### 전화 통화 기록 보기
 
@@ -4298,9 +4483,17 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 **위치:** 상담 내역 > `카카오 1:1 채팅 내역`
 
-카카오톡 채널에서 옮겨 온 예전 일대일 대화를 보관하는 곳입니다. 상담방 이름이나 대화 내용으로 검색하고, 대화를 누르면 오른쪽에 전문이 보입니다. 필요 없는 대화는 `보관함에서 삭제`로 지울 수 있으며 되돌릴 수 없습니다.
+카카오톡 채널에서 옮겨 온 예전 일대일 대화를 보관하는 곳입니다. 상담방 이름이나 대화 내용으로 검색하고, 대화를 누르면 오른쪽에 전문이 보입니다. 필요 없는 대화는 `삭제`로 지웁니다. 확인 창에 "(닉네임) 대화 N건을 보관함에서 지웁니다. 되돌릴 수 없습니다."가 표시되고, 지운 뒤에는 "보관함에서 지웠습니다."가 나옵니다. 이미 고객에게 합친 대화는 먼저 `되돌리기`를 해야 지울 수 있습니다.
 
-이 대화를 특정 고객의 상담 내역으로 합치는 일은 이 화면이 아니라 **상담 화면에서** 합니다. 상담 중인 고객의 `카카오 1:1 채팅 내역` 버튼을 열어 대화를 고르고 `합치기`를 누릅니다. 합친 것을 `되돌리기`하면 합치며 만든 상담방과 메시지는 지워지지만, 합칠 때 고객에 들어간 이름과 개인정보는 함께 지워지지 않으니 필요하면 직접 지워야 합니다.
+> **보관함에서 지운 대화는 되돌릴 수 없습니다**
+>
+> `삭제`는 대화와 메시지를 완전히 지웁니다. 분쟁이나 확인에 필요할 수 있는 대화라면 지우기 전에 조직의 보관 기준을 확인하세요.
+
+이 대화를 특정 고객의 상담 내역으로 합치는 일은 이 화면이 아니라 **상담 화면에서** 합니다. 상담 중인 고객의 `카카오 1:1 채팅 내역` 버튼을 눌러 `카카오 1:1 채팅 내역 연결` 창을 열고, 대화를 고른 뒤 `이 고객과 합치기`, `합치기`를 차례로 누릅니다.
+
+> **되돌려도 고객 정보는 남습니다**
+>
+> 합친 것을 `되돌리기`하면 합치며 만든 상담방과 메시지는 지워지고 대화는 보관함으로 돌아갑니다. 하지만 화면에도 "합칠 때 고객에 들어간 이름·개인정보는 함께 지워지지 않으니, 필요하면 직접 지워주세요."라고 표시되듯, 합칠 때 고객 정보에 들어간 이름과 개인정보는 남습니다. 잘못 합쳤다면 되돌린 뒤 [고객 정보](https://certi.life/docs/guide/studio/screens/counsel/customer#고객-정보-고치기)에서 그 값을 직접 지우세요.
 
 #### 문제가 생기면
 
@@ -4314,7 +4507,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. 문구 아래의 `다시 시도`를 누릅니다.
 3. 그래도 같으면 브라우저를 새로고침합니다.
 
-목록 아래의 기록을 더 불러오다 실패하면 "추가 기록을 불러오지 못했습니다."가 잠깐 나오고, 이미 보던 목록은 그대로 남습니다. 그래도 안 되면 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다. 같은 자리에 나오는 다른 연결 문구의 뜻은 [콜봇 시작하기의 문제 해결](https://certi.life/docs/guide/studio/screens/callbot/overview#문제가-생기면)에 정리되어 있습니다.
+목록 아래의 기록을 더 불러오다 실패하면 "추가 기록을 불러오지 못했습니다."가 잠깐 나오고, 이미 보던 목록은 그대로 남습니다. 그래도 안 되면 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다. 같은 자리에 나오는 다른 연결 문구의 뜻은 [콜봇 시작하기의 문제 해결](https://certi.life/docs/guide/studio/screens/callbot/overview#문제가-생기면)에 정리되어 있습니다.
 
 ##### `콜백을 완료 처리하지 못했습니다.`
 
@@ -4322,16 +4515,16 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 ##### 목록이 비어 있을 때
 
-| 화면 표시                | 뜻                          | 할 일                         |
-| -------------------- | -------------------------- | --------------------------- |
-| `표시할 통화 기록이 없습니다.`   | 고른 `조회기간`과 필터에 맞는 통화가 없습니다 | `조회기간`을 넓히거나 `필터`의 조건을 줄입니다 |
-| `통화 기록 기능은 준비 중입니다.` | 이 조직에서는 아직 통화 기록을 쓸 수 없습니다 | 조직의 CertiLife 담당자에게 문의합니다   |
+| 화면 표시                | 뜻                          | 할 일                              |
+| -------------------- | -------------------------- | -------------------------------- |
+| `표시할 통화 기록이 없습니다.`   | 고른 `조회기간`과 필터에 맞는 통화가 없습니다 | `조회기간`을 넓히거나 `필터`의 조건을 줄입니다      |
+| `통화 기록 기능은 준비 중입니다.` | 이 조직에서는 아직 통화 기록을 쓸 수 없습니다 | CertiLife 고객센터(1800-8984)에 문의합니다 |
 
 #### 함께 보기
 
 출처: https://certi.life/docs/guide/studio/screens/conversation-history#함께-보기
 
-- [상담 내역 조회와 화면 설정](https://certi.life/docs/guide/studio/conversation-history): 요약·분류 읽는 법과 운영 기준
+- [상담 내역 조회와 화면 설정](https://certi.life/docs/guide/studio/conversation-history): 기록을 확인하고 공유할 때의 운영 기준
 - [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records): 전화상담 후처리 필드 정의
 - [상담](https://certi.life/docs/guide/studio/screens/counsel/overview): 진행 중인 상담에 응대하기
 
@@ -4349,7 +4542,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 > **조직의 이용 범위에 따라 보입니다**
 >
-> `통계` 메뉴는 콜봇과 전화상담을 이용하는 조직에 표시됩니다. 화면 제목 옆에 `샘플 데이터` 표시가 있다면 실제 집계가 아니라 화면 확인용 예시 수치가 보이는 상태이며, 이때는 내려받기 버튼도 비활성화됩니다. 실제 수치로 판단해야 한다면 조직의 CertiLife 담당자에게 확인하세요.
+> `통계` 메뉴는 콜봇과 전화상담을 이용하는 조직에 표시됩니다. 화면 제목 옆에 `샘플 데이터`가 보이면 [`샘플 데이터`](https://certi.life/docs/guide/studio/screens/stats#샘플-데이터)를 먼저 읽으세요.
 
 #### 어떤 통계를 볼까요?
 
@@ -4419,7 +4612,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. 문구 옆의 `다시 시도`를 누릅니다.
 3. 그래도 같으면 브라우저를 새로고침합니다.
 
-그래도 안 되면 화면 이름과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다. 같은 자리에 나오는 다른 연결 문구(`요청 시간이 초과됐습니다.`로 시작하는 문구 등)의 뜻은 [콜봇 시작하기의 문제 해결](https://certi.life/docs/guide/studio/screens/callbot/overview#문제가-생기면)에 정리되어 있습니다.
+그래도 안 되면 화면 이름과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다. 같은 자리에 나오는 다른 연결 문구(`요청 시간이 초과됐습니다.`로 시작하는 문구 등)의 뜻은 [콜봇 시작하기의 문제 해결](https://certi.life/docs/guide/studio/screens/callbot/overview#문제가-생기면)에 정리되어 있습니다.
 
 ##### `CSV를 내려받지 못했습니다. 기간을 좁혀 다시 시도해 주세요.`
 
@@ -4431,7 +4624,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 ##### `샘플 데이터`
 
-화면 제목 옆에 `샘플 데이터`가 보이면 실제 집계가 아니라 화면 확인용 예시 수치입니다. 이때는 내려받기 버튼도 눌리지 않습니다. 실제 수치가 필요하면 조직의 CertiLife 담당자에게 확인합니다.
+화면 제목 옆에 `샘플 데이터`가 보이면 실제 집계가 아니라 화면 확인용 예시 수치입니다. 통계 서버가 아직 수치를 주지 못하는 상태라는 뜻이며, 이때는 `CTI 다운로드`와 `통계 리포트 PDF 다운로드`도 눌리지 않습니다. 이 수치로 판단하지 말고, 실제 수치가 필요하면 CertiLife 고객센터(1800-8984)에 문의합니다.
 
 #### 함께 보기
 
@@ -4449,7 +4642,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 > Studio 백과사전(화면 제목 상담 백과사전)에서 태그와 폴더로 상담 지식을 정리하고, 태그 추가로 새 문서를 작성하거나 파일을 업로드하고, 파일로 문서를 덮어쓰고, 버전 기록에서 예전 버전으로 복원하고, 봇 칩과 챗봇 시점으로 문서를 쓰는 챗봇을 확인·연결하고, 태그 이름을 바꾸고, 인용문으로 상담원용 빠른 입력 문구를 만들고, 고객 태그를 관리하는 방법을 목적별로 안내합니다.
 
-`백과사전`은 조직의 상담 지식을 한곳에 모아 두는 문서 보관소입니다. 여기 등록한 문서는 세 군데에서 함께 쓰입니다. v2 챗봇의 학습자료로 연결되고, 콜봇의 지식 베이스에 담기고, 상담원이 [상담](https://certi.life/docs/guide/studio/screens/counsel/reply-tools#상담-백과사전에서-찾아-넣기) 화면의 `상담 백과사전`에서 찾아봅니다. **문서를 한 번만 잘 관리하면 챗봇, 콜봇, 상담원의 안내가 같은 내용으로 맞춰집니다.**
+`백과사전`은 조직의 상담 지식을 한곳에 모아 두는 문서 보관소입니다. 여기 등록한 문서는 세 군데에서 함께 쓰입니다. v2 챗봇의 학습자료로 연결되고, 콜봇의 지식 베이스에 담기고, 상담원이 [상담](https://certi.life/docs/guide/studio/screens/counsel/reply-tools#상담-백과사전에서-찾아-넣기) 화면의 `상담 백과사전`에서 찾아봅니다. **문서를 한 번만 잘 관리하면 챗봇과 상담원의 안내가 같은 내용으로 맞춰집니다.** 콜봇은 지식 베이스에 가져갈 때의 내용을 복사해 쓰므로, 고친 문서는 [다시 가져와야](https://certi.life/docs/guide/studio/screens/encyclopedia#고친-내용이-반영되는-곳) 콜봇에 반영됩니다. [AI](https://certi.life/docs/guide/studio/screens/ai) 메뉴의 `문서함`도 같은 문서를 다룹니다.
 
 **위치:** 백과사전 (화면 제목은 `상담 백과사전`으로 표시됩니다)
 
@@ -4508,7 +4701,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 1. `추가` > `파일 업로드`를 고릅니다. 여러 파일을 한 번에 올릴 수 있고 파일마다 태그와 문서가 새로 생깁니다. 문서를 열지 않은 상태라면 위쪽 `업로드`도 같은 창을 엽니다.
 2. `문서 업로드` 창에 파일을 끌어다 놓거나 눌러서 선택합니다. Office, PDF, CSV 파일을 올릴 수 있고, 형식·개수·크기 한도는 창에 표시됩니다.
-3. Excel 파일이라면 `Excel 시트 처리`를 고릅니다. `한 문서로 합치기`는 파일 전체를 문서 하나로, `시트마다 문서로 분리`는 시트마다 「파일명\_시트명」 태그를 만듭니다.
+3. Excel 파일이라면 `Excel 시트 처리`를 고릅니다. `한 문서로 합치기`는 파일 전체를 문서 하나로, `시트마다 문서로 분리`는 시트마다 `파일명_시트명` 형식의 태그를 만듭니다.
 4. `업로드`를 누릅니다.
 
 올린 파일은 문서로 변환되는 데 시간이 걸립니다. 진행 상황은 오른쪽 아래 업로드 트레이에서 봅니다.
@@ -4533,9 +4726,15 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 올렸던 원본 파일이 필요하면 `원본 다운로드`를 누릅니다. 직접 작성한 문서처럼 업로드 원본이 없는 문서는 내려받을 수 없습니다. 일부 문장이 아니라 파일 전체로 바꾸려면 [파일로 문서 덮어쓰기](https://certi.life/docs/guide/studio/screens/encyclopedia#파일로-문서-덮어쓰기)를 보세요.
 
-> **고치면 어디에 반영되나요?**
->
-> v2 챗봇은 연결이 "최신 내용 자동 반영"으로 되어 있으면 검색 준비가 끝난 뒤 고친 내용을 자동으로 씁니다. 특정 버전에 고정된 연결은 [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials#v2-백과사전-문서를-연결하기)에 `수정 내용 미반영`으로 표시되니 거기서 `최신 내용 자동 반영`을 눌러 주세요.
+##### 고친 내용이 반영되는 곳
+
+[AI](https://certi.life/docs/guide/studio/screens/ai) 메뉴의 `문서함`에서 저장해도 같은 규칙이 적용됩니다.
+
+| 쓰는 곳                                 | 반영되는 때                                                                                                                                                                                                                                                                                                                        |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v2 챗봇, 연결이 `최신 내용 자동 반영`             | `저장`한 뒤 검색 준비가 끝나면 자동으로 고친 내용을 씁니다. 따로 누를 버튼은 없습니다                                                                                                                                                                                                                                                                            |
+| v2 챗봇, 연결이 `버전 N에 고정` 또는 `이전 버전에 고정` | 고친 내용을 쓰지 않습니다. [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials#v2-백과사전-문서를-연결하기)에는 `수정 내용 미반영`으로 표시됩니다. 고친 내용을 쓰게 하려면 [봇 칩](https://certi.life/docs/guide/studio/screens/encyclopedia#문서-하나를-챗봇에-연결하기)의 `이 봇에 적용할 버전` 창에서 `자동 반영으로 변경`을 누르거나, AI 학습자료 설정에서 `최신 내용 자동 반영`을 누릅니다 |
+| 콜봇 지식 베이스                            | 자동으로 바뀌지 않습니다. [콜봇 지식 베이스](https://certi.life/docs/guide/studio/screens/callbot/knowledge)에서 예전 문서를 삭제한 뒤 `백과사전에서 가져오기`로 다시 넣습니다                                                                                                                                                                                              |
 
 #### 파일로 문서 덮어쓰기
 
@@ -4558,7 +4757,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 > **추가와 덮어쓰기를 헷갈리지 마세요**
 >
-> 문서를 하나 더 만들려면 왼쪽 아래 `추가` > `파일 업로드`를 씁니다. 위쪽 `업로드`는 문서가 열려 있을 때만 덮어쓰기로 동작합니다. 챗봇 연결에는 [문서 내용 고치기](https://certi.life/docs/guide/studio/screens/encyclopedia#문서-내용-고치기)와 같은 반영 규칙이 적용됩니다.
+> 문서를 하나 더 만들려면 왼쪽 아래 `추가` > `파일 업로드`를 씁니다. 위쪽 `업로드`는 문서가 열려 있을 때만 덮어쓰기로 동작합니다. 덮어쓴 내용에도 [고친 내용이 반영되는 곳](https://certi.life/docs/guide/studio/screens/encyclopedia#고친-내용이-반영되는-곳)의 규칙이 그대로 적용됩니다.
 
 #### 예전 버전으로 되돌리기
 
@@ -4616,14 +4815,18 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 **위치:** 백과사전 > (태그 선택) > 본문 편집 > 인용
 
-편집기 위쪽에 "인용(>) 기능 사용시 빠른복사 및 빠른기입 기능을 사용하실 수 있어요"라는 안내가 있습니다. 문서에서 **인용으로 적은 문단**은 상담 화면에서 특별하게 동작합니다. 상담원이 그 문단에 마우스를 올리면 `채팅 입력창에 넣기`와 `복사` 버튼이 나타나, 버튼 하나로 고객에게 보낼 문구를 입력창에 넣을 수 있습니다.
+편집기 위쪽에 "인용(>) 기능 사용시 빠른복사 및 빠른기입 기능을 사용하실 수 있어요"라는 안내가 있습니다. 문서에서 **인용으로 적은 문단**은 상담 화면에서 특별하게 동작합니다. 상담원이 그 문단에 마우스를 올리면 `복사`와 `채팅방에 보내기` 버튼이 나타납니다. `채팅방에 보내기`를 누르면 그 문구가 입력창 끝에 들어가고, 바로 전송되지는 않습니다.
 
 그래서 문서는 이렇게 나누어 쓰는 것이 좋습니다.
 
-- **일반 문단:** 상담원이 읽고 이해할 배경 설명, 주의사항
+- **일반 문단:** 고객에게 알려도 되는 배경 설명과 조건
 - **인용 문단:** 고객에게 그대로 보내도 되는 완성된 안내 문구
 
 예를 들어 "주차 안내" 문서라면 주차장 위치와 예외 상황은 일반 문단으로, "건물 지하 2층에 2시간 무료 주차가 가능합니다."는 인용으로 적습니다.
+
+> **내부 메모는 일반 문단에도 넣지 마세요**
+>
+> 챗봇과 콜봇은 인용 문단만이 아니라 문서 전체를 답변 근거로 씁니다. 백과사전 문서에는 일부 문단을 고객에게서 가려 두는 방법이 없습니다. 상담원끼리만 알아야 하는 내부 지침, 직원 연락처, 공개되지 않은 가격 같은 내용은 백과사전에 넣지 말고 조직의 내부 자료로 관리하세요.
 
 #### 폴더와 태그로 정리하기
 
@@ -4649,7 +4852,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 **위치:** 백과사전 > 추가 > 태그 추가
 
-상담 화면과 CRM에서 고객에게 붙이는 **고객 태그도 백과사전의 태그입니다.** 따로 "고객 태그" 메뉴가 있는 것이 아니라, 여기서 `태그 추가`로 만든 태그가 고객 태그 목록에 나타납니다. 설정(조직 설정)의 `고객 태그` 화면은 목록을 보기만 하는 곳이고, 거기서 `태그 추가`를 누르면 이 화면으로 이동합니다.
+상담 화면과 CRM에서 고객에게 붙이는 **고객 태그도 백과사전의 태그입니다.** 따로 "고객 태그" 메뉴가 있는 것이 아니라, 여기서 `태그 추가`로 만든 태그가 고객 태그 목록에 나타납니다.
 
 고객 분류용 태그(예: "VIP", "재방문")는 폴더를 하나 만들어 모아 두면 지식 문서용 태그와 섞이지 않습니다.
 
@@ -4657,7 +4860,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 출처: https://certi.life/docs/guide/studio/screens/encyclopedia#어떤-문서를-넣어야-하나요
 
-백과사전의 문서는 챗봇과 콜봇이 고객에게 그대로 안내할 수 있는 내용입니다. 고객에게 공개해도 되는 승인된 자료만 넣고, 고객 기록이나 내부 메모, 직원 연락처는 넣지 마세요. 같은 내용이 여러 문서에 다르게 적혀 있으면 답변이 흔들리므로 주제당 기준 문서를 하나로 정리하는 것이 좋습니다. 선별과 갱신 기준은 [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)에 있습니다.
+백과사전의 문서는 챗봇과 콜봇이 고객에게 그대로 안내할 수 있는 내용입니다. 챗봇과 콜봇은 인용 문단뿐 아니라 일반 문단도 답변 근거로 씁니다. 고객에게 공개해도 되는 승인된 자료만 넣고, 고객 기록이나 내부 메모, 직원 연락처는 넣지 마세요. 같은 내용이 여러 문서에 다르게 적혀 있으면 답변이 흔들리므로 주제당 기준 문서를 하나로 정리하는 것이 좋습니다. 선별과 갱신 기준은 [상담 지식 관리](https://certi.life/docs/guide/studio/knowledge-management)에 있습니다.
 
 #### 문제가 생기면
 
@@ -4679,7 +4882,7 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. 그 화면에서 이 태그를 뗍니다.
 3. 백과사전으로 돌아와 태그를 다시 삭제합니다.
 
-사용처에 "사용 여부를 확인하지 못해 삭제하지 않았습니다"가 보이면 잠시 뒤 다시 삭제해 봅니다. 그래도 안 되면 태그 이름과 화면의 문구를 적어 조직의 CertiLife 담당자에게 알립니다.
+사용처에 "사용 여부를 확인하지 못해 삭제하지 않았습니다"가 보이면 잠시 뒤 다시 삭제해 봅니다. 그래도 안 되면 태그 이름과 화면의 문구를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `저장에 실패했습니다`
 
@@ -4689,11 +4892,11 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 2. 계속 실패하면 고친 본문을 전부 복사해 메모장 같은 곳에 보관합니다.
 3. 화면을 새로고침한 뒤 문서를 다시 열고, 보관한 내용을 붙여 넣어 `저장`합니다.
 
-그래도 안 되면 태그 이름과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 태그 이름과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `문서 버전 복원에 실패했습니다`
 
-`이 버전으로 복원`을 눌렀지만 복원되지 않았다는 뜻입니다. `버전` 창을 닫고 문서를 다시 연 뒤 한 번 더 복원합니다. 버전 목록이 비어 있고 `버전 N` 버튼에 마우스를 올렸을 때 "버전 목록을 불러오지 못했습니다"가 보이면 화면을 새로고침합니다. 그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+`이 버전으로 복원`을 눌렀지만 복원되지 않았다는 뜻입니다. `버전` 창을 닫고 문서를 다시 연 뒤 한 번 더 복원합니다. 버전 목록이 비어 있고 `버전 N` 버튼에 마우스를 올렸을 때 "버전 목록을 불러오지 못했습니다"가 보이면 화면을 새로고침합니다. 그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### 표시가 헷갈릴 때
 
@@ -4810,14 +5013,24 @@ Studio에는 요금이나 플랜을 보고 바꾸는 메뉴가 없습니다. 챗
 
 출처: https://certi.life/docs/guide/studio/screens/ai#고친-문서를-챗봇에-반영하기
 
-**위치:** AI > 문서함 > 챗봇에 반영
+**위치:** AI > 문서함 > 상세정보 > 사용 중인 챗봇
 
-문서를 저장하면 "저장됨. 챗봇에 반영하세요."라는 안내가 나옵니다. **저장만으로는 챗봇 답변이 바뀌지 않습니다.**
+`문서함`의 문서는 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia) 문서와 같은 문서입니다. 그래서 여기서 저장한 내용도 백과사전에서 저장한 것과 같은 규칙으로 챗봇에 반영됩니다.
 
-1. `챗봇에 반영`을 누릅니다.
-2. 특정 버전을 반영하려면 `버전 선택`을 눌러 `챗봇 적용 버전 선택` 창에서 `적용할 버전`을 고르고 `선택 버전 반영`을 누릅니다.
+- 챗봇의 연결이 `최신 내용 자동 반영`이면 `저장`한 뒤 검색 준비가 끝나는 대로 챗봇이 고친 내용을 씁니다. 따로 누를 버튼은 없습니다.
+- 챗봇의 연결이 특정 버전에 고정되어 있으면 고친 내용을 쓰지 않습니다.
+- 콜봇 지식 베이스에는 자동으로 반영되지 않습니다. 자세한 규칙은 [고친 내용이 반영되는 곳](https://certi.life/docs/guide/studio/screens/encyclopedia#고친-내용이-반영되는-곳)을 보세요.
 
-어느 챗봇이 이 문서를 쓰고 있는지는 `문서 상세정보` 창의 `사용 중인 챗봇`에서 확인합니다. 문서와 챗봇 학습자료의 연결 전체는 캔버스의 `지식` 탭에서 관리합니다.
+챗봇의 학습 파일을 AI에서 열어 고친 문서는 다릅니다. 저장하면 "저장됨. 챗봇에 반영하세요."가 나오고, 문서 위쪽의 `챗봇에 반영`을 눌러야 챗봇 답변이 바뀝니다.
+
+어느 챗봇이 이 문서를 쓰고 있는지는 `문서 상세정보` 창의 `사용 중인 챗봇`에서 확인합니다. 챗봇 하나가 특정 버전을 쓰게 하려면 `버전 선택`을 눌러 `챗봇 적용 버전 선택` 창에서 `적용할 버전`을 고르고 `선택 버전 반영`을 누릅니다.
+
+> **버전을 고르면 자동 반영이 꺼집니다**
+>
+> `선택 버전 반영`을 누르면 그 챗봇은 고른 버전에 고정됩니다. 가장 최신 버전을 골라도 고정이므로, 그 뒤에 저장한 내용은 그 챗봇에 반영되지 않습니다. AI 메뉴에는 자동 반영으로 되돌리는 버튼이 없습니다. 자동 반영으로 되돌리려면 둘 중 한 곳을 씁니다.
+>
+> - [백과사전의 봇 칩](https://certi.life/docs/guide/studio/screens/encyclopedia#문서-하나를-챗봇에-연결하기): 칩을 누르고 챗봇 이름 아래의 버전 표시를 누릅니다. `이 봇에 적용할 버전` 창에서 `최신 내용 자동 반영`을 고르고 `자동 반영으로 변경`을 누릅니다.
+> - 챗봇의 [AI 학습자료 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials#v2-백과사전-문서를-연결하기): 그 자료 옆의 `최신 내용 자동 반영`을 누릅니다.
 
 #### 버전 비교하고 되돌리기
 
@@ -4896,7 +5109,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 
 > **조직의 이용 범위에 따라 보입니다**
 >
-> `CRM` 메뉴는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 필요하다면 조직의 CertiLife 담당자에게 문의하세요.
+> `CRM` 메뉴는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 필요하다면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 메뉴 구성
 
@@ -4940,9 +5153,20 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 
 **위치:** CRM > 운영 홈
 
-`CRM 운영 홈`에서는 기간(`오늘`, `이번 주`, `이번 달`, `3개월`)을 골라 지표를 봅니다. `성과 · 고객`에는 `발송량`, `전환률`, `활성 고객`, `이탈 위험`이, `운영 모니터링`에는 `성공률`, `실패`, `예약`, `도달률`이 표시됩니다. 원장 보고에 넣을 지표 이름은 이 카드 이름을 그대로 쓰세요. 각 카드의 분모와 판정 기준은 화면에 표시되지 않아 이 문서에서 확인하지 못했으므로, 화면의 설명을 따르세요. 캠페인 단위의 지표는 [캠페인 성과](https://certi.life/docs/guide/studio/screens/crm/campaigns#발송-결과-확인하기)에서 봅니다.
+`CRM 운영 홈`에서는 기간(`오늘`, `이번 주`, `이번 달`, `3개월`)을 골라 지표를 봅니다. 기간은 오늘을 포함해 각각 1일, 7일, 30일, 90일을 거슬러 센 기간이며, 달력의 주나 달이 아닙니다. 원장 보고에 넣을 지표 이름은 이 카드 이름을 그대로 쓰세요. 캠페인 단위의 지표는 [캠페인 성과](https://certi.life/docs/guide/studio/screens/crm/campaigns#발송-결과-확인하기)에서 봅니다.
 
-아래에는 `발송 추이`, `성과 상위 시나리오`, `이탈 위험 고객`, `세그먼트 분포`가 있습니다. `세그먼트 분포`는 고객을 `신규`, `재활동`, `정기`, `단골`, `이탈위험`으로 나누어 보여 주며, 각 단계의 기준은 화면에 표시되지 않습니다. `실패`가 늘었다면 `발송 현황`에서 원인을 확인하고, 여러 건을 다시 보내려면 [캠페인의 `실패 재처리`](https://certi.life/docs/guide/studio/screens/crm/campaigns#발송-결과-확인하기)를 씁니다. `이탈 위험 고객`은 재방문 안내 대상으로 활용합니다.
+| 묶음        | 카드      | 세는 방법                           |
+| --------- | ------- | ------------------------------- |
+| `성과 · 고객` | `발송량`   | 기간에 발송한 메시지 중 성공, 실패, 차단된 건수의 합 |
+|           | `전환률`   | 보고서에는 `발송량`과 `성공률`을 씁니다         |
+|           | `활성 고객` | 지금 활성 상태인 고객 수. 기간과 관계없습니다      |
+|           | `이탈 위험` | `이탈위험` 세그먼트에 든 고객 수             |
+| `운영 모니터링` | `성공률`   | 성공 ÷ (성공 + 실패 + 차단)             |
+|           | `실패`    | 기간에 실패하거나 차단된 건수                |
+|           | `예약`    | 지금 이후로 예약된 메시지 수. 기간과 관계없습니다    |
+|           | `도달률`   | 보고서에는 `발송량`과 `성공률`을 씁니다         |
+
+아래에는 `발송 추이`, `성과 상위 시나리오`, `이탈 위험 고객`, `세그먼트 분포`가 있습니다. `세그먼트 분포`는 고객을 `신규`, `재활동`, `정기`, `단골`, `이탈위험`으로 나누어 보여 주며, 각 단계의 기준은 [고객 등록과 관리](https://certi.life/docs/guide/studio/screens/crm/customers#조건으로-고객-나누기)에 있습니다. `실패`가 늘었다면 `발송 현황`에서 원인을 확인하고, 여러 건을 다시 보내려면 [캠페인의 `실패 재처리`](https://certi.life/docs/guide/studio/screens/crm/campaigns#발송-결과-확인하기)를 씁니다. `이탈 위험 고객`은 재방문 안내 대상으로 활용합니다.
 
 화면 라벨은 `전환률`입니다. 표준 표기는 "전환율"이지만, 이 문서는 화면과 같은 이름으로 찾을 수 있도록 화면 라벨을 따릅니다.
 
@@ -5088,7 +5312,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 2. `저장`을 누릅니다.
 3. `일정 추가`를 다시 누릅니다.
 
-자세한 순서는 [처음 캘린더 만들기](https://certi.life/docs/guide/studio/screens/crm/calendar#처음-캘린더-만들기)에 있습니다. 그래도 창이 열리지 않으면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+자세한 순서는 [처음 캘린더 만들기](https://certi.life/docs/guide/studio/screens/crm/calendar#처음-캘린더-만들기)에 있습니다. 그래도 창이 열리지 않으면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `이름을 입력해 주세요.`
 
@@ -5104,7 +5328,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 
 ##### `일정을 볼 권한이 없는 계정입니다 — 새로고침해도 달라지지 않습니다`
 
-계정에 일정을 볼 권한이 없다는 뜻입니다. 왼쪽 목록에 "캘린더를 볼 권한이 없는 계정입니다"가, 화면에 "캘린더 목록을 볼 권한이 없는 계정입니다 — 새로고침해도 달라지지 않습니다"가 함께 보이기도 합니다. 새로고침해도 달라지지 않으므로 조직의 관리자에게 권한을 요청합니다.
+계정에 일정을 볼 권한이 없다는 뜻입니다. 왼쪽 목록에 "캘린더를 볼 권한이 없는 계정입니다"가, 화면에 "캘린더 목록을 볼 권한이 없는 계정입니다 — 새로고침해도 달라지지 않습니다"가 함께 보이기도 합니다. 새로고침해도 달라지지 않으므로 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `일정을 불러오지 못했습니다 — 이 기간에 무엇이 있는지 아직 모릅니다`
 
@@ -5113,7 +5337,7 @@ CRM 메뉴에서 고객을 등록하고 나누고, 템플릿을 만들어 캠페
 1. 문구 아래의 `다시 시도`를 누릅니다.
 2. 그래도 같으면 브라우저를 새로고침합니다.
 
-그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다. 그동안 예약을 새로 잡을 때는 겹치는 일정이 없는지 다른 경로로 확인합니다.
+그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다. 그동안 예약을 새로 잡을 때는 겹치는 일정이 없는지 다른 경로로 확인합니다.
 
 ##### 일정이 보이지 않을 때
 
@@ -5164,9 +5388,17 @@ CRM의 모든 일은 `고객 목록`에서 시작합니다. 고객을 넣는 방
 
 출처: https://certi.life/docs/guide/studio/screens/crm/customers#고객-찾기
 
-"필러 맞은 지 6개월 지난 분만 골라 주세요" 같은 요청은 이 화면에서 처리합니다. 검색창에 이름이나 전화번호를 넣고 `검색`을 누릅니다. 조건으로 거르려면 필터를 씁니다. 목록 위쪽에는 `데이터 소스`, `고객 속성`, `세그먼트`, `내 저장 세그먼트` 카드와 `전체 유입경로` 필터가 있습니다.
+검색창(`이름 또는 전화번호로 검색`)에 이름이나 전화번호를 넣고 `검색`을 누릅니다. 목록 위쪽에는 `데이터 소스`, `고객 속성`, `세그먼트` 요약과 `세그먼트 분포`, `내 저장 세그먼트` 카드가 있습니다.
 
-목록의 열은 `고객`, `프로필`, `최근 활동`, `고객 속성`, `시나리오 편입`, `최근 메시지`, `유입`입니다. 시술 이력과 방문일은 별도의 열이 아니라 `고객 속성`, [EMR 연동](https://certi.life/docs/guide/studio/screens/crm/connectors)이 넣어 주는 속성(`최근 예약일`, `다음 예약일` 등), 고객 편집의 `NFT 인증서` 탭(시술 정보)으로 들어옵니다. 필터에서 고를 수 있는 조건의 전체 목록은 이 문서에서 확인하지 못했으므로 화면의 필터 항목을 따르세요.
+목록을 좁히는 방법은 세 가지입니다.
+
+- 검색창에 이름이나 전화번호를 넣습니다.
+- 검색창 옆 목록(처음 값 `온 적 있는 경로: 전체`)에서 고객이 들어온 경로를 고릅니다. 고객을 합쳤다면 합친 고객이 들어온 모든 경로가 기준입니다.
+- `세그먼트 분포`나 `내 저장 세그먼트`의 카드를 누릅니다.
+
+이 화면에는 시술 종류나 방문 시점 같은 조건을 하나씩 더하는 필터가 없습니다. "필러 맞은 지 6개월 지난 분"처럼 시점이 기준인 안내는 [시나리오 자동화](https://certi.life/docs/guide/studio/screens/crm/automation)로 보냅니다.
+
+목록의 열은 `고객`, `프로필`, `최근 활동`, `고객 속성`, `시나리오 편입`, `최근 메시지`, `유입`입니다. 시술 이력과 방문일은 별도의 열이 아니라 `고객 속성`, [EMR 연동](https://certi.life/docs/guide/studio/screens/crm/connectors)이 넣어 주는 속성(`최근 예약일`, `다음 예약일` 등), 고객 편집의 `NFT 인증서` 탭(시술 정보)으로 들어옵니다.
 
 고객을 누르면 오른쪽에 상세가 열려 `프로필`, `고객 연결`, `고객 속성 값`, `진행 중 시나리오`, `최근 메시지`, `유입 · 데이터 원천`, `태그`를 볼 수 있습니다. 아래의 `편집`으로 상세 편집 화면에 들어가고, `1명 캠페인`으로 이 고객에게만 보내는 캠페인을 시작할 수 있습니다.
 
@@ -5176,13 +5408,23 @@ CRM의 모든 일은 `고객 목록`에서 시작합니다. 고객을 넣는 방
 
 **위치:** CRM > 고객 목록 > 필터 조건으로 세그먼트 만들기
 
-1. 필터로 원하는 조건의 고객만 남깁니다.
+1. 검색어나 `온 적 있는 경로`로 원하는 고객만 남깁니다.
 2. `필터 조건으로 세그먼트 만들기`(또는 `새 세그먼트`)를 누릅니다.
 3. `현재 필터를 세그먼트로 저장` 창에 `세그먼트 이름`을 적고 `저장`합니다.
 
-세그먼트는 조건을 저장한 것이라, 나중에 조건에 맞는 고객이 새로 생기면 그 세그먼트에 포함됩니다. 어떤 기준으로 나눌지는 [CRM 세그먼트 계획](https://certi.life/docs/guide/products/crm-messaging/segment-planning)을 참고하세요. "시술 3개월 뒤"처럼 고객마다 시점이 다른 안내는 세그먼트가 아니라 [시나리오 자동화](https://certi.life/docs/guide/studio/screens/crm/automation)로 보냅니다.
+세그먼트에는 검색어와 경로만 조건으로 저장됩니다. 둘 다 비어 있으면 "저장할 필터 조건이 없습니다. 먼저 조건을 추가해주세요."가 나옵니다. 세그먼트는 조건을 저장한 것이라, 나중에 조건에 맞는 고객이 새로 생기면 그 세그먼트에 포함됩니다. 어떤 기준으로 나눌지는 [CRM 세그먼트 계획](https://certi.life/docs/guide/products/crm-messaging/segment-planning)을 참고하세요. "시술 3개월 뒤"처럼 고객마다 시점이 다른 안내는 세그먼트가 아니라 [시나리오 자동화](https://certi.life/docs/guide/studio/screens/crm/automation)로 보냅니다.
 
-`운영 홈`과 이 화면의 `세그먼트 분포`는 고객을 `신규`, `재활동`, `정기`, `단골`, `이탈위험`으로 나누어 보여 줍니다. 각 단계의 판정 기준은 화면에 표시되지 않아 이 문서에서 확인하지 못했습니다.
+`운영 홈`과 이 화면의 `세그먼트 분포`는 활성 고객을 활동 횟수로 `신규`, `재활동`, `정기`, `단골`, `이탈위험`으로 나누어 보여 줍니다. 활동은 고객 등록과 수정, 데이터 연동, 인증서, EMR 예약 같은 기록이 쌓인 횟수이며, 방문 횟수만 세는 것이 아닙니다.
+
+| 단계     | 기준                               |
+| ------ | -------------------------------- |
+| `신규`   | 활동이 없거나 1회 이하인 고객                |
+| `재활동`  | 활동이 2\~4회 쌓인 고객                  |
+| `정기`   | 활동이 5\~9회 쌓인 고객                  |
+| `단골`   | 활동이 10회 이상 쌓인 고객                 |
+| `이탈위험` | 활동 이력이 있지만 마지막 활동 후 90일 이상 지난 고객 |
+
+이 기준 문장은 캠페인의 `대상 선택`에 나오는 세그먼트 카드에도 표시됩니다.
 
 목록에서 고객을 여러 명 체크하면 아래쪽에 일괄 작업이 나타납니다. `메시지 보내기`, `시나리오 할당`, `태그 관리`, `내보내기(CSV)`, `삭제`를 선택한 고객에게 한 번에 적용합니다.
 
@@ -5336,7 +5578,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 탭에 `준비 중`이 표시된 유형은 아직 쓸 수 없습니다. 아래의 검수 상태 표는 `알림톡` 탭 기준입니다.
 
-템플릿 코드는 이 화면의 `알림톡` 탭에서 새 템플릿을 만들 때 직접 입력하는 값입니다. Hospital의 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk) 화면에서는 템플릿 코드가 채널 설정에서 정해진 값이라 입력하지 않습니다. 두 화면의 템플릿이 서로 공유되는지는 이 문서에서 확인하지 못했습니다.
+템플릿 코드는 이 화면의 `알림톡` 탭에서 새 템플릿을 만들 때 직접 입력하는 값입니다. Hospital의 [알림톡](https://certi.life/docs/guide/hospital/screens/alimtalk) 화면에서는 템플릿 코드가 채널 설정에서 정해진 값이라 입력하지 않습니다. 두 화면은 같은 알림톡 템플릿 목록을 씁니다. 다만 Hospital 화면에는 대표 채널의 템플릿만 보이고, 이 화면에는 연동한 모든 채널의 템플릿이 보입니다.
 
 #### 알림톡 템플릿 만들기
 
@@ -5365,13 +5607,13 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 "템플릿이 반려됐어요"라는 말을 들으면 이 목록에서 시작합니다. `알림톡` 탭의 템플릿 목록은 `전체`, `승인`, `검수중`, `반려`, `미등록`, `정지`로 걸러 봅니다. `WhatsApp` 탭에는 `미등록` 대신 `차단`이 있어 `전체`, `승인`, `검수중`, `반려`, `정지`, `차단`으로 거릅니다.
 
-| 상태    | 할 수 있는 일                                                                     |
-| ----- | ---------------------------------------------------------------------------- |
-| `미등록` | 아직 등록 신청을 하지 않은 템플릿입니다. 내용을 고친 뒤 `템플릿 등록 신청`을 합니다                            |
-| `검수중` | 기다립니다. 검수가 끝나기 전에는 수정할 수 없습니다                                                |
-| `승인`  | 캠페인과 자동화에 쓸 수 있습니다. `테스트 발송`으로 먼저 받아 보세요                                     |
-| `반려`  | `검수 결과`에서 반려 사유를 확인하고 `수정`한 뒤 `재검수 신청`을 합니다                                  |
-| `정지`  | 정지된 템플릿이라 발송할 수 없습니다. 정지를 푸는 절차는 이 문서에서 확인하지 못했으므로 조직의 CertiLife 담당자에게 문의하세요 |
+| 상태    | 할 수 있는 일                                                                                                                                 |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `미등록` | 아직 등록 신청을 하지 않은 템플릿입니다. 내용을 고친 뒤 `템플릿 등록 신청`을 합니다                                                                                        |
+| `검수중` | 기다립니다. 검수가 끝나기 전에는 수정할 수 없습니다                                                                                                            |
+| `승인`  | 캠페인과 자동화에 쓸 수 있습니다. `테스트 발송`으로 먼저 받아 보세요                                                                                                 |
+| `반려`  | `검수 결과`에서 반려 사유를 확인하고 `수정`한 뒤 `재검수 신청`을 합니다                                                                                              |
+| `정지`  | 화면에 "BizMessage에서 정지된 템플릿이므로 발송에 사용할 수 없습니다."가 표시됩니다. 이 화면에서는 정지를 풀 수 없고 `삭제`만 할 수 있습니다. 정지된 이유를 알아야 하면 CertiLife 고객센터(1800-8984)에 문의하세요 |
 
 반려되었거나 아직 등록되지 않은 템플릿만 수정할 수 있고, 수정 후에는 재검수를 요청해야 합니다. 승인되었거나 검수 중인 템플릿, 운영 중인 시나리오에서 쓰는 템플릿은 삭제할 수 없습니다.
 
@@ -5425,7 +5667,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 1. 문구가 붙은 칸을 채웁니다.
 2. `등록`을 다시 누릅니다.
 
-`카카오 채널` 목록이 비어 있고 "카카오 채널 목록을 불러오지 못했습니다."가 나왔다면 화면을 새로고침합니다. 연결된 채널이 아예 없으면 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)에서 카카오 채널을 먼저 연결합니다. 그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+`카카오 채널` 목록이 비어 있고 "카카오 채널 목록을 불러오지 못했습니다."가 나왔다면 화면을 새로고침합니다. 연결된 채널이 아예 없으면 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)에서 카카오 채널을 먼저 연결합니다. 그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `승인 또는 검수중 템플릿은 삭제할 수 없습니다.`
 
@@ -5434,7 +5676,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 1. 목록에서 템플릿의 상태를 확인합니다.
 2. 더 이상 쓰지 않는 템플릿이라면 캠페인과 시나리오에서 고르지 않도록 팀에 알립니다.
 
-삭제가 꼭 필요하면 템플릿 이름과 상태를 적어 조직의 CertiLife 담당자에게 문의합니다.
+`검수중` 템플릿은 `검수 취소`로 검수를 멈출 수 있습니다. 승인된 템플릿을 꼭 지워야 하면 템플릿 이름과 상태를 적어 CertiLife 고객센터(1800-8984)에 문의합니다.
 
 #### 함께 보기
 
@@ -5486,7 +5728,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 **4단계 `확인 · 발송`:** 요약을 확인하고 `테스트 발송 (선택)`에 내 번호를 넣어 먼저 받아 봅니다. 최대 3개 번호까지 쉼표로 구분해 넣을 수 있고, 테스트 발송은 실제 대상 수에 포함되지 않습니다. 이상이 없으면 `발송 시작`(예약이면 `예약 확정`)을 누릅니다.
 
-중간에 멈추려면 오른쪽 아래의 `초안 저장`을 누릅니다. 제목 옆의 `나가기 (임시 저장)`도 "임시 저장 후 나가시겠습니까?"를 확인하면 지금까지의 내용을 저장하고 목록으로 돌아갑니다. 두 버튼으로 저장한 내용에 차이가 있는지는 이 문서에서 확인하지 못했습니다. 나중에 캠페인 목록에서 초안을 열어 이어서 편집합니다.
+중간에 멈추려면 오른쪽 아래의 `초안 저장`을 누릅니다. 이미 저장한 초안을 열었다면 버튼 이름이 `초안 업데이트`입니다. 제목 옆의 `나가기 (임시 저장)`을 누르고 "임시 저장 후 나가시겠습니까?" 창에서 `저장 후 나가기`를 눌러도 같은 내용이 초안으로 저장됩니다. 다만 아무것도 입력하지 않았으면 `나가기 (임시 저장)`은 저장하지 않고 바로 나갑니다. 두 경우 모두 "초안으로 저장되었습니다"가 나오면 캠페인 목록으로 돌아갑니다. 왼쪽 메뉴나 브라우저의 뒤로 가기로 나가면 저장되지 않습니다. 나중에 캠페인 목록에서 초안을 열어 이어서 편집합니다.
 
 #### 안전 검증 통과하기
 
@@ -5506,7 +5748,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 | `템플릿 심사 상태`         | 템플릿이 아직 승인되지 않았습니다                                    |
 | `템플릿 변수 매핑`         | 연결하지 않은 변수가 있습니다                                      |
 
-`발송 시간대 점검`과 `브랜드 메시지 발송 불가 시간대`는 따로 점검됩니다. 브랜드 메시지는 두 항목을 모두 통과해야 하므로 저녁 8시 50분 이전까지가 기준이고, 저녁 8시 55분 예약은 `브랜드 메시지 발송 불가 시간대`에 걸립니다. `즉시 발송`도 누르는 시각을 기준으로 같은 점검을 받습니다. 두 시간대가 다른 이유는 이 문서에서 확인하지 못했습니다.
+`발송 시간대 점검`과 `브랜드 메시지 발송 불가 시간대`는 따로 점검됩니다. 브랜드 메시지는 두 항목을 모두 통과해야 하므로 저녁 8시 50분 이전까지가 기준이고, 저녁 8시 55분 예약은 `브랜드 메시지 발송 불가 시간대`에 걸립니다. `즉시 발송`도 누르는 시각을 기준으로 같은 점검을 받습니다.
 
 > **브랜드 메시지 캠페인은 다음 시각으로 자동 예약되지 않습니다**
 >
@@ -5524,9 +5766,18 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 실패한 메시지를 여러 건 한꺼번에 다시 보내는 기능은 없습니다. 실패 건은 [`발송 현황`](https://certi.life/docs/guide/studio/screens/crm/message-status#실패한-메시지-처리하기)의 `실패` 탭에서 행마다 다시 보냅니다. 캠페인으로 보낸 메시지의 행에는 `재발송` 대신 `캠페인으로 재사용`이 보이고, 누르면 같은 템플릿으로 새 캠페인을 만듭니다. 캠페인 목록과 `캠페인 성과`의 `실패 재처리` 카드는 실패 건수를 보여 줄 뿐입니다. 카드에 `선택 후 재발송 관리`나 `일괄 재발송 가능`이 적혀 있어도 그 카드에서는 메시지가 나가지 않습니다.
 
-"이번 달 캠페인 성과가 어땠나요"라는 질문에는 `캠페인 성과`로 답합니다. 기간은 `최근 7일`, `최근 30일`, `최근 90일`, `전체` 중에서 고르고, `전 기간과 비교`를 누르면 이전 기간과 나란히 볼 수 있습니다. `내보내기`로 파일을 받습니다.
+"이번 달 캠페인 성과가 어땠나요"라는 질문에는 `캠페인 성과`로 답합니다. 기간은 `최근 7일`, `최근 30일`, `최근 90일`, `전체` 중에서 고릅니다. 발송 기록 파일이 필요하면 [`발송 현황`](https://certi.life/docs/guide/studio/screens/crm/message-status)의 `내보내기`를 씁니다.
 
-화면의 카드는 `완료 캠페인`, `총 발송 건수`, `평균 전달률`, `실패 재처리`(실패 건수)이고, 아래에 `발송 퍼널`이 `대상` → `발송` → `전달 성공` 순서로 나옵니다. `평균 전달률`은 전달 성공 ÷ 대상입니다. 분모가 발송 시도가 아니라 대상 고객 수라는 점은 `발송 퍼널`(대상 · 발송 · 전달 성공 기준)로 확인한 것입니다. 나머지 카드의 계산 기준은 화면의 설명을 따르세요. 운영 홈의 `성공률`, `도달률`, `전환률`과는 다른 지표이므로 보고서에 섞어 넣지 마세요.
+화면의 카드와 계산 방법은 아래와 같습니다. 숫자는 고른 기간에 발송을 마친 캠페인으로 셉니다. 발송 중인 캠페인은 `전체` 기간에만 들어갑니다.
+
+| 카드        | 세는 방법                                  |
+| --------- | -------------------------------------- |
+| `완료 캠페인`  | 고른 기간에 발송을 마친 캠페인 수                    |
+| `총 발송 건수` | 발송에 성공한 메시지 수                          |
+| `평균 전달률`  | 성공 ÷ (성공 + 실패 + 차단). 대상 고객 수로 나누지 않습니다 |
+| `실패 재처리`  | 실패하거나 차단된 메시지 수                        |
+
+아래의 `발송 퍼널`은 `대상`, `발송 시도`, `전달 성공` 순서로 나옵니다. 운영 홈의 `성공률`, `도달률`, `전환률`과는 다른 지표이므로 보고서에 섞어 넣지 마세요.
 
 #### 캠페인 상세에서 할 수 있는 일
 
@@ -5570,7 +5821,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 캠페인 목록에서 `실패 재처리` 카드를 눌렀을 때 "실패 건은 발송 현황에서 로그 기준으로 확인해 주세요."가 나오고 목록이 `실패` 상태로 바뀌기도 합니다. 이때도 같은 순서로 발송 현황에서 처리합니다. "재처리할 실패 건이 없습니다"가 나오면 다시 보낼 실패 건이 없는 것입니다.
 
-그래도 다시 보낼 방법이 보이지 않으면 캠페인 이름과 발송 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 다시 보낼 방법이 보이지 않으면 캠페인 이름과 발송 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `20:50 이후에는 발송할 수 없습니다. 다음날 08:00 이후, 20:50 이전 시간으로 예약해 주세요.`
 
@@ -5592,7 +5843,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 "이전 캠페인의 템플릿을 현재 승인 템플릿 목록에서 찾지 못했습니다."가 나오면 원래 템플릿이 지금은 승인 상태가 아닌 것입니다. [메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates#검수-상태-확인하고-고치기)에서 그 템플릿의 상태를 확인하고, 승인된 다른 템플릿을 고릅니다.
 
-그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ---
 
@@ -5649,7 +5900,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 
 **위치:** CRM > 시나리오 자동화
 
-목록은 처음에 `카드 보기`로 열립니다. `운영 테이블`로 바꾸면 `시나리오`, `흐름 구성`, `트리거 조건`, `운영 기간`, `편입 고객`, `상태`, `액션` 열이 보입니다. 위쪽 필터로 `타이밍 기반`, `이벤트 발생 시`, `단순 발송` 유형만 골라 볼 수 있습니다. 세 유형의 기준은 이 문서에서 확인하지 못했으므로 화면의 설명을 따르세요.
+목록은 처음에 `카드 보기`로 열립니다. `운영 테이블`로 바꾸면 `시나리오`, `흐름 구성`, `트리거 조건`, `운영 기간`, `편입 고객`, `상태`, `액션` 열이 보입니다. 위쪽 탭으로 `이벤트 발생 시`, `단순 발송` 유형만 골라 볼 수 있습니다. `트리거` 블록에 세그먼트나 고객 속성 조건이 하나 이상 있으면 `이벤트 발생 시`, 조건이 없거나 `트리거` 블록이 없으면 `단순 발송`으로 분류됩니다.
 
 시나리오의 상태는 두 가지이고, 화면 위치에 따라 이름이 다르게 보입니다.
 
@@ -5803,7 +6054,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 2. `상태 · 응답` 열의 실패 사유를 다시 읽습니다. 번호가 틀렸거나 수신이 차단된 고객은 다시 보내도 실패하므로 [고객 목록](https://certi.life/docs/guide/studio/screens/crm/customers)에서 연락처를 먼저 고칩니다.
 3. 원인을 고친 뒤 `재발송`을 한 번 더 누릅니다.
 
-그래도 안 되면 고객 이름 대신 발송 시각과 화면의 문구를 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 고객 이름 대신 발송 시각과 화면의 문구를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `예약 취소에 실패했습니다.`
 
@@ -5813,7 +6064,7 @@ EMR을 연동하면 `자동 제공 고객 속성`이 CRM 고객 속성으로 등
 2. 상태가 아직 `예약`이면 `취소`를 다시 누르고 "예약 메시지를 취소하시겠습니까?"에서 `예약 취소`를 누릅니다.
 3. 상태가 `발송 중`이나 `전달 완료`로 바뀌었다면 이미 나간 메시지이므로 취소할 수 없습니다.
 
-그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### 목록이 비어 있을 때
 
@@ -5872,8 +6123,25 @@ Studio 왼쪽 메뉴의 `챗봇`은 고객 문의에 자동으로 답하는 챗�
 4. **첫 인사와 고정 안내를 만듭니다.** [`시나리오` 탭](https://certi.life/docs/guide/studio/screens/chatbot/scenarios)에서 `시작 시나리오`를 다듬고, 단계형 안내가 필요하면 [`플로우` 탭](https://certi.life/docs/guide/studio/screens/chatbot/flows)에서 만듭니다. 고객이 사람을 부를 수 있게 하려면 카드 블럭의 버튼에 [`상담사 연결` 동작](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)을 넣습니다.
 5. **응답하지 않을 시간을 정합니다.** [`작동시간`](https://certi.life/docs/guide/studio/screens/chatbot/settings/operating-hours)에서 챗봇이 쉬는 시간과 그때 보낼 안내를 정합니다.
 6. **채널에 연결합니다.** [`채널 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings)에서 웹채팅 스크립트를 복사하거나 카카오톡·네이버 톡톡 등을 연결하고, [`채팅창 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/chat-window-settings)에서 웹채팅 모양을 맞춥니다.
-7. **공개 전에 시험합니다.** 가상 질문으로 정상 답변, 답변 거절, 상담원 연결을 확인합니다. 점검 항목은 [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)에 있습니다.
+7. **공개 전에 시험합니다.** 가상 질문으로 정상 답변, 답변 거절, 상담원 연결을 확인합니다. 어디서 시험하는지는 아래 [공개 전에 시험하기](https://certi.life/docs/guide/studio/screens/chatbot/overview#공개-전에-시험하기)에 있습니다. 점검 항목은 [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)에 있습니다.
 8. **운영하면서 보강합니다.** [`통계` 탭](https://certi.life/docs/guide/studio/screens/chatbot/statistics)에서 챗봇이 답하지 못한 질문을 찾아 답변을 보강합니다.
+
+#### 공개 전에 시험하기
+
+출처: https://certi.life/docs/guide/studio/screens/chatbot/overview#공개-전에-시험하기
+
+**위치:** 챗봇 > (챗봇 선택) > 설정
+
+`시나리오`, `플로우`, `설정` 탭에서 `저장`한 내용은 연결된 채널의 고객 대화에 바로 쓰입니다. 공개 전에 따로 배포하는 단계가 없습니다. 그래서 고객에게 알리기 전에 아래 도구로 시험합니다.
+
+| 시험 도구          | 위치                                       | 확인할 수 있는 것                                                                               | 상담 기록과 통계               |
+| -------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------- |
+| `이 내용으로 대화해보기` | `설정` > `AI 설정` > `커스텀` (`커스텀 페르소나 설정` 창) | 편집 중인 시스템 프롬프트로 AI가 어떻게 답하는지 봅니다. 저장하지 않은 프롬프트로도 답합니다. 프롬프트와 `기본 페르소나` 외의 설정은 저장된 값을 씁니다 | 남지 않습니다                 |
+| `웹채팅 URL`      | `설정` > `채널 설정` > `웹채팅`                   | 저장된 설정 전체로 고객과 똑같이 대화합니다. 시나리오, 버튼, AI 답변, 상담원 연결을 모두 확인할 수 있습니다                         | 실제 상담으로 기록되고 통계에도 집계됩니다 |
+| `미리보기`         | `시나리오` 탭 오른쪽, `플로우` 탭 편집 패널의 눈 모양 아이콘    | 메시지와 버튼이 고객에게 어떻게 보이는지 봅니다. 저장하지 않은 편집도 보입니다. 버튼을 눌러 다음 단계로 넘어갈 수는 없습니다                  | 남지 않습니다                 |
+| `실시간 미리보기`     | `설정` > `채팅창 설정`                          | 웹채팅 창의 색, 버튼, 문구를 봅니다. 메시지는 보낼 수 없습니다                                                    | 남지 않습니다                 |
+
+카카오톡, 네이버 톡톡 같은 메신저 채널은 연결한 뒤 그 메신저에서 직접 메시지를 보내 확인합니다. 이 대화도 실제 상담으로 기록됩니다.
 
 #### 하고 싶은 일로 찾기
 
@@ -5895,7 +6163,30 @@ Studio 왼쪽 메뉴의 `챗봇`은 고객 문의에 자동으로 답하는 챗�
 | 챗봇이 대화 중에 고객 이름·연락 희망 시간을 챙기게 하고 싶어요 | [`도구`](https://certi.life/docs/guide/studio/screens/chatbot/settings/tools)                                                                                                                                                                                                                                                                                       |
 | 특정 상황에서 정해진 절차대로 응대하게 하고 싶어요         | [`매뉴얼`](https://certi.life/docs/guide/studio/screens/chatbot/settings/manuals)                                                                                                                                                                                                                                                                                    |
 | 챗봇이 답하지 못한 질문을 확인하고 싶어요              | [`통계` 탭](https://certi.life/docs/guide/studio/screens/chatbot/statistics)                                                                                                                                                                                                                                                                                         |
+| 챗봇을 지금 멈추고 싶어요                       | [챗봇을 지금 멈추기](https://certi.life/docs/guide/studio/screens/chatbot/overview#챗봇을-지금-멈추기)                                                                                                                                                                                                                                                                            |
 | 챗봇을 지우고 싶어요                          | [`챗봇 삭제`](https://certi.life/docs/guide/studio/screens/chatbot/settings/delete-chatbot)                                                                                                                                                                                                                                                                           |
+
+#### 챗봇을 지금 멈추기
+
+출처: https://certi.life/docs/guide/studio/screens/chatbot/overview#챗봇을-지금-멈추기
+
+**위치:** 챗봇 > (챗봇 선택) > 설정 > 채널 설정
+
+Studio에는 챗봇 전체를 한 번에 끄는 스위치가 없습니다. 그래서 채널마다 챗봇 연결을 끊습니다. 연결을 끊어도 챗봇과 설정은 그대로 남으므로, 다시 연결하면 바로 이전처럼 답합니다.
+
+| 채널                              | 멈추는 방법                                                           | 멈춘 뒤 고객이 메시지를 보내면                                                 |
+| ------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------- |
+| `웹채팅`                           | 웹사이트에 붙인 `SDK 스크립트`를 지웁니다. Studio에는 웹채팅만 끄는 스위치가 없습니다            | 채팅 버튼이 사라집니다. `웹채팅 URL`로는 계속 대화할 수 있습니다                           |
+| `카카오톡` (`오픈빌더 (스킬)`)            | `카카오톡` 카드 제목 오른쪽의 스위치를 끄거나 `카카오 오픈빌더 Bot ID`를 `삭제`한 뒤 `저장`을 누릅니다 | 챗봇 답변 대신 "죄송합니다. 일시적인 오류로 답변을 준비하지 못했습니다. 잠시 후 다시 시도해 주세요."가 나갑니다 |
+| `카카오톡` (`상담톡 봇`)                | 상담톡 채널 선택을 지우고 `저장`을 누릅니다                                        | 챗봇 없이 상담 대기로 들어옵니다                                                |
+| `네이버 톡톡`                        | `연결 해제`를 누르고 확인 창에서 `해제`를 누릅니다. `저장` 없이 바로 적용됩니다                 | 챗봇 없이 상담 대기로 들어옵니다                                                |
+| `Instagram`, `LINE`, `WhatsApp` | 카드의 `연동 채널` 선택칸에서 지우기 아이콘을 눌러 배정을 지웁니다. `저장` 없이 바로 적용됩니다         | 챗봇 없이 상담 대기로 들어옵니다                                                |
+
+챗봇은 계속 연결해 두고 고객을 처음부터 상담원에게 보내려면 [`상담원 바로 연결`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기)을 켭니다. `카카오톡`에서 켜면 오픈빌더 방식은 모든 요청에 상담원 연결 안내 카드를 보내고, 상담톡 봇 방식은 바로 상담원에게 연결합니다. `네이버 톡톡`에서 켜면 챗봇이 답하지 않고 상담 대기로 시작합니다. `웹채팅`에서 켜면 첫 진입만 상담 대기로 시작하므로 챗봇을 완전히 멈추지는 않습니다.
+
+정해진 시간에만 멈추려면 [`작동시간`](https://certi.life/docs/guide/studio/screens/chatbot/settings/operating-hours)에서 쉬는 시간을 정합니다. 그 시간에는 모든 채널에서 AI 답변 대신 `미작동 시나리오`가 나갑니다. 채널에 따라 새 대화는 `미작동 시나리오` 대신 바로 상담원 연결로 이어질 수 있습니다. 하루 종일 멈추려면 요일마다 `종일`을 누릅니다.
+
+웹채팅의 `상담 진행 여부`를 꺼도 챗봇은 계속 답합니다. 이 스위치는 상담원 연결만 막습니다. 챗봇을 아예 없애야 할 때만 [`챗봇 삭제`](https://certi.life/docs/guide/studio/screens/chatbot/settings/delete-chatbot)를 씁니다. 삭제는 되돌릴 수 없습니다.
 
 #### 화면은 이렇게 생겼습니다
 
@@ -5903,16 +6194,7 @@ Studio 왼쪽 메뉴의 `챗봇`은 고객 문의에 자동으로 답하는 챗�
 
 `챗봇` 메뉴에 들어오면 챗봇 카드 목록이 보이고, 위쪽에 `챗봇`, `도구`, `매뉴얼` 탭이 있습니다. `도구`와 `매뉴얼`은 조직의 모든 챗봇이 함께 쓰는 공용 목록이며 `v2 beta`로 표시됩니다.
 
-카드의 `상세보기`를 누르면 챗봇 상세 화면으로 들어가고, 위쪽의 `시나리오`, `플로우`, `통계`, `설정` 네 탭으로 작업합니다. `시나리오`, `플로우`, `설정` 탭에서 바꾼 내용은 왼쪽 아래 `저장`을 눌러야 적용됩니다. 저장하지 않고 다른 곳으로 이동하려 하면 `저장하지 않은 변경사항이 있습니다` 확인 창이 나옵니다. 창의 제목은 같지만 버튼은 하려던 일에 따라 다릅니다.
-
-| 하려던 일                                       | 버튼          |
-| ------------------------------------------- | ----------- |
-| 다른 탭, 다른 설정 항목, 다른 플로우나 시나리오로 옮기기           | `취소`, `이동`  |
-| Studio 왼쪽 메뉴를 누르는 등 챗봇 상세 화면을 떠나기           | `취소`, `나가기` |
-| `플로우 설정`, `시나리오 설정`, `태그 관리` 서랍을 저장하지 않고 닫기 | `취소`, `닫기`  |
-| 서랍을 연 채 다른 플로우나 시나리오의 설정으로 바꾸기              | `취소`, `전환`  |
-
-`취소`를 누르면 창만 닫히고 고친 내용이 그대로 남습니다. `이동`, `나가기`, `닫기`, `전환`을 누르면 저장하지 않은 내용이 사라집니다. 새로고침하거나 브라우저 탭을 닫을 때 떠날지 묻는 창은 Studio가 아니라 브라우저가 띄우는 창이며, 문구와 버튼은 브라우저마다 다릅니다. `설정` 탭에서 뜨는 창의 안내 문구는 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#문제가-생기면)에 있습니다.
+카드의 `상세보기`를 누르면 챗봇 상세 화면으로 들어가고, 위쪽의 `시나리오`, `플로우`, `통계`, `설정` 네 탭으로 작업합니다. `시나리오`, `플로우`, `설정` 탭에서 바꾼 내용은 왼쪽 아래 `저장`을 눌러야 적용됩니다. 저장하지 않고 다른 곳으로 이동하려 하면 `저장하지 않은 변경사항이 있습니다` 확인 창이 나옵니다. 창의 버튼별 동작은 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#저장하지-않은-변경사항이-있습니다)에 있습니다.
 
 > **v1과 v2**
 >
@@ -5996,9 +6278,9 @@ Studio 왼쪽 메뉴의 `챗봇`은 고객 문의에 자동으로 답하는 챗�
 
 목록의 카드 한 장이 챗봇 하나입니다. 카드만 봐도 그 챗봇이 지금 어떤 상태인지 알 수 있습니다.
 
-- **상태:** `운영중` 또는 `대기중`
+- **상태:** `운영중` 또는 `대기중`. 새로 만든 챗봇은 `운영중`입니다. `대기중`인 챗봇은 고객 메시지에 답하지 않습니다. Studio에는 이 상태를 바꾸는 메뉴가 없고, `작동시간`이나 채널 연결을 바꿔도 이 표시는 달라지지 않습니다. 카드가 `대기중`이면 CertiLife 고객센터(1800-8984)에 문의하세요.
 - **응답 버전:** `v1 설정` 또는 `v2 설정`. 누르면 그 챗봇의 [`AI 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings)으로 바로 이동합니다.
-- **연결된 채널:** `웹챗`, `카카오`, `Instagram`, `LINE`, `WhatsApp` 중 연결된 채널이 표시됩니다.
+- **연결된 채널:** `웹챗`, `카카오`, `Instagram`, `LINE`, `WhatsApp` 칩이 있습니다. `웹챗`은 스크립트를 붙였는지와 관계없이 항상 켜진 것으로 표시됩니다. `카카오`는 [`채널 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#카카오톡-연결하기)의 `카카오톡` 스위치가 켜져 있을 때, `Instagram`, `LINE`, `WhatsApp`은 이 챗봇에 채널이 배정되어 있을 때 켜집니다. 네이버 톡톡은 카드에 표시되지 않습니다. 칩은 연결 설정만 보여 주므로, 채널이 실제로 메시지를 주고받는지는 채널마다 메시지를 보내 확인합니다.
 - **구성 요약:** `플로우:` 개수, `학습자료:` 파일 개수, `페르소나:`, 마지막 수정일
 
 챗봇이 많으면 오른쪽 위의 정렬을 `최신순`, `오래된순`, `이름 (가나다순)`, `이름 (역순)`으로 바꿔 찾습니다. 카드의 `상세보기`를 누르면 챗봇 상세 화면이 열리고, 거기서 [`시나리오`](https://certi.life/docs/guide/studio/screens/chatbot/scenarios), [`플로우`](https://certi.life/docs/guide/studio/screens/chatbot/flows), [`통계`](https://certi.life/docs/guide/studio/screens/chatbot/statistics), [`설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu) 탭으로 작업합니다. 챗봇이 하나도 없을 때는 "아직 챗봇이 없습니다" 안내와 함께 `첫 챗봇 만들기` 버튼이 보입니다.
@@ -6027,7 +6309,7 @@ Studio 왼쪽 메뉴의 `챗봇`은 고객 문의에 자동으로 답하는 챗�
 1. 쓰지 않는 챗봇이 있으면 그 챗봇의 [`챗봇 삭제`](https://certi.life/docs/guide/studio/screens/chatbot/settings/delete-chatbot)로 지운 뒤 다시 만듭니다.
 2. 챗봇이 더 필요하면 창의 `업그레이드 문의 방법`에 적힌 이메일로 문의합니다.
 
-Studio에는 요금이나 플랜을 바꾸는 메뉴가 없습니다. 플랜 변경은 조직의 CertiLife 담당자에게도 요청할 수 있습니다.
+Studio에는 요금이나 플랜을 바꾸는 메뉴가 없습니다. 플랜 변경은 CertiLife 고객센터(1800-8984)에도 요청할 수 있습니다.
 
 ##### `챗봇 이름을 입력하세요`
 
@@ -6035,7 +6317,7 @@ Studio에는 요금이나 플랜을 바꾸는 메뉴가 없습니다. 플랜 변
 
 ##### `챗봇 생성에 실패했습니다`
 
-챗봇을 만들지 못했다는 뜻입니다. 창을 닫고 챗봇 목록에 새 챗봇이 생겼는지 확인한 뒤, 없으면 다시 만듭니다. 그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+챗봇을 만들지 못했다는 뜻입니다. 창을 닫고 챗봇 목록에 새 챗봇이 생겼는지 확인한 뒤, 없으면 다시 만듭니다. 그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `학습자료 생성에 실패했습니다. AI 설정에서 다시 생성할 수 있습니다.`
 
@@ -6049,7 +6331,7 @@ Studio에는 요금이나 플랜을 바꾸는 메뉴가 없습니다. 플랜 변
 2. 원본 챗봇의 [`기본 정보`](https://certi.life/docs/guide/studio/screens/chatbot/settings/basic-info#챗봇을-다른-계정으로-복사하기)에서 코드를 확인합니다. 코드는 60분 동안 한 번만 쓸 수 있으므로, 시간이 지났거나 이미 썼다면 새 코드를 만듭니다.
 3. 코드를 넣고 `가져오기`를 누릅니다.
 
-`가져오기` 버튼이 눌리지 않으면 코드 형식이 맞지 않는 것입니다. 코드는 `ABC-1234-XYZ`처럼 영문 대문자 3자, 숫자 4자, 영문 대문자 3자를 하이픈으로 이은 형식입니다. 그래도 안 되면 사유 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+`가져오기` 버튼이 눌리지 않으면 코드 형식이 맞지 않는 것입니다. 코드는 `ABC-1234-XYZ`처럼 영문 대문자 3자, 숫자 4자, 영문 대문자 3자를 하이픈으로 이은 형식입니다. 그래도 안 되면 사유 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ---
 
@@ -6120,7 +6402,7 @@ Studio에는 요금이나 플랜을 바꾸는 메뉴가 없습니다. 플랜 변
 2. 버튼 이름과 눌렀을 때의 동작을 정합니다. 퀵 리플라이의 동작은 `메시지 전송`과 `플로우 이동`이 기본입니다. 웹 링크 열기나 전화 걸기는 카드 블럭의 버튼에서 쓸 수 있습니다. 고객이 사람을 부르는 `상담사 연결`도 퀵 리플라이가 아니라 카드 블럭의 버튼 동작에서 고릅니다. 동작별 설명은 [블럭과 버튼](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)을 참고하세요.
 3. 순서는 `위로 이동`, `아래로 이동`으로 바꿉니다.
 
-넣을 수 있는 최대 개수는 `퀵 리플라이` 제목 옆 괄호에 표시됩니다. 첫 인사에 자주 묻는 질문 3\~4개를 버튼으로 달아 두면 고객이 무엇을 물어볼 수 있는지 바로 알 수 있습니다.
+퀵 리플라이는 메시지 하나에 최대 10개까지 달 수 있습니다. 위치별로 고를 수 있는 동작은 [퀵 리플라이 달기](https://certi.life/docs/guide/studio/screens/chatbot/blocks#퀵-리플라이-달기)에 있습니다. 첫 인사에 자주 묻는 질문 3\~4개를 버튼으로 달아 두면 고객이 무엇을 물어볼 수 있는지 바로 알 수 있습니다.
 
 #### 답변에 실패했을 때의 메시지 정하기
 
@@ -6220,23 +6502,31 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 
 카드 하나에 버튼을 최대 3개까지 달 수 있습니다. 버튼명은 14자까지입니다. 버튼을 펼쳐 동작을 고릅니다.
 
-| 동작         | 버튼을 누르면                                                                     | 함께 입력하는 것        |
-| ---------- | --------------------------------------------------------------------------- | ---------------- |
-| `메시지 전송`   | 고객이 그 문장을 입력한 것처럼 전송됩니다                                                     | `전송할 메시지`        |
-| `플로우 이동`   | 다른 [플로우](https://certi.life/docs/guide/studio/screens/chatbot/flows)로 넘어갑니다 | `이동할 플로우 선택`     |
-| `시작 시나리오`  | 시작 시나리오로 이동합니다                                                              | 없음               |
-| `내부 이동`    | 같은 플로우 안의 다른 시나리오로 넘어갑니다                                                    | `이동할 내부 시나리오 선택` |
-| `웹 링크`     | 웹 페이지가 열립니다                                                                 | URL              |
-| `전화 걸기`    | 입력해 둔 번호로 전화를 걸 수 있습니다                                                      | 전화번호(숫자만)        |
-| `채널 추가`    | 카카오톡 채널 추가로 이어집니다                                                           | 없음               |
-| `상담사 연결`   | 사람 상담사에게 연결합니다                                                              | 없음               |
-| `카카오싱크 가입` | 카카오 로그인으로 추가 정보를 받습니다                                                       | `연동 완료 후 이동`할 곳  |
+| 동작         | 버튼을 누르면                                                                                      | 함께 입력하는 것        |
+| ---------- | -------------------------------------------------------------------------------------------- | ---------------- |
+| `메시지 전송`   | 고객이 그 문장을 입력한 것처럼 전송됩니다                                                                      | `전송할 메시지`        |
+| `플로우 이동`   | 다른 [플로우](https://certi.life/docs/guide/studio/screens/chatbot/flows)로 넘어갑니다                  | `이동할 플로우 선택`     |
+| `시작 시나리오`  | 챗봇의 첫 인사(`시나리오` 탭에서 `시작 시나리오` 태그가 붙은 시나리오)로 이동합니다. 플로우 안에서 눌러도 그 플로우의 시작 시나리오가 아니라 첫 인사로 갑니다 | 없음               |
+| `내부 이동`    | 같은 플로우 안의 다른 시나리오로 넘어갑니다                                                                     | `이동할 내부 시나리오 선택` |
+| `웹 링크`     | 웹 페이지가 열립니다                                                                                  | URL              |
+| `전화 걸기`    | 입력해 둔 번호로 전화를 걸 수 있습니다                                                                       | 전화번호(숫자만)        |
+| `채널 추가`    | 카카오톡 채널 추가로 이어집니다                                                                            | 없음               |
+| `상담사 연결`   | 상담원에게 연결합니다                                                                                  | 없음               |
+| `카카오싱크 가입` | 카카오 로그인으로 추가 정보를 받습니다                                                                        | `연동 완료 후 이동`할 곳  |
 
-고를 수 있는 동작은 블럭을 쓰는 위치에 따라 다릅니다. `내부 이동`은 플로우 안에서만 나옵니다. 필요한 값을 넣지 않은 버튼에는 "URL 미설정", "전화번호 미설정", "플로우 미선택" 같은 경고가 표시됩니다. 저장하기 전에 경고가 남은 버튼이 없는지 확인하세요.
+고를 수 있는 동작은 블럭을 쓰는 위치에 따라 다릅니다.
+
+| 쓰는 곳                             | 카드 버튼 동작                                                                     | 퀵 리플라이 동작                     |
+| -------------------------------- | ---------------------------------------------------------------------------- | ----------------------------- |
+| `시나리오` 탭의 시나리오 (`AI 답변 시나리오` 제외) | `메시지 전송`, `플로우 이동`, `웹 링크`, `전화 걸기`, `채널 추가`, `상담사 연결`, `카카오싱크 가입`           | `메시지 전송`, `플로우 이동`            |
+| `AI 답변 시나리오`                     | 위 동작에 `시작 시나리오`를 더한 것                                                        | `메시지 전송`, `플로우 이동`, `시작 시나리오` |
+| 플로우 안의 시나리오                      | `시작 시나리오`, `내부 이동`, `플로우 이동`, `웹 링크`, `전화 걸기`, `채널 추가`, `상담사 연결`, `카카오싱크 가입` | `내부 이동`, `플로우 이동`, `시작 시나리오`  |
+
+필요한 값을 넣지 않은 버튼에는 "URL 미설정", "전화번호 미설정", "플로우 미선택" 같은 경고가 표시됩니다. 저장하기 전에 경고가 남은 버튼이 없는지 확인하세요.
 
 > **콜봇의 상담사 연결과는 다릅니다**
 >
-> 여기의 `상담사 연결`은 채팅 상담을 사람에게 넘기는 버튼입니다. 전화를 상담사에게 넘기는 설정은 콜봇의 [도구](https://certi.life/docs/guide/studio/screens/callbot/tools)에 있습니다. 버튼 없이 특정 채널을 처음부터 사람이 받게 하려면 [채널 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기)의 `상담원 바로 연결`을 켭니다. 챗봇이 쉬는 시간의 안내는 [작동시간](https://certi.life/docs/guide/studio/screens/chatbot/settings/operating-hours)의 `미작동 시나리오`에서 정합니다.
+> 여기의 `상담사 연결`은 채팅 상담을 상담원에게 넘기는 버튼입니다. 전화를 상담원에게 넘기는 방법은 콜봇의 [도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)에 있습니다. 버튼 없이 특정 채널을 처음부터 사람이 받게 하려면 [채널 설정](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#챗봇-없이-바로-상담원에게-연결하기)의 `상담원 바로 연결`을 켭니다. 챗봇이 쉬는 시간의 안내는 [작동시간](https://certi.life/docs/guide/studio/screens/chatbot/settings/operating-hours)의 `미작동 시나리오`에서 정합니다.
 
 #### 퀵 리플라이 달기
 
@@ -6244,7 +6534,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 
 **위치:** 블럭 디자이너 > 퀵 리플라이 > 추가
 
-퀵 리플라이는 메시지 아래에 가로로 나오는 선택지입니다. 최대 10개까지 달 수 있습니다. 동작은 `메시지 전송`과 `플로우 이동`이 기본이고, 플로우 안에서는 `내부 이동`과 `시작 시나리오`도 고를 수 있습니다.
+퀵 리플라이는 메시지 아래에 가로로 나오는 선택지입니다. 메시지 하나에 최대 10개까지 달 수 있고, 제목 옆에 `(최대 10개)`로 표시됩니다. 쓰는 곳마다 고를 수 있는 동작은 위 [버튼 동작 정하기](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)의 표에 있습니다. 플로우 안의 퀵 리플라이에는 `메시지 전송`이 없습니다. `상담사 연결`은 퀵 리플라이에서 고를 수 없고 카드 버튼에서만 고릅니다.
 
 "예약하기", "위치 보기"처럼 고객이 바로 고를 짧은 선택지는 퀵 리플라이가 어울리고, 홈페이지 열기나 전화 걸기처럼 카드 내용에 딸린 동작은 버튼이 어울립니다.
 
@@ -6308,7 +6598,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 
 1. 왼쪽 `플로우` 제목 옆의 더하기(+) 버튼을 누릅니다.
 2. `새 플로우 만들기` 창에서 `플로우 이름`(필수), `설명`, `태그`를 입력하고 확인합니다.
-3. 목록에 생긴 플로우를 누르면 가운데에 빈 흐름도가 열립니다.
+3. 목록에 생긴 플로우를 누르면 가운데에 흐름도가 열립니다. 새 플로우에는 `시작 시나리오`라는 시나리오 하나가 시작점에 연결되어 있습니다.
 
 #### 시나리오를 추가하고 연결하기
 
@@ -6319,7 +6609,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 1. 흐름도 위쪽의 `시나리오 추가`를 누르고 `새 시나리오 추가` 창에서 `시나리오 이름`을 입력합니다.
 2. 흐름도에 생긴 시나리오를 누르면 편집 패널이 열립니다. 메시지 블럭과 버튼은 [시나리오 탭](https://certi.life/docs/guide/studio/screens/chatbot/scenarios#첫-인사-메시지-바꾸기)과 같은 방식으로 만듭니다.
 3. 시나리오의 버튼에서 다음 시나리오로 선을 끌어 연결합니다. 고객이 그 버튼을 누르면 연결된 시나리오로 넘어갑니다.
-4. **시작점에서 첫 시나리오로 선을 끌어 연결합니다.** 이렇게 연결된 시나리오가 이 플로우의 `시작 시나리오`가 됩니다. 플로우의 `시작 시나리오`는 고객이 이 플로우에 들어왔을 때 처음 보는 시나리오입니다. [시나리오 탭](https://certi.life/docs/guide/studio/screens/chatbot/scenarios)의 `시작 시나리오` 태그(챗봇 첫 인사)와는 다른 것입니다. 시작점을 연결하지 않고 저장했을 때 플로우가 어떻게 동작하는지는 확인되지 않았으므로, 저장 전에 시작점 연결을 확인하세요.
+4. **시작점에 연결된 시나리오가 이 플로우의 `시작 시나리오`입니다.** 고객이 이 플로우에 들어왔을 때 처음 보는 시나리오입니다. 다른 시나리오로 바꾸려면 시작점에서 그 시나리오로 선을 끌어 연결합니다. "시작 시나리오가 설정되었습니다."가 나오고, `저장`을 눌러야 적용됩니다. 시작점과 지금의 시작 시나리오는 삭제할 수 없습니다. 플로우의 `시작 시나리오`는 [시나리오 탭](https://certi.life/docs/guide/studio/screens/chatbot/scenarios)의 `시작 시나리오` 태그(챗봇 첫 인사)와 다른 것입니다.
 5. 연결을 지우려면 연결선을 누르고 `연결 삭제`를 고릅니다.
 6. 왼쪽 아래 `저장`을 누릅니다.
 
@@ -6340,7 +6630,9 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 - `기본 정보`: `플로우 이름`, `설명`을 바꾸고 `활성화 상태`로 플로우를 켜거나 끕니다. 목록에는 `활성` 또는 `비활성`으로 표시됩니다.
 - `태그 관리`: 플로우를 구분하는 태그를 추가합니다. 한 개에 10자까지, Enter로 추가합니다.
 
-만들고 있는 플로우는 `비활성`으로 두었다가 시험이 끝난 뒤 켜는 것이 안전합니다.
+`활성화 상태`도 `저장`을 눌러야 적용됩니다. `비활성` 플로우는 고객이 자유롭게 질문했을 때 챗봇이 찾는 대상(태그, `AI 참조`)에서 빠집니다. 하지만 다른 시나리오의 `플로우 이동` 버튼이 이 플로우를 가리키면 `비활성`이어도 고객이 그 버튼으로 들어올 수 있습니다.
+
+만들고 있는 플로우는 `비활성`으로 두고, 어느 버튼도 이 플로우를 가리키지 않게 둡니다. 메시지 모양은 편집 패널의 `미리보기`로 확인합니다. 버튼을 눌러 따라가는 흐름은 플로우를 켠 뒤 [`웹채팅 URL`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#홈페이지에-채팅-버튼-달기)로 시험합니다. 이 대화는 실제 상담으로 기록되고 통계에도 집계됩니다.
 
 #### AI가 플로우를 참조하게 하기
 
@@ -6407,7 +6699,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 | 유형           | 뜻                                              | 대응                                                                                                           |
 | ------------ | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | `답변 부적절/비응답` | 답을 하긴 했지만 질문에 맞지 않거나 답을 피한 경우. AI 판정 기반 추정치입니다 | `실패 발화`에서 보강 답변을 넣습니다                                                                                        |
-| `시스템 오류`     | 기술적인 문제로 답을 만들지 못한 경우                          | 반복되면 CertiLife 담당자에게 문의합니다                                                                                   |
+| `시스템 오류`     | 기술적인 문제로 답을 만들지 못한 경우                          | 반복되면 CertiLife 고객센터(1800-8984)에 문의합니다                                                                        |
 | `학습자료 미연결`   | 챗봇에 학습자료가 없어 답하지 못한 경우                         | [`AI 학습자료 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials)에서 자료를 연결합니다 |
 
 유형 카드를 누르면 그 유형만 걸러진 `실패 발화` 목록으로 바로 이동합니다.
@@ -6432,7 +6724,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 >
 > 보강 답변은 이후 비슷한 질문에 그대로 쓰입니다. 특정 고객에게만 해당하는 내용이나 개인정보를 넣지 말고, 누구에게나 안내해도 되는 공개 정보로 작성하세요. 의료진의 판단이 필요한 질문은 답을 넣기보다 상담원 연결로 안내하는 편이 안전합니다.
 
-실패 발화는 이 기능이 켜진 이후의 대화부터 수집됩니다. 목록이 비어 있다면 아직 수집된 실패가 없는 것입니다.
+목록이 비어 있으면 "수집된 실패 발화가 없습니다. 실패 발화는 기능 활성화 이후부터 수집됩니다"가 표시됩니다. 아직 수집된 실패가 없다는 뜻입니다. 같은 자리에 "수집 이력이 없거나 의미 판정이 꺼져 있을 수 있습니다"가 나오기도 합니다. 실패 발화 수집과 의미 판정을 켜고 끄는 설정은 Studio에 없습니다. 예전 대화의 실패 발화가 필요하면 CertiLife 고객센터(1800-8984)에 문의하세요. 수집된 실패 발화는 1년이 지나면 자동으로 지워집니다.
 
 #### 질문과 답을 직접 등록하고 시험하기
 
@@ -6444,7 +6736,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 
 1. `새 Q&A 직접 등록`에서 `질문`(최대 500자)과 `답변`(최대 5,000자)을 입력합니다.
 2. `Q&A 등록`을 누르면 학습자료에 바로 추가됩니다.
-3. `챗봇에 테스트 질문`에 같은 질문을 넣고 `전송`을 눌러 챗봇이 실제로 그렇게 답하는지 확인합니다. 이 테스트는 통계에 집계되지 않습니다.
+3. [`채널 설정`의 `웹채팅 URL`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#홈페이지에-채팅-버튼-달기)로 같은 질문을 보내 챗봇이 실제로 그렇게 답하는지 확인합니다. 이 대화는 실제 상담으로 기록되고 통계에도 집계됩니다.
 
 `보강 학습 성과`에는 지금까지 보강한 질문과 해결 건수가 쌓이고, `보강 파일 보기`로 보강 내용 전체를 확인할 수 있습니다. 보강 내용은 [`AI 학습자료 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/training-materials)의 파일 목록에 `보강 Q&A · 자동 관리`라는 파일로 나타나며, 그 화면에서는 직접 삭제할 수 없고 이 화면에서 관리합니다.
 
@@ -6499,9 +6791,16 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 - **`저장`을 눌러야 적용되는 항목:** `기본 정보`, `AI 설정`, `작동시간`, `채널 설정`, `채팅창 설정`. 내용을 바꾼 뒤 왼쪽 아래 `저장`을 누릅니다.
 - **바꾸는 즉시 적용되는 항목:** `도구`, `매뉴얼`, `AI 학습자료 설정`, `챗봇 삭제`. 이 화면들에서는 `저장` 버튼이 비활성화되어 있습니다.
 
-`AI 설정` 안에서도 `응답 버전`은 예외로, 선택하는 즉시 적용됩니다.
+`저장`을 눌러야 하는 화면에도 바로 적용되는 버튼이 있습니다.
 
-저장하지 않은 채 다른 항목이나 다른 탭으로 이동하려 하면 `저장하지 않은 변경사항이 있습니다` 창이 뜹니다. 버튼은 `취소`와 `이동`입니다. `이동`을 누르면 바꾼 내용이 사라지니, 남기려면 `취소`를 누르고 먼저 저장하세요. 챗봇 상세 화면을 아예 떠나려 할 때는 버튼이 `취소`와 `나가기`인 창이 뜹니다. 창마다 다른 문구는 아래 [문제가 생기면](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#문제가-생기면)에 정리했습니다.
+| 화면      | `저장` 없이 바로 적용되는 것                                                                                                                                                                   |
+| ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `AI 설정` | `응답 버전` 선택, `이 버전 사용하기`, `저장하고 바로 활용하기`를 체크하고 누른 `수정사항 저장하기`. 자세한 내용은 [AI 설정의 저장과 적용 시점](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#저장과-적용-시점)에 있습니다 |
+| `채널 설정` | 네이버 톡톡의 `연결하기`와 `연결 해제`, Instagram·LINE·WhatsApp의 `연동 채널` 선택                                                                                                                        |
+
+`저장`하거나 바로 적용된 내용은 연결된 모든 채널의 고객 대화에 곧바로 쓰입니다. 공개 전에 검토하거나 배포하는 단계는 따로 없습니다. 운영 중인 챗봇을 크게 고칠 때는 [공개 전에 시험하기](https://certi.life/docs/guide/studio/screens/chatbot/overview#공개-전에-시험하기)의 도구로 먼저 확인하세요.
+
+저장하지 않은 채 다른 항목이나 다른 탭으로 이동하려 하면 `저장하지 않은 변경사항이 있습니다` 창이 뜹니다. 창마다 다른 문구와 버튼은 아래 [`저장하지 않은 변경사항이 있습니다`](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#저장하지-않은-변경사항이-있습니다)에 정리했습니다.
 
 > **v2 beta 표시**
 >
@@ -6513,7 +6812,9 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 
 ##### `저장하지 않은 변경사항이 있습니다`
 
-`저장`을 누르지 않은 설정이 있는 채로 다른 곳으로 가려 했다는 뜻입니다. 창의 제목은 모두 같습니다. 어디로 가려 했는지에 따라 안내 문구와 버튼이 다릅니다.
+`저장`을 누르지 않은 내용이 있는 채로 다른 곳으로 가려 했다는 뜻입니다. 이 창은 `설정` 탭뿐 아니라 `시나리오`, `플로우` 탭에서도 뜹니다. 창의 제목은 모두 같습니다. 어디로 가려 했는지에 따라 안내 문구와 버튼이 다릅니다.
+
+`설정` 탭에서는 아래 문구가 나옵니다.
 
 | 하려던 일                                              | 창의 안내 문구                                     | 버튼          |
 | -------------------------------------------------- | -------------------------------------------- | ----------- |
@@ -6522,11 +6823,20 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 | `AI 답변 시나리오로 이동`, `미작동 시나리오로 이동`처럼 시나리오로 가는 버튼을 누름 | "설정의 변경사항이 저장되지 않았습니다. 시나리오 탭으로 이동하시겠습니까?"   | `취소`, `이동`  |
 | Studio 왼쪽 메뉴를 누르는 등 챗봇 상세 화면을 떠남                   | "설정 탭의 변경사항이 저장되지 않았습니다. 페이지를 떠나시겠습니까?"      | `취소`, `나가기` |
 
+`시나리오`, `플로우` 탭에서는 하려던 일에 따라 버튼이 다릅니다.
+
+| 하려던 일                                       | 버튼          |
+| ------------------------------------------- | ----------- |
+| 다른 탭, 다른 플로우나 시나리오로 옮기기                     | `취소`, `이동`  |
+| Studio 왼쪽 메뉴를 누르는 등 챗봇 상세 화면을 떠나기           | `취소`, `나가기` |
+| `플로우 설정`, `시나리오 설정`, `태그 관리` 서랍을 저장하지 않고 닫기 | `취소`, `닫기`  |
+| 서랍을 연 채 다른 플로우나 시나리오의 설정으로 바꾸기              | `취소`, `전환`  |
+
 1. 바꾼 내용을 남기려면 `취소`를 누릅니다. 창이 닫히고 지금 화면에 그대로 머뭅니다.
 2. 왼쪽 아래 `저장`을 누릅니다.
 3. 가려던 곳으로 다시 이동합니다.
 
-`이동`이나 `나가기`를 누르면 바꾼 내용이 사라지고, 설정은 마지막으로 저장한 상태로 돌아갑니다. 새로고침하거나 브라우저 탭을 닫을 때는 이 창 대신 브라우저가 직접 떠날지 묻습니다. 그 창의 문구와 버튼은 브라우저가 정하므로 브라우저마다 다릅니다.
+`이동`, `나가기`, `닫기`, `전환`을 누르면 바꾼 내용이 사라지고, 마지막으로 저장한 상태로 돌아갑니다. 새로고침하거나 브라우저 탭을 닫을 때는 이 창 대신 브라우저가 직접 떠날지 묻습니다. 그 창의 문구와 버튼은 브라우저가 정하므로 브라우저마다 다릅니다.
 
 ---
 
@@ -6592,7 +6902,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 1. `챗봇 이름` 칸이 비어 있지 않은지 확인하고, 비어 있으면 이름을 적습니다.
 2. 왼쪽 아래 `저장`을 다시 누릅니다.
 
-그래도 안 되면 다른 설정 메뉴로 이동하지 말고 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다. 저장하지 않고 다른 설정으로 이동하면 "저장하지 않은 변경사항이 있습니다" 창이 뜨고, `이동`을 누르면 고친 내용이 사라집니다.
+그래도 안 되면 다른 설정 메뉴로 이동하지 말고 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다. 저장하지 않고 이동하면 고친 내용이 사라질 수 있습니다. 이동할 때 뜨는 확인 창은 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#저장하지-않은-변경사항이-있습니다)를 참고하세요.
 
 ##### `이미지 크기는 5MB 이하여야 합니다`
 
@@ -6628,7 +6938,25 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 | 도구·매뉴얼을 쓰려고 v2로 바꾸고 싶어요   | [응답 버전 바꾸기](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#응답-버전-바꾸기)                         |
 | 외국인 고객 응대 방식을 정하고 싶어요     | [외국어로 문의한 고객 응대하기](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#외국어로-문의한-고객-응대하기)           |
 
-`응답 버전`만 선택 즉시 적용되고, 나머지는 왼쪽 아래 `저장`을 눌러야 적용됩니다.
+바꾼 내용이 고객 답변에 쓰이는 시점은 항목마다 다릅니다. 아래 [저장과 적용 시점](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#저장과-적용-시점)을 먼저 확인하세요.
+
+#### 저장과 적용 시점
+
+출처: https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#저장과-적용-시점
+
+**위치:** 챗봇 > 설정 > AI 설정
+
+| 한 일                                                                                                                                    | 고객 답변에 쓰이는 시점                                     |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| `응답 버전`에서 `v1` 또는 `v2`를 누름                                                                                                             | 누르는 즉시. v2로 처음 바꿀 때 `동기화 후 v2로 전환`을 고르면 동기화가 끝난 뒤 |
+| `커스텀 페르소나 설정`에서 `저장하고 바로 활용하기`를 체크하고 `수정사항 저장하기`를 누름                                                                                   | 누르는 즉시                                            |
+| `커스텀 페르소나 설정`에서 `이 버전 사용하기`를 누름                                                                                                        | 누르는 즉시                                            |
+| `커스텀 페르소나 설정`에서 `저장하고 바로 활용하기`를 끈 채 `수정사항 저장하기`를 누름                                                                                    | 쓰이지 않습니다. 새 버전으로 기록만 됩니다                          |
+| 그 밖의 항목을 바꿈 (`커스텀`이 아닌 페르소나 카드, `AI 응답 타이틀`, `플로우 선택 안내 메시지`, `학습자료로만 답변하기`, `AI 답변 시나리오 사용하기`, `이미지·미디어 답변`, `챗봇 기본 언어`, `다국어 응대 방식`) | 왼쪽 아래 `저장`을 누른 때                                  |
+
+> **바로 적용하면 다른 항목도 함께 저장됩니다**
+>
+> `이 버전 사용하기`를 누르거나 `저장하고 바로 활용하기`를 체크하고 저장하면, 이 화면에서 바꾸고 아직 `저장`하지 않은 다른 항목도 그 순간 함께 저장됩니다. 다른 항목을 고치던 중이라면 먼저 `저장`하거나 되돌린 뒤 프롬프트를 적용하세요.
 
 #### 준비된 페르소나 고르기
 
@@ -6638,14 +6966,12 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
 
 `페르소나` 카드 중 하나를 누르고 `저장`하면 챗봇의 대화 스타일이 바뀝니다. 지금 적용된 카드에는 `사용중` 표시가 붙습니다.
 
-| 페르소나           | 성격                 | 이런 응대에 맞습니다           | 화면 표시           |
-| -------------- | ------------------ | --------------------- | --------------- |
-| `의료 전문 상담 매니저` | 정중하고 정보 중심, 실무적    | 빠르고 정확한 진료 정보를 원하는 고객 | 선택 가능           |
-| `의사 어시스턴트형`    | 객관적이고 근거 중심        | 의학적 근거와 임상 정보가 필요한 고객 | `준비중` 배지, 선택 불가 |
-| `AI 의료 큐레이터형`  | 중립적이고 분석적, 추천 중심   | 여러 옵션을 비교해 추천받고 싶은 고객 | `준비중` 배지, 선택 불가 |
-| `커스텀`          | 직접 작성한 시스템 프롬프트 사용 | 우리 조직만의 응대 방식이 필요한 경우 | 선택 가능           |
+| 페르소나           | 성격                 | 이런 응대에 맞습니다           |
+| -------------- | ------------------ | --------------------- |
+| `의료 전문 상담 매니저` | 정중하고 정보 중심, 실무적    | 빠르고 정확한 진료 정보를 원하는 고객 |
+| `커스텀`          | 직접 작성한 시스템 프롬프트 사용 | 우리 조직만의 응대 방식이 필요한 경우 |
 
-`준비중` 배지가 붙은 카드는 아직 고를 수 없습니다. 지금 고를 수 있는 것은 `의료 전문 상담 매니저`와 `커스텀` 두 가지입니다. 카드에 마우스를 올리면 대상 고객과 예시 문장을 볼 수 있습니다. 어느 것을 골라야 할지 모르겠다면 `의료 전문 상담 매니저`로 시작해 실제 답변을 본 뒤 바꾸세요.
+`의사 어시스턴트형`과 `AI 의료 큐레이터형` 카드에는 `준비중` 배지가 붙어 있어 고를 수 없습니다. 카드에 마우스를 올리면 대상 고객과 예시 문장을 볼 수 있습니다. 어느 것을 골라야 할지 모르겠다면 `의료 전문 상담 매니저`로 시작해 실제 답변을 본 뒤 바꾸세요.
 
 #### 프롬프트를 직접 써서 챗봇 성격 정하기
 
@@ -6659,7 +6985,7 @@ AI 오류, 학습자료 미등록, 발송 거절 등으로 챗봇이 답변을 �
    - `자율형`: 작성한 프롬프트만 기준으로 응답합니다.
    - `병원 최적화`: 병원 안내 전용 안전 규칙을 함께 적용합니다. 병원 상담용이라면 이쪽이 안전합니다.
 2. `시스템 프롬프트`에 역할, 말투, 하면 안 되는 것을 적습니다. 제목 옆 전구 아이콘(`작성 팁`)을 누르면 작성 요령을 볼 수 있습니다.
-3. **`이 내용으로 대화해보기`를 눌러 먼저 시험합니다.** 오른쪽에 `이 프롬프트로 대화해보기` 창이 열리고, 고객처럼 질문을 보내 답변을 확인할 수 있습니다. 저장하지 않은 내용으로 답하며, 이 대화는 상담 기록과 통계에 남지 않습니다.
+3. **`이 내용으로 대화해보기`를 눌러 먼저 시험합니다.** 오른쪽에 `이 프롬프트로 대화해보기` 창이 열리고, 고객처럼 질문을 보내 답변을 확인할 수 있습니다. 저장하지 않은 내용으로 답하며, 이 대화는 상담 기록과 통계에 남지 않습니다. 시스템 프롬프트와 `기본 페르소나` 외의 설정은 저장된 값으로 답합니다.
 4. 마음에 들면 `변경 메모 (선택)`에 무엇을 바꿨는지 적고 `수정사항 저장하기`를 누릅니다.
 
 > **저장과 적용은 다릅니다**
@@ -6747,7 +7073,7 @@ AI가 만든 답변을 그대로 글로만 내보내지 않고 카드나 버튼�
 
 **위치:** 챗봇 > 설정 > AI 설정 > 다국어 응대 방식
 
-먼저 `챗봇 기본 언어`를 고릅니다. 챗봇의 AI 답변, 시나리오, 학습자료가 이 언어로 운영된다고 간주합니다. 페르소나와 시스템 프롬프트, 학습자료의 언어를 하나로 통일해야 챗봇이 일관된 언어로 답합니다. 목록의 언어 이름은 `한국어 (Korean)`, `中文 (Chinese)`, `日本語 (Japanese)`처럼 표시됩니다. 이 목록은 상담 번역이 지원하는 8개 언어 목록과 다르고, 중국어를 간체와 번체로 나누지 않습니다. 전체 선택지는 화면에서 확인하세요.
+먼저 `챗봇 기본 언어`를 고릅니다. 챗봇의 AI 답변, 시나리오, 학습자료가 이 언어로 운영된다고 간주합니다. 페르소나와 시스템 프롬프트, 학습자료의 언어를 하나로 통일해야 챗봇이 일관된 언어로 답합니다. 고를 수 있는 언어는 `한국어 (Korean)`, `English`, `中文 (Chinese)`, `日本語 (Japanese)`, `Español`, `Tiếng Việt`, `Français`, `Deutsch`, `Русский`, `Português` 10개입니다. 이 목록은 상담 번역이 지원하는 8개 언어 목록과 다르고, 중국어를 간체와 번체로 나누지 않습니다.
 
 그다음 `다국어 응대 방식`에서 고객이 다른 언어로 말했을 때의 대응을 고릅니다.
 
@@ -6776,7 +7102,7 @@ AI가 만든 답변을 그대로 글로만 내보내지 않고 카드나 버튼�
 3. `실패 항목 다시 시도`(또는 `정리 다시 시도`)가 보이면 누릅니다.
 4. 펼친 영역 아래의 `상태 다시 확인`을 눌러 결과를 다시 읽습니다.
 
-그래도 `확인 필요`가 남으면 화면의 `문의 시 작업 번호:` 뒤의 번호와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 `확인 필요`가 남으면 화면의 `문의 시 작업 번호:` 뒤의 번호와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `지식관리에서 수정한 문서인데 원본 파일도 바뀌었습니다. 어느 쪽을 사용할지 선택해 주세요.`
 
@@ -6787,7 +7113,7 @@ AI가 만든 답변을 그대로 글로만 내보내지 않고 카드나 버튼�
 
 ##### `정리하지 못한 항목 N개 · 학습자료 연결은 완료됐습니다`
 
-v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 일부 항목만 남았다는 뜻입니다. 챗봇 답변에는 영향이 없습니다. `정리 다시 시도`를 누르고, 같은 항목이 계속 남으면 작업 번호를 적어 조직의 CertiLife 담당자에게 알립니다.
+v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 일부 항목만 남았다는 뜻입니다. 챗봇 답변에는 영향이 없습니다. `정리 다시 시도`를 누르고, 같은 항목이 계속 남으면 작업 번호를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `응답 버전을 확인하지 못했습니다. 다시 확인해 주세요.`
 
@@ -6796,7 +7122,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 1. 펼친 영역 아래의 `상태 다시 확인`을 누릅니다.
 2. 그래도 같으면 브라우저를 새로고침합니다.
 
-"처리 결과를 확인하지 못했습니다. 상태를 다시 확인해 주세요. 이미 처리된 작업은 서버에 보존됩니다."가 나올 때도 같은 순서로 확인합니다. "학습자료를 동기화할 권한이 없습니다. 관리자에게 문의해 주세요."나 "동기화를 시작할 수 없습니다. 데이터 저장 환경 확인이 필요합니다. 관리자에게 문의해 주세요."가 나오면 다시 눌러도 달라지지 않으므로, 화면의 문구를 적어 조직의 CertiLife 담당자에게 알립니다.
+"처리 결과를 확인하지 못했습니다. 상태를 다시 확인해 주세요. 이미 처리된 작업은 서버에 보존됩니다."가 나올 때도 같은 순서로 확인합니다. "학습자료를 동기화할 권한이 없습니다. 관리자에게 문의해 주세요."나 "동기화를 시작할 수 없습니다. 데이터 저장 환경 확인이 필요합니다. 관리자에게 문의해 주세요."가 나오면 다시 눌러도 달라지지 않으므로, 화면의 문구를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `응답 버전` 줄의 표시
 
@@ -6808,7 +7134,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 | `동기화 이어서 진행`               | 멈춘 동기화가 있습니다. 펼쳐서 `이어서 진행`을 누릅니다                                                                         |
 | `확인 필요`                    | 위의 [`확인 필요`](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#확인-필요) 순서대로 확인합니다 |
 
-`응답 버전`을 뺀 나머지 항목은 왼쪽 아래 `저장`을 눌러야 적용됩니다. 저장하지 않고 다른 설정으로 이동하면 바꾼 내용이 사라지며, 저장 방식은 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#저장은-이렇게-됩니다)에 정리되어 있습니다.
+항목별 적용 시점은 위 [저장과 적용 시점](https://certi.life/docs/guide/studio/screens/chatbot/settings/ai-settings#저장과-적용-시점)에 있습니다. 저장하지 않고 이동할 때 뜨는 확인 창은 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#저장하지-않은-변경사항이-있습니다)를 참고하세요.
 
 ---
 
@@ -6818,7 +7144,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 
 > Studio 챗봇 설정의 도구에서 대화 정보 추출, 병원 진료시간 활용, 컴플레인 대응, 알림톡 보내기, 브랜드메시지 보내기를 추가하는 방법과 챗봇 메뉴의 도구 목록에서 API 도구를 만드는 방법을 목적별로 안내합니다.
 
-기본 챗봇은 질문에 답만 합니다. `도구`를 추가하면 챗봇이 **답변 이상의 일**을 합니다. 대화에서 고객 이름과 연락 희망 시간을 챙기고, 화가 난 고객을 감지해 상담사에게 알리고, 담당자에게 알림톡을 보내는 식입니다. 도구를 쓰는 방법은 두 가지입니다. 바로 쓸 수 있는 `기본 제공` 도구를 추가하거나, 우리 조직의 시스템과 연결하는 API 도구를 직접 만듭니다.
+기본 챗봇은 질문에 답만 합니다. `도구`를 추가하면 챗봇이 **답변 이상의 일**을 합니다. 대화에서 고객 이름과 연락 희망 시간을 챙기고, 화가 난 고객을 감지해 상담원에게 알리고, 병원 담당자에게 알림톡을 보내는 식입니다. 도구를 쓰는 방법은 두 가지입니다. 바로 쓸 수 있는 `기본 제공` 도구를 추가하거나, 우리 조직의 시스템과 연결하는 API 도구를 직접 만듭니다.
 
 **위치:** 챗봇 > (챗봇 선택) > 설정 > 도구
 
@@ -6834,7 +7160,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 | ----------------------- | --------------------------------------------------- |
 | `대화 정보 추출`              | 챗봇이 대화하면서 고객 이름, 관심 시술, 연락 희망 시간 같은 정보를 챙기게 하고 싶을 때 |
 | `병원 진료시간 활용`            | 진료시간 질문에 조직 설정에 등록한 최신 진료시간으로 답하게 하고 싶을 때           |
-| `컴플레인 대응`               | 화가 난 고객을 챗봇이 붙잡고 있지 않고 상담사에게 바로 알리고 싶을 때            |
+| `컴플레인 대응`               | 화가 난 고객을 챗봇이 붙잡고 있지 않고 상담원에게 바로 알리고 싶을 때            |
 | `알림톡 보내기`, `브랜드메시지 보내기` | 대화 중 특정 상황이 되면 병원 담당자에게 메시지를 자동으로 보내고 싶을 때          |
 | API 도구                  | 예약 조회처럼 우리 조직의 시스템을 챗봇이 직접 호출하게 하고 싶을 때             |
 
@@ -6858,7 +7184,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 
 **위치:** 챗봇 > 설정 > 도구 > 대화 정보 추출
 
-상담사가 나중에 연락하려면 이름이나 연락 가능한 시간이 필요합니다. `대화 정보 추출`을 추가하면 챗봇이 대화 중에 자연스럽게 물어 정보를 모읍니다.
+상담원이 나중에 연락하려면 이름이나 연락 가능한 시간이 필요합니다. `대화 정보 추출`을 추가하면 챗봇이 대화 중에 자연스럽게 물어 정보를 모읍니다.
 
 1. `대화 정보 추출`을 추가하고 `필드 추가`를 누릅니다.
 2. `추출할 정보 추가` 창에서 `필드 이름`(예: 이름, 연락받을 시간)을 적습니다.
@@ -6887,11 +7213,11 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 
 **위치:** 챗봇 > 설정 > 도구 > 컴플레인 대응
 
-`컴플레인 대응`을 추가하면 챗봇이 고객의 직전 메시지를 대화 흐름과 함께 보고 감정을 판단합니다. '매우 부정'(격앙, 욕설, "됐어요 그만" 같은 체념)으로 판단되거나 고객이 명시적으로 항의하면, 챗봇은 감정에 맞대응하지 않고 최소한의 정보만 받은 뒤 상담사 연결을 안내합니다. 동시에 상담사 화면에 "컴플레인이 감지되었어요" 알림이 뜹니다.
+`컴플레인 대응`을 추가하면 챗봇이 고객의 직전 메시지를 대화 흐름과 함께 보고 감정을 판단합니다. '매우 부정'(격앙, 욕설, "됐어요 그만" 같은 체념)으로 판단되거나 고객이 명시적으로 항의하면, 챗봇은 감정에 맞대응하지 않고 최소한의 정보만 받은 뒤 상담원 연결을 안내합니다. 동시에 상담원 화면에 "컴플레인이 감지되었어요" 알림이 뜹니다.
 
 알아 둘 점은 두 가지입니다.
 
-- 챗봇은 **알림만** 띄웁니다. 상담 대기열에 넣거나 상담원을 배정하지는 않으므로, 상담사가 알림을 보고 직접 방을 열어야 합니다.
+- 챗봇은 **알림만** 띄웁니다. 상담 대기열에 넣거나 상담원을 배정하지는 않습니다. 그래서 상담원이 알림을 보고 직접 상담방을 열어야 합니다.
 - 제3자나 과거 경험에 대한 불만, 단순한 실망은 해당하지 않습니다.
 
 판단 결과는 [상담 내역](https://certi.life/docs/guide/studio/screens/conversation-history)의 챗봇 답변 위에 "고객 감정" 태그로 남습니다.
@@ -6902,7 +7228,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 
 **위치:** 챗봇 > 설정 > 도구 > 알림톡 보내기 (`브랜드메시지 보내기`도 같은 구성입니다)
 
-"고객이 상담사 연락을 남기고 싶다고 하면 담당자에게 알림톡을 보낸다"처럼, 상황과 메시지를 묶은 것을 **발송 슬롯**이라고 합니다. 슬롯 하나가 챗봇의 도구 하나가 됩니다.
+"고객이 상담원 연락을 남기고 싶다고 하면 병원 담당자에게 알림톡을 보낸다"처럼, 상황과 메시지를 묶은 것을 **발송 슬롯**이라고 합니다. 슬롯 하나가 챗봇의 도구 하나가 됩니다.
 
 1. `알림톡 보내기`를 추가하고 `슬롯 추가`를 누릅니다.
 2. `이름`을 적고, `언제 보낼지 (챗봇에게 설명)`에 발송 상황을 문장으로 적습니다.
@@ -6914,6 +7240,8 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 > **실행 전 고객에게 동의 받기는 언제 켜나요?**
 >
 > 이 도구는 `담당자 수신 번호`에 적은 병원 담당자 번호로만 보내고, 고객에게는 보내지 않습니다. 켜면 챗봇이 보내기 전에 고객에게 확인을 받습니다. 고객 이름이나 연락처를 담당자에게 넘기는 발송이라면 켜고, 고객 정보가 들어가지 않는 내부 알림이라면 꺼도 됩니다. 슬롯은 챗봇당 10개까지 만들 수 있고, 같은 대화에서는 슬롯당 한 번만 발송됩니다. 고객 여러 명에게 이벤트 안내를 보내는 일은 이 도구가 아니라 [CRM 캠페인](https://certi.life/docs/guide/studio/screens/crm/overview)에서 합니다.
+
+콜봇의 알림톡 도구는 받는 사람이 다릅니다. 콜봇은 기본으로 전화를 건 고객에게 보내고, `추가 수신자`를 넣으면 담당자에게도 보냅니다. 자세한 내용은 [콜봇 도구](https://certi.life/docs/guide/studio/screens/callbot/tools#통화-중에-알림톡이나-브랜드메시지-보내게-하기)에 있습니다.
 
 발송 전 점검 항목은 [CRM 메시지 발송 전 체크리스트](https://certi.life/docs/guide/products/crm-messaging/message-checklist)를 참고하세요.
 
@@ -7013,7 +7341,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 2. `연결`을 누르고 목록에서 매뉴얼을 고릅니다. 아직 만든 매뉴얼이 없다면 `매뉴얼 관리`를 눌러 작성 화면으로 이동합니다.
 3. 빼려면 매뉴얼 옆의 `해제`를 누릅니다.
 
-연결과 해제는 **바로 저장**되므로 왼쪽 아래 `저장`을 누르지 않습니다. 챗봇 하나에 연결할 수 있는 매뉴얼 개수에는 상한이 있으며, 도달하면 화면에 안내가 표시됩니다. `찾을 수 없는 매뉴얼`로 표시되는 항목은 삭제된 매뉴얼일 수 있으니 해제해 주세요.
+연결과 해제는 **바로 저장**되므로 왼쪽 아래 `저장`을 누르지 않습니다. 챗봇 하나에는 매뉴얼을 20개까지 연결할 수 있습니다. 20개가 되면 "챗봇 하나에 연결할 수 있는 매뉴얼은 최대 20개입니다."가 표시됩니다. `찾을 수 없는 매뉴얼`로 표시되는 항목은 삭제된 매뉴얼일 수 있으니 해제해 주세요.
 
 #### 권장 운영법
 
@@ -7022,7 +7350,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 - 매뉴얼 하나에는 상황 하나만 담습니다. 여러 상황을 한 매뉴얼에 넣으면 트리거가 모호해집니다.
 - 본문은 "1. 먼저 ○○를 확인한다 2. ○○이면 상담원 연결을 안내한다"처럼 순서가 보이게 씁니다.
 - 의료진의 판단이 필요한 상황의 매뉴얼은 챗봇이 판단하지 않고 사람에게 넘기는 절차로 작성합니다. 기준은 [상담원 연결 정책](https://certi.life/docs/guide/products/ai-chatbot/handoff-policy)을 참고하세요.
-- 작성 후에는 [`채널 설정`의 `웹채팅 URL`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#홈페이지에-채팅-버튼-달기)로 접속해 트리거 상황을 직접 말해 보며 확인합니다.
+- 작성 후에는 [`채널 설정`의 `웹채팅 URL`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#홈페이지에-채팅-버튼-달기)로 접속해 트리거 상황을 직접 말해 보며 확인합니다. 이 대화는 실제 상담으로 기록되고 통계에도 집계됩니다.
 
 #### 문제가 생기면
 
@@ -7051,7 +7379,7 @@ v2 학습자료 연결은 끝났고, 이전 자료를 정리하는 단계에서 
 
 ##### `매뉴얼 목록을 불러오지 못했습니다.`
 
-목록을 읽지 못했다는 뜻입니다. 매뉴얼이 지워진 것은 아닙니다. 문구 옆의 `다시 시도`를 누르고, 그래도 같으면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+목록을 읽지 못했다는 뜻입니다. 매뉴얼이 지워진 것은 아닙니다. 문구 옆의 `다시 시도`를 누르고, 그래도 같으면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 #### 함께 보기
 
@@ -7238,7 +7566,7 @@ v2 연결 목록이나 백과사전 태그 목록을 읽지 못했다는 뜻입�
 1. 문구 아래의 `다시 시도`를 누릅니다.
 2. 그래도 같으면 브라우저를 새로고침합니다.
 
-그래도 안 되면 화면의 문구와 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `최신 문서의 검색 준비 중입니다. 잠시 후 다시 시도해 주세요.`
 
@@ -7251,7 +7579,7 @@ v2 연결 목록이나 백과사전 태그 목록을 읽지 못했다는 뜻입�
 1. `문서 없음`인 태그는 백과사전에 문서가 없는 태그입니다. [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)에서 문서를 먼저 등록합니다.
 2. `실패`인 태그는 목록에 남겨 둔 채 `이 챗봇에 연결`을 다시 누릅니다.
 
-연결 요청 자체가 실패하면 "태그를 챗봇에 연결하지 못했습니다"가 나옵니다. 이때는 잠시 뒤 `이 챗봇에 연결`을 다시 누릅니다. 그래도 안 되면 태그 이름과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+연결 요청 자체가 실패하면 "태그를 챗봇에 연결하지 못했습니다"가 나옵니다. 이때는 잠시 뒤 `이 챗봇에 연결`을 다시 누릅니다. 그래도 안 되면 태그 이름과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### 목록이 비어 있을 때
 
@@ -7287,7 +7615,7 @@ v2 연결 목록이나 백과사전 태그 목록을 읽지 못했다는 뜻입�
 
 `WeChat`은 화면에 `준비중`으로 표시됩니다. 메신저 계정을 조직에 새로 연동하는 작업은 이 화면이 아니라 설정(조직 설정)의 `채널 설정`에서 합니다. 절차는 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)을 보세요. 이 화면의 목록에는 이미 연동된 계정만 나타납니다.
 
-채널을 바꾼 뒤에는 왼쪽 아래 `저장`을 누릅니다.
+웹채팅, 카카오톡, `상담원 바로 연결`을 바꾼 뒤에는 왼쪽 아래 `저장`을 누릅니다. 네이버 톡톡의 `연결하기`와 `연결 해제`, Instagram·LINE·WhatsApp의 `연동 채널` 선택은 `저장` 없이 바로 적용됩니다. 챗봇을 채널에서 잠시 빼는 방법은 [챗봇을 지금 멈추기](https://certi.life/docs/guide/studio/screens/chatbot/overview#챗봇을-지금-멈추기)에 채널별로 정리되어 있습니다.
 
 #### 홈페이지에 채팅 버튼 달기
 
@@ -7377,6 +7705,8 @@ var wc = null;
 
 **위치:** 챗봇 > 설정 > 채널 설정 > 카카오톡
 
+`카카오톡` 카드 제목 오른쪽의 스위치를 켜야 아래 설정이 나타납니다. 스위치를 끄고 `저장`하면 이 챗봇은 카카오톡 메시지에 답하지 않습니다.
+
 먼저 `카카오 연동 방식`을 고릅니다.
 
 | 방식          | 설명                                 |
@@ -7407,8 +7737,10 @@ var wc = null;
 
 **위치:** 챗봇 > 설정 > 채널 설정 > 네이버 톡톡 (`Instagram`, `LINE`, `WhatsApp` 카드도 같은 방식입니다)
 
-- **네이버 톡톡:** 연결할 채널을 고르고 `연결하기`를 누릅니다. 연결된 뒤에는 `연결됨`으로 표시되고 `연결 해제`로 끊을 수 있습니다.
-- **Instagram, LINE, WhatsApp:** 각 카드의 `연동 채널`에서 이 챗봇이 응답할 Instagram 비즈니스 계정, LINE 채널, WhatsApp 번호를 고릅니다. 연결되면 `배정된 채널`이 표시됩니다.
+- **네이버 톡톡:** 연결할 채널을 고르고 `연결하기`를 누릅니다. 연결된 뒤에는 `연결됨`으로 표시됩니다. 끊으려면 `연결 해제`를 누르고 "네이버 톡톡 채널 연결을 해제하시겠습니까?" 창에서 `해제`를 누릅니다.
+- **Instagram, LINE, WhatsApp:** 각 카드의 `연동 채널`에서 이 챗봇이 응답할 Instagram 비즈니스 계정, LINE 채널, WhatsApp 번호를 고릅니다. 연결되면 `배정된 채널`이 표시됩니다. 끊으려면 `연동 채널` 선택칸의 지우기 아이콘을 누릅니다. "Instagram 채널 배정이 해제되었습니다."처럼 안내가 나옵니다.
+
+이 채널들은 `저장`을 누르지 않아도 바로 연결되거나 끊깁니다. 연결을 끊은 채널의 메시지는 챗봇 없이 상담 대기로 들어옵니다.
 
 목록에 원하는 계정이 없다면 아직 조직에 연동되지 않은 것입니다. 새 Instagram 계정 연동(Facebook 로그인), LINE 채널 액세스 토큰 등록, WhatsApp 번호 연동은 설정(조직 설정)의 `채널 설정`에서 진행합니다. 이미 다른 챗봇에 연결된 채널은 그 챗봇 이름과 함께 표시됩니다.
 
@@ -7420,11 +7752,11 @@ var wc = null;
 
 특정 채널은 챗봇을 거치지 않고 처음부터 사람이 받게 하고 싶다면 `상담원 바로 연결`에서 그 채널을 켭니다.
 
-| 채널       | 켜면 이렇게 동작합니다                              |
-| -------- | ----------------------------------------- |
-| `웹채팅`    | 첫 진입 시 홈 시나리오 대신 상담 대기로 시작합니다             |
-| `카카오톡`   | 카카오 스킬 요청이 오면 상담원 연결 안내를 응답합니다            |
-| `네이버 톡톡` | 고객이 톡톡을 시작하거나 메시지를 보내면 챗봇 없이 상담 대기로 시작합니다 |
+| 채널       | 켜면 이렇게 동작합니다                                                                                                                                      |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `웹채팅`    | 첫 진입 시 홈 시나리오 대신 상담 대기로 시작합니다. 홈 시나리오는 [`시나리오` 탭](https://certi.life/docs/guide/studio/screens/chatbot/scenarios)에서 `시작 시나리오` 태그가 붙은 첫 인사 시나리오입니다 |
+| `카카오톡`   | 카카오 스킬 요청 시 상담원 연결 안내를 응답합니다. 오픈빌더 방식은 모든 요청에 `상담원 연결` 버튼이 있는 안내 카드를 보내고, 상담톡 봇 방식은 바로 상담원에게 연결합니다                                                |
+| `네이버 톡톡` | 고객이 톡톡을 시작하거나 메시지를 보내면 챗봇 없이 상담 대기로 시작합니다                                                                                                         |
 
 상담원이 응대할 수 없는 시간에도 상담 대기로 들어오므로, 켜기 전에 상담 가능 시간과 [상담원 연결 정책](https://certi.life/docs/guide/products/ai-chatbot/handoff-policy)을 먼저 정해 두세요. 챗봇이 답하다가 고객이 원할 때만 사람에게 넘기려면 이 설정 대신 카드 블럭의 버튼에 [`상담사 연결` 동작](https://certi.life/docs/guide/studio/screens/chatbot/blocks#버튼-동작-정하기)을 넣습니다.
 
@@ -7432,7 +7764,9 @@ var wc = null;
 
 출처: https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#연결한-뒤에는
 
-채널을 연결했다고 끝이 아닙니다. 고객에게 공개하기 전에 채널마다 가상 질문으로 정상 답변, 답변 거절, 상담원 연결, 업무시간 외 안내를 확인하세요. 점검 항목은 [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)에 있습니다. 연결 상태는 [챗봇 목록](https://certi.life/docs/guide/studio/screens/chatbot/list#챗봇-카드-읽는-법)의 카드에서도 한눈에 볼 수 있습니다.
+채널을 연결했다고 끝이 아닙니다. 고객에게 공개하기 전에 채널마다 가상 질문으로 정상 답변, 답변 거절, 상담원 연결, 업무시간 외 안내를 확인하세요. 점검 항목은 [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)에 있습니다.
+
+[챗봇 목록](https://certi.life/docs/guide/studio/screens/chatbot/list#챗봇-카드-읽는-법)의 카드에도 채널이 표시되지만, 카드는 연결 설정만 보여 줍니다. `웹챗`은 스크립트를 붙였는지와 관계없이 항상 켜진 것으로 표시되고, 네이버 톡톡은 카드에 나오지 않습니다. 실제로 답하는지는 채널마다 메시지를 보내 확인하세요.
 
 #### 문제가 생기면
 
@@ -7458,7 +7792,7 @@ var wc = null;
 4. 콘솔에 Content Security Policy 차단 메시지가 있으면 [보안 정책(CSP)을 쓰는 사이트라면](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#보안-정책csp을-쓰는-사이트라면)의 항목을 허용합니다.
 5. 홈페이지에 캐시 기능이 있으면 캐시를 비우고 새로 고칩니다.
 
-그래도 안 되면 페이지 주소와 콘솔의 메시지를 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 페이지 주소와 콘솔의 메시지를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### 채팅 버튼은 보이는데 대화가 되지 않을 때
 
@@ -7468,7 +7802,7 @@ var wc = null;
 2. 버튼이 페이지를 열고 5초쯤 지나서야 나타나고 눌러도 채팅창이 열리지 않으면, 사이트의 보안 정책이 채팅창을 막은 것입니다. `frame-src`에 `webchat.certi.life`를 허용합니다.
 3. 채팅창은 열리는데 대화가 시작되지 않으면 스크립트의 `botId` 값이 잘못된 것입니다. 붙여 넣을 때 값이 잘렸거나 없는 챗봇의 스크립트일 때 그렇습니다. 연결할 챗봇의 `SDK 스크립트`를 다시 복사해 교체합니다.
 
-`웹채팅 URL`에서도 대화가 되지 않으면 챗봇 이름과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+`웹채팅 URL`에서도 대화가 되지 않으면 챗봇 이름과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### 채팅 버튼이 사이트의 다른 버튼과 겹칠 때
 
@@ -7485,7 +7819,7 @@ var wc = null;
 1. 설정(조직 설정)의 [`채널 설정`](https://certi.life/docs/guide/studio/screens/org-settings/channels)에서 그 카카오 채널에 REST API 키를 등록합니다.
 2. 이 화면으로 돌아와 발송 채널을 다시 고르고 `저장`을 누릅니다.
 
-등록 방법은 화면의 `사전 설정 가이드`를 참고합니다. 그래도 같은 경고가 나오면 채널 이름과 화면의 문구를 적어 조직의 CertiLife 담당자에게 알립니다.
+등록 방법은 화면의 `사전 설정 가이드`를 참고합니다. 그래도 같은 경고가 나오면 채널 이름과 화면의 문구를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ---
 
@@ -7602,7 +7936,7 @@ var wc = null;
 
 화면 맨 아래 `설정 초기화`를 누르면 모든 채팅창 설정이 초기값으로 돌아갑니다. 초기화도 `저장`을 누르기 전까지는 실제 채팅창에 반영되지 않으므로, 잘못 눌렀다면 저장하지 않고 화면을 벗어나면 됩니다.
 
-저장하지 않고 다른 설정 메뉴로 옮기면 `저장하지 않은 변경사항이 있습니다` 창이 뜹니다. `이동`을 누르면 바꾼 내용이 사라지고, `취소`를 누르면 이 화면에 그대로 머뭅니다. 챗봇 상세 화면을 떠날 때 뜨는 창은 버튼이 `취소`와 `나가기`이며, 창마다 다른 문구는 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#문제가-생기면)에 있습니다.
+저장하지 않고 다른 곳으로 옮기려 하면 `저장하지 않은 변경사항이 있습니다` 창이 뜹니다. 창의 버튼별 동작은 [설정 한눈에 보기](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu#저장하지-않은-변경사항이-있습니다)에 있습니다.
 
 ---
 
@@ -7612,7 +7946,7 @@ var wc = null;
 
 > Studio 챗봇 설정의 챗봇 삭제에서 삭제될 데이터를 확인하고 챗봇 이름과 계정 비밀번호를 입력해 챗봇을 영구 삭제하는 절차, 삭제 전에 점검할 사항과 삭제 대신 쓸 수 있는 방법을 안내합니다.
 
-챗봇 삭제는 **되돌릴 수 없습니다.** 삭제하면 챗봇 설정과 AI 학습 자료, 모든 플로우와 시나리오, 학습 파일이 영구적으로 사라집니다. 실수를 막기 위해 챗봇 이름 입력과 계정 비밀번호 확인, 두 번의 확인을 거칩니다. 삭제하기 전에 아래 점검 사항부터 확인하세요.
+챗봇 삭제는 **되돌릴 수 없습니다.** 삭제하면 챗봇 설정과 AI 학습 자료, 모든 플로우와 시나리오, 학습 파일이 영구적으로 사라집니다. 상담 내역과 통계는 지워지지 않습니다. 실수를 막기 위해 챗봇 이름 입력과 계정 비밀번호 확인, 두 번의 확인을 거칩니다. 삭제하기 전에 아래 점검 사항부터 확인하세요.
 
 **위치:** 챗봇 > (챗봇 선택) > 설정 > 챗봇 삭제 (설정 메뉴 맨 아래, 빨간색 항목)
 
@@ -7620,9 +7954,25 @@ var wc = null;
 
 출처: https://certi.life/docs/guide/studio/screens/chatbot/settings/delete-chatbot#삭제하기-전에-확인하세요
 
-- **정말 삭제가 필요한가요?** 잠시 쓰지 않을 뿐이라면 삭제하지 않고 [`채널 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings)에서 채널 연결만 끊어 두는 방법이 있습니다.
-- **같은 구성이 다시 필요할 수 있나요?** 그렇다면 삭제 전에 [`기본 정보`의 `챗봇 내보내기`](https://certi.life/docs/guide/studio/screens/chatbot/settings/basic-info#챗봇을-다른-계정으로-복사하기)로 다른 챗봇에 복사해 두세요. 채팅 기록과 통계는 복사되지 않습니다.
-- **운영 중인 채널에 연결되어 있나요?** 연결된 채널이 있다면 고객 문의가 갈 곳을 먼저 정하고(다른 챗봇 연결 또는 상담원 응대) 삭제하세요.
+- **정말 삭제가 필요한가요?** 잠시 쓰지 않을 뿐이라면 삭제하지 말고 [챗봇을 지금 멈추기](https://certi.life/docs/guide/studio/screens/chatbot/overview#챗봇을-지금-멈추기)의 방법으로 채널마다 챗봇을 멈추세요. 나중에 다시 연결하면 그대로 씁니다.
+- **같은 구성이 다시 필요할 수 있나요?** 그렇다면 삭제 전에 [`기본 정보`의 `챗봇 내보내기`](https://certi.life/docs/guide/studio/screens/chatbot/settings/basic-info#챗봇을-다른-계정으로-복사하기)로 다른 챗봇에 복사해 두세요. 채팅 기록과 통계는 복사되지 않습니다. 내보내기 코드가 남아 있는 동안에는 챗봇을 삭제할 수 없습니다.
+- **운영 중인 채널에 연결되어 있나요?** 연결된 채널이 있다면 고객 문의가 갈 곳을 먼저 정하고(다른 챗봇 연결 또는 상담원 응대) 삭제하세요. 특히 네이버 톡톡, Instagram, LINE, WhatsApp은 챗봇을 삭제해도 연결이 자동으로 풀리지 않습니다. 삭제하기 전에 [`채널 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#네이버-톡톡-instagram-line-whatsapp-연결하기)에서 네이버 톡톡은 `연결 해제`를 누르고, Instagram·LINE·WhatsApp은 `연동 채널`을 비우세요.
+
+#### 삭제하면 사라지는 것과 남는 것
+
+출처: https://certi.life/docs/guide/studio/screens/chatbot/settings/delete-chatbot#삭제하면-사라지는-것과-남는-것
+
+**위치:** 챗봇 > (챗봇 선택) > 설정 > 챗봇 삭제
+
+| 데이터                                  | 삭제한 뒤                            |
+| ------------------------------------ | -------------------------------- |
+| 챗봇 설정, 시나리오, 플로우, v1 학습 파일           | 사라집니다                            |
+| 카카오톡 연결(오픈빌더 Bot ID, 상담톡 봇 채널)       | 챗봇과 함께 사라집니다                     |
+| 상담 내역(대화와 메시지)                       | 지워지지 않고 남습니다                     |
+| 통계와 실패 발화                            | 지워지지 않고 남습니다                     |
+| v2에서 연결한 백과사전 문서                     | 백과사전에 그대로 남습니다. 이 챗봇과의 연결만 사라집니다 |
+| 조직 공용 `도구`와 `매뉴얼`                    | 그대로 남습니다. 이 챗봇과의 연결만 사라집니다       |
+| 네이버 톡톡, Instagram, LINE, WhatsApp 연결 | 자동으로 풀리지 않습니다. 삭제하기 전에 직접 해제하세요  |
 
 #### 챗봇 삭제하기
 
@@ -7632,15 +7982,30 @@ var wc = null;
 
 1. `설정 메뉴` 맨 아래의 `챗봇 삭제`를 누릅니다.
 2. `삭제될 데이터`에서 `챗봇 이름`, `플로우 수`, `시나리오 수`, `학습 파일 수`를 확인합니다. 지우려는 챗봇이 맞는지 여기서 한 번 더 보세요.
-3. `삭제 확인`에 챗봇 이름을 **정확히** 입력합니다. 다르면 "챗봇 이름이 일치하지 않습니다"가 표시되고 버튼이 눌리지 않습니다.
+3. `삭제 확인`에 챗봇 이름을 **정확히** 입력합니다. 붙여 넣기는 되지 않으므로 직접 입력합니다. 다르면 "챗봇 이름이 일치하지 않습니다"가 표시되고 버튼이 눌리지 않습니다.
 4. `영구 삭제`를 누릅니다.
 5. "정말 삭제하시겠습니까?" 창에 계정 비밀번호를 입력하고 `삭제`를 누릅니다.
 
 삭제는 AI 학습 파일, 시나리오, 플로우, 챗봇 순서로 진행되며 진행 상황이 화면에 표시됩니다. 끝나면 챗봇 목록으로 돌아갑니다.
 
-> **삭제할 수 없다고 나올 때**
->
-> 화면에 "삭제할 수 없습니다"가 표시되면 함께 안내되는 사유를 먼저 해결해야 합니다. 사유를 해결하기 어렵다면 조직의 CertiLife 담당자에게 문의하세요.
+#### 문제가 생기면
+
+출처: https://certi.life/docs/guide/studio/screens/chatbot/settings/delete-chatbot#문제가-생기면
+
+##### `삭제할 수 없습니다`
+
+삭제를 막는 사유가 있다는 뜻입니다. 사유는 이 문구와 함께 표시됩니다.
+
+"현재 내보내기 코드가 존재합니다. 코드 만료 시간:" 뒤에 시각이 나오면, 이 챗봇으로 만든 내보내기 코드가 아직 남아 있다는 뜻입니다.
+
+1. [`기본 정보`의 `챗봇 내보내기`](https://certi.life/docs/guide/studio/screens/chatbot/settings/basic-info#챗봇을-다른-계정으로-복사하기)에서 `코드 삭제`를 누릅니다.
+2. `챗봇 삭제`로 돌아와 다시 진행합니다.
+
+다른 사유가 나오면 화면의 문구를 적어 CertiLife 고객센터(1800-8984)에 알립니다.
+
+##### `비밀번호가 일치하지 않습니다`
+
+"정말 삭제하시겠습니까?" 창에 입력한 계정 비밀번호가 틀렸다는 뜻입니다. 지금 Studio에 로그인한 계정의 비밀번호를 다시 입력하고 `삭제`를 누릅니다.
 
 #### 함께 보기
 
@@ -7667,7 +8032,7 @@ var wc = null;
 
 > **조직의 이용 범위에 따라 보입니다**
 >
-> `콜봇` 메뉴는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 또 일부 기능은 화면에 "아직 준비되지 않았습니다"로 표시될 수 있으며, 그 경우 해당 기능은 아직 쓸 수 없습니다. 필요하다면 조직의 CertiLife 담당자 또는 [도입 문의](https://certi.life/contact)로 확인하세요.
+> `콜봇` 메뉴는 조직의 이용 범위에 따라 보이지 않을 수 있습니다. 또 일부 기능은 화면에 "아직 준비되지 않았습니다"로 표시될 수 있으며, 그 경우 해당 기능은 아직 쓸 수 없습니다. 필요하다면 CertiLife 고객센터(1800-8984) 또는 [도입 문의](https://certi.life/contact)로 확인하세요.
 
 #### 실제 전화를 받기까지
 
@@ -7725,7 +8090,7 @@ var wc = null;
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | 전화를 받는 AI 상담원을 새로 만들고 싶어요  | [에이전트 만들기](https://certi.life/docs/guide/studio/screens/callbot/agents)                                                                        |
 | 목소리, 인사말, 응대 내용을 바꾸고 싶어요   | [에이전트 설정](https://certi.life/docs/guide/studio/screens/callbot/agent-settings)                                                                 |
-| 모르는 질문은 상담사에게 넘기게 하고 싶어요   | [에이전트 설정의 도구](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#통화-중에-할-수-있는-일-늘리기)                                          |
+| 모르는 질문은 상담원에게 넘기게 하고 싶어요   | [도구의 상담원에게 전화를 넘기게 하기](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)                                            |
 | 우리 회사 자료로 답하게 하고 싶어요       | [지식 베이스](https://certi.life/docs/guide/studio/screens/callbot/knowledge)                                                                       |
 | 고친 내용이 실제 통화에 반영되지 않아요     | [에이전트 설정의 배포](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#시험하고-배포하기)                                                   |
 | 전화번호를 새로 받거나 기존 번호를 쓰고 싶어요 | [번호 관리](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers)                                                                    |
@@ -7751,16 +8116,16 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 2. 문구 옆의 `다시 시도`를 누릅니다.
 3. 그래도 같으면 브라우저를 새로고침합니다.
 
-그래도 안 되면 화면의 문구, 연 화면 이름, 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 화면의 문구, 연 화면 이름, 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 같은 자리에 아래 문구가 나올 때도 있습니다.
 
-| 화면 문구                                          | 뜻                     | 할 일                                        |
-| ---------------------------------------------- | --------------------- | ------------------------------------------ |
-| `요청 시간이 초과됐습니다. 네트워크 상태를 확인하고 잠시 후 다시 시도해주세요.` | 응답이 너무 늦어 기다리기를 멈췄습니다 | 잠시 뒤 `다시 시도`를 누릅니다                         |
-| `요청이 너무 잦습니다. 잠시 후 다시 시도해주세요.`                 | 짧은 시간에 요청이 몰렸습니다      | 1분쯤 기다린 뒤 다시 시도합니다                         |
-| `일시적인 서버 오류입니다. 잠시 후 다시 시도해주세요.`               | 서버에 일시적인 문제가 있습니다     | 잠시 뒤 다시 시도하고, 계속되면 담당자에게 알립니다              |
-| `요청 권한이 없습니다. 다시 로그인하거나 관리자에게 문의해주세요.`         | 로그인이 만료되었거나 권한이 없습니다  | 로그아웃한 뒤 다시 로그인합니다. 그래도 같으면 관리자에게 권한을 요청합니다 |
+| 화면 문구                                          | 뜻                                    | 할 일                                                                          |
+| ---------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------- |
+| `요청 시간이 초과됐습니다. 네트워크 상태를 확인하고 잠시 후 다시 시도해주세요.` | 응답이 너무 늦어 기다리기를 멈췄습니다                | 잠시 뒤 `다시 시도`를 누릅니다                                                           |
+| `요청이 너무 잦습니다. 잠시 후 다시 시도해주세요.`                 | 짧은 시간에 요청이 몰렸습니다                     | 1분쯤 기다린 뒤 다시 시도합니다                                                           |
+| `일시적인 서버 오류입니다. 잠시 후 다시 시도해주세요.`               | 서버에 일시적인 문제가 있습니다                    | 잠시 뒤 다시 시도하고, 계속되면 CertiLife 고객센터(1800-8984)에 알립니다                           |
+| `요청 권한이 없습니다. 다시 로그인하거나 관리자에게 문의해주세요.`         | 로그인이 만료되었거나, 지금 계정으로는 이 요청을 할 수 없습니다 | 로그아웃한 뒤 다시 로그인합니다. 그래도 같으면 화면의 문구와 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다 |
 
 ##### `상태를 확인하지 못했습니다. 완료 표시가 실제와 다를 수 있습니다.`
 
@@ -7771,7 +8136,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 ##### `조직 생성에 실패했습니다.`
 
-배너의 `조직 생성`을 눌렀지만 콜봇 조직을 만들지 못했다는 뜻입니다. 잠시 뒤 `조직 생성`을 다시 누릅니다. 배너에 "조직 연결 기능이 아직 준비되지 않았습니다. (백엔드 준비 중)"이 보이면 아직 쓸 수 없는 상태이므로 조직의 CertiLife 담당자에게 문의합니다.
+배너의 `조직 생성`을 눌렀지만 콜봇 조직을 만들지 못했다는 뜻입니다. 잠시 뒤 `조직 생성`을 다시 누릅니다. 배너에 "조직 연결 기능이 아직 준비되지 않았습니다."가 보이면 이 조직에서는 아직 콜봇 조직을 만들 수 없습니다. 이때는 CertiLife 고객센터(1800-8984)에 문의합니다.
 
 ##### 단계가 잠겨 있을 때
 
@@ -7800,7 +8165,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 | 선택지     | 이럴 때                                                                                                  |
 | ------- | ----------------------------------------------------------------------------------------------------- |
 | `인바운드`  | 고객이 걸어온 전화를 응대합니다. 가장 일반적인 경우입니다                                                                      |
-| `아웃바운드` | 전화를 걸어 상담사에게 연결합니다. 이름만 정하면 전환 플로우로 자동 생성됩니다                                                          |
+| `아웃바운드` | 전화를 걸어 상담원에게 연결합니다. 이름만 정하면 전환 플로우로 자동 생성됩니다                                                          |
 | `캠페인`   | 여러 고객에게 한꺼번에 전화를 거는 [캠페인](https://certi.life/docs/guide/studio/screens/callbot/campaign)에서 쓰는 에이전트입니다 |
 
 **2단계 - `에이전트 타입`: 어떤 방식으로 대화하나요?**
@@ -7848,10 +8213,10 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 `스마트 ARS`는 익숙한 "번호를 눌러 주세요" 방식에 AI 대화를 더한 것입니다. `스마트 ARS 설정`에서 다음을 정합니다.
 
 - **`첫 인사말 방식`:** `사용자가 먼저 말함`, `AI가 먼저 말함 (동적 메시지)`, `AI가 먼저 말함 (고정 문구)` 중에서 고릅니다. 고정 문구를 고르면 인사말 멘트를 직접 적을 수 있습니다.
-- **`DTMF 메뉴 연결 (선택)`:** 미리 만들어 둔 버튼 메뉴를 연결합니다. 연결하면 통화 종료와 DTMF 전송 도구가 자동으로 함께 설정됩니다.
+- **`DTMF 메뉴 연결 (선택)`:** 미리 만들어 둔 버튼 메뉴를 연결합니다. 연결하면 통화 종료와 DTMF 전송 도구가 자동으로 함께 설정됩니다. 메뉴는 이 화면에서만 연결할 수 있고, 에이전트를 만든 뒤에는 바꿀 수 없습니다. 메뉴를 바꿔야 할 때의 순서는 [사용 중인 메뉴 고치기](https://certi.life/docs/guide/studio/screens/callbot/dtmf-menus#사용-중인-메뉴-고치기)에 있습니다.
 - **`버튼 메뉴 안내 시점`:** `인사말 직후 바로 안내`(전형적인 ARS 흐름) 또는 `AI가 용건을 먼저 확인`(대화로 용건을 물은 뒤 필요할 때 안내).
 - **`버튼 입력 후 응대 방식`:** `AI가 상황에 맞게 설명` 또는 `작성한 멘트 그대로 재생`.
-- **`상담사 연결 사용`:** 켜면 고객이 상담원 연결을 요청하거나 선택했을 때 지정한 `상담사 번호` 또는 `번호 그룹`으로 전화가 연결됩니다.
+- **`상담사 연결 사용`:** 켜면 고객이 상담원 연결을 요청하거나 선택했을 때 지정한 `상담사 번호` 또는 `번호 그룹`으로 전화가 연결됩니다. `통화 전환` 도구가 자동으로 추가되고, 고른 대상은 이 에이전트의 연결 대상으로 저장됩니다. DTMF 메뉴에서 `에이전트 설정 따름`으로 둔 `상담원 전환` 키도 이 대상으로 넘깁니다. 연결한 DTMF 메뉴에 `상담원 전환` 키가 있으면 이 항목을 켜고 대상을 골라야 에이전트를 만들 수 있습니다. 다른 전환 방법과의 차이는 [도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)에 있습니다.
 - **`통화 종료 시 추출 사용`**, **`지식 베이스 사용`:** 통화 내용에서 항목을 기록하게 하거나, [지식 베이스](https://certi.life/docs/guide/studio/screens/callbot/knowledge)의 문서를 답변에 활용하게 합니다.
 
 #### 상담사에게 연결해 주는 발신용 에이전트 만들기
@@ -7860,7 +8225,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 **위치:** 콜봇 > 에이전트 > 새 에이전트 > 아웃바운드
 
-`아웃바운드`를 고르면 `에이전트 이름`만 입력하면 됩니다. "시작 → 통화 전환 → 종료" 플로우로 자동 생성되고, 전환할 상담사는 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel#고객에게-전화-걸기)의 발신 화면에서 통화마다 고릅니다. 아웃바운드 에이전트는 조직에 하나만 만들 수 있으므로, 이미 있다면 그것을 사용하세요.
+`아웃바운드`를 고르면 `에이전트 이름`만 입력하면 됩니다. "시작 → 통화 전환 → 종료" 플로우로 자동 생성되고, 전환할 상담원은 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel#고객에게-전화-걸기)의 발신 화면에서 통화마다 고릅니다. 아웃바운드 에이전트는 조직에 하나만 만들 수 있으므로, 이미 있다면 그것을 사용하세요.
 
 #### 에이전트 목록 읽는 법
 
@@ -7910,7 +8275,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 | 목소리나 말하는 속도를 바꾸고 싶어요           | [목소리와 말투 정하기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#목소리와-말투-정하기)               |
 | 전화를 받자마자 하는 인사말을 바꾸고 싶어요       | [첫 인사말 정하기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#첫-인사말-정하기)                   |
 | 응대 내용과 규칙을 고치고 싶어요             | [응대 내용 고치기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#응대-내용-고치기)                   |
-| 모르는 질문은 담당자에게 넘기게 하고 싶어요       | [통화 중에 할 수 있는 일 늘리기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#통화-중에-할-수-있는-일-늘리기) |
+| 모르는 질문은 상담원에게 넘기게 하고 싶어요       | [통화 중에 할 수 있는 일 늘리기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#통화-중에-할-수-있는-일-늘리기) |
 | 우리 회사 정보로 답하게 하고 싶어요           | [회사 정보로 답하게 하기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#회사-정보로-답하게-하기)           |
 | 통화가 끝나면 예약 희망일 같은 정보를 기록하고 싶어요 | [통화에서 정보 뽑아 기록하기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#통화에서-정보-뽑아-기록하기)       |
 | 고객이 말을 끊으면 멈추게 하고 싶어요          | [말하는 방식과 통화 시간 조정하기](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#말하는-방식과-통화-시간-조정하기) |
@@ -7922,7 +8287,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 **위치:** 콜봇 > 에이전트 > (에이전트 선택) > 음성
 
-- **`음성`:** 제공사, 언어, 음성을 차례로 골라 목소리를 정합니다. 옆의 톱니에서 `속도`와 `볼륨`을 조정합니다. 어떤 목소리가 있는지는 [보이스](https://certi.life/docs/guide/studio/screens/callbot/voices)에서 미리 들어 볼 수 있습니다.
+- **`음성`:** 프로바이더(음성을 만드는 회사), 언어, 음성을 차례로 골라 목소리를 정합니다. 옆의 톱니에서 `속도`와 `볼륨`을 조정합니다. 어떤 목소리가 있는지는 [보이스](https://certi.life/docs/guide/studio/screens/callbot/voices)에서 미리 들어 볼 수 있습니다.
 - **`언어`:** 통화에 쓸 언어를 고릅니다. 톱니의 `인식 속도`(`빠름`, `중간`, `느림`)는 음성 인식의 속도와 정확도 사이의 균형입니다. 고객 말을 자주 잘못 알아듣는다면 느리게 조정해 보세요.
 - **`LLM`:** 응답을 만드는 모델을 고릅니다. 톱니의 `창의성 (Temperature)`은 응답의 창의성과 무작위성을 조절합니다. 안내가 매번 같아야 하는 업무라면 `낮음` 쪽으로 둡니다.
 
@@ -7956,7 +8321,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 **위치:** 콜봇 > 에이전트 > (에이전트 선택) > 도구
 
-`도구` 섹션을 펼치고 `추가`를 눌러 통화 종료, 통화 전환 같은 도구를 넣습니다. 도구마다 필요한 값을 채웁니다. 통화 전환이라면 넘길 담당자 번호와 넘기는 조건을 적습니다.
+`도구` 섹션을 펼치고 `추가`를 눌러 통화 종료, 통화 전환 같은 도구를 넣습니다. 도구마다 필요한 값을 채웁니다. `통화 전환`에는 넘길 번호를 적는 칸이 없습니다. 넘길 번호는 `상담사 연결 도구`에서 정합니다. 상담원에게 넘기는 네 가지 방법의 차이는 [도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)에 있습니다.
 
 > **도구가 없으면 통화를 그냥 끝냅니다**
 >
@@ -8014,12 +8379,51 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 **위치:** 콜봇 > 에이전트 > (에이전트 선택) > 배포
 
 1. 오른쪽 테스트 패널에서 `음성` 또는 `텍스트`를 고르고 `테스트 시작`을 누릅니다. 고객처럼 질문해 보고, 고친 뒤에는 `테스트 재시작`으로 다시 확인합니다.
-2. 정상 답변, 모르는 질문, 사람 연결 요청을 모두 시험합니다. 테스트에서는 AI 응답만 확인할 수 있고 실제 상담사 연결은 이루어지지 않습니다.
-3. 만족스러우면 화면 위쪽의 `배포`를 누릅니다. 새 버전이 게시되어 실제 통화에 반영됩니다.
+2. 정상 답변, 모르는 질문, 사람 연결 요청을 모두 시험합니다. 테스트에서는 AI 응답만 확인할 수 있고 실제 상담원 연결은 이루어지지 않습니다.
+3. 만족스러우면 화면 위쪽의 `배포`를 누릅니다. 새 버전이 게시되어 실제 통화에 반영됩니다. 게시된 버전 번호는 화면 위쪽에 `게시` 뒤에 표시됩니다.
+
+> **이전 버전으로 되돌리는 화면은 없습니다**
+>
+> 에이전트 화면에는 배포한 버전 목록을 보거나 이전 버전으로 되돌리는 기능이 없습니다. 배포하면 지금 편집한 내용이 바로 실제 통화에 쓰입니다. 프롬프트를 크게 고치기 전에는 지금 내용을 메모장 같은 곳에 복사해 두는 것을 권장합니다. [번호 관리](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#번호에-에이전트-연결하기)에서는 번호마다 응대할 에이전트 버전을 고를 수 있습니다.
 
 배포하지 않은 편집이 있는 채로 이 화면을 떠나려 하면 `저장하지 않은 변경사항이 있어요` 창("지금 나가면 편집한 내용이 사라집니다. 저장하지 않고 나갈까요?")이 뜹니다. `계속 편집`을 누르면 이 화면에 머물고, `나가기`를 누르면 편집한 내용이 사라집니다. 새로고침하거나 브라우저 탭을 닫을 때는 브라우저가 직접 떠날지 묻습니다.
 
-처음 배포하는 에이전트라면 전화를 받으려면 [번호 관리](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers)에서 번호에 에이전트를 연결해야 합니다. 에이전트를 없애려면 `삭제`를 누릅니다. 번호에 연결된 에이전트를 삭제하면 그 번호로 오는 전화를 받지 못하게 되니 먼저 확인하세요.
+처음 배포하는 에이전트라면 전화를 받으려면 [번호 관리](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers)에서 번호에 에이전트를 연결해야 합니다.
+
+#### 에이전트 삭제하기
+
+출처: https://certi.life/docs/guide/studio/screens/callbot/agent-settings#에이전트-삭제하기
+
+**위치:** 콜봇 > 에이전트 > (에이전트 선택) > 삭제
+
+1. 화면 위쪽의 `삭제`를 누릅니다.
+2. `에이전트 삭제` 창에서 지울 에이전트 이름을 확인합니다. 번호에 연결된 에이전트라면 창에 "연결된 전화번호 N개에서 연결이 해제됩니다."가 함께 나옵니다.
+3. `삭제`를 누릅니다. "에이전트가 삭제되었습니다."가 나오면 끝납니다.
+
+> **삭제는 되돌릴 수 없습니다**
+>
+> 창에도 "삭제하면 되돌릴 수 없습니다."가 표시됩니다. 번호에 연결된 에이전트를 삭제하면 그 번호의 연결이 풀려, 그 번호로 오는 전화를 콜봇이 받지 않습니다. 삭제하기 전에 [번호 관리](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#번호에-에이전트-연결하기)에서 그 번호에 다른 에이전트를 연결하세요.
+
+삭제해도 지난 통화 기록은 지워지지 않습니다. 이 에이전트를 만들 때 연결한 [DTMF 메뉴](https://certi.life/docs/guide/studio/screens/callbot/dtmf-menus)는 이 에이전트와의 연결이 풀립니다. 그 메뉴를 쓰는 다른 에이전트가 없으면 메뉴를 다시 고치거나 지울 수 있습니다.
+
+#### 문제가 생기면
+
+출처: https://certi.life/docs/guide/studio/screens/callbot/agent-settings#문제가-생기면
+
+##### `진행 중인 캠페인이 이 에이전트를 사용하고 있어 삭제할 수 없습니다. 캠페인을 종료하거나 취소한 뒤 다시 시도해주세요.`
+
+끝나지 않은 [캠페인](https://certi.life/docs/guide/studio/screens/callbot/campaign)이 이 에이전트로 전화를 걸고 있어 삭제하지 못했다는 뜻입니다. 문구 뒤의 `쓰는 캠페인:`에 캠페인 이름이 나옵니다.
+
+1. 캠페인 화면에서 그 캠페인이 끝날 때까지 기다리거나 `취소`합니다.
+2. 이 화면으로 돌아와 `삭제`를 다시 누릅니다.
+
+##### `다른 에이전트가 이 에이전트로 전환하도록 설정되어 있어 삭제할 수 없습니다. 해당 에이전트의 전환 설정을 먼저 해제해주세요.`
+
+다른 에이전트의 `에이전트 전환` 도구나 플로우의 `에이전트 전환` 노드가 이 에이전트로 통화를 넘기게 되어 있다는 뜻입니다. 문구 뒤의 `전환 설정이 있는 에이전트:`에 그 에이전트 이름이 나옵니다.
+
+1. 그 에이전트를 열고 이 에이전트로 넘기는 `에이전트 전환` 도구나 노드를 지웁니다.
+2. 프롬프트 타입 에이전트는 `배포`를 누르고, 플로우 타입 에이전트는 플로우 편집 화면에서 `저장`을 누릅니다.
+3. 이 화면으로 돌아와 `삭제`를 다시 누릅니다.
 
 #### 함께 보기
 
@@ -8057,7 +8461,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 | `추출`      | 대화에서 이름, 날짜 같은 값을 뽑아 변수로 저장합니다          |
 | `도구`      | API 호출 같은 도구를 실행합니다                     |
 | `에이전트 전환` | 다른 에이전트에게 통화를 넘깁니다                      |
-| `통화 전환`   | 상담사에게 통화를 넘깁니다                          |
+| `통화 전환`   | 상담원에게 통화를 넘깁니다                          |
 | `통화 종료`   | 통화를 끝냅니다                                |
 | `코멘트`     | 흐름에 설명을 남기는 메모입니다. 통화에는 영향을 주지 않습니다     |
 
@@ -8092,7 +8496,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/flow-editor#권장-운영법
 
-- 고객이 예상 밖의 말을 했을 때 갈 곳이 없으면 통화가 어색하게 끊깁니다. 분기마다 "그 밖의 경우"가 상담사 연결이나 다시 묻기로 이어지게 하세요.
+- 고객이 예상 밖의 말을 했을 때 갈 곳이 없으면 통화가 어색하게 끊깁니다. 분기마다 "그 밖의 경우"가 상담원 연결이나 다시 묻기로 이어지게 하세요.
 - 모든 경로가 `통화 종료` 또는 `통화 전환`으로 끝나는지 `검증`으로 확인합니다.
 - 처음에는 핵심 흐름 하나만 만들어 배포하고, [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)에서 실제 통화를 보며 가지를 늘려 갑니다.
 
@@ -8114,7 +8518,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 1. 위쪽 검색창에 이름이나 프로바이더를 입력하거나, `언어`와 `프로바이더` 필터로 좁힙니다. 한국어 통화라면 `언어`를 한국어로 맞추세요.
 2. 표의 `샘플` 칸에서 재생 버튼을 눌러 들어 봅니다. 표에는 `프로바이더`, `이름`, `언어`, `성별`이 함께 표시됩니다.
-3. 후보를 두세 개 골라 이름과 프로바이더를 적어 둡니다.
+3. 후보를 두세 개 골라 이름과 프로바이더를 적어 둡니다. 이 화면의 `프로바이더`는 `cartesia`, `elevenlabs`처럼 영문으로 보이고, 에이전트 설정의 `음성`에서는 `카르테시아`, `일레븐랩스`처럼 한글로 보입니다.
 
 목소리가 많아 목록에는 처음 일부만 표시됩니다. "보이스가 많아 처음 N개까지만 표시합니다. 검색으로 좁혀보세요."라는 안내가 보이면 검색과 필터로 범위를 줄이세요. 언어가 `다국어`로 표시된 목소리는 여러 언어를 말할 수 있습니다.
 
@@ -8124,7 +8528,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 **위치:** 콜봇 > 에이전트 > (에이전트 선택) > 음성
 
-에이전트 설정 화면의 `음성`에서 제공사 → 언어 → 음성 순서로 고르고, 톱니에서 `속도`와 `볼륨`을 조정합니다. 오른쪽 테스트 패널에서 `음성`으로 테스트해 실제 응대 문장을 그 목소리로 들어 본 뒤 `배포`하세요.
+에이전트 설정 화면의 `음성`에서 프로바이더 → 언어 → 음성 순서로 고르고, 톱니에서 `속도`와 `볼륨`을 조정합니다. 오른쪽 테스트 패널에서 `음성`으로 테스트해 실제 응대 문장을 그 목소리로 들어 본 뒤 `배포`하세요.
 
 #### 목소리 고르는 요령
 
@@ -8142,7 +8546,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 > Studio 콜봇에서 통화 종료·통화 전환·에이전트 전환·DTMF 전송 기본 도구를 에이전트에 넣는 방법과, 도구 화면에서 우리 시스템을 호출하는 API 도구를 만들고 실행 중 안내 멘트를 정하는 방법을 안내합니다.
 
-콜봇은 도구가 있어야 말하는 것 이상의 일을 합니다. 도구는 두 종류입니다. **통화를 끝내거나 상담사에게 넘기는 기본 도구**는 에이전트 설정 화면에서 바로 넣고, **예약 조회처럼 우리 시스템을 호출하는 API 도구**는 `도구` 화면에서 만든 뒤 에이전트에 연결합니다.
+콜봇은 도구가 있어야 말하는 것 이상의 일을 합니다. 도구는 두 종류입니다. **통화를 끝내거나 상담원에게 넘기는 기본 도구**는 에이전트 설정 화면에서 바로 넣고, **예약 조회처럼 우리 시스템을 호출하는 API 도구**는 `도구` 화면에서 만든 뒤 에이전트에 연결합니다.
 
 **위치:** 콜봇 > 도구
 
@@ -8154,40 +8558,59 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/tools#어떤-도구가-있나요
 
-| 도구            | 하는 일                              | 넣는 곳                            |
-| ------------- | --------------------------------- | ------------------------------- |
-| `통화 종료`       | 고객이 통화 종료를 요청하는 경우 등에 통화를 끝냅니다    | 에이전트 설정 > `도구`                  |
-| `통화 전환`       | 고객이 사람 상담사와 통화를 원하는 경우 상담사에게 넘깁니다 | 에이전트 설정 > `도구`                  |
-| `에이전트 전환`     | 다른 에이전트에게 통화를 넘깁니다                | 에이전트 설정 > `도구`                  |
-| `DTMF 전송`     | ARS 메뉴에서 버튼 톤을 전송합니다              | 에이전트 설정 > `도구`                  |
-| 알림톡·브랜드메시지 도구 | 통화 중이나 통화 뒤에 고객에게 메시지를 보냅니다       | 에이전트 설정 > `알림톡 도구`, `브랜드메시지 도구` |
-| API 도구        | 우리 시스템의 API를 호출합니다                | `도구` 화면에서 만들고 에이전트에 연결          |
+| 도구            | 하는 일                                                         | 넣는 곳                            |
+| ------------- | ------------------------------------------------------------ | ------------------------------- |
+| `통화 종료`       | 고객이 통화 종료를 요청하는 경우 등에 통화를 끝냅니다                               | 에이전트 설정 > `도구`                  |
+| `통화 전환`       | 고객이 상담원과 통화를 원하는 경우 상담원에게 넘깁니다                               | 에이전트 설정 > `도구`                  |
+| `에이전트 전환`     | 다른 에이전트에게 통화를 넘깁니다                                           | 에이전트 설정 > `도구`                  |
+| `DTMF 전송`     | ARS 메뉴에서 버튼 톤을 전송합니다                                         | 에이전트 설정 > `도구`                  |
+| 알림톡·브랜드메시지 도구 | 통화 중이나 통화 뒤에 전화를 건 고객에게 메시지를 보냅니다. `추가 수신자`를 넣으면 담당자에게도 보냅니다 | 에이전트 설정 > `알림톡 도구`, `브랜드메시지 도구` |
+| API 도구        | 우리 시스템의 API를 호출합니다                                           | `도구` 화면에서 만들고 에이전트에 연결          |
 
-#### 상담사에게 전화를 넘기게 하기
+#### 상담원에게 전화를 넘기게 하기
 
-출처: https://certi.life/docs/guide/studio/screens/callbot/tools#상담사에게-전화를-넘기게-하기
+출처: https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기
+
+**위치:** 콜봇 > 에이전트 > (에이전트 선택) > 도구
+
+전화를 상담원에게 넘기는 방법은 네 가지입니다. 실제로 전화를 넘기는 일은 네 방법 모두 에이전트의 `통화 전환` 도구가 합니다. 방법마다 다른 것은 넘길 번호를 어디서 정하는지입니다.
+
+| 방법                | 설정하는 곳                              | 넘길 번호를 정하는 방법                                                                                                                                                                                                         | 넘기기 전에 확인하는 것                                         |
+| ----------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| `통화 전환` 도구        | 에이전트 설정 > `도구` > `추가`               | 도구에는 번호를 고르는 칸이 없습니다. 인바운드·캠페인 통화는 `상담사 연결 사용`으로 저장한 대상이 있으면 그곳으로, 없으면 조직에 등록된 상담사 번호 중 통화할 수 있는 번호로 넘깁니다. 아웃바운드 통화는 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel#고객에게-전화-걸기)의 발신 화면에서 통화마다 고릅니다 | 인바운드·캠페인 통화는 운영시간과 상담원 상태를 확인합니다. 아웃바운드 통화는 확인하지 않습니다 |
+| `상담사 연결 도구`       | 에이전트 설정 > `상담사 연결 도구`               | 도구마다 `전환 대상`에서 `상담사 번호` 또는 `번호 그룹`을 고릅니다                                                                                                                                                                              | 운영시간과 상담원 상태                                          |
+| `상담사 연결 사용`       | 에이전트 만들기 > `스마트 ARS` > `스마트 ARS 설정` | `상담사 번호` 또는 `번호 그룹`을 고르면 그 에이전트의 연결 대상으로 저장됩니다. `통화 전환` 도구는 자동으로 추가됩니다                                                                                                                                                | 운영시간과 상담원 상태                                          |
+| DTMF 메뉴의 `상담원 전환` | DTMF 메뉴 > (키 선택) > `입력 후 동작`        | 키마다 `전환 대상`에서 `상담사 번호`나 `번호 그룹`을 고릅니다. `에이전트 설정 따름`을 고르면 `상담사 연결 사용`으로 저장한 대상을 씁니다                                                                                                                                    | 운영시간과 상담원 상태                                          |
+
+- **운영시간:** 착신전환용 번호와 연결 시간을 따로 정한 번호를 빼면, 콜봇 운영시간 밖에는 넘기지 않습니다. 연결 시간을 따로 정한 번호는 그 번호의 연결 시간을 봅니다. `상담사 바로 연결시간`을 켰다면 운영시간 대신 그 시간을 봅니다. 두 시간은 설정의 [상담 시간](https://certi.life/docs/guide/studio/screens/org-settings/hours#콜봇-운영시간-정하기)에서 정합니다. `상담사 바로 연결시간`에 `연결 대상`을 정해 두면, 그 시간 안에는 위 표의 대상보다 그 `연결 대상`으로 먼저 넘깁니다. `연결 대상`이 받을 수 없으면 위 표의 대상으로 넘어갑니다.
+- **상담원 상태:** [전화상담의 `상담사 상태`](https://certi.life/docs/guide/studio/screens/phone-counsel#내-상태-바꾸기) 창의 안내대로 "통화대기 상태의 상담사에게만 전환되며, 착신전환용 번호는 상태와 무관하게 바로 전환됩니다." 넘길 상담원이 통화 중이거나 통화대기 상태가 아니면 다음 대상을 찾습니다. 번호 유형별로 확인하는 것은 [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users#번호-유형-고르기)에 있습니다.
+- **플로우 에이전트:** 플로우 타입 에이전트는 [플로우 편집](https://certi.life/docs/guide/studio/screens/callbot/flow-editor)의 `통화 전환` 노드로 넘깁니다.
+
+##### `통화 전환` 도구 넣기
 
 **위치:** 콜봇 > 에이전트 > (에이전트 선택) > 도구
 
 1. 에이전트 설정 화면에서 `도구` 섹션을 펼치고 `추가`를 누릅니다.
 2. `통화 전환`을 고릅니다.
-3. 언제 넘길지 설명을 적습니다. 예: "고객이 사람 상담사와 통화를 원하는 경우". AI는 이 설명을 보고 전환 시점을 판단합니다.
-4. 넘길 대상과 전환 방식을 정합니다. `즉시 전환 (cold)`은 바로 연결하고, `안내 후 전환 (warm)`은 고객에게 안내한 뒤 연결합니다. 안내 멘트는 `고정 문구` 또는 `AI 생성 (동적)` 중에서 고릅니다.
+3. `전환 방향`을 `인바운드`, `아웃바운드`, `캠페인` 중에서 고릅니다.
+4. `전환 타입`을 고릅니다. `즉시 전환 (cold)`은 바로 연결하고, `안내 후 전환 (warm)`은 고객에게 안내한 뒤 연결합니다. `안내 후 전환 (warm)`이면 `안내 방식`을 `고정 문구` 또는 `AI 생성 (동적)` 중에서 고르고 문구나 지시를 적습니다.
 5. 화면 위쪽의 `배포`를 눌러 실제 통화에 반영합니다.
 
-상담사가 통화를 받을 수 없는 시간에 전환되지 않도록 [전화상담의 `상담사 상태`](https://certi.life/docs/guide/studio/screens/phone-counsel#내-상태-바꾸기)와 조직의 상담 시간을 함께 맞춰 두세요.
+`통화 전환` 도구에는 넘길 번호와 넘길 조건을 적는 칸이 없습니다. 언제 넘길지는 [프롬프트](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#응대-내용-고치기)에 적거나, 아래 `상담사 연결 도구`의 `트리거 설명`에 적습니다.
 
-##### 지점이나 업무에 따라 다른 상담사에게 넘기기
+##### 지점이나 업무에 따라 다른 상담원에게 넘기기
 
 **위치:** 콜봇 > 에이전트 > (에이전트 선택) > 상담사 연결 도구
 
-"강남점 연결해 주세요", "예약 변경은 상담사와 하고 싶어요"처럼 고객의 말에 따라 넘길 곳이 달라진다면 상담사 연결 도구를 상황별로 만듭니다. 이 도구는 어느 번호로 넘길지를 정하고, 실제 전환은 `통화 전환` 도구가 합니다. 그래서 `통화 전환` 도구가 먼저 있어야 하며, 없으면 화면에 먼저 추가하라는 경고가 나옵니다.
+"강남점 연결해 주세요", "예약 변경은 상담원과 하고 싶어요"처럼 고객의 말에 따라 넘길 곳이 달라진다면 상담사 연결 도구를 상황별로 만듭니다. 이 도구는 어느 번호로 넘길지를 정하고, 실제 전환은 `통화 전환` 도구가 합니다. 그래서 `통화 전환` 도구가 먼저 있어야 하며, 없으면 화면에 먼저 추가하라는 경고가 나옵니다.
 
-1. `이름`을 입력합니다. 예: 예약 상담사 연결
-2. `트리거 설명`에 언제 이 도구를 쓸지 문장으로 적습니다. 예: 고객이 예약 변경을 상담사와 직접 하고 싶다고 하면
-3. `전환 대상`을 `상담사 번호` 또는 `번호 그룹`에서 고릅니다. 번호와 그룹은 [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users)에서 먼저 등록합니다.
+1. `상담사 연결 도구 추가`를 누릅니다.
+2. `이름`을 입력합니다. 예: 예약 상담사 연결
+3. `트리거 설명`에 언제 이 도구를 쓸지 문장으로 적습니다. 예: 고객이 예약 변경을 상담사와 직접 하고 싶다고 하면
+4. `전환 대상`을 `상담사 번호` 또는 `번호 그룹`에서 고릅니다. 번호와 그룹은 [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users)에서 먼저 등록합니다.
+5. 화면 위쪽의 `배포`를 누릅니다.
 
-전환 도구에는 운영시간과 상담사의 통화 중 여부를 먼저 확인하는 체크가 함께 붙습니다. 배지가 `체크 연결됨`인지 확인하세요. 화면이 권장하는 문장을 `복사`해 에이전트 프롬프트에 넣으면 AI가 체크 결과를 더 확실히 따릅니다.
+상담사 연결 도구에는 넘길 수 있는지(운영시간, 상담원 상태)를 먼저 확인하는 체크가 함께 붙습니다. 체크가 정상으로 연결되어 있으면 체크 배지가 따로 보이지 않습니다. `체크 배포 필요`가 보이면 `배포`를 누릅니다. `체크 없음`이나 `체크 연결 안 됨`이 계속 보이면 CertiLife 고객센터(1800-8984)에 알립니다. 체크가 없어도 실제로 넘길 때 운영시간과 상담원 상태를 다시 확인합니다. 화면이 권장하는 문장을 `복사`해 에이전트 프롬프트에 넣으면 AI가 체크 결과를 더 확실히 따릅니다.
 
 #### 통화 중에 알림톡이나 브랜드메시지 보내게 하기
 
@@ -8199,13 +8622,14 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 1. 에이전트 설정 화면의 `알림톡 도구`에서 `알림톡 도구 추가`를 누릅니다.
 2. `이름`과 `트리거 설명`을 입력합니다. 트리거 설명은 어떤 상황에서 보낼지 적는 문장입니다. 예: 고객이 예약 방법이나 위치 안내 문자를 요청하면
-3. `발송 채널`과 `알림톡 템플릿`을 고릅니다. 템플릿은 [CRM 메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 승인된 것만 나옵니다.
-4. `발송 후 동작`을 `AI 응대 계속` 또는 `통화 종료`로 정합니다.
-5. 에이전트를 저장하고 `배포`합니다. 도구의 배지가 `저장 필요`나 `연결 안 됨`이면 아직 통화에 반영되지 않은 것입니다.
+3. 받는 사람을 정합니다. `고객에게 발송`이 켜져 있으면 전화를 건 고객의 번호로 보냅니다. 원장님처럼 함께 받을 사람이 있으면 `추가 수신자`에 이름과 전화번호를 넣습니다. 10명까지 넣을 수 있습니다. `고객에게 발송`을 끄면 고객에게는 보내지 않고 `추가 수신자`에게만 보냅니다.
+4. `발송 채널`과 `알림톡 템플릿`을 고릅니다. 템플릿은 [CRM 메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 승인된 것만 나옵니다.
+5. `발송 후 동작`을 `AI 응대 계속` 또는 `통화 종료`로 정합니다.
+6. 에이전트를 저장하고 `배포`합니다. 도구의 배지가 `저장 필요`나 `연결 안 됨`이면 아직 통화에 반영되지 않은 것입니다.
 
 **AI는 트리거 설명을 읽고 도구를 쓸지 판단합니다.** "문자 발송"처럼 짧게 쓰지 말고 고객이 어떤 말을 할 때인지 구체적으로 쓰세요.
 
-`브랜드메시지 도구`는 같은 방식으로 이벤트나 프로모션 안내를 보냅니다. 브랜드메시지는 광고성 메시지이므로 마케팅 수신 동의 고객에게만, 정해진 시간대에만 발송됩니다. 플로우 에이전트는 도구를 만든 뒤 [플로우 편집기](https://certi.life/docs/guide/studio/screens/callbot/flow-editor)의 도구 노드에서 연결해야 호출됩니다.
+`브랜드메시지 도구`는 같은 방식으로 이벤트나 프로모션 안내를 보냅니다. 브랜드메시지는 광고성 메시지이므로 마케팅 수신에 동의한 번호에만, 아침 8시부터 저녁 8시 50분 이전까지만 발송됩니다. `추가 수신자`도 수신 동의가 확인된 번호에만 갑니다. 담당자에게 알리려면 브랜드메시지가 아니라 알림톡을 씁니다. 플로우 에이전트는 도구를 만든 뒤 [플로우 편집기](https://certi.life/docs/guide/studio/screens/callbot/flow-editor)의 도구 노드에서 연결해야 호출됩니다.
 
 #### 우리 시스템을 호출하는 API 도구 만들기
 
@@ -8235,7 +8659,7 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 
 - 도구를 삭제하기 전에 `사용 중인 에이전트`를 확인하세요. 연결된 에이전트가 있다면 그 에이전트의 통화에 영향을 줍니다.
 - 저장하지 않은 채 다른 도구를 누르거나 더하기(+)로 새 도구를 만들려 하면 `저장하지 않은 변경사항이 있어요` 창("지금 이동하면 편집한 내용이 사라집니다. 저장하지 않고 이동할까요?")이 뜹니다. `계속 편집`을 누르면 편집이 남고, `이동`을 누르면 사라집니다. Studio의 다른 메뉴로 나가면 이 창 없이 편집이 사라집니다.
-- 챗봇의 [도구](https://certi.life/docs/guide/studio/screens/chatbot/settings/tools)와 개념은 같지만 목록은 따로 관리됩니다.
+- 챗봇의 [도구](https://certi.life/docs/guide/studio/screens/chatbot/settings/tools)와 목록은 따로 관리됩니다. 알림톡을 받는 사람도 다릅니다. 콜봇의 알림톡 도구는 기본으로 전화를 건 고객에게 보내고, 챗봇의 `알림톡 보내기`는 `담당자 수신 번호`에 적은 병원 담당자에게만 보냅니다.
 - 특정 상황에서만 도구를 쓰게 하려면 [매뉴얼](https://certi.life/docs/guide/studio/screens/callbot/manuals)에 그 절차를 적습니다.
 
 ---
@@ -8294,10 +8718,10 @@ AI 음성 응대는 글과 달리 고객이 듣고 바로 이해해야 합니다
 출처: https://certi.life/docs/guide/studio/screens/callbot/manuals#권장-운영법
 
 - 매뉴얼 하나에는 상황 하나만 담습니다.
-- 본문에 "확인되지 않으면 상담사에게 전환한다"처럼 막혔을 때의 출구를 적어 둡니다. 전환하려면 에이전트에 [통화 전환 도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담사에게-전화를-넘기게-하기)가 있어야 합니다.
+- 본문에 "주문번호를 찾지 못하면 상담원에게 전환한다"처럼 막혔을 때의 출구를 적어 둡니다. 전환하려면 에이전트에 [통화 전환 도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)가 있어야 합니다.
 - 의료진의 판단이 필요한 상황은 콜봇이 판단하지 않고 사람에게 넘기는 절차로 작성합니다. 기준은 [상담원 연결 정책](https://certi.life/docs/guide/products/ai-chatbot/handoff-policy)을 참고하세요.
 - 저장한 뒤에는 에이전트 설정의 테스트 패널에서 트리거 상황을 직접 말해 보며 확인합니다.
-- 챗봇의 [매뉴얼](https://certi.life/docs/guide/studio/screens/chatbot/settings/manuals)과 개념은 같지만 목록은 따로 관리됩니다.
+- 챗봇의 [매뉴얼](https://certi.life/docs/guide/studio/screens/chatbot/settings/manuals)과 목록은 따로 관리됩니다. 반영 방식도 다릅니다. 챗봇은 매뉴얼을 연결하거나 해제하면 바로 저장되지만, 콜봇은 연결을 바꾼 뒤 `배포`해야 통화에 반영됩니다.
 
 ---
 
@@ -8347,17 +8771,17 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 4. `입력 후 동작`을 고릅니다.
 5. `트리 저장`을 누릅니다.
 
-| `입력 후 동작`   | 하는 일                   | 함께 정하는 것                            |
-| ----------- | ---------------------- | ----------------------------------- |
-| `AI 응대 계속`  | AI 에이전트가 이어서 대화합니다     | 없음                                  |
-| `통화 종료`     | 통화를 끝냅니다               | `종료 멘트 (선택)`                        |
-| `상담원 전환`    | 사람 상담사에게 넘깁니다          | `전환 대상`, `전환 타입`, `안내 방식`, `발신표기번호` |
-| `알림톡 발송`    | 고객에게 알림톡을 보냅니다         | `발송 채널`, `알림톡 템플릿`, `발송 후 동작`       |
-| `브랜드메시지 발송` | 고객에게 브랜드메시지를 보냅니다      | `발송 후 동작`                           |
-| `콜백 예약`     | 발신 고객 번호로 콜백 예약을 접수합니다 | `예약 후 동작`                           |
+| `입력 후 동작`   | 하는 일                    | 함께 정하는 것                                            |
+| ----------- | ----------------------- | --------------------------------------------------- |
+| `AI 응대 계속`  | 에이전트가 이어서 대화합니다         | 없음                                                  |
+| `통화 종료`     | 통화를 끝냅니다                | `종료 멘트 (선택)`                                        |
+| `상담원 전환`    | 상담원에게 넘깁니다              | `전환 대상`, `전환 타입`, `안내 방식`, `발신표기번호`                 |
+| `알림톡 발송`    | 전화를 건 고객에게 알림톡을 보냅니다    | `고객에게 발송`, `발송 채널`, `알림톡 템플릿`, `추가 수신자`, `발송 후 동작`  |
+| `브랜드메시지 발송` | 전화를 건 고객에게 브랜드메시지를 보냅니다 | `고객에게 발송`, 발송 채널과 템플릿, `발송 대상`, `추가 수신자`, `발송 후 동작` |
+| `콜백 예약`     | 발신 고객 번호로 콜백 예약을 접수합니다  | `예약 후 동작`                                           |
 
-- **상담원 전환:** `전환 대상`은 `에이전트 설정 따름`, `상담사 번호`, `번호 그룹` 중에서 고릅니다. 번호와 그룹은 [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users)에서 먼저 만들어 둡니다. `즉시 전환 (cold)`은 바로 연결하고 `안내 후 전환 (warm)`은 고객에게 안내한 뒤 연결합니다.
-- **알림톡 발송:** 승인된 템플릿이 없으면 고를 수 없습니다. [CRM 메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 먼저 준비하세요. `트리 저장`을 누를 때 이 키의 알림톡 발송 도구가 함께 만들어지며, 도구를 만들지 못하면 저장도 실패합니다.
+- **상담원 전환:** `전환 대상`은 `에이전트 설정 따름`, `상담사 번호`, `번호 그룹` 중에서 고릅니다. `에이전트 설정 따름`은 이 메뉴를 쓰는 에이전트를 만들 때 `상담사 연결 사용`에서 고른 대상으로 넘깁니다. 고른 대상이 없으면 조직에 등록된 상담사 번호 중 통화할 수 있는 번호로 넘깁니다. 번호와 그룹은 [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users)에서 먼저 만들어 둡니다. `즉시 전환 (cold)`은 바로 연결하고 `안내 후 전환 (warm)`은 고객에게 안내한 뒤 연결합니다. 다른 전환 방법과의 차이는 [도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)에 있습니다.
+- **알림톡 발송:** `고객에게 발송`을 끄면 고객에게는 보내지 않고 `추가 수신자`에게만 보냅니다. 승인된 템플릿이 없으면 고를 수 없습니다. [CRM 메시지 템플릿](https://certi.life/docs/guide/studio/screens/crm/templates)에서 먼저 준비하세요. `트리 저장`을 누를 때 이 키의 알림톡 발송 도구가 함께 만들어지며, 도구를 만들지 못하면 저장도 실패합니다.
 - **브랜드메시지 발송:** 마케팅 수신 동의 고객에게만, 아침 8시부터 저녁 8시 50분 이전까지만 발송됩니다.
 - **콜백 예약:** 접수된 예약은 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)의 콜백 목록에서 확인하고 처리합니다.
 
@@ -8377,7 +8801,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 콜봇 > 에이전트 > 새 에이전트 > 스마트 ARS
 
-메뉴는 에이전트에 연결해야 통화에서 동작합니다. [에이전트](https://certi.life/docs/guide/studio/screens/callbot/agents)에서 `스마트 ARS` 유형으로 만들 때 `DTMF 메뉴 연결 (선택)`에서 이 메뉴를 고릅니다.
+메뉴는 에이전트에 연결해야 통화에서 동작합니다. [에이전트](https://certi.life/docs/guide/studio/screens/callbot/agents#버튼-메뉴가-있는-ars로-만들기)에서 `스마트 ARS` 유형으로 만들 때 `DTMF 메뉴 연결 (선택)`에서 이 메뉴를 고릅니다. 메뉴는 에이전트를 만들 때만 연결할 수 있습니다. 이미 만든 에이전트에는 메뉴를 새로 연결하거나 다른 메뉴로 바꿀 수 없습니다.
 
 #### 사용 중인 메뉴 고치기
 
@@ -8385,11 +8809,17 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 콜봇 > DTMF 메뉴 > (메뉴 선택) > 복제해서 수정
 
-에이전트에 연결된 메뉴는 고치거나 지울 수 없습니다. 에이전트의 안내 프롬프트에 메뉴 구성이 이미 반영되어 있기 때문입니다.
+에이전트에 연결된 메뉴는 고치거나 지울 수 없습니다. 목록에서는 이런 메뉴에 `사용 중` 표시가 붙고, 상세 화면에는 연결된 에이전트 이름과 함께 수정할 수 없다는 안내가 나옵니다. 에이전트의 안내 프롬프트에 메뉴 구성이 이미 반영되어 있기 때문입니다. 이미 만든 에이전트에는 다른 메뉴를 다시 연결할 수 없습니다. 그래서 고친 메뉴로 새 에이전트를 만들고, 번호를 새 에이전트로 옮깁니다.
 
-1. 상세 화면의 `복제해서 수정`을 누릅니다.
+1. 상세 화면의 `복제해서 수정`을 누릅니다. "(메뉴 이름) 복사본"이라는 복제본이 만들어집니다.
 2. 복제본에서 키를 고치고 `트리 저장`을 누릅니다.
-3. 복제본을 에이전트에 연결합니다. 연결은 `스마트 ARS` 에이전트를 만드는 화면의 `DTMF 메뉴 연결 (선택)`에서 합니다.
+3. [에이전트](https://certi.life/docs/guide/studio/screens/callbot/agents#버튼-메뉴가-있는-ars로-만들기)에서 `새 에이전트`를 누르고 `스마트 ARS` 생성 방식으로 새 에이전트를 만듭니다. `DTMF 메뉴 연결 (선택)`에서 복제본을 고릅니다. `상담사 연결 사용` 같은 나머지 설정은 기존 에이전트와 같게 맞춥니다.
+4. 새 에이전트의 설정 화면에서, 기존 에이전트에서 따로 고친 프롬프트나 넣은 도구가 있다면 똑같이 넣습니다. 테스트 패널로 시험한 뒤 화면 위쪽의 `배포`를 누릅니다. 만든 직후의 에이전트는 `미게시` 상태라서 `배포`해야 게시됩니다.
+5. [번호 관리](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#번호에-에이전트-연결하기)에서 그 번호를 누르고, `인바운드 콜 에이전트`를 새 에이전트로 바꿉니다. 버전은 `프로덕션 (vN)`을 고르고 `저장`을 누릅니다.
+6. 그 번호로 직접 전화를 걸어 새 메뉴가 나오는지 확인하고, 키를 하나씩 눌러 봅니다.
+7. 기존 에이전트가 더 필요 없으면 [에이전트 설정](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#에이전트-삭제하기)에서 `삭제`합니다. 다른 번호에 아직 연결되어 있지 않은지 먼저 확인하세요. 기존 에이전트를 삭제하면 기존 메뉴의 잠금이 풀려, 필요 없는 메뉴도 지울 수 있습니다.
+
+5번에서 번호의 `인바운드 콜 에이전트`를 바꾸기 전까지는 그 번호로 오는 전화를 기존 에이전트가 기존 메뉴로 계속 받습니다.
 
 > **메뉴 세트를 삭제하면**
 >
@@ -8400,7 +8830,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 출처: https://certi.life/docs/guide/studio/screens/callbot/dtmf-menus#권장-운영법
 
 - 첫 단계의 선택지는 네 개 안팎으로 줄이세요. 선택지가 많으면 고객이 끝까지 듣지 않습니다.
-- 상담원 전환 키는 상담 시간 밖에 어떻게 동작할지 먼저 확인하세요. [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users#번호-유형-고르기)의 번호 유형에 따라 운영시간 확인 여부가 달라집니다.
+- 상담원 전환 키는 운영시간 밖에 어떻게 동작할지 먼저 확인하세요. [사용자 관리](https://certi.life/docs/guide/studio/screens/callbot/users#번호-유형-고르기)의 번호 유형에 따라 운영시간 확인 여부가 달라집니다.
 - 공개하기 전에 실제 전화로 모든 키를 한 번씩 눌러 보세요.
 
 #### 함께 보기
@@ -8465,7 +8895,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/knowledge#문서를-고치거나-빼려면
 
-문서 내용은 지식 베이스가 아니라 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)에서 고칩니다. 지식 베이스에서 문서를 빼려면 문서 목록에서 삭제합니다. 지식 베이스 자체를 삭제하면 연결된 에이전트에서도 해제되므로, 운영 중인 에이전트가 쓰고 있지 않은지 먼저 확인하세요.
+문서 내용은 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)에서 고칩니다. 백과사전에서 고친 내용은 지식 베이스에 자동으로 반영되지 않습니다. 고친 문서는 지식 베이스의 문서 목록에서 삭제한 뒤 `백과사전에서 가져오기`로 다시 넣습니다. 이미 들어 있는 문서는 가져오기 창에 `추가됨`으로 표시되어 다시 고를 수 없습니다. 지식 베이스에서 문서를 빼려면 문서 목록에서 삭제합니다. 지식 베이스 자체를 삭제하면 연결된 에이전트에서도 해제되므로, 운영 중인 에이전트가 쓰고 있지 않은지 먼저 확인하세요.
 
 #### 어떤 문서를 넣어야 하나요?
 
@@ -8487,7 +8917,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 > **실제 전화가 걸리고 요금이 청구됩니다**
 >
-> 캠페인을 시작하면 목록의 번호로 실제 통화가 발생하고 통화 요금이 건별로 청구됩니다. 시작하면 되돌릴 수 없고, 취소해도 이미 나간 통화는 청구됩니다. 화면에 캠페인 기능이 아직 준비되지 않았다는 안내가 보이면 조직의 CertiLife 담당자에게 문의하세요.
+> 캠페인을 시작하면 목록의 번호로 실제 통화가 발생하고 통화 요금이 건별로 청구됩니다. 시작하면 되돌릴 수 없고, 취소해도 이미 나간 통화는 청구됩니다. 화면에 캠페인 기능이 아직 준비되지 않았다는 안내가 보이면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 시작하기 전에 준비할 것
 
@@ -8500,7 +8930,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 | 표기번호 (선택) | 번호 관리에서 승인받은 [발신표기번호](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#고객-화면에-보일-번호-등록하기) |
 | 대상 목록     | 아래 [대상 목록 만들기](https://certi.life/docs/guide/studio/screens/callbot/campaign#대상-목록-만들기)                     |
 
-상담사 전환(아웃바운드) 방향으로 만든 에이전트는 캠페인 통화에서 상담사 전환이 동작하지 않는다는 경고가 나옵니다. 캠페인에는 `캠페인` 방향으로 만든 에이전트를 쓰세요.
+상담원 전환(아웃바운드) 방향으로 만든 에이전트는 캠페인 통화에서 상담원 전환이 동작하지 않는다는 경고가 나옵니다. 캠페인에는 `캠페인` 방향으로 만든 에이전트를 쓰세요.
 
 #### 대상 목록 만들기
 
@@ -8590,9 +9020,9 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/phone-numbers
 
-> Studio 콜봇의 번호 관리 화면에서 에이전트 번호와 대표번호 구매, SIP 트렁크 연동, 발신표기번호 등록으로 전화번호를 준비하고, 인바운드 콜 에이전트를 지정해 콜봇이 전화를 받게 하는 방법을 안내합니다.
+> Studio 콜봇의 번호 관리 화면에서 에이전트 번호와 대표번호 구매, SIP 트렁크 연동으로 전화를 받을 번호를 준비하고, 인바운드 콜 에이전트를 지정해 콜봇이 전화를 받게 하는 방법과 거는 전화에 표시할 발신표기번호를 등록하는 방법을 안내합니다.
 
-에이전트를 잘 만들어도 전화번호에 연결하지 않으면 전화가 와도 콜봇이 받지 않습니다. 번호를 준비하는 방법은 세 가지입니다. **새 번호를 구매하거나, 이미 가진 번호를 SIP 트렁크로 연동하거나, 고객 화면에 보일 발신표기번호를 등록합니다.** 번호를 준비한 다음에는 그 번호의 전화를 어느 에이전트가 받을지 지정합니다.
+에이전트를 잘 만들어도 전화번호에 연결하지 않으면 전화가 와도 콜봇이 받지 않습니다. 전화를 받을 번호를 준비하는 방법은 두 가지입니다. **새 번호를 구매하거나, 이미 가진 번호를 SIP 트렁크로 연동합니다.** 번호를 준비한 다음에는 그 번호의 전화를 어느 에이전트가 받을지 지정합니다. 발신표기번호는 전화를 받는 번호가 아니라, 콜봇이나 상담원이 거는 전화에 표시할 번호입니다.
 
 **위치:** 콜봇 > 번호 관리
 
@@ -8602,12 +9032,15 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#어떤-방법으로-번호를-준비할까요
 
-| `추가` 메뉴        | 이럴 때                              | 필요한 것                                                                         |
-| -------------- | --------------------------------- | ----------------------------------------------------------------------------- |
-| `새 에이전트 번호 구매` | 콜봇 전용 새 번호가 필요할 때                 | [조직 인증](https://certi.life/docs/guide/studio/screens/callbot/verification) 승인 |
-| `대표번호 구매`      | 전국 대표번호가 필요할 때                    | 조직 인증 승인                                                                      |
-| `SIP 트렁크 연동`   | 이미 쓰는 번호를 콜봇에 연결하고 싶을 때           | 통신사 또는 교환기(PBX)의 SIP 연동 정보                                                    |
-| `발신표기번호 등록`    | 콜봇이 거는 전화에 우리 대표 번호가 표시되게 하고 싶을 때 | 통신가입증명원                                                                       |
+전화를 받을 번호는 아래 세 메뉴로 준비합니다.
+
+| `추가` 메뉴        | 이럴 때                    | 필요한 것                                                                         |
+| -------------- | ----------------------- | ----------------------------------------------------------------------------- |
+| `새 에이전트 번호 구매` | 콜봇 전용 새 번호가 필요할 때       | [조직 인증](https://certi.life/docs/guide/studio/screens/callbot/verification) 승인 |
+| `대표번호 구매`      | 전국 대표번호가 필요할 때          | 조직 인증 승인                                                                      |
+| `SIP 트렁크 연동`   | 이미 쓰는 번호를 콜봇에 연결하고 싶을 때 | 통신사 또는 교환기(PBX)의 SIP 연동 정보                                                    |
+
+`추가`의 `발신표기번호 등록`은 전화를 받는 번호를 만들지 않습니다. 콜봇이나 상담원이 전화를 걸 때 받는 사람 화면에 우리 대표 번호가 보이게 하고 싶을 때 씁니다. 통신가입증명원이 필요하며, 절차는 [고객 화면에 보일 번호 등록하기](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#고객-화면에-보일-번호-등록하기)에 있습니다.
 
 #### 새 번호 구매하기
 
@@ -8638,7 +9071,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 콜봇 > 번호 관리 > 추가 > 발신표기번호 등록
 
-콜봇이 전화를 걸 때 받는 사람의 화면에 보일 번호를 등록합니다.
+콜봇이나 상담원이 전화를 걸 때 받는 사람의 화면에 보일 번호를 등록합니다. 걸려 오는 전화를 받는 데는 쓰이지 않습니다.
 
 1. `발신표기번호`에 번호를 입력합니다. 휴대폰 번호는 등록할 수 없습니다.
 2. `통신가입증명원`을 첨부합니다. 해당 번호의 가입 사실을 증명하는 서류로, 발급일로부터 1개월 이내여야 하고 이미지 또는 PDF, 10MB 이하입니다. **서류의 명의는 조직 인증 명의와 같아야 합니다.**
@@ -8646,7 +9079,9 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 `등록 신청`을 누르기 전에 `취소`나 X로 `발신표기번호 등록` 창을 닫으면, 확인 창 없이 입력한 번호와 메모, 첨부한 서류가 사라집니다. 창을 다시 열면 빈 칸부터 시작합니다.
 
-신청한 번호는 `발신표기번호` 탭에서 `심사 중`, `승인됨`, `반려됨` 상태로 확인합니다. 승인된 번호만 [캠페인](https://certi.life/docs/guide/studio/screens/callbot/campaign)의 `표기번호`로 고를 수 있습니다. 전국 대표번호는 추가 절차가 필요합니다.
+신청한 번호는 `발신표기번호` 탭에서 `심사 중`, `승인됨`, `반려됨` 상태로 확인합니다. 승인된 번호만 [캠페인](https://certi.life/docs/guide/studio/screens/callbot/campaign)의 `표기번호`와 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel#고객에게-전화-걸기)의 발신 화면에서 고를 수 있습니다.
+
+전국 대표번호를 발신표기번호로 등록하려면 추가 절차가 필요합니다. 절차는 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 번호에 에이전트 연결하기
 
@@ -8656,9 +9091,10 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 1. `보유 번호` 탭에서 번호를 누릅니다.
 2. `에이전트 설정`의 `인바운드 콜 에이전트`에서 이 번호로 걸려오는 전화를 받을 에이전트를 고릅니다.
-3. `저장`을 누릅니다.
+3. 에이전트 옆의 버전 선택칸에서 버전을 고릅니다. 기본값은 `현재 (편집본)`입니다. [배포](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#시험하고-배포하기)한 적이 있는 에이전트는 `프로덕션 (vN)`과 `v1`, `v2` 같은 이전 버전도 고를 수 있습니다.
+4. `저장`을 누릅니다. "에이전트 연결이 저장되었습니다."가 나오면 저장된 것입니다.
 
-`연결 안 함`으로 두면 전화가 와도 콜봇이 받지 않습니다. 연결할 에이전트는 [배포](https://certi.life/docs/guide/studio/screens/callbot/agent-settings#시험하고-배포하기)된 상태여야 의도한 내용으로 응대합니다. 연결한 뒤에는 그 번호로 직접 전화를 걸어 확인하세요.
+`연결 안 함`으로 두면 전화가 와도 콜봇이 받지 않습니다. 목록에는 배포하지 않은 에이전트도 나오지만, 연결할 에이전트는 배포된 상태여야 의도한 내용으로 응대합니다. 배포한 내용으로만 응대하게 하려면 버전을 `프로덕션 (vN)`으로 고르는 것을 권장합니다. 연결한 뒤에는 그 번호로 직접 전화를 걸어 확인하세요.
 
 #### 번호 정보 확인과 해지
 
@@ -8708,18 +9144,18 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 ##### 번호 유형 고르기
 
-| 유형      | 켜는 옵션      | 전환 전에 확인하는 것  | 쓰는 경우                                       |
-| ------- | ---------- | ------------- | ------------------------------------------- |
-| 일반 전화번호 | 없음         | 운영시간과 상담사 상태  | 상담사 개인에게 연결할 때                              |
-| `내선`    | `내선번호 사용`  | 운영시간과 상담사 상태  | 병원 교환기(PBX)의 내선번호로 연결할 때. 1로 시작하는 숫자 4자리입니다 |
-| `링그룹`   | `링그룹 번호`   | 운영시간만         | 여러 전화기가 함께 울리는 번호로 연결할 때                    |
-| `착신전환`  | `착신전환용 번호` | 확인하지 않고 바로 전환 | 언제든 받아야 하는 번호로 연결할 때                        |
+| 유형      | 켜는 옵션      | 전환 전에 확인하는 것                                                | 쓰는 경우                                       |
+| ------- | ---------- | ----------------------------------------------------------- | ------------------------------------------- |
+| 일반 전화번호 | 없음         | 운영시간과 상담원 상태                                                | 상담원 개인에게 연결할 때                              |
+| `내선`    | `내선번호 사용`  | 운영시간과 상담원 상태                                                | 병원 교환기(PBX)의 내선번호로 연결할 때. 1로 시작하는 숫자 4자리입니다 |
+| `링그룹`   | `링그룹 번호`   | 운영시간만                                                       | 여러 전화기가 함께 울리는 번호로 연결할 때                    |
+| `착신전환`  | `착신전환용 번호` | 상담원 상태를 보지 않습니다. 번호에 연결 시간을 따로 정하지 않으면 운영시간도 보지 않고 바로 전환합니다 | 언제든 받아야 하는 번호로 연결할 때                        |
 
-`착신전환용 번호`와 `링그룹 번호`는 함께 켤 수 없습니다. 착신전환용 번호는 번호 그룹에 넣을 수 없습니다.
+`착신전환용 번호`와 `링그룹 번호`는 함께 켤 수 없습니다. 착신전환용 번호는 번호 그룹에 넣을 수 없습니다. 번호마다 따로 정한 연결 시간은 `상담사 번호` 목록의 `연결 시간` 열에 보입니다. "연결 시간 기능은 아직 준비 중입니다."가 보이면 아직 번호별 연결 시간을 정할 수 없습니다.
 
 > **caution**
 >
-> `착신전환` 번호는 상담 시간이 아니어도, 상담사가 통화 중이어도 전환됩니다. 밤이나 휴일에 받을 사람이 없는 번호에는 쓰지 마세요.
+> 연결 시간을 따로 정하지 않은 `착신전환` 번호는 운영시간이 아니어도, 상담원이 통화 중이어도 전환됩니다. 밤이나 휴일에 받을 사람이 없는 번호에는 쓰지 마세요.
 
 #### 계정에 번호 연결하기
 
@@ -8727,13 +9163,13 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 콜봇 > 사용자 관리 > 계정 연결
 
-[전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)에서 전화를 받거나 걸려면 내 Studio 계정에 상담사 번호가 연결되어 있어야 합니다. 이 작업은 `콜봇` 메뉴와 `사용자 관리`가 보이는 계정에서 합니다. 상담사 본인 계정에 이 메뉴가 없거나 "사용자 관리 저장 기능이 아직 준비되지 않았습니다."가 표시되면, 조직 관리자에게 내 Studio 계정 이름과 상담사 번호를 알려 연결을 요청하세요. 어느 권한이 이 메뉴를 보는지는 확인되지 않았습니다.
+[전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)에서 전화를 받거나 걸려면 내 Studio 계정에 상담사 번호가 연결되어 있어야 합니다. 이 작업은 `콜봇` > `사용자 관리`에서 합니다. 조직에서 콜봇 설정을 맡은 사람이 따로 있으면, 그 사람에게 내 Studio 계정 이름과 상담사 번호를 알려 연결을 요청하세요. `콜봇` 메뉴가 보이지 않거나 "사용자 관리 저장 기능이 아직 준비되지 않았습니다."가 표시되면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 1. `계정 연결` 탭을 엽니다.
 2. 계정 행에서 `번호 연결`을 누릅니다.
 3. 연결할 번호를 고르고 `연결`을 누릅니다.
 
-번호 하나는 한 계정에만 연결할 수 있습니다. 다른 계정에 연결된 번호는 그 계정에서 먼저 `연결 해제`를 해야 합니다. 담당자가 바뀌면 이전 담당자의 연결을 해제하세요.
+번호 하나는 한 계정에만 연결할 수 있습니다. 다른 계정에 연결된 번호는 그 계정에서 먼저 `연결 해제`를 해야 합니다. 번호를 쓰는 상담원이 바뀌면 이전 상담원 계정의 연결을 해제하세요.
 
 #### 번호 그룹 만들기
 
@@ -8741,7 +9177,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 콜봇 > 사용자 관리 > 번호 그룹 > 그룹 추가
 
-그룹으로 묶으면 콜봇이 그룹 안의 상담사 중 한 명에게 연결합니다.
+그룹으로 묶으면 콜봇이 그룹 안의 상담원 중 한 명에게 연결합니다.
 
 1. `번호 그룹` 탭에서 `그룹 추가`를 누릅니다.
 2. `그룹 이름`을 입력하고 `배정 전략`을 고릅니다.
@@ -8750,8 +9186,8 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 | `배정 전략`   | 연결 순서                              |
 | --------- | ---------------------------------- |
 | `순차 배정`   | 그룹에서 정한 번호 순서대로 연결을 시도합니다. 기본값입니다  |
-| `최소 상담시간` | 당일 통화시간 합이 가장 적은 상담사부터 연결합니다       |
-| `최대 대기시간` | 마지막 통화가 끝난 뒤 가장 오래 기다린 상담사부터 연결합니다 |
+| `최소 상담시간` | 당일 통화시간 합이 가장 적은 상담원부터 연결합니다       |
+| `최대 대기시간` | 마지막 통화가 끝난 뒤 가장 오래 기다린 상담원부터 연결합니다 |
 | `랜덤 배정`   | 무작위 순서로 연결을 시도합니다                  |
 
 번호 순서는 `순차 배정`에서만 의미가 있습니다. `기본 그룹(전체)`에는 상담사가 지정된 번호가 자동으로 모두 들어가며, 착신전환용 번호는 제외됩니다.
@@ -8760,9 +9196,9 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/users#등록한-번호를-쓰는-곳
 
-- 에이전트의 [통화 전환 도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담사에게-전화를-넘기게-하기)에서 넘길 대상으로 고릅니다.
+- 에이전트의 `상담사 연결 도구`와 스마트 ARS의 `상담사 연결 사용`에서 넘길 대상으로 고릅니다. 방법별 차이는 [도구](https://certi.life/docs/guide/studio/screens/callbot/tools#상담원에게-전화를-넘기게-하기)에 있습니다.
 - [DTMF 메뉴](https://certi.life/docs/guide/studio/screens/callbot/dtmf-menus#키마다-할-일-정하기)의 `상담원 전환`에서 `전환 대상`으로 고릅니다.
-- [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)에서 상담사가 전화를 받고 겁니다.
+- [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel)에서 상담원이 전화를 받고 겁니다.
 
 #### 함께 보기
 
@@ -8816,7 +9252,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/callbot/verification#알아-둘-점
 
-- 인증 등급에 따라 보유할 수 있는 번호 수가 다릅니다. 화면에는 개인 1개, 개인사업자 3개, 법인 5개로 안내됩니다.
+- 인증 등급에 따라 보유할 수 있는 번호 수가 다릅니다. `개인사업자`는 3개, `법인`은 5개입니다. 지금은 `개인`으로 신청할 수 없지만, 예전에 `개인`으로 인증받은 조직은 1개입니다. 인증이 유효하면 화면에 `현재 인증 유효 · 개인사업자 (번호 3개)`처럼 등급과 번호 수가 표시됩니다.
 - [발신표기번호](https://certi.life/docs/guide/studio/screens/callbot/phone-numbers#고객-화면에-보일-번호-등록하기)를 등록할 때 제출하는 통신가입증명원의 명의는 조직 인증 명의와 같아야 합니다.
 - 반려되었다면 다시 신청하기 전에 상태 카드의 `반려 사유`를 먼저 읽고, 그 사유에 맞게 서류나 신청자 구분을 고쳐 제출하세요.
 - 서류에는 사업자 정보가 들어 있습니다. 조직에서 서류 제출 권한이 있는 담당자가 진행하세요.
@@ -8848,12 +9284,13 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/counsel/overview#화면-구성
 
-| 영역    | 있는 것                                         | 하는 일                    |
-| ----- | -------------------------------------------- | ----------------------- |
-| 왼쪽    | 상태 탭(`대기`, `진행중`, `완료`, `종료`), 필터, 검색, 상담 목록 | 응대할 상담을 찾습니다            |
-| 가운데   | `상담 백과사전`                                    | 답변에 쓸 내용을 찾아 입력창에 넣습니다  |
-| 오른쪽   | 대화창, 언어 바(고객·상담사 언어가 표시되는 줄), 입력창            | 고객과 대화하고 번역합니다          |
-| 오른쪽 끝 | `고객 정보`, `서티 AI`, `페르소나` 탭                   | 고객이 누구인지 확인하고 AI에게 묻습니다 |
+| 영역  | 있는 것                                               | 하는 일                                           |
+| --- | -------------------------------------------------- | ---------------------------------------------- |
+| 왼쪽  | 상태 탭(`전체`, `대기`, `진행중`, `완료`, `종료`), 필터, 검색, 상담 목록 | 응대할 상담을 찾습니다                                   |
+| 가운데 | 대화창, 언어 바(고객·상담사 언어가 표시되는 줄), 입력창                  | 고객과 대화하고 번역합니다                                 |
+| 오른쪽 | `고객정보`, `서티 AI`, `상담 백과사전` 탭                       | 고객이 누구인지 확인하고, AI에게 묻고, 답변에 쓸 문서를 찾아 입력창에 넣습니다 |
+
+오른쪽 탭은 펼쳐서 대화창 옆에 칸으로 열어 둘 수 있습니다. 고객 중요도를 쓰는 조직에는 상태 탭에 `즐겨찾기`도 보입니다. 영역 안의 배치는 조직이 설정의 `채팅 상담 화면 구성`에서 바꿀 수 있으므로, 조직마다 순서가 다를 수 있습니다.
 
 모바일에서는 `상담 백과사전`이 보이지 않고, 가로모드는 지원하지 않습니다.
 
@@ -8864,7 +9301,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 1. **출근하면** `대기` 탭에서 밤사이 들어온 상담을 확인합니다. → [응대할 상담 찾기](https://certi.life/docs/guide/studio/screens/counsel/inbox)
 2. **상담을 열고** `바로 상담 시작`을 눌러 응대를 시작합니다. → [상담 시작하고 마무리하기](https://certi.life/docs/guide/studio/screens/counsel/handle)
 3. **답변할 때** `상담 백과사전`에서 안내 문구를 찾아 넣고, 외국어 고객이면 번역해 보냅니다. → [빠르고 정확하게 답하기](https://certi.life/docs/guide/studio/screens/counsel/reply-tools), [외국어 고객과 대화하기](https://certi.life/docs/guide/studio/screens/counsel/translation)
-4. **고객이 누구인지** 오른쪽 `고객 정보`에서 지난 상담을 확인합니다. → [고객 정보 확인하고 활용하기](https://certi.life/docs/guide/studio/screens/counsel/customer)
+4. **고객이 누구인지** 오른쪽 `고객정보` 탭에서 지난 상담을 확인합니다. → [고객 정보 확인하고 활용하기](https://certi.life/docs/guide/studio/screens/counsel/customer)
 5. **내가 답하기 어려우면** `이관`으로 다른 상담원에게 넘깁니다. → [다른 상담원에게 넘기기](https://certi.life/docs/guide/studio/screens/counsel/handle#다른-상담원에게-넘기기)
 6. **끝나면** `상담완료`를 누르고 내용을 정리해 저장합니다. → [상담 마무리하기](https://certi.life/docs/guide/studio/screens/counsel/handle#상담-마무리하기)
 
@@ -8898,7 +9335,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 출처: https://certi.life/docs/guide/studio/screens/counsel/inbox
 
-> Studio 상담 화면에서 대기·진행중·완료·종료 상태 탭과 기간·채널·챗봇·태그 필터, 활성 유저만·내 상담만·안읽음만 토글, 고객 이름·연락처·상담사·상담내용 검색으로 응대할 상담을 찾고 검색 필터 설정으로 시작 화면을 정하는 방법을 안내합니다.
+> Studio 상담 화면에서 대기·진행중·완료·종료 상태 탭과 기간·채널·챗봇·태그 필터, 활성 유저만·내 상담만·안읽음만 토글, 고객 이름·연락처·상담사·상담내용 검색으로 응대할 상담을 찾고, 필터 설정으로 이동해 조직의 필터 순서를 정하는 곳을 안내합니다.
 
 상담이 많아지면 "지금 누구에게 답해야 하는지" 찾는 것부터가 일입니다. 방법은 세 가지를 조합하는 것입니다. **상태 탭으로 단계를 고르고, 필터로 좁히고, 검색으로 특정 고객을 찾습니다.**
 
@@ -8910,6 +9347,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 | 탭     | 어떤 상담인가요                    | 상담원이 할 일                 |
 | ----- | --------------------------- | ------------------------ |
+| `전체`  | 상태와 관계없이 모든 상담을 섞어 보여 줍니다   | 전체 흐름을 한 번에 볼 때 씁니다      |
 | `대기`  | 챗봇이 응대 중이거나 상담원 연결을 기다리는 상담 | 상담원을 기다리는 고객부터 응대를 시작합니다 |
 | `진행중` | 상담원이 응대 중인 상담               | 답변을 이어 갑니다               |
 | `완료`  | 응대를 마친 상담                   | 필요하면 다시 열어 봅니다           |
@@ -8944,24 +9382,26 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 검색창 아래에서 기준을 고른 뒤 검색합니다.
 
-| 기준       | 찾는 방법                                         |
-| -------- | --------------------------------------------- |
-| `고객 이름`  | 이름으로 찾습니다                                     |
-| `고객 연락처` | 숫자만, 전체 번호(10\~11자리)로 찾습니다. 일부 자리만으로는 찾지 않습니다 |
-| `상담사`    | 담당 상담사 이름으로 찾습니다                              |
-| `상담내용`   | 대화 내용으로 찾습니다. 2자 이상 입력해야 합니다                  |
+| 기준       | 찾는 방법                                                            |
+| -------- | ---------------------------------------------------------------- |
+| `고객 이름`  | 이름으로 찾습니다                                                        |
+| `고객 연락처` | 숫자만, 전체 번호(10\~11자리)로 찾습니다. +82로 시작하는 번호도 됩니다. 일부 자리만으로는 찾지 않습니다 |
+| `상담사`    | 담당 상담원 이름으로 찾습니다                                                 |
+| `상담내용`   | 대화 내용으로 찾습니다. 2자 이상 입력해야 합니다                                     |
+
+고객을 등록할 때는 9자리 번호도 받지만, `고객 연락처` 검색은 10\~11자리 번호만 찾습니다. 9자리 번호로 등록한 고객은 `고객 이름`으로 찾으세요.
 
 #### 매번 같은 조건으로 시작하기
 
 출처: https://certi.life/docs/guide/studio/screens/counsel/inbox#매번-같은-조건으로-시작하기
 
-**위치:** 상담 > 상담 목록 > 검색 필터 설정
+**위치:** 상담 > 상담 목록 > 필터 설정으로 이동
 
-필터 옆 톱니(`검색 필터 설정`)를 누르면 `검색 필터 설정` 창에서 필터마다 `순서`, `노출` 여부, `시작 상태`를 정할 수 있습니다. 채팅 화면에 들어올 때마다 여기서 정한 대로 시작합니다.
+목록 위의 톱니 아이콘(마우스를 올리면 `필터 설정으로 이동 ›`)을 누르면 설정의 `채팅 상담 화면 구성`이 열립니다. 이 화면에서는 상담 화면에서 쓰지 않는 것을 숨기고, 영역 안 배치와 필터·헤더 정보 순서를 정합니다. 모바일 화면에는 이 톱니가 없습니다.
 
-> **조직 전체에 적용됩니다**
+> **모든 상담원의 화면이 바뀝니다**
 >
-> 이 설정은 나만의 설정이 아니라 조직 전체에 적용됩니다. 숨긴 필터는 화면에서 사라지고, 그 필터로 걸러 두었던 값도 함께 비워집니다. 다른 상담원과 상의해서 바꾸세요.
+> 화면에도 "모든 상담사 화면에 똑같이 적용되고, 다른 상담사에게는 상담 화면에 다시 들어오거나 새로고침하면 반영돼요."라고 표시됩니다. 조직이 정한 설정 관리자만 바꾸세요. 자세한 내용은 [누가 무엇을 바꿀 수 있나요](https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요)를 보세요.
 
 #### 고객을 직접 등록하기
 
@@ -8971,7 +9411,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 전화로 먼저 연락 온 고객을 미리 등록해 둘 때 씁니다. 같은 사람이 두 번 등록되지 않도록, 먼저 기존 고객을 찾아본 뒤 없을 때만 새로 등록하는 순서입니다.
 
-1. 상태 탭 오른쪽의 `고객 등록`을 누릅니다. `고객 등록` 창이 열립니다.
+1. 상담 목록 아래쪽의 `고객 등록`을 누릅니다. `고객 등록` 창이 열립니다.
 2. `이름 또는 연락처`에 이름이나 번호를 넣고 `검색`을 누릅니다.
 3. 찾는 고객이 목록에 있으면 그 고객을 누릅니다. `고객 정보 수정`으로 바뀌며 정보를 고칠 수 있습니다. 목록에 없으면 `신규 고객 등록`을 누릅니다. 검색어가 `이름` 또는 `연락처` 칸에 미리 채워집니다.
 4. `이름`과 `연락처`를 넣습니다. 둘 다 필수입니다. 필요하면 `생년월일`, `성별`, `상담태그`, `마케팅 수신동의`도 넣습니다.
@@ -9004,7 +9444,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 ##### `고객 저장에 실패했습니다`
 
-`등록`이나 `저장`을 눌렀지만 저장되지 않았다는 뜻입니다. 창을 닫지 말고 `등록`(또는 `저장`)을 한 번 더 누릅니다. 창을 닫으면 입력한 내용이 사라지므로, 계속 실패하면 입력한 내용을 따로 적어 두고 화면의 문구와 발생 시각을 조직의 CertiLife 담당자에게 알립니다.
+`등록`이나 `저장`을 눌렀지만 저장되지 않았다는 뜻입니다. 창을 닫지 말고 `등록`(또는 `저장`)을 한 번 더 누릅니다. 창을 닫으면 입력한 내용이 사라지므로, 계속 실패하면 입력한 내용을 따로 적어 두고 화면의 문구와 발생 시각을 CertiLife 고객센터(1800-8984)에 알립니다.
 
 #### 함께 보기
 
@@ -9031,7 +9471,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 1. [`대기` 탭](https://certi.life/docs/guide/studio/screens/counsel/inbox)에서 상담을 누릅니다.
 2. 대화창의 시작 버튼을 누릅니다. 상담의 상태에 따라 `바로 상담 시작`, `상담 진행하기`, `추가 상담 시작` 중 하나가 표시됩니다. 다른 상담원이 응대 중인 상담에 함께 들어갈 때는 `상담 참여하기`를 누릅니다.
-3. 입력창에 답변을 쓰고 `전송`을 누릅니다. Ctrl+Enter(Mac은 Cmd+Enter)로도 보낼 수 있고, Enter는 줄바꿈입니다.
+3. 입력창에 답변을 쓰고 `전송`을 누릅니다. 기본 전송 키는 Ctrl+Enter(Mac은 Cmd+Enter)이고, Enter는 줄바꿈입니다. 입력창의 `전송 키` 버튼에서 `Enter 로 전송`을 고르면 Enter로 보내고 Shift+Enter로 줄을 바꿉니다. 고른 키는 지금 쓰는 브라우저에만 기억됩니다.
 
 "지금은 고객에게 메시지를 보낼 수 없습니다"가 표시되면 그 상담방에는 지금 메시지를 보낼 수 없는 상태입니다.
 
@@ -9062,13 +9502,13 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 상담 > 대화창 > 상담완료
 
-상담을 끝내는 방법은 두 가지입니다. 상담 한 건을 정리 기록과 함께 끝낼 때는 대화창 위쪽의 `상담완료`(또는 `상담종료`) 버튼을 씁니다. 답이 없는 상담 여러 건을 정리 기록 없이 한 번에 닫을 때는 상담 목록 위의 [`일괄 종료`](https://certi.life/docs/guide/studio/screens/counsel/handle#여러-상담을-한-번에-종료하기)를 씁니다.
+상담을 끝내는 방법은 두 가지입니다. 상담 한 건은 대화창 위쪽의 `상담완료`(또는 `상담종료`) 버튼으로 끝냅니다. 답이 없는 상담 여러 건은 상담 목록에서 골라 [한 번에 처리](https://certi.life/docs/guide/studio/screens/counsel/handle#여러-상담을-한-번에-종료하기)합니다.
 
-| 구분    | 한 건 끝내기                 | 여러 건 한 번에 닫기                                       |
-| ----- | ----------------------- | -------------------------------------------------- |
-| 누르는 곳 | 대화창 위쪽 `상담완료` 또는 `상담종료` | `대기`·`진행중` 탭의 상담 목록 위 `일괄 종료`                      |
-| 대상    | 지금 연 상담 한 건             | 목록에서 체크한 상담                                        |
-| 정리 기록 | `상담사 정리`를 쓰고 저장해야 끝납니다  | 방마다 정리하지 않습니다. 적은 `종료 사유 (선택)` 하나가 모든 방에 똑같이 들어갑니다 |
+| 구분    | 한 건 끝내기                 | 여러 건 한 번에 끝내기                                                                    |
+| ----- | ----------------------- | -------------------------------------------------------------------------------- |
+| 누르는 곳 | 대화창 위쪽 `상담완료` 또는 `상담종료` | `대기`·`진행중` 탭에서 `여러 상담 선택`을 누른 뒤 나오는 `일괄 완료 처리`(또는 `일괄 종료 처리`, `일괄 완료/종료 처리`)     |
+| 대상    | 지금 연 상담 한 건             | 목록에서 체크한 상담                                                                      |
+| 정리 기록 | `상담사 정리`를 쓰고 저장해야 끝납니다  | `한 방씩 검토하며 처리`는 방마다 정리 창이 열립니다. `검토 없이 한 번에 처리`는 방마다 AI가 정리를 만들어 상담원 확인 없이 저장합니다 |
 
 `상담완료`와 `상담종료`는 버튼 두 개가 아니라 같은 자리의 한 버튼입니다. 상담방의 채널과 상태에 따라 이름만 바뀝니다. 아직 끝나지 않은 상담에는 보통 `상담완료`가 보입니다. 이미 완료된 상담과, 완료할 수 없는 상담(예: 카카오톡 `오픈빌더 (스킬)` 방식으로 연결된 상담)에는 `상담종료`가 보입니다. `상담완료`로 끝낸 상담은 `완료` 탭에, `상담종료`로 끝낸 상담은 `종료` 탭에 보입니다.
 
@@ -9079,44 +9519,51 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 > **저장해야 상담이 완료됩니다**
 >
-> 정리 창을 그냥 닫으면 상담은 완료되지 않습니다. 화면에도 "저장해야 상담이 완료됩니다"라고 표시됩니다. 다른 상담사가 같은 상담을 정리하고 있으면 "다른 상담사가 편집 중입니다 — 읽기 전용으로 엽니다"가 표시됩니다.
+> 정리 창을 그냥 닫으면 상담은 완료되지 않습니다. 화면에도 "저장해야 상담이 완료됩니다"라고 표시됩니다. 다른 상담원이 같은 상담을 정리하고 있으면 "다른 상담사가 편집 중입니다 — 읽기 전용으로 엽니다"가 표시됩니다.
 
-상담을 끝내지 않고 중간에 정리만 해 두려면 현재 상담 카드의 `정리하기`를 누릅니다.
+상담을 끝내지 않고 중간에 정리만 해 두거나, 완료한 뒤 정리를 고치려면 오른쪽 `고객정보` 탭의 `상담 정보`에 있는 `정리하기`를 누릅니다. `상담 내용 정리` 창이 열리고, 완료할 때 정리한 내용이 있으면 이어서 고칩니다. 다른 상담원이 정리하고 있으면 `정리하기`가 눌리지 않습니다.
 
 ##### AI 초안 활용하기
 
-`AI 초안`은 상담이 완료·종료된 뒤에 AI가 만들어 주는 요약, 정보 추출, 분류입니다. 정리를 쓸 때 참고하면 시간을 아낄 수 있습니다. 다만 화면에도 안내되어 있듯 **AI가 만든 참고용 초안이며 상담사가 확정한 정리 기록과는 다릅니다.** 조직 설정에 따라 정리 본문이 AI로 자동으로 채워져 "AI가 자동으로 채워 저장했습니다"가 표시되기도 하는데, 이때도 내용이 맞는지 확인하세요. 요약은 고객정보 패널에서 `요약 생성`, `다시 생성`으로 만들 수 있습니다.
+정리 창을 열면 아직 초안이 없는 상담에서는 AI가 `AI 초안`을 만듭니다. 상담이 끝나기 전에도 만들어지므로, `상담사 정리`를 쓰면서 바로 참고할 수 있습니다. `AI 초안`에는 `요약`, `추출`, `분류`가 있고, `복사`, `정리에 넣기`, `이대로 선택`으로 정리와 기록 항목에 옮겨 담습니다. 대화가 더 이어졌다면 `다시 생성`을 누릅니다. 다만 화면에도 안내되어 있듯 **AI가 만든 참고용 초안이며 상담사가 확정한 정리 기록과는 다릅니다.**
+
+설정의 [`상담 기록 설정`](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record#ai가-기록을-대신-채우게-하기)에서 `AI 자동 선택`이 켜져 있으면 AI가 정리를 직접 채웁니다. AI가 정리하는 동안에는 "AI가 상담 내용을 정리하는 중입니다 — 끝나면 자동으로 채워집니다"가 보이고 저장할 수 없습니다. 채운 뒤에는 "AI가 자동으로 채워 저장했습니다"가 표시됩니다. 이때도 내용이 맞는지 확인하세요. 이 설정에서는 `복사`, `정리에 넣기`, `이대로 선택`이 보이지 않습니다.
+
+`상담 요약` 카드는 상담이 끝난 뒤에 자동으로 만들어집니다. 요약은 `고객정보` 탭에서 `요약 생성`, `다시 생성`으로 만들 수도 있습니다.
 
 #### 여러 상담을 한 번에 종료하기
 
 출처: https://certi.life/docs/guide/studio/screens/counsel/handle#여러-상담을-한-번에-종료하기
 
-**위치:** 상담 > `대기` 또는 `진행중` 탭 > 상담 목록 > 일괄 종료
+**위치:** 상담 > `대기` 또는 `진행중` 탭 > 상담 목록 > 여러 상담 선택
 
-고객이 답 없이 떠난 상담이 쌓이면 목록이 복잡해집니다. 이때 `일괄 종료`로 여러 상담을 한 번에 닫습니다. `일괄 종료`는 `대기`와 `진행중` 탭에만 있습니다. 방마다 `상담사 정리`를 남기지 않으므로, 기록이 필요한 상담은 대화창의 `상담완료`(또는 `상담종료`)로 한 건씩 끝냅니다.
+고객이 답 없이 떠난 상담이 쌓이면 여러 상담을 골라 한 번에 끝냅니다. 이 기능은 `대기`와 `진행중` 탭에만 있습니다. 버튼 이름은 고른 상담에 따라 `일괄 완료 처리`, `일괄 종료 처리`, `일괄 완료/종료 처리` 중 하나로 바뀝니다. 채널과 연결 방식에 따라 방마다 완료 또는 종료로 처리되기 때문입니다.
 
 1. `대기` 또는 `진행중` 탭을 엽니다.
-2. 닫을 상담 앞의 체크박스를 켭니다. 지금 페이지에 보이는 상담을 모두 고르려면 `전체 선택`을 누릅니다. 고른 수가 `N개 선택됨`으로 표시됩니다.
-3. 페이지를 넘기거나 필터·검색을 바꾸지 말고 바로 `일괄 종료 (N)`을 누릅니다.
-4. `일괄 종료` 창에서 건수가 방금 체크한 상담 수와 같은지 확인합니다. 필요하면 `종료 사유 (선택)`을 적습니다. 이 사유는 모든 방에 똑같이 들어갑니다.
-5. "위 내용을 확인했으며, N개 상담방을 종료 처리하는 것에 동의합니다."에 체크하고 `종료 실행`을 누릅니다. "N개 상담방이 종료 처리되었습니다."가 나오면 끝난 것입니다.
+2. 목록 위의 `여러 상담 선택`을 누르고, 끝낼 상담의 체크박스를 켭니다. 지금 화면에 보이는 상담을 모두 고르려면 `전체 선택`을 누릅니다.
+3. 페이지를 넘기거나 탭·필터·검색을 바꾸지 말고 바로 `일괄 완료 처리 (N)` 같은 버튼을 누릅니다. 페이지나 탭, 필터를 바꾸면 고른 상담이 비워집니다.
+4. `일괄 완료/종료 처리` 창에서 `상담 완료 대상`과 `상담 종료 대상`의 수가 고른 상담 수와 맞는지 확인합니다.
+5. `처리 방식`을 고릅니다.
+   - `한 방씩 검토하며 처리`(권장): `검토 시작`을 누르면 고른 방의 정리 창이 차례로 열립니다. AI 상담 정리를 확인하고 고쳐 저장하면 다음 방으로 넘어갑니다. 방을 넘기려면 `이 방 건너뛰기`, 멈추려면 `그만두기`를 누릅니다.
+   - `검토 없이 한 번에 처리`: 방마다 AI 상담 정리를 만든 뒤 한 번에 처리합니다. "위 내용을 확인했으며, N개 상담방을 처리하는 것에 동의합니다."에 체크하고 버튼을 누릅니다. 처리하는 동안에는 창을 닫지 마세요.
 
-> **일괄 종료는 취소할 수 없습니다**
+> **켜 둔 상담 완료 메시지가 고객마다 나갑니다**
 >
-> 창에도 "선택한 N개 상담방이 종료 처리됩니다. 이 작업은 취소할 수 없습니다."라고 표시됩니다. `전체 선택`은 지금 페이지에 보이는 상담만 고릅니다. 창의 건수가 체크한 상담 수와 다르면 `취소`를 누르고, 다른 탭을 눌렀다가 돌아와 선택을 비운 뒤 처음부터 다시 고르세요.
+> [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages)의 `상담 완료 메시지`가 켜져 있으면, 상담원 연결을 기다리거나 상담원이 응대 중이던 방의 고객마다 그 메시지가 나갑니다. 챗봇이 응대 중이던 방에는 나가지 않습니다. 메시지가 가면 안 되는 고객의 방은 고르지 마세요. 처리한 상담을 처리 전으로 되돌리는 버튼은 없습니다. `상담 종료 대상`인 카카오 방은 카카오 상담 세션까지 끊겨 고객이 챗봇 응대로 돌아갑니다. `검토 없이 한 번에 처리`에서는 AI 정리가 상담원 확인 없이 저장됩니다.
 
 #### 문제가 생기면
 
 출처: https://certi.life/docs/guide/studio/screens/counsel/handle#문제가-생기면
 
-##### `일괄 종료 결과`
+##### `일괄 처리 결과`
 
-`종료 실행`을 눌렀지만 일부 상담방을 닫지 못했다는 뜻입니다. 창 위쪽에 `N개 종료 처리 / M개 실패`가, 그 아래 `실패 목록`에 닫지 못한 방과 사유가 보입니다.
+일부 상담방을 처리하지 못했다는 뜻입니다. 창 위쪽에 "3개 처리 · 1개 실패"처럼 결과가, 그 아래 `실패 목록`에 처리하지 못한 방과 사유가 보입니다. 다른 상담원이 정리하고 있는 방과 AI 상담 정리를 만들지 못한 방은 닫지 않고 남겨 둡니다.
 
 1. 창을 닫고 목록에서 아직 남아 있는 상담을 확인합니다.
-2. 남은 상담은 하나씩 열어 대화창의 `상담완료`(또는 `상담종료`)로 끝냅니다.
+2. AI 상담 정리에 실패한 방은 `한 방씩 검토하며 처리`로 다시 처리합니다. 정리 창은 AI 초안 없이도 저장됩니다.
+3. 그 밖의 남은 상담은 하나씩 열어 대화창의 `상담완료`(또는 `상담종료`)로 끝냅니다.
 
-그래도 닫히지 않으면 `실패 목록`의 내용과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 닫히지 않으면 `실패 목록`의 내용과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 #### 함께 보기
 
@@ -9134,7 +9581,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 > Studio 상담 화면에서 언어 바로 고객 언어와 상담사 언어를 정하고, 고객 메시지의 번역을 읽고, 답변을 번역해 원문과 실제 발송 문구를 확인한 뒤 보내는 방법, 바로 전송, 언어 변경 제안, 번역이 안 될 때의 대처를 안내합니다.
 
-번역을 켜 둔 조직에서는 외국어로 들어온 메시지가 **자동으로 상담사 언어로 번역되어 보이고**, 상담사가 한국어로 쓴 답변은 **고객 언어로 번역해 보낼 수 있습니다.** 상담사가 할 일은 두 가지입니다. 언어가 맞게 잡혔는지 확인하는 것, 그리고 보내기 전에 번역된 문구를 한 번 읽는 것입니다.
+번역을 켜 둔 조직에서는 외국어로 들어온 메시지가 **자동으로 상담사 언어로 번역되어 보이고**, 상담원이 한국어로 쓴 답변은 **고객 언어로 번역해 보낼 수 있습니다.** 상담원이 할 일은 두 가지입니다. 언어가 맞게 잡혔는지 확인하는 것, 그리고 보내기 전에 번역된 문구를 한 번 읽는 것입니다.
 
 **위치:** 상담 > 대화창 > 언어 바
 
@@ -9142,7 +9589,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 > **번역 버튼이 안 보인다면**
 >
-> 조직 설정에서 번역이 꺼져 있는 것입니다. 꺼져 있으면 언어 바, 입력창의 번역 버튼, 메시지의 번역 버튼이 모두 나타나지 않습니다. 관리자에게 [번역 설정](https://certi.life/docs/guide/studio/screens/org-settings/translation)에서 `번역 사용`을 켜 달라고 요청하세요.
+> 조직 설정에서 번역이 꺼져 있는 것입니다. 꺼져 있으면 언어 바, 입력창의 번역 버튼, 메시지의 번역 버튼이 모두 나타나지 않습니다. 조직의 설정 관리자에게 [번역 설정](https://certi.life/docs/guide/studio/screens/org-settings/translation)에서 `번역 사용`을 켜 달라고 요청하세요.
 
 #### 언어가 맞게 잡혔는지 확인하기
 
@@ -9150,14 +9597,16 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 입력창 바로 위의 언어 바에 `고객` 언어 → `상담사` 언어가 표시됩니다. 옆의 꼬리표로 지금 상태를 알 수 있습니다.
 
-| 꼬리표            | 뜻                                               |
-| -------------- | ----------------------------------------------- |
-| `자동 감지 중`      | 아직 고객 언어가 정해지지 않았습니다. 고객 메시지 3건이 모이면 자동으로 정해집니다 |
-| `자동 감지됨`       | 고객의 처음 메시지들로 언어가 정해졌습니다                         |
-| `회사 설정 · (언어)` | 조직 설정에서 지정한 언어로 번역하고 있습니다                       |
-| `고정`           | 이 상담방에서 상담사가 직접 언어를 골랐습니다                       |
+| 꼬리표            | 뜻                                          |
+| -------------- | ------------------------------------------ |
+| `자동 감지 중`      | 아직 고객 언어가 정해지지 않았습니다. 아래 규칙에 따라 자동으로 정해집니다 |
+| `자동 감지됨`       | 고객의 처음 메시지들로 언어가 정해졌습니다                    |
+| `회사 설정 · (언어)` | 조직 설정에서 지정한 언어로 번역하고 있습니다                  |
+| `고정`           | 이 상담방에서 상담원이 직접 언어를 골랐습니다                  |
 
-언어가 틀렸거나 세 건을 기다리지 않고 바로 정하고 싶다면 언어 바의 `고객` 언어 목록에서 직접 고릅니다. 고객 명단이 아니라 언어 목록이며, 조직 설정 화면의 `고객이 쓰는 언어`와 같은 항목입니다. 이 상담방에만 적용됩니다. 되돌리려면 `자동 감지`를 고릅니다. `상담사` 쪽은 `회사 설정 · 한국어` 같은 꼬리표가 붙은 조직 설정 값이 기본이고, 필요하면 이 방에서만 다른 언어로 바꿀 수 있습니다.
+자동 감지는 고객 메시지 두 건이 같은 언어이면 그 언어로 정합니다. 처음 세 건이 모두 다른 언어이면 세 번째 메시지의 언어로 정합니다. 번역해도 원문과 같아지는 메시지(숫자나 이모지만 있는 메시지 등)는 세지 않습니다.
+
+언어가 틀렸거나 자동으로 정해지기를 기다리지 않고 바로 정하고 싶다면 언어 바의 `고객` 언어 목록에서 직접 고릅니다. 고객 명단이 아니라 언어 목록이며, 조직 설정 화면의 `고객이 쓰는 언어`와 같은 항목입니다. 이 상담방에만 적용됩니다. 되돌리려면 `자동 감지`를 고릅니다. `상담사` 쪽은 `회사 설정 · 한국어` 같은 꼬리표가 붙은 조직 설정 값이 기본이고, 필요하면 이 방에서만 다른 언어로 바꿀 수 있습니다.
 
 지원 언어는 `한국어`, `영어`, `일본어`, `중국어(간체)`, `중국어(번체)`, `태국어`, `스페인어(멕시코)`, `베트남어`입니다.
 
@@ -9181,13 +9630,28 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 상담 > 대화창 > 입력창 > 번역
 
-1. 입력창에 평소처럼 한국어로 답변을 씁니다.
-2. 입력창 오른쪽의 번역 버튼(`고객 언어로 번역`)을 누릅니다.
-3. 입력창이 두 칸으로 나뉩니다. 왼쪽 `원문`은 내가 쓴 글, 오른쪽 `실제 발송`은 고객에게 나갈 번역문입니다.
-4. **`실제 발송` 문구를 읽어 봅니다.** 오른쪽 칸은 직접 고칠 수 있습니다. 시술명, 제품명, 지점명이 이상하게 번역됐다면 여기서 바로잡으세요.
-5. `전송`을 누릅니다.
+누르는 버튼은 조직이 [번역 설정의 `동작`](https://certi.life/docs/guide/studio/screens/org-settings/translation#상담원의-전송-방식-정하기)에서 `번역·전송 버튼 합치기`를 켰는지에 따라 다릅니다.
 
-번역이 마음에 들지 않아 원문부터 다시 쓰고 싶다면 `번역 전으로 되돌리기`를 누릅니다. 번역 직후에는 번역 버튼이 잠기고("이미 번역한 문장입니다"), 문장을 고치거나 되돌리면 다시 번역할 수 있습니다.
+1. 입력창에 평소처럼 한국어로 답변을 씁니다.
+2. 번역합니다.
+   - 번역 버튼이 따로 있는 조직: 입력창의 번역 버튼(`고객 언어로 번역`)을 누릅니다.
+   - 전송 버튼이 `번역`으로 바뀌어 있는 조직: `번역` 버튼을 누릅니다. 이때는 번역만 하고 보내지 않습니다.
+3. 입력창이 두 칸으로 나뉩니다. 왼쪽 `원문`은 내가 쓴 글, 오른쪽 `실제 발송`은 고객에게 나갈 번역문입니다.
+4. **`실제 발송` 문구를 읽어 봅니다.** 시술명, 제품명, 지점명이 이상하게 번역됐다면 오른쪽 칸에서 직접 고칩니다. 왼쪽 `원문` 칸은 고칠 수 없습니다.
+5. 보냅니다.
+   - 번역 버튼이 따로 있는 조직: `전송`을 누릅니다.
+   - 전송 버튼이 `번역`으로 바뀌어 있는 조직: 번역이 끝나면 같은 버튼이 `전송`으로 바뀝니다. 그 버튼을 누릅니다.
+
+고객에게는 항상 오른쪽 `실제 발송` 칸의 글이 나갑니다. 내가 쓴 한국어 원문은 고객에게 보내지 않습니다.
+
+번역이 마음에 들지 않아 원문부터 다시 쓰고 싶다면 `원문` 칸의 `번역 전으로 되돌리기`를 누릅니다. 번역이 사라지고 한국어 원문이 입력창에 돌아옵니다. 번역 버튼이 따로 있는 조직에서는 번역 직후에 번역 버튼이 잠기고("이미 번역한 문장입니다"), 문장을 고치거나 되돌리면 다시 번역할 수 있습니다.
+
+> **실제 발송 칸을 고치면 원문이 사라집니다**
+>
+> `실제 발송` 칸을 고치면 두 칸이 한 칸으로 합쳐지고, 번역 전 원문은 남지 않습니다. 고친 글은 다시 번역되지 않고 그대로 나갑니다. 그다음 누를 버튼은 방식에 따라 다릅니다.
+>
+> - 번역 버튼이 따로 있는 조직: `전송`을 누릅니다. `번역 없이 발송할 때 확인`을 켠 조직에서는 "아직 번역을 하지 않으셨습니다. 번역을 하지 않고 바로 보내시겠습니까?"가 뜨며, `전송`을 한 번 더 누르면 고친 글이 그대로 나갑니다.
+> - 전송 버튼이 `번역`으로 바뀌어 있는 조직: 버튼이 다시 `번역`으로 바뀝니다. 그대로 누르면 고친 글을 한 번 더 번역합니다. 고친 글을 그대로 보내려면 버튼 오른쪽 화살표에서 `바로 전송`을 고릅니다.
 
 > **번역문은 꼭 읽고 보내세요**
 >
@@ -9198,9 +9662,9 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 짧은 인사나 이미 고객 언어로 쓴 문장은 번역할 필요가 없습니다.
 
 - **번역 버튼이 따로 있는 조직:** 번역을 누르지 않고 `전송`을 누릅니다. 조직 설정에 따라 입력창 아래에 "아직 번역을 하지 않으셨습니다. 번역을 하지 않고 바로 보내시겠습니까?"가 뜨며, `전송`을 한 번 더 누르면 그대로 나갑니다.
-- **전송 버튼이 `번역`으로 바뀌어 있는 조직:** 버튼 오른쪽 화살표를 눌러 `바로 전송`을 고릅니다. 이 방식에서는 버튼을 한 번 누르면 번역, 한 번 더 누르면 발송입니다. Ctrl+Enter도 같은 순서로 동작합니다.
+- **전송 버튼이 `번역`으로 바뀌어 있는 조직:** 버튼 오른쪽 화살표를 눌러 `바로 전송`을 고릅니다. 이 방식에서는 버튼을 한 번 누르면 번역, 한 번 더 누르면 발송입니다. 전송 단축키(Ctrl+Enter 또는 Enter 중 내가 쓰는 키)도 같은 순서로 동작합니다.
 
-어느 방식인지는 관리자가 [번역 설정의 `동작`](https://certi.life/docs/guide/studio/screens/org-settings/translation#상담원의-전송-방식-정하기)에서 정합니다. 고객 언어와 상담사 언어가 같은 상담방에서는 번역 단계 없이 평소처럼 `전송`입니다.
+어느 방식인지는 [번역 설정의 `동작`](https://certi.life/docs/guide/studio/screens/org-settings/translation#상담원의-전송-방식-정하기)에서 정합니다. 고객 언어와 상담사 언어가 같은 상담방에서는 번역 단계 없이 평소처럼 `전송`입니다. 전송 버튼이 `번역`으로 바뀌는 조직이라도 고객 언어가 아직 정해지지 않은 상담방에서는 버튼이 `전송`으로 보입니다. 이때 번역하려면 언어 바에서 고객 언어를 먼저 고릅니다.
 
 #### 보낸 메시지를 내 언어로 다시 보기
 
@@ -9258,21 +9722,21 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 
 **위치:** 상담 > 상담 백과사전
 
-화면 가운데의 `상담 백과사전`은 조직의 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia) 문서를 상담 중에 바로 찾아보는 패널입니다.
+오른쪽 패널의 `상담 백과사전` 탭은 조직의 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia) 문서를 상담 중에 바로 찾아보는 곳입니다. 펼쳐 두면 채팅 옆에 칸으로 열립니다.
 
 1. `태그·키워드 검색`에 찾을 말을 입력하거나 폴더를 펼쳐 태그를 누릅니다. 자주 쓰는 것은 `즐겨찾기` 탭에 모아 둘 수 있습니다.
 2. 아래 미리보기에 문서가 열립니다. 태그에 문서가 여러 개면 `문서 선택`에서 고릅니다.
 3. 문서 안의 **인용문**(왼쪽에 세로선이 있는 문단)에 마우스를 올리면 버튼 두 개가 나타납니다.
-   - `채팅 입력창에 넣기`: 그 문구가 입력창에 바로 들어갑니다. 고객 상황에 맞게 다듬어 보내세요.
+   - `채팅방에 보내기`(보내기 아이콘): 그 문구가 입력창 끝에 들어갑니다. 바로 전송되지는 않으므로 고객 상황에 맞게 다듬어 보내세요.
    - `복사`: 클립보드에 복사합니다.
 
 입력창에 넣으려면 먼저 상담을 열어 두어야 합니다. 열린 상담이 없으면 "입력창이 열린 상담을 먼저 선택하세요."가 표시됩니다.
 
 > **고객에게 보낼 문구는 인용문으로 적어 두세요**
 >
-> 백과사전 문서를 작성할 때 고객에게 그대로 보낼 안내 문구를 인용(`>`)으로 적어 두면, 상담원이 버튼 하나로 입력창에 넣을 수 있습니다. 설명은 일반 문단으로, 보낼 문구는 인용문으로 나누어 쓰는 것이 요령입니다.
+> 백과사전 문서를 작성할 때 고객에게 그대로 보낼 안내 문구를 인용(`>`)으로 적어 두면, 상담원이 버튼 하나로 입력창에 넣을 수 있습니다. 설명은 일반 문단으로, 보낼 문구는 인용문으로 나누어 씁니다. 챗봇과 콜봇은 일반 문단도 고객 답변에 쓰므로, 상담원끼리만 알아야 할 내부 메모는 백과사전에 넣지 마세요.
 
-문서 내용이 틀렸다면 미리보기의 더보기 메뉴에서 `태그 문서 편집`을 눌러 그 자리에서 고칠 수 있습니다. 패널 위쪽의 `편집`은 백과사전 화면으로 이동합니다. 고친 내용은 모든 상담원과 챗봇에 영향을 주므로 권한이 있는 담당자만 고치세요.
+문서 내용이 틀렸다면 미리보기의 더보기 메뉴에서 `태그 문서 편집`을 눌러 그 자리에서 고칠 수 있습니다. 패널 위쪽의 `편집`은 백과사전 화면으로 이동합니다. 고친 내용은 모든 상담원과 챗봇에 영향을 주므로 조직이 문서 관리를 맡긴 사람만 고치세요.
 
 #### 서티 AI에게 물어보기
 
@@ -9363,7 +9827,7 @@ DTMF 메뉴는 고객이 **전화 키패드를 눌러 원하는 업무를 고르
 - **`카카오 1:1 채팅 내역`:** 카카오톡 채널에서 옮겨 온 예전 대화가 조직에 있을 때만 보이는 버튼입니다. 대화를 이 고객에게 합치는 방법은 [상담 내역](https://certi.life/docs/guide/studio/screens/conversation-history#카카오-일대일-채팅-내역을-고객에게-합치기)에 있습니다.
 - **요약:** `요약 생성`으로 AI 요약을 만들어 긴 대화를 빠르게 파악할 수 있습니다. 요약은 상담이 완료·종료된 뒤에 만들 수 있습니다.
 
-채팅방 헤더의 이름 옆에 연락처나 생년월일이 함께 보이게 하려면 관리자가 [헤더 고객 정보](https://certi.life/docs/guide/studio/screens/org-settings/customer-info#채팅방-헤더에-고객-정보-보이기)를 설정합니다.
+채팅방 헤더의 이름 옆에 보일 고객 정보(연락처, 생년월일 등)는 조직이 설정의 `채팅 상담 화면 구성`에서 정합니다.
 
 #### 고객 정보 고치기
 
@@ -9398,7 +9862,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 - 입력창 왼쪽 더하기(+) 메뉴의 `정보 수집 메시지 발송`을 누르거나
 - 고객 카드의 `정보 추가 수집하기`를 누릅니다.
 
-두 버튼은 같은 기능입니다. 누르면 확인 창 없이 바로 발송됩니다. 메뉴가 잠겨 있다면 아직 수집 항목이 설정되지 않은 것이니 `설정 바로가기`로 이동하거나 관리자에게 [자동메시지의 `고객 정보 수집`](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#상담-전에-고객-정보-받기) 설정을 요청하세요.
+두 버튼은 같은 기능입니다. 누르면 확인 창 없이 바로 발송됩니다. 메뉴가 잠겨 있다면 아직 수집 항목이 설정되지 않은 것이니 `설정 바로가기`로 이동해 [자동메시지의 `고객 정보 수집`](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#상담-전에-고객-정보-받기)을 설정하거나, 조직의 설정 관리자에게 요청하세요.
 
 #### 상담 중에 알림톡 보내기
 
@@ -9411,7 +9875,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 1. 고객 카드의 `메시지 발송`을 누릅니다. `고객에게 알림톡 발송` 창이 열립니다.
 2. 발송 상황이나 채널, 템플릿을 고르고 내용을 확인한 뒤 발송합니다.
 
-자주 보내는 안내는 관리자가 [상황별 콜백](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations)으로 묶어 두면 상황만 골라 보낼 수 있습니다. WhatsApp 고객에게는 `WhatsApp 템플릿`으로 승인된 템플릿 메시지를 보냅니다. 승인된 템플릿 메시지는 24시간 메시징 제한과 무관하게 발송할 수 있습니다. "CRM 고객 연동에 실패해 발송할 수 없습니다"가 나오면 잠시 후 다시 시도하세요.
+자주 보내는 안내를 [상황별 콜백](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations)으로 묶어 두면 상황만 골라 보낼 수 있습니다. WhatsApp 고객에게는 `WhatsApp 템플릿`으로 승인된 템플릿 메시지를 보냅니다. 승인된 템플릿 메시지는 24시간 메시징 제한과 무관하게 발송할 수 있습니다. "CRM 고객 연동에 실패해 발송할 수 없습니다"가 나오면 잠시 후 다시 시도하세요.
 
 #### 다음 행동으로 이어가기
 
@@ -9436,7 +9900,6 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 출처: https://certi.life/docs/guide/studio/screens/counsel/customer#알아-둘-점
 
 - 고객정보 패널에는 개인정보가 표시됩니다. 화면 공유나 캡처 전에 가려 주세요.
-- 오른쪽 패널의 `페르소나` 탭에는 이 고객의 콜봇 대화 내역이 표시됩니다(이용하는 조직만).
 - 상담에 필요한 최소한의 정보만 요청하세요. 기준은 [개인정보 및 보안](https://certi.life/docs/guide/help/privacy-security)에 있습니다.
 
 #### 문제가 생기면
@@ -9451,11 +9914,11 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 2. 카드의 `저장`을 누릅니다.
 3. CRM 고객 정보에도 같은 값이 필요하면, 나중에 `수정`을 다시 눌러 `고객 정보 수정` 창이 열리는지 확인합니다.
 
-같은 경고가 계속 나오면 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+같은 경고가 계속 나오면 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `고객 정보를 불러올 수 없습니다`
 
-고객 정보를 고치려 했지만 이 상담의 고객을 확인하지 못했다는 뜻입니다. 대화창 위쪽의 새로고침 아이콘을 누르거나 상담을 다시 연 뒤 `수정`을 다시 누릅니다. 그래도 같으면 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+고객 정보를 고치려 했지만 이 상담의 고객을 확인하지 못했다는 뜻입니다. 대화창 위쪽의 새로고침 아이콘을 누르거나 상담을 다시 연 뒤 `수정`을 다시 누릅니다. 그래도 같으면 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `상담 기록이 없습니다`
 
@@ -9471,7 +9934,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/overview
 
-> Studio 왼쪽 아래 톱니 아이콘의 설정(설정 메뉴)에서 운영 설정(자주 사용하는 답변 포함), 채널 설정, 회원 관리, 상담 파일 관리, 고객 태그, 헤더 고객 정보, 자동메시지, 상담 기록 설정이 각각 무엇을 하는지와 저장 방식, 상담 채팅용 답변을 미리 만드는 방법을 안내합니다.
+> Studio 왼쪽 아래 톱니 아이콘의 설정(설정 메뉴)에서 운영 설정(자주 사용하는 답변 포함), 채널 설정, 회원 관리, 상담 파일 관리, 채팅 상담 화면 구성, 자동메시지, 상담 기록 설정이 각각 무엇을 하는지와 저장 방식, 상담 채팅용 답변을 미리 만드는 방법을 안내합니다.
 
 챗봇 하나에만 해당하는 설정은 [챗봇의 `설정` 탭](https://certi.life/docs/guide/studio/screens/chatbot/settings/menu)에 있고, **조직 전체에 공통으로 적용되는 설정**은 여기에 있습니다. 상담 가능 시간, 상담이 들어왔을 때의 알림, 번역, 메신저 채널 계정 연동, 고객에게 자동으로 나가는 메시지가 대표적입니다. 화면 위쪽에는 `설정`, 왼쪽에는 `설정 메뉴`라고 표시되며, 다른 화면의 안내 문구에서는 이곳을 "조직 설정"이라고 부릅니다.
 
@@ -9485,16 +9948,15 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/overview#어디서-무엇을-바꾸나요
 
-| 설정 메뉴      | 여기서 하는 일                                          | 화면 안내                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ---------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `운영 설정`    | 상담 시간, 관리자·상담사 알림, 상황별 콜백, 번역, 자주 사용하는 답변         | [상담 시간](https://certi.life/docs/guide/studio/screens/org-settings/hours), [알림](https://certi.life/docs/guide/studio/screens/org-settings/alerts), [상황별 콜백](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations), [번역](https://certi.life/docs/guide/studio/screens/org-settings/translation), [자주 사용하는 답변](https://certi.life/docs/guide/studio/screens/org-settings/overview#상담-채팅에서-쓸-답변-미리-만들기) |
-| `채널 설정`    | 알림톡, 상담톡, 네이버 톡톡, Instagram, LINE, WhatsApp 계정 연동 | [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)                                                                                                                                                                                                                                                                                                                                                  |
-| `회원 관리`    | 채널별 회원과 인증회원 확인                                   | [고객 표시와 회원 관리](https://certi.life/docs/guide/studio/screens/org-settings/customer-info)                                                                                                                                                                                                                                                                                                                                      |
-| `상담 파일 관리` | 첨부파일 저장 용량과 파일 정리                                 | [상담 파일 관리](https://certi.life/docs/guide/studio/screens/org-settings/file-storage)                                                                                                                                                                                                                                                                                                                                           |
-| `고객 태그`    | 고객에게 붙이는 태그 목록 확인                                 | [고객 표시와 회원 관리](https://certi.life/docs/guide/studio/screens/org-settings/customer-info)                                                                                                                                                                                                                                                                                                                                      |
-| `헤더 고객 정보` | 채팅방 헤더에 보일 고객 정보 선택                               | [고객 표시와 회원 관리](https://certi.life/docs/guide/studio/screens/org-settings/customer-info)                                                                                                                                                                                                                                                                                                                                      |
-| `자동메시지`    | 상담 중 자동으로 나가는 메시지와 고객 정보 수집                       | [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages)                                                                                                                                                                                                                                                                                                                                             |
-| `상담 기록 설정` | 전화상담 기록 필드 정의 (이용 범위에 따라 표시)                      | [상담 기록 설정](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record)                                                                                                                                                                                                                                                                                                                                         |
+| 설정 메뉴         | 여기서 하는 일                                                                   | 화면 안내                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `운영 설정`       | 상담 시간, 관리자·상담사 알림, 상황별 콜백, 번역, 자주 사용하는 답변                                  | [상담 시간](https://certi.life/docs/guide/studio/screens/org-settings/hours), [알림](https://certi.life/docs/guide/studio/screens/org-settings/alerts), [상황별 콜백](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations), [번역](https://certi.life/docs/guide/studio/screens/org-settings/translation), [자주 사용하는 답변](https://certi.life/docs/guide/studio/screens/org-settings/overview#상담-채팅에서-쓸-답변-미리-만들기) |
+| `채널 설정`       | 알림톡, 상담톡, 네이버 톡톡, Instagram, LINE, WhatsApp 계정 연동                          | [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels)                                                                                                                                                                                                                                                                                                                                                  |
+| `회원 관리`       | 채널별 회원과 인증회원 확인                                                            | [고객 표시와 회원 관리](https://certi.life/docs/guide/studio/screens/org-settings/customer-info)                                                                                                                                                                                                                                                                                                                                      |
+| `상담 파일 관리`    | 첨부파일 저장 용량과 파일 정리                                                          | [상담 파일 관리](https://certi.life/docs/guide/studio/screens/org-settings/file-storage)                                                                                                                                                                                                                                                                                                                                           |
+| `채팅 상담 화면 구성` | 상담 화면에서 쓰지 않는 것을 숨기고, 영역 안 배치와 필터·헤더 고객 정보의 순서를 정합니다. 모든 상담원 화면에 똑같이 적용됩니다 | [필터 설정으로 이동](https://certi.life/docs/guide/studio/screens/counsel/inbox#매번-같은-조건으로-시작하기)                                                                                                                                                                                                                                                                                                                                     |
+| `자동메시지`       | 상담 중 자동으로 나가는 메시지와 고객 정보 수집                                                | [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages)                                                                                                                                                                                                                                                                                                                                             |
+| `상담 기록 설정`    | 전화상담 기록 필드 정의 (이용 범위에 따라 표시)                                               | [상담 기록 설정](https://certi.life/docs/guide/studio/screens/org-settings/counsel-record)                                                                                                                                                                                                                                                                                                                                         |
 
 #### 상담 운영 기준 정하기
 
@@ -9502,12 +9964,12 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 **위치:** 설정 > 운영 설정
 
-`운영 설정`은 여섯 개 탭입니다(`상담 시간`, `관리자 알림`, `상담사 알림`, `상황별 콜백`, `번역`, `자주 사용하는 답변`). 처음 도입할 때는 이 순서대로 정하는 것을 권장합니다.
+`운영 설정`은 여섯 개 탭입니다(`상담 시간`, `관리자 알림`, `상담사 알림`, `상황별 콜백`, `번역`, `자주 사용하는 답변`). 처음 도입할 때는 아래 순서로 정하는 것을 권장합니다. 채널 연동과 챗봇 준비까지 포함한 전체 도입 순서는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview#권장-시작-순서)에 있으며, 아래 순서는 그 가운데 조직 운영 기준 단계입니다.
 
 1. [`상담 시간`](https://certi.life/docs/guide/studio/screens/org-settings/hours): 상담원이 응대할 수 있는 시간을 정합니다. 이 시간이 아래 알림과 자동메시지의 기준이 됩니다.
 2. [`관리자 알림`과 `상담사 알림`](https://certi.life/docs/guide/studio/screens/org-settings/alerts): 상담이 들어왔을 때 누구에게 알릴지 정합니다.
 3. [`번역`](https://certi.life/docs/guide/studio/screens/org-settings/translation): 외국어 상담이 있다면 채팅 번역을 켭니다.
-4. [`상황별 콜백`](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations): 상담사가 자주 보내는 알림톡을 묶음으로 만들어 둡니다.
+4. [`상황별 콜백`](https://certi.life/docs/guide/studio/screens/org-settings/callback-situations): 상담원이 자주 보내는 알림톡을 묶음으로 만들어 둡니다. 알림톡 채널이 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels#카카오-알림톡-채널-연동하기)에 연동되어 있어야 만들 수 있습니다.
 5. [`자주 사용하는 답변`](https://certi.life/docs/guide/studio/screens/org-settings/overview#상담-채팅에서-쓸-답변-미리-만들기): 상담원이 채팅에서 `/`로 불러 쓸 답변을 만들어 둡니다.
 
 #### 상담 채팅에서 쓸 답변 미리 만들기
@@ -9516,7 +9978,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 **위치:** 설정 > 운영 설정 > 자주 사용하는 답변
 
-인사말, 예약 안내처럼 상담원이 자주 보내는 답변을 미리 만들어 두면, 상담원은 채팅 입력창에서 `/`를 입력해 [자주 쓰는 답변](https://certi.life/docs/guide/studio/screens/counsel/reply-tools#자주-쓰는-답변-빠르게-넣기)으로 바로 불러 씁니다. 그룹은 목록을 묶어 보여 주는 용도이고, 즐겨찾기(★)는 상담사마다 따로 저장됩니다.
+인사말, 예약 안내처럼 상담원이 자주 보내는 답변을 미리 만들어 두면, 상담원은 채팅 입력창에서 `/`를 입력해 [자주 쓰는 답변](https://certi.life/docs/guide/studio/screens/counsel/reply-tools#자주-쓰는-답변-빠르게-넣기)으로 바로 불러 씁니다. 그룹은 목록을 묶어 보여 주는 용도이고, 즐겨찾기(★)는 상담원마다 따로 저장됩니다.
 
 1. `+ 새 답변`을 누릅니다. `새 답변` 창이 열립니다.
 2. `제목`을 적습니다. 필수 항목입니다.
@@ -9545,13 +10007,13 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 화면마다 저장 방식이 다르므로 바꾼 뒤 적용됐는지 꼭 확인하세요.
 
-| 저장 방식                               | 해당 화면                                              |
-| ----------------------------------- | -------------------------------------------------- |
-| 화면 아래 "변경사항이 있습니다" 저장 바의 `저장`       | `상담 시간`의 `병원 진료시간`·`채팅 상담`, `자동메시지`(AI 전화 콜백 탭 제외) |
-| 고르는 즉시 적용 (5초 이내)                   | `관리자 알림`, `상담사 알림`, `번역`                           |
-| 목록 조작은 즉시 반영, 답변 내용은 `새 답변` 창의 `저장` | `자주 사용하는 답변`                                       |
-| 카드나 화면 안의 자체 `저장` 버튼                | `AI 챗봇` 작동시간, `헤더 고객 정보`, `상황별 콜백`, `AI 전화 콜백`     |
-| 조작 즉시 반영                            | `상담 기록 설정`                                         |
+| 저장 방식                               | 해당 화면                                                         |
+| ----------------------------------- | ------------------------------------------------------------- |
+| 화면 아래 "변경사항이 있습니다" 저장 바의 `저장`       | `상담 시간`의 `병원 진료시간`·`채팅 상담`, `자동메시지`(AI 전화 콜백 탭 제외)            |
+| 고르는 즉시 적용 (5초 이내)                   | `관리자 알림`, `상담사 알림`, `번역`                                      |
+| 목록 조작은 즉시 반영, 답변 내용은 `새 답변` 창의 `저장` | `자주 사용하는 답변`                                                  |
+| 카드나 화면 안의 자체 `저장` 버튼                | `AI 챗봇` 작동시간, `채팅 상담 화면 구성`(화면 위쪽 도구 줄), `상황별 콜백`, `AI 전화 콜백` |
+| 조작 즉시 반영                            | `상담 기록 설정`                                                    |
 
 저장하지 않고 다른 메뉴로 이동하려 하면 "변경사항이 저장되지 않았습니다" 확인 창이 나옵니다.
 
@@ -9559,8 +10021,8 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/overview#알아-둘-점
 
-- 이 화면의 설정은 조직의 모든 상담원과 모든 채널에 영향을 줍니다. 바꾸기 전에 책임자와 상의하세요.
-- `고객 태그`는 이 화면에서 볼 수만 있고, 추가와 수정은 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)에서 합니다.
+- 이 화면의 설정은 조직의 모든 상담원과 모든 채널에 적용됩니다. 조직이 정한 설정 관리자만 바꾸세요. 자세한 내용은 [누가 무엇을 바꿀 수 있나요](https://certi.life/docs/guide/studio/screens/overview#누가-무엇을-바꿀-수-있나요)에 있습니다.
+- 고객 태그를 만들고 고치는 곳은 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia#고객-태그-만들기)입니다.
 - 상담 시간과 알림 기준은 [상담원 연결 정책](https://certi.life/docs/guide/products/ai-chatbot/handoff-policy)과 함께 정하는 것이 좋습니다.
 
 #### 문제가 생기면
@@ -9579,7 +10041,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 2. 명령어가 다른 답변과 겹친다는 안내가 창 안에 나오면 `명령어 (선택)`를 바꿉니다.
 3. "불러오지 못한 이미지가 있습니다. 이미지를 다시 선택해주세요."가 나오면 이미지 말풍선의 이미지를 다시 고릅니다.
 
-그래도 안 되면 답변 제목과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+그래도 안 되면 답변 제목과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 ##### `자주 사용하는 답변을 불러오지 못했습니다.`
 
@@ -9610,7 +10072,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 | `병원 진료시간` | 챗봇이 "진료시간이 어떻게 되나요?"에 답할 때 (병원 조직에만 표시)          |
 | `채팅 상담`   | 상담원이 채팅 상담을 받을 수 있는 시간. 시간 외에는 운영 시간 외 메시지가 나갑니다 |
 | `AI 챗봇`   | 챗봇이 작동하지 않을 시간                                   |
-| `AI 콜봇`   | 콜봇이 전화를 받는 시간과 상담사 연결 가능 시간                      |
+| `AI 콜봇`   | 콜봇이 전화를 받는 시간과 상담원 연결 가능 시간                      |
 
 #### 병원 진료시간 등록하기
 
@@ -9664,14 +10126,14 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 콜봇 화면은 네 개의 카드로 나뉘고 카드마다 따로 저장합니다.
 
-| 카드            | 하는 일                                                    |
-| ------------- | ------------------------------------------------------- |
-| `운영시간 설정`     | 요일별 `운영 시간`, `24시간 운영`, `휴일`을 정합니다. 휴일에는 운영 외 흐름이 동작합니다 |
-| `상담사 바로 연결시간` | 통화 전환을 허용할 시간을 콜봇 운영시간과 별개로 정합니다. 끄면 콜봇 운영시간을 그대로 따릅니다  |
-| `휴식시간 설정`     | 점심시간처럼 운영시간 안의 쉬는 시간을 추가합니다                             |
-| `휴무일 관리`      | 지정한 날짜는 요일 설정과 무관하게 종일 운영시간 외로 처리됩니다. `매년 반복`을 켤 수 있습니다 |
+| 카드            | 하는 일                                                                                                                                                                     |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `운영시간 설정`     | 요일별 `운영 시간`, `24시간 운영`, `휴일`을 정합니다. 휴일에는 운영 외 흐름이 동작합니다                                                                                                                  |
+| `상담사 바로 연결시간` | 통화 전환을 허용할 시간을 콜봇 운영시간과 별개로 정합니다. 끄면 콜봇 운영시간을 그대로 따릅니다. `연결 대상`(상담사 번호 또는 번호 그룹)을 정해 두면 이 시간 안에는 에이전트별 전환 대상보다 이 대상이 먼저 쓰입니다. 이 대상이 통화 중이거나 받을 수 없으면 에이전트별 전환 대상으로 넘어갑니다 |
+| `휴식시간 설정`     | 점심시간처럼 운영시간 안의 쉬는 시간을 추가합니다                                                                                                                                              |
+| `휴무일 관리`      | 지정한 날짜는 요일 설정과 무관하게 종일 운영시간 외로 처리됩니다. `매년 반복`을 켤 수 있습니다                                                                                                                  |
 
-카드에 "저장 기능이 아직 준비되지 않았습니다"라는 안내가 보이면 그 카드의 값은 아직 저장되지 않는 상태입니다. 이 경우 콜봇 운영시간은 조직의 CertiLife 담당자에게 문의하세요.
+카드에 "저장 기능이 아직 준비되지 않았습니다"라는 안내가 보이면 그 카드의 값은 아직 저장되지 않는 상태입니다. 이 경우 콜봇 운영시간은 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 권장 운영법
 
@@ -9689,13 +10151,13 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 > Studio 설정의 운영 설정에서 관리자 알림(상담 인입 알림톡 발송 정책)과 상담사 알림(상담사 알림 정책, 챗봇 진행 중 알림)으로 상담 인입을 관리자와 상담사에게 알리는 기준을 정하는 방법을 안내합니다.
 
-상담이 들어왔는데 아무도 모르면 고객은 기다리다 떠납니다. 알림 설정은 **언제, 누구에게** 알릴지를 정합니다. 대상은 둘입니다. 관리자에게는 알림톡으로, 상담사에게는 Studio 안의 알림으로 알립니다. 두 화면 모두 고르는 즉시 적용되며(5초 이내) 저장 버튼이 없습니다.
+상담이 들어왔는데 아무도 모르면 고객은 기다리다 떠납니다. 알림 설정은 **언제, 누구에게** 알릴지를 정합니다. 대상은 둘입니다. 관리자에게는 알림톡으로, 상담원에게는 Studio 안의 알림으로 알립니다. 관리자 알림톡은 `관리자 알림`의 `관리자 목록`에 휴대폰 번호를 인증해 등록한 사람에게만 갑니다. 알림 기준은 고르는 즉시 적용되며(5초 이내) 저장 버튼이 없습니다.
 
 **위치:** 설정 > 운영 설정 > 관리자 알림, 상담사 알림
 
 > **콜봇 지표 알림은 이 화면에 없습니다**
 >
-> 통화량이 갑자기 늘었을 때처럼 콜봇 지표가 기준을 넘으면 알리는 규칙(콜봇 지표 알림)은 이 화면에서 정하지 않습니다. Studio의 메뉴에는 콜봇 지표 알림을 만들거나 끄는 화면이 없습니다. `콜봇` 메뉴 안에도 없습니다. 콜봇 지표 알림을 새로 만들거나, 받고 있는 알림을 끄려면 알림 이름과 원하는 변경을 적어 조직의 CertiLife 담당자에게 요청하세요.
+> 통화량이 갑자기 늘었을 때처럼 콜봇 지표가 기준을 넘으면 알리는 규칙(콜봇 지표 알림)은 이 화면에서 정하지 않습니다. Studio의 메뉴에는 콜봇 지표 알림을 만들거나 끄는 화면이 없습니다. `콜봇` 메뉴 안에도 없습니다. 콜봇 지표 알림을 새로 만들거나, 받고 있는 알림을 끄려면 알림 이름과 원하는 변경을 적어 CertiLife 고객센터(1800-8984)에 요청하세요.
 
 #### 관리자에게 알림톡으로 알리기
 
@@ -9714,20 +10176,35 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 [자동메시지](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#상담-전에-고객-정보-받기)에서 `정보 수집 완료 알림`을 켜 두었다면, 고객이 정보를 입력한 뒤에 상담 인입 알림이 갑니다.
 
-#### 상담사에게 알리기
+##### 알림톡을 받을 관리자 등록하기
 
-출처: https://certi.life/docs/guide/studio/screens/org-settings/alerts#상담사에게-알리기
+**위치:** 설정 > 운영 설정 > 관리자 알림 > 관리자 목록
+
+알림톡은 여기에 등록하고 그 채널을 받도록 고른 휴대폰 번호로만 갑니다. Studio에 로그인하는 계정의 휴대폰 번호로는 가지 않습니다. 알림톡은 CertiLife의 알림톡 채널에서 "\[서티라이프 상담 인입 안내]"로 시작하는 문구와 `상담 시작하기` 버튼으로 나갑니다.
+
+1. `관리자 목록`에서 `관리자 등록`을 누릅니다.
+2. `휴대폰 번호`를 입력하고 `인증요청`을 누릅니다.
+3. 받은 6자리 `인증번호`를 입력하고 `확인`을 누릅니다. "인증 완료"가 표시됩니다.
+4. `관리자명`을 적습니다.
+5. `알림 받을 채널`에서 알림을 받을 채널을 고릅니다. 채널을 하나도 고르지 않으면 알림을 받지 못합니다.
+6. 창의 확인 버튼을 눌러 등록을 마칩니다. 목록의 `채널별 알림`에서 그 관리자가 받을 채널을 확인합니다.
+
+등록한 관리자의 이름과 채널은 고칠 수 있지만, 휴대폰 번호는 고칠 수 없습니다. 번호가 바뀌면 그 관리자를 삭제하고 새 번호로 다시 등록합니다. 담당자가 그만두면 목록에서 바로 삭제하세요.
+
+#### 상담원에게 알리기
+
+출처: https://certi.life/docs/guide/studio/screens/org-settings/alerts#상담원에게-알리기
 
 **위치:** 설정 > 운영 설정 > 상담사 알림 > 상담사 알림 정책
 
 | 항목           | 선택지            | 뜻                                        |
 | ------------ | -------------- | ---------------------------------------- |
-| `상담사 알림 정책`  | `전체 상담사`       | 모든 상담사에게 알립니다. 누구든 먼저 받는 방식일 때           |
-|              | `배정 상담사 + 참조자` | 그 상담에 배정된 상담사와 참조자에게만 알립니다. 담당이 정해져 있을 때 |
+| `상담사 알림 정책`  | `전체 상담사`       | 모든 상담원에게 알립니다. 누구든 먼저 받는 방식일 때           |
+|              | `배정 상담사 + 참조자` | 그 상담에 배정된 상담원과 참조자에게만 알립니다. 담당이 정해져 있을 때 |
 | `챗봇 진행 중 알림` | `알림 받음`        | 챗봇이 응대하는 동안에도 알림을 받습니다                   |
 |              | `알림 안 함`       | 챗봇이 응대하는 동안에는 알리지 않습니다                   |
 
-상담사가 여러 명인데 `전체 상담사`로 두면 같은 알림이 모두에게 가서 "누가 받겠지" 하고 놓치기 쉽습니다. 담당 구분이 있다면 `배정 상담사 + 참조자`가 맞습니다.
+상담원이 여러 명인데 `전체 상담사`로 두면 같은 알림이 모두에게 가서 "누가 받겠지" 하고 놓치기 쉽습니다. 담당 구분이 있다면 `배정 상담사 + 참조자`가 맞습니다.
 
 #### 알림을 놓치지 않으려면
 
@@ -9746,7 +10223,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 > Studio 설정의 운영 설정 > 번역(채팅 번역)에서 번역 사용, 번역 방향(고객이 쓰는 언어·상담사가 읽을 언어), 자동 메시지 번역, 번역·전송 버튼 합치기, 번역 없이 발송할 때 확인을 정하는 방법과 각 옵션이 상담 화면을 어떻게 바꾸는지 안내합니다.
 
-외국인 고객과 채팅으로 상담하려면 먼저 여기서 `번역 사용`을 켜야 합니다. 켜면 [상담](https://certi.life/docs/guide/studio/screens/counsel/translation) 화면에 언어 바와 번역 버튼이 나타나고, 고객의 메시지는 상담사 언어로, 상담사의 답변은 고객 언어로 번역됩니다. 끄면 상담 화면에서 번역과 관련된 것이 모두 사라집니다.
+외국인 고객과 채팅으로 상담하려면 먼저 여기서 `번역 사용`을 켜야 합니다. 켜면 [상담](https://certi.life/docs/guide/studio/screens/counsel/translation) 화면에 언어 바와 번역 버튼이 나타나고, 고객의 메시지는 상담사 언어로, 상담원의 답변은 고객 언어로 번역됩니다. 끄면 상담 화면에서 번역과 관련된 것이 모두 사라집니다.
 
 **위치:** 설정 > 운영 설정 > 번역
 
@@ -9760,13 +10237,13 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 1. `번역 사용`을 켭니다. 끄면 아래 설정은 적용되지 않습니다.
 2. `번역 방향`의 `고객이 쓰는 언어`를 고릅니다. 고객의 국적이 다양하다면 `자동 감지`로 둡니다.
-3. `상담사가 읽을 언어`를 고릅니다. 고객이 보낸 메시지를 이 언어로 번역해 보여 주고, 상담사가 보내는 메시지는 반대 방향으로 번역됩니다.
+3. `상담사가 읽을 언어`를 고릅니다. 고객이 보낸 메시지를 이 언어로 번역해 보여 주고, 상담원이 보내는 메시지는 반대 방향으로 번역됩니다.
 
 지원 언어는 `한국어`, `영어`, `일본어`, `중국어(간체)`, `중국어(번체)`, `태국어`, `스페인어(멕시코)`, `베트남어`입니다.
 
 > **자동 감지는 이렇게 동작합니다**
 >
-> 자동 감지는 고객의 처음 세 메시지로 상담방 언어를 정하고, 이후에는 바뀌지 않습니다. 중간에 고객이 다른 언어로 바꿔 쓰거나 감지가 틀렸다면 상담원이 상담 화면의 언어 바에서 그 상담방만 직접 바꿀 수 있습니다. 반대로 여기서 특정 언어를 지정하면 모든 상담방이 그 언어로 시작하고 자동 감지는 돌지 않습니다. 한 나라의 고객만 상대하는 조직이 아니라면 `자동 감지`를 권장합니다.
+> 자동 감지는 고객 메시지 두 건이 같은 언어이면 그 언어로 상담방 언어를 정합니다. 처음 세 건이 모두 다른 언어이면 세 번째 메시지의 언어로 정합니다. 번역해도 원문과 같아지는 메시지(숫자나 이모지만 있는 메시지 등)는 세지 않습니다. 한 번 정해진 언어는 자동으로 바뀌지 않습니다. 중간에 고객이 다른 언어로 바꿔 쓰거나 감지가 틀렸다면 상담원이 상담 화면의 언어 바에서 그 상담방만 직접 바꿀 수 있습니다. 반대로 여기서 특정 언어를 지정하면 모든 상담방이 그 언어로 시작하고 자동 감지는 돌지 않습니다. 한 나라의 고객만 상대하는 조직이 아니라면 `자동 감지`를 권장합니다.
 
 #### 상담원의 전송 방식 정하기
 
@@ -9776,12 +10253,12 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 번역을 켜면 상담원은 답변을 "번역한 뒤 확인하고 보내는" 두 단계로 보냅니다. `동작`의 두 옵션이 이 과정을 정합니다. 조직의 상담 방식에 맞게 고르세요.
 
-| 옵션               | 켜면                                                                                           | 이런 조직에                                            |
-| ---------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| `번역·전송 버튼 합치기`   | 전송 버튼이 「번역」으로 바뀝니다. 한 번 누르면 번역하고, 한 번 더 누르면 번역문을 보냅니다. 번역 없이 보내려면 버튼 오른쪽 화살표에서 「바로 전송」을 고릅니다 | 거의 모든 답변을 번역해 보내는 조직. 번역을 빠뜨릴 일이 없어집니다            |
-| `번역 없이 발송할 때 확인` | 상담원이 번역 버튼을 누르지 않고 전송하면 입력창 아래에 확인 문구를 띄웁니다. 전송을 한 번 더 누르면 그대로 보냅니다                          | 번역할 때와 안 할 때가 섞여 있는 조직. 실수로 한국어 그대로 보내는 일을 막아 줍니다 |
+| 옵션               | 켜면                                                                                                                  | 이런 조직에                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| `번역·전송 버튼 합치기`   | 전송 버튼이 `번역`으로 바뀝니다. 한 번 누르면 번역하고, 번역이 끝나면 버튼이 `전송`으로 바뀌어 한 번 더 누르면 번역문을 보냅니다. 번역 없이 보내려면 버튼 오른쪽 화살표에서 `바로 전송`을 고릅니다 | 거의 모든 답변을 번역해 보내는 조직. 번역을 빠뜨릴 일이 없어집니다            |
+| `번역 없이 발송할 때 확인` | 상담원이 번역 버튼을 누르지 않고 전송하면 입력창 아래에 확인 문구를 띄웁니다. 전송을 한 번 더 누르면 그대로 보냅니다                                                 | 번역할 때와 안 할 때가 섞여 있는 조직. 실수로 한국어 그대로 보내는 일을 막아 줍니다 |
 
-두 옵션 모두 **고객 언어와 상담사 언어가 같은 상담방에서는 동작하지 않고** 평소처럼 `전송`입니다. 버튼을 합치면 번역 없이 보내는 길이 「바로 전송」 하나뿐이라 확인 문구는 뜨지 않습니다.
+두 옵션 모두 **고객 언어와 상담사 언어가 같은 상담방에서는 동작하지 않고** 평소처럼 `전송`입니다. 버튼을 합치면 번역 없이 보내는 길이 `바로 전송` 하나뿐이라 확인 문구는 뜨지 않고, `번역 없이 발송할 때 확인` 스위치도 눌리지 않습니다.
 
 #### 자동 메시지도 번역하기
 
@@ -9814,13 +10291,13 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 > Studio 설정의 운영 설정 > 상황별 콜백에서 발송 상황을 추가해 알림톡 채널·템플릿·기본 본문을 묶어 두고, 채팅 상담과 AI 전화 상담 화면에서 상담사가 한 번에 골라 보내게 하는 방법을 안내합니다.
 
-상담사가 "예약 안내", "검사 결과 안내" 같은 알림톡을 보낼 때마다 채널을 고르고 템플릿을 찾고 본문을 쓰는 것은 번거롭고 실수하기 쉽습니다. `상황별 콜백`은 **채널, 템플릿, 기본 본문을 하나의 "발송 상황"으로 묶어 두는 기능**입니다. 상담사는 상황만 고르면 나머지가 함께 채워집니다.
+상담원이 "예약 안내", "검사 결과 안내" 같은 알림톡을 보낼 때마다 채널을 고르고 템플릿을 찾고 본문을 쓰는 것은 번거롭고 실수하기 쉽습니다. `상황별 콜백`은 **채널, 템플릿, 기본 본문을 하나의 "발송 상황"으로 묶어 두는 기능**입니다. 상담원은 상황만 고르면 나머지가 함께 채워집니다.
 
 **위치:** 설정 > 운영 설정 > 상황별 콜백
 
 > **자동으로 나가는 알림톡은 다른 곳입니다**
 >
-> 여기서 만드는 것은 **상담사가 직접 보낼 때** 고르는 묶음입니다. 콜봇 통화가 끝나면 상담사 조작 없이 자동으로 나가는 알림톡은 [자동메시지의 `AI 전화 콜백`](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#콜봇-통화-뒤-알림톡-자동으로-보내기)에서 설정합니다.
+> 여기서 만드는 것은 **상담원이 직접 보낼 때** 고르는 묶음입니다. 콜봇 통화가 끝나면 상담원 조작 없이 자동으로 나가는 알림톡은 [자동메시지의 `AI 전화 콜백`](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#콜봇-통화-뒤-알림톡-자동으로-보내기)에서 설정합니다.
 
 #### 발송 상황 만들기
 
@@ -9829,13 +10306,13 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 **위치:** 설정 > 운영 설정 > 상황별 콜백 > 발송 상황 추가
 
 1. `발송 상황 추가`를 누릅니다. 버튼이 비활성이라면 연동된 알림톡 채널이 없는 것이니 [채널 연동](https://certi.life/docs/guide/studio/screens/org-settings/channels#카카오-알림톡-채널-연동하기)부터 하세요.
-2. `상황 이름`을 적습니다. 상담사 화면의 버튼에 그대로 표시되므로 "예약 안내"처럼 짧고 분명하게 짓습니다.
+2. `상황 이름`을 적습니다. 상담원 화면의 버튼에 그대로 표시되므로 "예약 안내"처럼 짧고 분명하게 짓습니다.
 3. `노출 화면`에서 이 상황을 보여 줄 화면을 고릅니다. `채팅 상담`, `AI 전화 상담` 중 하나 또는 둘 다입니다.
 4. `알림톡 채널`과 `알림톡 템플릿`을 고릅니다. 카카오 심사를 통과한 템플릿만 고를 수 있습니다.
-5. `기본 본문 (선택)`을 적습니다. 비워 두면 상담사가 발송할 때 직접 작성합니다. 템플릿에 변수가 있다면 `템플릿 변수`에 보낼 내용을 입력합니다.
+5. `기본 본문 (선택)`을 적습니다. 비워 두면 상담원이 발송할 때 직접 작성합니다. 템플릿에 변수가 있다면 `템플릿 변수`에 보낼 내용을 입력합니다.
 6. `발송 예시`에서 결과를 확인하고 `확인`을 누른 뒤, 화면 아래 `저장`을 누릅니다.
 
-목록에서 `위로`, `아래로`로 순서를 바꾸면 상담사 화면의 버튼 순서도 바뀝니다. 자주 쓰는 상황을 위에 두세요.
+목록에서 `위로`, `아래로`로 순서를 바꾸면 상담원 화면의 버튼 순서도 바뀝니다. 자주 쓰는 상황을 위에 두세요.
 
 #### 알아 둘 점
 
@@ -9870,7 +10347,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 | `Instagram` | Facebook 로그인                              | Instagram 비즈니스 계정과 연결된 Facebook 페이지 권한 |
 | `LINE`      | 토큰과 시크릿 입력 후 웹훅 등록                        | LINE Developers Console 접속 권한          |
 | `WhatsApp`  | Meta 로그인 또는 직접 입력                         | WhatsApp 비즈니스 계정                       |
-| `AI 콜봇`     | 직접 연동하지 않습니다                              | 담당자를 통해 연동                             |
+| `AI 콜봇`     | 직접 연동하지 않습니다                              | CertiLife를 통해 연동                       |
 
 `위챗 (준비중)`은 상담 채널로는 아직 쓸 수 없습니다. 위챗으로 인증서를 보내는 일은 Hospital의 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate#위챗으로-보내기)에서 합니다.
 
@@ -9891,7 +10368,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 같은 창에서 `상담톡도 함께 연동합니다`를 체크하면 상담톡까지 한 번에 연동합니다. 연동을 마치면 "상담톡도 연동할까요?"라는 안내가 한 번 나오며, `나중에 하기`를 골라도 됩니다.
 
-연동한 알림톡 채널 카드에는 `발신프로필키`가 그대로 표시됩니다. 이 값도 비밀값으로 다루세요. 채널 설정 화면을 볼 수 있는 권한의 범위는 이 문서에서 확인하지 못했습니다.
+연동한 알림톡 채널 카드에는 `발신프로필키`가 그대로 표시됩니다. 이 값도 비밀값으로 다루고 화면 공유나 캡처에 나오지 않게 하세요.
 
 #### 카카오 상담톡 채널 연동하기
 
@@ -9966,21 +10443,21 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 **위치:** 설정 > 채널 설정 > AI 콜봇
 
-이 탭은 연동 상태(`연동됨` / `미연동`)를 확인하는 곳입니다. AI 콜봇은 영업담당자를 통해 연동하므로 이 화면에서 직접 입력하지 않습니다. 이용이나 변경, 해지가 필요하면 조직의 CertiLife 담당자에게 문의하세요.
+이 탭은 연동 상태(`연동됨` / `미연동`)를 확인하는 곳입니다. AI 콜봇은 CertiLife 영업 담당을 통해 연동하므로 이 화면에서 직접 입력하지 않습니다. 이용이나 변경, 해지가 필요하면 CertiLife 고객센터(1800-8984)에 문의하세요.
 
 #### 담당자나 관리자 휴대폰이 바뀌었을 때
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/channels#담당자나-관리자-휴대폰이-바뀌었을-때
 
-알림톡 채널과 상담톡 채널은 `채널 관리자 휴대폰 번호`로 인증합니다. 관리자 휴대폰이 바뀌거나 담당자가 퇴사했을 때 다시 인증하는 절차는 이 문서에서 확인하지 못했습니다. 연동을 해지하고 다시 하기 전에 조직의 CertiLife 담당자에게 문의하세요. 상담톡은 해지하면 모든 상담방이 종료되고 되돌릴 수 없습니다.
+알림톡 채널과 상담톡 채널은 `채널 관리자 휴대폰 번호`로 인증합니다. 이 인증은 채널을 처음 연동할 때만 하며, Studio에는 인증한 휴대폰 번호를 바꾸거나 다시 인증하는 화면이 없습니다. 상담 인입 알림톡을 받던 관리자의 번호가 바뀌었다면 [관리자 목록](https://certi.life/docs/guide/studio/screens/org-settings/alerts#알림톡을-받을-관리자-등록하기)에서 그 관리자를 삭제하고 새 번호로 다시 등록합니다. 채널 연동을 해지하고 다시 하기 전에는 CertiLife 고객센터(1800-8984)에 문의하세요. 상담톡은 해지하면 모든 상담방이 종료되고 되돌릴 수 없습니다.
 
 #### 연동한 다음에는
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/channels#연동한-다음에는
 
 1. [챗봇의 `채널 설정`](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings)에서 채널에 응답할 챗봇을 지정합니다.
-2. 직접 메시지를 보내 도착하는지, 답이 나가는지 확인합니다.
-3. 채널마다 [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)의 항목을 점검한 뒤 고객에게 공개합니다.
+2. 고객이 쓰는 앱이나 화면에서 직접 메시지를 보내, 상담 화면에 도착하는지와 답이 나가는지 확인합니다. Studio에는 연결을 시험하는 버튼이 없습니다. 네이버 톡톡과 LINE은 웹훅을 등록하지 않으면 이 단계에서 메시지가 도착하지 않습니다.
+3. 채널마다 [출시 체크리스트](https://certi.life/docs/guide/studio/launch-checklist)의 항목을 확인한 뒤 고객에게 공개합니다.
 
 연동에 쓰는 토큰과 시크릿은 비밀번호와 같습니다. 메신저나 이메일 본문으로 주고받지 말고, 담당자가 직접 입력하세요.
 
@@ -10060,12 +10537,12 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 **위치:** 설정 > 자동메시지 > AI 전화 콜백
 
-콜봇 통화가 끝나면 상담사가 누르지 않아도 고객에게 알림톡을 자동으로 보낼 수 있습니다. 어느 설정으로 나갈지는 **통화가 끝난 시각이 상담 시간 안인지 밖인지**로 정해집니다.
+콜봇 통화가 끝나면 상담원이 누르지 않아도 고객에게 알림톡을 자동으로 보낼 수 있습니다. 어느 설정으로 나갈지는 **통화가 끝난 시각이 상담 시간 안인지 밖인지**로 정해집니다.
 
 | 블록        | 적용되는 때                                         | 기본     |
 | --------- | ---------------------------------------------- | ------ |
-| `상담 외 시간` | 상담 시간이 아닐 때 통화가 끝난 경우. 상담사가 바로 응대할 수 없는 시간대입니다 | 발송     |
-| `상담 시간`   | 상담 시간 안에 통화가 끝난 경우. 상담사가 직접 응대하는 시간대입니다        | 발송 안 함 |
+| `상담 외 시간` | 상담 시간이 아닐 때 통화가 끝난 경우. 상담원이 바로 응대할 수 없는 시간대입니다 | 발송     |
+| `상담 시간`   | 상담 시간 안에 통화가 끝난 경우. 상담원이 직접 응대하는 시간대입니다        | 발송 안 함 |
 
 위쪽 토글을 `사용 안함`으로 두면 두 블록의 설정과 관계없이 통화 후 알림톡을 보내지 않습니다. 이 탭은 화면 안의 `저장` 버튼으로 따로 저장합니다. AI 콜봇이 연동되어 있지 않으면 설정해도 발송되지 않습니다.
 
@@ -10093,7 +10570,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 2. 빈 칸에 문구를 적습니다. 그 메시지를 보내지 않으려면 문구는 채워 두고 메시지 제목 오른쪽의 스위치를 끕니다.
 3. 화면 아래 저장 바의 `저장`을 누릅니다. "설정이 저장되었습니다"가 나오면 저장된 것입니다.
 
-저장하지 않고 다른 메뉴로 이동하면 고친 내용이 반영되지 않으므로, 저장이 끝날 때까지 이 화면에 머뭅니다. 모든 메시지에 내용이 있는데도 같은 문구가 나오면 연 탭 이름과 발생 시각을 적어 조직의 CertiLife 담당자에게 알립니다.
+저장하지 않고 다른 메뉴로 이동하면 고친 내용이 반영되지 않으므로, 저장이 끝날 때까지 이 화면에 머뭅니다. 모든 메시지에 내용이 있는데도 같은 문구가 나오면 연 탭 이름과 발생 시각을 적어 CertiLife 고객센터(1800-8984)에 알립니다.
 
 #### 함께 보기
 
@@ -10109,34 +10586,29 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/customer-info
 
-> Studio 설정의 헤더 고객 정보에서 채팅방 헤더에 보일 고객 정보를 고르고, 고객 태그 목록을 확인하고, 회원 관리의 전체 회원 목록과 인증회원 목록에서 채널별 회원을 찾는 방법을 안내합니다.
+> Studio 설정의 채팅 상담 화면 구성에서 채팅방 헤더에 보일 고객 정보를 고르는 곳과 고객 태그를 관리하는 곳, 회원 관리의 전체 회원 목록과 인증회원 목록에서 채널별 회원을 찾는 방법을 안내합니다.
 
-상담원이 채팅방을 열었을 때 "이 고객이 누구인지"를 얼마나 빨리 알아볼 수 있느냐는 세 가지 설정에 달려 있습니다. 채팅방 헤더에 보일 정보를 고르는 `헤더 고객 정보`, 고객을 분류하는 `고객 태그`, 그리고 채널을 통해 들어온 사람들을 확인하는 `회원 관리`입니다.
+상담원이 채팅방을 열었을 때 "이 고객이 누구인지"를 얼마나 빨리 알아볼 수 있느냐는 세 가지에 달려 있습니다. 채팅방 헤더에 보일 고객 정보, 고객을 분류하는 고객 태그, 그리고 채널을 통해 들어온 사람들을 확인하는 `회원 관리`입니다. 예전 설정 메뉴의 `헤더 고객 정보`와 `고객 태그`는 지금 설정 메뉴에 없습니다.
 
-**위치:** 설정 > 헤더 고객 정보, 고객 태그, 회원 관리
+**위치:** 설정 > 채팅 상담 화면 구성, 회원 관리
 
 #### 채팅방 헤더에 고객 정보 보이기
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/customer-info#채팅방-헤더에-고객-정보-보이기
 
-**위치:** 설정 > 헤더 고객 정보
+**위치:** 설정 > 채팅 상담 화면 구성
 
-기본 상태에서는 채팅방 헤더에 고객 이름과 태그만 보입니다. 연락처나 생년월일을 이름 옆에 함께 보이게 하면 상담원이 고객 카드를 열지 않고도 바로 확인할 수 있습니다.
+채팅방 헤더에 보일 고객 정보 칩은 설정의 `채팅 상담 화면 구성`에서 칸마다 켜고 끄고, 순서를 정합니다. 화면의 안내대로 이 설정은 모든 상담원 화면에 똑같이 적용되고, 다른 상담원에게는 상담 화면에 다시 들어오거나 새로고침하면 반영됩니다. 상담 목록의 톱니 아이콘(`필터 설정으로 이동 ›`)으로도 이 화면에 들어올 수 있습니다.
 
-1. `노출 항목`에서 보일 항목을 켭니다. `이름`, `연락처`, `생년월일`, `성별`, `이메일`과 추가 항목 중에서 고릅니다.
-2. 순서를 조정합니다. 위에서부터 헤더에 놓이는 순서입니다.
-3. 오른쪽 `미리보기`에서 모습을 확인합니다. 미리보기의 값은 예시이며 실제 고객 정보가 아닙니다.
-4. 카드 안의 `저장`을 누릅니다.
-
-항목을 켜면 고객 태그는 아랫줄로 내려갑니다. 아직 값이 없는 항목은 '미수집'으로 흐리게 표시되는데, 켜 두었지만 값이 없는 것인지 아예 켜지 않은 것인지 구분하기 위해서입니다. 너무 많이 켜면 헤더가 복잡해지니 상담에 실제로 쓰는 두세 개만 켜세요.
+너무 많이 켜면 헤더가 복잡해지니 상담에 실제로 쓰는 두세 개만 켜세요.
 
 #### 고객 태그 확인하기
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/customer-info#고객-태그-확인하기
 
-**위치:** 설정 > 고객 태그
+**위치:** 백과사전
 
-상담 화면에서 고객에게 붙일 수 있는 태그 목록을 보여 줍니다. **이 화면은 보기 전용입니다.** 태그를 추가하거나 고치려면 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia)에서 합니다. 붙인 태그는 [상담](https://certi.life/docs/guide/studio/screens/counsel/inbox) 화면의 `태그 전체` 필터로 같은 유형의 고객을 모아 볼 때 씁니다.
+고객 태그는 [백과사전](https://certi.life/docs/guide/studio/screens/encyclopedia#고객-태그-만들기)에서 만들고 고칩니다. 붙인 태그는 [상담](https://certi.life/docs/guide/studio/screens/counsel/inbox) 화면의 `태그 전체` 필터로 같은 유형의 고객을 모아 볼 때 씁니다.
 
 #### 채널로 들어온 회원 찾기
 
@@ -10160,15 +10632,17 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 >
 > `회원 관리`의 회원은 챗봇과 대화한 고객(채널 사용자)입니다. 상담원이나 직원의 계정은 이 목록에 나오지 않습니다. Studio의 `설정`에는 직원 계정이나 권한을 관리하는 메뉴가 없습니다. 직원 계정을 어디서 관리하는지는 조직의 계정 종류에 따라 다릅니다.
 >
-> - **병원 계정으로 쓰는 조직:** 병원 관리자가 Hospital의 `병원 관리 > 계정 관리`에서 직원 서브계정을 만들고 권한을 줍니다. 직원이 Studio에서 상담과 챗봇 업무를 하려면 `권한 설정`의 `메시지` 그룹에서 `상담/챗봇 관리`를 켭니다. 이 권한이 없는 서브계정은 Hospital 왼쪽 메뉴에 `상담/챗봇 관리`가 보이지 않습니다. Studio 로그인 화면에서는 "접근권한이 없습니다."가, Hospital에서 Studio로 넘어올 때는 "접근 권한이 없습니다. 상담/챗봇 관리 권한이 필요합니다."가 나옵니다. 절차는 [Hospital 계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)를 보세요.
-> - **그 밖의 조직:** 직원 계정 추가와 권한 변경은 조직의 CertiLife 담당자에게 요청합니다.
+> - **병원 계정으로 쓰는 조직:** 병원 관리자가 Hospital의 `병원 관리 > 계정 관리`에서 직원 서브계정을 만들고 권한을 줍니다. 직원이 Studio에서 상담과 챗봇 업무를 하려면 `권한 설정`의 `메시지` 그룹에서 `상담/챗봇 관리`를 켭니다. 이 권한이 없는 서브계정은 Hospital 왼쪽 메뉴에 `상담/챗봇 관리`가 보이지 않습니다. Studio 로그인 화면에서는 "접근권한이 없습니다."가, Hospital에서 Studio로 넘어올 때는 "접근 권한이 없습니다. 상담/챗봇 관리 권한이 필요합니다."가 나옵니다. 새로 만든 서브계정에는 `상담/챗봇 관리`가 함께 켜지므로, Studio를 쓰지 않을 직원이면 `계정 수정`에서 끕니다. 절차는 [Hospital 계정 관리](https://certi.life/docs/guide/hospital/screens/accounts)를 보세요.
+> - **그 밖의 조직:** 직원 계정 추가와 권한 변경은 CertiLife 고객센터(1800-8984)에 요청합니다.
+>
+> 계정 종류별 로그인과 비밀번호 재설정은 [Studio 계정 접속](https://certi.life/docs/guide/studio/account-access#계정-종류별로-할-일)에 있습니다.
 
 #### 알아 둘 점
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/customer-info#알아-둘-점
 
 - 회원 목록과 헤더 정보에는 개인정보가 표시됩니다. 화면을 공유하거나 캡처할 때 가려 주세요. 기준은 [개인정보 및 보안](https://certi.life/docs/guide/help/privacy-security)에 있습니다.
-- `헤더 고객 정보`에 값이 보이려면 고객 정보가 수집되어 있어야 합니다. 상담 전에 받으려면 [자동메시지의 `고객 정보 수집`](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#상담-전에-고객-정보-받기)을 설정합니다.
+- 헤더의 고객 정보 칩에 값이 보이려면 고객 정보가 수집되어 있어야 합니다. 상담 전에 받으려면 [자동메시지의 `고객 정보 수집`](https://certi.life/docs/guide/studio/screens/org-settings/auto-messages#상담-전에-고객-정보-받기)을 설정합니다.
 
 #### 문제가 생기면
 
@@ -10234,7 +10708,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 > Studio 설정의 상담 기록 설정에서 상담 메모 양식 항목과 단일 선택·복수 선택 필드를 만들어 전화상담 기록 양식을 조직에 맞게 정의하고, AI 자동 선택을 켜고 끄는 방법과 주의사항을 안내합니다.
 
-통화가 끝나면 상담사는 "무슨 문의였고 어떻게 처리했는지"를 기록합니다. 기록 양식이 조직의 업무와 맞지 않으면 기록이 제각각이 되어 나중에 통계로 쓸 수 없습니다. `상담 기록 설정`에서는 **기록에 담을 항목을 조직에 맞게 직접 정의**합니다. 여기서 만든 필드는 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel) 화면의 `상담 기록`과 통화 기록 상세에 그대로 나타납니다.
+통화가 끝나면 상담원은 "무슨 문의였고 어떻게 처리했는지"를 기록합니다. 기록 양식이 조직의 업무와 맞지 않으면 기록이 제각각이 되어 나중에 통계로 쓸 수 없습니다. `상담 기록 설정`에서는 **기록에 담을 항목을 조직에 맞게 직접 정의**합니다. 여기서 만든 필드는 [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel) 화면의 `상담 기록`과 통화 기록 상세에 그대로 나타납니다.
 
 **위치:** 설정 > 상담 기록 설정
 
@@ -10276,7 +10750,7 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 > **필드는 적을수록 좋습니다**
 >
-> 화면에도 안내되어 있듯 필드가 많으면 상담사의 입력이 느려집니다. 통계로 실제로 볼 분류만 남기세요. 어떤 필드를 둘지 설계하는 방법은 [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records)에 자세히 있습니다.
+> 화면에도 안내되어 있듯 필드가 많으면 상담원의 입력이 느려집니다. 통계로 실제로 볼 분류만 남기세요. 어떤 필드를 둘지 설계하는 방법은 [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records)에 자세히 있습니다.
 
 #### AI가 기록을 대신 채우게 하기
 
@@ -10284,17 +10758,17 @@ CRM에 연결할 수 없는 상태라면 창 대신 카드 안의 칸이 바로 
 
 **위치:** 설정 > 상담 기록 설정 > AI 자동 선택
 
-`AI 자동 선택`을 켜면 통화가 끝났을 때 AI의 분류 결과가 상담 기록 필드에 자동으로 선택(저장)됩니다. 꺼 두면 AI 결과는 참고용으로만 표시되고 상담사가 직접 고릅니다. 켠 뒤의 통화부터 적용됩니다.
+`AI 자동 선택`을 켜면 통화가 끝났을 때 AI의 분류 결과가 상담 기록 필드에 자동으로 선택(저장)됩니다. 꺼 두면 AI 결과는 참고용으로만 표시되고 상담원이 직접 고릅니다. 켠 뒤의 통화부터 적용됩니다.
 
-> **상담사가 적은 내용을 덮어씁니다**
+> **상담원이 저장한 값도 AI 결과로 바뀝니다**
 >
-> 이 기능이 켜져 있는 동안에는 통화가 끝날 때마다 AI가 상담사가 선택해 둔 기록 값과 작성해 둔 메모를 **모두 덮어씁니다.** 상담사가 통화 중에 직접 기록하는 조직이라면 꺼 두고 참고용으로만 쓰는 것이 안전합니다. 켜더라도 AI의 분류가 맞는지 주기적으로 확인하세요.
+> 이 기능이 켜져 있으면 통화가 끝날 때마다 AI가 분류한 필드의 값과, AI가 항목을 뽑아낸 메모 전체를 AI 결과로 바꿉니다. 상담원이 통화 중에 이미 저장한 값과 메모도 바뀝니다. AI가 분류하지 못한 필드에만 상담원이 고른 값이 남습니다. 화면의 경고 문구는 이 동작을 "모두 덮어씁니다"라고 표시합니다. 상담원이 통화 중에 직접 기록하는 조직이라면 꺼 두고 참고용으로만 쓰는 것이 안전합니다. 켜더라도 AI의 분류가 맞는지 주기적으로 확인하세요.
 
 #### 함께 보기
 
 출처: https://certi.life/docs/guide/studio/screens/org-settings/counsel-record#함께-보기
 
-- [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel#통화-내용-확인하고-기록-남기기): 상담사가 기록을 남기는 화면
+- [전화상담](https://certi.life/docs/guide/studio/screens/phone-counsel#통화-내용-확인하고-기록-남기기): 상담원이 기록을 남기는 화면
 - [상담 기록 필드 설정](https://certi.life/docs/guide/studio/consultation-records): 필드 설계 기준과 운영 방법
 
 ## 도움말
@@ -10319,31 +10793,31 @@ CertiLife는 메디컬 인증서를 기반으로 인증서, AI 상담, CRM 메�
 
 출처: https://certi.life/docs/guide/help/faq#어떤-문서부터-읽어야-하나요
 
-처음 방문했다면 [내게 맞는 가이드 찾기](https://certi.life/docs/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원에서 인증서 발행·환자 관리·계정을 맡은 사용자는 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview), 병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅)는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 제조사 사용자는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 도입 검토 담당자는 [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)와 [가격 안내](https://certi.life/pricing)에서 시작하는 것이 좋습니다. Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, Hospital의 `상담/챗봇 관리` 메뉴에서 새 탭으로 열립니다.
+처음 방문했다면 [내게 맞는 가이드 찾기](https://certi.life/docs/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원에서 인증서 발행·환자 관리·계정을 맡은 사용자는 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access), 병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅)는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 제조사 사용자는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 도입 검토 담당자는 [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)와 [가격 안내](https://certi.life/pricing)에서 시작하는 것이 좋습니다. Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, Hospital의 `상담/챗봇 관리` 메뉴에서 새 탭으로 열립니다.
 
 #### 한의원이나 목록에 없는 진료과도 쓸 수 있나요?
 
 출처: https://certi.life/docs/guide/help/faq#한의원이나-목록에-없는-진료과도-쓸-수-있나요
 
-네. 한의원, 이비인후과처럼 Hospital의 진료과 목록(치과, 안과, 성형외과, 피부과, 내과, 정형외과, 수의과)에 없는 의료기관도 같은 병원용 서비스를 씁니다. 인증서는 진료과와 관계없이 쓰는 `병원` 그룹으로 발행하며, 발행 순서는 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)의 "그 밖의 진료과" 경로를 따릅니다. 인증서 양식은 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에서 먼저 만듭니다.
+진료과에 따라 다릅니다. 신경외과, 흉부외과, 공통 진료과는 공통 그룹 `병원`(`병원 인증서 발행`, `병원 인증서 설정`)으로 발행합니다. 한의원처럼 Hospital 진료과 목록에 없는 의료기관은 인증서 발행 메뉴가 보이지 않을 수 있습니다. 이때는 CertiLife 고객센터(1800-8984)에 문의하세요. `병원` 그룹의 발행 순서는 [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기)를 따릅니다. 인증서 양식은 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에서 먼저 만듭니다.
 
 #### Hospital, Manufacturer와 Studio는 어디에서 접속하나요?
 
 출처: https://certi.life/docs/guide/help/faq#hospital-manufacturer와-studio는-어디에서-접속하나요
 
-병원용 서비스는 [Hospital 로그인](https://hospital.certi.life/signin), 제조사용 서비스는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio는 [Studio 로그인](https://studio.certi.life)을 이용하세요. 주소 표시줄의 도메인이 정확한지 확인한 후 로그인 정보를 입력해야 합니다. 로그인 페이지가 열리지 않거나 인증이 반복되면 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)의 공개 로그인 점검 순서를 확인하세요.
+병원용 서비스는 [Hospital 로그인](https://hospital.certi.life/signin), 제조사용 서비스는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio는 [Studio 로그인](https://studio.certi.life)을 이용하세요. 주소 표시줄의 도메인이 정확한지 확인한 후 로그인 정보를 입력해야 합니다. 로그인 페이지가 열리지 않거나 인증이 반복되면 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)의 로그인 점검 순서를 확인하세요.
 
 #### 로그인 정보나 권한을 이 문서에서 받을 수 있나요?
 
 출처: https://certi.life/docs/guide/help/faq#로그인-정보나-권한을-이-문서에서-받을-수-있나요
 
-아닙니다. 공개 도움말은 계정 생성, 비밀번호 확인, 권한 부여를 처리하지 않습니다. 본인 계정만 사용하고 로그인 정보를 다른 사람과 공유하지 마세요. 계정 또는 이용 범위가 확인되지 않으면 조직의 CertiLife 담당자나 CertiLife 고객센터(1800-8984)에 문의하세요. 비밀번호, 인증 코드, 고객·환자 개인정보는 문의 내용이나 첨부 이미지에 포함하지 않습니다.
+아닙니다. 이 문서는 계정을 만들거나 비밀번호를 알려 주거나 권한을 주지 않습니다. 본인 계정만 사용하고 로그인 정보를 다른 사람과 공유하지 마세요. Hospital 직원 계정과 권한은 병원 관리자(계정을 만들어 준 사람)가 `계정 관리`에서 만들고 바꿉니다. 그 밖의 계정이나 이용 범위는 CertiLife 고객센터(1800-8984)에 문의하세요. 비밀번호, 인증 코드, 고객·환자 개인정보는 문의 내용이나 첨부 이미지에 포함하지 않습니다.
 
 #### 공식 다운로드는 어디에서 하나요?
 
 출처: https://certi.life/docs/guide/help/faq#공식-다운로드는-어디에서-하나요
 
-[CertiLife 다운로드](https://certi.life/download)를 이용하세요. 메신저, 이메일 또는 검색 결과에서 받은 설치 파일은 공식 페이지에서 제공되는 항목인지 먼저 확인해야 합니다. 이 문서는 특정 운영체제의 설치 화면이나 버튼 위치를 추측해 안내하지 않습니다.
+[CertiLife 다운로드](https://certi.life/download)를 이용하세요. 메신저, 이메일 또는 검색 결과에서 받은 설치 파일은 공식 페이지에서 제공되는 항목인지 먼저 확인해야 합니다. 치과에서 제품 코드 스캔에 쓰는 병원용 앱은 이 페이지에 없고 App Store와 Google Play에서 받습니다. 앱별로 받는 곳은 [CertiLife 다운로드](https://certi.life/docs/guide/getting-started/downloads)에 있습니다.
 
 #### 가격과 도입 범위는 어디에서 확인하나요?
 
@@ -10393,11 +10867,11 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 
 문제 설명에 꼭 필요한 경우에만 사용하고, 먼저 고객·환자·직원 식별 정보와 로그인 정보, 인증 코드, 내부 주소가 보이지 않도록 자르거나 가리세요. 가린 정보가 파일명, 브라우저 탭, 알림, 이미지 배경에 남아 있지 않은지도 확인해야 합니다. 가능하면 개인정보가 없는 오류 문구와 발생 시각, 사용한 공식 접속 주소를 텍스트로 설명하세요.
 
-#### 공개 문서와 실제 화면이 다르면 어떻게 하나요?
+#### 문서와 실제 화면이 다르면 어떻게 하나요?
 
-출처: https://certi.life/docs/guide/help/faq#공개-문서와-실제-화면이-다르면-어떻게-하나요
+출처: https://certi.life/docs/guide/help/faq#문서와-실제-화면이-다르면-어떻게-하나요
 
-확인되지 않은 메뉴나 버튼을 추측해 조작하지 마세요. 먼저 공식 주소인지 확인하고 페이지를 새로 연 뒤에도 차이가 계속되면 조직의 담당자 또는 [도입 문의](https://certi.life/contact)에 문의하세요. 문의 시 실제 개인정보를 제거하고, 문제가 발생한 서비스(Hospital, Manufacturer 또는 Studio), 대략적인 발생 시각, 브라우저 종류, 표시된 오류 문구를 전달하면 상황 파악에 도움이 됩니다.
+문서에 없는 메뉴나 버튼을 임의로 조작하지 마세요. Hospital에서 문서에 있는 메뉴가 보이지 않으면 병원 관리자(계정을 만들어 준 사람)에게 권한을 요청하세요. 공식 주소인지 확인하고 페이지를 새로 연 뒤에도 차이가 계속되면 CertiLife 고객센터(1800-8984)에 문의하세요. 문의 시 실제 개인정보를 제거하고, 문제가 발생한 서비스(Hospital, Manufacturer 또는 Studio), 대략적인 발생 시각, 브라우저 종류, 표시된 오류 문구를 전달하면 상황 파악에 도움이 됩니다.
 
 #### 더 알아두어야 할 보안 원칙은 무엇인가요?
 
@@ -10413,7 +10887,25 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 
 > CertiLife 공식 서비스 접속과 공개 로그인 문제를 안전하게 점검하는 방법입니다.
 
-접속·로그인 문제는 공식 주소, 인터넷 연결, 브라우저와 본인 계정을 순서대로 확인합니다. 계정 생성, 권한 변경 또는 제품 화면의 미확인 메뉴 위치는 다루지 않습니다. 점검 중에도 비밀번호, 인증 코드, 고객·환자 개인정보를 다른 사람에게 보내지 마세요.
+접속·로그인 문제는 공식 주소, 인터넷 연결, 브라우저와 본인 계정을 순서대로 확인합니다. 인증서 알림, 채팅 버튼, 캠페인 발송처럼 화면 안의 문제는 아래 [증상별로 찾기](https://certi.life/docs/guide/help/troubleshooting#증상별로-찾기)에서 해당 안내로 이동하세요. 점검 중에도 비밀번호, 인증 코드, 고객·환자 개인정보를 다른 사람에게 보내지 마세요.
+
+#### 증상별로 찾기
+
+출처: https://certi.life/docs/guide/help/troubleshooting#증상별로-찾기
+
+| 증상                            | 찾아갈 곳                                                                                                                                                                                                           |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 로그인 페이지가 열리지 않아요              | [로그인 페이지가 열리지 않을 때](https://certi.life/docs/guide/help/troubleshooting#2-로그인-페이지가-열리지-않을-때)                                                                                                                     |
+| 로그인이 안 되거나 로그인 화면이 반복돼요       | [로그인할 수 없거나 로그인이 반복될 때](https://certi.life/docs/guide/help/troubleshooting#3-로그인할-수-없거나-로그인이-반복될-때)                                                                                                             |
+| 문서에 있는 메뉴가 보이지 않아요            | [로그인 후 화면이 예상과 다를 때](https://certi.life/docs/guide/help/troubleshooting#4-로그인-후-화면이-예상과-다를-때)                                                                                                                   |
+| 환자가 "카톡이 안 왔어요"라고 해요          | Hospital [알림 다시 보내기](https://certi.life/docs/guide/hospital/screens/history#알림-다시-보내기)                                                                                                                          |
+| 인증서를 다른 사람에게 보냈어요             | Hospital [이상 상황 대응](https://certi.life/docs/guide/hospital/safe-operation#이상-상황-대응)                                                                                                                             |
+| 제품 코드를 넣으면 오류가 나요             | Hospital [제품 코드 오류 해결하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#제품-코드-오류-해결하기)                                                                                                        |
+| 제품 코드를 스캔하려는데 앱 설치나 로그인을 요구해요 | [병원용 앱 설치](https://certi.life/docs/guide/getting-started/downloads#병원용-앱-설치)                                                                                                                                    |
+| 홈페이지에 채팅 버튼이 보이지 않아요          | Studio [홈페이지에 채팅 버튼이 보이지 않을 때](https://certi.life/docs/guide/studio/screens/chatbot/settings/channel-settings#홈페이지에-채팅-버튼이-보이지-않을-때)                                                                            |
+| 캠페인이 `안전 검증`에서 막혀요            | Studio [안전 검증 통과하기](https://certi.life/docs/guide/studio/screens/crm/campaigns#안전-검증-통과하기)                                                                                                                      |
+| 알림톡 템플릿이 반려됐어요                | Hospital 인증서 알림톡은 [검수 상태 확인하기](https://certi.life/docs/guide/hospital/screens/alimtalk#검수-상태-확인하기), Studio CRM 템플릿은 [검수 상태 확인하고 고치기](https://certi.life/docs/guide/studio/screens/crm/templates#검수-상태-확인하고-고치기) |
+| 앱이나 프로그램이 설치되지 않아요            | [설치가 되지 않을 때](https://certi.life/docs/guide/getting-started/downloads#설치가-되지-않을-때)                                                                                                                              |
 
 #### 1. 공식 주소인지 확인하기
 
@@ -10448,15 +10940,15 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 - 키보드의 한글/영문 상태, 대문자 입력 상태와 앞뒤 공백을 확인합니다.
 - 자동 완성에 오래된 정보가 들어갔다면 직접 다시 입력합니다. 비밀번호를 문서나 메신저에 복사해 확인하지 마세요.
 - 브라우저의 비공개 창에서 공식 주소를 열어 같은 문제가 발생하는지 확인합니다.
-- 여러 번 추측해 반복 입력하지 말고, 계정 또는 권한 확인이 필요하면 조직의 CertiLife 담당자에게 문의합니다.
+- 비밀번호를 짐작해 여러 번 입력하지 말고, 계정 또는 권한 확인이 필요하면 계정을 만들어 준 관리자에게 문의합니다. Hospital 직원 계정은 병원 관리자가 `계정 관리`에서 만들고 권한을 줍니다.
 
-공개 도움말은 비밀번호를 조회하거나 계정 권한을 변경할 수 없습니다. 화면에 안내되는 복구 방법이 있더라도 본인 계정에 대해서만 이용하고, 확인되지 않은 연락처가 인증 코드를 요구하면 제공하지 마세요.
+화면에 안내되는 복구 방법이 있더라도 본인 계정에 대해서만 이용하고, 출처를 알 수 없는 연락처가 인증 코드를 요구하면 제공하지 마세요.
 
 #### 4. 로그인 후 화면이 예상과 다를 때
 
 출처: https://certi.life/docs/guide/help/troubleshooting#4-로그인-후-화면이-예상과-다를-때
 
-조직의 이용 서비스, 계정 권한 또는 설정에 따라 보이는 범위가 다를 수 있습니다. 공개 문서에 없는 버튼이나 메뉴를 추측해 찾지 마세요. 먼저 페이지를 새로 열고 공식 주소인지 확인합니다. 계속 다르면 문제 발생 서비스, 대략적인 발생 시각, 브라우저 종류, 화면에 표시된 오류 문구를 정리해 조직의 담당자 또는 CertiLife 고객센터(1800-8984)에 전달하세요.
+조직의 이용 서비스, 계정 권한 또는 설정에 따라 보이는 범위가 다를 수 있습니다. 문서에 없는 버튼이나 메뉴를 임의로 찾아 누르지 마세요. Hospital 서브계정은 받은 권한의 메뉴만 왼쪽에 보이므로, 문서에 있는 메뉴가 보이지 않으면 병원 관리자에게 권한을 요청하세요. 그래도 다르면 페이지를 새로 열고 공식 주소인지 확인합니다. 계속 다르면 문제 발생 서비스, 대략적인 발생 시각, 브라우저 종류, 화면에 표시된 오류 문구를 정리해 병원 관리자 또는 CertiLife 고객센터(1800-8984)에 전달하세요.
 
 #### 5. 문의 전에 준비할 정보
 
@@ -10478,7 +10970,7 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 
 출처: https://certi.life/docs/guide/help/troubleshooting#해결되지-않았나요
 
-조직의 CertiLife 담당자에게 먼저 문의하세요. 담당자가 따로 없거나 담당자도 해결하지 못하면 CertiLife 고객센터 1800-8984로 문의합니다. 문의할 때는 [문의 전에 준비할 정보](https://certi.life/docs/guide/help/troubleshooting#5-문의-전에-준비할-정보)를 함께 알려 주세요. 로그인 정보, 인증 코드, 고객·환자 개인정보는 문의에 포함하지 마세요.
+계정과 권한 문제는 계정을 만들어 준 관리자(Hospital 직원은 병원 관리자)에게 먼저 문의하세요. 관리자가 해결하지 못하거나 계정 문제가 아니면 CertiLife 고객센터(1800-8984)로 문의합니다. 문의할 때는 [문의 전에 준비할 정보](https://certi.life/docs/guide/help/troubleshooting#5-문의-전에-준비할-정보)를 함께 알려 주세요. 로그인 정보, 인증 코드, 고객·환자 개인정보는 문의에 포함하지 마세요.
 
 도입을 검토하는 중이라면 [CertiLife 도입 문의](https://certi.life/contact)를 이용할 수 있습니다. 가격이나 도입 조건은 [가격 안내](https://certi.life/pricing)에서 확인할 수 있습니다.
 
@@ -10504,6 +10996,10 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 
 진단서나 법적 증명서가 아닙니다. 시술 또는 제품 관련 정보를 고객이 확인하기 쉬운 형태로 전달하는 CertiLife의 [인증서 서비스](https://certi.life/docs/guide/products/certificate)를 가리킵니다. 안과에서는 화면과 문서가 "인증서" 대신 "확인서"라는 말을 씁니다.
 
+##### NFT 인증서
+
+블록체인에 고유 식별 정보를 기록해 발행하는 인증서입니다. [이용약관](https://certi.life/terms)은 NFT 인증서를 "고유 식별 정보가 블록체인 상에 저장되어 위조가 불가능한 형태로 발행되는 인증서"로 정의합니다. Studio CRM에서 `NFT 인증서`는 CertiLife 인증서 데이터를 뜻합니다. 고객 편집의 `NFT 인증서` 탭에서 인증서 발급 이력과 시술 정보를 보고, [데이터 연동](https://certi.life/docs/guide/studio/screens/crm/connectors)의 `NFT 인증서 커넥터`로 인증서를 받은 고객을 CRM에 가져옵니다. 인증서를 저장하는 곳은 [지갑](https://certi.life/docs/guide/help/glossary#지갑)을 참고하세요.
+
 ##### AI 상담
 
 반복되는 일반적인 채팅 문의 대응을 지원하는 서비스입니다. 의료진의 진단, 의학적 판단 또는 치료 결정을 대신하지 않습니다. 자세한 범위는 [AI 상담 소개](https://certi.life/docs/guide/products/ai-chatbot)를 확인하세요. 요금표에서는 `채팅봇`과 `음성봇`으로 표시됩니다.
@@ -10518,7 +11014,7 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 
 ##### CRM
 
-Customer Relationship Management의 약자로, 고객과의 관계를 관리하는 활동이나 체계를 뜻합니다. CertiLife 공개 문서에서는 고객에게 필요한 안내와 메시지를 전달하는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)의 맥락에서 주로 사용합니다.
+Customer Relationship Management의 약자로, 고객과의 관계를 관리하는 활동이나 체계를 뜻합니다. CertiLife 문서에서는 고객에게 필요한 안내와 메시지를 전달하는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)의 맥락에서 주로 사용합니다.
 
 ##### CRM 메시징
 
@@ -10530,15 +11026,15 @@ Customer Relationship Management의 약자로, 고객과의 관계를 관리하�
 
 ##### Hospital
 
-병원 관리자가 인증서를 발행하고 환자·계정·결제·알림톡을 관리하는 병원용 화면입니다. 공개 안내는 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview), 공식 접속 주소는 [Hospital 로그인](https://hospital.certi.life/signin)입니다. Hospital에서 보이는 기능은 조직의 이용 범위와 계정 권한에 따라 다를 수 있습니다.
+병원 관리자가 인증서를 발행하고 환자·계정·결제·알림톡을 관리하는 병원용 화면입니다. 안내 문서는 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview), 공식 접속 주소는 [Hospital 로그인](https://hospital.certi.life/signin)입니다. Hospital에서 보이는 기능은 조직의 이용 범위와 계정 권한에 따라 다를 수 있습니다.
 
 ##### Manufacturer
 
-제조사 사용자를 위한 CertiLife 서비스 진입점입니다. 공개 안내는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 공식 접속 주소는 [Manufacturer 로그인](https://manufacturer.certi.life/signin)입니다. 로그인 이후 공개되지 않은 메뉴나 권한별 기능은 이 용어 정의만으로 추측하지 않습니다.
+제조사 사용자를 위한 CertiLife 서비스 진입점입니다. 안내 문서는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 공식 접속 주소는 [Manufacturer 로그인](https://manufacturer.certi.life/signin)입니다.
 
 ##### Studio
 
-등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 챗봇, 콜봇, 상담, 전화상담, CRM, 백과사전 메뉴가 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. 공개 안내는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 공식 접속 주소는 [Studio 로그인](https://studio.certi.life)입니다.
+등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 챗봇, 콜봇, 상담, 전화상담, CRM, 백과사전 메뉴가 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. 안내 문서는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 공식 접속 주소는 [Studio 로그인](https://studio.certi.life)입니다.
 
 #### 계정과 권한 용어
 
@@ -10546,7 +11042,7 @@ Customer Relationship Management의 약자로, 고객과의 관계를 관리하�
 
 ##### 계정
 
-서비스에서 사용자를 식별하기 위한 로그인 수단입니다. 본인에게 발급된 계정만 사용하고 다른 사람과 로그인 정보를 공유하지 않아야 합니다. 공개 도움말은 계정 생성이나 권한 변경을 처리하지 않습니다.
+서비스에서 사용자를 식별하기 위한 로그인 수단입니다. 본인에게 발급된 계정만 사용하고 다른 사람과 로그인 정보를 공유하지 않아야 합니다. Hospital 직원 계정은 병원 관리자가 `계정 관리`에서 만들고 권한을 바꿉니다.
 
 ##### 서브계정
 
@@ -10554,7 +11050,7 @@ Hospital의 `계정 관리`에서 병원 관리자가 직원마다 만들어 주
 
 ##### 권한
 
-계정이 서비스에서 볼 수 있거나 수행할 수 있는 범위를 뜻합니다. Hospital 서브계정의 권한은 `인증서`, `결제`, `메시지`, `운영`, `관리` 그룹으로 나뉩니다. 조직과 계정에 따라 범위가 다를 수 있으며, 공개 문서만으로 본인의 권한을 단정할 수 없습니다.
+계정이 서비스에서 볼 수 있거나 수행할 수 있는 범위를 뜻합니다. Hospital 서브계정의 권한은 `인증서`, `결제`, `메시지`, `운영`, `관리` 그룹으로 나뉩니다. 서브계정의 권한은 병원 관리자가 `계정 관리`에서 정합니다. 문서에 있는 메뉴가 보이지 않으면 병원 관리자에게 권한을 요청하세요.
 
 ##### 공식 주소
 
@@ -10578,7 +11074,7 @@ CertiLife가 공개한 접속 주소를 뜻합니다. 이 가이드에서 안내
 
 ##### 지갑
 
-환자가 받은 인증서를 저장해 두는 곳입니다. 발행 내역의 `지갑 저장됨` 상태는 환자가 인증서를 자기 지갑에 저장했다는 뜻이고, 환자 관리의 `지갑 연동 상태`가 `미연동`이면 아직 저장하지 않은 환자입니다. 상태 표는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에 있습니다.
+환자가 받은 인증서를 저장해 두는 디지털 지갑입니다. 환자는 카카오톡 알림이나 문자에 있는 저장 버튼이나 링크로 인증서를 지갑에 저장합니다. CertiLife [자주묻는질문](https://certi.life/faq)은 이 지갑을 "카카오톡 지갑"으로 부르고, [개인정보처리방침](https://certi.life/terms/privacy)은 지갑 주소를 "Klip 지갑주소"로 적습니다. Hospital 환자 상세의 `지갑주소`가 이 주소입니다. 발행 내역의 `지갑 저장됨` 상태는 환자가 인증서를 자기 지갑에 저장했다는 뜻이고, 환자 관리의 `지갑 연동 상태`가 `미연동`이면 아직 저장하지 않은 환자입니다. 상태 표는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에 있습니다.
 
 ##### 회수
 
@@ -10680,7 +11176,7 @@ AI 채팅봇과 AI 음성봇은 이미 들어온 채팅과 전화 문의에 응�
 
 ##### 인증 코드
 
-로그인 또는 본인 확인 과정에서 일시적으로 사용하는 값을 뜻합니다. 다른 사람에게 전달하거나 지원 문의에 첨부하면 안 됩니다. 확인되지 않은 사람이 인증 코드를 요구하면 제공하지 마세요.
+로그인 또는 본인 확인 과정에서 일시적으로 사용하는 값을 뜻합니다. 다른 사람에게 전달하거나 지원 문의에 첨부하면 안 됩니다. 신원을 알 수 없는 사람이 인증 코드를 요구하면 제공하지 마세요.
 
 ##### 의료적 판단
 
@@ -10707,7 +11203,7 @@ AI 채팅봇과 AI 음성봇은 이미 들어온 채팅과 전화 문의에 응�
 - 테스트와 예시에는 특정인을 떠올릴 수 없는 완전한 가상 데이터를 사용합니다.
 - 로그인 정보, 비밀번호, 인증 코드, 토큰 또는 키를 문서·메신저·문의 내용에 적지 않습니다.
 - 개인정보가 포함된 자료를 개인 저장 공간이나 승인되지 않은 서비스로 옮기지 않습니다.
-- 의심스러운 접근이나 정보 노출을 발견하면 추가 공유를 멈추고 즉시 조직의 담당자에게 알립니다.
+- 의심스러운 접근이나 정보 노출을 발견하면 추가 공유를 멈추고 즉시 조직의 개인정보·사고 대응 담당자에게 알립니다. 병원 관리자 또는 CertiLife 고객센터(1800-8984)에도 알립니다.
 
 #### 안전한 계정과 접속
 
@@ -10715,10 +11211,10 @@ AI 채팅봇과 AI 음성봇은 이미 들어온 채팅과 전화 문의에 응�
 
 본인에게 발급된 계정만 사용하고 로그인 정보를 공유하지 마세요. 공식 로그인 주소는 다음과 같습니다. 직원 공지에 붙여 넣을 때는 주소 문자열을 그대로 쓰세요.
 
-- Hospital: `hospital.certi.life/signin` — [Hospital 로그인](https://hospital.certi.life/signin)
-- Manufacturer: `manufacturer.certi.life/signin` — [Manufacturer 로그인](https://manufacturer.certi.life/signin)
-- Studio: `studio.certi.life` — [Studio 로그인](https://studio.certi.life)
-- 다운로드: `certi.life/download` — [공식 다운로드 페이지](https://certi.life/download)
+- Hospital: `hospital.certi.life/signin` ([Hospital 로그인](https://hospital.certi.life/signin))
+- Manufacturer: `manufacturer.certi.life/signin` ([Manufacturer 로그인](https://manufacturer.certi.life/signin))
+- Studio: `studio.certi.life` ([Studio 로그인](https://studio.certi.life))
+- 다운로드: `certi.life/download` ([공식 다운로드 페이지](https://certi.life/download))
 
 주소 표시줄의 도메인이 `certi.life`로 끝나는지 확인한 후 정보를 입력하고, 공식 주소와 다른 페이지가 로그인이나 설치를 요구하면 진행하지 마세요.
 
@@ -10757,7 +11253,7 @@ AI 상담은 일반 안내와 반복 문의 대응을 지원하지만 의료진�
 
 1. 해당 자료의 추가 전송, 화면 공유 또는 게시를 즉시 중단합니다.
 2. 자료를 임의로 더 복제하지 말고 어떤 정보가 어디에 노출되었는지 최소 범위로 파악합니다.
-3. 조직의 CertiLife 담당자와 조직이 정한 개인정보·보안 보고 경로에 즉시 알립니다.
+3. 조직에서 CertiLife 계정을 관리하는 사람(병원은 병원 관리자)과 조직이 정한 개인정보·보안 보고 경로에 즉시 알립니다.
 4. 외부 지원이 필요하면 [도입 및 서비스 문의](https://certi.life/contact)를 이용하되, 문의 자체에 노출된 개인정보나 로그인 정보를 다시 첨부하지 않습니다.
 
 #### 공식 정책과 문의
@@ -10770,4 +11266,4 @@ AI 상담은 일반 안내와 반복 문의 대응을 지원하지만 의료진�
 - [개인정보처리방침](https://certi.life/terms/privacy)
 - [도입 및 서비스 문의](https://certi.life/contact)
 
-정책의 적용이나 개인정보 처리에 관한 판단이 필요하면 공개 도움말만으로 결론 내리지 말고 최신 공식 정책과 조직의 담당 안내를 확인하세요.
+정책의 적용이나 개인정보 처리에 관한 판단이 필요하면 이 안내만으로 결론 내리지 말고 최신 공식 정책과 조직의 담당 안내를 확인하세요.

@@ -10,23 +10,23 @@ CertiLife는 메디컬 인증서를 기반으로 인증서, AI 상담, CRM 메�
 
 ## 어떤 문서부터 읽어야 하나요?
 
-처음 방문했다면 [내게 맞는 가이드 찾기](https://certi.life/docs/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원에서 인증서 발행·환자 관리·계정을 맡은 사용자는 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview), 병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅)는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 제조사 사용자는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 도입 검토 담당자는 [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)와 [가격 안내](https://certi.life/pricing)에서 시작하는 것이 좋습니다. Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, Hospital의 `상담/챗봇 관리` 메뉴에서 새 탭으로 열립니다.
+처음 방문했다면 [내게 맞는 가이드 찾기](https://certi.life/docs/guide/getting-started/choose-guide)의 역할·목적별 선택표를 이용하세요. 병원에서 인증서 발행·환자 관리·계정을 맡은 사용자는 [Hospital 계정 접속](https://certi.life/docs/guide/hospital/account-access), 병원에서 AI 상담·CRM·번역을 맡은 사용자(상담실장, 코디네이터, 콜센터 상담사, 마케팅)는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 제조사 사용자는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 도입 검토 담당자는 [병원 도입 구매 FAQ](https://certi.life/docs/guide/getting-started/buyer-faq)와 [가격 안내](https://certi.life/pricing)에서 시작하는 것이 좋습니다. Studio는 등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스이며, Hospital의 `상담/챗봇 관리` 메뉴에서 새 탭으로 열립니다.
 
 ## 한의원이나 목록에 없는 진료과도 쓸 수 있나요?
 
-네. 한의원, 이비인후과처럼 Hospital의 진료과 목록(치과, 안과, 성형외과, 피부과, 내과, 정형외과, 수의과)에 없는 의료기관도 같은 병원용 서비스를 씁니다. 인증서는 진료과와 관계없이 쓰는 `병원` 그룹으로 발행하며, 발행 순서는 [인증서 발행](https://certi.life/docs/guide/hospital/screens/issue-certificate)의 "그 밖의 진료과" 경로를 따릅니다. 인증서 양식은 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에서 먼저 만듭니다.
+진료과에 따라 다릅니다. 신경외과, 흉부외과, 공통 진료과는 공통 그룹 `병원`(`병원 인증서 발행`, `병원 인증서 설정`)으로 발행합니다. 한의원처럼 Hospital 진료과 목록에 없는 의료기관은 인증서 발행 메뉴가 보이지 않을 수 있습니다. 이때는 CertiLife 고객센터(1800-8984)에 문의하세요. `병원` 그룹의 발행 순서는 [치과와 안과가 아닌 진료과에서 발행하기](https://certi.life/docs/guide/hospital/screens/issue-certificate#치과와-안과가-아닌-진료과에서-발행하기)를 따릅니다. 인증서 양식은 [인증서 설정](https://certi.life/docs/guide/hospital/screens/certificate-settings)에서 먼저 만듭니다.
 
 ## Hospital, Manufacturer와 Studio는 어디에서 접속하나요?
 
-병원용 서비스는 [Hospital 로그인](https://hospital.certi.life/signin), 제조사용 서비스는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio는 [Studio 로그인](https://studio.certi.life)을 이용하세요. 주소 표시줄의 도메인이 정확한지 확인한 후 로그인 정보를 입력해야 합니다. 로그인 페이지가 열리지 않거나 인증이 반복되면 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)의 공개 로그인 점검 순서를 확인하세요.
+병원용 서비스는 [Hospital 로그인](https://hospital.certi.life/signin), 제조사용 서비스는 [Manufacturer 로그인](https://manufacturer.certi.life/signin), Studio는 [Studio 로그인](https://studio.certi.life)을 이용하세요. 주소 표시줄의 도메인이 정확한지 확인한 후 로그인 정보를 입력해야 합니다. 로그인 페이지가 열리지 않거나 인증이 반복되면 [문제 해결](https://certi.life/docs/guide/help/troubleshooting)의 로그인 점검 순서를 확인하세요.
 
 ## 로그인 정보나 권한을 이 문서에서 받을 수 있나요?
 
-아닙니다. 공개 도움말은 계정 생성, 비밀번호 확인, 권한 부여를 처리하지 않습니다. 본인 계정만 사용하고 로그인 정보를 다른 사람과 공유하지 마세요. 계정 또는 이용 범위가 확인되지 않으면 조직의 CertiLife 담당자나 CertiLife 고객센터(1800-8984)에 문의하세요. 비밀번호, 인증 코드, 고객·환자 개인정보는 문의 내용이나 첨부 이미지에 포함하지 않습니다.
+아닙니다. 이 문서는 계정을 만들거나 비밀번호를 알려 주거나 권한을 주지 않습니다. 본인 계정만 사용하고 로그인 정보를 다른 사람과 공유하지 마세요. Hospital 직원 계정과 권한은 병원 관리자(계정을 만들어 준 사람)가 `계정 관리`에서 만들고 바꿉니다. 그 밖의 계정이나 이용 범위는 CertiLife 고객센터(1800-8984)에 문의하세요. 비밀번호, 인증 코드, 고객·환자 개인정보는 문의 내용이나 첨부 이미지에 포함하지 않습니다.
 
 ## 공식 다운로드는 어디에서 하나요?
 
-[CertiLife 다운로드](https://certi.life/download)를 이용하세요. 메신저, 이메일 또는 검색 결과에서 받은 설치 파일은 공식 페이지에서 제공되는 항목인지 먼저 확인해야 합니다. 이 문서는 특정 운영체제의 설치 화면이나 버튼 위치를 추측해 안내하지 않습니다.
+[CertiLife 다운로드](https://certi.life/download)를 이용하세요. 메신저, 이메일 또는 검색 결과에서 받은 설치 파일은 공식 페이지에서 제공되는 항목인지 먼저 확인해야 합니다. 치과에서 제품 코드 스캔에 쓰는 병원용 앱은 이 페이지에 없고 App Store와 Google Play에서 받습니다. 앱별로 받는 곳은 [CertiLife 다운로드](https://certi.life/docs/guide/getting-started/downloads)에 있습니다.
 
 ## 가격과 도입 범위는 어디에서 확인하나요?
 
@@ -60,9 +60,9 @@ AI 채팅봇은 웹챗·카카오톡·네이버 톡톡 같은 메신저의 반�
 
 문제 설명에 꼭 필요한 경우에만 사용하고, 먼저 고객·환자·직원 식별 정보와 로그인 정보, 인증 코드, 내부 주소가 보이지 않도록 자르거나 가리세요. 가린 정보가 파일명, 브라우저 탭, 알림, 이미지 배경에 남아 있지 않은지도 확인해야 합니다. 가능하면 개인정보가 없는 오류 문구와 발생 시각, 사용한 공식 접속 주소를 텍스트로 설명하세요.
 
-## 공개 문서와 실제 화면이 다르면 어떻게 하나요?
+## 문서와 실제 화면이 다르면 어떻게 하나요?
 
-확인되지 않은 메뉴나 버튼을 추측해 조작하지 마세요. 먼저 공식 주소인지 확인하고 페이지를 새로 연 뒤에도 차이가 계속되면 조직의 담당자 또는 [도입 문의](https://certi.life/contact)에 문의하세요. 문의 시 실제 개인정보를 제거하고, 문제가 발생한 서비스(Hospital, Manufacturer 또는 Studio), 대략적인 발생 시각, 브라우저 종류, 표시된 오류 문구를 전달하면 상황 파악에 도움이 됩니다.
+문서에 없는 메뉴나 버튼을 임의로 조작하지 마세요. Hospital에서 문서에 있는 메뉴가 보이지 않으면 병원 관리자(계정을 만들어 준 사람)에게 권한을 요청하세요. 공식 주소인지 확인하고 페이지를 새로 연 뒤에도 차이가 계속되면 CertiLife 고객센터(1800-8984)에 문의하세요. 문의 시 실제 개인정보를 제거하고, 문제가 발생한 서비스(Hospital, Manufacturer 또는 Studio), 대략적인 발생 시각, 브라우저 종류, 표시된 오류 문구를 전달하면 상황 파악에 도움이 됩니다.
 
 ## 더 알아두어야 할 보안 원칙은 무엇인가요?
 

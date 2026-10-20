@@ -16,6 +16,10 @@
 
 진단서나 법적 증명서가 아닙니다. 시술 또는 제품 관련 정보를 고객이 확인하기 쉬운 형태로 전달하는 CertiLife의 [인증서 서비스](https://certi.life/docs/guide/products/certificate)를 가리킵니다. 안과에서는 화면과 문서가 "인증서" 대신 "확인서"라는 말을 씁니다.
 
+### NFT 인증서
+
+블록체인에 고유 식별 정보를 기록해 발행하는 인증서입니다. [이용약관](https://certi.life/terms)은 NFT 인증서를 "고유 식별 정보가 블록체인 상에 저장되어 위조가 불가능한 형태로 발행되는 인증서"로 정의합니다. Studio CRM에서 `NFT 인증서`는 CertiLife 인증서 데이터를 뜻합니다. 고객 편집의 `NFT 인증서` 탭에서 인증서 발급 이력과 시술 정보를 보고, [데이터 연동](https://certi.life/docs/guide/studio/screens/crm/connectors)의 `NFT 인증서 커넥터`로 인증서를 받은 고객을 CRM에 가져옵니다. 인증서를 저장하는 곳은 [지갑](https://certi.life/docs/guide/help/glossary#지갑)을 참고하세요.
+
 ### AI 상담
 
 반복되는 일반적인 채팅 문의 대응을 지원하는 서비스입니다. 의료진의 진단, 의학적 판단 또는 치료 결정을 대신하지 않습니다. 자세한 범위는 [AI 상담 소개](https://certi.life/docs/guide/products/ai-chatbot)를 확인하세요. 요금표에서는 `채팅봇`과 `음성봇`으로 표시됩니다.
@@ -30,7 +34,7 @@
 
 ### CRM
 
-Customer Relationship Management의 약자로, 고객과의 관계를 관리하는 활동이나 체계를 뜻합니다. CertiLife 공개 문서에서는 고객에게 필요한 안내와 메시지를 전달하는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)의 맥락에서 주로 사용합니다.
+Customer Relationship Management의 약자로, 고객과의 관계를 관리하는 활동이나 체계를 뜻합니다. CertiLife 문서에서는 고객에게 필요한 안내와 메시지를 전달하는 [CRM 메시징](https://certi.life/docs/guide/products/crm-messaging)의 맥락에서 주로 사용합니다.
 
 ### CRM 메시징
 
@@ -42,21 +46,21 @@ Customer Relationship Management의 약자로, 고객과의 관계를 관리하�
 
 ### Hospital
 
-병원 관리자가 인증서를 발행하고 환자·계정·결제·알림톡을 관리하는 병원용 화면입니다. 공개 안내는 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview), 공식 접속 주소는 [Hospital 로그인](https://hospital.certi.life/signin)입니다. Hospital에서 보이는 기능은 조직의 이용 범위와 계정 권한에 따라 다를 수 있습니다.
+병원 관리자가 인증서를 발행하고 환자·계정·결제·알림톡을 관리하는 병원용 화면입니다. 안내 문서는 [Hospital 운영 가이드](https://certi.life/docs/guide/hospital/overview), 공식 접속 주소는 [Hospital 로그인](https://hospital.certi.life/signin)입니다. Hospital에서 보이는 기능은 조직의 이용 범위와 계정 권한에 따라 다를 수 있습니다.
 
 ### Manufacturer
 
-제조사 사용자를 위한 CertiLife 서비스 진입점입니다. 공개 안내는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 공식 접속 주소는 [Manufacturer 로그인](https://manufacturer.certi.life/signin)입니다. 로그인 이후 공개되지 않은 메뉴나 권한별 기능은 이 용어 정의만으로 추측하지 않습니다.
+제조사 사용자를 위한 CertiLife 서비스 진입점입니다. 안내 문서는 [Manufacturer 안내](https://certi.life/docs/guide/manufacturer/overview), 공식 접속 주소는 [Manufacturer 로그인](https://manufacturer.certi.life/signin)입니다.
 
 ### Studio
 
-등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 챗봇, 콜봇, 상담, 전화상담, CRM, 백과사전 메뉴가 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. 공개 안내는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 공식 접속 주소는 [Studio 로그인](https://studio.certi.life)입니다.
+등록한 자료를 기반으로 AI 챗봇 상담을 준비하고 운영하는 서비스입니다. 챗봇, 콜봇, 상담, 전화상담, CRM, 백과사전 메뉴가 여기에 있습니다. Hospital의 `상담/챗봇 관리` 메뉴를 누르면 Studio가 새 탭으로 열립니다. 안내 문서는 [Studio 운영 가이드](https://certi.life/docs/guide/studio/overview), 공식 접속 주소는 [Studio 로그인](https://studio.certi.life)입니다.
 
 ## 계정과 권한 용어
 
 ### 계정
 
-서비스에서 사용자를 식별하기 위한 로그인 수단입니다. 본인에게 발급된 계정만 사용하고 다른 사람과 로그인 정보를 공유하지 않아야 합니다. 공개 도움말은 계정 생성이나 권한 변경을 처리하지 않습니다.
+서비스에서 사용자를 식별하기 위한 로그인 수단입니다. 본인에게 발급된 계정만 사용하고 다른 사람과 로그인 정보를 공유하지 않아야 합니다. Hospital 직원 계정은 병원 관리자가 `계정 관리`에서 만들고 권한을 바꿉니다.
 
 ### 서브계정
 
@@ -64,7 +68,7 @@ Hospital의 `계정 관리`에서 병원 관리자가 직원마다 만들어 주
 
 ### 권한
 
-계정이 서비스에서 볼 수 있거나 수행할 수 있는 범위를 뜻합니다. Hospital 서브계정의 권한은 `인증서`, `결제`, `메시지`, `운영`, `관리` 그룹으로 나뉩니다. 조직과 계정에 따라 범위가 다를 수 있으며, 공개 문서만으로 본인의 권한을 단정할 수 없습니다.
+계정이 서비스에서 볼 수 있거나 수행할 수 있는 범위를 뜻합니다. Hospital 서브계정의 권한은 `인증서`, `결제`, `메시지`, `운영`, `관리` 그룹으로 나뉩니다. 서브계정의 권한은 병원 관리자가 `계정 관리`에서 정합니다. 문서에 있는 메뉴가 보이지 않으면 병원 관리자에게 권한을 요청하세요.
 
 ### 공식 주소
 
@@ -86,7 +90,7 @@ CertiLife가 공개한 접속 주소를 뜻합니다. 이 가이드에서 안내
 
 ### 지갑
 
-환자가 받은 인증서를 저장해 두는 곳입니다. 발행 내역의 `지갑 저장됨` 상태는 환자가 인증서를 자기 지갑에 저장했다는 뜻이고, 환자 관리의 `지갑 연동 상태`가 `미연동`이면 아직 저장하지 않은 환자입니다. 상태 표는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에 있습니다.
+환자가 받은 인증서를 저장해 두는 디지털 지갑입니다. 환자는 카카오톡 알림이나 문자에 있는 저장 버튼이나 링크로 인증서를 지갑에 저장합니다. CertiLife [자주묻는질문](https://certi.life/faq)은 이 지갑을 "카카오톡 지갑"으로 부르고, [개인정보처리방침](https://certi.life/terms/privacy)은 지갑 주소를 "Klip 지갑주소"로 적습니다. Hospital 환자 상세의 `지갑주소`가 이 주소입니다. 발행 내역의 `지갑 저장됨` 상태는 환자가 인증서를 자기 지갑에 저장했다는 뜻이고, 환자 관리의 `지갑 연동 상태`가 `미연동`이면 아직 저장하지 않은 환자입니다. 상태 표는 [발행 내역](https://certi.life/docs/guide/hospital/screens/history#인증서-상태-읽기)에 있습니다.
 
 ### 회수
 
@@ -182,7 +186,7 @@ AI 채팅봇과 AI 음성봇은 이미 들어온 채팅과 전화 문의에 응�
 
 ### 인증 코드
 
-로그인 또는 본인 확인 과정에서 일시적으로 사용하는 값을 뜻합니다. 다른 사람에게 전달하거나 지원 문의에 첨부하면 안 됩니다. 확인되지 않은 사람이 인증 코드를 요구하면 제공하지 마세요.
+로그인 또는 본인 확인 과정에서 일시적으로 사용하는 값을 뜻합니다. 다른 사람에게 전달하거나 지원 문의에 첨부하면 안 됩니다. 신원을 알 수 없는 사람이 인증 코드를 요구하면 제공하지 마세요.
 
 ### 의료적 판단
 

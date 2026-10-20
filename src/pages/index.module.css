@@ -53,6 +53,11 @@
   overflow-wrap: anywhere;
 }
 
+/* The middle dot is a line-break opportunity; keep "상담·재방문까지," on one line. */
+.keepTogether {
+  white-space: nowrap;
+}
+
 .heroCopy p {
   max-width: 36rem;
   margin: var(--space-lg) 0 0;
